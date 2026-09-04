@@ -35,4 +35,15 @@ build_gpus:
 current_simulator_exact_mask_validation: true
 stove_knob_only: true
 microwave_door_only: true
-policy_inference_run: false
+policy_inference_run: true
+policy_inference_episodes_per_task: 5
+policy_inference_total_episodes: 960
+policy_inference_tasks_with_success: 50
+policy_inference_successful_episodes: 151
+policy_inference_success_rate_percent: 15.729166666666666
+policy_inference_success_videos: 151
+policy_inference_failure_videos: 0
+policy_inference_physical_gpus:
+- 2
+- 3
+policy_inference_json_fallback_mask_sources: 0

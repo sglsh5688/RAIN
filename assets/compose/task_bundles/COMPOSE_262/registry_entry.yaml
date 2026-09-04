@@ -1,0 +1,13 @@
+name: COMPOSE_262
+language: Open the middle drawer of the cabinet, and then put the cream cheese box in the basket.
+problem: Libero
+problem_folder: tasks/compose_262__open_the_middle_drawer_of_the_cabinet_and_then_put_the_cream_cheese_box_in_the_basket
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_goal+libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|05a0f4aa6ec2927b002a80c1e016371d3df5a67f5230599b7ae1e58a54662be9|frozenset({in(cream_cheese_1,basket_1_contain_region),open(wooden_cabinet_1_middle_region)})

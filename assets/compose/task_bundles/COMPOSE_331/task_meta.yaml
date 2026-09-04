@@ -1,0 +1,55 @@
+task_id: COMPOSE_331
+task_name: Open the top drawer, then put the black bowl inside the open top drawer, and finally close the top drawer.
+language: Open the top drawer, then put the black bowl inside the open top drawer, and finally close the top drawer.
+primary_category: Composition
+composition_family: X9_goal_open_insert_close_sequence
+anchor_suite: libero_goal+libero_10
+source_prior_task_ids:
+- '3'
+- '103'
+source_priors:
+- suite: libero_goal
+  task_stem: open_the_top_drawer_and_put_the_bowl_inside
+  instruction: Open the top layer of the drawer and put the bowl inside
+  bddl: upstream_LIBERO/bddl_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.bddl
+  init: upstream_LIBERO/init_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.pruned_init
+  evidence: ''
+- suite: libero_10
+  task_stem: KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it
+  instruction: put the black bowl in the bottom drawer of the cabinet and close it
+  bddl: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.bddl
+  init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.pruned_init
+  evidence: ''
+component_task_instructions:
+- Open the top drawer
+- Put the black bowl inside the open top drawer
+- Close the top drawer
+component_evidence:
+- This exact drawer-opening subtrajectory is present in the cited LIBERO-40 task.
+- Exact bowl-in-top-drawer continuation from LIBERO-Goal task 04.
+- Closing a drawer is learned in LIBERO-10 Scene4, but applying it to the top wooden drawer is a requested same-fixture-class transfer.
+semantic_subtask_count: 3
+action_plan_step_count: 4
+canonical_goal_atoms:
+- in(akita_black_bowl_1, wooden_cabinet_1_top_region)
+- close(wooden_cabinet_1_top_region)
+canonical_task_signature: composition|3f474b285ddc2e6e7e375309ab9cbd20d9a618ab3520cafd769b89fad2c6a2d1|frozenset({close(wooden_cabinet_1_top_region),in(akita_black_bowl_1,wooden_cabinet_1_top_region)})
+objects_of_interest:
+- wooden_cabinet_1_top_region
+- akita_black_bowl_1
+pure_composition: false
+requires_transition: true
+sequence_stages:
+- - open(wooden_cabinet_1_top_region)
+- - open(wooden_cabinet_1_top_region)
+  - in(akita_black_bowl_1, wooden_cabinet_1_top_region)
+- - in(akita_black_bowl_1, wooden_cabinet_1_top_region)
+  - close(wooden_cabinet_1_top_region)
+physical_group: libero_goal_shared_scene_close_sequence
+base_bddl_template: upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_goal/put_the_bowl_on_the_plate.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- Ordered scoring proves open -> insert -> close; a final closed drawer alone cannot satisfy the task.
+compose_screen: exhaustive_novel_350

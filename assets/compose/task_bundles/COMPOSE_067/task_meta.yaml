@@ -1,0 +1,72 @@
+task_id: COMPOSE_067
+task_name: Put the cream cheese box, the milk, the tomato sauce, and the butter in the basket one after another.
+language: Put the cream cheese box, the milk, the tomato sauce, and the butter in the basket one after another.
+primary_category: Composition
+composition_family: X1_object_layout_four_to_basket
+anchor_suite: libero_object
+source_prior_task_ids:
+- '302'
+- '308'
+- '306'
+- '307'
+source_priors:
+- suite: libero_object
+  task_stem: pick_up_the_cream_cheese_and_place_it_in_the_basket
+  instruction: Pick the cream cheese and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_milk_and_place_it_in_the_basket
+  instruction: Pick the milk and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_tomato_sauce_and_place_it_in_the_basket
+  instruction: Pick the tomato sauce and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_butter_and_place_it_in_the_basket
+  instruction: Pick the butter and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the cream cheese box in the basket
+- Put the milk in the basket
+- Put the tomato sauce in the basket
+- Put the butter in the basket
+component_evidence:
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+semantic_subtask_count: 4
+action_plan_step_count: 8
+canonical_goal_atoms:
+- in(cream_cheese_1, basket_1_contain_region)
+- in(milk_1, basket_1_contain_region)
+- in(tomato_sauce_1, basket_1_contain_region)
+- in(butter_1, basket_1_contain_region)
+canonical_task_signature: composition|a057c2029b41a4edf6117413a040d21e74cf9f15af32f59e0cdb88c1dc833bab|frozenset({in(butter_1,basket_1_contain_region),in(cream_cheese_1,basket_1_contain_region),in(milk_1,basket_1_contain_region),in(tomato_sauce_1,basket_1_contain_region)})
+objects_of_interest:
+- cream_cheese_1
+- basket_1
+- milk_1
+- tomato_sauce_1
+- butter_1
+pure_composition: true
+requires_transition: false
+sequence_stages: []
+physical_group: object4_pick_up_the_cream_cheese_and_place_it_in_the_basket
+base_bddl_template: upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- Novel four-object extension of this exact stock Object layout; all C(6,4) subsets are enumerated.
+- All corresponding three-object identities were already screened in LiberoComposition and are not repeated.
+compose_screen: exhaustive_novel_350

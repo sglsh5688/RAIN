@@ -1,0 +1,72 @@
+task_id: COMPOSE_083
+task_name: Put the ketchup, the salad dressing, the alphabet soup, and the milk in the basket one after another.
+language: Put the ketchup, the salad dressing, the alphabet soup, and the milk in the basket one after another.
+primary_category: Composition
+composition_family: X1_object_layout_four_to_basket
+anchor_suite: libero_object
+source_prior_task_ids:
+- '305'
+- '303'
+- '301'
+- '308'
+source_priors:
+- suite: libero_object
+  task_stem: pick_up_the_ketchup_and_place_it_in_the_basket
+  instruction: Pick the ketchup and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_salad_dressing_and_place_it_in_the_basket
+  instruction: Pick the salad dressing and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_alphabet_soup_and_place_it_in_the_basket
+  instruction: Pick the alphabet soup and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_milk_and_place_it_in_the_basket
+  instruction: Pick the milk and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the ketchup in the basket
+- Put the salad dressing in the basket
+- Put the alphabet soup in the basket
+- Put the milk in the basket
+component_evidence:
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+semantic_subtask_count: 4
+action_plan_step_count: 8
+canonical_goal_atoms:
+- in(ketchup_1, basket_1_contain_region)
+- in(salad_dressing_1, basket_1_contain_region)
+- in(alphabet_soup_1, basket_1_contain_region)
+- in(milk_1, basket_1_contain_region)
+canonical_task_signature: composition|974ec90b3aa960a4acd40f0843bdc989e0730bf8eb7f087a75d07e5332b5a9c9|frozenset({in(alphabet_soup_1,basket_1_contain_region),in(ketchup_1,basket_1_contain_region),in(milk_1,basket_1_contain_region),in(salad_dressing_1,basket_1_contain_region)})
+objects_of_interest:
+- ketchup_1
+- basket_1
+- salad_dressing_1
+- alphabet_soup_1
+- milk_1
+pure_composition: true
+requires_transition: false
+sequence_stages: []
+physical_group: object4_pick_up_the_ketchup_and_place_it_in_the_basket
+base_bddl_template: upstream_LIBERO/bddl_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- Novel four-object extension of this exact stock Object layout; all C(6,4) subsets are enumerated.
+- All corresponding three-object identities were already screened in LiberoComposition and are not repeated.
+compose_screen: exhaustive_novel_350

@@ -1,0 +1,13 @@
+name: COMPOSE_059
+language: Put the orange juice, the ketchup, the salad dressing, and the alphabet soup in the basket one after another.
+problem: Libero
+problem_folder: tasks/compose_059__put_the_orange_juice_the_ketchup_the_salad_dressing_and_the_alphabet_soup_in_the_basket_one_after_another
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|4aa27741501c741922f73456dfa26fdb41a8cbe8d2c2146af28a5687f1bad91e|frozenset({in(alphabet_soup_1,basket_1_contain_region),in(ketchup_1,basket_1_contain_region),in(orange_juice_1,basket_1_contain_region),in(salad_dressing_1,basket_1_contain_region)})

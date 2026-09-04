@@ -1,0 +1,14 @@
+task_id: COMPOSE_231
+category: Composition
+required_goal_atoms:
+- on(wine_bottle_1, wooden_cabinet_1_top_side)
+- on(plate_1, main_table_stove_front_region)
+- turnon(flat_stove_1)
+- in(akita_black_bowl_1, wooden_cabinet_1_top_region)
+forbidden_goal_atoms: []
+overshoot_policy: none
+order_sensitive: false
+continue_after_success: false
+requires_transition: false
+sequence_stages: []
+custom_eval_needed: false

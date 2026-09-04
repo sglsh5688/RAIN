@@ -1,0 +1,44 @@
+task_id: COMPOSE_219
+steps:
+- action_type: grasp
+  primary_object_id: wine_bottle_1
+  target_object_id: wine_bottle_1
+  source_task_id: 2
+  source_task_description: Put the wine bottle on the rack
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: wine_bottle_1
+  target_object_id: wine_rack_1_top_region
+  source_task_id: 2
+  source_task_description: Put the wine bottle on the rack
+  source_subtask_index: 2
+- action_type: approach
+  primary_object_id: plate_1
+  target_object_id: plate_1
+  source_task_id: 6
+  source_task_description: Push the plate to the front of the stove
+  source_subtask_index: 1
+- action_type: push
+  primary_object_id: plate_1
+  target_object_id: main_table_stove_front_region
+  source_task_id: 6
+  source_task_description: Push the plate to the front of the stove
+  source_subtask_index: 2
+- action_type: turn_on
+  primary_object_id: flat_stove_1
+  target_object_id: flat_stove_1
+  source_task_id: 7
+  source_task_description: Turn on the stove
+  source_subtask_index: 1
+- action_type: grasp
+  primary_object_id: akita_black_bowl_1
+  target_object_id: akita_black_bowl_1
+  source_task_id: 9
+  source_task_description: Put the bowl on the top of the drawer
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: akita_black_bowl_1
+  target_object_id: wooden_cabinet_1_top_side
+  source_task_id: 9
+  source_task_description: Put the bowl on the top of the drawer
+  source_subtask_index: 2

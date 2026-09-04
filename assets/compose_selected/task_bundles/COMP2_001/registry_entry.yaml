@@ -1,0 +1,13 @@
+name: COMP2_001
+language: Put the cream cheese on the black bowl, and then open the middle drawer of the cabinet.
+problem: Libero
+problem_folder: tasks/comp2_001__put_the_cream_cheese_on_the_black_bowl_and_then_open_the_middle_drawer_of_the_cabinet
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_goal
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|3f474b285ddc2e6e7e375309ab9cbd20d9a618ab3520cafd769b89fad2c6a2d1|frozenset({on(cream_cheese_1,akita_black_bowl_1),open(wooden_cabinet_1_middle_region)})

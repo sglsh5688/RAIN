@@ -1,0 +1,59 @@
+task_id: COMPOSE_348
+task_name: Put the white mug on the left plate, then put the yellow and white mug on the right plate, then put the chocolate pudding to the right of the added plate, and finally put the red mug on the added plate.
+language: Put the white mug on the left plate, then put the yellow and white mug on the right plate, then put the chocolate pudding to the right of the added plate, and finally put the red mug on the added plate.
+primary_category: Composition
+composition_family: X12_living5_plus_scene6_pudding_plate_hybrid
+anchor_suite: libero_10
+source_prior_task_ids:
+- '104'
+- '107'
+source_priors:
+- suite: libero_10
+  task_stem: LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate
+  instruction: put the white mug on the left plate and put the yellow and white mug on the right plate
+  bddl: upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl
+  init: upstream_LIBERO/init_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.pruned_init
+  evidence: ''
+- suite: libero_10
+  task_stem: LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate
+  instruction: put the white mug on the plate and put the chocolate pudding to the right of the plate
+  bddl: upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.bddl
+  init: upstream_LIBERO/init_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the white mug on the left plate
+- Put the yellow and white mug on the right plate
+- Put the chocolate pudding to the right of the added plate
+- Put the red mug on the added plate
+component_evidence:
+- Exact Scene6 pudding-to-right-of-plate relation applied to the added plate context.
+- The red mug is a Scene5 distractor with no direct LIBERO-40 goal trajectory.
+semantic_subtask_count: 4
+action_plan_step_count: 8
+canonical_goal_atoms:
+- on(porcelain_mug_1, plate_1)
+- on(white_yellow_mug_1, plate_2)
+- on(chocolate_pudding_1, living_room_table_plate_right_region)
+- on(red_coffee_mug_1, plate_3)
+canonical_task_signature: composition|740705f0104738db191794fd4e549a00be27f5f0187328c3a2bc7016a96a1c3a|frozenset({on(chocolate_pudding_1,living_room_table_plate_right_region),on(porcelain_mug_1,plate_1),on(red_coffee_mug_1,plate_3),on(white_yellow_mug_1,plate_2)})
+objects_of_interest:
+- porcelain_mug_1
+- plate_1
+- white_yellow_mug_1
+- plate_2
+- chocolate_pudding_1
+- living_room_table_plate_right_region
+- red_coffee_mug_1
+- plate_3
+pure_composition: false
+requires_transition: false
+sequence_stages: []
+physical_group: libero10_living5_plus_scene6_plate_and_pudding
+base_bddl_template: upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- Scene5 mug/plate poses are unchanged; Scene6 plate_3 and pudding are added at non-overlapping reachable slots.
+- The canonical Scene6 living_room_table_plate_right_region name is retained for current-BDDL projection.
+compose_screen: exhaustive_novel_350

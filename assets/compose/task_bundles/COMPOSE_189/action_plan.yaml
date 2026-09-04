@@ -1,0 +1,44 @@
+task_id: COMPOSE_189
+steps:
+- action_type: grasp
+  primary_object_id: cream_cheese_1
+  target_object_id: cream_cheese_1
+  source_task_id: 4
+  source_task_description: Put the cream cheese on the bowl
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: cream_cheese_1
+  target_object_id: akita_black_bowl_1
+  source_task_id: 4
+  source_task_description: Put the cream cheese on the bowl
+  source_subtask_index: 2
+- action_type: grasp
+  primary_object_id: akita_black_bowl_1
+  target_object_id: akita_black_bowl_1
+  source_task_id: 1
+  source_task_description: Put the bowl on the plate
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: akita_black_bowl_1
+  target_object_id: plate_1
+  source_task_id: 1
+  source_task_description: Put the bowl on the plate
+  source_subtask_index: 2
+- action_type: grasp
+  primary_object_id: wine_bottle_1
+  target_object_id: wine_bottle_1
+  source_task_id: 2
+  source_task_description: Put the wine bottle on the rack
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: wine_bottle_1
+  target_object_id: wine_rack_1_top_region
+  source_task_id: 2
+  source_task_description: Put the wine bottle on the rack
+  source_subtask_index: 2
+- action_type: open
+  primary_object_id: wooden_cabinet_1_middle_region
+  target_object_id: wooden_cabinet_1_middle_region
+  source_task_id: 10
+  source_task_description: Open the middle layer of the drawer
+  source_subtask_index: 1

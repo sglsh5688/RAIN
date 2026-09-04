@@ -1,0 +1,30 @@
+task_id: COMPOSE_333
+policy: exact_instance_no_union
+bindings:
+- role: interaction_target
+  kind: body_prefix
+  value: flat_stove_1_button
+  color: cyan
+  exact_instance: true
+- role: manipulated_object
+  kind: body_prefix
+  value: moka_pot_1
+  color: green
+  exact_instance: true
+- role: goal_target_3
+  kind: body_prefix
+  value: flat_stove_1
+  color: yellow
+  exact_instance: true
+- role: goal_target_4
+  kind: body_prefix
+  value: flat_stove_2
+  color: yellow
+  exact_instance: true
+runtime_requirements:
+  resolve_by_current_sim_model: true
+  allow_source_episode_json_fallback: false
+  new_instance_support: true
+  region_projection_from_current_bddl: false
+  stove_turn_mask_scope: exact_requested_button_visual_geom_largest_component_only
+  whole_stove_fallback: false

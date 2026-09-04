@@ -1,0 +1,72 @@
+task_id: COMPOSE_291
+task_name: Put the black bowl on the plate, then put the wine bottle on the rack, then push the plate to the front of the stove, and finally put the cream cheese box in the basket.
+language: Put the black bowl on the plate, then put the wine bottle on the rack, then push the plate to the front of the stove, and finally put the cream cheese box in the basket.
+primary_category: Composition
+composition_family: X8_goal_plus_left_basket_4_task
+anchor_suite: libero_goal+libero_object
+source_prior_task_ids:
+- '1'
+- '2'
+- '6'
+- '302'
+source_priors:
+- suite: libero_goal
+  task_stem: put_the_bowl_on_the_plate
+  instruction: Put the bowl on the plate
+  bddl: upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl
+  init: upstream_LIBERO/init_files/libero_goal/put_the_bowl_on_the_plate.pruned_init
+  evidence: ''
+- suite: libero_goal
+  task_stem: put_the_wine_bottle_on_the_rack
+  instruction: Put the wine bottle on the rack
+  bddl: upstream_LIBERO/bddl_files/libero_goal/put_the_wine_bottle_on_the_rack.bddl
+  init: upstream_LIBERO/init_files/libero_goal/put_the_wine_bottle_on_the_rack.pruned_init
+  evidence: ''
+- suite: libero_goal
+  task_stem: push_the_plate_to_the_front_of_the_stove
+  instruction: Push the plate to the front of the stove
+  bddl: upstream_LIBERO/bddl_files/libero_goal/push_the_plate_to_the_front_of_the_stove.bddl
+  init: upstream_LIBERO/init_files/libero_goal/push_the_plate_to_the_front_of_the_stove.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_cream_cheese_and_place_it_in_the_basket
+  instruction: Pick the cream cheese and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the black bowl on the plate
+- Put the wine bottle on the rack
+- Push the plate to the front of the stove
+- Put the cream cheese box in the basket
+component_evidence:
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+semantic_subtask_count: 4
+action_plan_step_count: 8
+canonical_goal_atoms:
+- on(akita_black_bowl_1, plate_1)
+- on(wine_bottle_1, wine_rack_1_top_region)
+- on(plate_1, main_table_stove_front_region)
+- in(cream_cheese_1, basket_1_contain_region)
+canonical_task_signature: composition|05a0f4aa6ec2927b002a80c1e016371d3df5a67f5230599b7ae1e58a54662be9|frozenset({in(cream_cheese_1,basket_1_contain_region),on(akita_black_bowl_1,plate_1),on(plate_1,main_table_stove_front_region),on(wine_bottle_1,wine_rack_1_top_region)})
+objects_of_interest:
+- akita_black_bowl_1
+- plate_1
+- wine_bottle_1
+- wine_rack_1_top_region
+- main_table_stove_front_region
+- cream_cheese_1
+- basket_1
+pure_composition: true
+requires_transition: false
+sequence_stages: []
+physical_group: libero_goal_with_robot_left_basket
+base_bddl_template: upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_goal/put_the_bowl_on_the_plate.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- One basket is added at the exact robot-left donor coordinate used by LIBERO basket scenes.
+- A learned cream-cheese-to-basket primitive is composed with compatible Goal clique (1, 2, 6).
+- Goal component 4 is excluded because it assigns the same cream cheese to a conflicting final destination.
+compose_screen: exhaustive_novel_350

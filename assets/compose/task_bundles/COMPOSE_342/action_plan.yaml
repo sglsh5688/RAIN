@@ -1,0 +1,38 @@
+task_id: COMPOSE_342
+steps:
+- action_type: grasp
+  primary_object_id: akita_black_bowl_1
+  target_object_id: akita_black_bowl_1
+  source_task_id: 103
+  source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: akita_black_bowl_1
+  target_object_id: white_cabinet_1_bottom_region
+  source_task_id: 103
+  source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+  source_subtask_index: 2
+- action_type: close
+  primary_object_id: white_cabinet_1_bottom_region
+  target_object_id: white_cabinet_1_bottom_region
+  source_task_id: 103
+  source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+  source_subtask_index: 3
+- action_type: open
+  primary_object_id: wooden_cabinet_1_top_region
+  target_object_id: wooden_cabinet_1_top_region
+  source_task_id: 3
+  source_task_description: Open the top layer of the drawer and put the bowl inside
+  source_subtask_index: 1
+- action_type: grasp
+  primary_object_id: wine_bottle_1
+  target_object_id: wine_bottle_1
+  source_task_id: 5
+  source_task_description: Put the wine bottle on the top of the drawer
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: wine_bottle_1
+  target_object_id: wooden_cabinet_1_top_side
+  source_task_id: 5
+  source_task_description: Put the wine bottle on the top of the drawer
+  source_subtask_index: 2

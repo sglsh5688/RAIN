@@ -1,0 +1,13 @@
+name: COMPOSE_017
+language: Put the bbq sauce, the chocolate pudding, the ketchup, and the alphabet soup in the basket one after another.
+problem: Libero
+problem_folder: tasks/compose_017__put_the_bbq_sauce_the_chocolate_pudding_the_ketchup_and_the_alphabet_soup_in_the_basket_one_after_another
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|c18a735ec83354055ea586c6620d26ab9d9462fcb9bfe6545edcd6a656426093|frozenset({in(alphabet_soup_1,basket_1_contain_region),in(bbq_sauce_1,basket_1_contain_region),in(chocolate_pudding_1,basket_1_contain_region),in(ketchup_1,basket_1_contain_region)})

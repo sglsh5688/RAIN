@@ -1,0 +1,13 @@
+name: COMPOSE_272
+language: Put the wine bottle on the rack, then put the black bowl on top of the cabinet, and finally put the cream cheese box in the basket.
+problem: Libero
+problem_folder: tasks/compose_272__put_the_wine_bottle_on_the_rack_then_put_the_black_bowl_on_top_of_the_cabinet_and_finally_put_the_cream_cheese_box_in_the_basket
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_goal+libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|05a0f4aa6ec2927b002a80c1e016371d3df5a67f5230599b7ae1e58a54662be9|frozenset({in(cream_cheese_1,basket_1_contain_region),on(akita_black_bowl_1,wooden_cabinet_1_top_side),on(wine_bottle_1,wine_rack_1_top_region)})

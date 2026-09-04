@@ -1,0 +1,13 @@
+name: COMPOSE_347
+language: Put the white mug on the left plate, then put the yellow and white mug on the right plate, and finally put the chocolate pudding on the added plate.
+problem: Libero
+problem_folder: tasks/compose_347__put_the_white_mug_on_the_left_plate_then_put_the_yellow_and_white_mug_on_the_right_plate_and_finally_put_the_chocolate_pudding_on_the_added_plate
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_10
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|740705f0104738db191794fd4e549a00be27f5f0187328c3a2bc7016a96a1c3a|frozenset({on(chocolate_pudding_1,plate_3),on(porcelain_mug_1,plate_1),on(white_yellow_mug_1,plate_2)})

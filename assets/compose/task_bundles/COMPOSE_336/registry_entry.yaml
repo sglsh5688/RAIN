@@ -1,0 +1,13 @@
+name: COMPOSE_336
+language: Put the black bowl in the bottom drawer of the left white cabinet, and then put the wine bottle on top of the right wooden cabinet.
+problem: Libero
+problem_folder: tasks/compose_336__put_the_black_bowl_in_the_bottom_drawer_of_the_left_white_cabinet_and_then_put_the_wine_bottle_on_top_of_the_right_wooden_cabinet
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_10+libero_goal
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|242b6ed12734ae1c6cadd1a3e6700dfe18aaf15fd69bbce2aef21dea87f379c5|frozenset({in(akita_black_bowl_1,white_cabinet_1_bottom_region),on(wine_bottle_1,wooden_cabinet_1_top_side)})

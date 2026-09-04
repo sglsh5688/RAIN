@@ -1,0 +1,52 @@
+task_id: COMPOSE_350
+task_name: Put the right moka pot on the stove, then put the left moka pot on the stove, and finally turn on the stove.
+language: Put the right moka pot on the stove, then put the left moka pot on the stove, and finally turn on the stove.
+primary_category: Composition
+composition_family: X13_kitchen8_two_moka_then_turn_on
+anchor_suite: libero_10+libero_goal
+source_prior_task_ids:
+- '108'
+- '7'
+source_priors:
+- suite: libero_10
+  task_stem: KITCHEN_SCENE8_put_both_moka_pots_on_the_stove
+  instruction: put both moka pots on the stove
+  bddl: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl
+  init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.pruned_init
+  evidence: ''
+- suite: libero_goal
+  task_stem: turn_on_the_stove
+  instruction: Turn on the stove
+  bddl: upstream_LIBERO/bddl_files/libero_goal/turn_on_the_stove.bddl
+  init: upstream_LIBERO/init_files/libero_goal/turn_on_the_stove.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the right moka pot on the stove
+- Put the left moka pot on the stove
+- Turn on the stove
+component_evidence:
+- Exact learned stove-on primitive transferred only across repeated instances of the same flat-stove class.
+semantic_subtask_count: 3
+action_plan_step_count: 5
+canonical_goal_atoms:
+- on(moka_pot_1, flat_stove_1_cook_region)
+- on(moka_pot_2, flat_stove_1_cook_region)
+- turnon(flat_stove_1)
+canonical_task_signature: composition|c78b4099dc4be933f2b8309d1e550cd1a902da2f95be5f14b4c7e009eb449328|frozenset({on(moka_pot_1,flat_stove_1_cook_region),on(moka_pot_2,flat_stove_1_cook_region),turnon(flat_stove_1)})
+objects_of_interest:
+- moka_pot_1
+- flat_stove_1_cook_region
+- moka_pot_2
+- flat_stove_1
+pure_composition: true
+requires_transition: false
+sequence_stages: []
+physical_group: libero10_kitchen8_stove_off_at_init
+base_bddl_template: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- The source's initially-on stove state is removed so the turn-on clause is not true at reset.
+- The interaction mask is flat_stove_1_button only; the whole stove is forbidden as fallback.
+compose_screen: exhaustive_novel_350

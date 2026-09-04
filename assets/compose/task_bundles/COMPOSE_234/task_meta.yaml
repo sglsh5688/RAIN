@@ -1,0 +1,69 @@
+task_id: COMPOSE_234
+task_name: Push the plate to the front of the stove, then turn on the stove, then open the middle drawer of the cabinet, and finally open the top drawer and put the black bowl inside.
+language: Push the plate to the front of the stove, then turn on the stove, then open the middle drawer of the cabinet, and finally open the top drawer and put the black bowl inside.
+primary_category: Composition
+composition_family: X5_goal_four_task_clique
+anchor_suite: libero_goal
+source_prior_task_ids:
+- '6'
+- '7'
+- '10'
+- '3'
+source_priors:
+- suite: libero_goal
+  task_stem: push_the_plate_to_the_front_of_the_stove
+  instruction: Push the plate to the front of the stove
+  bddl: upstream_LIBERO/bddl_files/libero_goal/push_the_plate_to_the_front_of_the_stove.bddl
+  init: upstream_LIBERO/init_files/libero_goal/push_the_plate_to_the_front_of_the_stove.pruned_init
+  evidence: ''
+- suite: libero_goal
+  task_stem: turn_on_the_stove
+  instruction: Turn on the stove
+  bddl: upstream_LIBERO/bddl_files/libero_goal/turn_on_the_stove.bddl
+  init: upstream_LIBERO/init_files/libero_goal/turn_on_the_stove.pruned_init
+  evidence: ''
+- suite: libero_goal
+  task_stem: open_the_middle_drawer_of_the_cabinet
+  instruction: Open the middle layer of the drawer
+  bddl: upstream_LIBERO/bddl_files/libero_goal/open_the_middle_drawer_of_the_cabinet.bddl
+  init: upstream_LIBERO/init_files/libero_goal/open_the_middle_drawer_of_the_cabinet.pruned_init
+  evidence: ''
+- suite: libero_goal
+  task_stem: open_the_top_drawer_and_put_the_bowl_inside
+  instruction: Open the top layer of the drawer and put the bowl inside
+  bddl: upstream_LIBERO/bddl_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.bddl
+  init: upstream_LIBERO/init_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.pruned_init
+  evidence: ''
+component_task_instructions:
+- Push the plate to the front of the stove
+- Turn on the stove
+- Open the middle drawer of the cabinet
+- Open the top drawer and put the black bowl inside
+component_evidence: []
+semantic_subtask_count: 4
+action_plan_step_count: 7
+canonical_goal_atoms:
+- on(plate_1, main_table_stove_front_region)
+- turnon(flat_stove_1)
+- open(wooden_cabinet_1_middle_region)
+- in(akita_black_bowl_1, wooden_cabinet_1_top_region)
+canonical_task_signature: composition|3f474b285ddc2e6e7e375309ab9cbd20d9a618ab3520cafd769b89fad2c6a2d1|frozenset({in(akita_black_bowl_1,wooden_cabinet_1_top_region),on(plate_1,main_table_stove_front_region),open(wooden_cabinet_1_middle_region),turnon(flat_stove_1)})
+objects_of_interest:
+- plate_1
+- main_table_stove_front_region
+- flat_stove_1
+- wooden_cabinet_1_middle_region
+- wooden_cabinet_1_top_region
+- akita_black_bowl_1
+pure_composition: true
+requires_transition: false
+sequence_stages: []
+physical_group: libero_goal_shared_scene_four_way
+base_bddl_template: upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_goal/put_the_bowl_on_the_plate.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- All six pairwise edges of Goal clique (3, 6, 7, 10) are in the audited compatibility graph.
+- Goal pairs and triples were already screened in prior pools; this is the novel four-way identity.
+compose_screen: exhaustive_novel_350

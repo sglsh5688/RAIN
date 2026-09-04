@@ -1,0 +1,52 @@
+task_id: COMPOSE_333
+task_name: Turn on the first stove, then put the moka pot on the first stove, and finally move the moka pot to the other stove.
+language: Turn on the first stove, then put the moka pot on the first stove, and finally move the moka pot to the other stove.
+primary_category: Composition
+composition_family: X10_kitchen3_two_stove_temporal_transfer
+anchor_suite: libero_10
+source_prior_task_ids:
+- '101'
+source_priors:
+- suite: libero_10
+  task_stem: KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it
+  instruction: turn on the stove and put the moka pot on it
+  bddl: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.bddl
+  init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.pruned_init
+  evidence: ''
+component_task_instructions:
+- Turn on the first stove
+- Put the moka pot on the first stove
+- Move the moka pot to the other stove
+component_evidence:
+- Exact learned stove-on primitive transferred only across repeated instances of the same flat-stove class.
+- Exact moka-pot-to-flat-stove relation, transferred across same-class stove instances.
+- Exact moka-pot-to-flat-stove relation, transferred across same-class stove instances.
+semantic_subtask_count: 3
+action_plan_step_count: 5
+canonical_goal_atoms:
+- turnon(flat_stove_1)
+- on(moka_pot_1, flat_stove_2_cook_region)
+canonical_task_signature: composition|f021976f10e2e66762cf8204aa6f8d87c100ade8582c0673138e052d2d547ca7|frozenset({on(moka_pot_1,flat_stove_2_cook_region),turnon(flat_stove_1)})
+objects_of_interest:
+- flat_stove_1
+- moka_pot_1
+- flat_stove_1_cook_region
+- flat_stove_2_cook_region
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - turnon(flat_stove_1)
+- - turnon(flat_stove_1)
+  - on(moka_pot_1, flat_stove_1_cook_region)
+- - turnon(flat_stove_1)
+  - on(moka_pot_1, flat_stove_2_cook_region)
+physical_group: libero10_kitchen3_two_opposed_stoves_no_frypan
+base_bddl_template: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- The second stove uses the exact opposite-side KITCHEN_SCENE8 stove coordinate and unchanged orientation.
+- The frypan is removed because its original pose intersects the added stove footprint.
+- Each turn mask names only the requested stove instance's rotary button.
+compose_screen: exhaustive_novel_350

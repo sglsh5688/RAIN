@@ -1,0 +1,13 @@
+name: COMPOSE_151
+language: Put the alphabet soup, the cream cheese box, the ketchup, and the tomato sauce in the basket one after another.
+problem: Libero
+problem_folder: tasks/compose_151__put_the_alphabet_soup_the_cream_cheese_box_the_ketchup_and_the_tomato_sauce_in_the_basket_one_after_another
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_10
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|839ab29ce44af74e03e3b92fb7779309a04f755fb09f3c20e534bb1ad7898e6f|frozenset({in(alphabet_soup_1,basket_1_contain_region),in(cream_cheese_1,basket_1_contain_region),in(ketchup_1,basket_1_contain_region),in(tomato_sauce_1,basket_1_contain_region)})

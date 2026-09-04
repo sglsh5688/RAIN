@@ -1,0 +1,50 @@
+task_id: COMPOSE_084
+steps:
+- action_type: grasp
+  primary_object_id: ketchup_1
+  target_object_id: ketchup_1
+  source_task_id: 305
+  source_task_description: Pick the ketchup and place it in the basket
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: ketchup_1
+  target_object_id: basket_1_contain_region
+  source_task_id: 305
+  source_task_description: Pick the ketchup and place it in the basket
+  source_subtask_index: 2
+- action_type: grasp
+  primary_object_id: salad_dressing_1
+  target_object_id: salad_dressing_1
+  source_task_id: 303
+  source_task_description: Pick the salad dressing and place it in the basket
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: salad_dressing_1
+  target_object_id: basket_1_contain_region
+  source_task_id: 303
+  source_task_description: Pick the salad dressing and place it in the basket
+  source_subtask_index: 2
+- action_type: grasp
+  primary_object_id: cream_cheese_1
+  target_object_id: cream_cheese_1
+  source_task_id: 302
+  source_task_description: Pick the cream cheese and place it in the basket
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: cream_cheese_1
+  target_object_id: basket_1_contain_region
+  source_task_id: 302
+  source_task_description: Pick the cream cheese and place it in the basket
+  source_subtask_index: 2
+- action_type: grasp
+  primary_object_id: milk_1
+  target_object_id: milk_1
+  source_task_id: 308
+  source_task_description: Pick the milk and place it in the basket
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: milk_1
+  target_object_id: basket_1_contain_region
+  source_task_id: 308
+  source_task_description: Pick the milk and place it in the basket
+  source_subtask_index: 2

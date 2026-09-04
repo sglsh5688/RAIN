@@ -1,0 +1,13 @@
+name: COMP2_018
+language: Put the black bowl on the plate, and then put the wine bottle on the rack.
+problem: Libero
+problem_folder: tasks/comp2_018__put_the_black_bowl_on_the_plate_and_then_put_the_wine_bottle_on_the_rack
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_goal
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|3f474b285ddc2e6e7e375309ab9cbd20d9a618ab3520cafd769b89fad2c6a2d1|frozenset({on(akita_black_bowl_1,plate_1),on(wine_bottle_1,wine_rack_1_top_region)})

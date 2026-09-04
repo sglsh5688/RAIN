@@ -1,0 +1,193 @@
+task_id	evaluated_instruction	proposed_task_only_instruction	status	note
+ADAPT_001	Put the white mug on the middle plate.	Put the white mug on the middle plate.	PASS	
+ADAPT_002	Put the white mug on the right plate.	Put the white mug on the right plate.	PASS	
+ADAPT_003	Put the black bowl in the middle drawer of the white cabinet.	Put the black bowl in the middle drawer of the white cabinet.	PASS	
+ADAPT_004	Close the top drawer of the white cabinet.	Close the top drawer of the white cabinet.	PASS	
+ADAPT_005	Close the middle drawer of the white cabinet.	Close the middle drawer of the white cabinet.	PASS	
+ADAPT_006	Pick up the wine bottle at the table center and place it on the plate.	Pick up the wine bottle and place it on the plate.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_007	Put the plate on the top of the wooden cabinet.	Put the plate on the top of the wooden cabinet.	PASS	
+ADAPT_008	Put the cream cheese in the top drawer of the wooden cabinet.	Put the cream cheese in the top drawer of the wooden cabinet.	PASS	
+ADAPT_009	Put the yellow and white mug in the left compartment of the caddy.	Put the yellow and white mug in the left compartment of the caddy.	PASS	
+ADAPT_010	Pick the alphabet soup on the right and place it in the basket on the left.	Pick the alphabet soup and place it in the basket.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_011	Pick the cream cheese on the right and place it in the basket on the left.	Pick the cream cheese and place it in the basket.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_012	Pick the salad dressing on the right and place it in the basket on the left.	Pick the salad dressing and place it in the basket.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_013	Pick the bbq sauce on the right and place it in the basket on the left.	Pick the bbq sauce and place it in the basket.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_014	Pick the ketchup on the right and place it in the basket on the left.	Pick the ketchup and place it in the basket.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_015	Pick the tomato sauce on the right and place it in the basket on the left.	Pick the tomato sauce and place it in the basket.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_016	Pick the butter on the right and place it in the basket on the left.	Pick the butter and place it in the basket.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_017	Pick the milk on the right and place it in the basket on the left.	Pick the milk and place it in the basket.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_018	Pick the chocolate pudding on the right and place it in the basket on the left.	Pick the chocolate pudding and place it in the basket.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_019	Pick the orange juice on the right and place it in the basket on the left.	Pick the orange juice and place it in the basket.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_020	Turn on the stove while the black bowl starts between the plate and the ramekin.	Turn on the stove.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_021	Turn on the stove while the black bowl starts next to the ramekin.	Turn on the stove.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_022	Turn on the stove while the black bowl starts at the table center.	Turn on the stove.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_023	Turn on the stove while the black bowl starts on the cookies box.	Turn on the stove.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_024	Turn on the stove while the black bowl starts in the top drawer of the wooden cabinet.	Turn on the stove.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_025	Turn on the stove while the black bowl starts on the ramekin.	Turn on the stove.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_026	Turn on the stove while the black bowl starts next to the cookies box.	Turn on the stove.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_027	Turn on the stove while the black bowl starts on the stove.	Turn on the stove.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_028	Turn on the stove while the black bowl starts next to the plate.	Turn on the stove.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_029	Turn on the stove while the black bowl starts on top of the wooden cabinet.	Turn on the stove.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_030	Pick up the black bowl between the plate and the ramekin and put it in the top drawer of the wooden cabinet.	Pick up the black bowl between the plate and the ramekin and put it in the top drawer of the wooden cabinet.	PASS	
+ADAPT_031	Pick up the black bowl between the plate and the ramekin and put it in the middle drawer of the wooden cabinet.	Pick up the black bowl between the plate and the ramekin and put it in the middle drawer of the wooden cabinet.	PASS	
+ADAPT_032	Pick up the black bowl between the plate and the ramekin and put it in the bottom drawer of the wooden cabinet.	Pick up the black bowl between the plate and the ramekin and put it in the bottom drawer of the wooden cabinet.	PASS	
+ADAPT_033	Pick up the black bowl next to the ramekin and put it in the top drawer of the wooden cabinet.	Pick up the black bowl next to the ramekin and put it in the top drawer of the wooden cabinet.	PASS	
+ADAPT_034	Pick up the black bowl next to the ramekin and put it in the middle drawer of the wooden cabinet.	Pick up the black bowl next to the ramekin and put it in the middle drawer of the wooden cabinet.	PASS	
+ADAPT_035	Pick up the black bowl next to the ramekin and put it in the bottom drawer of the wooden cabinet.	Pick up the black bowl next to the ramekin and put it in the bottom drawer of the wooden cabinet.	PASS	
+ADAPT_036	Pick up the black bowl at the table center and put it in the top drawer of the wooden cabinet.	Pick up the black bowl at the table center and put it in the top drawer of the wooden cabinet.	PASS	
+ADAPT_037	Pick up the black bowl at the table center and put it in the middle drawer of the wooden cabinet.	Pick up the black bowl at the table center and put it in the middle drawer of the wooden cabinet.	PASS	
+ADAPT_038	Pick up the black bowl at the table center and put it in the bottom drawer of the wooden cabinet.	Pick up the black bowl at the table center and put it in the bottom drawer of the wooden cabinet.	PASS	
+ADAPT_039	Pick up the black bowl next to the cookies box and put it in the top drawer of the wooden cabinet.	Pick up the black bowl next to the cookies box and put it in the top drawer of the wooden cabinet.	PASS	
+ADAPT_040	Pick up the black bowl next to the cookies box and put it in the middle drawer of the wooden cabinet.	Pick up the black bowl next to the cookies box and put it in the middle drawer of the wooden cabinet.	PASS	
+ADAPT_041	Pick up the black bowl next to the cookies box and put it in the bottom drawer of the wooden cabinet.	Pick up the black bowl next to the cookies box and put it in the bottom drawer of the wooden cabinet.	PASS	
+ADAPT_042	Pick up the black bowl next to the plate and put it in the top drawer of the wooden cabinet.	Pick up the black bowl next to the plate and put it in the top drawer of the wooden cabinet.	PASS	
+ADAPT_043	Pick up the black bowl next to the plate and put it in the middle drawer of the wooden cabinet.	Pick up the black bowl next to the plate and put it in the middle drawer of the wooden cabinet.	PASS	
+ADAPT_044	Pick up the black bowl next to the plate and put it in the bottom drawer of the wooden cabinet.	Pick up the black bowl next to the plate and put it in the bottom drawer of the wooden cabinet.	PASS	
+ADAPT_045	Open the top drawer while the black bowl starts on the cookies box.	Open the top drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_046	Open the middle drawer while the black bowl starts on the cookies box.	Open the middle drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_047	Open the bottom drawer while the black bowl starts on the cookies box.	Open the bottom drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_048	Close the top drawer while the black bowl starts on the cookies box.	Close the top drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_049	Close the middle drawer while the black bowl starts on the cookies box.	Close the middle drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_050	Close the bottom drawer while the black bowl starts on the cookies box.	Close the bottom drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_051	Open the top drawer while the black bowl starts on the stove.	Open the top drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_052	Open the middle drawer while the black bowl starts on the stove.	Open the middle drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_053	Open the bottom drawer while the black bowl starts on the stove.	Open the bottom drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_054	Close the top drawer while the black bowl starts on the stove.	Close the top drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_055	Close the middle drawer while the black bowl starts on the stove.	Close the middle drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_056	Close the bottom drawer while the black bowl starts on the stove.	Close the bottom drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_057	Open the top drawer while the black bowl starts on top of the wooden cabinet.	Open the top drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_058	Open the middle drawer while the black bowl starts on top of the wooden cabinet.	Open the middle drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_059	Open the bottom drawer while the black bowl starts on top of the wooden cabinet.	Open the bottom drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_060	Close the top drawer while the black bowl starts on top of the wooden cabinet.	Close the top drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_061	Close the middle drawer while the black bowl starts on top of the wooden cabinet.	Close the middle drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_062	Close the bottom drawer while the black bowl starts on top of the wooden cabinet.	Close the bottom drawer.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_063	Put the black bowl on the wine rack in the LIBERO-10 Scene 4 layout.	Put the black bowl on the wine rack.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_064	Put the black bowl on the top of the white cabinet in the LIBERO-10 Scene 4 layout.	Put the black bowl on the top of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_065	Put the wine bottle on the wine rack in the LIBERO-10 Scene 4 layout.	Put the wine bottle on the wine rack.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_066	Put the wine bottle on the top of the white cabinet in the LIBERO-10 Scene 4 layout.	Put the wine bottle on the top of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_067	Put the black bowl in the top drawer of the white cabinet in Scene 4.	Put the black bowl in the top drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_068	Put the black bowl in the middle drawer of the white cabinet in Scene 4.	Put the black bowl in the middle drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_069	Put the wine bottle in the top drawer of the white cabinet in Scene 4.	Put the wine bottle in the top drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_070	Put the wine bottle in the middle drawer of the white cabinet in Scene 4.	Put the wine bottle in the middle drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_071	Put the wine bottle in the bottom drawer of the white cabinet in Scene 4.	Put the wine bottle in the bottom drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_072	Open the top drawer of the white cabinet in the complete Scene 4 layout.	Open the top drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_073	Open the middle drawer of the white cabinet in the complete Scene 4 layout.	Open the middle drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_074	Open the bottom drawer of the white cabinet in the complete Scene 4 layout.	Open the bottom drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_075	Close the top drawer of the white cabinet in the complete Scene 4 layout.	Close the top drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_076	Close the middle drawer of the white cabinet in the complete Scene 4 layout.	Close the middle drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_077	Close the bottom drawer of the white cabinet in the complete Scene 4 layout.	Close the bottom drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_078	Put the cream cheese in the top drawer of the white cabinet in Scene 4.	Put the cream cheese in the top drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_079	Put the cream cheese in the middle drawer of the white cabinet in Scene 4.	Put the cream cheese in the middle drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_080	Put the cream cheese in the bottom drawer of the white cabinet in Scene 4.	Put the cream cheese in the bottom drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_081	Put the butter in the top drawer of the white cabinet in Scene 4.	Put the butter in the top drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_082	Put the butter in the middle drawer of the white cabinet in Scene 4.	Put the butter in the middle drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_083	Put the butter in the bottom drawer of the white cabinet in Scene 4.	Put the butter in the bottom drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_084	Put the chocolate pudding in the top drawer of the white cabinet in Scene 4.	Put the chocolate pudding in the top drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_085	Put the chocolate pudding in the middle drawer of the white cabinet in Scene 4.	Put the chocolate pudding in the middle drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_086	Put the chocolate pudding in the bottom drawer of the white cabinet in Scene 4.	Put the chocolate pudding in the bottom drawer of the white cabinet.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_087	Put the alphabet soup on the left front plate.	Put the alphabet soup on the left front plate.	PASS	
+ADAPT_088	Put the alphabet soup on the right front plate.	Put the alphabet soup on the right front plate.	PASS	
+ADAPT_089	Put the cream cheese on the left front plate.	Put the cream cheese on the left front plate.	PASS	
+ADAPT_090	Put the cream cheese on the right front plate.	Put the cream cheese on the right front plate.	PASS	
+ADAPT_091	Put the salad dressing on the left front plate.	Put the salad dressing on the left front plate.	PASS	
+ADAPT_092	Put the salad dressing on the right front plate.	Put the salad dressing on the right front plate.	PASS	
+ADAPT_093	Put the bbq sauce on the left front plate.	Put the bbq sauce on the left front plate.	PASS	
+ADAPT_094	Put the bbq sauce on the right front plate.	Put the bbq sauce on the right front plate.	PASS	
+ADAPT_095	Put the ketchup on the left front plate.	Put the ketchup on the left front plate.	PASS	
+ADAPT_096	Put the ketchup on the right front plate.	Put the ketchup on the right front plate.	PASS	
+ADAPT_097	Put the tomato sauce on the left front plate.	Put the tomato sauce on the left front plate.	PASS	
+ADAPT_098	Put the tomato sauce on the right front plate.	Put the tomato sauce on the right front plate.	PASS	
+ADAPT_099	Put the butter on the left front plate.	Put the butter on the left front plate.	PASS	
+ADAPT_100	Put the butter on the right front plate.	Put the butter on the right front plate.	PASS	
+ADAPT_101	Put the milk on the left front plate.	Put the milk on the left front plate.	PASS	
+ADAPT_102	Put the milk on the right front plate.	Put the milk on the right front plate.	PASS	
+ADAPT_103	Put the chocolate pudding on the left front plate.	Put the chocolate pudding on the left front plate.	PASS	
+ADAPT_104	Put the chocolate pudding on the right front plate.	Put the chocolate pudding on the right front plate.	PASS	
+ADAPT_105	Put the orange juice on the left front plate.	Put the orange juice on the left front plate.	PASS	
+ADAPT_106	Put the orange juice on the right front plate.	Put the orange juice on the right front plate.	PASS	
+ADAPT_107	Put the white mug on the left front plate.	Put the white mug on the left front plate.	PASS	
+ADAPT_108	Put the white mug on the right front plate.	Put the white mug on the right front plate.	PASS	
+ADAPT_109	Put the yellow and white mug on the left front plate.	Put the yellow and white mug on the left front plate.	PASS	
+ADAPT_110	Put the yellow and white mug on the right front plate.	Put the yellow and white mug on the right front plate.	PASS	
+ADAPT_111	Put the red mug on the left front plate.	Put the red mug on the left front plate.	PASS	
+ADAPT_112	Put the red mug on the right front plate.	Put the red mug on the right front plate.	PASS	
+ADAPT_113	Put the alphabet soup in the back compartment of the caddy.	Put the alphabet soup in the back compartment of the caddy.	PASS	
+ADAPT_114	Put the alphabet soup in the front compartment of the caddy.	Put the alphabet soup in the front compartment of the caddy.	PASS	
+ADAPT_115	Put the alphabet soup in the left compartment of the caddy.	Put the alphabet soup in the left compartment of the caddy.	PASS	
+ADAPT_116	Put the alphabet soup in the right compartment of the caddy.	Put the alphabet soup in the right compartment of the caddy.	PASS	
+ADAPT_117	Put the salad dressing in the back compartment of the caddy.	Put the salad dressing in the back compartment of the caddy.	PASS	
+ADAPT_118	Put the salad dressing in the front compartment of the caddy.	Put the salad dressing in the front compartment of the caddy.	PASS	
+ADAPT_119	Put the salad dressing in the left compartment of the caddy.	Put the salad dressing in the left compartment of the caddy.	PASS	
+ADAPT_120	Put the salad dressing in the right compartment of the caddy.	Put the salad dressing in the right compartment of the caddy.	PASS	
+ADAPT_121	Put the bbq sauce in the back compartment of the caddy.	Put the bbq sauce in the back compartment of the caddy.	PASS	
+ADAPT_122	Put the bbq sauce in the front compartment of the caddy.	Put the bbq sauce in the front compartment of the caddy.	PASS	
+ADAPT_123	Put the bbq sauce in the left compartment of the caddy.	Put the bbq sauce in the left compartment of the caddy.	PASS	
+ADAPT_124	Put the bbq sauce in the right compartment of the caddy.	Put the bbq sauce in the right compartment of the caddy.	PASS	
+ADAPT_125	Put the ketchup in the back compartment of the caddy.	Put the ketchup in the back compartment of the caddy.	PASS	
+ADAPT_126	Put the ketchup in the front compartment of the caddy.	Put the ketchup in the front compartment of the caddy.	PASS	
+ADAPT_127	Put the ketchup in the left compartment of the caddy.	Put the ketchup in the left compartment of the caddy.	PASS	
+ADAPT_128	Put the ketchup in the right compartment of the caddy.	Put the ketchup in the right compartment of the caddy.	PASS	
+ADAPT_129	Put the tomato sauce in the back compartment of the caddy.	Put the tomato sauce in the back compartment of the caddy.	PASS	
+ADAPT_130	Put the tomato sauce in the front compartment of the caddy.	Put the tomato sauce in the front compartment of the caddy.	PASS	
+ADAPT_131	Put the tomato sauce in the left compartment of the caddy.	Put the tomato sauce in the left compartment of the caddy.	PASS	
+ADAPT_132	Put the tomato sauce in the right compartment of the caddy.	Put the tomato sauce in the right compartment of the caddy.	PASS	
+ADAPT_133	Put the butter in the back compartment of the caddy.	Put the butter in the back compartment of the caddy.	PASS	
+ADAPT_134	Put the butter in the front compartment of the caddy.	Put the butter in the front compartment of the caddy.	PASS	
+ADAPT_135	Put the butter in the left compartment of the caddy.	Put the butter in the left compartment of the caddy.	PASS	
+ADAPT_136	Put the butter in the right compartment of the caddy.	Put the butter in the right compartment of the caddy.	PASS	
+ADAPT_137	Put the chocolate pudding in the back compartment of the caddy.	Put the chocolate pudding in the back compartment of the caddy.	PASS	
+ADAPT_138	Put the chocolate pudding in the front compartment of the caddy.	Put the chocolate pudding in the front compartment of the caddy.	PASS	
+ADAPT_139	Put the chocolate pudding in the left compartment of the caddy.	Put the chocolate pudding in the left compartment of the caddy.	PASS	
+ADAPT_140	Put the chocolate pudding in the right compartment of the caddy.	Put the chocolate pudding in the right compartment of the caddy.	PASS	
+ADAPT_141	Put the orange juice in the back compartment of the caddy.	Put the orange juice in the back compartment of the caddy.	PASS	
+ADAPT_142	Put the orange juice in the front compartment of the caddy.	Put the orange juice in the front compartment of the caddy.	PASS	
+ADAPT_143	Put the orange juice in the left compartment of the caddy.	Put the orange juice in the left compartment of the caddy.	PASS	
+ADAPT_144	Put the orange juice in the right compartment of the caddy.	Put the orange juice in the right compartment of the caddy.	PASS	
+ADAPT_145	Put the book in the front compartment of the caddy.	Put the book in the front compartment of the caddy.	PASS	
+ADAPT_146	Put the book in the left compartment of the caddy.	Put the book in the left compartment of the caddy.	PASS	
+ADAPT_147	Put the book in the right compartment of the caddy.	Put the book in the right compartment of the caddy.	PASS	
+ADAPT_148	Put the white mug in the back compartment of the caddy.	Put the white mug in the back compartment of the caddy.	PASS	
+ADAPT_149	Put the white mug in the front compartment of the caddy.	Put the white mug in the front compartment of the caddy.	PASS	
+ADAPT_150	Put the white mug in the left compartment of the caddy.	Put the white mug in the left compartment of the caddy.	PASS	
+ADAPT_151	Put the white mug in the right compartment of the caddy.	Put the white mug in the right compartment of the caddy.	PASS	
+ADAPT_152	Put the yellow and white mug in the back compartment of the caddy.	Put the yellow and white mug in the back compartment of the caddy.	PASS	
+ADAPT_153	Put the yellow and white mug in the front compartment of the caddy.	Put the yellow and white mug in the front compartment of the caddy.	PASS	
+ADAPT_154	Put the yellow and white mug in the right compartment of the caddy.	Put the yellow and white mug in the right compartment of the caddy.	PASS	
+ADAPT_155	Put the alphabet soup to the left of the plate.	Put the alphabet soup to the left of the plate.	PASS	
+ADAPT_156	Put the alphabet soup to the right of the plate.	Put the alphabet soup to the right of the plate.	PASS	
+ADAPT_157	Put the cream cheese to the left of the plate.	Put the cream cheese to the left of the plate.	PASS	
+ADAPT_158	Put the cream cheese to the right of the plate.	Put the cream cheese to the right of the plate.	PASS	
+ADAPT_159	Put the salad dressing to the left of the plate.	Put the salad dressing to the left of the plate.	PASS	
+ADAPT_160	Put the salad dressing to the right of the plate.	Put the salad dressing to the right of the plate.	PASS	
+ADAPT_161	Put the bbq sauce to the left of the plate.	Put the bbq sauce to the left of the plate.	PASS	
+ADAPT_162	Put the bbq sauce to the right of the plate.	Put the bbq sauce to the right of the plate.	PASS	
+ADAPT_163	Put the ketchup to the left of the plate.	Put the ketchup to the left of the plate.	PASS	
+ADAPT_164	Put the ketchup to the right of the plate.	Put the ketchup to the right of the plate.	PASS	
+ADAPT_165	Put the tomato sauce to the left of the plate.	Put the tomato sauce to the left of the plate.	PASS	
+ADAPT_166	Put the tomato sauce to the right of the plate.	Put the tomato sauce to the right of the plate.	PASS	
+ADAPT_167	Put the butter to the left of the plate.	Put the butter to the left of the plate.	PASS	
+ADAPT_168	Put the butter to the right of the plate.	Put the butter to the right of the plate.	PASS	
+ADAPT_169	Put the milk to the left of the plate.	Put the milk to the left of the plate.	PASS	
+ADAPT_170	Put the milk to the right of the plate.	Put the milk to the right of the plate.	PASS	
+ADAPT_171	Put the chocolate pudding to the left of the plate.	Put the chocolate pudding to the left of the plate.	PASS	
+ADAPT_172	Put the chocolate pudding to the right of the plate.	Put the chocolate pudding to the right of the plate.	PASS	
+ADAPT_173	Put the orange juice to the left of the plate.	Put the orange juice to the left of the plate.	PASS	
+ADAPT_174	Put the orange juice to the right of the plate.	Put the orange juice to the right of the plate.	PASS	
+ADAPT_175	Put the white mug to the left of the plate.	Put the white mug to the left of the plate.	PASS	
+ADAPT_176	Put the white mug to the right of the plate.	Put the white mug to the right of the plate.	PASS	
+ADAPT_177	Put the yellow and white mug to the left of the plate.	Put the yellow and white mug to the left of the plate.	PASS	
+ADAPT_178	Put the yellow and white mug to the right of the plate.	Put the yellow and white mug to the right of the plate.	PASS	
+ADAPT_179	Turn on the stove in the two-moka-pot LIBERO-10 layout.	Turn on the stove.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_180	Put the alphabet soup in the right-side microwave.	Put the alphabet soup in the microwave.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_181	Put the cream cheese in the right-side microwave.	Put the cream cheese in the microwave.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_182	Put the salad dressing in the right-side microwave.	Put the salad dressing in the microwave.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_183	Put the bbq sauce in the right-side microwave.	Put the bbq sauce in the microwave.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_184	Put the ketchup in the right-side microwave.	Put the ketchup in the microwave.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_185	Put the tomato sauce in the right-side microwave.	Put the tomato sauce in the microwave.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_186	Put the butter in the right-side microwave.	Put the butter in the microwave.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_187	Put the milk in the right-side microwave.	Put the milk in the microwave.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_188	Put the chocolate pudding in the right-side microwave.	Put the chocolate pudding in the microwave.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_189	Put the orange juice in the right-side microwave.	Put the orange juice in the microwave.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_190	Put the white mug in the right-side microwave.	Put the white mug in the microwave.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_191	Put the yellow and white mug in the right-side microwave.	Put the yellow and white mug in the microwave.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.
+ADAPT_192	Close the door of the right-side microwave.	Close the microwave door.	REWRITE_AND_REEVALUATE_IF_SELECTED	The evaluated bundle is preserved; changing policy language requires reevaluation.

@@ -1,0 +1,67 @@
+task_count: 74
+sequential_ids: true
+id_range:
+- ADAPTX_001
+- ADAPTX_074
+family_counts:
+  X1_long_to_goal_plate: 2
+  X2_long_to_goal_stove: 1
+  X3_long_to_goal_drawer: 2
+  X4_long_to_goal_caddy: 2
+  X5_long_to_goal_microwave: 2
+  X6_long_to_spatial_plate: 20
+  X7_long_to_spatial_stove: 9
+  X8_long_to_spatial_close: 6
+  X9_long_to_object_basket: 30
+unique_physical_init_goal_signatures: 74
+exact_existing_adapt192_duplicates: 0
+exact_original_libero40_duplicates: 0
+exact_final_decomposition20_duplicates: 0
+single_goal_per_task: true
+init_states_per_task: 5
+current_simulator_exact_mask_validation: true
+per_state_mask_repair:
+  task_id: ADAPTX_010
+  reason: original state 1 had zero visible pixels for both manipulated object and destination
+  replacement_states_validated: 5
+  all_replacement_states_initial_goal_false: true
+  audit: tasks/adaptx_010__put_the_white_mug_on_the_plate/INIT_MASK_AUDIT_FINAL.json
+microwave_door_only: true
+build_gpus:
+- 2
+- 3
+policy_inference_run: true
+evaluation_protocol:
+  tasks: 74
+  episodes_per_task: 5
+  episodes: 370
+  physical_gpus:
+  - 2
+  - 3
+  successes: 158
+  success_rate_percent: 42.7
+  tasks_with_success: 46
+  success_videos: 158
+  result_root: /home/jovyan/drlee/code_backup/VLM_evaluation/results/rain_ms_maskaug_gt_libero_adapt_cross_suite_5ep_gpu23_20260904
+rollout_mask_audit:
+  tasks: 74
+  episodes: 370
+  unique_task_episode_keys: 370
+  physical_gpus:
+  - 2
+  - 3
+  success_video_cap_per_task: 5
+  success_video_count: 158
+  failure_video_count: 0
+  active_mask_source_counts:
+    sim_missing: 248
+    sim_seg: 16934
+  place_mask_source_counts:
+    none: 10980
+    sim_seg: 6202
+  json_fallback_mask_sources: 0
+  visibility_missing_active_frames: 248
+final_exact_overlap_counts:
+  existing_adapt192: 0
+  original_libero40: 0
+  final_decomposition20: 0

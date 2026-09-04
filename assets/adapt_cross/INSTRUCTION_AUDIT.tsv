@@ -1,0 +1,75 @@
+task_id	family	instruction	status	reason
+ADAPTX_001	X1_long_to_goal_plate	Put the white mug on the plate.	PASS	
+ADAPTX_002	X1_long_to_goal_plate	Put the yellow and white mug on the plate.	PASS	
+ADAPTX_003	X2_long_to_goal_stove	Put the moka pot on the stove.	PASS	
+ADAPTX_004	X3_long_to_goal_drawer	Put the yellow and white mug in the bottom drawer of the wooden cabinet.	PASS	
+ADAPTX_005	X3_long_to_goal_drawer	Close the bottom drawer of the wooden cabinet.	PASS	
+ADAPTX_006	X4_long_to_goal_caddy	Put the book in the back compartment of the caddy.	PASS	
+ADAPTX_007	X4_long_to_goal_caddy	Put the book in the left compartment of the caddy.	PASS	
+ADAPTX_008	X5_long_to_goal_microwave	Put the yellow and white mug in the microwave.	PASS	
+ADAPTX_009	X5_long_to_goal_microwave	Close the microwave door.	PASS	
+ADAPTX_010	X6_long_to_spatial_plate	Put the white mug on the plate.	PASS	
+ADAPTX_011	X6_long_to_spatial_plate	Put the yellow and white mug on the plate.	PASS	
+ADAPTX_012	X7_long_to_spatial_stove	Put the moka pot on the stove.	PASS	
+ADAPTX_013	X6_long_to_spatial_plate	Put the white mug on the plate.	PASS	
+ADAPTX_014	X6_long_to_spatial_plate	Put the yellow and white mug on the plate.	PASS	
+ADAPTX_015	X7_long_to_spatial_stove	Put the moka pot on the stove.	PASS	
+ADAPTX_016	X6_long_to_spatial_plate	Put the white mug on the plate.	PASS	
+ADAPTX_017	X6_long_to_spatial_plate	Put the yellow and white mug on the plate.	PASS	
+ADAPTX_018	X7_long_to_spatial_stove	Put the moka pot on the stove.	PASS	
+ADAPTX_019	X6_long_to_spatial_plate	Put the white mug on the plate.	PASS	
+ADAPTX_020	X6_long_to_spatial_plate	Put the yellow and white mug on the plate.	PASS	
+ADAPTX_021	X7_long_to_spatial_stove	Put the moka pot on the stove.	PASS	
+ADAPTX_022	X6_long_to_spatial_plate	Put the white mug on the plate.	PASS	
+ADAPTX_023	X6_long_to_spatial_plate	Put the yellow and white mug on the plate.	PASS	
+ADAPTX_024	X7_long_to_spatial_stove	Put the moka pot on the stove.	PASS	
+ADAPTX_025	X6_long_to_spatial_plate	Put the white mug on the plate.	PASS	
+ADAPTX_026	X6_long_to_spatial_plate	Put the yellow and white mug on the plate.	PASS	
+ADAPTX_027	X7_long_to_spatial_stove	Put the moka pot on the stove.	PASS	
+ADAPTX_028	X6_long_to_spatial_plate	Put the white mug on the plate.	PASS	
+ADAPTX_029	X6_long_to_spatial_plate	Put the yellow and white mug on the plate.	PASS	
+ADAPTX_030	X7_long_to_spatial_stove	Put the moka pot on the stove.	PASS	
+ADAPTX_031	X6_long_to_spatial_plate	Put the white mug on the plate.	PASS	
+ADAPTX_032	X6_long_to_spatial_plate	Put the yellow and white mug on the plate.	PASS	
+ADAPTX_033	X6_long_to_spatial_plate	Put the white mug on the plate.	PASS	
+ADAPTX_034	X6_long_to_spatial_plate	Put the yellow and white mug on the plate.	PASS	
+ADAPTX_035	X7_long_to_spatial_stove	Put the moka pot on the stove.	PASS	
+ADAPTX_036	X6_long_to_spatial_plate	Put the white mug on the plate.	PASS	
+ADAPTX_037	X6_long_to_spatial_plate	Put the yellow and white mug on the plate.	PASS	
+ADAPTX_038	X7_long_to_spatial_stove	Put the moka pot on the stove.	PASS	
+ADAPTX_039	X8_long_to_spatial_close	Close the bottom drawer of the wooden cabinet.	PASS	
+ADAPTX_040	X8_long_to_spatial_close	Close the bottom drawer of the wooden cabinet.	PASS	
+ADAPTX_041	X8_long_to_spatial_close	Close the bottom drawer of the wooden cabinet.	PASS	
+ADAPTX_042	X8_long_to_spatial_close	Close the bottom drawer of the wooden cabinet.	PASS	
+ADAPTX_043	X8_long_to_spatial_close	Close the bottom drawer of the wooden cabinet.	PASS	
+ADAPTX_044	X8_long_to_spatial_close	Close the bottom drawer of the wooden cabinet.	PASS	
+ADAPTX_045	X9_long_to_object_basket	Pick the white mug and place it in the basket.	PASS	
+ADAPTX_046	X9_long_to_object_basket	Pick the yellow and white mug and place it in the basket.	PASS	
+ADAPTX_047	X9_long_to_object_basket	Pick the book and place it in the basket.	PASS	
+ADAPTX_048	X9_long_to_object_basket	Pick the white mug and place it in the basket.	PASS	
+ADAPTX_049	X9_long_to_object_basket	Pick the yellow and white mug and place it in the basket.	PASS	
+ADAPTX_050	X9_long_to_object_basket	Pick the book and place it in the basket.	PASS	
+ADAPTX_051	X9_long_to_object_basket	Pick the white mug and place it in the basket.	PASS	
+ADAPTX_052	X9_long_to_object_basket	Pick the yellow and white mug and place it in the basket.	PASS	
+ADAPTX_053	X9_long_to_object_basket	Pick the book and place it in the basket.	PASS	
+ADAPTX_054	X9_long_to_object_basket	Pick the white mug and place it in the basket.	PASS	
+ADAPTX_055	X9_long_to_object_basket	Pick the yellow and white mug and place it in the basket.	PASS	
+ADAPTX_056	X9_long_to_object_basket	Pick the book and place it in the basket.	PASS	
+ADAPTX_057	X9_long_to_object_basket	Pick the white mug and place it in the basket.	PASS	
+ADAPTX_058	X9_long_to_object_basket	Pick the yellow and white mug and place it in the basket.	PASS	
+ADAPTX_059	X9_long_to_object_basket	Pick the book and place it in the basket.	PASS	
+ADAPTX_060	X9_long_to_object_basket	Pick the white mug and place it in the basket.	PASS	
+ADAPTX_061	X9_long_to_object_basket	Pick the yellow and white mug and place it in the basket.	PASS	
+ADAPTX_062	X9_long_to_object_basket	Pick the book and place it in the basket.	PASS	
+ADAPTX_063	X9_long_to_object_basket	Pick the white mug and place it in the basket.	PASS	
+ADAPTX_064	X9_long_to_object_basket	Pick the yellow and white mug and place it in the basket.	PASS	
+ADAPTX_065	X9_long_to_object_basket	Pick the book and place it in the basket.	PASS	
+ADAPTX_066	X9_long_to_object_basket	Pick the white mug and place it in the basket.	PASS	
+ADAPTX_067	X9_long_to_object_basket	Pick the yellow and white mug and place it in the basket.	PASS	
+ADAPTX_068	X9_long_to_object_basket	Pick the book and place it in the basket.	PASS	
+ADAPTX_069	X9_long_to_object_basket	Pick the white mug and place it in the basket.	PASS	
+ADAPTX_070	X9_long_to_object_basket	Pick the yellow and white mug and place it in the basket.	PASS	
+ADAPTX_071	X9_long_to_object_basket	Pick the book and place it in the basket.	PASS	
+ADAPTX_072	X9_long_to_object_basket	Pick the white mug and place it in the basket.	PASS	
+ADAPTX_073	X9_long_to_object_basket	Pick the yellow and white mug and place it in the basket.	PASS	
+ADAPTX_074	X9_long_to_object_basket	Pick the book and place it in the basket.	PASS	

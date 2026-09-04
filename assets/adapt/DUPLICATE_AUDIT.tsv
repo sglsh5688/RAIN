@@ -1,0 +1,10 @@
+scope	adapt_task_ids	matched_task	status	detail
+Final Decomposition20 exact BDDL	ADAPT_172	tdl10_004__put_the_chocolate_pudding_to_the_right_of_the_plate	duplicate	identical physical init and goal
+Final Decomposition20 exact BDDL	ADAPT_077	tdl10_016__close_the_bottom_drawer_of_the_cabinet	duplicate	identical physical init and goal
+Older LiberoExReFinal60 exact BDDL	ADAPT_172	tdl10_004__put_the_chocolate_pudding_to_the_right_of_the_plate	duplicate	identical physical init and goal
+Older LiberoExReFinal60 exact BDDL	ADAPT_077	tdl10_016__close_the_bottom_drawer_of_the_cabinet	duplicate	identical physical init and goal
+Older LiberoExReFinal60 exact BDDL	ADAPT_075	ula3_044__close_the_top_drawer_of_the_cabinet	duplicate	identical physical init and goal
+Older LiberoExReFinal60 exact BDDL	ADAPT_068	ula3_041__put_the_black_bowl_in_the_middle_drawer_of_the_cabinet	duplicate	identical physical init and goal
+Older LiberoExReFinal60 exact BDDL	ADAPT_076	ula3_042__close_the_middle_drawer_of_the_cabinet	duplicate	identical physical init and goal
+Original LIBERO-40 strict-goal-subset category	ADAPT_077	KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it	Decomposition overlap	same physical init; Adapt goal is a strict subset of source goal
+Original LIBERO-40 strict-goal-subset category	ADAPT_172	LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate	Decomposition overlap	same physical init; Adapt goal is a strict subset of source goal

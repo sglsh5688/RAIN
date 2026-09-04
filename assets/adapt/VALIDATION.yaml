@@ -47,3 +47,10 @@ policy_inference_physical_gpus:
 - 2
 - 3
 policy_inference_json_fallback_mask_sources: 0
+provenance_audit_complete: true
+provenance_audited_tasks: 192
+comparison_pngs_with_separate_skill_and_scene_roles: 192
+exact_internal_duplicate_groups: 0
+exact_original_libero40_full_task_duplicates: 0
+exact_final_decomposition20_overlaps: 2
+manual_review_no_direct_manipulation_source: 2

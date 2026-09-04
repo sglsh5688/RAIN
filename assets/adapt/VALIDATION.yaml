@@ -1,0 +1,38 @@
+task_count: 192
+sequential_ids: true
+id_range:
+- ADAPT_001
+- ADAPT_192
+selected_seed_count: 9
+family_counts:
+  A0_selected_seed__E1_clean_exact_instance_three_targets: 2
+  A0_selected_seed__E2_sibling_part_or_compartment: 3
+  A0_selected_seed__S4_spatial_source_object_binding: 1
+  A0_selected_seed__G3_goal_object_to_cabinet_top: 1
+  A0_selected_seed__G6_goal_object_to_sibling_drawer: 1
+  A0_selected_seed__L3_libero10_caddy_object_compartment: 1
+  A1_object_lateral_mirror: 10
+  A2_spatial_scene_stove_control: 10
+  A2_spatial_source_to_drawer_sibling: 15
+  A2_spatial_context_drawer_action: 18
+  A3_libero10_scene4_learned_destination: 4
+  A3_libero10_scene4_object_drawer: 5
+  A3_libero10_scene4_atomic_drawer_action: 6
+  A3_libero10_scene4_package_drawer: 9
+  A4_libero10_scene5_front_plate_binding: 26
+  A5_libero10_caddy_object_compartment: 42
+  A6_libero10_scene6_relative_region: 24
+  A7_libero10_scene8_stove_control: 1
+  A8_libero10_mirrored_microwave_insert: 12
+  A8_libero10_mirrored_microwave_close: 1
+unique_physical_init_goal_signatures: 192
+exact_original_libero40_duplicates_outside_locked_seeds: 0
+single_goal_per_task: true
+init_states_per_task: 5
+build_gpus:
+- 2
+- 3
+current_simulator_exact_mask_validation: true
+stove_knob_only: true
+microwave_door_only: true
+policy_inference_run: false

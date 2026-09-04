@@ -17,3 +17,9 @@ Open `index.html`, or enable GitHub Pages for this repository root.
 Comparison previews use shared sprite sheets to stay below Anonymous GitHub's 350 requests per 15 minutes limit. Full-resolution PNGs and videos load only when explicitly opened or played.
 
 No checkpoints are included. Stove turn actions use knob-only GT masks.
+
+<!-- ADAPT_README_START -->
+- `adapt192/`: all 192 evaluated atomic Adapt candidates (960 episodes)
+- `adapt_success/`: Adapt candidates with at least one success (50 tasks, 151 successful episodes)
+- Adapt media policy: 20 previews per JPEG sprite, one on-demand video player, and one concatenated success reel per task; `preload=none` prevents eager video requests.
+<!-- ADAPT_README_END -->

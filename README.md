@@ -14,6 +14,6 @@ Open `index.html`, or enable GitHub Pages for this repository root.
 - `composition_failures/`: one representative failure video for every Composition task
 - `composition_two_step/`: 49 failed three-step tasks with simultaneous two-goal diagnostic evidence; not an independent two-step evaluation
 
-PNG and video assets are loaded only after an explicit per-task click to stay below Anonymous GitHub's 350 requests per 15 minutes limit.
+Comparison previews use shared sprite sheets to stay below Anonymous GitHub's 350 requests per 15 minutes limit. Full-resolution PNGs and videos load only when explicitly opened or played.
 
 No checkpoints are included. Stove turn actions use knob-only GT masks.

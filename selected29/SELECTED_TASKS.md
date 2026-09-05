@@ -1,8 +1,8 @@
 # Selected LIBERO-EX tasks
 
-Selection: 2026-09-05. Exactly 20 finalized Decomposition tasks, the nine explicitly selected ANLGX IDs, and the two confirmed Compose IDs COMP2_001 and COMP2_012. No reevaluation was performed for this collection.
+Selection: 2026-09-05. Exactly 20 finalized Decomposition tasks, 11 Adapt tasks (nine ANLGX plus OGTS_001 and OGTS_010), and the two confirmed Compose IDs COMP2_001 and COMP2_012. No reevaluation was performed for this collection.
 
-Adapt retains the selected ANLGX ID, definition, evaluation and success videos. ADAPT_001–009 are matching task definitions with a separate five-episode rerun. Historical metadata may still call the source category Analogy; the collection category is Adapt.
+Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt.
 
 Compose retains the original Composition2Step task definition, five-episode evaluation, masked comparison and saved success videos.
 
@@ -12,7 +12,7 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 
 ## Decomposition
 
-| Task ID | Alias | Recorded instruction | Recorded SR | Later Adapt SR |
+| Task ID | Alias | Recorded instruction | Primary recorded SR | Additional recorded SR |
 |---|---|---|---|---|
 | TDL10_001 | DECOMP_001 | Put the white mug on the left plate. | 33/50 (66.0%) | — |
 | TDL10_002 | DECOMP_002 | Put the yellow and white mug on the right plate. | 50/50 (100.0%) | — |
@@ -37,21 +37,23 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 
 ## Adapt
 
-| Task ID | Alias | Recorded instruction | Recorded SR | Later Adapt SR |
+| Task ID | Alias | Recorded instruction | Primary recorded SR | Additional recorded SR |
 |---|---|---|---|---|
-| ANLGX_002 | ADAPT_001 | Put the white mug on the middle plate. | 4/5 (80.0%) | 3/5 (60.0%) |
-| ANLGX_003 | ADAPT_002 | Put the white mug on the right plate. | 3/5 (60.0%) | 3/5 (60.0%) |
-| ANLGX_017 | ADAPT_003 | Put the black bowl in the middle drawer of the white cabinet. | 5/5 (100.0%) | 5/5 (100.0%) |
-| ANLGX_022 | ADAPT_004 | Close the top drawer of the white cabinet. | 4/5 (80.0%) | 3/5 (60.0%) |
-| ANLGX_023 | ADAPT_005 | Close the middle drawer of the white cabinet. | 4/5 (80.0%) | 5/5 (100.0%) |
-| ANLGX_089 | ADAPT_006 | Pick up the wine bottle at the table center and place it on the plate. | 3/5 (60.0%) | 3/5 (60.0%) |
-| ANLGX_134 | ADAPT_007 | Put the plate on the top of the wooden cabinet. | 1/5 (20.0%) | 0/5 (0.0%) |
-| ANLGX_147 | ADAPT_008 | Put the cream cheese in the top drawer of the wooden cabinet. | 3/5 (60.0%) | 3/5 (60.0%) |
-| ANLGX_178 | ADAPT_009 | Put the yellow and white mug in the left compartment of the caddy. | 3/5 (60.0%) | 1/5 (20.0%) |
+| ANLGX_002 | ADAPT_001 | Put the white mug on the middle plate. | 4/5 (80.0%) | Later ADAPT_001: 3/5 (60.0%) |
+| ANLGX_003 | ADAPT_002 | Put the white mug on the right plate. | 3/5 (60.0%) | Later ADAPT_002: 3/5 (60.0%) |
+| ANLGX_017 | ADAPT_003 | Put the black bowl in the middle drawer of the white cabinet. | 5/5 (100.0%) | Later ADAPT_003: 5/5 (100.0%) |
+| ANLGX_022 | ADAPT_004 | Close the top drawer of the white cabinet. | 4/5 (80.0%) | Later ADAPT_004: 3/5 (60.0%) |
+| ANLGX_023 | ADAPT_005 | Close the middle drawer of the white cabinet. | 4/5 (80.0%) | Later ADAPT_005: 5/5 (100.0%) |
+| ANLGX_089 | ADAPT_006 | Pick up the wine bottle at the table center and place it on the plate. | 3/5 (60.0%) | Later ADAPT_006: 3/5 (60.0%) |
+| ANLGX_134 | ADAPT_007 | Put the plate on the top of the wooden cabinet. | 1/5 (20.0%) | Later ADAPT_007: 0/5 (0.0%) |
+| ANLGX_147 | ADAPT_008 | Put the cream cheese in the top drawer of the wooden cabinet. | 3/5 (60.0%) | Later ADAPT_008: 3/5 (60.0%) |
+| ANLGX_178 | ADAPT_009 | Put the yellow and white mug in the left compartment of the caddy. | 3/5 (60.0%) | Later ADAPT_009: 1/5 (20.0%) |
+| OGTS_001 | OGTS_001 | Pick the alphabet soup and place it in the basket | 48/50 (96.0%) | Earlier PositionSwap 5ep: 4/5 (80.0%) |
+| OGTS_010 | OGTS_010 | Pick the orange juice and place it in the basket | 26/50 (52.0%) | Earlier PositionSwap 5ep: 4/5 (80.0%) |
 
 ## Compose
 
-| Task ID | Alias | Recorded instruction | Recorded SR | Later Adapt SR |
+| Task ID | Alias | Recorded instruction | Primary recorded SR | Additional recorded SR |
 |---|---|---|---|---|
 | COMP2_001 | COMP2_001 | Put the cream cheese on the black bowl, and then open the middle drawer of the cabinet. | 2/5 (40.0%) | — |
 | COMP2_012 | COMP2_012 | Put the butter in the basket, and then put the tomato sauce in the basket. | 5/5 (100.0%) | — |

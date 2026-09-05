@@ -7,6 +7,12 @@
   "tasks_with_success": 7,
   "successful_episodes": 15,
   "episode_success_rate_percent": 6.0,
+  "selected_tasks_excluded_from_candidate_success_page": [
+    "OGDTSL_011",
+    "OGDTSL_046"
+  ],
+  "remaining_candidate_success_tasks": 5,
+  "remaining_candidate_successful_episodes": 9,
   "physical_gpus": [
     6
   ],
@@ -62,5 +68,5 @@
       "success_videos": 15
     }
   },
-  "validated_at_utc": "2026-09-05T08:03:51.615659+00:00"
+  "validated_at_utc": "2026-09-05T08:16:13.238931+00:00"
 }

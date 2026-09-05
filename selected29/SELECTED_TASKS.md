@@ -1,8 +1,8 @@
 # Selected LIBERO-EX tasks
 
-Selection: 2026-09-05. Exactly 20 finalized Decomposition tasks, 11 Adapt tasks (nine ANLGX plus OGTS_001 and OGTS_010), and the two confirmed Compose IDs COMP2_001 and COMP2_012. No reevaluation was performed for this collection.
+Selection: 2026-09-05. Exactly 20 finalized Decomposition tasks, 13 Adapt tasks (nine ANLGX, OGTS_001, OGTS_010, OGDTSL_011, and OGDTSL_046), and the two confirmed Compose IDs COMP2_001 and COMP2_012. No reevaluation was performed for this collection.
 
-Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt.
+Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. OGDTSL_011 and OGDTSL_046 retain their original Adapt Object five-episode evaluations. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt.
 
 Compose retains the original Composition2Step task definition, five-episode evaluation, masked comparison and saved success videos.
 
@@ -50,6 +50,8 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 | ANLGX_178 | ADAPT_009 | Put the yellow and white mug in the left compartment of the caddy. | 3/5 (60.0%) | Later ADAPT_009: 1/5 (20.0%) |
 | OGTS_001 | OGTS_001 | Pick the alphabet soup and place it in the basket | 48/50 (96.0%) | Earlier PositionSwap 5ep: 4/5 (80.0%) |
 | OGTS_010 | OGTS_010 | Pick the orange juice and place it in the basket | 26/50 (52.0%) | Earlier PositionSwap 5ep: 4/5 (80.0%) |
+| OGDTSL_011 | OGDTSL_011 | Pick the tomato sauce and place it in the basket | 4/5 (80.0%) | — |
+| OGDTSL_046 | OGDTSL_046 | Pick the milk and place it in the basket | 2/5 (40.0%) | — |
 
 ## Compose
 

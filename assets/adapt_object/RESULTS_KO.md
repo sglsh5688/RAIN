@@ -11,15 +11,15 @@
 
 ## 성공한 task
 
-| Task | 원본 scene | 원본 target → 새 target | 성공 | 성공 episode | Instruction |
-|---|---|---|---:|---|---|
-| `OGDTSL_006` | `LIBERO_OBJECT_04` | bbq sauce → chocolate pudding | 2/5 (40.0%) | 1,4 | Pick the chocolate pudding and place it in the basket |
-| `OGDTSL_011` | `LIBERO_OBJECT_07` | butter → tomato sauce | 4/5 (80.0%) | 0,2,3,4 | Pick the tomato sauce and place it in the basket |
-| `OGDTSL_016` | `LIBERO_OBJECT_09` | chocolate pudding → orange juice | 1/5 (20.0%) | 1 | Pick the orange juice and place it in the basket |
-| `OGDTSL_021` | `LIBERO_OBJECT_02` | cream cheese → alphabet soup | 2/5 (40.0%) | 0,2 | Pick the alphabet soup and place it in the basket |
-| `OGDTSL_031` | `LIBERO_OBJECT_08` | milk → cream cheese | 3/5 (60.0%) | 1,2,3 | Pick the cream cheese and place it in the basket |
-| `OGDTSL_036` | `LIBERO_OBJECT_10` | orange juice → butter | 1/5 (20.0%) | 1 | Pick the butter and place it in the basket |
-| `OGDTSL_046` | `LIBERO_OBJECT_06` | tomato sauce → milk | 2/5 (40.0%) | 1,2 | Pick the milk and place it in the basket |
+| Task | 원본 scene | 원본 target → 새 target | 성공 | 성공 episode | 상태 | Instruction |
+|---|---|---|---:|---|---|---|
+| `OGDTSL_006` | `LIBERO_OBJECT_04` | bbq sauce → chocolate pudding | 2/5 (40.0%) | 1,4 | 후보 | Pick the chocolate pudding and place it in the basket |
+| `OGDTSL_011` | `LIBERO_OBJECT_07` | butter → tomato sauce | 4/5 (80.0%) | 0,2,3,4 | Adapt selected | Pick the tomato sauce and place it in the basket |
+| `OGDTSL_016` | `LIBERO_OBJECT_09` | chocolate pudding → orange juice | 1/5 (20.0%) | 1 | 후보 | Pick the orange juice and place it in the basket |
+| `OGDTSL_021` | `LIBERO_OBJECT_02` | cream cheese → alphabet soup | 2/5 (40.0%) | 0,2 | 후보 | Pick the alphabet soup and place it in the basket |
+| `OGDTSL_031` | `LIBERO_OBJECT_08` | milk → cream cheese | 3/5 (60.0%) | 1,2,3 | 후보 | Pick the cream cheese and place it in the basket |
+| `OGDTSL_036` | `LIBERO_OBJECT_10` | orange juice → butter | 1/5 (20.0%) | 1 | 후보 | Pick the butter and place it in the basket |
+| `OGDTSL_046` | `LIBERO_OBJECT_06` | tomato sauce → milk | 2/5 (40.0%) | 1,2 | Adapt selected | Pick the milk and place it in the basket |
 
 ## 위치별 결과
 

@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 11 Adapt + 2 Compose (33 total)**; category filters, recorded SR, masked comparisons, success reels and downloadable definitions.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 13 Adapt + 2 Compose (35 total)**; category filters, recorded SR, masked comparisons, success reels and downloadable definitions.
 <!-- SELECTED29_README_END -->
 
 Open `index.html`, or enable GitHub Pages for this repository root.
@@ -43,7 +43,7 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 
 <!-- ADAPT_OBJECT_README_START -->
 - `adapt_object50/`: all 50 Adapt Object tasks (10 original Object scenes × 5 alternate targets), 250 original episodes.
-- `adapt_object_success/`: 7 tasks with success, 15 successful episodes.
+- `adapt_object_success/`: 5 unselected tasks with success, 9 successful episodes; OGDTSL_011 and OGDTSL_046 moved to Selected.
 - Every candidate preserves the source physical layout and pruned init states; only language/object-of-interest/goal target changes.
 - Shared preview sprites and one on-demand `preload=none` video player avoid eager media requests.
 <!-- ADAPT_OBJECT_README_END -->

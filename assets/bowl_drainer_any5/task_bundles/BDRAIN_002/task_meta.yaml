@@ -1,0 +1,54 @@
+task_id: BDRAIN_002
+task_name: Pick the cream cheese and place it in either compartment of the bowl drainer.
+language: Pick the cream cheese and place it in either compartment of the bowl drainer.
+primary_category: Adapt
+anchor_suite: libero_object
+source_prior_task_ids:
+- 2
+source_prior_task_stem: pick_up_the_cream_cheese_and_place_it_in_the_basket
+source_prior_description: Pick the cream cheese and place it in the basket
+canonical_goal_atoms:
+- in(cream_cheese_1, bowl_drainer_1_any_compartment_region)
+canonical_task_signature: adapt|F1_object_to_either_bowl_drainer_compartment|object_02_cream_cheese_either_drainer_compartment|in(cream_cheese_1, bowl_drainer_1_any_compartment_region)
+objects_of_interest:
+- cream_cheese_1
+- bowl_drainer_1_any_compartment_region
+held_fixed:
+- complete source Object-suite target and distractor layout
+- destination center and yaw
+- single In goal
+- either native compartment accepted
+varied:
+- replace the learned basket with the two-compartment bowl drainer
+single_semantic_goal: true
+physical_group: object_02_cream_cheese_either_drainer_compartment
+base_bddl_template: local_sources/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl
+base_pruned_init: local_sources/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init
+definition_status: defined_simulator_validated_pending_5ep_eval
+notes:
+- The bowl drainer uses the exact former basket center (0.0, 0.26) and yaw.
+- Success is the logical OR of the unchanged native left_region and right_region predicates.
+- The transparent any_compartment_region is parser bookkeeping only; neither success nor the policy mask includes the divider gap.
+- No installed asset file, collision geometry, or native compartment site is edited.
+adapt_family: F1_object_to_either_bowl_drainer_compartment
+adapt_scope: bowl_drainer_either_compartment_object_transfer
+transfer_summary: The learned object pickup and receptacle-placement trajectory is transferred from the basket to either native bowl-drainer compartment.
+provenance_evidence:
+- task_id: LIBERO_OBJECT_02
+  role: OBJECT PICK-PLACE AND SCENE SOURCE
+  reason: directly demonstrates placing the cream cheese into a receptacle in this exact clutter layout
+critical_objects:
+- cream_cheese_1
+required_init_predicates:
+- - not
+  - - in
+    - cream_cheese_1
+    - bowl_drainer_1_any_compartment_region
+semantic_subtask_count: 1
+raw_candidate_id: BDRAIN_002
+either_compartment_success: true
+accepted_native_regions:
+- bowl_drainer_1_left_region
+- bowl_drainer_1_right_region
+divider_region_accepted: false
+max_steps: 520

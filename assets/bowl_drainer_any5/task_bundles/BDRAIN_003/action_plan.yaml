@@ -1,0 +1,12 @@
+task_id: BDRAIN_003
+steps:
+- action_type: grasp
+  primary_object_id: tomato_sauce_1
+  target_object_id: tomato_sauce_1
+  source_task_id: 6
+  source_task_description: Pick the tomato sauce and place it in either compartment of the bowl drainer.
+- action_type: release
+  primary_object_id: tomato_sauce_1
+  target_object_id: bowl_drainer_1_any_compartment_region
+  source_task_id: 6
+  source_task_description: Pick the tomato sauce and place it in either compartment of the bowl drainer.

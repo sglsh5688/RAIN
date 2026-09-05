@@ -1,0 +1,13 @@
+name: BDRAIN_001
+language: Pick the alphabet soup and place it in either compartment of the bowl drainer.
+problem: Libero
+problem_folder: tasks/bdrain_001__pick_the_alphabet_soup_and_place_it_in_either_compartment_of_the_bowl_drainer
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Adapt
+anchor_suite: libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: adapt|F1_object_to_either_bowl_drainer_compartment|object_01_alphabet_soup_either_drainer_compartment|in(alphabet_soup_1, bowl_drainer_1_any_compartment_region)

@@ -1,0 +1,41 @@
+{
+  "audit_scope": "shared either-compartment goal implementation used by BDRAIN_001 through BDRAIN_005",
+  "representative_task": "BDRAIN_001",
+  "representative_object": "alphabet_soup_1",
+  "saved_initial_state_index": 0,
+  "goal": "in(alphabet_soup_1, bowl_drainer_1_any_compartment_region)",
+  "runtime_definition": "in(object, bowl_drainer_1_left_region) OR in(object, bowl_drainer_1_right_region)",
+  "native_sites_modified": false,
+  "asset_xml_modified": false,
+  "checks": [
+    {
+      "placement": "saved_initial_position",
+      "world_position_m": [-0.119094, -0.239781, 0.038393],
+      "left_region": false,
+      "right_region": false,
+      "task_success": false
+    },
+    {
+      "placement": "native_left_region_center",
+      "world_position_m": [0.0, 0.32211, 0.03859],
+      "left_region": true,
+      "right_region": false,
+      "task_success": true
+    },
+    {
+      "placement": "native_right_region_center",
+      "world_position_m": [0.0, 0.20847, 0.03859],
+      "left_region": false,
+      "right_region": true,
+      "task_success": true
+    },
+    {
+      "placement": "divider_midpoint_between_native_regions",
+      "world_position_m": [0.0, 0.26529, 0.03859],
+      "left_region": false,
+      "right_region": false,
+      "task_success": false
+    }
+  ],
+  "conclusion": "Either native compartment is accepted; the divider gap is not accepted."
+}

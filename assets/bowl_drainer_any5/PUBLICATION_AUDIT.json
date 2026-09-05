@@ -1,0 +1,52 @@
+{
+  "category": "Bowl Drainer Either-Compartment Object Variations",
+  "task_ids": [
+    "BDRAIN_001",
+    "BDRAIN_002",
+    "BDRAIN_003",
+    "BDRAIN_004",
+    "BDRAIN_005"
+  ],
+  "tasks": 5,
+  "episodes": 25,
+  "successes": 16,
+  "failures": 9,
+  "success_rate_percent": 64.0,
+  "physical_gpus": [
+    6,
+    7
+  ],
+  "all_original_episode_videos_published": true,
+  "success_semantics": "native left_region OR native right_region",
+  "divider_region_accepted": false,
+  "asset_xml_modified": false,
+  "source_layouts_preserved": true,
+  "single_on_demand_video_player": true,
+  "evaluation_validation": {
+    "tasks": 5,
+    "episodes": 25,
+    "unique_task_episode_keys": 25,
+    "physical_gpus": [
+      6,
+      7
+    ],
+    "family_task_counts": {
+      "F1_object_to_either_bowl_drainer_compartment": 5
+    },
+    "initial_goals_false": 25,
+    "success_video_cap_per_task": 5,
+    "failure_video_cap_per_task": 5,
+    "success_video_count": 16,
+    "failure_video_count": 9,
+    "failure_videos_from_original_trials": true,
+    "json_fallback_mask_sources": 0,
+    "active_mask_source_counts": {
+      "sim_seg": 254,
+      "sim_region": 713
+    },
+    "place_mask_source_counts": {
+      "sim_region_poly": 254,
+      "none": 713
+    }
+  }
+}

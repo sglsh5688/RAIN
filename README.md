@@ -56,3 +56,8 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - `naf_revisions/`: new V3 revision tasks; five original trials per task, all successes and one actual failure when available.
 - Earlier V1/V2 results remain in the offline review directory/ZIP only, and are not mixed into V3 statistics.
 <!-- NAF_REVISIONS_README_END -->
+
+<!-- BOWL_DRAINER_ANY5_README_START -->
+- `bowl_drainer_any5/`: five bowl-drainer either-compartment tasks; 16/25 successes.
+- Includes full construction/success semantics, complete task bundles, and all 16 success plus 9 failure videos.
+<!-- BOWL_DRAINER_ANY5_README_END -->

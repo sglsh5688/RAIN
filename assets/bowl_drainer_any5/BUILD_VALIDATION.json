@@ -1,0 +1,36 @@
+{
+  "raw_count": 5,
+  "accepted": 5,
+  "rejected": 0,
+  "families": {
+    "F1_object_to_either_bowl_drainer_compartment": 5
+  },
+  "original_definition_count": 0,
+  "prior_unique_definition_count": 719,
+  "exact_duplicate_count": 0,
+  "states_per_task": 5,
+  "initial_goal_false": true,
+  "all_saved_state_masks_visible": true,
+  "requested_task_count": 5,
+  "all_requested_tasks_survived": true,
+  "build_physical_gpus": [
+    6,
+    7
+  ],
+  "either_native_compartment_success": true,
+  "divider_region_accepted": false,
+  "source_object_layouts_preserved": true,
+  "github_upload_performed": false,
+  "policy_inference_run": true,
+  "evaluation_tasks": 5,
+  "evaluation_episodes_per_task": 5,
+  "evaluation_total_episodes": 25,
+  "evaluation_successes": 16,
+  "evaluation_failures": 9,
+  "evaluation_success_rate_percent": 64.0,
+  "evaluation_physical_gpus": [
+    6,
+    7
+  ],
+  "all_success_and_failure_videos_saved_locally": true
+}

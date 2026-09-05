@@ -1,0 +1,27 @@
+{
+  "tasks": 5,
+  "episodes": 25,
+  "unique_task_episode_keys": 25,
+  "physical_gpus": [
+    6,
+    7
+  ],
+  "family_task_counts": {
+    "F1_object_to_either_bowl_drainer_compartment": 5
+  },
+  "initial_goals_false": 25,
+  "success_video_cap_per_task": 5,
+  "failure_video_cap_per_task": 5,
+  "success_video_count": 16,
+  "failure_video_count": 9,
+  "failure_videos_from_original_trials": true,
+  "json_fallback_mask_sources": 0,
+  "active_mask_source_counts": {
+    "sim_seg": 254,
+    "sim_region": 713
+  },
+  "place_mask_source_counts": {
+    "sim_region_poly": 254,
+    "none": 713
+  }
+}

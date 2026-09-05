@@ -1,0 +1,10 @@
+task_id: BDRAIN_005
+category: Adapt
+required_goal_atoms:
+- in(chocolate_pudding_1, bowl_drainer_1_any_compartment_region)
+forbidden_goal_atoms: []
+order_sensitive: false
+continue_after_success: false
+requires_transition: false
+custom_eval_needed: false
+either_compartment_success: true

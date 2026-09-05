@@ -1,0 +1,6 @@
+task_id	raw_id	family	instruction
+BDRAIN_001	RAWX_001	F1_object_to_either_bowl_drainer_compartment	Pick the alphabet soup and place it in either compartment of the bowl drainer.
+BDRAIN_002	RAWX_002	F1_object_to_either_bowl_drainer_compartment	Pick the cream cheese and place it in either compartment of the bowl drainer.
+BDRAIN_003	RAWX_003	F1_object_to_either_bowl_drainer_compartment	Pick the tomato sauce and place it in either compartment of the bowl drainer.
+BDRAIN_004	RAWX_004	F1_object_to_either_bowl_drainer_compartment	Pick the butter and place it in either compartment of the bowl drainer.
+BDRAIN_005	RAWX_005	F1_object_to_either_bowl_drainer_compartment	Pick the chocolate pudding and place it in either compartment of the bowl drainer.

@@ -1,0 +1,69 @@
+task_id: VCN11_006
+task_name: Put the white porcelain mug on the plate, then put the bbq sauce to the right of the plate.
+language: Put the white porcelain mug on the plate, then put the bbq sauce to the right of the plate.
+primary_category: Composition
+composition_family: plate_then_relative_placement
+anchor_suite: libero_10
+source_prior_task_ids:
+- '304'
+source_priors:
+- suite: libero_10
+  task_stem: LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate
+  instruction: put the white mug on the plate and put the chocolate pudding to the right of the plate
+  bddl: upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.bddl
+  init: upstream_LIBERO/init_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_bbq_sauce_and_place_it_in_the_basket
+  instruction: Pick the bbq sauce and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the white porcelain mug on the plate
+- Put the bbq sauce to the right of the plate
+component_evidence:
+- Source-aligned atomic primitive; evidence SR 14/50 retained decomposition.
+- Exact ADAPT_162 atomic donor action; measured SR 3/5.
+semantic_subtask_count: 2
+action_plan_step_count: 4
+canonical_goal_atoms: &id001
+- on(porcelain_mug_1, plate_1)
+- on(bbq_sauce_1, living_room_table_plate_right_region)
+canonical_task_signature: composition|3661671c896b827d575dad40cb565bb578d0ff72f693aa2f927c366dc0da6539|frozenset({on(bbq_sauce_1,living_room_table_plate_right_region),on(porcelain_mug_1,plate_1)})
+objects_of_interest:
+- porcelain_mug_1
+- plate_1
+- bbq_sauce_1
+- living_room_table_plate_right_region
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - on(porcelain_mug_1, plate_1)
+- *id001
+physical_group: exact_adapt_162__put_the_bbq_sauce_to_the_right_of_the_plate
+base_bddl_template: LIBERO_EX_ICRA27/LiberoAdapt/tasks/adapt_162__put_the_bbq_sauce_to_the_right_of_the_plate/task.bddl
+base_pruned_init: LIBERO_EX_ICRA27/LiberoAdapt/tasks/adapt_162__put_the_bbq_sauce_to_the_right_of_the_plate/task.pruned_init
+max_steps: 1600
+definition_status: native_five_states_verified
+notes:
+- ADAPT_162 bbq-right was 3/5; all Scene-7 poses are donor exact.
+- The donor BDDL physical scene and all five frozen initial states are retained byte-for-byte; no object, fixture, or articulation pose is edited.
+- Every semantic action masks its exact manipulated object and destination; stove control is button-only, drawer control is the moving part only, and microwave insertion targets the microwave fixture.
+- Gripper trajectory is a soft empirical prior, not a hard exclusion rule.
+- Strict ordered native events and final BDDL determine success; Compose final completion has no TC threshold.
+ordered_event_atoms:
+- on(porcelain_mug_1, plate_1)
+- on(bbq_sauce_1, living_room_table_plate_right_region)
+ordered_task_signature: a1dea41cb81bf77cf7a85f76126828b646970b09c67a216c9dcc636ed4a5e6a4
+policy_evaluation_authorized: true
+evaluation_authorized: true
+fixture_replay_required: true
+fixture_replay_file: FIXTURE_REPLAY.json
+required_init_predicates: []
+compose_final_termination: ordered_native_goals_without_tc
+compose_final_tc_gate: false
+trajectory_alignment_policy: soft_prior_not_exclusion
+donor_bundle: LIBERO_EX_ICRA27/LiberoAdapt/tasks/adapt_162__put_the_bbq_sauce_to_the_right_of_the_plate
+donor_states_byte_identical: true
+scene_derivation: exact_donor_scene_no_pose_changes

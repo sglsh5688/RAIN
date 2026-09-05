@@ -1,0 +1,24 @@
+task_id: VCN11_005
+steps:
+- action_type: grasp
+  primary_object_id: porcelain_mug_1
+  target_object_id: porcelain_mug_1
+  source_task_id: 0
+  source_task_description: put the white mug on the plate and put the chocolate pudding to the right of the plate
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: porcelain_mug_1
+  target_object_id: plate_1
+  source_task_id: 0
+  source_task_description: put the white mug on the plate and put the chocolate pudding to the right of the plate
+  source_subtask_index: 2
+- action_type: grasp
+  primary_object_id: cream_cheese_1
+  target_object_id: cream_cheese_1
+  source_task_id: 302
+  source_task_description: Put the cream cheese to the right of the plate.
+- action_type: release
+  primary_object_id: cream_cheese_1
+  target_object_id: living_room_table_plate_right_region
+  source_task_id: 302
+  source_task_description: Put the cream cheese to the right of the plate.

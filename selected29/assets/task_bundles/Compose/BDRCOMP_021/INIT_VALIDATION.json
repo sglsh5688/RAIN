@@ -1,0 +1,557 @@
+{
+  "task_id": "BDRCOMP_021",
+  "pool_count": 8,
+  "valid_count": 8,
+  "required_init_predicates": [
+    [
+      "not",
+      [
+        "in",
+        "alphabet_soup_1",
+        "bowl_drainer_1_left_region"
+      ]
+    ],
+    [
+      "not",
+      [
+        "in",
+        "alphabet_soup_1",
+        "bowl_drainer_1_right_region"
+      ]
+    ],
+    [
+      "not",
+      [
+        "in",
+        "salad_dressing_1",
+        "bowl_drainer_1_left_region"
+      ]
+    ],
+    [
+      "not",
+      [
+        "in",
+        "salad_dressing_1",
+        "bowl_drainer_1_right_region"
+      ]
+    ]
+  ],
+  "closed_drawer_initial_tolerance_m": 0.008,
+  "success_predicates_unmodified": true,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rows": [
+    {
+      "pool_index": 0,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object_1": 571,
+        "goal_target_1": 3690,
+        "manipulated_object_2": 910,
+        "goal_target_2": 3367
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_compose_geometry": {
+        "passed": true,
+        "left_object": "alphabet_soup_1",
+        "right_object": "salad_dressing_1",
+        "fixed_fixture_world_xyz": [
+          0.0,
+          0.25471,
+          0.00602
+        ],
+        "native_site_world_xyz": {
+          "left": [
+            0.0,
+            0.31682,
+            0.07359
+          ],
+          "right": [
+            0.0,
+            0.20318,
+            0.07359
+          ]
+        },
+        "all_four_initial_in_goals_false": true,
+        "initial_native_in_values": {
+          "alphabet_soup_1": {
+            "left": false,
+            "right": false
+          },
+          "salad_dressing_1": {
+            "left": false,
+            "right": false
+          }
+        },
+        "initial_drainer_object_contacts": [],
+        "native_mask_pixels": {
+          "left": 3690,
+          "right": 3367
+        },
+        "left_only_mask_pixels": 3172,
+        "right_only_mask_pixels": 2849,
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "fixture_moves_between_steps": false,
+        "native_sites_and_predicates_unmodified": true
+      }
+    },
+    {
+      "pool_index": 1,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object_1": 567,
+        "goal_target_1": 3690,
+        "manipulated_object_2": 910,
+        "goal_target_2": 3367
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_compose_geometry": {
+        "passed": true,
+        "left_object": "alphabet_soup_1",
+        "right_object": "salad_dressing_1",
+        "fixed_fixture_world_xyz": [
+          0.0,
+          0.25471,
+          0.00602
+        ],
+        "native_site_world_xyz": {
+          "left": [
+            0.0,
+            0.31682,
+            0.07359
+          ],
+          "right": [
+            0.0,
+            0.20318,
+            0.07359
+          ]
+        },
+        "all_four_initial_in_goals_false": true,
+        "initial_native_in_values": {
+          "alphabet_soup_1": {
+            "left": false,
+            "right": false
+          },
+          "salad_dressing_1": {
+            "left": false,
+            "right": false
+          }
+        },
+        "initial_drainer_object_contacts": [],
+        "native_mask_pixels": {
+          "left": 3690,
+          "right": 3367
+        },
+        "left_only_mask_pixels": 3172,
+        "right_only_mask_pixels": 2849,
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "fixture_moves_between_steps": false,
+        "native_sites_and_predicates_unmodified": true
+      }
+    },
+    {
+      "pool_index": 2,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object_1": 578,
+        "goal_target_1": 3690,
+        "manipulated_object_2": 910,
+        "goal_target_2": 3367
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_compose_geometry": {
+        "passed": true,
+        "left_object": "alphabet_soup_1",
+        "right_object": "salad_dressing_1",
+        "fixed_fixture_world_xyz": [
+          0.0,
+          0.25471,
+          0.00602
+        ],
+        "native_site_world_xyz": {
+          "left": [
+            0.0,
+            0.31682,
+            0.07359
+          ],
+          "right": [
+            0.0,
+            0.20318,
+            0.07359
+          ]
+        },
+        "all_four_initial_in_goals_false": true,
+        "initial_native_in_values": {
+          "alphabet_soup_1": {
+            "left": false,
+            "right": false
+          },
+          "salad_dressing_1": {
+            "left": false,
+            "right": false
+          }
+        },
+        "initial_drainer_object_contacts": [],
+        "native_mask_pixels": {
+          "left": 3690,
+          "right": 3367
+        },
+        "left_only_mask_pixels": 3172,
+        "right_only_mask_pixels": 2849,
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "fixture_moves_between_steps": false,
+        "native_sites_and_predicates_unmodified": true
+      }
+    },
+    {
+      "pool_index": 3,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object_1": 588,
+        "goal_target_1": 3690,
+        "manipulated_object_2": 910,
+        "goal_target_2": 3367
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_compose_geometry": {
+        "passed": true,
+        "left_object": "alphabet_soup_1",
+        "right_object": "salad_dressing_1",
+        "fixed_fixture_world_xyz": [
+          0.0,
+          0.25471,
+          0.00602
+        ],
+        "native_site_world_xyz": {
+          "left": [
+            0.0,
+            0.31682,
+            0.07359
+          ],
+          "right": [
+            0.0,
+            0.20318,
+            0.07359
+          ]
+        },
+        "all_four_initial_in_goals_false": true,
+        "initial_native_in_values": {
+          "alphabet_soup_1": {
+            "left": false,
+            "right": false
+          },
+          "salad_dressing_1": {
+            "left": false,
+            "right": false
+          }
+        },
+        "initial_drainer_object_contacts": [],
+        "native_mask_pixels": {
+          "left": 3690,
+          "right": 3367
+        },
+        "left_only_mask_pixels": 3172,
+        "right_only_mask_pixels": 2849,
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "fixture_moves_between_steps": false,
+        "native_sites_and_predicates_unmodified": true
+      }
+    },
+    {
+      "pool_index": 4,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object_1": 550,
+        "goal_target_1": 3690,
+        "manipulated_object_2": 910,
+        "goal_target_2": 3367
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_compose_geometry": {
+        "passed": true,
+        "left_object": "alphabet_soup_1",
+        "right_object": "salad_dressing_1",
+        "fixed_fixture_world_xyz": [
+          0.0,
+          0.25471,
+          0.00602
+        ],
+        "native_site_world_xyz": {
+          "left": [
+            0.0,
+            0.31682,
+            0.07359
+          ],
+          "right": [
+            0.0,
+            0.20318,
+            0.07359
+          ]
+        },
+        "all_four_initial_in_goals_false": true,
+        "initial_native_in_values": {
+          "alphabet_soup_1": {
+            "left": false,
+            "right": false
+          },
+          "salad_dressing_1": {
+            "left": false,
+            "right": false
+          }
+        },
+        "initial_drainer_object_contacts": [],
+        "native_mask_pixels": {
+          "left": 3690,
+          "right": 3367
+        },
+        "left_only_mask_pixels": 3172,
+        "right_only_mask_pixels": 2849,
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "fixture_moves_between_steps": false,
+        "native_sites_and_predicates_unmodified": true
+      }
+    },
+    {
+      "pool_index": 5,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object_1": 585,
+        "goal_target_1": 3690,
+        "manipulated_object_2": 910,
+        "goal_target_2": 3367
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_compose_geometry": {
+        "passed": true,
+        "left_object": "alphabet_soup_1",
+        "right_object": "salad_dressing_1",
+        "fixed_fixture_world_xyz": [
+          0.0,
+          0.25471,
+          0.00602
+        ],
+        "native_site_world_xyz": {
+          "left": [
+            0.0,
+            0.31682,
+            0.07359
+          ],
+          "right": [
+            0.0,
+            0.20318,
+            0.07359
+          ]
+        },
+        "all_four_initial_in_goals_false": true,
+        "initial_native_in_values": {
+          "alphabet_soup_1": {
+            "left": false,
+            "right": false
+          },
+          "salad_dressing_1": {
+            "left": false,
+            "right": false
+          }
+        },
+        "initial_drainer_object_contacts": [],
+        "native_mask_pixels": {
+          "left": 3690,
+          "right": 3367
+        },
+        "left_only_mask_pixels": 3172,
+        "right_only_mask_pixels": 2849,
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "fixture_moves_between_steps": false,
+        "native_sites_and_predicates_unmodified": true
+      }
+    },
+    {
+      "pool_index": 6,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object_1": 583,
+        "goal_target_1": 3690,
+        "manipulated_object_2": 910,
+        "goal_target_2": 3367
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_compose_geometry": {
+        "passed": true,
+        "left_object": "alphabet_soup_1",
+        "right_object": "salad_dressing_1",
+        "fixed_fixture_world_xyz": [
+          0.0,
+          0.25471,
+          0.00602
+        ],
+        "native_site_world_xyz": {
+          "left": [
+            0.0,
+            0.31682,
+            0.07359
+          ],
+          "right": [
+            0.0,
+            0.20318,
+            0.07359
+          ]
+        },
+        "all_four_initial_in_goals_false": true,
+        "initial_native_in_values": {
+          "alphabet_soup_1": {
+            "left": false,
+            "right": false
+          },
+          "salad_dressing_1": {
+            "left": false,
+            "right": false
+          }
+        },
+        "initial_drainer_object_contacts": [],
+        "native_mask_pixels": {
+          "left": 3690,
+          "right": 3367
+        },
+        "left_only_mask_pixels": 3172,
+        "right_only_mask_pixels": 2849,
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "fixture_moves_between_steps": false,
+        "native_sites_and_predicates_unmodified": true
+      }
+    },
+    {
+      "pool_index": 7,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object_1": 570,
+        "goal_target_1": 3690,
+        "manipulated_object_2": 910,
+        "goal_target_2": 3367
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_compose_geometry": {
+        "passed": true,
+        "left_object": "alphabet_soup_1",
+        "right_object": "salad_dressing_1",
+        "fixed_fixture_world_xyz": [
+          0.0,
+          0.25471,
+          0.00602
+        ],
+        "native_site_world_xyz": {
+          "left": [
+            0.0,
+            0.31682,
+            0.07359
+          ],
+          "right": [
+            0.0,
+            0.20318,
+            0.07359
+          ]
+        },
+        "all_four_initial_in_goals_false": true,
+        "initial_native_in_values": {
+          "alphabet_soup_1": {
+            "left": false,
+            "right": false
+          },
+          "salad_dressing_1": {
+            "left": false,
+            "right": false
+          }
+        },
+        "initial_drainer_object_contacts": [],
+        "native_mask_pixels": {
+          "left": 3690,
+          "right": 3367
+        },
+        "left_only_mask_pixels": 3172,
+        "right_only_mask_pixels": 2849,
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "fixture_moves_between_steps": false,
+        "native_sites_and_predicates_unmodified": true
+      }
+    }
+  ],
+  "novel_fixture_height_normalization": true,
+  "native_and_goal": true,
+  "either_compartment_or_installed": false,
+  "stage_specific_compartment_masks": true,
+  "both_objects_initially_outside_both_compartments": true,
+  "physical_build_gpus": [
+    6,
+    7
+  ],
+  "requested_episode_count": 5,
+  "raw_id": "RAWX_021"
+}

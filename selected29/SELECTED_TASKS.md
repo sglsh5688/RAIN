@@ -1,6 +1,6 @@
 # Selected LIBERO-EX tasks
 
-Selection: 2026-09-05. 20 Decomposition + 17 Adapt + 10 Compose (47 total). The confirmed Compose IDs are COMP2_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001. No reevaluation was performed for this collection.
+Selection: 2026-09-05. 20 Decomposition + 17 Adapt + 11 Compose (48 total). The confirmed Compose IDs are COMP2_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001, BDRCOMP_021. No reevaluation was performed for this collection.
 
 Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. OGDTSL_011 and OGDTSL_046 retain their original Adapt Object five-episode evaluations. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt.
 
@@ -61,6 +61,7 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 | NAFR3_001 | NAFR3_001 | Put the popcorn on top of the short fridge. | 4/5 (80%) | — |
 | NAFR3_002 | NAFR3_002 | Put the yellow book on top of the two-layer wooden shelf. | 4/5 (80%) | — |
 | DSET_001 | DSET_001 | Pick up the black bowl at the table center and place it on the dining-set mat. | 5/5 (100.0%) | — |
+| BDRSWAP_001 | BDRSWAP_001 | Pick the alphabet soup and place it in the right compartment of the bowl drainer. | Native 5/5 (100%); not released/support SR | — |
 
 ## Compose
 
@@ -76,6 +77,7 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 | LBCM_003 | LBCM_003 | Put the tomato sauce in the basket, then put the white mug on the plate. | 2/5 (40%) | — |
 | LBCM_028 | LBCM_028 | Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket. | 1/5 (20%) | — |
 | MKDC_001 | MKDC_001 | Put the moka pot on the stove, then close the bottom drawer of the cabinet. | 4/5 (80%) | — |
+| BDRCOMP_021 | BDRCOMP_021 | Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the salad dressing and place it in the right compartment of the bowl drainer. | Strict 2/5 (40%) | — |
 
 
 ## Newly selected Adapt — BDRSWAP_001
@@ -84,4 +86,13 @@ Pick the alphabet soup and place it in the right compartment of the bowl drainer
 
 NATIVE IN FIRST-ENTRY SUCCESS ONLY: 5/5. Not a released or supported placement success rate; ending drainer contact is 0/5. Only alphabet soup / salad dressing XY positions changed. All five original videos are retained; no rerun or rescoring. The new selected task has no pi0.5 result.
 
-The versioned local collection is LiberoSelected47. LiberoSelected29 and its live 46-task pi0.5 evaluation inputs remain unchanged; no pi0.5 result is claimed for this new task.
+The versioned local collection at that earlier selection was LiberoSelected47. LiberoSelected29 and its live 46-task pi0.5 evaluation inputs remain unchanged; no pi0.5 result is claimed for this new task.
+
+
+## Newly selected Compose — BDRCOMP_021
+
+Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the salad dressing and place it in the right compartment of the bowl drainer.
+
+STRICT SUCCESS 2/5 (40%). Left then right, exact native compartment In, gripper released, positive bottom-support force, each held for 5 consecutive control steps and both retained at termination. Not a long-term velocity-certified stability result. Original episodes 0 and 2; no rerun or rescoring. No pi0.5 result for this new task.
+
+Current versioned collection: LiberoSelected48. Prior LiberoSelected47 and the live 46-task evaluation input remain unchanged.

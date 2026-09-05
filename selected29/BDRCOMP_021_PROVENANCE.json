@@ -1,0 +1,81 @@
+{
+  "task_id": "BDRCOMP_021",
+  "selected_category": "Compose",
+  "strict_successes": 2,
+  "original_episode_count": 5,
+  "success_rate_percent": 40,
+  "original_videos": [
+    {
+      "episode_index": 0,
+      "strict_success": true,
+      "path": "assets/original_success_videos/BDRCOMP_021/BDRCOMP_021_ep000_ok.mp4",
+      "sha256": "f6d4af467f56813a12f061a7867c27b880803e9866459329c2e2f811d0174134"
+    },
+    {
+      "episode_index": 2,
+      "strict_success": true,
+      "path": "assets/original_success_videos/BDRCOMP_021/BDRCOMP_021_ep002_ok.mp4",
+      "sha256": "59a656c52a49baa8b744b900ddf81821ef0b5502195dd99acda9e3a63056f75f"
+    }
+  ],
+  "source_results_sha256": "e4035e9c24c2801e8c526b866393c0912f1db1ffe21c808f22bafb72ab32bbd6",
+  "source_bundle_sha256": {
+    "eval_rules.yaml": "5cefa529d97a0d9d27b1339f27c7f1a1f7e97e7be62e8256149a968d0251341b",
+    "registry_entry.yaml": "abc8e373684970ddde65e55fa479059549b0a617b54b4257e307edaab8697c69",
+    "task.bddl": "d35a844281ee8fef76322ba329f92c9c867a4c55700ac2cdd37a9aed976303ac",
+    "INIT_VALIDATION.json": "dd9474329410afcd9e4fd6225ef2a41b5a107e8e7af50f698abc2dba837218ab",
+    "mask_bindings.yaml": "cf280394ffc3cc5bf1fd0065a393f58afc9a9e0084019f01bb6d212fbd31eff2",
+    "action_plan.yaml": "9b45d5633f9344c8d3d4c0592b2debb07aa5a0fd69341bb6a30f965eb1f5affd",
+    "task_meta.yaml": "9cf3d8a2a5220fb28b3dcc5ef34add2bfc5e6bea6d589976ed074ed6ddcc3aaf",
+    "task.pruned_init": "c98d1e66c95fe14e7495acfa6c7aa11013f06ba14ab229b08502598ff7960691"
+  },
+  "comparison_source_sha256": "abd8d285f4cfbd95fb96adbc2d4ea3ddf4c4b661ea205c07c94e3d990c92c8e9",
+  "episodes": [
+    {
+      "episode_index": 0,
+      "strict_success": true,
+      "ordered_milestone_steps": [
+        182,
+        736
+      ]
+    },
+    {
+      "episode_index": 1,
+      "strict_success": false,
+      "ordered_milestone_steps": [
+        233,
+        null
+      ]
+    },
+    {
+      "episode_index": 2,
+      "strict_success": true,
+      "ordered_milestone_steps": [
+        272,
+        464
+      ]
+    },
+    {
+      "episode_index": 3,
+      "strict_success": false,
+      "ordered_milestone_steps": [
+        null,
+        null
+      ]
+    },
+    {
+      "episode_index": 4,
+      "strict_success": false,
+      "ordered_milestone_steps": [
+        179,
+        null
+      ]
+    }
+  ],
+  "completion_mode": "released_supported",
+  "support_hold_control_steps": 5,
+  "order": "left_then_right",
+  "task_rerun": false,
+  "results_rescored": false,
+  "pi05_evaluation": null
+}

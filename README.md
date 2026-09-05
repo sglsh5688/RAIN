@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 17 Adapt + 10 Compose (47 total)**. BDRSWAP_001 is newly selected Adapt with native 5/5, five original clips and masked comparison; not released/support success. Existing selections remain unchanged.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 17 Adapt + 11 Compose (48 total)**. BDRCOMP_021 is selected Compose: Strict 2/5 (40%), two original successful clips and exact masked comparison. BDRSWAP_001 retains its native-only 5/5 caveat. Previous selections remain unchanged.
 <!-- SELECTED29_README_END -->
 
 Open `index.html`, or enable GitHub Pages for this repository root.
@@ -69,9 +69,7 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 <!-- BOWL_DRAINER_SECTIONS_README_END -->
 
 <!-- BOWL_DRAINER_COMPOSE_README_START -->
-## Bowl Drainer — Composition and XY Swap
+## Bowl Drainer — Strict Composition Successes
 
-- [Composition: all 40 tasks / all episodes / 300 definitions](bowl_drainer_compose/index.html)
 - [Composition: strict-success episodes only](bowl_drainer_compose_success/index.html)
-- [XY swap: native metric only, not released/support success](bowl_drainer_swap/index.html)
 <!-- BOWL_DRAINER_COMPOSE_README_END -->

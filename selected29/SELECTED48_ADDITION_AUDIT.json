@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "selected_count": 48,
+  "categories": {
+    "Decomposition": 20,
+    "Adapt": 17,
+    "Compose": 11
+  },
+  "existing47_rows_unchanged": true,
+  "existing47_cards_unchanged": true,
+  "existing47_assets_unchanged": true,
+  "added_ids": [
+    "BDRCOMP_021"
+  ],
+  "exact_definition_duplicates": []
+}

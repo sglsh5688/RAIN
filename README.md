@@ -68,6 +68,10 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - Native `In` entry terminates these episodes; stable landing/settled placement is **not validated**.
 <!-- BOWL_DRAINER_SECTIONS_README_END -->
 
-<!-- BOWL_DRAINER_SWAP_README_START -->
-- [bowl_drainer_swap/](bowl_drainer_swap/index.html): completed BDRSWAP_001 XY swap; native 5/5, all 5 original videos and 3-panel exact-mask comparison. Native entry is NOT released/support success (ending drainer contact 0/5). Composition evaluation is not included.
-<!-- BOWL_DRAINER_SWAP_README_END -->
+<!-- BOWL_DRAINER_COMPOSE_README_START -->
+## Bowl Drainer — Composition and XY Swap
+
+- [Composition: all 40 tasks / all episodes / 300 definitions](bowl_drainer_compose/index.html)
+- [Composition: strict-success episodes only](bowl_drainer_compose_success/index.html)
+- [XY swap: native metric only, not released/support success](bowl_drainer_swap/index.html)
+<!-- BOWL_DRAINER_COMPOSE_README_END -->

@@ -10,7 +10,107 @@
 main{display:grid;grid-template-columns:repeat(auto-fit,minmax(540px,1fr));gap:18px;padding:0 20px 24px}.task{min-width:0;background:white;border-radius:13px;padding:16px;box-shadow:0 2px 10px #0002;overflow-wrap:anywhere}.task header{display:flex;justify-content:space-between;gap:12px;align-items:start}.task h2{margin:0}.task header span{display:block;margin-top:4px;color:#64747c;font-family:monospace}.task header strong{font-size:20px;color:#08735b}.task p{line-height:1.42;margin:8px 0}.instruction{background:#fff2cf;border-left:4px solid #d89500;padding:9px}code{font-size:.94em}
 .comparison{display:block;margin:12px 0}.comparison img{display:block;width:100%;border-radius:8px;background:#eef2f3}.episodes{display:grid;grid-template-columns:repeat(5,minmax(90px,1fr));gap:7px}.episode{color:white}.episode.success{background:#08735b}.episode.failure{background:#a34831}details{margin-top:12px}summary{cursor:pointer;font-weight:750}.docs{margin:0 20px 24px;background:#fff;padding:15px;border-radius:12px}
 @media(max-width:700px){.top{position:static;padding:13px}.intro{grid-template-columns:1fr;margin:10px}main{grid-template-columns:1fr;padding:0 10px 16px}.task{padding:12px}.episodes{grid-template-columns:repeat(2,1fr)}.player.active{grid-template-columns:1fr}.docs{margin:0 10px 16px}}
-</style></head><body>
+</style><!-- REVIEW_DARK_THEME_START -->
+<meta name="color-scheme" content="dark">
+<style id="review-dark-theme">
+/* Shared, request-free dark theme. Simulation pixels and sprite geometry stay unchanged. */
+:root {
+  color-scheme: dark !important;
+  --review-bg: #0d131b;
+  --review-panel: #17212d;
+  --review-raised: #202e3d;
+  --review-line: #3b4e60;
+  --review-text: #e7edf5;
+  --review-muted: #b4c3d3;
+  color: var(--review-text) !important;
+  background-color: var(--review-bg) !important;
+}
+html, body { background-color: var(--review-bg) !important; color: var(--review-text) !important; }
+body :is(h1,h2,h3,h4,h5,h6,p,li,dt,dd,label,summary,th,td) { color: var(--review-text); }
+body :is(.card,.task,.docs,.panel,.summary-box,.census,.table,.table-wrap,.table-container,.intro,.logic,.goals,.metric,dialog) {
+  background-color: var(--review-panel) !important;
+  color: var(--review-text) !important;
+  border-color: var(--review-line) !important;
+  box-shadow: 0 3px 16px #0003;
+}
+body :is(.hero,.top,.toolbar,.player,.player-bar,.player-panel) {
+  background-color: #132333 !important;
+  color: var(--review-text) !important;
+  border-color: var(--review-line) !important;
+}
+body :is(.hero,.top) p, body .card p { color: var(--review-muted) !important; }
+body :is(small,figcaption,footer,.muted,.record,.rerun,.count,.meta,.subtitle,.source,.request-policy,.suite,.sr span,.task header span,.family,.step-heading span) {
+  color: var(--review-muted) !important;
+}
+body a { color: #91d3ff !important; }
+body a:visited { color: #c3b6ff !important; }
+body a.card { color: var(--review-text) !important; }
+body a.card:hover { background-color: #202e3d !important; border-color: #638ba8 !important; }
+body nav a { background-color: #213549 !important; border-color: #526d85 !important; }
+body .step-heading { color: var(--review-text) !important; }
+body :is(.card strong,.sr strong,.task header strong) { color: #87e1bf !important; }
+body .card span { color: #91d3ff !important; }
+body :is(input,select,textarea,option) {
+  color: var(--review-text) !important;
+  background-color: #101c28 !important;
+  border-color: #62798f !important;
+  caret-color: #a6dfff;
+}
+body ::placeholder { color: #a5b6c9 !important; opacity: 1; }
+body button, body :is(.button,.btn) {
+  color: var(--review-text) !important;
+  background-color: #2b4054 !important;
+  border-color: #688399 !important;
+}
+body button:hover, body :is(.button,.btn):hover { background-color: #3c5871 !important; }
+body button:disabled { color: #a5b6c9 !important; background-color: #25313e !important; }
+body :is(button[aria-pressed="true"],button.active,.tabs .active) {
+  background-color: #294e69 !important;
+  color: #f3faff !important;
+  border-color: #a2dfff !important;
+  box-shadow: inset 0 0 0 1px #a2dfff;
+}
+body :is(.play,.play-task,.success,.ok,.good,#playAll,.export) {
+  background-color: #195440 !important;
+  color: #d2ffed !important;
+  border-color: #4aa584 !important;
+}
+body :is(.failure,.fail,.bad) {
+  background-color: #64323b !important;
+  color: #ffe3e7 !important;
+  border-color: #ce8190 !important;
+}
+body :is(.note,.rewrite,.caution,.caseCaution,.warning,.warn,.audit,.rerun) {
+  background-color: #352c1b !important;
+  color: #ffe2a6 !important;
+  border-color: #c89842 !important;
+}
+body :is(.note,.rewrite,.caution,.caseCaution,.warning,.warn,.audit,.rerun) :is(p,strong,small,li) { color: inherit !important; }
+body .instruction { background-color: transparent !important; color: var(--review-text) !important; }
+body :is(.none,.empty,.empty-step,.pill,.badge,.tag) {
+  background-color: #26374a !important;
+  color: #d3e1ef !important;
+  border-color: #526d85 !important;
+}
+body :is(.selected,.category.adapt) { background-color: #25463f !important; color: #b2f0db !important; }
+body .category.decomposition { background-color: #303958 !important; color: #d0d7ff !important; }
+body .category.compose { background-color: #263f57 !important; color: #b7e2ff !important; }
+body :is(details,summary,hr,.comparison) { border-color: var(--review-line) !important; }
+body :is(summary,label) { color: var(--review-text) !important; }
+body :is(code,pre) { background-color: #111c28 !important; color: #c8e5ff !important; }
+body table { background-color: var(--review-panel) !important; color: var(--review-text) !important; }
+body :is(th,td) { border-color: #425469 !important; color: var(--review-text) !important; }
+body th { background-color: #25364a !important; }
+body td { background-color: var(--review-panel) !important; }
+body tr:nth-child(even) td { background-color: #1c2938 !important; }
+body tr:hover td { background-color: #293d51 !important; }
+body dialog::backdrop { background-color: #000b; }
+body :is(a,button,input,select,textarea,summary):focus-visible { outline: 3px solid #9ad9ff !important; outline-offset: 3px; }
+::selection { background-color: #355d7c; color: #fff; }
+/* Only the empty media surround changes; no filter, opacity, image or video recoloring. */
+body :is(.preview,.sprite,.comparison-preview,img,video) { background-color: #0a111a !important; }
+</style>
+<!-- REVIEW_DARK_THEME_END --></head><body>
 <section class='top'><h1>Bowl Drainer Either-Compartment Object Variations</h1>
 <p>Five LIBERO-Object layouts with the basket replaced at the same pose by the two-compartment bowl drainer. All 25 original success and failure videos are available below.</p>
 <div class='stats'><span class='pill'>5 tasks</span><span class='pill'>25 episodes</span><span class='pill'>16 success</span><span class='pill'>9 failure</span><span class='pill'>64.0% SR</span><span class='pill'>GPUs 6/7</span><span class='pill'><a href='tasks.tsv'>task manifest</a></span><span class='pill'><a href='../assets/bowl_drainer_any5/FULL_DESCRIPTION.md'>full description</a></span></div>

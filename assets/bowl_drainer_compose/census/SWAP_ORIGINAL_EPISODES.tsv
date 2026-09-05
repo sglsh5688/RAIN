@@ -1,6 +1,6 @@
-episode_index	native_success	video	final_drainer_contact	final_floor_contact
-0	True	videos/BDRSWAP_001_ep000_ok.mp4	False	False
-1	True	videos/BDRSWAP_001_ep001_ok.mp4	False	False
-2	True	videos/BDRSWAP_001_ep002_ok.mp4	False	False
-3	True	videos/BDRSWAP_001_ep003_ok.mp4	False	False
-4	True	videos/BDRSWAP_001_ep004_ok.mp4	False	False
+task_id	episode_idx	native_success	final_drainer_contact	final_floor_contact	termination_reason	total_steps	selected_native_first_true_step	ended_at_first_selected_native_true	target_world_position_m	final_contacts	settled_placement_validated	settled_placement_status
+BDRSWAP_001	0	True	False	False	env_success	208	208	True	[0.015089778033758041, 0.266536717502246, 0.107334988120602]	[]	False	not measured; no post-success settling rollout
+BDRSWAP_001	1	True	False	False	env_success	329	329	True	[0.01571338704394936, 0.26139244862333116, 0.09444186016618317]	[]	False	not measured; no post-success settling rollout
+BDRSWAP_001	2	True	False	False	env_success	207	207	True	[0.006348125047225702, 0.27096829202582706, 0.10316613005393818]	[]	False	not measured; no post-success settling rollout
+BDRSWAP_001	3	True	False	False	env_success	242	242	True	[0.023790561477140763, 0.27164796296690213, 0.0901784007066535]	[]	False	not measured; no post-success settling rollout
+BDRSWAP_001	4	True	False	False	env_success	193	193	True	[0.02907193907699418, 0.2631485290432236, 0.12133755183308893]	[]	False	not measured; no post-success settling rollout

@@ -1,0 +1,22 @@
+task_id: BDRCOMP_027
+steps:
+- action_type: grasp
+  primary_object_id: chocolate_pudding_1
+  target_object_id: chocolate_pudding_1
+  source_task_id: 9
+  source_task_description: Pick the chocolate pudding and place it in the left compartment of the bowl drainer.
+- action_type: release
+  primary_object_id: chocolate_pudding_1
+  target_object_id: bowl_drainer_1_left_region
+  source_task_id: 9
+  source_task_description: Pick the chocolate pudding and place it in the left compartment of the bowl drainer.
+- action_type: grasp
+  primary_object_id: bbq_sauce_1
+  target_object_id: bbq_sauce_1
+  source_task_id: 4
+  source_task_description: Pick the bbq sauce and place it in the right compartment of the bowl drainer.
+- action_type: release
+  primary_object_id: bbq_sauce_1
+  target_object_id: bowl_drainer_1_right_region
+  source_task_id: 4
+  source_task_description: Pick the bbq sauce and place it in the right compartment of the bowl drainer.

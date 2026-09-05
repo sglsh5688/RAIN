@@ -1,0 +1,13 @@
+name: BDRCOMP_006
+language: Pick the cream cheese and place it in the left compartment of the bowl drainer, then pick the alphabet soup and place it in the right compartment of the bowl drainer.
+problem: Libero
+problem_folder: tasks/bdrcomp_006__pick_the_cream_cheese_and_place_it_in_the_left_compartment_of_the_bowl_drainer_then_pick_the_alphabet_soup_and_place_it_in_the_right_compartment_of_the_bowl_drainer
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: compose|b1b04f36897c366eab053780fc63f291ea40e0102362c504a8d73aeef63c8301

@@ -1,0 +1,100 @@
+task_id: BDRCOMP_032
+task_name: Pick the milk and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.
+language: Pick the milk and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.
+primary_category: Composition
+anchor_suite: libero_object
+source_prior_task_ids:
+- 6
+source_prior_task_stem: pick_up_the_tomato_sauce_and_place_it_in_the_basket
+source_prior_description: Pick the tomato sauce and place it in the basket
+canonical_goal_atoms:
+- in(milk_1, bowl_drainer_1_left_region)
+- in(tomato_sauce_1, bowl_drainer_1_right_region)
+canonical_task_signature: compose|307a3c94b527cbbbf49f6ff71223fc8a560820ed13745d0ab138d9312785eb36
+objects_of_interest:
+- milk_1
+- bowl_drainer_1_left_region
+- tomato_sauce_1
+- bowl_drainer_1_right_region
+held_fixed:
+- all original six food identities and pickup regions
+- native object geometry and orientation sampling
+- native drainer geometry and yaw 0
+- one unchanged drainer pose throughout both stages
+varied:
+- replace basket by a fixed two-compartment drainer
+- two different objects, left placement followed by right placement
+single_semantic_goal: false
+physical_group: BDRCENS_156
+base_bddl_template: local_sources/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl
+base_pruned_init: local_sources/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init
+definition_status: defined_simulator_validated_pending_5ep_eval
+notes:
+- Robot-left is world +Y and robot-right is -Y; the review camera may show the reverse.
+- Strict ordered released-and-supported completion is separate from unchanged native In diagnostics.
+- The 300-case census is exhaustive only for two distinct existing foods in the ten original Object layouts with left-first order.
+transfer_summary: Complete the left placement, then the right; retain both objects in their own compartments.
+provenance_evidence:
+- task_id: LIBERO_OBJECT_06
+  role: ORIGINAL SCENE SOURCE
+  reason: same six foods and original pickup regions; basket replaced by one fixed drainer
+- task_id: LIBERO_OBJECT_08
+  role: LEFT OBJECT GRASP SOURCE
+  reason: object-class grasp provenance; not a claim that this distractor pickup was demonstrated in the same scene
+- task_id: LIBERO_OBJECT_06
+  role: RIGHT OBJECT GRASP SOURCE
+  reason: object-class grasp provenance; not a claim that this distractor pickup was demonstrated in the same scene
+critical_objects:
+- tomato_sauce_1
+- milk_1
+- butter_1
+- orange_juice_1
+- chocolate_pudding_1
+- bbq_sauce_1
+required_init_predicates:
+- - not
+  - - in
+    - milk_1
+    - bowl_drainer_1_left_region
+- - not
+  - - in
+    - milk_1
+    - bowl_drainer_1_right_region
+- - not
+  - - in
+    - tomato_sauce_1
+    - bowl_drainer_1_left_region
+- - not
+  - - in
+    - tomato_sauce_1
+    - bowl_drainer_1_right_region
+composition_family: F1_left_then_right_extension20
+census_candidate_id: BDRCENS_156
+pilot_batch: extension20
+left_object: milk_1
+right_object: tomato_sauce_1
+semantic_subtask_count: 2
+max_steps: 1040
+drainer_completion_mode: released_supported
+support_hold_control_steps: 5
+native_success_is_auxiliary: true
+order: left_then_right
+drainer_root_xy:
+- 0.0
+- 0.25471
+expected_drainer_root_z: 0.00602
+physical_floor_support_correction: true
+either_compartment_success: false
+accepted_native_regions:
+- bowl_drainer_1_left_region
+- bowl_drainer_1_right_region
+divider_region_accepted: false
+all_source_food_pickup_regions_unchanged: true
+comparison_reference: masked original source scene / step 1 exact masks / step 2 exact masks
+grasp_provenance:
+  left:
+    task_id: LIBERO_OBJECT_08
+    exact_source_scene_target: false
+  right:
+    task_id: LIBERO_OBJECT_06
+    exact_source_scene_target: true

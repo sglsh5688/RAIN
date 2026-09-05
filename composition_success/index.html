@@ -2,7 +2,107 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>LIBERO-EX · Composition Successful Tasks</title>
 <style>:root{font-family:Inter,system-ui,sans-serif;color:#17252d;background:#ece9e2}body{margin:0}.top{position:sticky;top:0;z-index:3;background:#173244;color:#fff;padding:18px 25px;box-shadow:0 2px 10px #0004}.top h1{margin:0 0 5px;font-size:25px}.top p{margin:4px 0;color:#d8e7ec}.top a{color:#9ee3ff}.top input{box-sizing:border-box;margin-top:10px;width:min(760px,100%);padding:10px 12px;border:0;border-radius:8px;font-size:16px}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:9px}.pill{background:#ffffff1e;border:1px solid #ffffff3b;border-radius:20px;padding:5px 10px}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(560px,1fr));gap:18px;padding:20px}.task{background:#fff;border-radius:13px;padding:16px;box-shadow:0 2px 10px #0002}.task header{display:flex;justify-content:space-between;gap:12px;align-items:start}.task h2{margin:0}.task header span{display:block;margin-top:4px;color:#64747c;font-family:monospace}.task header strong{font-size:20px;color:#08735b}.task p{margin:7px 0;line-height:1.4}.comparison{display:block;margin:12px 0}.comparison img{display:block;width:100%;max-height:560px;object-fit:contain;background:#eee;border-radius:8px}.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}.videos figure{margin:0}.videos video{width:100%;border-radius:8px;background:#111}.videos figcaption{font-size:13px;color:#60717a}.none{padding:13px;border-radius:8px;background:#f2efe8;color:#746756}@media(max-width:620px){main{grid-template-columns:1fr;padding:10px}.top{padding:14px}.task{padding:12px}}
 .comparison-preview{display:block;width:100%;aspect-ratio:4/3;background-repeat:no-repeat;background-color:#eef2f3;border-radius:8px;box-shadow:inset 0 0 0 1px #ccd6da;cursor:zoom-in}.play-one-video{display:flex;width:100%;aspect-ratio:16/9;align-items:center;justify-content:center;border:0;border-radius:8px;background:#16242c;color:#fff;font-size:16px;font-weight:750;cursor:pointer}.play-one-video:hover{background:#175f89}.request-policy{font-size:13px;color:#52646d;margin:8px 0}.top .request-policy,.hero .request-policy{color:#d8e7ec}.task video[data-src][hidden]{display:none!important}
-</style></head><body>
+</style><!-- REVIEW_DARK_THEME_START -->
+<meta name="color-scheme" content="dark">
+<style id="review-dark-theme">
+/* Shared, request-free dark theme. Simulation pixels and sprite geometry stay unchanged. */
+:root {
+  color-scheme: dark !important;
+  --review-bg: #0d131b;
+  --review-panel: #17212d;
+  --review-raised: #202e3d;
+  --review-line: #3b4e60;
+  --review-text: #e7edf5;
+  --review-muted: #b4c3d3;
+  color: var(--review-text) !important;
+  background-color: var(--review-bg) !important;
+}
+html, body { background-color: var(--review-bg) !important; color: var(--review-text) !important; }
+body :is(h1,h2,h3,h4,h5,h6,p,li,dt,dd,label,summary,th,td) { color: var(--review-text); }
+body :is(.card,.task,.docs,.panel,.summary-box,.census,.table,.table-wrap,.table-container,.intro,.logic,.goals,.metric,dialog) {
+  background-color: var(--review-panel) !important;
+  color: var(--review-text) !important;
+  border-color: var(--review-line) !important;
+  box-shadow: 0 3px 16px #0003;
+}
+body :is(.hero,.top,.toolbar,.player,.player-bar,.player-panel) {
+  background-color: #132333 !important;
+  color: var(--review-text) !important;
+  border-color: var(--review-line) !important;
+}
+body :is(.hero,.top) p, body .card p { color: var(--review-muted) !important; }
+body :is(small,figcaption,footer,.muted,.record,.rerun,.count,.meta,.subtitle,.source,.request-policy,.suite,.sr span,.task header span,.family,.step-heading span) {
+  color: var(--review-muted) !important;
+}
+body a { color: #91d3ff !important; }
+body a:visited { color: #c3b6ff !important; }
+body a.card { color: var(--review-text) !important; }
+body a.card:hover { background-color: #202e3d !important; border-color: #638ba8 !important; }
+body nav a { background-color: #213549 !important; border-color: #526d85 !important; }
+body .step-heading { color: var(--review-text) !important; }
+body :is(.card strong,.sr strong,.task header strong) { color: #87e1bf !important; }
+body .card span { color: #91d3ff !important; }
+body :is(input,select,textarea,option) {
+  color: var(--review-text) !important;
+  background-color: #101c28 !important;
+  border-color: #62798f !important;
+  caret-color: #a6dfff;
+}
+body ::placeholder { color: #a5b6c9 !important; opacity: 1; }
+body button, body :is(.button,.btn) {
+  color: var(--review-text) !important;
+  background-color: #2b4054 !important;
+  border-color: #688399 !important;
+}
+body button:hover, body :is(.button,.btn):hover { background-color: #3c5871 !important; }
+body button:disabled { color: #a5b6c9 !important; background-color: #25313e !important; }
+body :is(button[aria-pressed="true"],button.active,.tabs .active) {
+  background-color: #294e69 !important;
+  color: #f3faff !important;
+  border-color: #a2dfff !important;
+  box-shadow: inset 0 0 0 1px #a2dfff;
+}
+body :is(.play,.play-task,.success,.ok,.good,#playAll,.export) {
+  background-color: #195440 !important;
+  color: #d2ffed !important;
+  border-color: #4aa584 !important;
+}
+body :is(.failure,.fail,.bad) {
+  background-color: #64323b !important;
+  color: #ffe3e7 !important;
+  border-color: #ce8190 !important;
+}
+body :is(.note,.rewrite,.caution,.caseCaution,.warning,.warn,.audit,.rerun) {
+  background-color: #352c1b !important;
+  color: #ffe2a6 !important;
+  border-color: #c89842 !important;
+}
+body :is(.note,.rewrite,.caution,.caseCaution,.warning,.warn,.audit,.rerun) :is(p,strong,small,li) { color: inherit !important; }
+body .instruction { background-color: transparent !important; color: var(--review-text) !important; }
+body :is(.none,.empty,.empty-step,.pill,.badge,.tag) {
+  background-color: #26374a !important;
+  color: #d3e1ef !important;
+  border-color: #526d85 !important;
+}
+body :is(.selected,.category.adapt) { background-color: #25463f !important; color: #b2f0db !important; }
+body .category.decomposition { background-color: #303958 !important; color: #d0d7ff !important; }
+body .category.compose { background-color: #263f57 !important; color: #b7e2ff !important; }
+body :is(details,summary,hr,.comparison) { border-color: var(--review-line) !important; }
+body :is(summary,label) { color: var(--review-text) !important; }
+body :is(code,pre) { background-color: #111c28 !important; color: #c8e5ff !important; }
+body table { background-color: var(--review-panel) !important; color: var(--review-text) !important; }
+body :is(th,td) { border-color: #425469 !important; color: var(--review-text) !important; }
+body th { background-color: #25364a !important; }
+body td { background-color: var(--review-panel) !important; }
+body tr:nth-child(even) td { background-color: #1c2938 !important; }
+body tr:hover td { background-color: #293d51 !important; }
+body dialog::backdrop { background-color: #000b; }
+body :is(a,button,input,select,textarea,summary):focus-visible { outline: 3px solid #9ad9ff !important; outline-offset: 3px; }
+::selection { background-color: #355d7c; color: #fff; }
+/* Only the empty media surround changes; no filter, opacity, image or video recoloring. */
+body :is(.preview,.sprite,.comparison-preview,img,video) { background-color: #0a111a !important; }
+</style>
+<!-- REVIEW_DARK_THEME_END --></head><body>
 <section class="top"><h1>LIBERO-EX · Composition Successful Tasks</h1><p>Only Composition candidates with at least one successful episode.</p><div class="stats"><span class="pill">4 tasks</span><span class="pill">6 success videos</span><span class="pill">5 episodes/task</span><span class="pill"><a href="tasks.tsv">task manifest</a></span></div><input id="filter" type="search" placeholder="Filter by ID, family, source, or instruction…"></section><main><article class='task' data-search='comp_205 c10_libero10_basket_triples put the alphabet soup, the butter, and the cream cheese box in the basket one after another. pick the alphabet soup and place it in the basket | pick the butter and place it in the basket | pick the cream cheese and place it in the basket libero_object'><header><div><h2>COMP_205</h2><span>C10_libero10_basket_triples</span></div><strong>1/5 · 20.0%</strong></header><p><b>Composition task:</b> Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.</p><p><b>Original source task(s):</b> Pick the alphabet soup and place it in the basket | Pick the butter and place it in the basket | Pick the cream cheese and place it in the basket</p><p><b>Source:</b> libero_object · pick_up_the_alphabet_soup_and_place_it_in_the_basket;pick_up_the_butter_and_place_it_in_the_basket;pick_up_the_cream_cheese_and_place_it_in_the_basket</p><p><b>Construction:</b> Unordered triple selected from all C(7,3) object triples in this exact stock layout. | The explicit action plan follows the physical left-to-right/source-region rank; reversed wording is not a new identity. | Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ. | Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ. | Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.</p><a class='comparison' href='../assets/composition/comparison_png/COMP_205__put_the_alphabet_soup_the_butter_and_the_cream_cheese_box_in_the_basket_one_after_another.png?v=exact-masks-v2' target='_blank' rel='noopener'><div class='comparison-preview' role='img' aria-label='Original and composition comparison for COMP_205' data-preview-src='../assets/preview_sprites/composition_011.jpg' style="background-image:url('../assets/preview_sprites/composition_011.jpg?v=preview-sprites-v1');background-size:400% 500%;background-position:0% 25%"></div></a><div class='videos'><figure><button type='button' class='play-one-video'>▶ Play video</button><video controls preload='none' data-src='../assets/composition/success_videos/COMP_205/COMP_205_ep003_ok.mp4' hidden></video><figcaption>successful episode 3</figcaption></figure></div></article><article class='task' data-search='comp_209 c10_libero10_basket_triples put the alphabet soup, the butter, and the tomato sauce in the basket one after another. pick the alphabet soup and place it in the basket | pick the butter and place it in the basket | pick the tomato sauce and place it in the basket libero_object'><header><div><h2>COMP_209</h2><span>C10_libero10_basket_triples</span></div><strong>1/5 · 20.0%</strong></header><p><b>Composition task:</b> Put the alphabet soup, the butter, and the tomato sauce in the basket one after another.</p><p><b>Original source task(s):</b> Pick the alphabet soup and place it in the basket | Pick the butter and place it in the basket | Pick the tomato sauce and place it in the basket</p><p><b>Source:</b> libero_object · pick_up_the_alphabet_soup_and_place_it_in_the_basket;pick_up_the_butter_and_place_it_in_the_basket;pick_up_the_tomato_sauce_and_place_it_in_the_basket</p><p><b>Construction:</b> Unordered triple selected from all C(7,3) object triples in this exact stock layout. | The explicit action plan follows the physical left-to-right/source-region rank; reversed wording is not a new identity. | Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ. | Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ. | Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.</p><a class='comparison' href='../assets/composition/comparison_png/COMP_209__put_the_alphabet_soup_the_butter_and_the_tomato_sauce_in_the_basket_one_after_another.png?v=exact-masks-v2' target='_blank' rel='noopener'><div class='comparison-preview' role='img' aria-label='Original and composition comparison for COMP_209' data-preview-src='../assets/preview_sprites/composition_011.jpg' style="background-image:url('../assets/preview_sprites/composition_011.jpg?v=preview-sprites-v1');background-size:400% 500%;background-position:0% 50%"></div></a><div class='videos'><figure><button type='button' class='play-one-video'>▶ Play video</button><video controls preload='none' data-src='../assets/composition/success_videos/COMP_209/COMP_209_ep004_ok.mp4' hidden></video><figcaption>successful episode 4</figcaption></figure></div></article><article class='task' data-search='comp_213 c10_libero10_basket_triples put the alphabet soup, the cream cheese box, and the tomato sauce in the basket one after another. pick the alphabet soup and place it in the basket | pick the cream cheese and place it in the basket | pick the tomato sauce and place it in the basket libero_object'><header><div><h2>COMP_213</h2><span>C10_libero10_basket_triples</span></div><strong>1/5 · 20.0%</strong></header><p><b>Composition task:</b> Put the alphabet soup, the cream cheese box, and the tomato sauce in the basket one after another.</p><p><b>Original source task(s):</b> Pick the alphabet soup and place it in the basket | Pick the cream cheese and place it in the basket | Pick the tomato sauce and place it in the basket</p><p><b>Source:</b> libero_object · pick_up_the_alphabet_soup_and_place_it_in_the_basket;pick_up_the_cream_cheese_and_place_it_in_the_basket;pick_up_the_tomato_sauce_and_place_it_in_the_basket</p><p><b>Construction:</b> Unordered triple selected from all C(7,3) object triples in this exact stock layout. | The explicit action plan follows the physical left-to-right/source-region rank; reversed wording is not a new identity. | Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ. | Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ. | Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.</p><a class='comparison' href='../assets/composition/comparison_png/COMP_213__put_the_alphabet_soup_the_cream_cheese_box_and_the_tomato_sauce_in_the_basket_one_after_another.png?v=exact-masks-v2' target='_blank' rel='noopener'><div class='comparison-preview' role='img' aria-label='Original and composition comparison for COMP_213' data-preview-src='../assets/preview_sprites/composition_011.jpg' style="background-image:url('../assets/preview_sprites/composition_011.jpg?v=preview-sprites-v1');background-size:400% 500%;background-position:0% 75%"></div></a><div class='videos'><figure><button type='button' class='play-one-video'>▶ Play video</button><video controls preload='none' data-src='../assets/composition/success_videos/COMP_213/COMP_213_ep004_ok.mp4' hidden></video><figcaption>successful episode 4</figcaption></figure></div></article><article class='task' data-search='comp_223 c10_libero10_basket_triples put the butter, the cream cheese box, and the tomato sauce in the basket one after another. pick the butter and place it in the basket | pick the cream cheese and place it in the basket | pick the tomato sauce and place it in the basket libero_object'><header><div><h2>COMP_223</h2><span>C10_libero10_basket_triples</span></div><strong>3/5 · 60.0%</strong></header><p><b>Composition task:</b> Put the butter, the cream cheese box, and the tomato sauce in the basket one after another.</p><p><b>Original source task(s):</b> Pick the butter and place it in the basket | Pick the cream cheese and place it in the basket | Pick the tomato sauce and place it in the basket</p><p><b>Source:</b> libero_object · pick_up_the_butter_and_place_it_in_the_basket;pick_up_the_cream_cheese_and_place_it_in_the_basket;pick_up_the_tomato_sauce_and_place_it_in_the_basket</p><p><b>Construction:</b> Unordered triple selected from all C(7,3) object triples in this exact stock layout. | The explicit action plan follows the physical left-to-right/source-region rank; reversed wording is not a new identity. | Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ. | Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ. | Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.</p><a class='comparison' href='../assets/composition/comparison_png/COMP_223__put_the_butter_the_cream_cheese_box_and_the_tomato_sauce_in_the_basket_one_after_another.png?v=exact-masks-v2' target='_blank' rel='noopener'><div class='comparison-preview' role='img' aria-label='Original and composition comparison for COMP_223' data-preview-src='../assets/preview_sprites/composition_012.jpg' style="background-image:url('../assets/preview_sprites/composition_012.jpg?v=preview-sprites-v1');background-size:400% 500%;background-position:66.6667% 0%"></div></a><div class='videos'><figure><button type='button' class='play-one-video'>▶ Play video</button><video controls preload='none' data-src='../assets/composition/success_videos/COMP_223/COMP_223_ep000_ok.mp4' hidden></video><figcaption>successful episode 0</figcaption></figure><figure><button type='button' class='play-one-video'>▶ Play video</button><video controls preload='none' data-src='../assets/composition/success_videos/COMP_223/COMP_223_ep001_ok.mp4' hidden></video><figcaption>successful episode 1</figcaption></figure><figure><button type='button' class='play-one-video'>▶ Play video</button><video controls preload='none' data-src='../assets/composition/success_videos/COMP_223/COMP_223_ep003_ok.mp4' hidden></video><figcaption>successful episode 3</figcaption></figure></div></article></main><script>const f=document.querySelector('#filter');f.addEventListener('input',()=>{const q=f.value.trim().toLowerCase();document.querySelectorAll('.task').forEach(x=>x.hidden=q&&!x.dataset.search.includes(q));});</script>
 <script>(()=>{const KEY='RAIN_C026_MEDIA_REQUESTS_V2',WINDOW_MS=15*60*1000,LIMIT=180;function history(){const now=Date.now();try{return JSON.parse(localStorage.getItem(KEY)||'[]').filter(x=>Number.isFinite(x)&&now-x<WINDOW_MS)}catch(_){return[]}}function reserve(count){const now=Date.now(),values=history();if(values.length+count>LIMIT){const wait=Math.max(1,Math.ceil((WINDOW_MS-(now-values[0]))/60000));alert(`To avoid the 350 requests / 15 min server limit, media opening is paused. Please wait about ${wait} minute(s).`);return false}for(let i=0;i<count;i++)values.push(now);try{localStorage.setItem(KEY,JSON.stringify(values))}catch(_){}return true}document.addEventListener('click',event=>{const preview=event.target.closest('.comparison-preview');if(preview&&!reserve(1)){event.preventDefault();return}const button=event.target.closest('.play-one-video');if(!button)return;const video=button.nextElementSibling;if(!video||video.tagName!=='VIDEO'||!video.dataset.src)return;if(!reserve(1))return;video.src=video.dataset.src;video.removeAttribute('data-src');video.hidden=false;video.preload='metadata';button.remove();video.load();video.play().catch(()=>{})});document.querySelectorAll('.top,.hero').forEach(top=>{const note=document.createElement('p');note.className='request-policy';note.textContent='Comparison previews load automatically in shared sheets. Click a preview for full resolution; videos start with one Play click.';top.appendChild(note)})})();</script>
 </body></html>

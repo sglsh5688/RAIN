@@ -1,0 +1,22 @@
+task_id: BDRCOMP_033
+steps:
+- action_type: grasp
+  primary_object_id: butter_1
+  target_object_id: butter_1
+  source_task_id: 7
+  source_task_description: Pick the butter and place it in the left compartment of the bowl drainer.
+- action_type: release
+  primary_object_id: butter_1
+  target_object_id: bowl_drainer_1_left_region
+  source_task_id: 7
+  source_task_description: Pick the butter and place it in the left compartment of the bowl drainer.
+- action_type: grasp
+  primary_object_id: orange_juice_1
+  target_object_id: orange_juice_1
+  source_task_id: 10
+  source_task_description: Pick the orange juice and place it in the right compartment of the bowl drainer.
+- action_type: release
+  primary_object_id: orange_juice_1
+  target_object_id: bowl_drainer_1_right_region
+  source_task_id: 10
+  source_task_description: Pick the orange juice and place it in the right compartment of the bowl drainer.

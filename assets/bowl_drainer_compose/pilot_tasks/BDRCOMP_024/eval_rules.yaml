@@ -1,0 +1,14 @@
+task_id: BDRCOMP_024
+category: Composition
+required_goal_atoms: &id001
+- in(milk_1, bowl_drainer_1_left_region)
+- in(cream_cheese_1, bowl_drainer_1_right_region)
+forbidden_goal_atoms: []
+order_sensitive: true
+continue_after_success: false
+requires_transition: true
+custom_eval_needed: true
+ordered_event_atoms: *id001
+sequence_stages: []
+drainer_completion_mode: released_supported
+support_hold_control_steps: 5

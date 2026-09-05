@@ -1,0 +1,13 @@
+name: BDRCOMP_018
+language: Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the chocolate pudding and place it in the right compartment of the bowl drainer.
+problem: Libero
+problem_folder: tasks/bdrcomp_018__pick_the_alphabet_soup_and_place_it_in_the_left_compartment_of_the_bowl_drainer_then_pick_the_chocolate_pudding_and_place_it_in_the_right_compartment_of_the_bowl_drainer
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: compose|0473b5f12a13a33b19c5cf3f3a2f347898d4c0de2c0c9db3e33762828379b0f9

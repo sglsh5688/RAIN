@@ -2,7 +2,107 @@
 <title>Bowl Drainer Sections · Native-Success Episodes</title><style>
 :root{font-family:Inter,system-ui,sans-serif;color:#18333e;background:#f0eee8}*{box-sizing:border-box}body{margin:0}a{color:#116c94}.top{background:#173342;color:white;padding:18px 22px}.top a{color:#b8e9ff}h1{margin:0 0 8px;font-size:26px}.top p{max-width:1150px;line-height:1.45;margin:8px 0}.stats,.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}.pill{border:1px solid #ffffff40;border-radius:16px;padding:5px 10px;background:#ffffff14}button,select,input{padding:9px 11px;border:0;border-radius:7px;font:inherit}button{cursor:pointer;font-weight:700}input{width:min(410px,100%);min-width:0}.player{display:none;background:#092533;border-radius:10px;margin-top:12px;padding:10px;gap:12px;align-items:center}.player.active{display:flex}.player video{width:min(650px,70%);max-height:350px;background:#000}.player div{min-width:0;overflow-wrap:anywhere}.player small{color:#bfd7e1}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(530px,100%),1fr));gap:17px;padding:20px}.task{min-width:0;background:#fff;border-radius:12px;padding:16px;box-shadow:0 2px 9px #0001;overflow-wrap:anywhere}.task[hidden],.episode[hidden]{display:none}header{display:flex;gap:12px;justify-content:space-between;align-items:start}h2{font-size:21px;margin:0 0 5px}small{color:#5d757e}strong{white-space:nowrap}p{line-height:1.45}.instruction{background:#fff0c7;border-left:4px solid #cd9514;padding:10px;font-weight:650}.comparison{display:block;margin:12px 0;border:1px solid #d7e0e3;border-radius:8px;overflow:hidden}.sprite{display:block;width:100%;aspect-ratio:1200/520;background-image:url('../assets/bowl_drainer_sections/comparison_sprite.webp');background-size:100% 1000%;background-repeat:no-repeat}.episodes{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:7px}.episode{color:white;font-size:14px}.success{background:#117353}.failure{background:#aa493b}details{margin-top:13px}summary{cursor:pointer;font-weight:650}.docs{margin:0 20px 22px;background:#fff;border-radius:10px;padding:16px;line-height:1.5}#empty{padding:25px}@media(max-width:640px){.top{padding:14px}main{padding:10px;grid-template-columns:1fr}.task{padding:12px}header{flex-wrap:wrap}.player.active{display:block}.player video{width:100%;max-height:260px}.docs{margin:0 10px 15px}}
 .caution{background:#fff0c2;color:#422d07;border:2px solid #e0a629;border-radius:9px;padding:12px;margin-top:12px;line-height:1.5}.caseCaution{background:#fff5d8;border-left:4px solid #d69a17;padding:9px}.contactScroll{max-width:100%;overflow-x:auto}table{border-collapse:collapse;font-size:12px;min-width:510px}th,td{border:1px solid #d9e0e3;padding:6px;text-align:left}
-</style></head><body><section class='top'><h1>Bowl Drainer Sections · Native-Success Episodes</h1>
+</style><!-- REVIEW_DARK_THEME_START -->
+<meta name="color-scheme" content="dark">
+<style id="review-dark-theme">
+/* Shared, request-free dark theme. Simulation pixels and sprite geometry stay unchanged. */
+:root {
+  color-scheme: dark !important;
+  --review-bg: #0d131b;
+  --review-panel: #17212d;
+  --review-raised: #202e3d;
+  --review-line: #3b4e60;
+  --review-text: #e7edf5;
+  --review-muted: #b4c3d3;
+  color: var(--review-text) !important;
+  background-color: var(--review-bg) !important;
+}
+html, body { background-color: var(--review-bg) !important; color: var(--review-text) !important; }
+body :is(h1,h2,h3,h4,h5,h6,p,li,dt,dd,label,summary,th,td) { color: var(--review-text); }
+body :is(.card,.task,.docs,.panel,.summary-box,.census,.table,.table-wrap,.table-container,.intro,.logic,.goals,.metric,dialog) {
+  background-color: var(--review-panel) !important;
+  color: var(--review-text) !important;
+  border-color: var(--review-line) !important;
+  box-shadow: 0 3px 16px #0003;
+}
+body :is(.hero,.top,.toolbar,.player,.player-bar,.player-panel) {
+  background-color: #132333 !important;
+  color: var(--review-text) !important;
+  border-color: var(--review-line) !important;
+}
+body :is(.hero,.top) p, body .card p { color: var(--review-muted) !important; }
+body :is(small,figcaption,footer,.muted,.record,.rerun,.count,.meta,.subtitle,.source,.request-policy,.suite,.sr span,.task header span,.family,.step-heading span) {
+  color: var(--review-muted) !important;
+}
+body a { color: #91d3ff !important; }
+body a:visited { color: #c3b6ff !important; }
+body a.card { color: var(--review-text) !important; }
+body a.card:hover { background-color: #202e3d !important; border-color: #638ba8 !important; }
+body nav a { background-color: #213549 !important; border-color: #526d85 !important; }
+body .step-heading { color: var(--review-text) !important; }
+body :is(.card strong,.sr strong,.task header strong) { color: #87e1bf !important; }
+body .card span { color: #91d3ff !important; }
+body :is(input,select,textarea,option) {
+  color: var(--review-text) !important;
+  background-color: #101c28 !important;
+  border-color: #62798f !important;
+  caret-color: #a6dfff;
+}
+body ::placeholder { color: #a5b6c9 !important; opacity: 1; }
+body button, body :is(.button,.btn) {
+  color: var(--review-text) !important;
+  background-color: #2b4054 !important;
+  border-color: #688399 !important;
+}
+body button:hover, body :is(.button,.btn):hover { background-color: #3c5871 !important; }
+body button:disabled { color: #a5b6c9 !important; background-color: #25313e !important; }
+body :is(button[aria-pressed="true"],button.active,.tabs .active) {
+  background-color: #294e69 !important;
+  color: #f3faff !important;
+  border-color: #a2dfff !important;
+  box-shadow: inset 0 0 0 1px #a2dfff;
+}
+body :is(.play,.play-task,.success,.ok,.good,#playAll,.export) {
+  background-color: #195440 !important;
+  color: #d2ffed !important;
+  border-color: #4aa584 !important;
+}
+body :is(.failure,.fail,.bad) {
+  background-color: #64323b !important;
+  color: #ffe3e7 !important;
+  border-color: #ce8190 !important;
+}
+body :is(.note,.rewrite,.caution,.caseCaution,.warning,.warn,.audit,.rerun) {
+  background-color: #352c1b !important;
+  color: #ffe2a6 !important;
+  border-color: #c89842 !important;
+}
+body :is(.note,.rewrite,.caution,.caseCaution,.warning,.warn,.audit,.rerun) :is(p,strong,small,li) { color: inherit !important; }
+body .instruction { background-color: transparent !important; color: var(--review-text) !important; }
+body :is(.none,.empty,.empty-step,.pill,.badge,.tag) {
+  background-color: #26374a !important;
+  color: #d3e1ef !important;
+  border-color: #526d85 !important;
+}
+body :is(.selected,.category.adapt) { background-color: #25463f !important; color: #b2f0db !important; }
+body .category.decomposition { background-color: #303958 !important; color: #d0d7ff !important; }
+body .category.compose { background-color: #263f57 !important; color: #b7e2ff !important; }
+body :is(details,summary,hr,.comparison) { border-color: var(--review-line) !important; }
+body :is(summary,label) { color: var(--review-text) !important; }
+body :is(code,pre) { background-color: #111c28 !important; color: #c8e5ff !important; }
+body table { background-color: var(--review-panel) !important; color: var(--review-text) !important; }
+body :is(th,td) { border-color: #425469 !important; color: var(--review-text) !important; }
+body th { background-color: #25364a !important; }
+body td { background-color: var(--review-panel) !important; }
+body tr:nth-child(even) td { background-color: #1c2938 !important; }
+body tr:hover td { background-color: #293d51 !important; }
+body dialog::backdrop { background-color: #000b; }
+body :is(a,button,input,select,textarea,summary):focus-visible { outline: 3px solid #9ad9ff !important; outline-offset: 3px; }
+::selection { background-color: #355d7c; color: #fff; }
+/* Only the empty media surround changes; no filter, opacity, image or video recoloring. */
+body :is(.preview,.sprite,.comparison-preview,img,video) { background-color: #0a111a !important; }
+</style>
+<!-- REVIEW_DARK_THEME_END --></head><body><section class='top'><h1>Bowl Drainer Sections · Native-Success Episodes</h1>
 <p>Five object variants × robot-left / robot-right. Each task has one compartment-specific instruction, one accepted native goal region, and one compartment-only destination mask. Comparison panels: original LIBERO → previous either-compartment scene → new dedicated-compartment scene.</p>
 <div class='stats'><span class='pill'>10 tasks · 10 with native success</span><span class='pill'>Native SR: 49/50 · 98.0%</span><span class='pill'>GPUs 6/7</span><a class='pill' href='../bowl_drainer_sections/index.html'>All trials</a><a class='pill' href='tasks.tsv'>Task table</a></div>
 <aside class='caution' role='note'><b>IMPORTANT: native success is NOT proof of settled placement.</b><br>49/49 native-success clips stop at the selected native In predicate's first true step. Final drainer contact: 0/49; final floor contact: 0/49; neither contact: 49/49. The unchanged LIBERO evaluator may end before landing. No post-success settling was tested. Separate geometry-placement witnesses are not policy successes.</aside>

@@ -1,0 +1,201 @@
+task_id	episode_index	strict_success	native_final_conjunction	native_ordered_final_success	both_native_ever	left_then_right_supported_steps	supported_final	control_steps	audit_generation	active_agent_missing_branch_availability_protocol	older_wrist_previous_None_causes_retrospectively_verified	original_episode_video
+BDRCOMP_001	0	False	False	False	False	[183, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_001_ep000_fail.mp4
+BDRCOMP_001	1	False	False	False	False	[207, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_001_ep001_fail.mp4
+BDRCOMP_001	2	False	False	False	False	[632, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_001_ep002_fail.mp4
+BDRCOMP_001	3	False	False	False	False	[196, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_001_ep003_fail.mp4
+BDRCOMP_001	4	False	False	False	False	[199, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_001_ep004_fail.mp4
+BDRCOMP_002	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_002_ep000_fail.mp4
+BDRCOMP_002	1	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_002_ep001_fail.mp4
+BDRCOMP_002	2	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_002_ep002_fail.mp4
+BDRCOMP_002	3	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_002_ep003_fail.mp4
+BDRCOMP_002	4	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_002_ep004_fail.mp4
+BDRCOMP_003	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_003_ep000_fail.mp4
+BDRCOMP_003	1	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_003_ep001_fail.mp4
+BDRCOMP_003	2	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_003_ep002_fail.mp4
+BDRCOMP_003	3	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_003_ep003_fail.mp4
+BDRCOMP_003	4	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_003_ep004_fail.mp4
+BDRCOMP_004	0	False	False	False	False	[628, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_004_ep000_fail.mp4
+BDRCOMP_004	1	False	False	False	False	[218, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_004_ep001_fail.mp4
+BDRCOMP_004	2	True	True	True	True	[214, 709]	[True, True]	709	retained_original_v2		False	videos/BDRCOMP_004_ep002_ok.mp4
+BDRCOMP_004	3	False	False	False	False	[225, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_004_ep003_fail.mp4
+BDRCOMP_004	4	False	False	False	False	[226, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_004_ep004_fail.mp4
+BDRCOMP_005	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_005_ep000_fail.mp4
+BDRCOMP_005	1	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_005_ep001_fail.mp4
+BDRCOMP_005	2	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_005_ep002_fail.mp4
+BDRCOMP_005	3	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_005_ep003_fail.mp4
+BDRCOMP_005	4	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_005_ep004_fail.mp4
+BDRCOMP_006	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_006_ep000_fail.mp4
+BDRCOMP_006	1	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_006_ep001_fail.mp4
+BDRCOMP_006	2	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_006_ep002_fail.mp4
+BDRCOMP_006	3	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_006_ep003_fail.mp4
+BDRCOMP_006	4	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_006_ep004_fail.mp4
+BDRCOMP_007	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_007_ep000_fail.mp4
+BDRCOMP_007	1	False	False	False	False	[254, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_007_ep001_fail.mp4
+BDRCOMP_007	2	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_007_ep002_fail.mp4
+BDRCOMP_007	3	False	False	False	False	[210, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_007_ep003_fail.mp4
+BDRCOMP_007	4	True	True	True	True	[196, 514]	[True, True]	514	retained_original_v2		False	videos/BDRCOMP_007_ep004_ok.mp4
+BDRCOMP_008	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_008_ep000_fail.mp4
+BDRCOMP_008	1	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_008_ep001_fail.mp4
+BDRCOMP_008	2	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_008_ep002_fail.mp4
+BDRCOMP_008	3	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_008_ep003_fail.mp4
+BDRCOMP_008	4	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_008_ep004_fail.mp4
+BDRCOMP_009	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_009_ep000_fail.mp4
+BDRCOMP_009	1	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_009_ep001_fail.mp4
+BDRCOMP_009	2	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_009_ep002_fail.mp4
+BDRCOMP_009	3	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_009_ep003_fail.mp4
+BDRCOMP_009	4	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_009_ep004_fail.mp4
+BDRCOMP_010	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_010_ep000_fail.mp4
+BDRCOMP_010	1	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_010_ep001_fail.mp4
+BDRCOMP_010	2	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_010_ep002_fail.mp4
+BDRCOMP_010	3	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_010_ep003_fail.mp4
+BDRCOMP_010	4	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_010_ep004_fail.mp4
+BDRCOMP_011	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_011_ep000_fail.mp4
+BDRCOMP_011	1	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_011_ep001_fail.mp4
+BDRCOMP_011	2	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_011_ep002_fail.mp4
+BDRCOMP_011	3	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_011_ep003_fail.mp4
+BDRCOMP_011	4	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_011_ep004_fail.mp4
+BDRCOMP_012	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_012_ep000_fail.mp4
+BDRCOMP_012	1	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_012_ep001_fail.mp4
+BDRCOMP_012	2	False	False	False	False	[None, None]	[False, True]	306	retained_original_v2		False	videos/BDRCOMP_012_ep002_fail.mp4
+BDRCOMP_012	3	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_012_ep003_fail.mp4
+BDRCOMP_012	4	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_012_ep004_fail.mp4
+BDRCOMP_013	0	False	False	False	False	[208, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_013_ep000_fail.mp4
+BDRCOMP_013	1	False	False	False	False	[249, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_013_ep001_fail.mp4
+BDRCOMP_013	2	False	False	False	False	[226, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_013_ep002_fail.mp4
+BDRCOMP_013	3	False	False	False	False	[194, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_013_ep003_fail.mp4
+BDRCOMP_013	4	False	False	False	False	[195, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_013_ep004_fail.mp4
+BDRCOMP_014	0	False	False	False	False	[359, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_014_ep000_fail.mp4
+BDRCOMP_014	1	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_014_ep001_fail.mp4
+BDRCOMP_014	2	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_014_ep002_fail.mp4
+BDRCOMP_014	3	False	False	False	False	[279, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_014_ep003_fail.mp4
+BDRCOMP_014	4	False	False	False	False	[196, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_014_ep004_fail.mp4
+BDRCOMP_015	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_015_ep000_fail.mp4
+BDRCOMP_015	1	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_015_ep001_fail.mp4
+BDRCOMP_015	2	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_015_ep002_fail.mp4
+BDRCOMP_015	3	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_015_ep003_fail.mp4
+BDRCOMP_015	4	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_015_ep004_fail.mp4
+BDRCOMP_016	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_016_ep000_fail.mp4
+BDRCOMP_016	1	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_016_ep001_fail.mp4
+BDRCOMP_016	2	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_016_ep002_fail.mp4
+BDRCOMP_016	3	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_016_ep003_fail.mp4
+BDRCOMP_016	4	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_016_ep004_fail.mp4
+BDRCOMP_017	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_017_ep000_fail.mp4
+BDRCOMP_017	1	False	False	False	False	[602, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_017_ep001_fail.mp4
+BDRCOMP_017	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_017_ep002_fail.mp4
+BDRCOMP_017	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_017_ep003_fail.mp4
+BDRCOMP_017	4	False	False	False	False	[178, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_017_ep004_fail.mp4
+BDRCOMP_018	0	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_018_ep000_fail.mp4
+BDRCOMP_018	1	False	False	False	False	[None, None]	[False, True]	193	retained_original_v2		False	videos/BDRCOMP_018_ep001_fail.mp4
+BDRCOMP_018	2	False	False	False	False	[None, None]	[False, True]	187	retained_original_v2		False	videos/BDRCOMP_018_ep002_fail.mp4
+BDRCOMP_018	3	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_018_ep003_fail.mp4
+BDRCOMP_018	4	False	False	False	False	[None, None]	[False, False]	1040	retained_original_v2		False	videos/BDRCOMP_018_ep004_fail.mp4
+BDRCOMP_019	0	False	False	False	False	[874, None]	[True, False]	1040	retained_original_v2		False	videos/BDRCOMP_019_ep000_fail.mp4
+BDRCOMP_019	1	False	False	False	False	[245, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_019_ep001_fail.mp4
+BDRCOMP_019	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_019_ep002_fail.mp4
+BDRCOMP_019	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_019_ep003_fail.mp4
+BDRCOMP_019	4	False	False	False	False	[461, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_019_ep004_fail.mp4
+BDRCOMP_020	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_020_ep000_fail.mp4
+BDRCOMP_020	1	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_020_ep001_fail.mp4
+BDRCOMP_020	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_020_ep002_fail.mp4
+BDRCOMP_020	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_020_ep003_fail.mp4
+BDRCOMP_020	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_020_ep004_fail.mp4
+BDRCOMP_021	0	True	True	True	True	[182, 736]	[True, True]	736	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_021_ep000_ok.mp4
+BDRCOMP_021	1	False	False	False	False	[233, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_021_ep001_fail.mp4
+BDRCOMP_021	2	True	True	True	True	[272, 464]	[True, True]	464	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_021_ep002_ok.mp4
+BDRCOMP_021	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_021_ep003_fail.mp4
+BDRCOMP_021	4	False	False	False	False	[179, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_021_ep004_fail.mp4
+BDRCOMP_022	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_022_ep000_fail.mp4
+BDRCOMP_022	1	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_022_ep001_fail.mp4
+BDRCOMP_022	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_022_ep002_fail.mp4
+BDRCOMP_022	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_022_ep003_fail.mp4
+BDRCOMP_022	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_022_ep004_fail.mp4
+BDRCOMP_023	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_023_ep000_fail.mp4
+BDRCOMP_023	1	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_023_ep001_fail.mp4
+BDRCOMP_023	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_023_ep002_fail.mp4
+BDRCOMP_023	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_023_ep003_fail.mp4
+BDRCOMP_023	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_023_ep004_fail.mp4
+BDRCOMP_024	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_024_ep000_fail.mp4
+BDRCOMP_024	1	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_024_ep001_fail.mp4
+BDRCOMP_024	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_024_ep002_fail.mp4
+BDRCOMP_024	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_024_ep003_fail.mp4
+BDRCOMP_024	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_024_ep004_fail.mp4
+BDRCOMP_025	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_025_ep000_fail.mp4
+BDRCOMP_025	1	False	False	False	False	[None, None]	[False, True]	388	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_025_ep001_fail.mp4
+BDRCOMP_025	2	False	False	False	False	[None, None]	[False, True]	862	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_025_ep002_fail.mp4
+BDRCOMP_025	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_025_ep003_fail.mp4
+BDRCOMP_025	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_025_ep004_fail.mp4
+BDRCOMP_026	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_026_ep000_fail.mp4
+BDRCOMP_026	1	False	False	False	False	[347, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_026_ep001_fail.mp4
+BDRCOMP_026	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_026_ep002_fail.mp4
+BDRCOMP_026	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_026_ep003_fail.mp4
+BDRCOMP_026	4	False	False	False	False	[862, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_026_ep004_fail.mp4
+BDRCOMP_027	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_027_ep000_fail.mp4
+BDRCOMP_027	1	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_027_ep001_fail.mp4
+BDRCOMP_027	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_027_ep002_fail.mp4
+BDRCOMP_027	3	False	False	False	False	[957, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_027_ep003_fail.mp4
+BDRCOMP_027	4	False	False	False	False	[236, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_027_ep004_fail.mp4
+BDRCOMP_028	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_028_ep000_fail.mp4
+BDRCOMP_028	1	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_028_ep001_fail.mp4
+BDRCOMP_028	2	False	False	False	False	[368, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_028_ep002_fail.mp4
+BDRCOMP_028	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_028_ep003_fail.mp4
+BDRCOMP_028	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_028_ep004_fail.mp4
+BDRCOMP_029	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_029_ep000_fail.mp4
+BDRCOMP_029	1	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_029_ep001_fail.mp4
+BDRCOMP_029	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_029_ep002_fail.mp4
+BDRCOMP_029	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_029_ep003_fail.mp4
+BDRCOMP_029	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_029_ep004_fail.mp4
+BDRCOMP_030	0	False	False	False	False	[355, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_030_ep000_fail.mp4
+BDRCOMP_030	1	False	False	False	False	[294, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_030_ep001_fail.mp4
+BDRCOMP_030	2	False	False	False	False	[276, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_030_ep002_fail.mp4
+BDRCOMP_030	3	False	False	False	False	[307, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_030_ep003_fail.mp4
+BDRCOMP_030	4	False	False	False	False	[275, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_030_ep004_fail.mp4
+BDRCOMP_031	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_031_ep000_fail.mp4
+BDRCOMP_031	1	False	False	False	False	[485, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_031_ep001_fail.mp4
+BDRCOMP_031	2	False	False	False	False	[785, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_031_ep002_fail.mp4
+BDRCOMP_031	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_031_ep003_fail.mp4
+BDRCOMP_031	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_031_ep004_fail.mp4
+BDRCOMP_032	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_032_ep000_fail.mp4
+BDRCOMP_032	1	False	False	False	False	[536, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_032_ep001_fail.mp4
+BDRCOMP_032	2	False	False	False	False	[None, None]	[False, True]	176	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_032_ep002_fail.mp4
+BDRCOMP_032	3	False	False	False	False	[338, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_032_ep003_fail.mp4
+BDRCOMP_032	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_032_ep004_fail.mp4
+BDRCOMP_033	0	False	False	False	False	[193, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_033_ep000_fail.mp4
+BDRCOMP_033	1	False	False	False	False	[207, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_033_ep001_fail.mp4
+BDRCOMP_033	2	False	False	False	False	[209, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_033_ep002_fail.mp4
+BDRCOMP_033	3	False	False	False	False	[973, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_033_ep003_fail.mp4
+BDRCOMP_033	4	False	False	False	False	[200, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_033_ep004_fail.mp4
+BDRCOMP_034	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_034_ep000_fail.mp4
+BDRCOMP_034	1	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_034_ep001_fail.mp4
+BDRCOMP_034	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_034_ep002_fail.mp4
+BDRCOMP_034	3	False	False	False	False	[None, None]	[False, True]	304	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_034_ep003_fail.mp4
+BDRCOMP_034	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_034_ep004_fail.mp4
+BDRCOMP_035	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_035_ep000_fail.mp4
+BDRCOMP_035	1	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_035_ep001_fail.mp4
+BDRCOMP_035	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_035_ep002_fail.mp4
+BDRCOMP_035	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_035_ep003_fail.mp4
+BDRCOMP_035	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_035_ep004_fail.mp4
+BDRCOMP_036	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_036_ep000_fail.mp4
+BDRCOMP_036	1	False	False	False	False	[363, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_036_ep001_fail.mp4
+BDRCOMP_036	2	False	False	False	False	[335, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_036_ep002_fail.mp4
+BDRCOMP_036	3	True	True	True	True	[390, 676]	[True, True]	676	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_036_ep003_ok.mp4
+BDRCOMP_036	4	False	False	False	False	[969, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_036_ep004_fail.mp4
+BDRCOMP_037	0	False	False	False	False	[180, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_037_ep000_fail.mp4
+BDRCOMP_037	1	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_037_ep001_fail.mp4
+BDRCOMP_037	2	False	False	False	False	[604, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_037_ep002_fail.mp4
+BDRCOMP_037	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_037_ep003_fail.mp4
+BDRCOMP_037	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_037_ep004_fail.mp4
+BDRCOMP_038	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_038_ep000_fail.mp4
+BDRCOMP_038	1	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_038_ep001_fail.mp4
+BDRCOMP_038	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_038_ep002_fail.mp4
+BDRCOMP_038	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_038_ep003_fail.mp4
+BDRCOMP_038	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_038_ep004_fail.mp4
+BDRCOMP_039	0	False	False	False	False	[206, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_039_ep000_fail.mp4
+BDRCOMP_039	1	False	False	False	False	[248, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_039_ep001_fail.mp4
+BDRCOMP_039	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_039_ep002_fail.mp4
+BDRCOMP_039	3	False	False	False	False	[256, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_039_ep003_fail.mp4
+BDRCOMP_039	4	False	False	False	False	[284, None]	[True, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_039_ep004_fail.mp4
+BDRCOMP_040	0	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_040_ep000_fail.mp4
+BDRCOMP_040	1	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_040_ep001_fail.mp4
+BDRCOMP_040	2	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_040_ep002_fail.mp4
+BDRCOMP_040	3	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_040_ep003_fail.mp4
+BDRCOMP_040	4	False	False	False	False	[None, None]	[False, False]	1040	fresh_visibility_v3	drainer_compose_visible_empty_gt_v3	False	videos/BDRCOMP_040_ep004_fail.mp4

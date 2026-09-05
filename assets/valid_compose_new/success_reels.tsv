@@ -1,5 +1,7 @@
 task_id	episodes	source_video_count	reel	bytes
 VCN1_006	0	1	assets/valid_compose_new/success_reels/VCN1_006.mp4	433872
+VCN1_010	0,1,2,4	4	assets/valid_compose_new/success_reels/VCN1_010.mp4	822515
 VCN3_001	2,4	2	assets/valid_compose_new/success_reels/VCN3_001.mp4	558284
 VCN3_003	1,2	2	assets/valid_compose_new/success_reels/VCN3_003.mp4	505467
 VCN5_003	2	1	assets/valid_compose_new/success_reels/VCN5_003.mp4	399535
+VCN6_002	4	1	assets/valid_compose_new/success_reels/VCN6_002.mp4	89370

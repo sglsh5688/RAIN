@@ -1,0 +1,63 @@
+task_id: VCN1_010
+task_name: Put the moka pot on the stove, then close the middle drawer of the white cabinet.
+language: Put the moka pot on the stove, then close the middle drawer of the white cabinet.
+primary_category: Composition
+composition_family: moka_then_upper_drawer_close
+anchor_suite: libero_10
+source_prior_task_ids:
+- '103'
+source_priors:
+- suite: libero_10
+  task_stem: KITCHEN_SCENE8_put_both_moka_pots_on_the_stove
+  instruction: put both moka pots on the stove
+  bddl: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl
+  init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.pruned_init
+  evidence: ''
+- suite: libero_10
+  task_stem: KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it
+  instruction: put the black bowl in the bottom drawer of the cabinet and close it
+  bddl: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.bddl
+  init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the moka pot on the stove
+- Close the middle drawer of the white cabinet
+component_evidence:
+- Exact moka/stove poses and successful first component of MKDC_001 (4/5 final Compose).
+- Previously evaluated ANLGX_023 middle-drawer close primitive; original 5ep SR 4/5.
+semantic_subtask_count: 2
+action_plan_step_count: 3
+canonical_goal_atoms:
+- on(moka_pot_2, flat_stove_1_cook_region)
+- close(white_cabinet_1_middle_region)
+canonical_task_signature: composition|606e3ea776ebb15570af0aaaf36bd8ea2e9d9031c0af1c3990db7010da049b6e|frozenset({close(white_cabinet_1_middle_region),on(moka_pot_2,flat_stove_1_cook_region)})
+objects_of_interest:
+- moka_pot_2
+- flat_stove_1_cook_region
+- white_cabinet_1_middle_region
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - on(moka_pot_2, flat_stove_1_cook_region)
+- - on(moka_pot_2, flat_stove_1_cook_region)
+  - close(white_cabinet_1_middle_region)
+physical_group: mkdc_ordered_drawer_control
+base_bddl_template: LIBERO_EX_ICRA27/LiberoUserTasks/MokaThenDrawerClose20260905/tasks/mkdc_001__put_the_moka_pot_on_the_stove_then_close_the_bottom_drawer_of_the_cabinet/task.bddl
+base_pruned_init: LIBERO_EX_ICRA27/LiberoUserTasks/MokaThenDrawerClose20260905/tasks/mkdc_001__put_the_moka_pot_on_the_stove_then_close_the_bottom_drawer_of_the_cabinet/task.pruned_init
+max_steps: 1600
+definition_status: native_five_states_verified
+notes:
+- Gripper trajectory continuity is a soft prior, not an exclusion rule; both action orders are evaluated where defined.
+- All movable-object and fixture root poses are source-aligned; only drawer joint openings required by the new task are changed.
+- Strict ordered native events and native final goals determine success; Compose final completion has no TC threshold.
+ordered_event_atoms:
+- on(moka_pot_2, flat_stove_1_cook_region)
+- close(white_cabinet_1_middle_region)
+ordered_task_signature: b0331d30c060b9ac4e17e091e1f99f3572a40f0fb23585b7e21ebce90a21ef94
+policy_evaluation_authorized: true
+evaluation_authorized: true
+fixture_replay_required: true
+fixture_replay_file: FIXTURE_REPLAY.json
+required_init_predicates: []
+compose_final_termination: ordered_native_goals_without_tc
+trajectory_alignment_policy: soft_prior_not_exclusion

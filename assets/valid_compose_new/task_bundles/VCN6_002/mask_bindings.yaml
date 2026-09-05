@@ -1,0 +1,18 @@
+task_id: VCN6_002
+policy: exact_instance_no_union
+bindings:
+- role: interaction_target_1
+  kind: drawer_part
+  value: white_cabinet_1:top
+  color: cyan
+  exact_instance: true
+- role: interaction_target_2
+  kind: drawer_part
+  value: white_cabinet_1:middle
+  color: cyan
+  exact_instance: true
+runtime_requirements:
+  resolve_by_current_sim_model: true
+  allow_source_episode_json_fallback: false
+  new_instance_support: false
+  region_projection_from_current_bddl: false

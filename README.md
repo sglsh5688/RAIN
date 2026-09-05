@@ -32,14 +32,15 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 <!-- COMPOSE_README_END -->
 
 
-<!-- ADAPT_README_START -->
-- `adapt192/`: all 192 evaluated atomic Adapt candidates (960 episodes)
-- `adapt_success/`: Adapt candidates with at least one success (50 tasks, 151 successful episodes)
-- Adapt media policy: 20 previews per JPEG sprite, one on-demand video player, and one concatenated success reel per task; `preload=none` prevents eager video requests.
-<!-- ADAPT_README_END -->
 
 <!-- ADAPT_CROSS_README_START -->
 - `adapt_cross74/`: all 74 cross-suite Adapt candidates (370 episodes)
 - `adapt_cross_success/`: 46 candidates with success (158 successful episodes)
 - Media: shared preview sprites, `preload=none`, and one on-demand concatenated reel per task.
 <!-- ADAPT_CROSS_README_END -->
+
+<!-- ADAPT_README_START -->
+- `adapt192/`: all 192 evaluated atomic Adapt candidates (960 episodes)
+- `adapt_success/`: Adapt candidates with at least one success, excluding selected tasks (42 tasks, 125 successful episodes)
+- Adapt media policy: 20 previews per JPEG sprite, one on-demand video player, and one concatenated success reel per task; `preload=none` prevents eager video requests.
+<!-- ADAPT_README_END -->

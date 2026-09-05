@@ -1,0 +1,8 @@
+task_id	family	scene_source	actions	instruction
+VCN6_001	successful_bowl_middle_close_prefix_then_bottom	LIBERO_10_04 exact roots	bowl_bottom;close_middle;close_bottom	Put the black bowl in the bottom drawer of the white cabinet, then close the middle drawer of the white cabinet, and finally close the bottom drawer of the white cabinet.
+VCN6_002	upper_drawer_pair	LIBERO_10_04 exact roots	close_top;close_middle	Close the top drawer of the white cabinet, then close the middle drawer of the white cabinet.
+VCN6_003	upper_drawer_reverse_pair	LIBERO_10_04 exact roots	close_middle;close_top	Close the middle drawer of the white cabinet, then close the top drawer of the white cabinet.
+VCN6_004	top_middle_bottom_order	LIBERO_10_04 exact roots	close_top;close_middle;close_bottom	Close the top drawer of the white cabinet, then close the middle drawer of the white cabinet, and finally close the bottom drawer of the white cabinet.
+VCN6_005	middle_top_bottom_order	LIBERO_10_04 exact roots	close_middle;close_top;close_bottom	Close the middle drawer of the white cabinet, then close the top drawer of the white cabinet, and finally close the bottom drawer of the white cabinet.
+VCN6_006	successful_top_bottom_prefix_extension	LIBERO_10_04 exact roots	close_top;close_bottom;close_middle	Close the top drawer of the white cabinet, then close the bottom drawer of the white cabinet, and finally close the middle drawer of the white cabinet.
+VCN6_007	successful_middle_bottom_prefix_extension	LIBERO_10_04 exact roots	close_middle;close_bottom;close_top	Close the middle drawer of the white cabinet, then close the bottom drawer of the white cabinet, and finally close the top drawer of the white cabinet.

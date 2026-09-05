@@ -22,7 +22,7 @@
   "native_center_region_used": false,
   "removed_initial_collision_blocker": "akita_black_bowl_2",
   "prior_plate_to_dining_set_screen": "NAF_005_to_NAF_008_all_failed_0_of_20",
-  "github_upload_performed": false,
+  "github_upload_performed": true,
   "policy_inference_run": true,
   "evaluation_tasks": 5,
   "evaluation_episodes": 25,

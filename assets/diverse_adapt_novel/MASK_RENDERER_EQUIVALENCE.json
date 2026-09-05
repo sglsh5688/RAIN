@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "audited_at_utc": "2026-09-05T07:47:17Z",
+  "status": "passed_synthetic_not_live",
+  "scope": "All ten unique segmentable body binding roots used by the 36-task novel-scene suite; native-site camera convention inspected separately.",
+  "qualification": "No simulator was launched, no live image was rendered, and no persisted PNG was compared in this audit. The executed test used the actual Python function ASTs against an XML-derived mock body hierarchy and asymmetric synthetic 320x320 segmentation. This proves the tested code paths and XML body ownership agree, not live camera calibration, visibility, settling, or saved-state equality.",
+  "source_sha256": {
+    "benchmark_sources/build_libero_analogy.py": "c824b5ae880f22ac3906552be457a34b593ec972eb955e63a7d1f4496ed15aa6",
+    "benchmark_sources/novel_scene_mask_geometry.py": "ef9a2bd2b16567cafd5710829bb11fac8f45f35683791d0a8b1e53e85a6dab7b",
+    "benchmark_sources/novel_scene_object_bindings.py": "7246d44e5e758d6a49746c7890fe19809dc5935bd2cd2c6be2fcbb59976790c6",
+    "benchmark_sources/run_novel_scene_adapt_evaluator_entry.py": "98d8925b77bea64473370a73c9e26b1ec99b579247a4023673d03807aeb582b9",
+    "local_sources/runtime.py": "2aacdbb0c82f10d410339a521c375b0cb0e242f0675f79349ef2b30a66a95840",
+    "libero/assets/stable_hope_objects/popcorn/popcorn.xml": "79b3a7f8d48b6ce592228789b934bf37fffb5991412b66d376f0aff8b0f57f43",
+    "libero/assets/stable_hope_objects/macaroni_and_cheese/macaroni_and_cheese.xml": "53d12d072c167ffc26a072bca10f89ab5ca7c6b05b1038dc41d5428122e72440",
+    "libero/assets/turbosquid_objects/yellow_book/yellow_book.xml": "d50e17f35728e7ccec4dd6bfa56316f27eed3cac3f5446fad11f2f3369c73acc",
+    "libero/assets/stable_hope_objects/new_salad_dressing/new_salad_dressing.xml": "daa4f363607329fcc4d4c0edccce9f9584db074d00eef2f14291803b0accfeb3",
+    "libero/assets/articulated_objects/short_cabinet.xml": "410a5854aed734e046a092dbb54ad620abaad6c47ece3081e71afe0d11dc8f93",
+    "libero/assets/articulated_objects/white_cabinet.xml": "b8ebf670ad0d5533d9fedbfdd7909d263792fc6725d4ca5d4df987660cee264a"
+  },
+  "camera_contract": {
+    "camera_name": "agentview",
+    "image_size": 320,
+    "review_body_mask": "raw_segmentation_mask[::-1, :]",
+    "runtime_body_mask": "raw_segmentation_mask[::-1, ::-1]",
+    "review_native_site_mask": "novel_scene_mask_geometry.render_region_mask current live box projection in top-left coordinates",
+    "runtime_native_site_mask": "review_native_site_mask[:, ::-1]",
+    "comparison": "np.array_equal(review_mask > 0, runtime_mask[:, ::-1] > 0)",
+    "runtime_function": "final_libero_ex_eval.impl.runtime.sim_mask_for_object_id",
+    "runtime_default_image_size": 256,
+    "require_explicit_320": true,
+    "native_site_qualification": "Source inspection only in this audit. Native site masks are projected geometric box silhouettes, not occlusion segmentation or whole parent-body masks. Finite workspace rectangles use the existing diverse region helper."
+  },
+  "test_method": {
+    "build_functions_ast_executed": ["model_body_names", "descendant_bodies", "selector_body_ids", "render_body_mask"],
+    "runtime_functions_ast_executed": ["is_object_segmentable", "get_object_body_ids", "get_object_geom_ids", "verify_and_correct_body_ids", "sim_mask_for_object_id"],
+    "mock_model": "Parse the six source XMLs' object bodies recursively. Rename object to instance_main and prefix child names. Build body_parentid and geom_bodyid from direct XML children. Include world body index zero.",
+    "synthetic_segmentation": "Initialize an int32 (320,320,2) array with type=5 and geom_id=-1; assign each XML geom id one asymmetric pixel at divmod(geom_id*173,320). Return this unchanged from mock sim.render.",
+    "bindings": "Each test uses name=the exact body root, body_ids=[0], geom_ids=[], segmentable=True; actual verify_and_correct_body_ids resolves the placeholder to the expected root.",
+    "review_selector": "body_prefix with the exact binding root name",
+    "task_override": "_get_task_specific_geom_ids was replaced with an empty-list callback. Independent source inspection confirmed its stove-turn and exact wooden_cabinet_1_main training-release overrides do not apply to the four novel primaries or selected short/white cabinet drawers.",
+    "action_type": null,
+    "assertion": "Both outputs are nonempty and np.array_equal(review_output, runtime_output[:, ::-1]) for each binding.",
+    "geom_count_qualification": "Counts below are raw XML direct/descendant geoms, not compiled simulator counts. Robosuite may duplicate collision geoms as visual geoms, without changing the relevant body ownership."
+  },
+  "bindings": [
+    {"body_name": "popcorn_1_main", "direct_xml_geoms": 2, "all_descendant_xml_geoms": 2, "child_bodies": [], "exact_xmirror_equal": true},
+    {"body_name": "macaroni_and_cheese_1_main", "direct_xml_geoms": 2, "all_descendant_xml_geoms": 2, "child_bodies": [], "exact_xmirror_equal": true},
+    {"body_name": "yellow_book_1_main", "direct_xml_geoms": 2, "all_descendant_xml_geoms": 2, "child_bodies": [], "exact_xmirror_equal": true},
+    {"body_name": "new_salad_dressing_1_main", "direct_xml_geoms": 0, "all_descendant_xml_geoms": 16, "child_bodies": ["new_salad_dressing_1_sald_dressing_body"], "exact_xmirror_equal": true},
+    {"body_name": "short_cabinet_1_drawer_top", "direct_xml_geoms": 11, "all_descendant_xml_geoms": 11, "child_bodies": [], "exact_xmirror_equal": true},
+    {"body_name": "short_cabinet_1_drawer_middle", "direct_xml_geoms": 11, "all_descendant_xml_geoms": 11, "child_bodies": [], "exact_xmirror_equal": true},
+    {"body_name": "short_cabinet_1_drawer_bottom", "direct_xml_geoms": 11, "all_descendant_xml_geoms": 11, "child_bodies": [], "exact_xmirror_equal": true},
+    {"body_name": "white_cabinet_1_cabinet_top", "direct_xml_geoms": 11, "all_descendant_xml_geoms": 11, "child_bodies": [], "exact_xmirror_equal": true},
+    {"body_name": "white_cabinet_1_cabinet_middle", "direct_xml_geoms": 11, "all_descendant_xml_geoms": 11, "child_bodies": [], "exact_xmirror_equal": true},
+    {"body_name": "white_cabinet_1_cabinet_bottom", "direct_xml_geoms": 11, "all_descendant_xml_geoms": 11, "child_bodies": [], "exact_xmirror_equal": true}
+  ],
+  "selector_caveat": {
+    "tested_legacy_selector": {"kind": "drawer_part", "value": "short_cabinet_1:middle"},
+    "resolved_body_ids": [],
+    "reason": "Legacy drawer_part recognizes instance_cabinet_slot or instance_slot, but short cabinet bodies use instance_drawer_slot.",
+    "required_short_cabinet_selector": "body_prefix: short_cabinet_1_drawer_{top,middle,bottom}"
+  },
+  "body_selection_conclusion": "The review renderer always includes descendant bodies; runtime does so only when selected bodies own no direct geoms. None of these ten binding roots owns both direct geoms and child-body geoms, so this conditional difference does not change their geom selection.",
+  "independent_live_test_contract": [
+    "Use the identical initialized current simulator state for both calls, without intervening steps, joint changes, camera changes, or extra settling.",
+    "Resolve corrected_bids against current names and assert the exact expected body root, never use placeholder [0]. Check no explicit or task-specific geom override applies.",
+    "Force image_size=320 and camera_name=agentview in both renderers; do not resize a 256 mask to compare it with a 320 PNG.",
+    "For segmentable bindings compare review render_body_mask with actual runtime.sim_mask_for_object_id using corrected_bids. For nonsegmentable bindings compare exact current region projection with the novel exact_region_mask adapter, not the parent body.",
+    "Require both outputs to exist and contain positive pixels, then require exact binary equality after horizontal mirroring of runtime only.",
+    "Separately compare the persisted PNG after restoring the exact state used for that PNG; loading a different accepted initialization or adding settlement steps invalidates a pixel-exact comparison."
+  ]
+}

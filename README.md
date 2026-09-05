@@ -40,3 +40,9 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - `adapt_success/`: Adapt candidates with at least one success, excluding selected tasks (42 tasks, 125 successful episodes)
 - Adapt media policy: 20 previews per JPEG sprite, one on-demand video player, and one concatenated success reel per task; `preload=none` prevents eager video requests.
 <!-- ADAPT_README_END -->
+
+<!-- DIVERSE_ADAPT_NOVEL_README_START -->
+- `diverse_adapt_novel_all/`: all 36 Novel Scene Adapt tasks, including zero-success tasks; five original trials per task.
+- `diverse_adapt_novel_success/`: 2 tasks with success, 6 successful episodes.
+- Shared JPEG preview sprites, one on-demand player (`preload=none`), success reels and one original-trial failure clip when a task failed.
+<!-- DIVERSE_ADAPT_NOVEL_README_END -->

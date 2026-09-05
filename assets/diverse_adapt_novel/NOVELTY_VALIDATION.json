@@ -1,0 +1,7 @@
+{
+  "accepted_tasks": 36,
+  "original40_and90_exact_task_duplicates": 0,
+  "original40_and90_exact_scene_duplicates": 0,
+  "original40_and90_asset_composition_matches": 0,
+  "qualification": "No baseline scene is copied: workspace/robot/camera frames are retained but furniture, objects, regions and initial predicates are rebuilt. Shared primitive skills are intentional, not claimed novel."
+}

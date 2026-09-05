@@ -1,0 +1,37 @@
+task_id	raw_id	family	instruction
+NADAPT_001	RAWX_001	N1_new_shelf_and_cubby	Put the popcorn on the bottom shelf.
+NADAPT_002	RAWX_002	N1_new_shelf_and_cubby	Put the popcorn on the middle shelf.
+NADAPT_003	RAWX_003	N1_new_shelf_and_cubby	Put the popcorn on top of the white storage box.
+NADAPT_004	RAWX_004	N1_new_shelf_and_cubby	Put the macaroni and cheese on top of the white storage box.
+NADAPT_005	RAWX_005	N2_new_drainer_and_cubby	Put the popcorn in the left compartment of the drainer.
+NADAPT_006	RAWX_006	N2_new_drainer_and_cubby	Put the popcorn in the right compartment of the drainer.
+NADAPT_007	RAWX_007	N2_new_drainer_and_cubby	Put the popcorn from the left drainer compartment on top of the white storage box.
+NADAPT_008	RAWX_008	N2_new_drainer_and_cubby	Put the popcorn from the right drainer compartment on top of the white storage box.
+NADAPT_009	RAWX_009	N3_new_short_drawers_and_shelf	Put the popcorn in the top drawer.
+NADAPT_010	RAWX_010	N3_new_short_drawers_and_shelf	Put the popcorn in the middle drawer.
+NADAPT_011	RAWX_011	N3_new_short_drawers_and_shelf	Put the popcorn in the bottom drawer.
+NADAPT_012	RAWX_012	N3_new_short_drawers_and_shelf	Put the popcorn from the middle drawer on top of the wooden shelf.
+NADAPT_013	RAWX_013	N3_rebuilt_scene_object_transfer	Put the popcorn box from the top drawer in the tray.
+NADAPT_014	RAWX_014	N3_rebuilt_scene_object_transfer	Put the macaroni box on the top of the cabinet.
+NADAPT_015	RAWX_015	N3_rebuilt_scene_object_transfer	Put the yellow book in the tray.
+NADAPT_016	RAWX_016	N3_rebuilt_scene_object_transfer	Put the popcorn box in the bottom drawer.
+NADAPT_017	RAWX_017	N3_rebuilt_scene_object_transfer	Put the popcorn box in the microwave.
+NADAPT_018	RAWX_018	N3_rebuilt_scene_object_transfer	Put the macaroni box in the microwave.
+NADAPT_019	RAWX_019	N3_rebuilt_scene_object_transfer	Put the yellow book in the tray.
+NADAPT_020	RAWX_020	N3_rebuilt_scene_object_transfer	Put the macaroni box from the microwave top in the tray.
+NADAPT_021	RAWX_021	N3_rebuilt_scene_object_transfer	Put the yellow book in the back compartment of the caddy.
+NADAPT_022	RAWX_022	N3_rebuilt_scene_object_transfer	Put the yellow book in the front compartment of the caddy.
+NADAPT_023	RAWX_023	N3_rebuilt_scene_object_transfer	Put the macaroni box in the tray.
+NADAPT_024	RAWX_024	N3_rebuilt_scene_object_transfer	Put the popcorn box to the right of the plate.
+NADAPT_025	RAWX_025	N3_rebuilt_scene_object_transfer	Put the popcorn box in the middle drawer.
+NADAPT_026	RAWX_026	N3_rebuilt_scene_object_transfer	Put the macaroni box in the microwave.
+NADAPT_027	RAWX_027	N3_rebuilt_scene_object_transfer	Put the yellow book in the tray.
+NADAPT_028	RAWX_028	N3_rebuilt_scene_object_transfer	Put the macaroni box on the top of the microwave.
+NADAPT_029	RAWX_029	N4_new_shelf_drainer_routing	Put the popcorn from the bottom shelf in the left drainer compartment.
+NADAPT_030	RAWX_030	N4_new_shelf_drainer_routing	Put the popcorn from the middle shelf in the right drainer compartment.
+NADAPT_031	RAWX_031	N4_new_shelf_drainer_routing	Put the popcorn from the left drainer compartment on the top shelf.
+NADAPT_032	RAWX_032	N4_new_shelf_drainer_routing	Put the popcorn from the right drainer compartment on the middle shelf.
+NADAPT_033	RAWX_033	N5_extra_unseen40_surface_transfer	Put the salad dressing on top of the white storage box.
+NADAPT_034	RAWX_034	N5_extra_unseen40_surface_transfer	Put the salad dressing on top of the white cabinet.
+NADAPT_035	RAWX_035	N5_extra_unseen40_surface_transfer	Put the salad dressing in the wooden tray.
+NADAPT_036	RAWX_036	N5_extra_unseen40_surface_transfer	Put the salad dressing from the microwave top in the wooden tray.

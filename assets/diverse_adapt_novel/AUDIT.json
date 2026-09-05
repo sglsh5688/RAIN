@@ -1,0 +1,34 @@
+{
+  "tasks": 36,
+  "episodes": 180,
+  "unique_task_episode_keys": 180,
+  "physical_gpus": [
+    2,
+    3
+  ],
+  "family_task_counts": {
+    "N1_new_shelf_and_cubby": 4,
+    "N2_new_drainer_and_cubby": 4,
+    "N3_new_short_drawers_and_shelf": 4,
+    "N3_rebuilt_scene_object_transfer": 16,
+    "N4_new_shelf_drainer_routing": 4,
+    "N5_extra_unseen40_surface_transfer": 4
+  },
+  "initial_goals_false": 180,
+  "success_video_cap_per_task": 5,
+  "failure_video_cap_per_task": 1,
+  "success_video_count": 6,
+  "failure_video_count": 36,
+  "failure_videos_from_original_trials": true,
+  "json_fallback_mask_sources": 0,
+  "active_mask_source_counts": {
+    "sim_seg": 6550,
+    "sim_region": 4992,
+    "sim_missing": 55
+  },
+  "place_mask_source_counts": {
+    "sim_region_poly": 4973,
+    "none": 5719,
+    "sim_seg": 905
+  }
+}

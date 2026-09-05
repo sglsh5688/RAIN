@@ -1,0 +1,19 @@
+{
+  "raw_count": 36,
+  "accepted": 36,
+  "rejected": 0,
+  "families": {
+    "N1_new_shelf_and_cubby": 4,
+    "N2_new_drainer_and_cubby": 4,
+    "N3_new_short_drawers_and_shelf": 4,
+    "N3_rebuilt_scene_object_transfer": 16,
+    "N4_new_shelf_drainer_routing": 4,
+    "N5_extra_unseen40_surface_transfer": 4
+  },
+  "original_definition_count": 130,
+  "prior_unique_definition_count": 719,
+  "exact_duplicate_count": 0,
+  "states_per_task": 5,
+  "initial_goal_false": true,
+  "all_saved_state_masks_visible": true
+}

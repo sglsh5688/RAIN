@@ -1,0 +1,13 @@
+name: VCN8_010
+language: Put the chocolate pudding on the stove, then open the middle drawer of the cabinet.
+problem: Libero
+problem_folder: tasks/vcn8_010__put_the_chocolate_pudding_on_the_stove_then_open_the_middle_drawer_of_the_cabinet
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_goal
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|a255d57ae29d915901c8d4a23374c20349ce10f72c74688fb633635b1a32c9ab|frozenset({on(chocolate_pudding_1,flat_stove_1_cook_region),open(wooden_cabinet_1_middle_region)})

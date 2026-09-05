@@ -5,3 +5,5 @@ VCN3_001	2,4	2	assets/valid_compose_new/success_reels/VCN3_001.mp4	558284
 VCN3_003	1,2	2	assets/valid_compose_new/success_reels/VCN3_003.mp4	505467
 VCN5_003	2	1	assets/valid_compose_new/success_reels/VCN5_003.mp4	399535
 VCN6_002	4	1	assets/valid_compose_new/success_reels/VCN6_002.mp4	89370
+VCN6_003	0,1,2,3,4	5	assets/valid_compose_new/success_reels/VCN6_003.mp4	790180
+VCN6_004	0,3,4	3	assets/valid_compose_new/success_reels/VCN6_004.mp4	1241260

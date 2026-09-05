@@ -1,0 +1,20 @@
+task_id: VCN14A_010
+category: Composition
+required_goal_atoms: &id001
+- on(cream_cheese_1, plate_1)
+- turnon(flat_stove_1)
+forbidden_goal_atoms: []
+overshoot_policy: none
+order_sensitive: true
+continue_after_success: false
+requires_transition: true
+sequence_stages:
+- - on(cream_cheese_1, plate_1)
+- *id001
+custom_eval_needed: true
+ordered_event_atoms:
+- on(cream_cheese_1, plate_1)
+- turnon(flat_stove_1)
+strict_event_order: true
+final_success_requires_all_bddl_goals: true
+final_tc_gate: false

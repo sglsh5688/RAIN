@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 15 Adapt + 10 Compose (45 total)**; category filters, recorded SR, masked comparisons, success reels and downloadable definitions.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 16 Adapt + 10 Compose (46 total)**; category filters, recorded SR, masked comparisons, success reels and downloadable definitions.
 <!-- SELECTED29_README_END -->
 
 Open `index.html`, or enable GitHub Pages for this repository root.
@@ -59,10 +59,7 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - Includes full construction/success semantics, complete task bundles, and all 16 success plus 9 failure videos.
 <!-- BOWL_DRAINER_ANY5_README_END -->
 
-<!-- DINING_SET_DISHWARE5_README_START -->
-- `dining_set_dishware5/`: five dining-set dishware-placement tasks; 20/25 successes.
-- Includes full construction/success semantics, complete task bundles, and all 20 success plus 5 failure videos.
-<!-- DINING_SET_DISHWARE5_README_END -->
+
 
 
 <!-- BOWL_DRAINER_SECTIONS_README_START -->

@@ -1,0 +1,90 @@
+task_id: VCN13_001
+task_name: Put the chocolate pudding on the black bowl, then turn on the stove.
+language: Put the chocolate pudding on the black bowl, then turn on the stove.
+primary_category: Composition
+composition_family: container_placement_then_control
+anchor_suite: libero_goal
+source_prior_task_ids:
+- '309'
+- '7'
+source_priors:
+- suite: libero_goal
+  task_stem: put_the_cream_cheese_in_the_bowl
+  instruction: Put the cream cheese on the bowl
+  bddl: upstream_LIBERO/bddl_files/libero_goal/put_the_cream_cheese_in_the_bowl.bddl
+  init: upstream_LIBERO/init_files/libero_goal/put_the_cream_cheese_in_the_bowl.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_chocolate_pudding_and_place_it_in_the_basket
+  instruction: Pick the chocolate pudding and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_goal
+  task_stem: turn_on_the_stove
+  instruction: Turn on the stove
+  bddl: upstream_LIBERO/bddl_files/libero_goal/turn_on_the_stove.bddl
+  init: upstream_LIBERO/init_files/libero_goal/turn_on_the_stove.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the chocolate pudding on the black bowl
+- Turn on the stove
+component_evidence:
+- Exact evaluated ANLGX_139 action; measured SR 5/5.
+- Original Goal primitive; evidence 5/5 original control.
+semantic_subtask_count: 2
+action_plan_step_count: 3
+canonical_goal_atoms: &id001
+- on(chocolate_pudding_1, akita_black_bowl_1)
+- turnon(flat_stove_1)
+canonical_task_signature: composition|9e40b8009ee329e28d5563d329d9afa28aa9e64295b78b133417791c8f0e7709|frozenset({on(chocolate_pudding_1,akita_black_bowl_1),turnon(flat_stove_1)})
+objects_of_interest:
+- chocolate_pudding_1
+- akita_black_bowl_1
+- flat_stove_1
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - on(chocolate_pudding_1, akita_black_bowl_1)
+- *id001
+physical_group: exact_anlgx_139__put_the_chocolate_pudding_on_the_black_bowl
+base_bddl_template: LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_139__put_the_chocolate_pudding_on_the_black_bowl/task.bddl
+base_pruned_init: LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_139__put_the_chocolate_pudding_on_the_black_bowl/task.pruned_init
+max_steps: 1600
+definition_status: native_five_states_verified
+notes:
+- Pudding-to-bowl was 5/5; placement-to-turn-on is an observed successful transition family.
+- The complete physical scene is one evaluated donor BDDL with no pose or entity edits.
+- All five serialized donor states are copied byte-for-byte.
+- The additional action has explicit numeric/source pose proofs in SOURCE_COMPATIBILITY.json.
+- Success is strict ordered native events plus final BDDL; Compose has no final TC gate.
+proposal_key: P21
+ordered_event_atoms:
+- on(chocolate_pudding_1, akita_black_bowl_1)
+- turnon(flat_stove_1)
+ordered_task_signature: 74a168f783915df0c910ccbd28191a2a1ae5438613b7840aac4468454c80113f
+policy_evaluation_authorized: true
+evaluation_authorized: true
+fixture_replay_required: true
+fixture_replay_file: FIXTURE_REPLAY.json
+required_init_predicates: []
+compose_final_termination: ordered_native_goals_without_tc
+compose_final_tc_gate: false
+donor_bundle: LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_139__put_the_chocolate_pudding_on_the_black_bowl
+donor_states_byte_identical: true
+scene_derivation: single_exact_evaluated_donor_no_pose_changes
+additional_action: turn_on
+additional_action_pose_proofs:
+- claim: stove root and intrinsic button match the original Goal turn-on scene
+  source_bddl: upstream_LIBERO/bddl_files/libero_goal/turn_on_the_stove.bddl
+  source_bddl_sha256: cbd2a0514d53226c5d09e17af40b22935d4cb6ff8fdaff0d55f555de1adecc13
+  entity_pose_checks:
+  - entity: flat_stove_1
+    donor_init_support: main_table_stove_region
+    source_init_support: main_table_stove_region
+    support_name_exact: true
+    support_numeric_geometry_exact: true
+  target_region_checks: []
+  source_aligned: true
+  errors: []
+trajectory_alignment_policy: soft_prior_not_exclusion

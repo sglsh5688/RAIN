@@ -1,0 +1,89 @@
+task_id: VCN13_002
+task_name: Put the white mug on the plate, then put the yellow and white mug to the right of the plate.
+language: Put the white mug on the plate, then put the yellow and white mug to the right of the plate.
+primary_category: Composition
+composition_family: plate_then_relative_placement
+anchor_suite: libero_10
+source_prior_task_ids:
+- '104'
+source_priors:
+- suite: libero_10
+  task_stem: LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate
+  instruction: put the white mug on the plate and put the chocolate pudding to the right of the plate
+  bddl: upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.bddl
+  init: upstream_LIBERO/init_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.pruned_init
+  evidence: ''
+- suite: libero_10
+  task_stem: LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate
+  instruction: put the white mug on the left plate and put the yellow and white mug on the right plate
+  bddl: upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl
+  init: upstream_LIBERO/init_files/libero_10/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the white mug on the plate
+- Put the yellow and white mug to the right of the plate
+component_evidence:
+- Original Scene-7 first action; measured standalone SR 14/50 retained decomposition.
+- Exact evaluated ADAPT_178 action; measured SR 4/5.
+semantic_subtask_count: 2
+action_plan_step_count: 4
+canonical_goal_atoms: &id001
+- on(porcelain_mug_1, plate_1)
+- on(white_yellow_mug_1, living_room_table_plate_right_region)
+canonical_task_signature: composition|718a86d3054c98b0b13a4bdf78b57f96b0542c24a6b0b0d29bf6928e822483f4|frozenset({on(porcelain_mug_1,plate_1),on(white_yellow_mug_1,living_room_table_plate_right_region)})
+objects_of_interest:
+- porcelain_mug_1
+- plate_1
+- white_yellow_mug_1
+- living_room_table_plate_right_region
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - on(porcelain_mug_1, plate_1)
+- *id001
+physical_group: exact_adapt_178__put_the_yellow_and_white_mug_to_the_right_of_the_plate
+base_bddl_template: LIBERO_EX_ICRA27/LiberoAdapt/tasks/adapt_178__put_the_yellow_and_white_mug_to_the_right_of_the_plate/task.bddl
+base_pruned_init: LIBERO_EX_ICRA27/LiberoAdapt/tasks/adapt_178__put_the_yellow_and_white_mug_to_the_right_of_the_plate/task.pruned_init
+max_steps: 1600
+definition_status: native_five_states_verified
+notes:
+- The order is the original LIBERO-10 Scene-7 two-action template; the substituted right-placement atom was 4/5.
+- The complete physical scene is one evaluated donor BDDL with no pose or entity edits.
+- All five serialized donor states are copied byte-for-byte.
+- The additional action has explicit numeric/source pose proofs in SOURCE_COMPATIBILITY.json.
+- Success is strict ordered native events plus final BDDL; Compose has no final TC gate.
+proposal_key: P04
+ordered_event_atoms:
+- on(porcelain_mug_1, plate_1)
+- on(white_yellow_mug_1, living_room_table_plate_right_region)
+ordered_task_signature: 74153b04e0b67b4ce09525fe420edcd3025ec97e39d6c6a68d6c66ea1721296c
+policy_evaluation_authorized: true
+evaluation_authorized: true
+fixture_replay_required: true
+fixture_replay_file: FIXTURE_REPLAY.json
+required_init_predicates: []
+compose_final_termination: ordered_native_goals_without_tc
+compose_final_tc_gate: false
+donor_bundle: LIBERO_EX_ICRA27/LiberoAdapt/tasks/adapt_178__put_the_yellow_and_white_mug_to_the_right_of_the_plate
+donor_states_byte_identical: true
+scene_derivation: single_exact_evaluated_donor_no_pose_changes
+additional_action: white_mug_plate
+additional_action_pose_proofs:
+- claim: white mug and plate keep the original learned Scene-7 poses
+  source_bddl: upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate.bddl
+  source_bddl_sha256: dbc9464b424cdc9b771b92d0b8a8c185b1b539f6a4133b323dc858bcf8f6a9c2
+  entity_pose_checks:
+  - entity: porcelain_mug_1
+    donor_init_support: living_room_table_porcelain_mug_init_region
+    source_init_support: living_room_table_porcelain_mug_init_region
+    support_name_exact: true
+    support_numeric_geometry_exact: true
+  - entity: plate_1
+    donor_init_support: living_room_table_plate_init_region
+    source_init_support: living_room_table_plate_init_region
+    support_name_exact: true
+    support_numeric_geometry_exact: true
+  target_region_checks: []
+  source_aligned: true
+  errors: []
+trajectory_alignment_policy: soft_prior_not_exclusion

@@ -1,0 +1,13 @@
+name: VCN13_002
+language: Put the white mug on the plate, then put the yellow and white mug to the right of the plate.
+problem: Libero
+problem_folder: tasks/vcn13_002__put_the_white_mug_on_the_plate_then_put_the_yellow_and_white_mug_to_the_right_of_the_plate
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_10
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|718a86d3054c98b0b13a4bdf78b57f96b0542c24a6b0b0d29bf6928e822483f4|frozenset({on(porcelain_mug_1,plate_1),on(white_yellow_mug_1,living_room_table_plate_right_region)})

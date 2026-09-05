@@ -1,0 +1,91 @@
+task_id: VCN14A_005
+task_name: Put the cream cheese on the black bowl, then close the top drawer of the cabinet.
+language: Put the cream cheese on the black bowl, then close the top drawer of the cabinet.
+primary_category: Composition
+composition_family: container_placement_then_drawer_close
+anchor_suite: libero_goal
+source_prior_task_ids:
+- '4'
+- '108'
+source_priors:
+- suite: libero_goal
+  task_stem: put_the_cream_cheese_in_the_bowl
+  instruction: Put the cream cheese on the bowl
+  bddl: upstream_LIBERO/bddl_files/libero_goal/put_the_cream_cheese_in_the_bowl.bddl
+  init: upstream_LIBERO/init_files/libero_goal/put_the_cream_cheese_in_the_bowl.pruned_init
+  evidence: ''
+- suite: libero_goal
+  task_stem: open_the_middle_drawer_of_the_cabinet
+  instruction: Open the middle layer of the drawer
+  bddl: upstream_LIBERO/bddl_files/libero_goal/open_the_middle_drawer_of_the_cabinet.bddl
+  init: upstream_LIBERO/init_files/libero_goal/open_the_middle_drawer_of_the_cabinet.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the cream cheese on the black bowl
+- Close the top drawer of the cabinet
+component_evidence:
+- Original LIBERO-Goal placement primitive; evidence original LIBERO-Goal.
+- Exact evaluated atomic donor ANLGX_169; measured SR 3/5.
+semantic_subtask_count: 2
+action_plan_step_count: 3
+canonical_goal_atoms: &id001
+- on(cream_cheese_1, akita_black_bowl_1)
+- close(wooden_cabinet_1_top_region)
+canonical_task_signature: composition|3f474b285ddc2e6e7e375309ab9cbd20d9a618ab3520cafd769b89fad2c6a2d1|frozenset({close(wooden_cabinet_1_top_region),on(cream_cheese_1,akita_black_bowl_1)})
+objects_of_interest:
+- cream_cheese_1
+- akita_black_bowl_1
+- wooden_cabinet_1_top_region
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - on(cream_cheese_1, akita_black_bowl_1)
+- *id001
+physical_group: exact_anlgx_169__close_the_top_drawer_of_the_wooden_cabinet
+base_bddl_template: LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_169__close_the_top_drawer_of_the_wooden_cabinet/task.bddl
+base_pruned_init: LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_169__close_the_top_drawer_of_the_wooden_cabinet/task.pruned_init
+max_steps: 1600
+definition_status: native_five_states_verified
+notes:
+- The exact ANLGX_169 scene supplies a physically open top drawer and a 3/5 close primitive.
+- The complete physical scene is one evaluated donor BDDL; no entity, region, or pose is changed.
+- All five serialized donor states are copied byte-for-byte.
+- Success requires strict ordered native events and final BDDL goals; Compose has no final TC gate.
+ordered_event_atoms:
+- on(cream_cheese_1, akita_black_bowl_1)
+- close(wooden_cabinet_1_top_region)
+ordered_task_signature: 14f2d788c97a3493a1938f05e45febeefabd900a4b8444f7b1a322b20f969f31
+policy_evaluation_authorized: true
+evaluation_authorized: true
+fixture_replay_required: true
+fixture_replay_file: FIXTURE_REPLAY.json
+required_init_predicates: []
+compose_final_termination: ordered_native_goals_without_tc
+compose_final_tc_gate: false
+original_physical_screen_task_id: VCN14A_007
+original_physical_screen_report: LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/BATCH14A_PHYSICAL_SCREEN.json
+original_physical_screen_report_sha256: 774e113ee1fd7820ae5af2a40f091170707c59dc92d37a1055e5c1351a4f2701
+donor_bundle: LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_169__close_the_top_drawer_of_the_wooden_cabinet
+donor_states_byte_identical: true
+scene_derivation: single_exact_evaluated_donor_no_pose_changes
+added_action: cheese_bowl
+added_action_pose_proofs:
+- claim: cream cheese and black bowl keep the original Goal pickup and target poses
+  source_bddl: upstream_LIBERO/bddl_files/libero_goal/put_the_cream_cheese_in_the_bowl.bddl
+  source_bddl_sha256: 81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98
+  entity_pose_checks:
+  - entity: cream_cheese_1
+    donor_init_support: main_table_cream_cheese_region
+    source_init_support: main_table_cream_cheese_region
+    support_name_exact: true
+    support_numeric_geometry_exact: true
+  - entity: akita_black_bowl_1
+    donor_init_support: main_table_akita_black_bowl_region
+    source_init_support: main_table_akita_black_bowl_region
+    support_name_exact: true
+    support_numeric_geometry_exact: true
+  target_region_checks: []
+  source_aligned: true
+  errors: []
+control_sweep_required: close_top
+trajectory_alignment_policy: soft_prior_not_exclusion

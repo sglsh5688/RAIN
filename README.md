@@ -75,6 +75,6 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 <!-- BOWL_DRAINER_COMPOSE_README_END -->
 
 <!-- VALID_COMPOSE_NEW_README_START -->
-- `valid_compose_new/`: 11 fresh strict-success Compose candidates, 27 successful episodes.
+- `valid_compose_new/`: 12 fresh strict-success Compose candidates, 31 successful episodes.
 - Each card links the masked comparison, complete public task bundle, and one on-demand reel containing all success episodes.
 <!-- VALID_COMPOSE_NEW_README_END -->

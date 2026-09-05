@@ -1,0 +1,54 @@
+{
+  "category": "Dining-Set Dishware Placement Variations",
+  "task_ids": [
+    "DSET_001",
+    "DSET_002",
+    "DSET_003",
+    "DSET_004",
+    "DSET_005"
+  ],
+  "tasks": 5,
+  "episodes": 25,
+  "successes": 20,
+  "failures": 5,
+  "success_rate_percent": 80.0,
+  "physical_gpus": [
+    6,
+    7
+  ],
+  "all_original_episode_videos_published": true,
+  "success_semantics": "ordinary LIBERO On on the physical exposed-mat site with dining-set parent contact",
+  "target_site": "dining_set_group_1_plate_support_region",
+  "native_center_region_accepted": false,
+  "asset_xml_mesh_collision_friction_modified": false,
+  "removed_source_blocker": "akita_black_bowl_2",
+  "single_on_demand_video_player": true,
+  "evaluation_validation": {
+    "tasks": 5,
+    "episodes": 25,
+    "unique_task_episode_keys": 25,
+    "physical_gpus": [
+      6,
+      7
+    ],
+    "family_task_counts": {
+      "F1_dishware_to_dining_set_mat": 5
+    },
+    "initial_goals_false": 25,
+    "success_video_cap_per_task": 5,
+    "failure_video_cap_per_task": 5,
+    "success_video_count": 20,
+    "failure_video_count": 5,
+    "failure_videos_from_original_trials": true,
+    "json_fallback_mask_sources": 0,
+    "active_mask_source_counts": {
+      "sim_seg": 296,
+      "sim_region": 308,
+      "sim_missing": 24
+    },
+    "place_mask_source_counts": {
+      "sim_region_poly": 320,
+      "none": 308
+    }
+  }
+}

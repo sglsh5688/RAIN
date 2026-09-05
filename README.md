@@ -58,3 +58,8 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - `bowl_drainer_any5/`: five bowl-drainer either-compartment tasks; 16/25 successes.
 - Includes full construction/success semantics, complete task bundles, and all 16 success plus 9 failure videos.
 <!-- BOWL_DRAINER_ANY5_README_END -->
+
+<!-- DINING_SET_DISHWARE5_README_START -->
+- `dining_set_dishware5/`: five dining-set dishware-placement tasks; 20/25 successes.
+- Includes full construction/success semantics, complete task bundles, and all 20 success plus 5 failure videos.
+<!-- DINING_SET_DISHWARE5_README_END -->

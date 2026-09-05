@@ -1,0 +1,6 @@
+task_id	raw_id	family	instruction
+DSET_001	RAWX_001	F1_dishware_to_dining_set_mat	Pick up the black bowl at the table center and place it on the dining-set mat.
+DSET_002	RAWX_002	F1_dishware_to_dining_set_mat	Pick up the black bowl on the cookies box and place it on the dining-set mat.
+DSET_003	RAWX_003	F1_dishware_to_dining_set_mat	Pick up the black bowl on top of the wooden cabinet and place it on the dining-set mat.
+DSET_004	RAWX_004	F1_dishware_to_dining_set_mat	Pick up the ramekin at the table center and place it on the dining-set mat.
+DSET_005	RAWX_005	F1_dishware_to_dining_set_mat	Pick up the white bowl at the table center and place it on the dining-set mat.

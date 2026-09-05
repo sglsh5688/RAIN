@@ -1,0 +1,100 @@
+{
+  "task_id": "DSET_005",
+  "pool_count": 5,
+  "valid_count": 5,
+  "required_init_predicates": [
+    [
+      "not",
+      [
+        "on",
+        "white_bowl_1",
+        "dining_set_group_1_plate_support_region"
+      ]
+    ]
+  ],
+  "closed_drawer_initial_tolerance_m": 0.008,
+  "success_predicates_unmodified": true,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rows": [
+    {
+      "pool_index": 0,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 703,
+        "goal_target": 3231
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 1,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 705,
+        "goal_target": 3231
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 2,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 703,
+        "goal_target": 3231
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 3,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 703,
+        "goal_target": 3231
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 4,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 703,
+        "goal_target": 3231
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    }
+  ],
+  "novel_fixture_height_normalization": true,
+  "dining_set_physical_support_site_installed": true,
+  "dining_set_parent_contact_required": true,
+  "all_initial_goals_checked_false": true,
+  "physical_build_gpus": [
+    6,
+    7
+  ],
+  "raw_id": "RAWX_005"
+}

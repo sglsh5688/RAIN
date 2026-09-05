@@ -1,0 +1,64 @@
+task_id: VCN6_005
+task_name: Close the middle drawer of the white cabinet, then close the top drawer of the white cabinet, and finally close the bottom drawer of the white cabinet.
+language: Close the middle drawer of the white cabinet, then close the top drawer of the white cabinet, and finally close the bottom drawer of the white cabinet.
+primary_category: Composition
+composition_family: middle_top_bottom_order
+anchor_suite: libero_10
+source_prior_task_ids:
+- '103'
+source_priors:
+- suite: libero_10
+  task_stem: KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it
+  instruction: put the black bowl in the bottom drawer of the cabinet and close it
+  bddl: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.bddl
+  init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.pruned_init
+  evidence: ''
+component_task_instructions:
+- Close the middle drawer of the white cabinet
+- Close the top drawer of the white cabinet
+- Close the bottom drawer of the white cabinet
+component_evidence:
+- Previously evaluated ANLGX_023 middle-drawer close primitive; original 5ep SR 4/5.
+- Previously evaluated ANLGX_022 top-drawer close primitive; original 5ep SR 4/5.
+- Final learned segment of original LIBERO_10_04.
+semantic_subtask_count: 3
+action_plan_step_count: 3
+canonical_goal_atoms:
+- close(white_cabinet_1_middle_region)
+- close(white_cabinet_1_top_region)
+- close(white_cabinet_1_bottom_region)
+canonical_task_signature: composition|491a6dea4db2edd1ae609f40c565199f13a995db366735a6fc82bba0621efa19|frozenset({close(white_cabinet_1_bottom_region),close(white_cabinet_1_middle_region),close(white_cabinet_1_top_region)})
+objects_of_interest:
+- white_cabinet_1_middle_region
+- white_cabinet_1_top_region
+- white_cabinet_1_bottom_region
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - close(white_cabinet_1_middle_region)
+- - close(white_cabinet_1_middle_region)
+  - close(white_cabinet_1_top_region)
+- - close(white_cabinet_1_middle_region)
+  - close(white_cabinet_1_top_region)
+  - close(white_cabinet_1_bottom_region)
+physical_group: long4_ordered_drawer_control
+base_bddl_template: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.pruned_init
+max_steps: 1600
+definition_status: native_five_states_verified
+notes:
+- Gripper trajectory continuity is a soft prior, not an exclusion rule; both action orders are evaluated where defined.
+- All movable-object and fixture root poses are source-aligned; only drawer joint openings required by the new task are changed.
+- Strict ordered native events and native final goals determine success; Compose final completion has no TC threshold.
+ordered_event_atoms:
+- close(white_cabinet_1_middle_region)
+- close(white_cabinet_1_top_region)
+- close(white_cabinet_1_bottom_region)
+ordered_task_signature: 6af1d5e62869358ba0c1a0fad58b8c8c461e11ff69e970f544aae42db45b9a50
+policy_evaluation_authorized: true
+evaluation_authorized: true
+fixture_replay_required: true
+fixture_replay_file: FIXTURE_REPLAY.json
+required_init_predicates: []
+compose_final_termination: ordered_native_goals_without_tc
+trajectory_alignment_policy: soft_prior_not_exclusion

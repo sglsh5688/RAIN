@@ -1,0 +1,31 @@
+{
+  "tasks": 4,
+  "episodes": 20,
+  "unique_task_episode_keys": 20,
+  "physical_gpus": [
+    6,
+    7
+  ],
+  "family_task_counts": {
+    "R1_naf017_popcorn_with_three_nearby_objects": 1,
+    "R2_naf036_yellow_book_with_black_book": 1,
+    "R3_naf054_close_top_with_stove_and_two_plates": 1,
+    "R4_libero10_scene3_pan_replaces_moka": 1
+  },
+  "initial_goals_false": 20,
+  "success_video_cap_per_task": 5,
+  "failure_video_cap_per_task": 1,
+  "success_video_count": 6,
+  "failure_video_count": 3,
+  "failure_videos_from_original_trials": true,
+  "json_fallback_mask_sources": 0,
+  "active_mask_source_counts": {
+    "sim_seg": 947,
+    "sim_region": 154
+  },
+  "place_mask_source_counts": {
+    "sim_region_poly": 295,
+    "none": 571,
+    "sim_seg": 235
+  }
+}

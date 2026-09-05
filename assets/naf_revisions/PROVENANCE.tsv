@@ -1,0 +1,5 @@
+task_id	family	instruction	skill_sources	scene_sources	all_sources	transfer_summary
+NAFR_001	R1_naf017_popcorn_with_three_nearby_objects	Put the popcorn on top of the short fridge.	LIBERO_OBJECT_09	LIBERO_GOAL_05	LIBERO_GOAL_05,LIBERO_OBJECT_09	Repeat NAF_017 with its popcorn pose unchanged and three nearby familiar package distractors.
+NAFR_002	R2_naf036_yellow_book_with_black_book	Put the yellow book on top of the two-layer wooden shelf.	LIBERO_GOAL_05	LIBERO_10_06	LIBERO_10_06,LIBERO_GOAL_05	Repeat NAF_036 with the target yellow book unchanged and one nearby black book.
+NAFR_003	R3_naf054_close_top_with_stove_and_two_plates	Close the top drawer of the short cabinet.	LIBERO_10_04	LIBERO_10_04	LIBERO_10_04,LIBERO_GOAL_09	Repeat NAF_054 after adding one stove and two separated plate distractors.
+NAFR_004	R4_libero10_scene3_pan_replaces_moka	Put the frying pan on the stove.		LIBERO_10_03	LIBERO_10_03	Remove the moka pot, put the frying pan at its exact former pose, and evaluate pan-to-stove placement only.

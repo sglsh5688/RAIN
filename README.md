@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 13 Adapt + 9 Compose (42 total)**; category filters, recorded SR, masked comparisons, success reels and downloadable definitions.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 15 Adapt + 9 Compose (44 total)**; category filters, recorded SR, masked comparisons, success reels and downloadable definitions.
 <!-- SELECTED29_README_END -->
 
 Open `index.html`, or enable GitHub Pages for this repository root.
@@ -52,10 +52,7 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - Shared JPEG preview sprites, one on-demand player (`preload=none`), success reels and one original-trial failure clip when a task failed.
 <!-- NOVEL_ADAPT_FEEDBACK_README_END -->
 
-<!-- NAF_REVISIONS_README_START -->
-- `naf_revisions/`: new V3 revision tasks; five original trials per task, all successes and one actual failure when available.
-- Earlier V1/V2 results remain in the offline review directory/ZIP only, and are not mixed into V3 statistics.
-<!-- NAF_REVISIONS_README_END -->
+
 
 <!-- BOWL_DRAINER_ANY5_README_START -->
 - `bowl_drainer_any5/`: five bowl-drainer either-compartment tasks; 16/25 successes.

@@ -1,8 +1,10 @@
 # Selected LIBERO-EX tasks
 
-Selection: 2026-09-05. 20 Decomposition + 13 Adapt + 9 Compose (42 total). The confirmed Compose IDs are COMP2_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028. No reevaluation was performed for this collection.
+Selection: 2026-09-05. 20 Decomposition + 15 Adapt + 9 Compose (44 total). The confirmed Compose IDs are COMP2_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028. No reevaluation was performed for this collection.
 
 Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. OGDTSL_011 and OGDTSL_046 retain their original Adapt Object five-episode evaluations. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt.
+
+Selected Analogy/Adapt now also includes NAFR3_001 and NAFR3_002, each 4/5 (80%) on GPUs 6/7. Each retains all four original successful episodes and the original LIBERO / V2 / V3 masked comparison. The light-colored book remains the native yellow_book asset. No V1/V2 results or interrupted GPU5/6 episodes are mixed in. The standalone NAF revisions public page is retired; its experimental source records and offline review archive remain preserved.
 
 Compose retains each original Composition2Step, Compose-350, or Long Basket/Cup Mix task definition, five-episode evaluation, masked comparison and saved success videos. The user's COM2_027 shorthand was explicitly confirmed to mean COMP2_027. Existing selections COMP2_001 and COMP2_012 remain unchanged.
 
@@ -52,6 +54,8 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 | OGTS_010 | OGTS_010 | Pick the orange juice and place it in the basket | 26/50 (52.0%) | Earlier PositionSwap 5ep: 4/5 (80.0%) |
 | OGDTSL_011 | OGDTSL_011 | Pick the tomato sauce and place it in the basket | 4/5 (80.0%) | — |
 | OGDTSL_046 | OGDTSL_046 | Pick the milk and place it in the basket | 2/5 (40.0%) | — |
+| NAFR3_001 | NAFR3_001 | Put the popcorn on top of the short fridge. | 4/5 (80%) | — |
+| NAFR3_002 | NAFR3_002 | Put the yellow book on top of the two-layer wooden shelf. | 4/5 (80%) | — |
 
 ## Compose
 

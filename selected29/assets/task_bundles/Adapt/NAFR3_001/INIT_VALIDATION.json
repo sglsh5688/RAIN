@@ -1,0 +1,101 @@
+{
+  "task_id": "NAFR3_001",
+  "pool_count": 5,
+  "valid_count": 5,
+  "required_init_predicates": [
+    [
+      "not",
+      [
+        "on",
+        "popcorn_1",
+        "short_fridge_1_feedback_top_region"
+      ]
+    ]
+  ],
+  "closed_drawer_initial_tolerance_m": 0.008,
+  "success_predicates_unmodified": false,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rows": [
+    {
+      "pool_index": 0,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 330,
+        "goal_target": 4813
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 1,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 347,
+        "goal_target": 4813
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 2,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 329,
+        "goal_target": 4813
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 3,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 345,
+        "goal_target": 4813
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 4,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 333,
+        "goal_target": 4813
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    }
+  ],
+  "novel_fixture_height_normalization": true,
+  "native_success_predicates_relaxed": false,
+  "feedback_containment_guard": "Plate/drainer and object/cubby In require full collision-envelope containment plus parent contact.",
+  "feedback_all_initial_goal_atoms_checked_false": true,
+  "revision_version": 3,
+  "physical_build_gpus": [
+    5,
+    6
+  ],
+  "raw_id": "RAWX_001"
+}

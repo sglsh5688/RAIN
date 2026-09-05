@@ -1,0 +1,20 @@
+task_id: VCN11_004
+category: Composition
+required_goal_atoms: &id001
+- on(porcelain_mug_1, plate_1)
+- on(butter_1, living_room_table_plate_right_region)
+forbidden_goal_atoms: []
+overshoot_policy: none
+order_sensitive: true
+continue_after_success: false
+requires_transition: true
+sequence_stages:
+- - on(porcelain_mug_1, plate_1)
+- *id001
+custom_eval_needed: true
+ordered_event_atoms:
+- on(porcelain_mug_1, plate_1)
+- on(butter_1, living_room_table_plate_right_region)
+strict_event_order: true
+final_success_requires_all_bddl_goals: true
+final_tc_gate: false

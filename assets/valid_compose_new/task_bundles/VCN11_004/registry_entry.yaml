@@ -1,0 +1,13 @@
+name: VCN11_004
+language: Put the white porcelain mug on the plate, then put the butter to the right of the plate.
+problem: Libero
+problem_folder: tasks/vcn11_004__put_the_white_porcelain_mug_on_the_plate_then_put_the_butter_to_the_right_of_the_plate
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_10
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|4009293b0e5a4c044f5021f20771bb812725b03e7796a2dfab20976ed0b8fec1|frozenset({on(butter_1,living_room_table_plate_right_region),on(porcelain_mug_1,plate_1)})

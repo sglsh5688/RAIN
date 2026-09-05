@@ -20,7 +20,7 @@
 | 9 | `COMP_213` | `Composition-439` | 3 | 1/5 | Put the alphabet soup, the cream cheese box, and the tomato sauce in the basket one after another. |
 | 10 | `COMP2_008` | `Composition2Step-361` | 2 | 3/5 | Put the butter in the basket, and then put the tomato sauce in the basket. |
 | 11 | `COMP2_005` | `Composition2Step-361` | 2 | 2/5 | Put the alphabet soup in the basket, and then put the butter in the basket. |
-| 12 | `COMP2_188` | `Composition2Step-361` | 1 | 1/5 | Put the moka pot on the stove, and then turn off the stove. |
+| 12 | `COMP2_188` | `Composition2Step-361` | 2 | 1/5 | Put the moka pot on the stove, and then turn off the stove. |
 | 13 | `COMP2_018` | `Composition2Step-361` | 2 | 1/5 | Put the black bowl on the plate, and then put the wine bottle on the rack. |
 | 14 | `COMP2_023` | `Composition2Step-361` | 2 | 1/5 | Put the black bowl on the plate, and then open the middle drawer of the cabinet. |
 | 15 | `COMP2_027` | `Composition2Step-361` | 2 | 1/5 | Put the cream cheese on the black bowl, and then push the plate to the front of the stove. |

@@ -1,0 +1,13 @@
+name: VCN13_003
+language: Put the white mug on the plate, then put the alphabet soup to the right of the plate.
+problem: Libero
+problem_folder: tasks/vcn13_003__put_the_white_mug_on_the_plate_then_put_the_alphabet_soup_to_the_right_of_the_plate
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_10
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|6dd14a1320f9abe22036388dcb942b0ee8b2bcd112b6bdea2ec0b5016a3a0b37|frozenset({on(alphabet_soup_1,living_room_table_plate_right_region),on(porcelain_mug_1,plate_1)})

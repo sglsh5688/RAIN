@@ -1,0 +1,181 @@
+{
+  "purpose": "Isolated IK-free stable physical destination witness; NOT a policy trial, success-rate result, or evaluation initial state",
+  "physical_gpu": 5,
+  "settle_steps": 160,
+  "extra_stability_steps": 40,
+  "source_sha256": {
+    "benchmark_sources/novel_feedback_fixture_candidates.py": "c16938c4845848a0495bda559941fe1f7374ee51e62955b983129e90dad4cf60",
+    "benchmark_sources/novel_feedback_fixture_geometry.py": "a283a180811a0ab6ed47d2436d47d52af6ecfedd820231045b91101aa1f2d874",
+    "benchmark_sources/novel_feedback_object_bindings.py": "9b2f6b37d1d2f6208528a42f015750a48d6d87265f74e266b8aa460b8fccb4bc",
+    "benchmark_sources/audit_novel_feedback_cubby_destination.py": "47d6567d45d3914d3be09f8c8d3cece98a9c10700fce334702c258a31ec1ef89"
+  },
+  "production_full_containment_guard": true,
+  "expected_scenes": 2,
+  "completed_scenes": 2,
+  "rows": [
+    {
+      "scene_id": "feedback_cubby_microwave_porcelain_mug_white_yellow_mug_init_region",
+      "target": "white_storage_box_1_feedback_contain_region",
+      "bddl_sha256": "8c84fe027f3e9c45fc9ca9646ab792ef3c127b912a7931b3fb0c7dafdd086913",
+      "attempts": [
+        {
+          "yaw_deg": 136.0,
+          "posed_qpos_wxyz": [
+            0.002408454074132953,
+            0.34588334642460855,
+            0.9127307685181818,
+            0.37460659341591196,
+            0.0,
+            0.0,
+            0.9271838545667874
+          ],
+          "terminal_qpos_wxyz": [
+            0.0023916334908382106,
+            0.34589856781027656,
+            0.9106972014211108,
+            0.374192152423363,
+            0.0036853477964389177,
+            0.0014869608390967208,
+            0.9273426768049957
+          ],
+          "initial": {
+            "contained": true,
+            "parent_contact": false,
+            "success": false,
+            "minimum_margin_xyz_m": [
+              0.0024420317476280262,
+              0.0025233853637782536,
+              0.001500000000000036
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 22,
+            "collision_corner_count": 176
+          },
+          "settled": {
+            "contained": true,
+            "parent_contact": true,
+            "success": true,
+            "minimum_margin_xyz_m": [
+              0.0018275627481715018,
+              0.0025295377423994805,
+              -0.000698076276582825
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 22,
+            "collision_corner_count": 176
+          },
+          "final": {
+            "contained": true,
+            "parent_contact": true,
+            "success": true,
+            "minimum_margin_xyz_m": [
+              0.0018275606792091878,
+              0.002529537885472312,
+              -0.0006980762892626821
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 22,
+            "collision_corner_count": 176
+          },
+          "settled_predicate": true,
+          "final_predicate": true,
+          "independent_maximum_excess_xyz_m": [
+            -0.0018275606792091878,
+            -0.002529537885472312,
+            0.0006980762892626821
+          ],
+          "stability_drift_m": 1.6843955851089244e-09,
+          "orientation_drift_rad": 9.894226814215633e-09,
+          "linear_speed_m_s": 8.421976715935038e-10,
+          "angular_speed_rad_s": 4.947102761984994e-09,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "terminal_witness_png": "geometry_witnesses/feedback_cubby_microwave_porcelain_mug_white_yellow_mug_init_region__terminal_witness.png"
+    },
+    {
+      "scene_id": "feedback_cubby_microwave_porcelain_mug_porcelain_mug_init_region",
+      "target": "white_storage_box_1_feedback_contain_region",
+      "bddl_sha256": "b3a6be551ba7debfe77650f295bb7fc8f5882048b0d3c8ae6b6414ddc9da90ed",
+      "attempts": [
+        {
+          "yaw_deg": 136.0,
+          "posed_qpos_wxyz": [
+            0.002408454074132953,
+            0.34588334642460855,
+            0.9127307685181818,
+            0.37460659341591196,
+            0.0,
+            0.0,
+            0.9271838545667874
+          ],
+          "terminal_qpos_wxyz": [
+            0.0023916334908382106,
+            0.34589856781027656,
+            0.9106972014211108,
+            0.374192152423363,
+            0.0036853477964389177,
+            0.0014869608390967208,
+            0.9273426768049957
+          ],
+          "initial": {
+            "contained": true,
+            "parent_contact": false,
+            "success": false,
+            "minimum_margin_xyz_m": [
+              0.0024420317476280262,
+              0.0025233853637782536,
+              0.001500000000000036
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 22,
+            "collision_corner_count": 176
+          },
+          "settled": {
+            "contained": true,
+            "parent_contact": true,
+            "success": true,
+            "minimum_margin_xyz_m": [
+              0.0018275627481715018,
+              0.0025295377423994805,
+              -0.000698076276582825
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 22,
+            "collision_corner_count": 176
+          },
+          "final": {
+            "contained": true,
+            "parent_contact": true,
+            "success": true,
+            "minimum_margin_xyz_m": [
+              0.0018275606792091878,
+              0.002529537885472312,
+              -0.0006980762892626821
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 22,
+            "collision_corner_count": 176
+          },
+          "settled_predicate": true,
+          "final_predicate": true,
+          "independent_maximum_excess_xyz_m": [
+            -0.0018275606792091878,
+            -0.002529537885472312,
+            0.0006980762892626821
+          ],
+          "stability_drift_m": 1.6843955851089244e-09,
+          "orientation_drift_rad": 9.894226814215633e-09,
+          "linear_speed_m_s": 8.421976715935038e-10,
+          "angular_speed_rad_s": 4.947102761984994e-09,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "terminal_witness_png": "geometry_witnesses/feedback_cubby_microwave_porcelain_mug_porcelain_mug_init_region__terminal_witness.png"
+    }
+  ],
+  "all_passed": true,
+  "publication_image_caveat": "The cubby walls occlude the mug in agentview. Images alone do not establish containment; the numerical native-In, full-collision-envelope, physical-contact and stability checks establish this terminal witness."
+}

@@ -1,0 +1,5222 @@
+{
+  "purpose": "Diagnostic physical terminal-existence witnesses only; not policy rollouts, evaluation episodes, or saved initialization states",
+  "physical_gpu": 6,
+  "settle_steps": 160,
+  "stability_steps": 40,
+  "criterion": "40/40 native two-In conjunction + both full collision envelopes inside native site (1mm tolerance) + plate/tray support chain + drift<1mm and rotation<0.01rad",
+  "all_passed": true,
+  "rows": [
+    {
+      "scene": "naf_g6_kitchen_both_plates",
+      "bddl_sha256": "03758b11fe9a0716546ff34434bc5b622207a0c65669f74f75927b65d36f5fdc",
+      "attempts": [
+        {
+          "separation_m": 0.0,
+          "passed": true,
+          "samples": [
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283553443003,
+                    -0.009564416222949124,
+                    -0.06666318645337975
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890482147651093,
+                    -0.009556024266772031,
+                    -0.06667890882717692
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.2543596567123728e-09,
+              "maximum_rotation_drift_rad": 3.3106068427190175e-08
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283513968572,
+                    -0.009564414809835012,
+                    -0.06666318608562362
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890482714616321,
+                    -0.009556020513157362,
+                    -0.06667890774305033
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.5087195415765854e-09,
+              "maximum_rotation_drift_rad": 6.621214147217119e-08
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283474494412,
+                    -0.009564413396720942,
+                    -0.06666318571786754
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890483281581584,
+                    -0.009556016759542638,
+                    -0.0666789066589241
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.76307959823962e-09,
+              "maximum_rotation_drift_rad": 9.931821968586468e-08
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283435020273,
+                    -0.009564411983606982,
+                    -0.06666318535011165
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890483848547086,
+                    -0.009556013005927663,
+                    -0.06667890557479784
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.3017439865818933e-08,
+              "maximum_rotation_drift_rad": 1.3242430272943932e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872833955458285,
+                    -0.009564410570492801,
+                    -0.06666318498235554
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890484415512086,
+                    -0.009556009252312245,
+                    -0.06667890449067147
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.627180030508955e-08,
+              "maximum_rotation_drift_rad": 1.655303905239696e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283356071682,
+                    -0.009564409157378523,
+                    -0.06666318461459945
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890484982477591,
+                    -0.00955600549869666,
+                    -0.06667890340654525
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.9526160929638165e-08,
+              "maximum_rotation_drift_rad": 1.9863648331157875e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283316597349,
+                    -0.009564407744264147,
+                    -0.06666318424684337
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890485549442927,
+                    -0.009556001745080617,
+                    -0.06667890232241881
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 2.2780521768217226e-08,
+              "maximum_rotation_drift_rad": 2.317425810192268e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283277123099,
+                    -0.009564406331149883,
+                    -0.0666631838790874
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890486116408433,
+                    -0.009555997991464615,
+                    -0.06667890123829281
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 2.6034882762066702e-08,
+              "maximum_rotation_drift_rad": 2.6484868457657415e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283237648536,
+                    -0.009564404918035382,
+                    -0.06666318351133128
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890486683373661,
+                    -0.009555994237848225,
+                    -0.0666789001541665
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 2.928924395373932e-08,
+              "maximum_rotation_drift_rad": 2.979547919843889e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283198174508,
+                    -0.009564403504920924,
+                    -0.06666318314357528
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890487250339174,
+                    -0.00955599048423178,
+                    -0.06667889907004053
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.25436053239563e-08,
+              "maximum_rotation_drift_rad": 3.31060904486622e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283158700181,
+                    -0.009564402091806312,
+                    -0.06666318277581915
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890487817304298,
+                    -0.009555986730614863,
+                    -0.06667889798591432
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.5797966885370303e-08,
+              "maximum_rotation_drift_rad": 3.6416702199695646e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283119226028,
+                    -0.0095644006786917,
+                    -0.06666318240806311
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890488384269807,
+                    -0.009555982976997765,
+                    -0.06667889690178827
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.9052328655430524e-08,
+              "maximum_rotation_drift_rad": 3.97273144288415e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478728307975166,
+                    -0.009564399265577062,
+                    -0.0666631820403071
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890488951235098,
+                    -0.009555979223380529,
+                    -0.0666788958176624
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 4.2306690591155554e-08,
+              "maximum_rotation_drift_rad": 4.3037927158130174e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478728304027734,
+                    -0.009564397852462436,
+                    -0.06666318167255116
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890489518200566,
+                    -0.00955597546976289,
+                    -0.06667889473353632
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 4.556105272411599e-08,
+              "maximum_rotation_drift_rad": 4.634854040117741e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283000803069,
+                    -0.009564396439347658,
+                    -0.06666318130479516
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489049008516585,
+                    -0.009555971716145042,
+                    -0.06667889364941045
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 4.881541504923691e-08,
+              "maximum_rotation_drift_rad": 4.965915408515501e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478728296132875,
+                    -0.009564395026232742,
+                    -0.06666318093703903
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890490652131213,
+                    -0.009555967962526835,
+                    -0.06667889256528435
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 5.2069777554731824e-08,
+              "maximum_rotation_drift_rad": 5.296976828398747e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872829218544855,
+                    -0.009564393613117797,
+                    -0.06666318056928301
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890491219096726,
+                    -0.00955596420890839,
+                    -0.06667889148115845
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 5.532414025384268e-08,
+              "maximum_rotation_drift_rad": 5.628038295475907e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282882380055,
+                    -0.009564392200002686,
+                    -0.06666318020152685
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890491786062093,
+                    -0.009555960455289586,
+                    -0.06667889039703244
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 5.8578503128585565e-08,
+              "maximum_rotation_drift_rad": 5.959099812684321e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872828429059155,
+                    -0.009564390786887644,
+                    -0.06666317983377083
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890492353027623,
+                    -0.009555956701670767,
+                    -0.06667888931290664
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.183286620390345e-08,
+              "maximum_rotation_drift_rad": 6.290161381751139e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282803431464,
+                    -0.009564389373772395,
+                    -0.06666317946601465
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890492919992976,
+                    -0.009555952948051727,
+                    -0.06667888822878094
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.508722946621117e-08,
+              "maximum_rotation_drift_rad": 6.621222997669493e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282763957214,
+                    -0.009564387960657186,
+                    -0.0666631790982585
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489049348695851,
+                    -0.009555949194432367,
+                    -0.06667888714465528
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.834159291406361e-08,
+              "maximum_rotation_drift_rad": 6.952284659435127e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872827244828595,
+                    -0.009564386547542048,
+                    -0.06666317873050237
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489049405392404,
+                    -0.009555945440812758,
+                    -0.06667888606052962
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 7.159595654842417e-08,
+              "maximum_rotation_drift_rad": 7.283346373612852e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282685008304,
+                    -0.009564385134426548,
+                    -0.06666317836274581
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489049462088941,
+                    -0.009555941687192829,
+                    -0.06667888497640394
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 7.485032036897177e-08,
+              "maximum_rotation_drift_rad": 7.61440813880454e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282645534172,
+                    -0.00956438372131127,
+                    -0.06666317799498953
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890495187855058,
+                    -0.009555937933572761,
+                    -0.0666788838922785
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 7.810468437053569e-08,
+              "maximum_rotation_drift_rad": 7.945469953365802e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282606059734,
+                    -0.009564382308195604,
+                    -0.06666317762723295
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489049575482065,
+                    -0.009555934179952333,
+                    -0.06667888280815287
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 8.13590485393275e-08,
+              "maximum_rotation_drift_rad": 8.276531819131491e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282566585484,
+                    -0.009564380895080174,
+                    -0.06666317725947662
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890496321786306,
+                    -0.009555930426331696,
+                    -0.06667888172402736
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 8.461341290933663e-08,
+              "maximum_rotation_drift_rad": 8.607593728149701e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282527111157,
+                    -0.009564379481964522,
+                    -0.06666317689172016
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890496888751787,
+                    -0.009555926672710657,
+                    -0.06667888063990174
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 8.786777743342751e-08,
+              "maximum_rotation_drift_rad": 8.938655692047854e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282487636699,
+                    -0.009564378068848939,
+                    -0.06666317652396382
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890497455717452,
+                    -0.009555922919089466,
+                    -0.06667887955577625
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.112214216202225e-08,
+              "maximum_rotation_drift_rad": 9.269717692896962e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282448162247,
+                    -0.00956437665573312,
+                    -0.06666317615620733
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489049802268293,
+                    -0.009555919165467996,
+                    -0.06667887847165083
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.437650705983661e-08,
+              "maximum_rotation_drift_rad": 9.600779754769845e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282408688115,
+                    -0.009564375242617357,
+                    -0.06666317578845096
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0148904985896487,
+                    -0.009555915411846555,
+                    -0.06667887738752568
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.763087214799223e-08,
+              "maximum_rotation_drift_rad": 9.93184186106054e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872823692137675,
+                    -0.009564373829501552,
+                    -0.06666317542069458
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489049915661415,
+                    -0.009555911658224725,
+                    -0.06667887630340041
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.0088523743170103e-07,
+              "maximum_rotation_drift_rad": 1.026290401517174e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282329739323,
+                    -0.009564372416385497,
+                    -0.06666317505293803
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890499723579306,
+                    -0.009555907904602465,
+                    -0.06667887521927501
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.0413960288668595e-07,
+              "maximum_rotation_drift_rad": 1.0593966215609178e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282290264969,
+                    -0.009564371003269526,
+                    -0.06666317468518161
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890500290545085,
+                    -0.00955590415098019,
+                    -0.06667887413514983
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.0739396854848605e-07,
+              "maximum_rotation_drift_rad": 1.0925028472373786e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282250790524,
+                    -0.009564369590153318,
+                    -0.06666317431742506
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890500857510577,
+                    -0.009555900397357472,
+                    -0.06667887305102457
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.106483344004021e-07,
+              "maximum_rotation_drift_rad": 1.1256090770490136e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282211316288,
+                    -0.009564368177037208,
+                    -0.06666317394966866
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890501424476031,
+                    -0.009555896643734602,
+                    -0.06667887196689945
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.1390270045849262e-07,
+              "maximum_rotation_drift_rad": 1.158715311616662e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282171841968,
+                    -0.009564366763920848,
+                    -0.06666317358191207
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890501991441651,
+                    -0.009555892890111328,
+                    -0.06667887088277419
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.171570666886606e-07,
+              "maximum_rotation_drift_rad": 1.1918215516458125e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282132367503,
+                    -0.009564365350804696,
+                    -0.06666317321415577
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890502558407213,
+                    -0.009555889136487875,
+                    -0.06667886979864905
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.204114330884754e-07,
+              "maximum_rotation_drift_rad": 1.2249277967925568e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282092893176,
+                    -0.009564363937688253,
+                    -0.06666317284639917
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489050312537283,
+                    -0.009555885382864032,
+                    -0.0666788687145237
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.2366579969899306e-07,
+              "maximum_rotation_drift_rad": 1.2580340468721455e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282053418711,
+                    -0.009564362524571948,
+                    -0.06666317247864284
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890503692338061,
+                    -0.009555881629240134,
+                    -0.06667886763039874
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.2692016653027658e-07,
+              "maximum_rotation_drift_rad": 1.2911403006316177e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282013944454,
+                    -0.009564361111455574,
+                    -0.0666631721108865
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489050425930406,
+                    -0.009555877875616028,
+                    -0.06667886654627374
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.301745335087461e-07,
+              "maximum_rotation_drift_rad": 1.3242465608245509e-06
+            }
+          ],
+          "posed_qpos": {
+            "plate_1": [
+              0.11766857706024364,
+              0.013104655574162898,
+              0.912263685583534,
+              -9.348800285894534e-07,
+              -0.0017199376276470608,
+              0.001210223161919998,
+              0.9999977885843451
+            ],
+            "plate_2": [
+              0.11766857706024364,
+              0.013104655574162898,
+              0.9336759480954357,
+              -9.348800285894534e-07,
+              -0.0017199376276470608,
+              0.001210223161919998,
+              0.9999977885843451
+            ]
+          },
+          "terminal_qpos": {
+            "plate_1": [
+              0.11768083431505283,
+              0.013111825376715822,
+              0.91025527252505,
+              -3.6666632087753544e-06,
+              0.0006761692891264428,
+              0.002587958288972687,
+              0.9999964226203725
+            ],
+            "plate_2": [
+              0.11767691045702994,
+              0.013158984296663869,
+              0.9203525664233769,
+              0.00024109774960818663,
+              0.0006642691129562557,
+              0.0024987622912351674,
+              0.9999966283970327
+            ],
+            "wooden_tray_1": [
+              0.12559213975788497,
+              0.007968947479959347,
+              0.9005969756788617,
+              -9.194432712268824e-07,
+              -0.0017124851439443485,
+              0.0011959320257984994,
+              0.9999978185678077
+            ]
+          }
+        }
+      ],
+      "passed": true,
+      "terminal_witness_png": "geometry_witnesses/naf_g6_kitchen_both_plates__two_plate_terminal_witness.png"
+    },
+    {
+      "scene": "naf_g6_living_both_plates",
+      "bddl_sha256": "26e6f6d4fc20a7490b531557963b53dd3004d3f4e838b8bd340a389d5a3441c0",
+      "attempts": [
+        {
+          "separation_m": 0.0,
+          "passed": true,
+          "samples": [
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218720143156,
+                    -0.009561972073938593,
+                    -0.0666624551432739
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890854356882754,
+                    -0.009555383076182436,
+                    -0.06668037729246407
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.270471915175953e-09,
+              "maximum_rotation_drift_rad": 3.3135294970399914e-08
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218680354859,
+                    -0.009561970649079904,
+                    -0.06666245477160174
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890854924531231,
+                    -0.009555379305973485,
+                    -0.06668037621237803
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.540944028488547e-09,
+              "maximum_rotation_drift_rad": 6.627059491147533e-08
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218640566623,
+                    -0.009561969224221104,
+                    -0.06666245439992936
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890855492179764,
+                    -0.00955537553576423,
+                    -0.0666803751322921
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.811416324296291e-09,
+              "maximum_rotation_drift_rad": 9.940590022815017e-08
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218600778444,
+                    -0.009561967799362248,
+                    -0.06666245402825688
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890856059828247,
+                    -0.009555371765554668,
+                    -0.06668037405220614
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.3081888840193646e-08,
+              "maximum_rotation_drift_rad": 1.3254120962271415e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218560990215,
+                    -0.009561966374503447,
+                    -0.06666245365658453
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890856627476846,
+                    -0.009555367995344774,
+                    -0.06668037297212018
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.6352361536763755e-08,
+              "maximum_rotation_drift_rad": 1.6567652490185358e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478721852120198,
+                    -0.009561964949644466,
+                    -0.06666245328491201
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489085719512544,
+                    -0.009555364225134824,
+                    -0.06668037189203445
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.9622834413171263e-08,
+              "maximum_rotation_drift_rad": 1.988118450264814e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872184814138005,
+                    -0.00956196352478536,
+                    -0.06666245291323948
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890857762774042,
+                    -0.009555360454924583,
+                    -0.06668037081194862
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 2.2893307506687658e-08,
+              "maximum_rotation_drift_rad": 2.3194716958660786e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218441625572,
+                    -0.009561962099926352,
+                    -0.0666624525415671
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890858330422474,
+                    -0.009555356684714217,
+                    -0.0666803697318631
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 2.6163780762711983e-08,
+              "maximum_rotation_drift_rad": 2.6508249944985046e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872184018372815,
+                    -0.009561960675067108,
+                    -0.06666245216989457
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890858898071242,
+                    -0.009555352914503462,
+                    -0.06668036865177734
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 2.9434254222090066e-08,
+              "maximum_rotation_drift_rad": 2.982178341349447e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218362049046,
+                    -0.009561959250207933,
+                    -0.06666245179822217
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890859465719736,
+                    -0.009555349144292347,
+                    -0.06668036757169161
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.270472786488786e-08,
+              "maximum_rotation_drift_rad": 3.3135317383801123e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218322260811,
+                    -0.009561957825348674,
+                    -0.06666245142654974
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890860033368338,
+                    -0.009555345374081106,
+                    -0.06668036649160604
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.59752016982261e-08,
+              "maximum_rotation_drift_rad": 3.644885181275302e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218282472583,
+                    -0.00956195640048936,
+                    -0.06666245105487734
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890860601016836,
+                    -0.009555341603869574,
+                    -0.06668036541152039
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.92456757386348e-08,
+              "maximum_rotation_drift_rad": 3.976238674707308e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218242684355,
+                    -0.00956195497562981,
+                    -0.0666624506832047
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890861168665396,
+                    -0.009555337833657779,
+                    -0.06668036433143482
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 4.251614994831283e-08,
+              "maximum_rotation_drift_rad": 4.30759221874228e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218202896071,
+                    -0.00956195355077033,
+                    -0.06666245031153224
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890861736314123,
+                    -0.00955533406344565,
+                    -0.06668036325134921
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 4.57866243657889e-08,
+              "maximum_rotation_drift_rad": 4.638945810003964e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218163107898,
+                    -0.009561952125910766,
+                    -0.06666244993985977
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890862303962738,
+                    -0.009555330293233244,
+                    -0.0666803621712636
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 4.905709896329986e-08,
+              "maximum_rotation_drift_rad": 4.970299454197002e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218123319552,
+                    -0.009561950701051147,
+                    -0.06666244956818729
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890862871611298,
+                    -0.009555326523020699,
+                    -0.0666803610911782
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 5.2327573753874176e-08,
+              "maximum_rotation_drift_rad": 5.301653141386259e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218083531268,
+                    -0.009561949276191445,
+                    -0.06666244919651479
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890863439259973,
+                    -0.009555322752807863,
+                    -0.06668036001109265
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 5.5598048737970125e-08,
+              "maximum_rotation_drift_rad": 5.633006884631831e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787218043743095,
+                    -0.00956194785133166,
+                    -0.06666244882484229
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890864006908595,
+                    -0.009555318982594943,
+                    -0.06668035893100752
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 5.8868523890114154e-08,
+              "maximum_rotation_drift_rad": 5.964360674072937e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872180039547005,
+                    -0.009561946426471776,
+                    -0.06666244845316978
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890864574557159,
+                    -0.00955531521238158,
+                    -0.06668035785092206
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.213899926015719e-08,
+              "maximum_rotation_drift_rad": 6.295714508419213e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217964166465,
+                    -0.009561945001612004,
+                    -0.06666244808149742
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890865142205837,
+                    -0.009555311442168105,
+                    -0.06668035677083688
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.540947479600402e-08,
+              "maximum_rotation_drift_rad": 6.627068399495764e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217924378258,
+                    -0.009561943576751983,
+                    -0.06666244770982484
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890865709854421,
+                    -0.0095553076719542,
+                    -0.06668035569075148
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.867995053796045e-08,
+              "maximum_rotation_drift_rad": 6.958422333844251e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217884589905,
+                    -0.00956194215189203,
+                    -0.06666244733815242
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890866277503093,
+                    -0.0095553039017401,
+                    -0.06668035461066618
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 7.195042647572813e-08,
+              "maximum_rotation_drift_rad": 7.289776320415695e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478721784480169,
+                    -0.00956194072703187,
+                    -0.06666244696647966
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890866845151906,
+                    -0.009555300131525696,
+                    -0.06668035353058098
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 7.522090259389897e-08,
+              "maximum_rotation_drift_rad": 7.621130353958541e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217805013344,
+                    -0.009561939302171751,
+                    -0.06666244659480693
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890867412800525,
+                    -0.009555296361311,
+                    -0.06668035245049572
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 7.849137893176468e-08,
+              "maximum_rotation_drift_rad": 7.95248443770965e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217765225012,
+                    -0.009561937877311591,
+                    -0.06666244622313414
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890867980449446,
+                    -0.009555292591096054,
+                    -0.06668035137041058
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 8.176185542854731e-08,
+              "maximum_rotation_drift_rad": 8.28383857821339e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217725436922,
+                    -0.009561936452451333,
+                    -0.0666624458514613
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890868548098138,
+                    -0.009555288820881067,
+                    -0.06668035029032565
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 8.503233214652383e-08,
+              "maximum_rotation_drift_rad": 8.615192760130822e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217685648638,
+                    -0.009561935027590993,
+                    -0.06666244547978849
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890869115746996,
+                    -0.009555285050665663,
+                    -0.06668034921024055
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 8.830280903939102e-08,
+              "maximum_rotation_drift_rad": 8.94654699554273e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217645860306,
+                    -0.009561933602730568,
+                    -0.06666244510811567
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890869683395747,
+                    -0.009555281280450093,
+                    -0.06668034813015568
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.15732861194764e-08,
+              "maximum_rotation_drift_rad": 9.277901277677846e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217606072022,
+                    -0.009561932177870103,
+                    -0.06666244473644284
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890870251044557,
+                    -0.009555277510234161,
+                    -0.06668034705007064
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.4843763396172e-08,
+              "maximum_rotation_drift_rad": 9.609255609794131e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872175662837455,
+                    -0.00956193075300954,
+                    -0.06666244436476997
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890870818693423,
+                    -0.009555273740018133,
+                    -0.06668034596998586
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.811424084675215e-08,
+              "maximum_rotation_drift_rad": 9.940609995496386e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217526495351,
+                    -0.009561929328149046,
+                    -0.06666244399309722
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890871386342066,
+                    -0.009555269969801578,
+                    -0.06668034488990082
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.0138471851856262e-07,
+              "maximum_rotation_drift_rad": 1.0271964421095695e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217486707129,
+                    -0.009561927903288442,
+                    -0.06666244362142447
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890871953990938,
+                    -0.009555266199584939,
+                    -0.066680343809816
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.0465519635629359e-07,
+              "maximum_rotation_drift_rad": 1.0603318902557884e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217446918804,
+                    -0.009561926478427726,
+                    -0.06666244324975167
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890872521639818,
+                    -0.009555262429368008,
+                    -0.0666803427297311
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.0792567438862343e-07,
+              "maximum_rotation_drift_rad": 1.0934673433264094e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217407130416,
+                    -0.009561925053566941,
+                    -0.06666244287807882
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890873089288582,
+                    -0.009555258659150759,
+                    -0.06668034164964616
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.1119615262071508e-07,
+              "maximum_rotation_drift_rad": 1.1266028009761738e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217367342132,
+                    -0.00956192362870606,
+                    -0.06666244250640596
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0148908736569374,
+                    -0.009555254888933232,
+                    -0.06668034056956139
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.1446663103013034e-07,
+              "maximum_rotation_drift_rad": 1.1597382635886833e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872173275538,
+                    -0.009561922203845122,
+                    -0.06666244213473312
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890874224586275,
+                    -0.00955525111871558,
+                    -0.06668033948947662
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.1773710963645217e-07,
+              "maximum_rotation_drift_rad": 1.1928737311515958e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872172877654676,
+                    -0.009561920778984087,
+                    -0.06666244176306023
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890874792235043,
+                    -0.009555247348497622,
+                    -0.06668033840939197
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.2100758841715235e-07,
+              "maximum_rotation_drift_rad": 1.2260092038511847e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478721724797708,
+                    -0.009561919354122997,
+                    -0.06666244139138736
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890875359883815,
+                    -0.009555243578279568,
+                    -0.06668033732930742
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.2427806740172682e-07,
+              "maximum_rotation_drift_rad": 1.2591446811975282e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217208188803,
+                    -0.009561917929261796,
+                    -0.06666244101971446
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890875927532698,
+                    -0.009555239808061111,
+                    -0.06668033624922275
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.275485465743726e-07,
+              "maximum_rotation_drift_rad": 1.2922801634280477e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787217168400422,
+                    -0.009561916504400705,
+                    -0.06666244064804172
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890876495181532,
+                    -0.009555236037842349,
+                    -0.06668033516913816
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.3081902592396497e-07,
+              "maximum_rotation_drift_rad": 1.3254156507973115e-06
+            }
+          ],
+          "posed_qpos": {
+            "plate_1": [
+              0.09448524029477974,
+              0.003998504109012755,
+              0.44903273742097793,
+              -4.0018285938424795e-05,
+              -0.0017327612954088443,
+              0.0012646986400829494,
+              0.9999976982344411
+            ],
+            "plate_2": [
+              0.09448524029477974,
+              0.003998504109012755,
+              0.4704536195818863,
+              -4.0018285938424795e-05,
+              -0.0017327612954088443,
+              0.0012646986400829494,
+              0.9999976982344411
+            ]
+          },
+          "terminal_qpos": {
+            "plate_1": [
+              0.09449734793087576,
+              0.0040060603873989815,
+              0.44703746412136347,
+              -4.290201583454665e-05,
+              0.0006562650795658554,
+              0.0026570677901307676,
+              0.9999962537261425
+            ],
+            "plate_2": [
+              0.09449461401795768,
+              0.004054982613631206,
+              0.4571347532720871,
+              0.0002433552779833987,
+              0.0006379150605154596,
+              0.002566907510914044,
+              0.999996472407985
+            ],
+            "wooden_tray_1": [
+              0.10241016832483874,
+              -0.0011399474834169101,
+              0.4373802230714578,
+              -4.001820012678758e-05,
+              -0.0017326940613447287,
+              0.0012645779626141204,
+              0.9999976985035567
+            ]
+          }
+        }
+      ],
+      "passed": true,
+      "terminal_witness_png": "geometry_witnesses/naf_g6_living_both_plates__two_plate_terminal_witness.png"
+    },
+    {
+      "scene": "naf_g6_study_both_plates",
+      "bddl_sha256": "80cafd7ed880681d721c9d9f9c44d657f57092c790dd59c260fc2cf87adefe87",
+      "attempts": [
+        {
+          "separation_m": 0.0,
+          "passed": true,
+          "samples": [
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787181453685299,
+                    -0.009560870240553146,
+                    -0.06666365648474415
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890814876816899,
+                    -0.009554284458715576,
+                    -0.06667917305646116
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.2705089469587338e-09,
+              "maximum_rotation_drift_rad": 3.313588605852594e-08
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787181413895156,
+                    -0.009560868815655946,
+                    -0.06666365611304745
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890815444469564,
+                    -0.00955428068845339,
+                    -0.06667917197635502
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.541018036603564e-09,
+              "maximum_rotation_drift_rad": 6.62717782205503e-08
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478718137410479,
+                    -0.00956086739075869,
+                    -0.06666365574135072
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890816012122124,
+                    -0.009554276918191065,
+                    -0.06667917089624899
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.81152731400284e-09,
+              "maximum_rotation_drift_rad": 9.940767533213685e-08
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787181334314536,
+                    -0.009560865965861351,
+                    -0.06666365536965402
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890816579774355,
+                    -0.009554273147928422,
+                    -0.06667916981614296
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.30820368200265e-08,
+              "maximum_rotation_drift_rad": 1.3254357691485217e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787181294524288,
+                    -0.009560864540963943,
+                    -0.06666365499795728
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890817147426919,
+                    -0.009554269377665514,
+                    -0.06667916873603694
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.6352546490103754e-08,
+              "maximum_rotation_drift_rad": 1.6567948376815302e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478718125473393,
+                    -0.009560863116066423,
+                    -0.06666365462626049
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890817715079378,
+                    -0.009554265607402287,
+                    -0.06667916765593095
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.9623056368155807e-08,
+              "maximum_rotation_drift_rad": 1.988153945883559e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787181214943689,
+                    -0.009560861691168848,
+                    -0.06666365425456375
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890818282731734,
+                    -0.009554261837138742,
+                    -0.0666791665758249
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 2.2893566422435048e-08,
+              "maximum_rotation_drift_rad": 2.319513110961943e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787181175153532,
+                    -0.009560860266271176,
+                    -0.06666365388286698
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890818850384398,
+                    -0.009554258066875099,
+                    -0.06667916549571898
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 2.6164076664864668e-08,
+              "maximum_rotation_drift_rad": 2.6508723266170644e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787181135363076,
+                    -0.00956085884137374,
+                    -0.06666365351117044
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890819418037209,
+                    -0.009554254296611178,
+                    -0.0666791644156131
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 2.9434587094942417e-08,
+              "maximum_rotation_drift_rad": 2.9822315964427995e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787181095572822,
+                    -0.00956085741647586,
+                    -0.06666365313947362
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489081998568945,
+                    -0.00955425052634698,
+                    -0.06667916333550723
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.2705097731737643e-08,
+              "maximum_rotation_drift_rad": 3.3135909023525377e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047871810557825745,
+                    -0.009560855991578035,
+                    -0.06666365276777683
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890820553341913,
+                    -0.009554246756082505,
+                    -0.06667916225540142
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.597560854738207e-08,
+              "maximum_rotation_drift_rad": 3.6449502632418595e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787181015992424,
+                    -0.009560854566680155,
+                    -0.06666365239608009
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890821120994258,
+                    -0.009554242985817918,
+                    -0.06667916117529575
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.924611955494842e-08,
+              "maximum_rotation_drift_rad": 3.97630967336071e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180976201864,
+                    -0.009560853141782191,
+                    -0.06666365202438332
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489082168864719,
+                    -0.009554239215552887,
+                    -0.06667916009518994
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 4.251663074951614e-08,
+              "maximum_rotation_drift_rad": 4.3076691332487066e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180936411721,
+                    -0.009560851716884144,
+                    -0.06666365165268656
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890822256299435,
+                    -0.009554235445287731,
+                    -0.06667915901508424
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 4.5787142118731305e-08,
+              "maximum_rotation_drift_rad": 4.6390286467775175e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047871808966212515,
+                    -0.009560850291986181,
+                    -0.0666636512809899
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890822823952023,
+                    -0.009554231675022215,
+                    -0.06667915793497858
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 4.905765371129265e-08,
+              "maximum_rotation_drift_rad": 4.970388195879524e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180856831115,
+                    -0.009560848867087968,
+                    -0.0666636509092931
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489082339160427,
+                    -0.009554227904756435,
+                    -0.06667915685487288
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 5.232816548658059e-08,
+              "maximum_rotation_drift_rad": 5.301747804919228e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047871808170406455,
+                    -0.009560847442189671,
+                    -0.0666636505375962
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890823959256859,
+                    -0.009554224134490336,
+                    -0.06667915577476725
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 5.5598677459752834e-08,
+              "maximum_rotation_drift_rad": 5.633107457887762e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180777250405,
+                    -0.0095608460172915,
+                    -0.06666365016589935
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890824526909787,
+                    -0.009554220364224153,
+                    -0.0666791546946617
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 5.886918961001376e-08,
+              "maximum_rotation_drift_rad": 5.964467168033648e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180737460157,
+                    -0.009560844592393092,
+                    -0.06666364979420221
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489082509456216,
+                    -0.009554216593957679,
+                    -0.06667915361455623
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.213970195600395e-08,
+              "maximum_rotation_drift_rad": 6.295826922402664e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180697669799,
+                    -0.009560843167494726,
+                    -0.06666364942250518
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890825662214974,
+                    -0.00955421282369083,
+                    -0.06667915253445071
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.54102145068438e-08,
+              "maximum_rotation_drift_rad": 6.627186729716897e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180657879329,
+                    -0.009560841742596277,
+                    -0.0666636490508081
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890826229867347,
+                    -0.009554209053423912,
+                    -0.06667915145434541
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.868072725014416e-08,
+              "maximum_rotation_drift_rad": 6.958546582560299e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180618089089,
+                    -0.009560840317697647,
+                    -0.06666364867911086
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890826797519945,
+                    -0.009554205283156578,
+                    -0.06667915037424
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 7.195124016399857e-08,
+              "maximum_rotation_drift_rad": 7.289906482694154e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180578298848,
+                    -0.009560838892799045,
+                    -0.06666364830741382
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489082736517288,
+                    -0.009554201512888966,
+                    -0.06667914929413456
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 7.52217532691272e-08,
+              "maximum_rotation_drift_rad": 7.62126644155178e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478718053850849,
+                    -0.009560837467900388,
+                    -0.0666636479357167
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890827932825371,
+                    -0.009554197742621229,
+                    -0.06667914821402929
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 7.849226656894389e-08,
+              "maximum_rotation_drift_rad": 7.95262644590674e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180498718138,
+                    -0.009560836043001647,
+                    -0.0666636475640196
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890828500478195,
+                    -0.009554193972353159,
+                    -0.066679147133924
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 8.176278007723725e-08,
+              "maximum_rotation_drift_rad": 8.283986492470362e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047871804589278005,
+                    -0.009560834618102837,
+                    -0.06666364719232246
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489082906813093,
+                    -0.009554190202084811,
+                    -0.06667914605381868
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 8.503329376039328e-08,
+              "maximum_rotation_drift_rad": 8.615346594025577e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180419137435,
+                    -0.00956083319320393,
+                    -0.06666364682062531
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890829635783299,
+                    -0.009554186431816158,
+                    -0.06667914497371344
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 8.830380764671243e-08,
+              "maximum_rotation_drift_rad": 8.946706742502593e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047871803793470905,
+                    -0.009560831768304953,
+                    -0.06666364644892815
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890830203436144,
+                    -0.00955418266154738,
+                    -0.06667914389360823
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.157432170958131e-08,
+              "maximum_rotation_drift_rad": 9.278066949340504e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180339556739,
+                    -0.009560830343405907,
+                    -0.06666364607723099
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890830771088645,
+                    -0.009554178891278145,
+                    -0.06667914281350297
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.484483598286828e-08,
+              "maximum_rotation_drift_rad": 9.609427194755476e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180299766387,
+                    -0.009560828918506806,
+                    -0.06666364570553378
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890831338741372,
+                    -0.00955417512100884,
+                    -0.06667914173339788
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.811535044617267e-08,
+              "maximum_rotation_drift_rad": 9.94078749095169e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180259975911,
+                    -0.00956082749360758,
+                    -0.0666636453338366
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890831906394085,
+                    -0.009554171350739396,
+                    -0.06667914065329292
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.0138586510039363e-07,
+              "maximum_rotation_drift_rad": 1.0272147834721398e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180220185462,
+                    -0.009560826068708464,
+                    -0.0666636449621396
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890832474047044,
+                    -0.009554167580469536,
+                    -0.06667913957318783
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.0465637992674796e-07,
+              "maximum_rotation_drift_rad": 1.0603508234497314e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180180395222,
+                    -0.009560824643809099,
+                    -0.06666364459044236
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890833041699778,
+                    -0.009554163810199343,
+                    -0.06667913849308275
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.0792689493726666e-07,
+              "maximum_rotation_drift_rad": 1.093486867854688e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478718014060487,
+                    -0.00956082321890983,
+                    -0.06666364421874527
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890833609352398,
+                    -0.009554160039929066,
+                    -0.06667913741297783
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.1119741013611673e-07,
+              "maximum_rotation_drift_rad": 1.126622917821283e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180100814407,
+                    -0.009560821794010452,
+                    -0.0666636438470482
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890834177005024,
+                    -0.009554156269658443,
+                    -0.06667913633287283
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.1446792556046566e-07,
+              "maximum_rotation_drift_rad": 1.1597589714554416e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180061024056,
+                    -0.009560820369110865,
+                    -0.06666364347535092
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890834744657758,
+                    -0.009554152499387514,
+                    -0.06667913525276789
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.1773844116298235e-07,
+              "maximum_rotation_drift_rad": 1.1928950306109587e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787180021233815,
+                    -0.009560818944211333,
+                    -0.06666364310365375
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890835312310498,
+                    -0.009554148729116294,
+                    -0.06667913417266297
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.210089569395361e-07,
+              "maximum_rotation_drift_rad": 1.226031094878747e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787179981443478,
+                    -0.00956081751931176,
+                    -0.06666364273195653
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890835879963472,
+                    -0.009554144958844824,
+                    -0.06667913309255799
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.2427947291196185e-07,
+              "maximum_rotation_drift_rad": 1.259167164053891e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787179941653133,
+                    -0.009560816094412117,
+                    -0.06666364236025911
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890836447616101,
+                    -0.009554141188573215,
+                    -0.06667913201245323
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.2754998907997348e-07,
+              "maximum_rotation_drift_rad": 1.2923032384372217e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787179901862559,
+                    -0.009560814669512335,
+                    -0.06666364198856163
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890837015268953,
+                    -0.009554137418301245,
+                    -0.06667913093234852
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.308205054535537e-07,
+              "maximum_rotation_drift_rad": 1.325439317171932e-06
+            }
+          ],
+          "posed_qpos": {
+            "plate_1": [
+              -0.0943305645169495,
+              0.007369109097491802,
+              0.8974027374209776,
+              0.00027171395177309646,
+              -0.0017323669629741316,
+              0.0012652387374288638,
+              0.9999976621208526
+            ],
+            "plate_2": [
+              -0.0943305645169495,
+              0.007369109097491802,
+              0.918823619581886,
+              0.00027171395177309646,
+              -0.0017323669629741316,
+              0.0012652387374288638,
+              0.9999976621208526
+            ]
+          },
+          "terminal_qpos": {
+            "plate_1": [
+              -0.09431845142041527,
+              0.007376658238053147,
+              0.8954074478850698,
+              0.0002688328633591407,
+              0.0006572553588982691,
+              0.0026570297949151914,
+              0.9999962179613257
+            ],
+            "plate_2": [
+              -0.09432115280489807,
+              0.007425577085173584,
+              0.9055047370867525,
+              0.0005550680623162314,
+              0.0006388807421451837,
+              0.0025669100383248016,
+              0.9999963473451792
+            ],
+            "wooden_tray_1": [
+              -0.08641003939707334,
+              0.002224620047311119,
+              0.8857502230715488,
+              0.00027171403806010324,
+              -0.0017322997657427477,
+              0.001265118043895475,
+              0.9999976623899375
+            ]
+          }
+        }
+      ],
+      "passed": true,
+      "terminal_witness_png": "geometry_witnesses/naf_g6_study_both_plates__two_plate_terminal_witness.png"
+    },
+    {
+      "scene": "naf_g6_tabletop_both_plates",
+      "bddl_sha256": "58afe05db8c12a7b32b2fb61abfb84614c9e79af386fae9671394b82d27cc375",
+      "attempts": [
+        {
+          "separation_m": 0.0,
+          "passed": true,
+          "samples": [
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478728355377156,
+                    -0.009564416232670445,
+                    -0.06666318644281602
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890482147999817,
+                    -0.009556024276452926,
+                    -0.06667890883776731
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.2543596749702916e-09,
+              "maximum_rotation_drift_rad": 3.310606814835802e-08
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283514297205,
+                    -0.009564414819556624,
+                    -0.06666318607506014
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890482714965101,
+                    -0.009556020522838521,
+                    -0.06667890775364096
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.5087195791737144e-09,
+              "maximum_rotation_drift_rad": 6.621214098373859e-08
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283474823156,
+                    -0.00956441340644254,
+                    -0.06666318570730403
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890483281930579,
+                    -0.00955601676922363,
+                    -0.06667890666951444
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.763079659976907e-09,
+              "maximum_rotation_drift_rad": 9.931821979061525e-08
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478728343534883,
+                    -0.009564411993328442,
+                    -0.06666318533954803
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0148904838488957,
+                    -0.009556013015608517,
+                    -0.06667890558538808
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.3017439909346887e-08,
+              "maximum_rotation_drift_rad": 1.3242430286752236e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872833958744615,
+                    -0.009564410580214261,
+                    -0.06666318497179193
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890484415861088,
+                    -0.00955600926199325,
+                    -0.06667890450126195
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.6271800338698916e-08,
+              "maximum_rotation_drift_rad": 1.6553039076041066e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283356400121,
+                    -0.009564409167099983,
+                    -0.06666318460403585
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890484982826198,
+                    -0.009556005508377527,
+                    -0.06667890341713552
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.9526160965345256e-08,
+              "maximum_rotation_drift_rad": 1.986364833576058e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283316926093,
+                    -0.00956440775398576,
+                    -0.06666318423627988
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890485549791815,
+                    -0.009556001754761664,
+                    -0.06667890233300913
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 2.2780521803989165e-08,
+              "maximum_rotation_drift_rad": 2.3174258151025246e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283277451544,
+                    -0.00956440634087137,
+                    -0.06666318386852381
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489048611675705,
+                    -0.009555998001145496,
+                    -0.0666789012488828
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 2.6034882842715978e-08,
+              "maximum_rotation_drift_rad": 2.6484868439113523e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283237977391,
+                    -0.009564404927756967,
+                    -0.0666631835007678
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890486683722441,
+                    -0.009555994247529204,
+                    -0.06667890016475683
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 2.9289244010295576e-08,
+              "maximum_rotation_drift_rad": 2.9795479234228306e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872831985030645,
+                    -0.009564403514642383,
+                    -0.06666318313301169
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890487250687787,
+                    -0.009555990493912703,
+                    -0.06667889908063092
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.254360536504325e-08,
+              "maximum_rotation_drift_rad": 3.310609048266259e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872831590288,
+                    -0.00956440210152791,
+                    -0.06666318276525568
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890487817653068,
+                    -0.00955598674029591,
+                    -0.06667889799650487
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.5797966931788496e-08,
+              "maximum_rotation_drift_rad": 3.641670220085566e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283119554668,
+                    -0.0095644006884133,
+                    -0.06666318239749965
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489048838461859,
+                    -0.009555982986678924,
+                    -0.06667889691237884
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 3.905232873158819e-08,
+              "maximum_rotation_drift_rad": 3.972731437813199e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283080080217,
+                    -0.009564399275298646,
+                    -0.06666318202974363
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890488951583816,
+                    -0.009555979233061423,
+                    -0.06667889582825258
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 4.230669068697947e-08,
+              "maximum_rotation_drift_rad": 4.3037927160756987e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283040605966,
+                    -0.00956439786218398,
+                    -0.06666318166198765
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890489518549342,
+                    -0.009555975479443882,
+                    -0.06667889474412682
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 4.556105279821866e-08,
+              "maximum_rotation_drift_rad": 4.6348540418550745e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787283001131626,
+                    -0.009564396449069076,
+                    -0.06666318129423152
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890490085514685,
+                    -0.009555971725825896,
+                    -0.06667889366000083
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 4.8815415119667075e-08,
+              "maximum_rotation_drift_rad": 4.965915409073788e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872829616572715,
+                    -0.00956439503595427,
+                    -0.06666318092647555
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489049065247999,
+                    -0.009555967972207785,
+                    -0.0666788925758749
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 5.206977762860911e-08,
+              "maximum_rotation_drift_rad": 5.296976830821405e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282922182924,
+                    -0.009564393622839187,
+                    -0.06666318055871938
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890491219445336,
+                    -0.00955596421858923,
+                    -0.06667889149174876
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 5.5324140367967244e-08,
+              "maximum_rotation_drift_rad": 5.628038297865772e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282882708799,
+                    -0.009564392209724229,
+                    -0.06666318019096339
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890491786410762,
+                    -0.00955596046497069,
+                    -0.06667889040762293
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 5.857850327395367e-08,
+              "maximum_rotation_drift_rad": 5.959099816743559e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282843234354,
+                    -0.009564390796609062,
+                    -0.06666317982320723
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489049235337623,
+                    -0.009555956711351704,
+                    -0.06667888932349714
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.183286632113782e-08,
+              "maximum_rotation_drift_rad": 6.290161386661871e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282803759993,
+                    -0.009564389383493896,
+                    -0.06666317945545118
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890492920341763,
+                    -0.009555952957732677,
+                    -0.06667888823937158
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.508722958219782e-08,
+              "maximum_rotation_drift_rad": 6.621222998727598e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282764285854,
+                    -0.009564387970378854,
+                    -0.06666317908769527
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890493487307178,
+                    -0.00955594920411336,
+                    -0.0666788871552459
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 6.834159303506036e-08,
+              "maximum_rotation_drift_rad": 6.952284664612512e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282724811312,
+                    -0.009564386557263424,
+                    -0.0666631787199391
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890494054272663,
+                    -0.009555945450493736,
+                    -0.06667888607112003
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 7.159595668505079e-08,
+              "maximum_rotation_drift_rad": 7.283346378475192e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282685336937,
+                    -0.009564385144148216,
+                    -0.06666317835218313
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890494621237961,
+                    -0.009555941696873835,
+                    -0.0666788849869944
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 7.485032048421448e-08,
+              "maximum_rotation_drift_rad": 7.614408142365402e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282645862506,
+                    -0.00956438373103266,
+                    -0.0666631779844269
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890495188203564,
+                    -0.009555937943253698,
+                    -0.06667888390286882
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 7.810468443341325e-08,
+              "maximum_rotation_drift_rad": 7.945469957243268e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478728260638836,
+                    -0.009564382317917286,
+                    -0.06666317761667095
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890495755169094,
+                    -0.00955593418963338,
+                    -0.06667888281874339
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 8.135904860527212e-08,
+              "maximum_rotation_drift_rad": 8.276531808320323e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282566914033,
+                    -0.009564380904801703,
+                    -0.06666317724891481
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890496322134582,
+                    -0.009555930436012619,
+                    -0.0666788817346176
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 8.461341295465749e-08,
+              "maximum_rotation_drift_rad": 8.60759372392395e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282527439672,
+                    -0.009564379491686037,
+                    -0.06666317688115869
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890496889100123,
+                    -0.009555926682391733,
+                    -0.06667888065049186
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 8.786777751119095e-08,
+              "maximum_rotation_drift_rad": 8.938655678974517e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872824879652415,
+                    -0.009564378078570288,
+                    -0.06666317651340259
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890497456065504,
+                    -0.009555922928770555,
+                    -0.06667887956636641
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.112214221677991e-08,
+              "maximum_rotation_drift_rad": 9.269717680378848e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282448490984,
+                    -0.009564376665454621,
+                    -0.06666317614564657
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890498023031152,
+                    -0.009555919175149266,
+                    -0.06667887848224119
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.437650705075786e-08,
+              "maximum_rotation_drift_rad": 9.600779741230744e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282409016741,
+                    -0.009564375252338858,
+                    -0.06666317577789053
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890498589996599,
+                    -0.009555915421527714,
+                    -0.06667887739811587
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 9.763087212356206e-08,
+              "maximum_rotation_drift_rad": 9.931841840534131e-07
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282369542199,
+                    -0.009564373839222887,
+                    -0.06666317541013418
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890499156961872,
+                    -0.009555911667905773,
+                    -0.0666788763139903
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.0088523741094922e-07,
+              "maximum_rotation_drift_rad": 1.0262903992763924e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282330067949,
+                    -0.009564372426107012,
+                    -0.0666631750423777
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890499723927645,
+                    -0.009555907914283762,
+                    -0.06667887522986517
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.0413960288348933e-07,
+              "maximum_rotation_drift_rad": 1.0593966195259222e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282290593518,
+                    -0.009564371012990874,
+                    -0.06666317467462088
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.01489050029089303,
+                    -0.009555904160661183,
+                    -0.06667887414573989
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.073939685433362e-07,
+              "maximum_rotation_drift_rad": 1.0925028440853672e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.00478728225111906,
+                    -0.009564369599874806,
+                    -0.0666631743068641
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890500857858487,
+                    -0.009555900407038617,
+                    -0.06667887306161493
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.1064833438081129e-07,
+              "maximum_rotation_drift_rad": 1.1256090745305054e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282211644726,
+                    -0.009564368186758529,
+                    -0.06666317393910717
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890501424823975,
+                    -0.00955589665341558,
+                    -0.06667887197748962
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.1390270044062536e-07,
+              "maximum_rotation_drift_rad": 1.1587153095988084e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282172170483,
+                    -0.009564366773642474,
+                    -0.06666317357135054
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890501991790091,
+                    -0.009555892899792404,
+                    -0.0666788708933644
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.1715706669282387e-07,
+              "maximum_rotation_drift_rad": 1.1918215504751796e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.0047872821326959275,
+                    -0.009564365360526017,
+                    -0.0666631732035936
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890502558755476,
+                    -0.009555889146168811,
+                    -0.06667886980923918
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.2041143311358954e-07,
+              "maximum_rotation_drift_rad": 1.2249277954067141e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282093221587,
+                    -0.009564363947409837,
+                    -0.06666317283583693
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890503125721165,
+                    -0.009555885392545219,
+                    -0.06667886872511444
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.2366579971110558e-07,
+              "maximum_rotation_drift_rad": 1.2580340449284494e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282053747344,
+                    -0.009564362534293547,
+                    -0.06666317246808028
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890503692686838,
+                    -0.009555881638921182,
+                    -0.06667886764098943
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.2692016649164e-07,
+              "maximum_rotation_drift_rad": 1.2911403001808266e-06
+            },
+            {
+              "plates": {
+                "plate_1": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.004787282014272795,
+                    -0.009564361121176881,
+                    -0.0666631721003233
+                  ]
+                },
+                "plate_2": {
+                  "native_in": true,
+                  "full_collision_inside": true,
+                  "maximum_excess_m": [
+                    -0.014890504259652347,
+                    -0.009555877885297007,
+                    -0.06667886655686438
+                  ]
+                }
+              },
+              "contact_edges": {
+                "plate_1--wooden_tray_1": true,
+                "plate_2--wooden_tray_1": false,
+                "plate_1--plate_2": true
+              },
+              "both_supported_by_tray_chain": true,
+              "native_final_conjunction": true,
+              "maximum_displacement_m": 1.3017453347900138e-07,
+              "maximum_rotation_drift_rad": 1.3242465601308857e-06
+            }
+          ],
+          "posed_qpos": {
+            "plate_1": [
+              0.1254795823011138,
+              -0.004090256293124781,
+              0.912263685583534,
+              -9.376225204522687e-07,
+              -0.0017199376309662737,
+              0.0012102231572030959,
+              0.9999977885843423
+            ],
+            "plate_2": [
+              0.1254795823011138,
+              -0.004090256293124781,
+              0.9336759480954357,
+              -9.376225204522687e-07,
+              -0.0017199376309662737,
+              0.0012102231572030959,
+              0.9999977885843423
+            ]
+          },
+          "terminal_qpos": {
+            "plate_1": [
+              0.1254918395558831,
+              -0.0040830864905265375,
+              0.9102552725251922,
+              -3.669405756619781e-06,
+              0.0006761692806002674,
+              0.0025879582893511316,
+              0.999996422620368
+            ],
+            "plate_2": [
+              0.12548791569757523,
+              -0.0040359275705441,
+              0.9203525664235186,
+              0.00024109500722123035,
+              0.0006642691046816791,
+              0.0024987622912271087,
+              0.9999966283976994
+            ],
+            "wooden_tray_1": [
+              0.1334031450374546,
+              -0.0092259643341946,
+              0.9005969756788615,
+              -9.221857583070507e-07,
+              -0.0017124851472239831,
+              0.0011959320210974931,
+              0.9999978185678058
+            ]
+          }
+        }
+      ],
+      "passed": true,
+      "terminal_witness_png": "geometry_witnesses/naf_g6_tabletop_both_plates__two_plate_terminal_witness.png"
+    }
+  ]
+}

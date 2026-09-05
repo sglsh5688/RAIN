@@ -1,0 +1,21 @@
+{
+  "raw_count": 56,
+  "accepted": 56,
+  "rejected": 0,
+  "families": {
+    "F01_plate_into_drainer": 4,
+    "F02_plate_on_dining_set": 4,
+    "F03_popcorn_microwave_atomic": 4,
+    "F04_short_fridge_roof": 10,
+    "F05_white_cubby_inside": 8,
+    "F06_two_plates_to_tray": 4,
+    "F07_two_layer_shelf_roof": 10,
+    "F08_short_cabinet_open_close": 12
+  },
+  "original_definition_count": 130,
+  "prior_unique_definition_count": 719,
+  "exact_duplicate_count": 0,
+  "states_per_task": 5,
+  "initial_goal_false": true,
+  "all_saved_state_masks_visible": true
+}

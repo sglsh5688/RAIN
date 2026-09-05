@@ -1,0 +1,34 @@
+{
+  "tasks": 56,
+  "episodes": 280,
+  "unique_task_episode_keys": 280,
+  "physical_gpus": [
+    5,
+    6
+  ],
+  "family_task_counts": {
+    "F01_plate_into_drainer": 4,
+    "F02_plate_on_dining_set": 4,
+    "F03_popcorn_microwave_atomic": 4,
+    "F04_short_fridge_roof": 10,
+    "F05_white_cubby_inside": 8,
+    "F06_two_plates_to_tray": 4,
+    "F07_two_layer_shelf_roof": 10,
+    "F08_short_cabinet_open_close": 12
+  },
+  "initial_goals_false": 280,
+  "success_video_cap_per_task": 5,
+  "failure_video_cap_per_task": 1,
+  "success_video_count": 34,
+  "failure_video_count": 52,
+  "failure_videos_from_original_trials": true,
+  "json_fallback_mask_sources": 0,
+  "active_mask_source_counts": {
+    "sim_seg": 11322,
+    "sim_region": 7083
+  },
+  "place_mask_source_counts": {
+    "sim_region_poly": 6874,
+    "none": 11531
+  }
+}

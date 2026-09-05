@@ -1,0 +1,57 @@
+task_id	raw_id	family	instruction
+NAF_001	RAWX_001	F01_plate_into_drainer	Put the plate in the left compartment of the drainer.
+NAF_002	RAWX_002	F01_plate_into_drainer	Put the plate in the right compartment of the drainer.
+NAF_003	RAWX_003	F01_plate_into_drainer	Put the plate in the left compartment of the drainer.
+NAF_004	RAWX_004	F01_plate_into_drainer	Put the plate in the right compartment of the drainer.
+NAF_005	RAWX_005	F02_plate_on_dining_set	Put the plate on the dining-set mat.
+NAF_006	RAWX_006	F02_plate_on_dining_set	Put the plate on the dining-set mat.
+NAF_007	RAWX_007	F02_plate_on_dining_set	Put the plate on the dining-set mat.
+NAF_008	RAWX_008	F02_plate_on_dining_set	Put the plate on the dining-set mat.
+NAF_009	RAWX_009	F03_popcorn_microwave_atomic	Put the popcorn in the microwave.
+NAF_010	RAWX_010	F03_popcorn_microwave_atomic	Close the microwave.
+NAF_011	RAWX_011	F03_popcorn_microwave_atomic	Put the popcorn in the microwave.
+NAF_012	RAWX_012	F03_popcorn_microwave_atomic	Close the microwave.
+NAF_013	RAWX_013	F04_short_fridge_roof	Put the plate on top of the short fridge.
+NAF_014	RAWX_014	F04_short_fridge_roof	Put the wine bottle on top of the short fridge.
+NAF_015	RAWX_015	F04_short_fridge_roof	Put the black bowl on top of the short fridge.
+NAF_016	RAWX_016	F04_short_fridge_roof	Put the milk on top of the short fridge.
+NAF_017	RAWX_017	F04_short_fridge_roof	Put the popcorn on top of the short fridge.
+NAF_018	RAWX_018	F04_short_fridge_roof	Put the plate on top of the short fridge.
+NAF_019	RAWX_019	F04_short_fridge_roof	Put the wine bottle on top of the short fridge.
+NAF_020	RAWX_020	F04_short_fridge_roof	Put the milk on top of the short fridge.
+NAF_021	RAWX_021	F04_short_fridge_roof	Put the white mug on top of the short fridge.
+NAF_022	RAWX_022	F04_short_fridge_roof	Put the yellow and white mug on top of the short fridge.
+NAF_023	RAWX_023	F05_white_cubby_inside	Put the white mug inside the white storage box.
+NAF_024	RAWX_024	F05_white_cubby_inside	Put the white mug inside the white storage box.
+NAF_025	RAWX_025	F05_white_cubby_inside	Put the popcorn inside the white storage box.
+NAF_026	RAWX_026	F05_white_cubby_inside	Put the popcorn inside the white storage box.
+NAF_027	RAWX_027	F05_white_cubby_inside	Put the butter inside the white storage box.
+NAF_028	RAWX_028	F05_white_cubby_inside	Put the cream cheese inside the white storage box.
+NAF_029	RAWX_029	F05_white_cubby_inside	Put the chocolate pudding inside the white storage box.
+NAF_030	RAWX_030	F05_white_cubby_inside	Put the black bowl inside the white storage box.
+NAF_031	RAWX_031	F06_two_plates_to_tray	Put both plates in the wooden tray.
+NAF_032	RAWX_032	F06_two_plates_to_tray	Put both plates in the wooden tray.
+NAF_033	RAWX_033	F06_two_plates_to_tray	Put both plates in the wooden tray.
+NAF_034	RAWX_034	F06_two_plates_to_tray	Put both plates in the wooden tray.
+NAF_035	RAWX_035	F07_two_layer_shelf_roof	Put the black book on top of the two-layer wooden shelf.
+NAF_036	RAWX_036	F07_two_layer_shelf_roof	Put the yellow book on top of the two-layer wooden shelf.
+NAF_037	RAWX_037	F07_two_layer_shelf_roof	Put the plate on top of the two-layer wooden shelf.
+NAF_038	RAWX_038	F07_two_layer_shelf_roof	Put the wine bottle on top of the two-layer wooden shelf.
+NAF_039	RAWX_039	F07_two_layer_shelf_roof	Put the black bowl on top of the two-layer wooden shelf.
+NAF_040	RAWX_040	F07_two_layer_shelf_roof	Put the milk on top of the two-layer wooden shelf.
+NAF_041	RAWX_041	F07_two_layer_shelf_roof	Put the popcorn on top of the two-layer wooden shelf.
+NAF_042	RAWX_042	F07_two_layer_shelf_roof	Put the cream cheese on top of the two-layer wooden shelf.
+NAF_043	RAWX_043	F07_two_layer_shelf_roof	Put the white mug on top of the two-layer wooden shelf.
+NAF_044	RAWX_044	F07_two_layer_shelf_roof	Put the yellow and white mug on top of the two-layer wooden shelf.
+NAF_045	RAWX_045	F08_short_cabinet_open_close	Open the top drawer of the short cabinet.
+NAF_046	RAWX_046	F08_short_cabinet_open_close	Open the middle drawer of the short cabinet.
+NAF_047	RAWX_047	F08_short_cabinet_open_close	Open the bottom drawer of the short cabinet.
+NAF_048	RAWX_048	F08_short_cabinet_open_close	Close the top drawer of the short cabinet.
+NAF_049	RAWX_049	F08_short_cabinet_open_close	Close the middle drawer of the short cabinet.
+NAF_050	RAWX_050	F08_short_cabinet_open_close	Close the bottom drawer of the short cabinet.
+NAF_051	RAWX_051	F08_short_cabinet_open_close	Open the top drawer of the short cabinet.
+NAF_052	RAWX_052	F08_short_cabinet_open_close	Open the middle drawer of the short cabinet.
+NAF_053	RAWX_053	F08_short_cabinet_open_close	Open the bottom drawer of the short cabinet.
+NAF_054	RAWX_054	F08_short_cabinet_open_close	Close the top drawer of the short cabinet.
+NAF_055	RAWX_055	F08_short_cabinet_open_close	Close the middle drawer of the short cabinet.
+NAF_056	RAWX_056	F08_short_cabinet_open_close	Close the bottom drawer of the short cabinet.

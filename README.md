@@ -46,3 +46,9 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - `diverse_adapt_novel_success/`: 2 tasks with success, 6 successful episodes.
 - Shared JPEG preview sprites, one on-demand player (`preload=none`), success reels and one original-trial failure clip when a task failed.
 <!-- DIVERSE_ADAPT_NOVEL_README_END -->
+
+<!-- NOVEL_ADAPT_FEEDBACK_README_START -->
+- `novel_adapt_feedback_all/`: all 56 Novel Adapt Feedback tasks, including zero-success tasks; five original trials per task.
+- `novel_adapt_feedback_success/`: 11 tasks with success, 34 successful episodes.
+- Shared JPEG preview sprites, one on-demand player (`preload=none`), success reels and one original-trial failure clip when a task failed.
+<!-- NOVEL_ADAPT_FEEDBACK_README_END -->

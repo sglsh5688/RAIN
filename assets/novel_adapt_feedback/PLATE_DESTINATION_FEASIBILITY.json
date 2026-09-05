@@ -1,0 +1,1691 @@
+{
+  "purpose": "IK-free physical destination-existence audit; NOT policy trials, NOT success-rate evidence, NOT evaluation initial states",
+  "physical_gpu": 2,
+  "group": 1,
+  "settle_steps": 160,
+  "extra_stability_steps": 40,
+  "production_goal_guard_installed": true,
+  "all_passed": true,
+  "completed_scenes": 4,
+  "expected_scenes": 4,
+  "rows": [
+    {
+      "scene_id": "feedback_plate_drainer_left_original",
+      "target": "bowl_drainer_1_left_region",
+      "group": 1,
+      "attempts": [
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": 48.75,
+          "lateral_margin_fraction": 0.0,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            0.2598597914203252,
+            0.9616295167303981,
+            0.01589676568154309,
+            0.007202730823670412,
+            -0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.04938164079340571,
+            0.2609425648452904,
+            0.9578562611826321,
+            0.01754702673645791,
+            0.005033675839214007,
+            -0.38974812555349203,
+            0.9207405511802959
+          ],
+          "initial": {
+            "native_predicate": false,
+            "parent_contact": false,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.046603385148466125,
+              -0.056579999999999964,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.046603385148466125,
+              0.04817829668349749,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.005046614851533876,
+              -0.001500000000000036,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.05036043496610221,
+              -0.05759086307546213,
+              -0.06843078337379532
+            ],
+            "collision_upper_in_site": [
+              0.04738178486627004,
+              0.04302698994280563,
+              0.06819507244569793
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0012895650338977938,
+              -0.000489136924537871,
+              -0.02579921662620467
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.05034318816173228,
+              -0.05760277010082948,
+              -0.06843090263020848
+            ],
+            "collision_upper_in_site": [
+              0.047527712330892646,
+              0.04289134089085678,
+              0.06819497082883234
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.001306811838267724,
+              -0.00047722989917051845,
+              -0.02579909736979151
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": true,
+            "parent_contact": true,
+            "success": true,
+            "minimum_margin_xyz_m": [
+              0.001306811838267724,
+              0.00047722989917051845,
+              0.02579909736979151
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 0.00013725443789000413,
+          "final_velocity_norm": 0.2889849538390356,
+          "passed": false
+        },
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": 48.75,
+          "lateral_margin_fraction": -0.8,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            0.2638970833015523,
+            0.9616295167303981,
+            0.01589676568154309,
+            0.007202730823670412,
+            -0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.049410656220746724,
+            0.2651508781967806,
+            0.9613414227964129,
+            0.01706207402035597,
+            0.005541074136901383,
+            -0.41943919787211664,
+            0.9076061598600621
+          ],
+          "initial": {
+            "native_predicate": false,
+            "parent_contact": false,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.050640677029693215,
+              -0.056579999999999964,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.042566093267239036,
+              0.04817829668349749,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0010093229703067863,
+              -0.001500000000000036,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.050919998642987796,
+              -0.05759330247375649,
+              -0.06838906346656054
+            ],
+            "collision_upper_in_site": [
+              0.041175527863413525,
+              0.04810253633796824,
+              0.06823635890483669
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0007300013570122055,
+              -0.0004866975262435083,
+              -0.025840936533439454
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.050949789135014634,
+              -0.05759328078446724,
+              -0.06838807538947812
+            ],
+            "collision_upper_in_site": [
+              0.04080618327204383,
+              0.04838742766811743,
+              0.06823731880452871
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0007002108649853678,
+              -0.0004867192155327618,
+              -0.02584192461052187
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": true,
+            "parent_contact": true,
+            "success": true,
+            "minimum_margin_xyz_m": [
+              0.0007002108649853678,
+              0.0004867192155327618,
+              0.02584192461052187
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 0.0002921658316795101,
+          "final_velocity_norm": 0.08925350073056824,
+          "passed": false
+        },
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": 48.75,
+          "lateral_margin_fraction": 0.8,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            0.25582249953909814,
+            0.9616295167303981,
+            0.01589676568154309,
+            0.007202730823670412,
+            -0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.04937013669791627,
+            0.25765712236637894,
+            0.955047516812679,
+            0.017788539488546532,
+            0.004632972748947443,
+            -0.3663928653093977,
+            0.930278652703986
+          ],
+          "initial": {
+            "native_predicate": false,
+            "parent_contact": false,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.042566093267239036,
+              -0.056579999999999964,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.050640677029693215,
+              0.04817829668349749,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0010093229703067863,
+              -0.001500000000000036,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.04986520353126983,
+              -0.05759019599077475,
+              -0.06844914855936743
+            ],
+            "collision_upper_in_site": [
+              0.05258226063048235,
+              0.038252875659148367,
+              0.06817700414720461
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.0009322606304823511,
+              -0.000489804009225249,
+              -0.025780851440632566
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.04986514051654084,
+              -0.05759019599060966,
+              -0.06844930354956026
+            ],
+            "collision_upper_in_site": [
+              0.05258226331356025,
+              0.038252235073336194,
+              0.06817688420711739
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.0009322633135602498,
+              -0.0004898040093903391,
+              -0.025780696450439733
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": true,
+            "parent_contact": true,
+            "success": true,
+            "minimum_margin_xyz_m": [
+              -0.0009322633135602498,
+              0.0004898040093903391,
+              0.025780696450439733
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 4.0280343448154405e-07,
+          "final_velocity_norm": 8.019059331861756e-06,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "bddl_sha256": "ac8d8299c855d9b0f8c9b50bf16e80900d58d5f0dc365b73c6b702bfe7fbbfd1",
+      "terminal_witness_png": "geometry_witnesses/feedback_plate_drainer_left_original__terminal_witness.png"
+    },
+    {
+      "scene_id": "feedback_plate_drainer_right_original",
+      "target": "bowl_drainer_1_right_region",
+      "group": 1,
+      "attempts": [
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": 48.75,
+          "lateral_margin_fraction": 0.0,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            0.25985979142032517,
+            0.9616295167303981,
+            0.01589676568154309,
+            0.007202730823670412,
+            -0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.05196579921255711,
+            0.26776916643912335,
+            0.9620308227908244,
+            0.0015742749817738181,
+            0.012860318378012785,
+            -0.4253126494891657,
+            0.9049537469141754
+          ],
+          "initial": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.0466033851484661,
+              -0.056579999999999964,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.04660338514846615,
+              0.04817829668349749,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.005046614851533848,
+              -0.001500000000000036,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": false,
+            "parent_contact": true,
+            "full_collision_inside": false,
+            "collision_lower_in_site": [
+              -0.05371832017181574,
+              -0.057590196674909944,
+              -0.06585761656060524
+            ],
+            "collision_upper_in_site": [
+              0.03734804431664718,
+              0.04948901079522916,
+              0.07103556213949049
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.0020683201718157407,
+              -0.000489803325090056,
+              -0.02319443786050951
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": false,
+            "parent_contact": true,
+            "full_collision_inside": false,
+            "collision_lower_in_site": [
+              -0.05371831864211793,
+              -0.05759019667473442,
+              -0.0658576306194342
+            ],
+            "collision_upper_in_site": [
+              0.03734835568227726,
+              0.04948863962228589,
+              0.07103546142432018
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.002068318642117928,
+              -0.0004898033252655823,
+              -0.02319453857567981
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": false,
+            "parent_contact": true,
+            "success": false,
+            "minimum_margin_xyz_m": [
+              -0.002068318642117928,
+              0.0004898033252655823,
+              0.02319453857567981
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 3.147970787501744e-07,
+          "final_velocity_norm": 2.75704723948353e-06,
+          "passed": false
+        },
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": 48.75,
+          "lateral_margin_fraction": -0.8,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            0.26389708330155226,
+            0.9616295167303981,
+            0.01589676568154309,
+            0.007202730823670412,
+            -0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.04928975081108985,
+            0.2647351658511249,
+            0.9583556180255087,
+            0.01751371198491627,
+            0.0050866989842634405,
+            -0.39385825725053647,
+            0.918990244007804
+          ],
+          "initial": {
+            "native_predicate": false,
+            "parent_contact": false,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.05064067702969319,
+              -0.056579999999999964,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.042566093267239064,
+              0.04817829668349749,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.001009322970306814,
+              -0.001500000000000036,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": false,
+            "parent_contact": true,
+            "full_collision_inside": false,
+            "collision_lower_in_site": [
+              -0.05369436509581196,
+              -0.05759016769372416,
+              -0.0685215384534865
+            ],
+            "collision_upper_in_site": [
+              0.04340232433867078,
+              0.04364229920803464,
+              0.06810421939512572
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.002044365095811962,
+              -0.0004898323062758406,
+              -0.02570846154651349
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": false,
+            "parent_contact": true,
+            "full_collision_inside": false,
+            "collision_lower_in_site": [
+              -0.05369436557925686,
+              -0.057590167406503245,
+              -0.06852157880575635
+            ],
+            "collision_upper_in_site": [
+              0.04340232578251371,
+              0.0436422935233961,
+              0.06810417858566548
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.002044365579256857,
+              -0.0004898325934967543,
+              -0.025708421194243644
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": false,
+            "parent_contact": true,
+            "success": false,
+            "minimum_margin_xyz_m": [
+              -0.002044365579256857,
+              0.0004898325934967543,
+              0.025708421194243644
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 3.864944625036157e-08,
+          "final_velocity_norm": 4.3399919874789637e-07,
+          "passed": false
+        },
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": 48.75,
+          "lateral_margin_fraction": 0.8,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            0.2558224995390981,
+            0.9616295167303981,
+            0.01589676568154309,
+            0.007202730823670412,
+            -0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.053795046746883804,
+            0.2746859173938643,
+            0.9677936498664271,
+            -0.0031200588816439954,
+            0.016987900567117267,
+            -0.4780608139877391,
+            0.8781568963438579
+          ],
+          "initial": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.04256609326723901,
+              -0.056579999999999964,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.05064067702969324,
+              0.04817829668349749,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0010093229703067585,
+              -0.001500000000000036,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": false,
+            "parent_contact": true,
+            "full_collision_inside": false,
+            "collision_lower_in_site": [
+              -0.05375482427025255,
+              -0.05759019732394666,
+              -0.06420408776303607
+            ],
+            "collision_upper_in_site": [
+              0.025319378242402157,
+              0.05827969896426055,
+              0.07280281700526849
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.0021048242702525477,
+              0.0001996989642605515,
+              -0.02142718299473151
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": false,
+            "parent_contact": true,
+            "full_collision_inside": false,
+            "collision_lower_in_site": [
+              -0.05375482321795963,
+              -0.057590197323817316,
+              -0.06420410294393185
+            ],
+            "collision_upper_in_site": [
+              0.025319628479681194,
+              0.0582794478576768,
+              0.07280273128051401
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.0021048232179596282,
+              0.000199447857676803,
+              -0.021427268719485984
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": false,
+            "parent_contact": true,
+            "success": false,
+            "minimum_margin_xyz_m": [
+              -0.0021048232179596282,
+              -0.000199447857676803,
+              0.021427268719485984
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 2.3852129106139927e-07,
+          "final_velocity_norm": 2.4677521921984045e-06,
+          "passed": false
+        },
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": -48.75,
+          "lateral_margin_fraction": 0.0,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            0.2408770101822313,
+            0.9609412974145991,
+            0.01589676568154309,
+            -0.007202730823670412,
+            0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.04963469011802565,
+            0.23905396525643954,
+            0.9574562261038094,
+            0.01635291819957453,
+            -0.009425510058381804,
+            0.3925005885357651,
+            0.9195580622372761
+          ],
+          "initial": {
+            "native_predicate": false,
+            "parent_contact": false,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.046470179140802564,
+              -0.056580000000000075,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.04647017914080262,
+              0.048482112665428345,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0051798208591973816,
+              -0.001499999999999925,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.046322562937441886,
+              -0.05759011413741766,
+              -0.06820950290714387
+            ],
+            "collision_upper_in_site": [
+              0.05077290650598562,
+              0.04366426080857699,
+              0.06841766325352587
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0008770934940143804,
+              -0.0004898858625823413,
+              -0.025812336746474124
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.04632306605094269,
+              -0.057590116035807104,
+              -0.06820950425909666
+            ],
+            "collision_upper_in_site": [
+              0.050772869747403276,
+              0.04366381691194843,
+              0.06841766191596611
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0008771302525967251,
+              -0.0004898839641928956,
+              -0.02581233808403388
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": true,
+            "parent_contact": true,
+            "success": true,
+            "minimum_margin_xyz_m": [
+              0.0008771302525967251,
+              0.0004898839641928956,
+              0.02581233808403388
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 4.2187196907444186e-07,
+          "final_velocity_norm": 2.522378363326325e-06,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "bddl_sha256": "7d8ab1ae87570942cda7f0a44321646a71d0d497120165835b9257743c9177de",
+      "terminal_witness_png": "geometry_witnesses/feedback_plate_drainer_right_original__terminal_witness.png"
+    },
+    {
+      "scene_id": "feedback_plate_drainer_left_mirrored",
+      "target": "bowl_drainer_1_left_region",
+      "group": 1,
+      "attempts": [
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": 48.75,
+          "lateral_margin_fraction": 0.0,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            -0.24014020857967477,
+            0.9616295167303981,
+            0.01589676568154309,
+            0.007202730823670412,
+            -0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.04938164079340426,
+            -0.2390574351547026,
+            0.957856261182635,
+            0.01754702673646918,
+            0.00503367583920755,
+            -0.3897481255535159,
+            0.9207405511802855
+          ],
+          "initial": {
+            "native_predicate": false,
+            "parent_contact": false,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.046603385148466125,
+              -0.056579999999999964,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.046603385148466125,
+              0.04817829668349749,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.005046614851533876,
+              -0.001500000000000036,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.050360434966102374,
+              -0.057590863075462906,
+              -0.06843078337379796
+            ],
+            "collision_upper_in_site": [
+              0.04738178486625577,
+              0.04302698994281917,
+              0.06819507244569543
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0012895650338976272,
+              -0.0004891369245370938,
+              -0.025799216626202034
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.050343188161734664,
+              -0.05760277010082948,
+              -0.06843090263021004
+            ],
+            "collision_upper_in_site": [
+              0.04752771233088443,
+              0.04289134089086255,
+              0.06819497082883078
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.001306811838265337,
+              -0.00047722989917051845,
+              -0.025799097369789956
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": true,
+            "parent_contact": true,
+            "success": true,
+            "minimum_margin_xyz_m": [
+              0.001306811838265337,
+              0.00047722989917051845,
+              0.025799097369789956
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 0.00013725443789587894,
+          "final_velocity_norm": 0.28898495384392425,
+          "passed": false
+        },
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": 48.75,
+          "lateral_margin_fraction": -0.8,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            -0.23610291669844768,
+            0.9616295167303981,
+            0.01589676568154309,
+            0.007202730823670412,
+            -0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.04941065622074617,
+            -0.23484912180321757,
+            0.9613414227964142,
+            0.017062074020356262,
+            0.005541074136901423,
+            -0.41943919787212913,
+            0.9076061598600562
+          ],
+          "initial": {
+            "native_predicate": false,
+            "parent_contact": false,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.050640677029693215,
+              -0.056579999999999964,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.042566093267239036,
+              0.04817829668349749,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0010093229703067863,
+              -0.001500000000000036,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.05091999864298766,
+              -0.057593302473756824,
+              -0.06838906346656087
+            ],
+            "collision_upper_in_site": [
+              0.04117552786341322,
+              0.04810253633796846,
+              0.06823635890483633
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0007300013570123443,
+              -0.00048669752624317525,
+              -0.02584093653343912
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.05094978913501472,
+              -0.05759328078446724,
+              -0.06838807538947866
+            ],
+            "collision_upper_in_site": [
+              0.040806183272041,
+              0.048387427668119654,
+              0.06823731880452814
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0007002108649852845,
+              -0.0004867192155327618,
+              -0.02584192461052133
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": true,
+            "parent_contact": true,
+            "success": true,
+            "minimum_margin_xyz_m": [
+              0.0007002108649852845,
+              0.0004867192155327618,
+              0.02584192461052133
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 0.0002921658316816176,
+          "final_velocity_norm": 0.0892535007303948,
+          "passed": false
+        },
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": 48.75,
+          "lateral_margin_fraction": 0.8,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            -0.2441775004609019,
+            0.9616295167303981,
+            0.01589676568154309,
+            0.007202730823670412,
+            -0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.04930477088876766,
+            -0.24152533699425655,
+            0.9557745655196059,
+            0.017796830275138235,
+            0.004697961055381799,
+            -0.3723556287917117,
+            0.92790758575475
+          ],
+          "initial": {
+            "native_predicate": false,
+            "parent_contact": false,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.042566093267239036,
+              -0.056579999999999964,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.050640677029693215,
+              0.04817829668349749,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0010093229703067863,
+              -0.001500000000000036,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.049989054924819865,
+              -0.05759027789722049,
+              -0.0685129809098628
+            ],
+            "collision_upper_in_site": [
+              0.05132984564755533,
+              0.03944925013570211,
+              0.0681129891903517
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0003201543524446737,
+              -0.0004897221027795121,
+              -0.025717019090137197
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.049988794845936574,
+              -0.057590271311388164,
+              -0.06851417222874859
+            ],
+            "collision_upper_in_site": [
+              0.05133129063622216,
+              0.03944663099320034,
+              0.06811185560996082
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.00031870936377784154,
+              -0.000489728688611836,
+              -0.025715827771251407
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": true,
+            "parent_contact": true,
+            "success": true,
+            "minimum_margin_xyz_m": [
+              0.00031870936377784154,
+              0.000489728688611836,
+              0.025715827771251407
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 1.93377437892504e-06,
+          "final_velocity_norm": 0.009586910928497935,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "bddl_sha256": "f861caa15348a351819d102e364779b90a3ff64f5daa9ccc4ee804172d033e8d",
+      "terminal_witness_png": "geometry_witnesses/feedback_plate_drainer_left_mirrored__terminal_witness.png"
+    },
+    {
+      "scene_id": "feedback_plate_drainer_right_mirrored",
+      "target": "bowl_drainer_1_right_region",
+      "group": 1,
+      "attempts": [
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": 48.75,
+          "lateral_margin_fraction": 0.0,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            -0.24014020857967477,
+            0.9616295167303981,
+            0.01589676568154309,
+            0.007202730823670412,
+            -0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.051937063635419195,
+            -0.23225053191369566,
+            0.9620006381497073,
+            0.001821394989861201,
+            0.012736348150821416,
+            -0.42505091913223975,
+            0.9050779989044652
+          ],
+          "initial": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.0466033851484661,
+              -0.056579999999999964,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.04660338514846615,
+              0.04817829668349749,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.005046614851533848,
+              -0.001500000000000036,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": false,
+            "parent_contact": true,
+            "full_collision_inside": false,
+            "collision_lower_in_site": [
+              -0.053718125103029035,
+              -0.05759019664562193,
+              -0.06587318840147699
+            ],
+            "collision_upper_in_site": [
+              0.037379608351663735,
+              0.049441678016693635,
+              0.07100403596127577
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.0020681251030290337,
+              -0.0004898033543780725,
+              -0.02322596403872422
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": false,
+            "parent_contact": true,
+            "full_collision_inside": false,
+            "collision_lower_in_site": [
+              -0.05371812357019601,
+              -0.0575901966454464,
+              -0.06587320241006128
+            ],
+            "collision_upper_in_site": [
+              0.037379919736397677,
+              0.049441306057235956,
+              0.0710039347623481
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.0020681235701960066,
+              -0.0004898033545535987,
+              -0.02322606523765189
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": false,
+            "parent_contact": true,
+            "success": false,
+            "minimum_margin_xyz_m": [
+              -0.0020681235701960066,
+              0.0004898033545535987,
+              0.02322606523765189
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 3.1525226636100796e-07,
+          "final_velocity_norm": 2.7608453044233796e-06,
+          "passed": false
+        },
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": 48.75,
+          "lateral_margin_fraction": -0.8,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            -0.23610291669844766,
+            0.9616295167303981,
+            0.01589676568154309,
+            0.007202730823670412,
+            -0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.049350223778497085,
+            -0.23526996240425913,
+            0.9584043407820325,
+            0.017109311601463013,
+            0.00416183846657664,
+            -0.3938344796883007,
+            0.9190127056606715
+          ],
+          "initial": {
+            "native_predicate": false,
+            "parent_contact": false,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.05064067702969324,
+              -0.056579999999999964,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.04256609326723901,
+              0.04817829668349749,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0010093229703067585,
+              -0.001500000000000036,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": false,
+            "parent_contact": true,
+            "full_collision_inside": false,
+            "collision_lower_in_site": [
+              -0.053694709166928756,
+              -0.05759019970873114,
+              -0.06840569893060353
+            ],
+            "collision_upper_in_site": [
+              0.04341044941282199,
+              0.04374428780988582,
+              0.06821513517784819
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.0020447091669287543,
+              -0.0004898002912688618,
+              -0.02582430106939647
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": false,
+            "parent_contact": true,
+            "full_collision_inside": false,
+            "collision_lower_in_site": [
+              -0.05369470666371462,
+              -0.05759019970847834,
+              -0.06840586167050006
+            ],
+            "collision_upper_in_site": [
+              0.043410394088397725,
+              0.04374364060007829,
+              0.06821501267324227
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.0020447066637146183,
+              -0.0004898002915216595,
+              -0.025824138329499938
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": false,
+            "parent_contact": true,
+            "success": false,
+            "minimum_margin_xyz_m": [
+              -0.0020447066637146183,
+              0.0004898002915216595,
+              0.025824138329499938
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 3.9036491301135277e-07,
+          "final_velocity_norm": 8.294576611769591e-06,
+          "passed": false
+        },
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": 48.75,
+          "lateral_margin_fraction": 0.8,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            -0.24417750046090186,
+            0.9616295167303981,
+            0.01589676568154309,
+            0.007202730823670412,
+            -0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.05379504674688385,
+            -0.22531408260613303,
+            0.9677936498664294,
+            -0.0031200588816500093,
+            0.016987900567121184,
+            -0.4780608139877599,
+            0.8781568963438462
+          ],
+          "initial": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.04256609326723901,
+              -0.056579999999999964,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.05064067702969324,
+              0.04817829668349749,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0010093229703067585,
+              -0.001500000000000036,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": false,
+            "parent_contact": true,
+            "full_collision_inside": false,
+            "collision_lower_in_site": [
+              -0.053754824270252716,
+              -0.05759019732394677,
+              -0.0642040877630363
+            ],
+            "collision_upper_in_site": [
+              0.025319378242398077,
+              0.058279698964263216,
+              0.07280281700526851
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.0021048242702527142,
+              0.00019969896426321604,
+              -0.02142718299473148
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": false,
+            "parent_contact": true,
+            "full_collision_inside": false,
+            "collision_lower_in_site": [
+              -0.053754823217959574,
+              -0.057590197323817316,
+              -0.06420410294393203
+            ],
+            "collision_upper_in_site": [
+              0.025319628479676587,
+              0.05827944785768013,
+              0.07280273128051402
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              0.0021048232179595727,
+              0.00019944785768013368,
+              -0.02142726871948597
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": false,
+            "parent_contact": true,
+            "success": false,
+            "minimum_margin_xyz_m": [
+              -0.0021048232179595727,
+              -0.00019944785768013368,
+              0.02142726871948597
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 2.3852129058307007e-07,
+          "final_velocity_norm": 2.467752146568464e-06,
+          "passed": false
+        },
+        {
+          "yaw_deg": 178.0,
+          "tilt_deg": -48.75,
+          "lateral_margin_fraction": 0.0,
+          "posed_qpos_wxyz": [
+            -0.04951393635114376,
+            -0.25912298981776866,
+            0.9609412974145991,
+            0.01589676568154309,
+            -0.007202730823670412,
+            0.41264417252476415,
+            0.9107250959487723
+          ],
+          "terminal_qpos_wxyz": [
+            -0.04963502526380981,
+            -0.26093915238684906,
+            0.9574504139028401,
+            0.016352925072147462,
+            -0.009424487324593608,
+            0.39245103947616033,
+            0.9195792203471849
+          ],
+          "initial": {
+            "native_predicate": false,
+            "parent_contact": false,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.04647017914080259,
+              -0.056580000000000075,
+              -0.0683157309939381
+            ],
+            "collision_upper_in_site": [
+              0.04647017914080262,
+              0.048482112665428345,
+              0.0683157309939381
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0051798208591973816,
+              -0.001499999999999925,
+              -0.02591426900606189
+            ],
+            "tolerance_m": 0.001
+          },
+          "settled": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.04633333237478901,
+              -0.05759011501790101,
+              -0.068209139855612
+            ],
+            "collision_upper_in_site": [
+              0.05077210246610389,
+              0.04365472792252889,
+              0.06841802493014802
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0008778975338961104,
+              -0.0004898849820989884,
+              -0.025811975069851972
+            ],
+            "tolerance_m": 0.001
+          },
+          "final": {
+            "native_predicate": true,
+            "parent_contact": true,
+            "full_collision_inside": true,
+            "collision_lower_in_site": [
+              -0.04633383444337394,
+              -0.05759011644045442,
+              -0.06820914051742286
+            ],
+            "collision_upper_in_site": [
+              0.050772065572870645,
+              0.043654284493163,
+              0.0684180242627281
+            ],
+            "site_half_size": [
+              0.05165,
+              0.05808,
+              0.09423
+            ],
+            "maximum_excess_m": [
+              -0.0008779344271293565,
+              -0.00048988355954558,
+              -0.025811975737271897
+            ],
+            "tolerance_m": 0.001
+          },
+          "production_containment_report": {
+            "contained": true,
+            "parent_contact": true,
+            "success": true,
+            "minimum_margin_xyz_m": [
+              0.0008779344271293565,
+              0.00048988355954558,
+              0.025811975737271897
+            ],
+            "tolerance_m": 0.001,
+            "collision_geom_count": 10,
+            "collision_corner_count": 80
+          },
+          "stability_drift_m": 4.2078227313834624e-07,
+          "final_velocity_norm": 2.518310921308941e-06,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "bddl_sha256": "aecb26b4d84c19227365afad358b39f4767d69f8a3b23e4f18756d1705df460d",
+      "terminal_witness_png": "geometry_witnesses/feedback_plate_drainer_right_mirrored__terminal_witness.png"
+    }
+  ]
+}

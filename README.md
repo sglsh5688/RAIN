@@ -53,6 +53,6 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 <!-- NOVEL_ADAPT_FEEDBACK_README_END -->
 
 <!-- NAF_REVISIONS_README_START -->
-- `naf_revisions/`: corrected V2 revision tasks; five original trials per task, all successes and one actual failure when available.
-- Earlier V1 results remain in the offline review directory/ZIP only, and are not mixed into V2 statistics.
+- `naf_revisions/`: new V3 revision tasks; five original trials per task, all successes and one actual failure when available.
+- Earlier V1/V2 results remain in the offline review directory/ZIP only, and are not mixed into V3 statistics.
 <!-- NAF_REVISIONS_README_END -->

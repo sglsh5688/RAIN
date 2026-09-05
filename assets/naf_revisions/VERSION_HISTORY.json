@@ -1,209 +1,487 @@
 {
-  "current_version": "NAF_REVISIONS_V2",
-  "prior_version": "NAF_REVISIONS_V1",
+  "current_version": "NAF_REVISIONS_V3",
   "archive_location": "offline_bundle",
-  "prior_page": "naf_revisions_v1/index.html",
-  "public_prior_page": null,
+  "prior_versions": [
+    "NAF_REVISIONS_V1",
+    "NAF_REVISIONS_V2"
+  ],
+  "offline_pages": [
+    "naf_revisions_v1/index.html",
+    "naf_revisions_v2/index.html"
+  ],
+  "public_prior_pages": [],
   "prior_media_bytes_preserved": true,
-  "text_change_scope": "Only relative page/asset namespace links; no outcomes or media changed.",
+  "id_namespace_note": "NAFR3_004 is a new top-drawer task; NAFR_004 pan remains historical only.",
+  "text_change_scope": "Only relative namespace links; no prior outcomes or media changed.",
   "files": [
     {
-      "original_public_path": "naf_revisions/index.html",
+      "version": 1,
+      "original_public_path": "naf_revisions_v1/index.html",
       "archived_public_path": "naf_revisions_v1/index.html",
-      "original_sha256": "845d5a893ba60ea77cb4a1bfae41a689c0866268648c8a6cddf2e5e73cda2294",
+      "original_sha256": "b53476fb6fa8ce5afe0712577aa5a0d36b502a000f6e9c400919d36aa7024ab5",
       "archived_sha256": "b53476fb6fa8ce5afe0712577aa5a0d36b502a000f6e9c400919d36aa7024ab5"
     },
     {
-      "original_public_path": "naf_revisions/tasks.tsv",
+      "version": 1,
+      "original_public_path": "naf_revisions_v1/tasks.tsv",
       "archived_public_path": "naf_revisions_v1/tasks.tsv",
-      "original_sha256": "abbd41938e2c3dacda53f1528ca6d0cf919d670f51b58cc2d332bcc26a0a67ff",
+      "original_sha256": "533432223e26543908ca131d825096574c20a18948899831bd911e1f74045151",
       "archived_sha256": "533432223e26543908ca131d825096574c20a18948899831bd911e1f74045151"
     },
     {
-      "original_public_path": "assets/naf_revisions/ADAPT_RULES.md",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/ADAPT_RULES.md",
       "archived_public_path": "assets/naf_revisions_v1/ADAPT_RULES.md",
       "original_sha256": "5d1b24c784adfb10d599b6fee7e0be473d220268c2f05b99bc32291b5d06c014",
       "archived_sha256": "5d1b24c784adfb10d599b6fee7e0be473d220268c2f05b99bc32291b5d06c014"
     },
     {
-      "original_public_path": "assets/naf_revisions/AUDIT.json",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/AUDIT.json",
       "archived_public_path": "assets/naf_revisions_v1/AUDIT.json",
       "original_sha256": "ac263e1652131b6f6038b39de48fdf654e4a9819f0774b07c7e5e8e910a41fcf",
       "archived_sha256": "ac263e1652131b6f6038b39de48fdf654e4a9819f0774b07c7e5e8e910a41fcf"
     },
     {
-      "original_public_path": "assets/naf_revisions/BUILD_VALIDATION.json",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/BUILD_VALIDATION.json",
       "archived_public_path": "assets/naf_revisions_v1/BUILD_VALIDATION.json",
       "original_sha256": "275f0ec87c0c510b524aa018369c115ebe77fe0358e635e9fa62bc897217ffcd",
       "archived_sha256": "275f0ec87c0c510b524aa018369c115ebe77fe0358e635e9fa62bc897217ffcd"
     },
     {
-      "original_public_path": "assets/naf_revisions/PROVENANCE.tsv",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/PROVENANCE.tsv",
       "archived_public_path": "assets/naf_revisions_v1/PROVENANCE.tsv",
       "original_sha256": "1aac19055e72088a9658a1e27aa153832722b417787859bac4b1c2a9ccafcfd0",
       "archived_sha256": "1aac19055e72088a9658a1e27aa153832722b417787859bac4b1c2a9ccafcfd0"
     },
     {
-      "original_public_path": "assets/naf_revisions/RAW_TO_FINAL_IDS.tsv",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/RAW_TO_FINAL_IDS.tsv",
       "archived_public_path": "assets/naf_revisions_v1/RAW_TO_FINAL_IDS.tsv",
       "original_sha256": "6b09434521f5e125f4551ce3ba6b3f8b242756ca1f8391a4dcd5f3e313f40ce2",
       "archived_sha256": "6b09434521f5e125f4551ce3ba6b3f8b242756ca1f8391a4dcd5f3e313f40ce2"
     },
     {
-      "original_public_path": "assets/naf_revisions/REJECTED_CANDIDATES.tsv",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/REJECTED_CANDIDATES.tsv",
       "archived_public_path": "assets/naf_revisions_v1/REJECTED_CANDIDATES.tsv",
       "original_sha256": "c4ce5889bad81c68f4e85cd128bb1b4c5b7c42fa35000c0e7264c8bd1ba8bed3",
       "archived_sha256": "c4ce5889bad81c68f4e85cd128bb1b4c5b7c42fa35000c0e7264c8bd1ba8bed3"
     },
     {
-      "original_public_path": "assets/naf_revisions/comparison_png/NAFR_001__comparison.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/comparison_png/NAFR_001__comparison.png",
       "archived_public_path": "assets/naf_revisions_v1/comparison_png/NAFR_001__comparison.png",
       "original_sha256": "3f64b263c0770c7c95bd895159461240b690d89749ed051fcd6feadd9d9206b5",
       "archived_sha256": "3f64b263c0770c7c95bd895159461240b690d89749ed051fcd6feadd9d9206b5"
     },
     {
-      "original_public_path": "assets/naf_revisions/comparison_png/NAFR_002__comparison.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/comparison_png/NAFR_002__comparison.png",
       "archived_public_path": "assets/naf_revisions_v1/comparison_png/NAFR_002__comparison.png",
       "original_sha256": "dc791f407760c403051bb3adbac2d9e0fe89630eb661734fda15683eef34bf21",
       "archived_sha256": "dc791f407760c403051bb3adbac2d9e0fe89630eb661734fda15683eef34bf21"
     },
     {
-      "original_public_path": "assets/naf_revisions/comparison_png/NAFR_003__comparison.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/comparison_png/NAFR_003__comparison.png",
       "archived_public_path": "assets/naf_revisions_v1/comparison_png/NAFR_003__comparison.png",
       "original_sha256": "afe8e31d5549b6d1fc0302463feb8167d037237f820b038141451aa5cb04ccaf",
       "archived_sha256": "afe8e31d5549b6d1fc0302463feb8167d037237f820b038141451aa5cb04ccaf"
     },
     {
-      "original_public_path": "assets/naf_revisions/comparison_png/NAFR_004__comparison.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/comparison_png/NAFR_004__comparison.png",
       "archived_public_path": "assets/naf_revisions_v1/comparison_png/NAFR_004__comparison.png",
       "original_sha256": "8e2b747e9dc5881629d2b10a664874f749da40596e01cb89a1e598d69d185e4a",
       "archived_sha256": "8e2b747e9dc5881629d2b10a664874f749da40596e01cb89a1e598d69d185e4a"
     },
     {
-      "original_public_path": "assets/naf_revisions/episodes.tsv",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/episodes.tsv",
       "archived_public_path": "assets/naf_revisions_v1/episodes.tsv",
       "original_sha256": "de1acdc36c2fddf33c1bf1c2df3b1941cc274fcdf42b3303ca3a272e8dcf3874",
       "archived_sha256": "de1acdc36c2fddf33c1bf1c2df3b1941cc274fcdf42b3303ca3a272e8dcf3874"
     },
     {
-      "original_public_path": "assets/naf_revisions/failure_clips/NAFR_001.mp4",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/failure_clips/NAFR_001.mp4",
       "archived_public_path": "assets/naf_revisions_v1/failure_clips/NAFR_001.mp4",
       "original_sha256": "765b4810fd66d0160429860e87f6991045c972d5891fa62aa13f7923a26de6ca",
       "archived_sha256": "765b4810fd66d0160429860e87f6991045c972d5891fa62aa13f7923a26de6ca"
     },
     {
-      "original_public_path": "assets/naf_revisions/failure_clips/NAFR_003.mp4",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/failure_clips/NAFR_003.mp4",
       "archived_public_path": "assets/naf_revisions_v1/failure_clips/NAFR_003.mp4",
       "original_sha256": "0c6c8e330e150e4f14ead1bebfb43eb31b7d1ae13f2eeb9a7721ca61a6398f19",
       "archived_sha256": "0c6c8e330e150e4f14ead1bebfb43eb31b7d1ae13f2eeb9a7721ca61a6398f19"
     },
     {
-      "original_public_path": "assets/naf_revisions/failure_clips/NAFR_004.mp4",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/failure_clips/NAFR_004.mp4",
       "archived_public_path": "assets/naf_revisions_v1/failure_clips/NAFR_004.mp4",
       "original_sha256": "43511809a44eb1e7bd6f60d3415e67ac067fcc963c803740fd9ddc2d47884d7c",
       "archived_sha256": "43511809a44eb1e7bd6f60d3415e67ac067fcc963c803740fd9ddc2d47884d7c"
     },
     {
-      "original_public_path": "assets/naf_revisions/failure_clips.tsv",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/failure_clips.tsv",
       "archived_public_path": "assets/naf_revisions_v1/failure_clips.tsv",
-      "original_sha256": "b49f03a5a5464e5e7e39f025be1f170c10477fb07f4dc5c9ebcd9a7f839df4d5",
+      "original_sha256": "d6868a2a8d0b1881b3f7934c100d4418612d3bcbf9198c12379944296ced10de",
       "archived_sha256": "d6868a2a8d0b1881b3f7934c100d4418612d3bcbf9198c12379944296ced10de"
     },
     {
-      "original_public_path": "assets/naf_revisions/media.tsv",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/media.tsv",
       "archived_public_path": "assets/naf_revisions_v1/media.tsv",
-      "original_sha256": "eea7df018a9f3a6ec59443da78ec841e1144f308e74b8a7e7c31ca77040448a0",
+      "original_sha256": "3a39478093450df48635e8c71ffc5664cf95feaea091e2122bba01da78c778fd",
       "archived_sha256": "3a39478093450df48635e8c71ffc5664cf95feaea091e2122bba01da78c778fd"
     },
     {
-      "original_public_path": "assets/naf_revisions/preview_sprites/adapt_001.jpg",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/preview_sprites/adapt_001.jpg",
       "archived_public_path": "assets/naf_revisions_v1/preview_sprites/adapt_001.jpg",
       "original_sha256": "575f20d388a0fcae119ec50a8d31db25f2050151449f309e5b379c6ee271798c",
       "archived_sha256": "575f20d388a0fcae119ec50a8d31db25f2050151449f309e5b379c6ee271798c"
     },
     {
-      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_001__mask_goal_target.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_001__mask_goal_target.png",
       "archived_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_001__mask_goal_target.png",
       "original_sha256": "8f748d837afbc62a214b70fdeca3df4f26eb1d398cd0bedd32609e7db08c4ad5",
       "archived_sha256": "8f748d837afbc62a214b70fdeca3df4f26eb1d398cd0bedd32609e7db08c4ad5"
     },
     {
-      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_001__mask_manipulated_object.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_001__mask_manipulated_object.png",
       "archived_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_001__mask_manipulated_object.png",
       "original_sha256": "0f7cd87bee717c8440b29cab72098fb7590092ca8c86d3cbbf19d743bb81c6dc",
       "archived_sha256": "0f7cd87bee717c8440b29cab72098fb7590092ca8c86d3cbbf19d743bb81c6dc"
     },
     {
-      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_001__new.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_001__new.png",
       "archived_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_001__new.png",
       "original_sha256": "97d5161be1cd8e1dd21f95233a07194233645939ea2c3e5275972dd94caec892",
       "archived_sha256": "97d5161be1cd8e1dd21f95233a07194233645939ea2c3e5275972dd94caec892"
     },
     {
-      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_002__mask_goal_target.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_002__mask_goal_target.png",
       "archived_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_002__mask_goal_target.png",
       "original_sha256": "dbdcf76624809507ae4db33b9c5b5edad947a77781f690c936021f5c8ad0cd57",
       "archived_sha256": "dbdcf76624809507ae4db33b9c5b5edad947a77781f690c936021f5c8ad0cd57"
     },
     {
-      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_002__mask_manipulated_object.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_002__mask_manipulated_object.png",
       "archived_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_002__mask_manipulated_object.png",
       "original_sha256": "197b6280148e8326704917016a50f9cc2d337de3682ef0ffc0b52c345f20eef9",
       "archived_sha256": "197b6280148e8326704917016a50f9cc2d337de3682ef0ffc0b52c345f20eef9"
     },
     {
-      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_002__new.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_002__new.png",
       "archived_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_002__new.png",
       "original_sha256": "6e25f90911f5b9085a7c21f8c87a3ff057b5e7cb86238344665b31fcd1e0ef3a",
       "archived_sha256": "6e25f90911f5b9085a7c21f8c87a3ff057b5e7cb86238344665b31fcd1e0ef3a"
     },
     {
-      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_003__mask_interaction_target.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_003__mask_interaction_target.png",
       "archived_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_003__mask_interaction_target.png",
       "original_sha256": "2629ddfd6621de9d616d18cf293f487377e56058924c567118e9817d6bdb1921",
       "archived_sha256": "2629ddfd6621de9d616d18cf293f487377e56058924c567118e9817d6bdb1921"
     },
     {
-      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_003__new.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_003__new.png",
       "archived_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_003__new.png",
       "original_sha256": "c053ceb0a7977bbc3ed14f6970203fcd3752e28aa00fbf11b45eaa6e89251299",
       "archived_sha256": "c053ceb0a7977bbc3ed14f6970203fcd3752e28aa00fbf11b45eaa6e89251299"
     },
     {
-      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_004__mask_goal_target.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_004__mask_goal_target.png",
       "archived_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_004__mask_goal_target.png",
       "original_sha256": "25b587c0cdce70fc1fffd2a6fc21cbe55f76867d1470aaf7b66253c6b06f362f",
       "archived_sha256": "25b587c0cdce70fc1fffd2a6fc21cbe55f76867d1470aaf7b66253c6b06f362f"
     },
     {
-      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_004__mask_manipulated_object.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_004__mask_manipulated_object.png",
       "archived_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_004__mask_manipulated_object.png",
       "original_sha256": "c6af05e4c902f227782111621f08612a1bd84670bec95607b9034a05ead25a1a",
       "archived_sha256": "c6af05e4c902f227782111621f08612a1bd84670bec95607b9034a05ead25a1a"
     },
     {
-      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_004__new.png",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_004__new.png",
       "archived_public_path": "assets/naf_revisions_v1/raw_masks/NAFR_004__new.png",
       "original_sha256": "8836d46d02f512574608ea464860880d1e3c138496f5006dc1942ed2ee1be7be",
       "archived_sha256": "8836d46d02f512574608ea464860880d1e3c138496f5006dc1942ed2ee1be7be"
     },
     {
-      "original_public_path": "assets/naf_revisions/success_reels/NAFR_001.mp4",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/success_reels/NAFR_001.mp4",
       "archived_public_path": "assets/naf_revisions_v1/success_reels/NAFR_001.mp4",
       "original_sha256": "4921913670d0d306db80f5799e8dc75531f274149ecd48dcff2c8a60d3f9f1ff",
       "archived_sha256": "4921913670d0d306db80f5799e8dc75531f274149ecd48dcff2c8a60d3f9f1ff"
     },
     {
-      "original_public_path": "assets/naf_revisions/success_reels/NAFR_002.mp4",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/success_reels/NAFR_002.mp4",
       "archived_public_path": "assets/naf_revisions_v1/success_reels/NAFR_002.mp4",
       "original_sha256": "3a3c9c1d5f0b3e3094a5e1ca1892b9c4a460432e872372203583e5192adafae0",
       "archived_sha256": "3a3c9c1d5f0b3e3094a5e1ca1892b9c4a460432e872372203583e5192adafae0"
     },
     {
-      "original_public_path": "assets/naf_revisions/success_reels.tsv",
+      "version": 1,
+      "original_public_path": "assets/naf_revisions_v1/success_reels.tsv",
       "archived_public_path": "assets/naf_revisions_v1/success_reels.tsv",
-      "original_sha256": "879215d8051dc0b25d43d90f8480ab5e4cb60612dc05ccaf8b06b0fa5bbed144",
+      "original_sha256": "5b8dfbeacc9cb242217e6950b58877e205261bef873261acc44c38676be6ebf3",
       "archived_sha256": "5b8dfbeacc9cb242217e6950b58877e205261bef873261acc44c38676be6ebf3"
+    },
+    {
+      "version": 2,
+      "original_public_path": "naf_revisions/index.html",
+      "archived_public_path": "naf_revisions_v2/index.html",
+      "original_sha256": "6d410b3f7c29b2c89bc220f6ca93aad743d4649193565204da26b9d3b22e7f0d",
+      "archived_sha256": "14c29b3f21303d408f4aba50b6325ce9b0b3d64316a14f7cda298acf7a6d831e"
+    },
+    {
+      "version": 2,
+      "original_public_path": "naf_revisions/tasks.tsv",
+      "archived_public_path": "naf_revisions_v2/tasks.tsv",
+      "original_sha256": "fbca1b89992f3fb7b68d8205b5af0ef98783300e447483d92025f7ed0402d317",
+      "archived_sha256": "d8316aab37dc99c19032aa035e44af50782c44aec2f02304805dee3aeb6b5c3e"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/ADAPT_RULES.md",
+      "archived_public_path": "assets/naf_revisions_v2/ADAPT_RULES.md",
+      "original_sha256": "9b28dc927b1ed9f88a0b86f9b93f526a7b67c8d46ea87b09cd52f17d04f66de8",
+      "archived_sha256": "9b28dc927b1ed9f88a0b86f9b93f526a7b67c8d46ea87b09cd52f17d04f66de8"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/AUDIT.json",
+      "archived_public_path": "assets/naf_revisions_v2/AUDIT.json",
+      "original_sha256": "b9bb93361202d8467341eef3b59e8939eb26e22d46abc3005d9c1ae297116b32",
+      "archived_sha256": "b9bb93361202d8467341eef3b59e8939eb26e22d46abc3005d9c1ae297116b32"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/BUILD_VALIDATION.json",
+      "archived_public_path": "assets/naf_revisions_v2/BUILD_VALIDATION.json",
+      "original_sha256": "17dd3d0ae6ea5466da27fe885555b00f80075b9a5f7b7e156f0b20005ddada3c",
+      "archived_sha256": "17dd3d0ae6ea5466da27fe885555b00f80075b9a5f7b7e156f0b20005ddada3c"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/PROVENANCE.tsv",
+      "archived_public_path": "assets/naf_revisions_v2/PROVENANCE.tsv",
+      "original_sha256": "038a9873b9037375ed5179f96412a40b89c7a924c6b51d6a5f439f5e8831de46",
+      "archived_sha256": "038a9873b9037375ed5179f96412a40b89c7a924c6b51d6a5f439f5e8831de46"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/RAW_TO_FINAL_IDS.tsv",
+      "archived_public_path": "assets/naf_revisions_v2/RAW_TO_FINAL_IDS.tsv",
+      "original_sha256": "083018ca78847773de72a62adc92054c5b14dc966320dd4ef7fd55d85e1bf440",
+      "archived_sha256": "083018ca78847773de72a62adc92054c5b14dc966320dd4ef7fd55d85e1bf440"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/REJECTED_CANDIDATES.tsv",
+      "archived_public_path": "assets/naf_revisions_v2/REJECTED_CANDIDATES.tsv",
+      "original_sha256": "c4ce5889bad81c68f4e85cd128bb1b4c5b7c42fa35000c0e7264c8bd1ba8bed3",
+      "archived_sha256": "c4ce5889bad81c68f4e85cd128bb1b4c5b7c42fa35000c0e7264c8bd1ba8bed3"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/VERSION_HISTORY.json",
+      "archived_public_path": "assets/naf_revisions_v2/VERSION_HISTORY.json",
+      "original_sha256": "13da5a09d44cb3f00e24f12ca1455d81b9162ec30035527bac1d1ce3bce3e9a0",
+      "archived_sha256": "fe37986c3d1323b4b593a7d91c2297ce5dfef76fbe9e180f6424ade626164224"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/comparison_png/NAFR_001__comparison.png",
+      "archived_public_path": "assets/naf_revisions_v2/comparison_png/NAFR_001__comparison.png",
+      "original_sha256": "a08c0d60d7d9798cea644aef4f7e38be15b73a008bdcdb10fb0967712476a692",
+      "archived_sha256": "a08c0d60d7d9798cea644aef4f7e38be15b73a008bdcdb10fb0967712476a692"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/comparison_png/NAFR_002__comparison.png",
+      "archived_public_path": "assets/naf_revisions_v2/comparison_png/NAFR_002__comparison.png",
+      "original_sha256": "03e913c0b8c3f5fe6a828c0019554218dd84114223f33d7dba0003f5c7da1cb4",
+      "archived_sha256": "03e913c0b8c3f5fe6a828c0019554218dd84114223f33d7dba0003f5c7da1cb4"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/comparison_png/NAFR_003__comparison.png",
+      "archived_public_path": "assets/naf_revisions_v2/comparison_png/NAFR_003__comparison.png",
+      "original_sha256": "2073d28db69d1dc0a1a0a542d0881d1e1a1d217275d9ad7d6bb22081fc774cb6",
+      "archived_sha256": "2073d28db69d1dc0a1a0a542d0881d1e1a1d217275d9ad7d6bb22081fc774cb6"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/comparison_png/NAFR_004__comparison.png",
+      "archived_public_path": "assets/naf_revisions_v2/comparison_png/NAFR_004__comparison.png",
+      "original_sha256": "4c3fdcf506264d69087c7d3ffb83d9417956d1346793eaa1f72f605562855866",
+      "archived_sha256": "4c3fdcf506264d69087c7d3ffb83d9417956d1346793eaa1f72f605562855866"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/episodes.tsv",
+      "archived_public_path": "assets/naf_revisions_v2/episodes.tsv",
+      "original_sha256": "095d7d23723327223e06ece496a226811cd6a986e5a6a5bd0c1188d984348a7f",
+      "archived_sha256": "095d7d23723327223e06ece496a226811cd6a986e5a6a5bd0c1188d984348a7f"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/failure_clips/NAFR_002.mp4",
+      "archived_public_path": "assets/naf_revisions_v2/failure_clips/NAFR_002.mp4",
+      "original_sha256": "88fce2e4ec37d570f0b79f776baec34115a263c92b480e29be14371bfe4dcd2b",
+      "archived_sha256": "88fce2e4ec37d570f0b79f776baec34115a263c92b480e29be14371bfe4dcd2b"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/failure_clips/NAFR_003.mp4",
+      "archived_public_path": "assets/naf_revisions_v2/failure_clips/NAFR_003.mp4",
+      "original_sha256": "dcc6da6e7145cb0e1f52218433de6cd6e00c791f69e66ac481188a8b6f542e85",
+      "archived_sha256": "dcc6da6e7145cb0e1f52218433de6cd6e00c791f69e66ac481188a8b6f542e85"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/failure_clips/NAFR_004.mp4",
+      "archived_public_path": "assets/naf_revisions_v2/failure_clips/NAFR_004.mp4",
+      "original_sha256": "b1e544e89c28cd8a0f573bfbe3c0481e72b8c3be0096010f4712247ec887076b",
+      "archived_sha256": "b1e544e89c28cd8a0f573bfbe3c0481e72b8c3be0096010f4712247ec887076b"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/failure_clips.tsv",
+      "archived_public_path": "assets/naf_revisions_v2/failure_clips.tsv",
+      "original_sha256": "ed51ab1d0b7e4519c2c69884c916238f376bfdc6e0d109e824d2d1049d7e60ce",
+      "archived_sha256": "827dd09e5b7e0463984f34dbc3a8f965a361d636e1c068bdb73719a1f7d42eef"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/media.tsv",
+      "archived_public_path": "assets/naf_revisions_v2/media.tsv",
+      "original_sha256": "9e97711d5d9747391229f7f6f23f3759b5bd40edcf829d74788efb445fe3bd9c",
+      "archived_sha256": "70459ae76c13eee831353b777d2b7d70cf842f83a95cb3af0e897456a22755df"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/preview_sprites/adapt_001.jpg",
+      "archived_public_path": "assets/naf_revisions_v2/preview_sprites/adapt_001.jpg",
+      "original_sha256": "3cb70364c9ffe0e144ae16a46d8f72a561cc2f0bd4e2508083ce99bec916d75b",
+      "archived_sha256": "3cb70364c9ffe0e144ae16a46d8f72a561cc2f0bd4e2508083ce99bec916d75b"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_001__mask_goal_target.png",
+      "archived_public_path": "assets/naf_revisions_v2/raw_masks/NAFR_001__mask_goal_target.png",
+      "original_sha256": "8f748d837afbc62a214b70fdeca3df4f26eb1d398cd0bedd32609e7db08c4ad5",
+      "archived_sha256": "8f748d837afbc62a214b70fdeca3df4f26eb1d398cd0bedd32609e7db08c4ad5"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_001__mask_manipulated_object.png",
+      "archived_public_path": "assets/naf_revisions_v2/raw_masks/NAFR_001__mask_manipulated_object.png",
+      "original_sha256": "0f7cd87bee717c8440b29cab72098fb7590092ca8c86d3cbbf19d743bb81c6dc",
+      "archived_sha256": "0f7cd87bee717c8440b29cab72098fb7590092ca8c86d3cbbf19d743bb81c6dc"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_001__new.png",
+      "archived_public_path": "assets/naf_revisions_v2/raw_masks/NAFR_001__new.png",
+      "original_sha256": "05b6f7cacc89dff01bc217bfb6b7354fb367ca3772448b8b125f0d291ec721f1",
+      "archived_sha256": "05b6f7cacc89dff01bc217bfb6b7354fb367ca3772448b8b125f0d291ec721f1"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_002__mask_goal_target.png",
+      "archived_public_path": "assets/naf_revisions_v2/raw_masks/NAFR_002__mask_goal_target.png",
+      "original_sha256": "dbdcf76624809507ae4db33b9c5b5edad947a77781f690c936021f5c8ad0cd57",
+      "archived_sha256": "dbdcf76624809507ae4db33b9c5b5edad947a77781f690c936021f5c8ad0cd57"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_002__mask_manipulated_object.png",
+      "archived_public_path": "assets/naf_revisions_v2/raw_masks/NAFR_002__mask_manipulated_object.png",
+      "original_sha256": "fdd85b426fb17e1062f1f47757a0c9aab2b8dfb6bdc77874a2d4dbf1ecc62dd5",
+      "archived_sha256": "fdd85b426fb17e1062f1f47757a0c9aab2b8dfb6bdc77874a2d4dbf1ecc62dd5"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_002__new.png",
+      "archived_public_path": "assets/naf_revisions_v2/raw_masks/NAFR_002__new.png",
+      "original_sha256": "76c9f6fca076a6d8562bd20e47cd93ed3aecc82a3d1c7ce2caf786ad1ade14fb",
+      "archived_sha256": "76c9f6fca076a6d8562bd20e47cd93ed3aecc82a3d1c7ce2caf786ad1ade14fb"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_003__mask_interaction_target.png",
+      "archived_public_path": "assets/naf_revisions_v2/raw_masks/NAFR_003__mask_interaction_target.png",
+      "original_sha256": "a97e6e817b99648e28c319d521e6ad111bc99c623718e76fa7148194f2c542de",
+      "archived_sha256": "a97e6e817b99648e28c319d521e6ad111bc99c623718e76fa7148194f2c542de"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_003__new.png",
+      "archived_public_path": "assets/naf_revisions_v2/raw_masks/NAFR_003__new.png",
+      "original_sha256": "33ce77050cfb0537243fe166acd3b2e9280fa1b2b2811fb10ff5e5ee58d00393",
+      "archived_sha256": "33ce77050cfb0537243fe166acd3b2e9280fa1b2b2811fb10ff5e5ee58d00393"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_004__mask_goal_target.png",
+      "archived_public_path": "assets/naf_revisions_v2/raw_masks/NAFR_004__mask_goal_target.png",
+      "original_sha256": "dccd40f2b5cf4aab507d3e38a505dc623fb6bbc782c07efe5f6c056f4728dacc",
+      "archived_sha256": "dccd40f2b5cf4aab507d3e38a505dc623fb6bbc782c07efe5f6c056f4728dacc"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_004__mask_manipulated_object.png",
+      "archived_public_path": "assets/naf_revisions_v2/raw_masks/NAFR_004__mask_manipulated_object.png",
+      "original_sha256": "a30a5058d499170a8c3f4d626a46f3efeb3491f749d1dc61a84db089b57f26fb",
+      "archived_sha256": "a30a5058d499170a8c3f4d626a46f3efeb3491f749d1dc61a84db089b57f26fb"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/raw_masks/NAFR_004__new.png",
+      "archived_public_path": "assets/naf_revisions_v2/raw_masks/NAFR_004__new.png",
+      "original_sha256": "17483297f58345505fbe743f5a85a8a013597402c21b727e9ba2e3678f165a48",
+      "archived_sha256": "17483297f58345505fbe743f5a85a8a013597402c21b727e9ba2e3678f165a48"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/success_reels/NAFR_001.mp4",
+      "archived_public_path": "assets/naf_revisions_v2/success_reels/NAFR_001.mp4",
+      "original_sha256": "0d5f1ff8df3632ff8bf576c8170f2c27812df9829bf0dae5b6acece394c9b685",
+      "archived_sha256": "0d5f1ff8df3632ff8bf576c8170f2c27812df9829bf0dae5b6acece394c9b685"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/success_reels/NAFR_002.mp4",
+      "archived_public_path": "assets/naf_revisions_v2/success_reels/NAFR_002.mp4",
+      "original_sha256": "28781a3edfc819b71563d8e101a0760eb5f0687161845938ddd74e50d703e890",
+      "archived_sha256": "28781a3edfc819b71563d8e101a0760eb5f0687161845938ddd74e50d703e890"
+    },
+    {
+      "version": 2,
+      "original_public_path": "assets/naf_revisions/success_reels.tsv",
+      "archived_public_path": "assets/naf_revisions_v2/success_reels.tsv",
+      "original_sha256": "457adcd0e35bb0d171cc48055e45048b03c6e3dccaf871828aacd8ce3e991f82",
+      "archived_sha256": "3db3d15ea09b85afa28e23e1a533f86c2cbb207bd5085a4b2a304cc62022a802"
     }
   ]
 }

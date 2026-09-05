@@ -3,29 +3,28 @@
   "episodes": 20,
   "unique_task_episode_keys": 20,
   "physical_gpus": [
-    5,
-    6
+    6,
+    7
   ],
   "family_task_counts": {
-    "R1_naf017_spaced_robot_left_packages": 1,
-    "R2_naf036_staggered_books": 1,
-    "R3_naf056_close_bottom_with_spaced_plates": 1,
-    "R4_libero10_scene3_pan_replaces_moka": 1
+    "R1_naf017_compact_package_cluster_v3": 1,
+    "R2_naf036_side_by_side_books_v3": 1,
+    "R3_bottom_drawer_no_stove_v3": 1,
+    "R3_top_drawer_no_stove_v3": 1
   },
   "initial_goals_false": 20,
   "success_video_cap_per_task": 5,
   "failure_video_cap_per_task": 1,
   "success_video_count": 8,
-  "failure_video_count": 3,
+  "failure_video_count": 4,
   "failure_videos_from_original_trials": true,
   "json_fallback_mask_sources": 0,
   "active_mask_source_counts": {
-    "sim_seg": 822,
-    "sim_region": 111
+    "sim_seg": 873,
+    "sim_region": 72
   },
   "place_mask_source_counts": {
-    "sim_region_poly": 172,
-    "none": 436,
-    "sim_seg": 325
+    "sim_region_poly": 223,
+    "none": 722
   }
 }

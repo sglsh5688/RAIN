@@ -1,0 +1,13 @@
+task_id	family	scene_source	instruction
+VCN2_001	goal_transition_permutation	COMP2_001 exact scene	Open the middle drawer of the wooden cabinet, then put the cream cheese on the black bowl.
+VCN2_002	goal_transition_permutation	COMP2_001 exact scene	Turn on the stove, then put the cream cheese on the black bowl.
+VCN2_003	goal_transition_permutation	COMP2_001 exact scene	Push the plate to the front of the stove, then put the cream cheese on the black bowl.
+VCN2_004	goal_transition_permutation	COMP2_001 exact scene	Open the middle drawer of the wooden cabinet, then push the plate to the front of the stove.
+VCN2_005	goal_transition_permutation	COMP2_001 exact scene	Turn on the stove, then push the plate to the front of the stove.
+VCN2_006	goal_transition_permutation	COMP2_001 exact scene	Open the middle drawer of the wooden cabinet, then put the cream cheese on the black bowl, and finally turn on the stove.
+VCN2_007	goal_transition_permutation	COMP2_001 exact scene	Turn on the stove, then put the cream cheese on the black bowl, and finally open the middle drawer of the wooden cabinet.
+VCN2_008	goal_transition_permutation	COMP2_001 exact scene	Push the plate to the front of the stove, then put the cream cheese on the black bowl, and finally turn on the stove.
+VCN2_009	goal_transition_permutation	COMP2_001 exact scene	Turn on the stove, then push the plate to the front of the stove, and finally open the middle drawer of the wooden cabinet.
+VCN2_010	goal_transition_permutation	COMP2_001 exact scene	Open the middle drawer of the wooden cabinet, then turn on the stove, and finally put the cream cheese on the black bowl.
+VCN2_011	goal_transition_permutation	COMP2_001 exact scene	Turn on the stove, then open the middle drawer of the wooden cabinet, and finally put the cream cheese on the black bowl.
+VCN2_012	goal_transition_permutation	COMP2_001 exact scene	Push the plate to the front of the stove, then open the middle drawer of the wooden cabinet, and finally put the cream cheese on the black bowl.

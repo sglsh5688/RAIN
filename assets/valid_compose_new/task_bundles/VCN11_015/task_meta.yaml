@@ -1,0 +1,69 @@
+task_id: VCN11_015
+task_name: Put the black bowl on the stove, then close the top drawer of the wooden cabinet.
+language: Put the black bowl on the stove, then close the top drawer of the wooden cabinet.
+primary_category: Composition
+composition_family: stove_placement_then_drawer_control
+anchor_suite: libero_goal
+source_prior_task_ids:
+- '8'
+- '108'
+source_priors:
+- suite: libero_goal
+  task_stem: put_the_bowl_on_the_stove
+  instruction: Put the bowl on the stove
+  bddl: upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_stove.bddl
+  init: upstream_LIBERO/init_files/libero_goal/put_the_bowl_on_the_stove.pruned_init
+  evidence: ''
+- suite: libero_goal
+  task_stem: open_the_middle_drawer_of_the_cabinet
+  instruction: Open the middle layer of the drawer
+  bddl: upstream_LIBERO/bddl_files/libero_goal/open_the_middle_drawer_of_the_cabinet.bddl
+  init: upstream_LIBERO/init_files/libero_goal/open_the_middle_drawer_of_the_cabinet.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the black bowl on the stove
+- Close the top drawer of the wooden cabinet
+component_evidence:
+- Original Goal bowl-to-stove primitive; measured SR 5/5.
+- Exact ANLGX_169 atomic donor action; measured SR 3/5.
+semantic_subtask_count: 2
+action_plan_step_count: 3
+canonical_goal_atoms: &id001
+- on(akita_black_bowl_1, flat_stove_1_cook_region)
+- close(wooden_cabinet_1_top_region)
+canonical_task_signature: composition|3f474b285ddc2e6e7e375309ab9cbd20d9a618ab3520cafd769b89fad2c6a2d1|frozenset({close(wooden_cabinet_1_top_region),on(akita_black_bowl_1,flat_stove_1_cook_region)})
+objects_of_interest:
+- akita_black_bowl_1
+- flat_stove_1_cook_region
+- wooden_cabinet_1_top_region
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - on(akita_black_bowl_1, flat_stove_1_cook_region)
+- *id001
+physical_group: exact_anlgx_169__close_the_top_drawer_of_the_wooden_cabinet
+base_bddl_template: LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_169__close_the_top_drawer_of_the_wooden_cabinet/task.bddl
+base_pruned_init: LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_169__close_the_top_drawer_of_the_wooden_cabinet/task.pruned_init
+max_steps: 1600
+definition_status: native_five_states_verified
+notes:
+- Goal bowl-to-stove was 5/5 and ANLGX_169 top close was 3/5 in this exact Goal scene.
+- The donor BDDL physical scene and all five frozen initial states are retained byte-for-byte; no object, fixture, or articulation pose is edited.
+- Every semantic action masks its exact manipulated object and destination; stove control is button-only, drawer control is the moving part only, and microwave insertion targets the microwave fixture.
+- Gripper trajectory is a soft empirical prior, not a hard exclusion rule.
+- Strict ordered native events and final BDDL determine success; Compose final completion has no TC threshold.
+ordered_event_atoms:
+- on(akita_black_bowl_1, flat_stove_1_cook_region)
+- close(wooden_cabinet_1_top_region)
+ordered_task_signature: e57fe2342e2c3681dd97f75cf032945b6355dbe03749fb386b80b6b0de144092
+policy_evaluation_authorized: true
+evaluation_authorized: true
+fixture_replay_required: true
+fixture_replay_file: FIXTURE_REPLAY.json
+required_init_predicates: []
+compose_final_termination: ordered_native_goals_without_tc
+compose_final_tc_gate: false
+trajectory_alignment_policy: soft_prior_not_exclusion
+donor_bundle: LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_169__close_the_top_drawer_of_the_wooden_cabinet
+donor_states_byte_identical: true
+scene_derivation: exact_donor_scene_no_pose_changes

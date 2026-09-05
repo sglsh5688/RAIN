@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 17 Adapt + 11 Compose (48 total)**. BDRCOMP_021 is selected Compose: Strict 2/5 (40%), two original successful clips and exact masked comparison. BDRSWAP_001 retains its native-only 5/5 caveat. Previous selections remain unchanged.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 17 Adapt + 11 Compose (48 total)**; historical RAIN records, a separate official π0.5 LIBERO-40 5-episode evaluation, representative success/failure videos, masked comparisons and downloadable definitions.
 <!-- SELECTED29_README_END -->
 
 Open `index.html`, or enable GitHub Pages for this repository root.

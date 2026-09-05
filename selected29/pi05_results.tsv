@@ -1,0 +1,49 @@
+order	category	task_id	instruction	successes	episodes	success_rate_percent	success_episode	failure_episode	success_video	failure_video	complete
+1	Decomposition	TDL10_001	Put the white mug on the left plate.	0	5	0.0		0		assets/pi05_videos/TDL10_001/TDL10_001_failure.mp4	True
+2	Decomposition	TDL10_002	Put the yellow and white mug on the right plate.	0	5	0.0		0		assets/pi05_videos/TDL10_002/TDL10_002_failure.mp4	True
+3	Decomposition	TDL10_003	Put the white mug on the plate.	0	5	0.0		0		assets/pi05_videos/TDL10_003/TDL10_003_failure.mp4	True
+4	Decomposition	TDL10_004	Put the chocolate pudding to the right of the plate.	0	5	0.0		0		assets/pi05_videos/TDL10_004/TDL10_004_failure.mp4	True
+5	Decomposition	TDL10_005	Put the yellow and white mug in the microwave.	0	5	0.0		0		assets/pi05_videos/TDL10_005/TDL10_005_failure.mp4	True
+6	Decomposition	TDL10_006	Close the microwave.	1	5	20.0	3	0	assets/pi05_videos/TDL10_006/TDL10_006_success.mp4	assets/pi05_videos/TDL10_006/TDL10_006_failure.mp4	True
+7	Decomposition	TDL10_008	Put the moka pot on the stove.	0	5	0.0		0		assets/pi05_videos/TDL10_008/TDL10_008_failure.mp4	True
+8	Decomposition	TDL10_009	Put the alphabet soup in the basket.	0	5	0.0		0		assets/pi05_videos/TDL10_009/TDL10_009_failure.mp4	True
+9	Decomposition	TDL10_010	Put the cream cheese box in the basket.	0	5	0.0		0		assets/pi05_videos/TDL10_010/TDL10_010_failure.mp4	True
+10	Decomposition	TDL10_011	Put the alphabet soup in the basket.	0	5	0.0		0		assets/pi05_videos/TDL10_011/TDL10_011_failure.mp4	True
+11	Decomposition	TDL10_012	Put the tomato sauce in the basket.	0	5	0.0		0		assets/pi05_videos/TDL10_012/TDL10_012_failure.mp4	True
+12	Decomposition	TDL10_013	Put the cream cheese box in the basket.	0	5	0.0		0		assets/pi05_videos/TDL10_013/TDL10_013_failure.mp4	True
+13	Decomposition	TDL10_014	Put the butter in the basket.	0	5	0.0		0		assets/pi05_videos/TDL10_014/TDL10_014_failure.mp4	True
+14	Decomposition	TDL10_016	Close the bottom drawer of the cabinet.	0	5	0.0		0		assets/pi05_videos/TDL10_016/TDL10_016_failure.mp4	True
+15	Decomposition	TDC40_001	Turn on the stove.	0	5	0.0		0		assets/pi05_videos/TDC40_001/TDC40_001_failure.mp4	True
+16	Decomposition	TDC40_002	Put the black bowl in the bottom drawer of the cabinet.	0	5	0.0		0		assets/pi05_videos/TDC40_002/TDC40_002_failure.mp4	True
+17	Decomposition	TDC40_003	Put the left moka pot on the stove.	2	5	40.0	2	0	assets/pi05_videos/TDC40_003/TDC40_003_success.mp4	assets/pi05_videos/TDC40_003/TDC40_003_failure.mp4	True
+18	Decomposition	TDC40_004	Put the right moka pot on the stove.	0	5	0.0		0		assets/pi05_videos/TDC40_004/TDC40_004_failure.mp4	True
+19	Decomposition	TDC40_005	Open the top drawer of the cabinet.	0	5	0.0		0		assets/pi05_videos/TDC40_005/TDC40_005_failure.mp4	True
+20	Decomposition	TDC40_006	Put the black bowl inside the top drawer of the cabinet.	4	5	80.0	1	0	assets/pi05_videos/TDC40_006/TDC40_006_success.mp4	assets/pi05_videos/TDC40_006/TDC40_006_failure.mp4	True
+21	Adapt	ANLGX_002	Put the white mug on the middle plate.	4	5	80.0	0	1	assets/pi05_videos/ANLGX_002/ANLGX_002_success.mp4	assets/pi05_videos/ANLGX_002/ANLGX_002_failure.mp4	True
+22	Adapt	ANLGX_003	Put the white mug on the right plate.	0	5	0.0		0		assets/pi05_videos/ANLGX_003/ANLGX_003_failure.mp4	True
+23	Adapt	ANLGX_017	Put the black bowl in the middle drawer of the white cabinet.	5	5	100.0	0		assets/pi05_videos/ANLGX_017/ANLGX_017_success.mp4		True
+24	Adapt	ANLGX_022	Close the top drawer of the white cabinet.	0	5	0.0		0		assets/pi05_videos/ANLGX_022/ANLGX_022_failure.mp4	True
+25	Adapt	ANLGX_023	Close the middle drawer of the white cabinet.	3	5	60.0	1	0	assets/pi05_videos/ANLGX_023/ANLGX_023_success.mp4	assets/pi05_videos/ANLGX_023/ANLGX_023_failure.mp4	True
+26	Adapt	ANLGX_089	Pick up the wine bottle at the table center and place it on the plate.	2	5	40.0	2	0	assets/pi05_videos/ANLGX_089/ANLGX_089_success.mp4	assets/pi05_videos/ANLGX_089/ANLGX_089_failure.mp4	True
+27	Adapt	ANLGX_134	Put the plate on the top of the wooden cabinet.	0	5	0.0		0		assets/pi05_videos/ANLGX_134/ANLGX_134_failure.mp4	True
+28	Adapt	ANLGX_147	Put the cream cheese in the top drawer of the wooden cabinet.	3	5	60.0	0	1	assets/pi05_videos/ANLGX_147/ANLGX_147_success.mp4	assets/pi05_videos/ANLGX_147/ANLGX_147_failure.mp4	True
+29	Adapt	ANLGX_178	Put the yellow and white mug in the left compartment of the caddy.	0	5	0.0		0		assets/pi05_videos/ANLGX_178/ANLGX_178_failure.mp4	True
+30	Adapt	OGTS_001	Pick the alphabet soup and place it in the basket	4	5	80.0	0	3	assets/pi05_videos/OGTS_001/OGTS_001_success.mp4	assets/pi05_videos/OGTS_001/OGTS_001_failure.mp4	True
+31	Adapt	OGTS_010	Pick the orange juice and place it in the basket	0	5	0.0		0		assets/pi05_videos/OGTS_010/OGTS_010_failure.mp4	True
+32	Adapt	OGDTSL_011	Pick the tomato sauce and place it in the basket	5	5	100.0	0		assets/pi05_videos/OGDTSL_011/OGDTSL_011_success.mp4		True
+33	Adapt	OGDTSL_046	Pick the milk and place it in the basket	5	5	100.0	0		assets/pi05_videos/OGDTSL_046/OGDTSL_046_success.mp4		True
+34	Compose	COMP2_001	Put the cream cheese on the black bowl, and then open the middle drawer of the cabinet.	0	5	0.0		0		assets/pi05_videos/COMP2_001/COMP2_001_failure.mp4	True
+35	Compose	COMP2_012	Put the butter in the basket, and then put the tomato sauce in the basket.	0	5	0.0		0		assets/pi05_videos/COMP2_012/COMP2_012_failure.mp4	True
+36	Compose	COMP2_032	Push the plate to the front of the stove, and then open the middle drawer of the cabinet.	0	5	0.0		0		assets/pi05_videos/COMP2_032/COMP2_032_failure.mp4	True
+37	Compose	COMP2_222	Put the alphabet soup in the basket, and then put the tomato sauce in the basket.	0	5	0.0		0		assets/pi05_videos/COMP2_222/COMP2_222_failure.mp4	True
+38	Compose	COMP2_303	Put the milk in the basket, and then put the cream cheese box in the basket.	0	5	0.0		0		assets/pi05_videos/COMP2_303/COMP2_303_failure.mp4	True
+39	Compose	COMPOSE_155	Put the alphabet soup, the butter, and the tomato sauce in the basket one after another.	0	5	0.0		0		assets/pi05_videos/COMPOSE_155/COMPOSE_155_failure.mp4	True
+40	Compose	COMP2_027	Put the cream cheese on the black bowl, and then push the plate to the front of the stove.	0	5	0.0		0		assets/pi05_videos/COMP2_027/COMP2_027_failure.mp4	True
+41	Compose	LBCM_003	Put the tomato sauce in the basket, then put the white mug on the plate.	0	5	0.0		0		assets/pi05_videos/LBCM_003/LBCM_003_failure.mp4	True
+42	Compose	LBCM_028	Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket.	0	5	0.0		0		assets/pi05_videos/LBCM_028/LBCM_028_failure.mp4	True
+43	Adapt	NAFR3_001	Put the popcorn on top of the short fridge.	2	5	40.0	2	0	assets/pi05_videos/NAFR3_001/NAFR3_001_success.mp4	assets/pi05_videos/NAFR3_001/NAFR3_001_failure.mp4	True
+44	Adapt	NAFR3_002	Put the yellow book on top of the two-layer wooden shelf.	5	5	100.0	0		assets/pi05_videos/NAFR3_002/NAFR3_002_success.mp4		True
+45	Compose	MKDC_001	Put the moka pot on the stove, then close the bottom drawer of the cabinet.	3	5	60.0	0	3	assets/pi05_videos/MKDC_001/MKDC_001_success.mp4	assets/pi05_videos/MKDC_001/MKDC_001_failure.mp4	True
+46	Adapt	DSET_001	Pick up the black bowl at the table center and place it on the dining-set mat.	5	5	100.0	0		assets/pi05_videos/DSET_001/DSET_001_success.mp4		True
+47	Adapt	BDRSWAP_001	Pick the alphabet soup and place it in the right compartment of the bowl drainer.	5	5	100.0	0		assets/pi05_videos/BDRSWAP_001/BDRSWAP_001_success.mp4		True
+48	Compose	BDRCOMP_021	Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the salad dressing and place it in the right compartment of the bowl drainer.	0	5	0.0		0		assets/pi05_videos/BDRCOMP_021/BDRCOMP_021_failure.mp4	True

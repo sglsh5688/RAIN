@@ -53,6 +53,19 @@
   },
   "action_checkpoint_sha256": "7232043efb5b6d563def9fa378cd6f16b8e4623e103327605a5203714807252f",
   "progress_checkpoint_sha256": "e35566c8f366b49c79fd4e029b42ccde56438bd270f895fd286482febb605eae",
-  "pi05_evaluation": null,
+  "pi05_evaluation": {
+    "model": "pi0.5",
+    "policy_config": "pi05_libero",
+    "checkpoint_source": "gs://openpi-assets/checkpoints/pi05_libero",
+    "successes": 5,
+    "episodes": 5,
+    "success_rate_percent": 100.0,
+    "success_episode": 0,
+    "failure_episode": null,
+    "success_video": "assets/pi05_videos/BDRSWAP_001/BDRSWAP_001_success.mp4",
+    "failure_video": null,
+    "evaluator_sha256": "e5d9be4b6849b8e51d8d3eee33f9644c61eea73dc6d84bbe80fde59f78700cc4",
+    "completion_rule": "native In of the exact right compartment"
+  },
   "native_not_released_support_success": true
 }

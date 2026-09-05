@@ -77,5 +77,18 @@
   "order": "left_then_right",
   "task_rerun": false,
   "results_rescored": false,
-  "pi05_evaluation": null
+  "pi05_evaluation": {
+    "model": "pi0.5",
+    "policy_config": "pi05_libero",
+    "checkpoint_source": "gs://openpi-assets/checkpoints/pi05_libero",
+    "successes": 0,
+    "episodes": 5,
+    "success_rate_percent": 0.0,
+    "success_episode": null,
+    "failure_episode": 0,
+    "success_video": null,
+    "failure_video": "assets/pi05_videos/BDRCOMP_021/BDRCOMP_021_failure.mp4",
+    "evaluator_sha256": "e5d9be4b6849b8e51d8d3eee33f9644c61eea73dc6d84bbe80fde59f78700cc4",
+    "completion_rule": "left then right; native In + released + positive bottom support for 5 control steps; both retained"
+  }
 }

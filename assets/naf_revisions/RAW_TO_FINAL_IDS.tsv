@@ -1,0 +1,5 @@
+task_id	raw_id	family	instruction
+NAFR_001	RAWX_001	R1_naf017_spaced_robot_left_packages	Put the popcorn on top of the short fridge.
+NAFR_002	RAWX_002	R2_naf036_staggered_books	Put the yellow book on top of the two-layer wooden shelf.
+NAFR_003	RAWX_003	R3_naf056_close_bottom_with_spaced_plates	Close the bottom drawer of the short cabinet.
+NAFR_004	RAWX_004	R4_libero10_scene3_pan_replaces_moka	Put the frying pan on the stove.

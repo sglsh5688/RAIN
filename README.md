@@ -51,3 +51,8 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - `novel_adapt_feedback_success/`: 11 tasks with success, 34 successful episodes.
 - Shared JPEG preview sprites, one on-demand player (`preload=none`), success reels and one original-trial failure clip when a task failed.
 <!-- NOVEL_ADAPT_FEEDBACK_README_END -->
+
+<!-- NAF_REVISIONS_README_START -->
+- `naf_revisions/`: corrected V2 revision tasks; five original trials per task, all successes and one actual failure when available.
+- Earlier V1 results remain in the offline review directory/ZIP only, and are not mixed into V2 statistics.
+<!-- NAF_REVISIONS_README_END -->

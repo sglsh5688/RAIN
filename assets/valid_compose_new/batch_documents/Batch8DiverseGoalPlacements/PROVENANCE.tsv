@@ -1,0 +1,13 @@
+task_id	donor	atomic_sr	actions	instruction
+VCN8_001	LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_126__put_the_chocolate_pudding_on_the_stove	3/5	close_middle;pudding_stove	Close the middle drawer of the wooden cabinet, then put the chocolate pudding on the stove.
+VCN8_002	LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_127__put_the_cream_cheese_on_the_stove	3/5	close_middle;cheese_stove	Close the middle drawer of the wooden cabinet, then put the cream cheese on the stove.
+VCN8_003	LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_136__put_the_butter_on_the_top_of_the_wooden_cabinet	4/5	close_middle;butter_cabinet	Close the middle drawer of the wooden cabinet, then put the butter on the top of the wooden cabinet.
+VCN8_004	LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_136__put_the_butter_on_the_top_of_the_wooden_cabinet	4/5	close_top;butter_cabinet	Close the top drawer of the wooden cabinet, then put the butter on the top of the wooden cabinet.
+VCN8_005	LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_138__put_the_butter_on_the_black_bowl	5/5	close_middle;butter_bowl	Close the middle drawer of the wooden cabinet, then put the butter on the black bowl.
+VCN8_006	LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_139__put_the_chocolate_pudding_on_the_black_bowl	5/5	close_top;pudding_bowl	Close the top drawer of the wooden cabinet, then put the chocolate pudding on the black bowl.
+VCN8_007	LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_138__put_the_butter_on_the_black_bowl	5/5	butter_bowl;open_middle	Put the butter on the black bowl, then open the middle drawer of the cabinet.
+VCN8_008	LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_139__put_the_chocolate_pudding_on_the_black_bowl	5/5	pudding_bowl;open_middle	Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.
+VCN8_009	LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_127__put_the_cream_cheese_on_the_stove	3/5	cheese_stove;open_middle	Put the cream cheese on the stove, then open the middle drawer of the cabinet.
+VCN8_010	LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_126__put_the_chocolate_pudding_on_the_stove	3/5	pudding_stove;open_middle	Put the chocolate pudding on the stove, then open the middle drawer of the cabinet.
+VCN8_011	LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_138__put_the_butter_on_the_black_bowl	5/5	butter_bowl;close_middle	Put the butter on the black bowl, then close the middle drawer of the wooden cabinet.
+VCN8_012	LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_139__put_the_chocolate_pudding_on_the_black_bowl	5/5	pudding_bowl;close_middle	Put the chocolate pudding on the black bowl, then close the middle drawer of the wooden cabinet.

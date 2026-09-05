@@ -1,0 +1,150 @@
+{
+  "swap": {
+    "task_id": "BDRSWAP_001",
+    "source_task_id": "LIBERO_OBJECT_01",
+    "instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+    "original_instruction": "Pick the alphabet soup and place it in the basket",
+    "successes": 5,
+    "episode_count": 5,
+    "native_sr_percent": 100,
+    "stable_placement_sr_percent": null,
+    "comparison": "comparison/BDRSWAP_001.png",
+    "checkpoint_action_sha256": "7232043efb5b6d563def9fa378cd6f16b8e4623e103327605a5203714807252f",
+    "checkpoint_progress_sha256": "e35566c8f366b49c79fd4e029b42ccde56438bd270f895fd286482febb605eae",
+    "contact_diagnostics": [
+      {
+        "task_id": "BDRSWAP_001",
+        "episode_idx": 0,
+        "native_success": true,
+        "final_drainer_contact": false,
+        "final_floor_contact": false,
+        "termination_reason": "env_success",
+        "total_steps": 208,
+        "selected_native_first_true_step": 208,
+        "ended_at_first_selected_native_true": true,
+        "target_world_position_m": [
+          0.015089778033758041,
+          0.266536717502246,
+          0.107334988120602
+        ],
+        "final_contacts": [],
+        "settled_placement_validated": false,
+        "settled_placement_status": "not measured; no post-success settling rollout"
+      },
+      {
+        "task_id": "BDRSWAP_001",
+        "episode_idx": 1,
+        "native_success": true,
+        "final_drainer_contact": false,
+        "final_floor_contact": false,
+        "termination_reason": "env_success",
+        "total_steps": 329,
+        "selected_native_first_true_step": 329,
+        "ended_at_first_selected_native_true": true,
+        "target_world_position_m": [
+          0.01571338704394936,
+          0.26139244862333116,
+          0.09444186016618317
+        ],
+        "final_contacts": [],
+        "settled_placement_validated": false,
+        "settled_placement_status": "not measured; no post-success settling rollout"
+      },
+      {
+        "task_id": "BDRSWAP_001",
+        "episode_idx": 2,
+        "native_success": true,
+        "final_drainer_contact": false,
+        "final_floor_contact": false,
+        "termination_reason": "env_success",
+        "total_steps": 207,
+        "selected_native_first_true_step": 207,
+        "ended_at_first_selected_native_true": true,
+        "target_world_position_m": [
+          0.006348125047225702,
+          0.27096829202582706,
+          0.10316613005393818
+        ],
+        "final_contacts": [],
+        "settled_placement_validated": false,
+        "settled_placement_status": "not measured; no post-success settling rollout"
+      },
+      {
+        "task_id": "BDRSWAP_001",
+        "episode_idx": 3,
+        "native_success": true,
+        "final_drainer_contact": false,
+        "final_floor_contact": false,
+        "termination_reason": "env_success",
+        "total_steps": 242,
+        "selected_native_first_true_step": 242,
+        "ended_at_first_selected_native_true": true,
+        "target_world_position_m": [
+          0.023790561477140763,
+          0.27164796296690213,
+          0.0901784007066535
+        ],
+        "final_contacts": [],
+        "settled_placement_validated": false,
+        "settled_placement_status": "not measured; no post-success settling rollout"
+      },
+      {
+        "task_id": "BDRSWAP_001",
+        "episode_idx": 4,
+        "native_success": true,
+        "final_drainer_contact": false,
+        "final_floor_contact": false,
+        "termination_reason": "env_success",
+        "total_steps": 193,
+        "selected_native_first_true_step": 193,
+        "ended_at_first_selected_native_true": true,
+        "target_world_position_m": [
+          0.02907193907699418,
+          0.2631485290432236,
+          0.12133755183308893
+        ],
+        "final_contacts": [],
+        "settled_placement_validated": false,
+        "settled_placement_status": "not measured; no post-success settling rollout"
+      }
+    ],
+    "videos": [
+      {
+        "episode_index": 0,
+        "native_success": true,
+        "url": "videos/BDRSWAP_001_ep000_ok.mp4",
+        "title": "BDRSWAP_001 · ep000 · native success"
+      },
+      {
+        "episode_index": 1,
+        "native_success": true,
+        "url": "videos/BDRSWAP_001_ep001_ok.mp4",
+        "title": "BDRSWAP_001 · ep001 · native success"
+      },
+      {
+        "episode_index": 2,
+        "native_success": true,
+        "url": "videos/BDRSWAP_001_ep002_ok.mp4",
+        "title": "BDRSWAP_001 · ep002 · native success"
+      },
+      {
+        "episode_index": 3,
+        "native_success": true,
+        "url": "videos/BDRSWAP_001_ep003_ok.mp4",
+        "title": "BDRSWAP_001 · ep003 · native success"
+      },
+      {
+        "episode_index": 4,
+        "native_success": true,
+        "url": "videos/BDRSWAP_001_ep004_ok.mp4",
+        "title": "BDRSWAP_001 · ep004 · native success"
+      }
+    ]
+  },
+  "pilot": [],
+  "census": [],
+  "summary": {},
+  "completed_drainer_swap_tasks": 1,
+  "composition_results_included": false,
+  "native_is_released_supported_success": false
+}

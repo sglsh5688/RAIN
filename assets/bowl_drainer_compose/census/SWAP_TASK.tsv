@@ -1,0 +1,2 @@
+task_id	source_task_id	instruction	original_instruction	successes	episode_count	native_sr_percent	stable_placement_sr_percent	comparison	checkpoint_action_sha256	checkpoint_progress_sha256
+BDRSWAP_001	LIBERO_OBJECT_01	Pick the alphabet soup and place it in the right compartment of the bowl drainer.	Pick the alphabet soup and place it in the basket	5	5	100		comparison/BDRSWAP_001.png	7232043efb5b6d563def9fa378cd6f16b8e4623e103327605a5203714807252f	e35566c8f366b49c79fd4e029b42ccde56438bd270f895fd286482febb605eae

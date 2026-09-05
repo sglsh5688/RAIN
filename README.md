@@ -67,3 +67,7 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - `bowl_drainer_sections_success/`: 49 native-success videos, masked comparisons and contact diagnostics.
 - Native `In` entry terminates these episodes; stable landing/settled placement is **not validated**.
 <!-- BOWL_DRAINER_SECTIONS_README_END -->
+
+<!-- BOWL_DRAINER_SWAP_README_START -->
+- [bowl_drainer_swap/](bowl_drainer_swap/index.html): completed BDRSWAP_001 XY swap; native 5/5, all 5 original videos and 3-panel exact-mask comparison. Native entry is NOT released/support success (ending drainer contact 0/5). Composition evaluation is not included.
+<!-- BOWL_DRAINER_SWAP_README_END -->

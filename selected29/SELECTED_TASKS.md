@@ -1,8 +1,10 @@
 # Selected LIBERO-EX tasks
 
-Selection: 2026-09-05. Exactly 20 finalized Decomposition tasks and the nine explicitly selected ANLGX IDs. No reevaluation was performed for this collection.
+Selection: 2026-09-05. Exactly 20 finalized Decomposition tasks, the nine explicitly selected ANLGX IDs, and the two confirmed Compose IDs COMP2_001 and COMP2_012. No reevaluation was performed for this collection.
 
 Adapt retains the selected ANLGX ID, definition, evaluation and success videos. ADAPT_001–009 are matching task definitions with a separate five-episode rerun. Historical metadata may still call the source category Analogy; the collection category is Adapt.
+
+Compose retains the original Composition2Step task definition, five-episode evaluation, masked comparison and saved success videos.
 
 ANLGX_023 is **middle drawer close**, not bottom drawer close. Selection follows the explicit ID. ANLGX_178 is **yellow-and-white mug to the left compartment of the caddy**.
 
@@ -46,3 +48,10 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 | ANLGX_134 | ADAPT_007 | Put the plate on the top of the wooden cabinet. | 1/5 (20.0%) | 0/5 (0.0%) |
 | ANLGX_147 | ADAPT_008 | Put the cream cheese in the top drawer of the wooden cabinet. | 3/5 (60.0%) | 3/5 (60.0%) |
 | ANLGX_178 | ADAPT_009 | Put the yellow and white mug in the left compartment of the caddy. | 3/5 (60.0%) | 1/5 (20.0%) |
+
+## Compose
+
+| Task ID | Alias | Recorded instruction | Recorded SR | Later Adapt SR |
+|---|---|---|---|---|
+| COMP2_001 | COMP2_001 | Put the cream cheese on the black bowl, and then open the middle drawer of the cabinet. | 2/5 (40.0%) | — |
+| COMP2_012 | COMP2_012 | Put the butter in the basket, and then put the tomato sauce in the basket. | 5/5 (100.0%) | — |

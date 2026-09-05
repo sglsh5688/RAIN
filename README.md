@@ -2,7 +2,7 @@
 
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 9 Adapt**; category filters, recorded SR, masked comparisons, success reels and downloadable definitions.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 9 Adapt + 2 Compose (31 total)**; category filters, recorded SR, masked comparisons, success reels and downloadable definitions.
 <!-- SELECTED29_README_END -->
 
 Open `index.html`, or enable GitHub Pages for this repository root.

@@ -1,10 +1,10 @@
 # Selected LIBERO-EX tasks
 
-Selection: 2026-09-05. 20 Decomposition + 13 Adapt + 7 Compose (40 total). The confirmed Compose IDs are COMP2_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027. No reevaluation was performed for this collection.
+Selection: 2026-09-05. 20 Decomposition + 13 Adapt + 9 Compose (42 total). The confirmed Compose IDs are COMP2_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028. No reevaluation was performed for this collection.
 
 Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. OGDTSL_011 and OGDTSL_046 retain their original Adapt Object five-episode evaluations. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt.
 
-Compose retains each original Composition2Step or Compose-350 task definition, five-episode evaluation, masked comparison and saved success videos. The user's COM2_027 shorthand was explicitly confirmed to mean COMP2_027. Existing selections COMP2_001 and COMP2_012 remain unchanged.
+Compose retains each original Composition2Step, Compose-350, or Long Basket/Cup Mix task definition, five-episode evaluation, masked comparison and saved success videos. The user's COM2_027 shorthand was explicitly confirmed to mean COMP2_027. Existing selections COMP2_001 and COMP2_012 remain unchanged.
 
 ANLGX_023 is **middle drawer close**, not bottom drawer close. Selection follows the explicit ID. ANLGX_178 is **yellow-and-white mug to the left compartment of the caddy**.
 
@@ -64,3 +64,5 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 | COMP2_303 | COMP2_303 | Put the milk in the basket, and then put the cream cheese box in the basket. | 1/5 (20.0%) | — |
 | COMPOSE_155 | COMPOSE_155 | Put the alphabet soup, the butter, and the tomato sauce in the basket one after another. | 2/5 (40.0%) | — |
 | COMP2_027 | COMP2_027 | Put the cream cheese on the black bowl, and then push the plate to the front of the stove. | 1/5 (20.0%) | — |
+| LBCM_003 | LBCM_003 | Put the tomato sauce in the basket, then put the white mug on the plate. | 2/5 (40%) | — |
+| LBCM_028 | LBCM_028 | Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket. | 1/5 (20%) | — |

@@ -1,0 +1,13 @@
+name: BDRSWAP_001
+language: Pick the alphabet soup and place it in the right compartment of the bowl drainer.
+problem: Libero
+problem_folder: tasks/bdrswap_001__alphabet_soup_salad_dressing_xy_swap_right_compartment
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Adapt
+anchor_suite: libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: adapt|bdrswap_alphabet_salad_xy|5cd1ecc1142b896e3aa86a91dbe15f402a94dc7c6d2bbb91efb6490a6ceb19f5

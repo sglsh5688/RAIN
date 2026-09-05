@@ -1,0 +1,786 @@
+{
+  "task_id": "BDRSWAP_001",
+  "parent_task_id": "BDRSIDE_002",
+  "pool_count": 5,
+  "valid_count": 5,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rows": [
+    {
+      "pool_index": 0,
+      "valid": true,
+      "errors": [],
+      "mask_areas": {
+        "manipulated_object": 850,
+        "goal_target": 3547
+      },
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "alphabet_soup_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      },
+      "immediate_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "alphabet_soup_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      },
+      "changed_flat_indices": [
+        10,
+        11,
+        17,
+        18
+      ],
+      "parent_state_sha256": "00a2bfc01210a34c902d1df3a5e890da67699f78ca01a8de3d8afe9359128848",
+      "swapped_state_sha256": "38619bdd4f4b7ba863c36f26c2de3f65ca3b35c5153b5f2d0947349a9b08767f",
+      "original_object_qpos": {
+        "alphabet_soup_1": [
+          -0.11909425548213741,
+          -0.23978121719843146,
+          0.03839291037244388,
+          -0.0022590536116270836,
+          0.002257812260531936,
+          0.7077060816712023,
+          0.7064997529554903
+        ],
+        "salad_dressing_1": [
+          0.050000706164961155,
+          -0.09999129741363207,
+          0.0727054536990048,
+          0.5000063322988731,
+          0.4999936569559899,
+          0.5000059111921844,
+          0.49999409940286255
+        ]
+      },
+      "new_object_qpos": {
+        "alphabet_soup_1": [
+          0.050000706164961155,
+          -0.09999129741363207,
+          0.03839291037244388,
+          -0.0022590536116270836,
+          0.002257812260531936,
+          0.7077060816712023,
+          0.7064997529554903
+        ],
+        "salad_dressing_1": [
+          -0.11909425548213741,
+          -0.23978121719843146,
+          0.0727054536990048,
+          0.5000063322988731,
+          0.4999936569559899,
+          0.5000059111921844,
+          0.49999409940286255
+        ]
+      },
+      "all_other_flat_values_byte_identical": true,
+      "each_object_native_z_quaternion_preserved": true
+    },
+    {
+      "pool_index": 1,
+      "valid": true,
+      "errors": [],
+      "mask_areas": {
+        "manipulated_object": 850,
+        "goal_target": 3547
+      },
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "alphabet_soup_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      },
+      "immediate_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "alphabet_soup_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      },
+      "changed_flat_indices": [
+        10,
+        11,
+        17,
+        18
+      ],
+      "parent_state_sha256": "9b1683aef8a79cd76e2781135eac3af9c36dc09e52438dac22690ea33a19ad2b",
+      "swapped_state_sha256": "13f57edd3bf001f8669d1c843a36b2b7eef28f2aa245d9b205f79d105f550faa",
+      "original_object_qpos": {
+        "alphabet_soup_1": [
+          -0.11909425548213741,
+          -0.23978121719843146,
+          0.03839291037244388,
+          -0.0022590536116270836,
+          0.002257812260531936,
+          0.7077060816712023,
+          0.7064997529554903
+        ],
+        "salad_dressing_1": [
+          0.05000070616496116,
+          -0.09999129741362466,
+          0.0727054536990048,
+          0.5000063322988731,
+          0.49999365695598996,
+          0.5000059111921844,
+          0.49999409940286255
+        ]
+      },
+      "new_object_qpos": {
+        "alphabet_soup_1": [
+          0.05000070616496116,
+          -0.09999129741362466,
+          0.03839291037244388,
+          -0.0022590536116270836,
+          0.002257812260531936,
+          0.7077060816712023,
+          0.7064997529554903
+        ],
+        "salad_dressing_1": [
+          -0.11909425548213741,
+          -0.23978121719843146,
+          0.0727054536990048,
+          0.5000063322988731,
+          0.49999365695598996,
+          0.5000059111921844,
+          0.49999409940286255
+        ]
+      },
+      "all_other_flat_values_byte_identical": true,
+      "each_object_native_z_quaternion_preserved": true
+    },
+    {
+      "pool_index": 2,
+      "valid": true,
+      "errors": [],
+      "mask_areas": {
+        "manipulated_object": 850,
+        "goal_target": 3547
+      },
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "alphabet_soup_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      },
+      "immediate_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "alphabet_soup_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      },
+      "changed_flat_indices": [
+        10,
+        11,
+        17,
+        18
+      ],
+      "parent_state_sha256": "e209fe5acb869aef14bd8e8043d8af7ef6e82f6644c7b36f74785348e350b27d",
+      "swapped_state_sha256": "8ec3b5af6eedb9fcbf0ff10af38ab3156569dab2f07f094abe98bbe96cbb70c9",
+      "original_object_qpos": {
+        "alphabet_soup_1": [
+          -0.11909425548213741,
+          -0.23978121719843146,
+          0.03839291037244388,
+          -0.0022590536116270836,
+          0.002257812260531936,
+          0.7077060816712023,
+          0.7064997529554903
+        ],
+        "salad_dressing_1": [
+          0.050000706164961155,
+          -0.09999129741363207,
+          0.0727054536990048,
+          0.5000063322988731,
+          0.4999936569559899,
+          0.5000059111921844,
+          0.49999409940286255
+        ]
+      },
+      "new_object_qpos": {
+        "alphabet_soup_1": [
+          0.050000706164961155,
+          -0.09999129741363207,
+          0.03839291037244388,
+          -0.0022590536116270836,
+          0.002257812260531936,
+          0.7077060816712023,
+          0.7064997529554903
+        ],
+        "salad_dressing_1": [
+          -0.11909425548213741,
+          -0.23978121719843146,
+          0.0727054536990048,
+          0.5000063322988731,
+          0.4999936569559899,
+          0.5000059111921844,
+          0.49999409940286255
+        ]
+      },
+      "all_other_flat_values_byte_identical": true,
+      "each_object_native_z_quaternion_preserved": true
+    },
+    {
+      "pool_index": 3,
+      "valid": true,
+      "errors": [],
+      "mask_areas": {
+        "manipulated_object": 850,
+        "goal_target": 3547
+      },
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "alphabet_soup_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      },
+      "immediate_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "alphabet_soup_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      },
+      "changed_flat_indices": [
+        10,
+        11,
+        17,
+        18
+      ],
+      "parent_state_sha256": "9e4cccc7edf10b8446e1496e01060bb54087ae1a0caf22b8eee74e0d86acad3a",
+      "swapped_state_sha256": "62c9c94aedc7ce8786d625c0036c2009ce9c2e6cfc9aac97b1aa61658c9e6e76",
+      "original_object_qpos": {
+        "alphabet_soup_1": [
+          -0.11909425548213741,
+          -0.23978121719843146,
+          0.03839291037244388,
+          -0.0022590536116270836,
+          0.002257812260531936,
+          0.7077060816712023,
+          0.7064997529554903
+        ],
+        "salad_dressing_1": [
+          0.050000706164961155,
+          -0.09999129741363207,
+          0.0727054536990048,
+          0.5000063322988731,
+          0.4999936569559899,
+          0.5000059111921844,
+          0.49999409940286255
+        ]
+      },
+      "new_object_qpos": {
+        "alphabet_soup_1": [
+          0.050000706164961155,
+          -0.09999129741363207,
+          0.03839291037244388,
+          -0.0022590536116270836,
+          0.002257812260531936,
+          0.7077060816712023,
+          0.7064997529554903
+        ],
+        "salad_dressing_1": [
+          -0.11909425548213741,
+          -0.23978121719843146,
+          0.0727054536990048,
+          0.5000063322988731,
+          0.4999936569559899,
+          0.5000059111921844,
+          0.49999409940286255
+        ]
+      },
+      "all_other_flat_values_byte_identical": true,
+      "each_object_native_z_quaternion_preserved": true
+    },
+    {
+      "pool_index": 4,
+      "valid": true,
+      "errors": [],
+      "mask_areas": {
+        "manipulated_object": 850,
+        "goal_target": 3547
+      },
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "alphabet_soup_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      },
+      "immediate_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "alphabet_soup_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      },
+      "changed_flat_indices": [
+        10,
+        11,
+        17,
+        18
+      ],
+      "parent_state_sha256": "7fa27f941e9aaa9b3f926c228a874bc06c9808ca255cf46693c9fa1429a1d548",
+      "swapped_state_sha256": "d23fcff42f5990db2b32fe6779ccbe3511dfa9ea2f2e3594e34a5112acf0b8de",
+      "original_object_qpos": {
+        "alphabet_soup_1": [
+          -0.1190942554821374,
+          -0.23978121719843148,
+          0.03839291037244387,
+          -0.002259053611627106,
+          0.002257812260532076,
+          0.7077060816712021,
+          0.7064997529554903
+        ],
+        "salad_dressing_1": [
+          0.050000706164961155,
+          -0.09999129741363207,
+          0.0727054536990048,
+          0.5000063322988731,
+          0.4999936569559899,
+          0.5000059111921844,
+          0.49999409940286255
+        ]
+      },
+      "new_object_qpos": {
+        "alphabet_soup_1": [
+          0.050000706164961155,
+          -0.09999129741363207,
+          0.03839291037244387,
+          -0.002259053611627106,
+          0.002257812260532076,
+          0.7077060816712021,
+          0.7064997529554903
+        ],
+        "salad_dressing_1": [
+          -0.1190942554821374,
+          -0.23978121719843148,
+          0.0727054536990048,
+          0.5000063322988731,
+          0.4999936569559899,
+          0.5000059111921844,
+          0.49999409940286255
+        ]
+      },
+      "all_other_flat_values_byte_identical": true,
+      "each_object_native_z_quaternion_preserved": true
+    }
+  ],
+  "physical_build_gpus": [
+    6
+  ],
+  "requested_episode_count": 5,
+  "success_predicates_unmodified": true,
+  "all_other_parent_state_values_preserved": true
+}

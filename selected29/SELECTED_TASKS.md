@@ -1,6 +1,6 @@
 # Selected LIBERO-EX tasks
 
-Selection: 2026-09-05. 20 Decomposition + 16 Adapt + 10 Compose (46 total). The confirmed Compose IDs are COMP2_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001. No reevaluation was performed for this collection.
+Selection: 2026-09-05. 20 Decomposition + 17 Adapt + 10 Compose (47 total). The confirmed Compose IDs are COMP2_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001. No reevaluation was performed for this collection.
 
 Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. OGDTSL_011 and OGDTSL_046 retain their original Adapt Object five-episode evaluations. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt.
 
@@ -76,3 +76,12 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 | LBCM_003 | LBCM_003 | Put the tomato sauce in the basket, then put the white mug on the plate. | 2/5 (40%) | — |
 | LBCM_028 | LBCM_028 | Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket. | 1/5 (20%) | — |
 | MKDC_001 | MKDC_001 | Put the moka pot on the stove, then close the bottom drawer of the cabinet. | 4/5 (80%) | — |
+
+
+## Newly selected Adapt — BDRSWAP_001
+
+Pick the alphabet soup and place it in the right compartment of the bowl drainer.
+
+NATIVE IN FIRST-ENTRY SUCCESS ONLY: 5/5. Not a released or supported placement success rate; ending drainer contact is 0/5. Only alphabet soup / salad dressing XY positions changed. All five original videos are retained; no rerun or rescoring. The new selected task has no pi0.5 result.
+
+The versioned local collection is LiberoSelected47. LiberoSelected29 and its live 46-task pi0.5 evaluation inputs remain unchanged; no pi0.5 result is claimed for this new task.

@@ -1,0 +1,58 @@
+{
+  "task_id": "BDRSWAP_001",
+  "selected_category": "Adapt",
+  "original_id_preserved": true,
+  "native_successes": 5,
+  "original_episode_count": 5,
+  "released_supported_success_rate": null,
+  "ending_drainer_contacts": 0,
+  "source_task_index_sha256": "1df03a4a1584dff1d77cc102e7005648230068db5a1c1f8cd0cacb51e4869cc1",
+  "source_aggregate_sha256": "0c78933f58711d83622759711baa2ed5826c4ca1fe65586cf4b4ab2fbbe8de3c",
+  "comparison_source_sha256": "0a0731477f061a890a0093ecb49627d87b703e48069e632f9c4f28598051a109",
+  "original_videos": [
+    {
+      "episode_index": 0,
+      "native_success": true,
+      "path": "assets/original_success_videos/BDRSWAP_001/BDRSWAP_001_ep000_ok.mp4",
+      "sha256": "bb86cdb383d5d6936527b54580e50b24980e19d089bc441001db59831ce42304"
+    },
+    {
+      "episode_index": 1,
+      "native_success": true,
+      "path": "assets/original_success_videos/BDRSWAP_001/BDRSWAP_001_ep001_ok.mp4",
+      "sha256": "9c4f1bd2daebb5db205bb410443d9d52297ff8c515077a45bbc1ef3d57f1d6a1"
+    },
+    {
+      "episode_index": 2,
+      "native_success": true,
+      "path": "assets/original_success_videos/BDRSWAP_001/BDRSWAP_001_ep002_ok.mp4",
+      "sha256": "9df1f24ffd8dd78ecb7d24d548de57e30686655ac8e6718bbd88774f79cd96e5"
+    },
+    {
+      "episode_index": 3,
+      "native_success": true,
+      "path": "assets/original_success_videos/BDRSWAP_001/BDRSWAP_001_ep003_ok.mp4",
+      "sha256": "05fae27ebb1dc72365ebff375c064268a1f68ebb5f9878d54e5e0c0e50fbd06c"
+    },
+    {
+      "episode_index": 4,
+      "native_success": true,
+      "path": "assets/original_success_videos/BDRSWAP_001/BDRSWAP_001_ep004_ok.mp4",
+      "sha256": "013f6542fd832c76d7e8a9f44243135f26e45135a75c220c37aef6bdcb14253a"
+    }
+  ],
+  "source_bundle_sha256": {
+    "eval_rules.yaml": "bdec99b55f55db0910ed21570e044d3d7227c0394ce406767f731e2c257ae7a1",
+    "registry_entry.yaml": "9f8b52d38052062c290450ccd9455e1d93dc60c55c4fae586fa180eba7a479dd",
+    "task.bddl": "5ada19155d9dbe151d7376071397735034957909babd749751cd97ae7dd59bdb",
+    "INIT_VALIDATION.json": "4a5f019f26616f581f55acfad32c7e9bb6f2f84bbe219063009158fa07175b3d",
+    "mask_bindings.yaml": "929a5d5a453efbc989afb973cf2277452cc0fc9d588313ecd3dac11cfdba159c",
+    "action_plan.yaml": "119c5af7b58768e057251092e3161d3464975e532baf5aa9958748848c515ee5",
+    "task_meta.yaml": "2b0a0d7205d3b979ebebe3dfa910dc72804bcbaeb28527b2e2859df68cf1744d",
+    "task.pruned_init": "ec2cc986fa887cf17f71b8855f5663479231715f1e10a27df12cc451b2db4c83"
+  },
+  "action_checkpoint_sha256": "7232043efb5b6d563def9fa378cd6f16b8e4623e103327605a5203714807252f",
+  "progress_checkpoint_sha256": "e35566c8f366b49c79fd4e029b42ccde56438bd270f895fd286482febb605eae",
+  "pi05_evaluation": null,
+  "native_not_released_support_success": true
+}

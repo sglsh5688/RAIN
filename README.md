@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 16 Adapt + 10 Compose (46 total)**; category filters, recorded SR, masked comparisons, success reels and downloadable definitions.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 17 Adapt + 10 Compose (47 total)**. BDRSWAP_001 is newly selected Adapt with native 5/5, five original clips and masked comparison; not released/support success. Existing selections remain unchanged.
 <!-- SELECTED29_README_END -->
 
 Open `index.html`, or enable GitHub Pages for this repository root.

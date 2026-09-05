@@ -1,0 +1,13 @@
+name: COMPOSEOBJ_130
+language: First put the milk in the basket, then put the ketchup in the basket, and finally put the salad dressing in the basket.
+problem: Libero
+problem_folder: tasks/composeobj_130__first_put_the_milk_in_the_basket_then_put_the_ketchup_in_the_basket_and_finally_put_the_salad_dressing_in_the_basket
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|974ec90b3aa960a4acd40f0843bdc989e0730bf8eb7f087a75d07e5332b5a9c9|frozenset({in(ketchup_1,basket_1_contain_region),in(milk_1,basket_1_contain_region),in(salad_dressing_1,basket_1_contain_region)})

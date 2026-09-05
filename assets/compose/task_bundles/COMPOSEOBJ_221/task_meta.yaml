@@ -1,0 +1,65 @@
+task_id: COMPOSEOBJ_221
+task_name: Put the salad dressing in the basket, then put the ketchup in the basket, and finally put the tomato sauce in the basket.
+language: Put the salad dressing in the basket, then put the ketchup in the basket, and finally put the tomato sauce in the basket.
+primary_category: Composition
+composition_family: O2_object_milk_upper_swap_3_to_basket
+anchor_suite: libero_object
+source_prior_task_ids:
+- '303'
+- '305'
+- '306'
+source_priors:
+- suite: libero_object
+  task_stem: pick_up_the_salad_dressing_and_place_it_in_the_basket
+  instruction: Pick the salad dressing and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_ketchup_and_place_it_in_the_basket
+  instruction: Pick the ketchup and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_tomato_sauce_and_place_it_in_the_basket
+  instruction: Pick the tomato sauce and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the salad dressing in the basket
+- Put the ketchup in the basket
+- Put the tomato sauce in the basket
+component_evidence:
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+semantic_subtask_count: 3
+action_plan_step_count: 6
+canonical_goal_atoms:
+- in(salad_dressing_1, basket_1_contain_region)
+- in(ketchup_1, basket_1_contain_region)
+- in(tomato_sauce_1, basket_1_contain_region)
+canonical_task_signature: composition|e9ea2df22d7387ef7248aec20489b34af8d8a7e43ef06ab2a108350cfa94129e|frozenset({in(ketchup_1,basket_1_contain_region),in(salad_dressing_1,basket_1_contain_region),in(tomato_sauce_1,basket_1_contain_region)})
+objects_of_interest:
+- salad_dressing_1
+- basket_1
+- ketchup_1
+- tomato_sauce_1
+pure_composition: true
+requires_transition: false
+sequence_stages: []
+physical_group: object_milk_upper_swap_pick_up_the_salad_dressing_and_place_it_in_the_basket
+base_bddl_template: upstream_LIBERO/bddl_files/libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_object/pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- Milk is swapped into floor_other_object_region_1 (the upper/back slot); alphabet_soup_1 moves to milk's former floor_other_object_region_3 slot.
+- The five non-milk objects and basket remain exactly the same identities as the source Object scene.
+compose_screen: milk_and_object_layout_followup_268
+feedback_intervention: milk_upper_slot_swap
+feedback_parent_tasks:
+- COMP_209
+- COMPOSE_155

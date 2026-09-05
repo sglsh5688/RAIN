@@ -1,0 +1,77 @@
+task_id: COMPOSEOBJ_008
+task_name: First put the milk in the basket, then put the butter in the basket, and finally put the orange juice in the basket.
+language: First put the milk in the basket, then put the butter in the basket, and finally put the orange juice in the basket.
+primary_category: Composition
+composition_family: L1_long_milk_first_3_to_basket
+anchor_suite: libero_10
+source_prior_task_ids:
+- '308'
+- '307'
+- '310'
+source_priors:
+- suite: libero_10
+  task_stem: LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket
+  instruction: put both the alphabet soup and the tomato sauce in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_milk_and_place_it_in_the_basket
+  instruction: Pick the milk and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_butter_and_place_it_in_the_basket
+  instruction: Pick the butter and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_orange_juice_and_place_it_in_the_basket
+  instruction: Pick the orange juice and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the milk in the basket
+- Put the butter in the basket
+- Put the orange juice in the basket
+component_evidence:
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+semantic_subtask_count: 3
+action_plan_step_count: 6
+canonical_goal_atoms:
+- in(milk_1, basket_1_contain_region)
+- in(butter_1, basket_1_contain_region)
+- in(orange_juice_1, basket_1_contain_region)
+canonical_task_signature: composition|ca920439e1c91be83da410695061460677aa83c4a15959e0740b4f07cd427d68|frozenset({in(butter_1,basket_1_contain_region),in(milk_1,basket_1_contain_region),in(orange_juice_1,basket_1_contain_region)})
+objects_of_interest:
+- milk_1
+- basket_1
+- butter_1
+- orange_juice_1
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - in(milk_1, basket_1_contain_region)
+- - in(milk_1, basket_1_contain_region)
+  - in(butter_1, basket_1_contain_region)
+- - in(milk_1, basket_1_contain_region)
+  - in(butter_1, basket_1_contain_region)
+  - in(orange_juice_1, basket_1_contain_region)
+physical_group: long_scene2_stock_milk_first_3
+base_bddl_template: upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- 'Sequence diagnostic on the stock COMP_209 scene: milk must be placed in the basket before the remaining objects.'
+- The physical layout is unchanged; temporal stages distinguish this intervention from prior unordered final-goal screens.
+compose_screen: milk_and_object_layout_followup_268
+feedback_intervention: milk_first_temporal
+feedback_parent_tasks:
+- COMP_209
+- COMPOSE_155

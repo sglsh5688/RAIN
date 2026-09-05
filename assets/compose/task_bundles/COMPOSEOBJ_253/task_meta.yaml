@@ -1,0 +1,92 @@
+task_id: COMPOSEOBJ_253
+task_name: First put the milk in the basket, then put the orange juice in the basket, then put the chocolate pudding in the basket, and finally put the bbq sauce in the basket.
+language: First put the milk in the basket, then put the orange juice in the basket, then put the chocolate pudding in the basket, and finally put the bbq sauce in the basket.
+primary_category: Composition
+composition_family: O1_object_milk_first_4_to_basket
+anchor_suite: libero_object
+source_prior_task_ids:
+- '308'
+- '310'
+- '309'
+- '304'
+source_priors:
+- suite: libero_object
+  task_stem: pick_up_the_tomato_sauce_and_place_it_in_the_basket
+  instruction: Pick the tomato sauce and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_milk_and_place_it_in_the_basket
+  instruction: Pick the milk and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_orange_juice_and_place_it_in_the_basket
+  instruction: Pick the orange juice and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_chocolate_pudding_and_place_it_in_the_basket
+  instruction: Pick the chocolate pudding and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_bbq_sauce_and_place_it_in_the_basket
+  instruction: Pick the bbq sauce and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the milk in the basket
+- Put the orange juice in the basket
+- Put the chocolate pudding in the basket
+- Put the bbq sauce in the basket
+component_evidence:
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+semantic_subtask_count: 4
+action_plan_step_count: 8
+canonical_goal_atoms:
+- in(milk_1, basket_1_contain_region)
+- in(orange_juice_1, basket_1_contain_region)
+- in(chocolate_pudding_1, basket_1_contain_region)
+- in(bbq_sauce_1, basket_1_contain_region)
+canonical_task_signature: composition|b2d1edccfcf1d327f2411487573372022051e62345c97a61693c306944814d42|frozenset({in(bbq_sauce_1,basket_1_contain_region),in(chocolate_pudding_1,basket_1_contain_region),in(milk_1,basket_1_contain_region),in(orange_juice_1,basket_1_contain_region)})
+objects_of_interest:
+- milk_1
+- basket_1
+- orange_juice_1
+- chocolate_pudding_1
+- bbq_sauce_1
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - in(milk_1, basket_1_contain_region)
+- - in(milk_1, basket_1_contain_region)
+  - in(orange_juice_1, basket_1_contain_region)
+- - in(milk_1, basket_1_contain_region)
+  - in(orange_juice_1, basket_1_contain_region)
+  - in(chocolate_pudding_1, basket_1_contain_region)
+- - in(milk_1, basket_1_contain_region)
+  - in(orange_juice_1, basket_1_contain_region)
+  - in(chocolate_pudding_1, basket_1_contain_region)
+  - in(bbq_sauce_1, basket_1_contain_region)
+physical_group: object_stock_milk_first_pick_up_the_tomato_sauce_and_place_it_in_the_basket_4
+base_bddl_template: upstream_LIBERO/bddl_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- 'Sequence diagnostic in an original LIBERO-Object layout: milk is removed first before the remaining two or three picks.'
+- The physical scene is stock; the unchanged unordered 3-step and 4-step controls already scored 0 successful tasks across 350 candidates.
+compose_screen: milk_and_object_layout_followup_268
+feedback_intervention: milk_first_temporal
+feedback_parent_tasks:
+- COMP_209
+- COMPOSE_155

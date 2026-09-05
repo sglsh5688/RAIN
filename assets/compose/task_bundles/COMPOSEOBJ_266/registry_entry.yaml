@@ -1,0 +1,13 @@
+name: COMPOSEOBJ_266
+language: Put the tomato sauce in the basket, then put the butter in the basket, then put the chocolate pudding in the basket, and finally put the bbq sauce in the basket.
+problem: Libero
+problem_folder: tasks/composeobj_266__put_the_tomato_sauce_in_the_basket_then_put_the_butter_in_the_basket_then_put_the_chocolate_pudding_in_the_basket_and_finally_put_the_bbq_sauce_in_the
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|548d1a916af2aaa9bca538e3d0ce8ff6df604e955bfb40ef84bbe70e8004903c|frozenset({in(bbq_sauce_1,basket_1_contain_region),in(butter_1,basket_1_contain_region),in(chocolate_pudding_1,basket_1_contain_region),in(tomato_sauce_1,basket_1_contain_region)})

@@ -1,0 +1,71 @@
+task_id: COMPOSEOBJ_046
+task_name: Put the butter in the basket, then put the cream cheese box in the basket, and finally put the ketchup in the basket.
+language: Put the butter in the basket, then put the cream cheese box in the basket, and finally put the ketchup in the basket.
+primary_category: Composition
+composition_family: L2_long_milk_beside_ketchup_3_to_basket
+anchor_suite: libero_10
+source_prior_task_ids:
+- '307'
+- '302'
+- '305'
+source_priors:
+- suite: libero_10
+  task_stem: LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket
+  instruction: put both the alphabet soup and the tomato sauce in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_butter_and_place_it_in_the_basket
+  instruction: Pick the butter and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_cream_cheese_and_place_it_in_the_basket
+  instruction: Pick the cream cheese and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_ketchup_and_place_it_in_the_basket
+  instruction: Pick the ketchup and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the butter in the basket
+- Put the cream cheese box in the basket
+- Put the ketchup in the basket
+component_evidence:
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+semantic_subtask_count: 3
+action_plan_step_count: 6
+canonical_goal_atoms:
+- in(butter_1, basket_1_contain_region)
+- in(cream_cheese_1, basket_1_contain_region)
+- in(ketchup_1, basket_1_contain_region)
+canonical_task_signature: composition|25bbbecd7350b1a47ff6f52f9232feab4608abd5604dc8ca1daeaa55dd015414|frozenset({in(butter_1,basket_1_contain_region),in(cream_cheese_1,basket_1_contain_region),in(ketchup_1,basket_1_contain_region)})
+objects_of_interest:
+- butter_1
+- basket_1
+- cream_cheese_1
+- ketchup_1
+pure_composition: true
+requires_transition: false
+sequence_stages: []
+physical_group: long_scene2_milk_beside_ketchup
+base_bddl_template: upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- Milk is retained as a distractor but relocated beside ketchup, outside the central approach corridor where COMP_209 repeatedly toppled it.
+- Milk region is (-0.265, -0.065, -0.235, -0.035); ketchup remains at its original LIBERO-10 Scene 2 pose.
+compose_screen: milk_and_object_layout_followup_268
+feedback_intervention: milk_beside_ketchup
+feedback_parent_tasks:
+- COMP_209
+- COMPOSE_155

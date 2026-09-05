@@ -1,0 +1,13 @@
+name: COMPOSEOBJ_022
+language: First put the milk in the basket, then put the alphabet soup in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.
+problem: Libero
+problem_folder: tasks/composeobj_022__first_put_the_milk_in_the_basket_then_put_the_alphabet_soup_in_the_basket_then_put_the_cream_cheese_box_in_the_basket_and_finally_put_the_tomato_sauce
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_10
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|ca920439e1c91be83da410695061460677aa83c4a15959e0740b4f07cd427d68|frozenset({in(alphabet_soup_1,basket_1_contain_region),in(cream_cheese_1,basket_1_contain_region),in(milk_1,basket_1_contain_region),in(tomato_sauce_1,basket_1_contain_region)})

@@ -1,0 +1,92 @@
+task_id: COMPOSEOBJ_147
+task_name: First put the milk in the basket, then put the bbq sauce in the basket, then put the alphabet soup in the basket, and finally put the cream cheese box in the basket.
+language: First put the milk in the basket, then put the bbq sauce in the basket, then put the alphabet soup in the basket, and finally put the cream cheese box in the basket.
+primary_category: Composition
+composition_family: O1_object_milk_first_4_to_basket
+anchor_suite: libero_object
+source_prior_task_ids:
+- '308'
+- '304'
+- '301'
+- '302'
+source_priors:
+- suite: libero_object
+  task_stem: pick_up_the_ketchup_and_place_it_in_the_basket
+  instruction: Pick the ketchup and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_milk_and_place_it_in_the_basket
+  instruction: Pick the milk and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_bbq_sauce_and_place_it_in_the_basket
+  instruction: Pick the bbq sauce and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_alphabet_soup_and_place_it_in_the_basket
+  instruction: Pick the alphabet soup and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_cream_cheese_and_place_it_in_the_basket
+  instruction: Pick the cream cheese and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the milk in the basket
+- Put the bbq sauce in the basket
+- Put the alphabet soup in the basket
+- Put the cream cheese box in the basket
+component_evidence:
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+semantic_subtask_count: 4
+action_plan_step_count: 8
+canonical_goal_atoms:
+- in(milk_1, basket_1_contain_region)
+- in(bbq_sauce_1, basket_1_contain_region)
+- in(alphabet_soup_1, basket_1_contain_region)
+- in(cream_cheese_1, basket_1_contain_region)
+canonical_task_signature: composition|974ec90b3aa960a4acd40f0843bdc989e0730bf8eb7f087a75d07e5332b5a9c9|frozenset({in(alphabet_soup_1,basket_1_contain_region),in(bbq_sauce_1,basket_1_contain_region),in(cream_cheese_1,basket_1_contain_region),in(milk_1,basket_1_contain_region)})
+objects_of_interest:
+- milk_1
+- basket_1
+- bbq_sauce_1
+- alphabet_soup_1
+- cream_cheese_1
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - in(milk_1, basket_1_contain_region)
+- - in(milk_1, basket_1_contain_region)
+  - in(bbq_sauce_1, basket_1_contain_region)
+- - in(milk_1, basket_1_contain_region)
+  - in(bbq_sauce_1, basket_1_contain_region)
+  - in(alphabet_soup_1, basket_1_contain_region)
+- - in(milk_1, basket_1_contain_region)
+  - in(bbq_sauce_1, basket_1_contain_region)
+  - in(alphabet_soup_1, basket_1_contain_region)
+  - in(cream_cheese_1, basket_1_contain_region)
+physical_group: object_stock_milk_first_pick_up_the_ketchup_and_place_it_in_the_basket_4
+base_bddl_template: upstream_LIBERO/bddl_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- 'Sequence diagnostic in an original LIBERO-Object layout: milk is removed first before the remaining two or three picks.'
+- The physical scene is stock; the unchanged unordered 3-step and 4-step controls already scored 0 successful tasks across 350 candidates.
+compose_screen: milk_and_object_layout_followup_268
+feedback_intervention: milk_first_temporal
+feedback_parent_tasks:
+- COMP_209
+- COMPOSE_155

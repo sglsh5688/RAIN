@@ -1,0 +1,18 @@
+task_count: 268
+sequential_ids: true
+unique_internal_canonical_signatures: 268
+expected_external_sequence_identity_duplicates: 138
+unexpected_relocated_layout_duplicates: 0
+parsed_bddl_tasks: 268
+parsed_goal_atoms: 927
+init_states_per_task: 5
+simulator_render_and_exact_mask_validation: true
+semantic_step_counts:
+  3: 145
+  4: 123
+temporal_tasks: 158
+milk_beside_ketchup_tasks: 35
+milk_upper_slot_swap_tasks: 75
+policy_inference_run: true
+evaluated_episodes_per_task: 5
+evaluation_result_root: private_evaluation_results/rain_ms_maskaug_gt_libero_compose_object_followup268_5ep_gpu67_20260905

@@ -1,0 +1,13 @@
+name: COMPOSEOBJ_250
+language: First put the milk in the basket, then put the butter in the basket, then put the orange juice in the basket, and finally put the chocolate pudding in the basket.
+problem: Libero
+problem_folder: tasks/composeobj_250__first_put_the_milk_in_the_basket_then_put_the_butter_in_the_basket_then_put_the_orange_juice_in_the_basket_and_finally_put_the_chocolate_pudding_in_th
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|b2d1edccfcf1d327f2411487573372022051e62345c97a61693c306944814d42|frozenset({in(butter_1,basket_1_contain_region),in(chocolate_pudding_1,basket_1_contain_region),in(milk_1,basket_1_contain_region),in(orange_juice_1,basket_1_contain_region)})

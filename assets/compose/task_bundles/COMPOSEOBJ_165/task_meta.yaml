@@ -1,0 +1,71 @@
+task_id: COMPOSEOBJ_165
+task_name: First put the milk in the basket, then put the cream cheese box in the basket, and finally put the butter in the basket.
+language: First put the milk in the basket, then put the cream cheese box in the basket, and finally put the butter in the basket.
+primary_category: Composition
+composition_family: O1_object_milk_first_3_to_basket
+anchor_suite: libero_object
+source_prior_task_ids:
+- '308'
+- '302'
+- '307'
+source_priors:
+- suite: libero_object
+  task_stem: pick_up_the_milk_and_place_it_in_the_basket
+  instruction: Pick the milk and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_cream_cheese_and_place_it_in_the_basket
+  instruction: Pick the cream cheese and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_butter_and_place_it_in_the_basket
+  instruction: Pick the butter and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the milk in the basket
+- Put the cream cheese box in the basket
+- Put the butter in the basket
+component_evidence:
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its pose in the composite scene may differ.
+semantic_subtask_count: 3
+action_plan_step_count: 6
+canonical_goal_atoms:
+- in(milk_1, basket_1_contain_region)
+- in(cream_cheese_1, basket_1_contain_region)
+- in(butter_1, basket_1_contain_region)
+canonical_task_signature: composition|7ba9d10e19350f9437b0f4a1a731b59d62e13a2cbbb5e813673656da0d2f6b1e|frozenset({in(butter_1,basket_1_contain_region),in(cream_cheese_1,basket_1_contain_region),in(milk_1,basket_1_contain_region)})
+objects_of_interest:
+- milk_1
+- basket_1
+- cream_cheese_1
+- butter_1
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - in(milk_1, basket_1_contain_region)
+- - in(milk_1, basket_1_contain_region)
+  - in(cream_cheese_1, basket_1_contain_region)
+- - in(milk_1, basket_1_contain_region)
+  - in(cream_cheese_1, basket_1_contain_region)
+  - in(butter_1, basket_1_contain_region)
+physical_group: object_stock_milk_first_pick_up_the_milk_and_place_it_in_the_basket_3
+base_bddl_template: upstream_LIBERO/bddl_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_object/pick_up_the_milk_and_place_it_in_the_basket.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- 'Sequence diagnostic in an original LIBERO-Object layout: milk is removed first before the remaining two or three picks.'
+- The physical scene is stock; the unchanged unordered 3-step and 4-step controls already scored 0 successful tasks across 350 candidates.
+compose_screen: milk_and_object_layout_followup_268
+feedback_intervention: milk_first_temporal
+feedback_parent_tasks:
+- COMP_209
+- COMPOSE_155

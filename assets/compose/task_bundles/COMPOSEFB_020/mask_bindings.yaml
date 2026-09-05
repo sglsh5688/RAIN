@@ -1,0 +1,39 @@
+task_id: COMPOSEFB_020
+policy: exact_instance_no_union
+bindings:
+- role: manipulated_object_1
+  kind: body_prefix
+  value: akita_black_bowl_1
+  color: green
+  exact_instance: true
+- role: goal_target_2
+  kind: body_prefix
+  value: plate_1
+  color: yellow
+  exact_instance: true
+- role: interaction_target_3
+  kind: drawer_part
+  value: white_cabinet_1:bottom
+  color: cyan
+  exact_instance: true
+- role: interaction_target_4
+  kind: drawer_part
+  value: wooden_cabinet_1:middle
+  color: cyan
+  exact_instance: true
+- role: manipulated_object_5
+  kind: body_prefix
+  value: wine_bottle_1
+  color: green
+  exact_instance: true
+- role: goal_target_6
+  kind: body_prefix
+  value: wooden_cabinet_1
+  color: yellow
+  exact_instance: true
+runtime_requirements:
+  resolve_by_current_sim_model: true
+  allow_source_episode_json_fallback: false
+  new_instance_support: true
+  region_projection_from_current_bddl: false
+  two_cabinet_exact_instance_disambiguation: true

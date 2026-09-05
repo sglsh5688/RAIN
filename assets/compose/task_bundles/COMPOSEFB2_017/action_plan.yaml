@@ -1,0 +1,38 @@
+task_id: COMPOSEFB2_017
+steps:
+- action_type: grasp
+  primary_object_id: akita_black_bowl_1
+  target_object_id: akita_black_bowl_1
+  source_task_id: 103
+  source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: akita_black_bowl_1
+  target_object_id: white_cabinet_1_bottom_region
+  source_task_id: 103
+  source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+  source_subtask_index: 2
+- action_type: grasp
+  primary_object_id: plate_1
+  target_object_id: plate_1
+  source_task_id: 0
+  source_task_description: Put the plate on top of the left white cabinet
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: plate_1
+  target_object_id: white_cabinet_1_top_side
+  source_task_id: 0
+  source_task_description: Put the plate on top of the left white cabinet
+  source_subtask_index: 2
+- action_type: grasp
+  primary_object_id: wine_bottle_1
+  target_object_id: wine_bottle_1
+  source_task_id: 5
+  source_task_description: Put the wine bottle on the top of the drawer
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: wine_bottle_1
+  target_object_id: wooden_cabinet_1_top_side
+  source_task_id: 5
+  source_task_description: Put the wine bottle on the top of the drawer
+  source_subtask_index: 2

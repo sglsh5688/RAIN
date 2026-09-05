@@ -1,0 +1,13 @@
+name: COMPOSEFB_014
+language: Put the plate on top of the left white cabinet, then close the bottom drawer of the left white cabinet, and finally put the wine bottle on top of the right wooden cabinet.
+problem: Libero
+problem_folder: tasks/composefb_014__put_the_plate_on_top_of_the_left_white_cabinet_then_close_the_bottom_drawer_of_the_left_white_cabinet_and_finally_put_the_wine_bottle_on_top_of_the_ri
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_10+libero_goal
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|2e1dd4852f5d27753be7210314d5d5fdaf3b53c1d697296d9702d2e11ac12009|frozenset({close(white_cabinet_1_bottom_region),on(plate_1,white_cabinet_1_top_side),on(wine_bottle_1,wooden_cabinet_1_top_side)})

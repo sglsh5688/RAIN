@@ -1,0 +1,4 @@
+pool	tasks	episodes	tasks_with_success	successful_episodes	documents
+Compose-350	350	1750	3	7	assets/compose/pool_documents/compose350
+Feedback-KitchenAnchor-24	24	120	1	4	assets/compose/pool_documents/feedback_kitchen_anchor24
+Feedback-GoalAnchor-24	24	120	0	0	assets/compose/pool_documents/feedback_goal_anchor24

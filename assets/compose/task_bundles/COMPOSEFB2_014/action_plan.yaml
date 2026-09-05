@@ -1,0 +1,20 @@
+task_id: COMPOSEFB2_014
+steps:
+- action_type: grasp
+  primary_object_id: akita_black_bowl_1
+  target_object_id: akita_black_bowl_1
+  source_task_id: 1
+  source_task_description: Put the bowl on the plate
+  source_subtask_index: 1
+- action_type: release
+  primary_object_id: akita_black_bowl_1
+  target_object_id: plate_1
+  source_task_id: 1
+  source_task_description: Put the bowl on the plate
+  source_subtask_index: 2
+- action_type: open
+  primary_object_id: wooden_cabinet_1_top_region
+  target_object_id: wooden_cabinet_1_top_region
+  source_task_id: 3
+  source_task_description: Open the top layer of the drawer and put the bowl inside
+  source_subtask_index: 1

@@ -1,0 +1,685 @@
+action_plans:
+  COMPOSEFB2_001:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_002:
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_003:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 2
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_004:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 2
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_005:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_006:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: open
+    primary_object_id: wooden_cabinet_1_middle_region
+    target_object_id: wooden_cabinet_1_middle_region
+    source_task_id: 10
+    source_task_description: Open the middle layer of the drawer
+    source_subtask_index: 1
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_007:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: open
+    primary_object_id: wooden_cabinet_1_top_region
+    target_object_id: wooden_cabinet_1_top_region
+    source_task_id: 3
+    source_task_description: Open the top layer of the drawer and put the bowl inside
+    source_subtask_index: 1
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_008:
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: open
+    primary_object_id: wooden_cabinet_1_middle_region
+    target_object_id: wooden_cabinet_1_middle_region
+    source_task_id: 10
+    source_task_description: Open the middle layer of the drawer
+    source_subtask_index: 1
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_009:
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: open
+    primary_object_id: wooden_cabinet_1_top_region
+    target_object_id: wooden_cabinet_1_top_region
+    source_task_id: 3
+    source_task_description: Open the top layer of the drawer and put the bowl inside
+    source_subtask_index: 1
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_010:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 2
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: open
+    primary_object_id: wooden_cabinet_1_middle_region
+    target_object_id: wooden_cabinet_1_middle_region
+    source_task_id: 10
+    source_task_description: Open the middle layer of the drawer
+    source_subtask_index: 1
+  COMPOSEFB2_011:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 2
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: open
+    primary_object_id: wooden_cabinet_1_top_region
+    target_object_id: wooden_cabinet_1_top_region
+    source_task_id: 3
+    source_task_description: Open the top layer of the drawer and put the bowl inside
+    source_subtask_index: 1
+  COMPOSEFB2_012:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  COMPOSEFB2_013:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: open
+    primary_object_id: wooden_cabinet_1_middle_region
+    target_object_id: wooden_cabinet_1_middle_region
+    source_task_id: 10
+    source_task_description: Open the middle layer of the drawer
+    source_subtask_index: 1
+  COMPOSEFB2_014:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: open
+    primary_object_id: wooden_cabinet_1_top_region
+    target_object_id: wooden_cabinet_1_top_region
+    source_task_id: 3
+    source_task_description: Open the top layer of the drawer and put the bowl inside
+    source_subtask_index: 1
+  COMPOSEFB2_015:
+  - action_type: grasp
+    primary_object_id: plate_1
+    target_object_id: plate_1
+    source_task_id: 0
+    source_task_description: Put the plate on top of the left white cabinet
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: plate_1
+    target_object_id: white_cabinet_1_top_side
+    source_task_id: 0
+    source_task_description: Put the plate on top of the left white cabinet
+    source_subtask_index: 2
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_016:
+  - action_type: grasp
+    primary_object_id: plate_1
+    target_object_id: plate_1
+    source_task_id: 0
+    source_task_description: Put the plate on top of the left white cabinet
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: plate_1
+    target_object_id: white_cabinet_1_top_side
+    source_task_id: 0
+    source_task_description: Put the plate on top of the left white cabinet
+    source_subtask_index: 2
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_017:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 2
+  - action_type: grasp
+    primary_object_id: plate_1
+    target_object_id: plate_1
+    source_task_id: 0
+    source_task_description: Put the plate on top of the left white cabinet
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: plate_1
+    target_object_id: white_cabinet_1_top_side
+    source_task_id: 0
+    source_task_description: Put the plate on top of the left white cabinet
+    source_subtask_index: 2
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_018:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 2
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: grasp
+    primary_object_id: plate_1
+    target_object_id: plate_1
+    source_task_id: 0
+    source_task_description: Put the plate on top of the left white cabinet
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: plate_1
+    target_object_id: white_cabinet_1_top_side
+    source_task_id: 0
+    source_task_description: Put the plate on top of the left white cabinet
+    source_subtask_index: 2
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_019:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: open
+    primary_object_id: wooden_cabinet_1_middle_region
+    target_object_id: wooden_cabinet_1_middle_region
+    source_task_id: 10
+    source_task_description: Open the middle layer of the drawer
+    source_subtask_index: 1
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_020:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: open
+    primary_object_id: wooden_cabinet_1_top_region
+    target_object_id: wooden_cabinet_1_top_region
+    source_task_id: 3
+    source_task_description: Open the top layer of the drawer and put the bowl inside
+    source_subtask_index: 1
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_021:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_022:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_023:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: open
+    primary_object_id: wooden_cabinet_1_middle_region
+    target_object_id: wooden_cabinet_1_middle_region
+    source_task_id: 10
+    source_task_description: Open the middle layer of the drawer
+    source_subtask_index: 1
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2
+  COMPOSEFB2_024:
+  - action_type: grasp
+    primary_object_id: akita_black_bowl_1
+    target_object_id: akita_black_bowl_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: akita_black_bowl_1
+    target_object_id: plate_1
+    source_task_id: 1
+    source_task_description: Put the bowl on the plate
+    source_subtask_index: 2
+  - action_type: close
+    primary_object_id: white_cabinet_1_bottom_region
+    target_object_id: white_cabinet_1_bottom_region
+    source_task_id: 103
+    source_task_description: put the black bowl in the bottom drawer of the cabinet and close it
+    source_subtask_index: 3
+  - action_type: open
+    primary_object_id: wooden_cabinet_1_middle_region
+    target_object_id: wooden_cabinet_1_middle_region
+    source_task_id: 10
+    source_task_description: Open the middle layer of the drawer
+    source_subtask_index: 1
+  - action_type: grasp
+    primary_object_id: wine_bottle_1
+    target_object_id: wine_bottle_1
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 1
+  - action_type: release
+    primary_object_id: wine_bottle_1
+    target_object_id: wooden_cabinet_1_top_side
+    source_task_id: 5
+    source_task_description: Put the wine bottle on the top of the drawer
+    source_subtask_index: 2

@@ -1,0 +1,723 @@
+policy: exact_instance_no_union
+region_masks_are_projected_from_each_current_task_bddl: true
+tasks:
+  COMPOSEFB2_001:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: manipulated_object_3
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_4
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 1668
+      manipulated_object_3: 525
+      goal_target_4: 13689
+  COMPOSEFB2_002:
+    bindings:
+    - role: interaction_target
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      interaction_target_1: 5238
+      manipulated_object_2: 525
+      goal_target_3: 13689
+  COMPOSEFB2_003:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: white_cabinet_1
+      color: yellow
+      exact_instance: true
+    - role: manipulated_object_3
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_4
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 15062
+      manipulated_object_3: 525
+      goal_target_4: 13689
+  COMPOSEFB2_004:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: white_cabinet_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object_4
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_5
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 15062
+      interaction_target_3: 5238
+      manipulated_object_4: 525
+      goal_target_5: 13689
+  COMPOSEFB2_005:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object_4
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_5
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 1668
+      interaction_target_3: 5238
+      manipulated_object_4: 525
+      goal_target_5: 13689
+  COMPOSEFB2_006:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target
+      kind: drawer_part
+      value: wooden_cabinet_1:middle
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object_4
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_5
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 1668
+      interaction_target_3: 717
+      manipulated_object_4: 525
+      goal_target_5: 13689
+  COMPOSEFB2_007:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target
+      kind: drawer_part
+      value: wooden_cabinet_1:top
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object_4
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_5
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 1668
+      interaction_target_3: 955
+      manipulated_object_4: 525
+      goal_target_5: 13689
+  COMPOSEFB2_008:
+    bindings:
+    - role: interaction_target_1
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: interaction_target_2
+      kind: drawer_part
+      value: wooden_cabinet_1:middle
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      interaction_target_1: 5238
+      interaction_target_2: 717
+      manipulated_object_3: 525
+      goal_target_4: 13689
+  COMPOSEFB2_009:
+    bindings:
+    - role: interaction_target_1
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: interaction_target_2
+      kind: drawer_part
+      value: wooden_cabinet_1:top
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      interaction_target_1: 5238
+      interaction_target_2: 955
+      manipulated_object_3: 525
+      goal_target_4: 13689
+  COMPOSEFB2_010:
+    bindings:
+    - role: manipulated_object
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target
+      kind: body_prefix
+      value: white_cabinet_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target_3
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: interaction_target_4
+      kind: drawer_part
+      value: wooden_cabinet_1:middle
+      color: cyan
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 15062
+      interaction_target_3: 5238
+      interaction_target_4: 717
+  COMPOSEFB2_011:
+    bindings:
+    - role: manipulated_object
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target
+      kind: body_prefix
+      value: white_cabinet_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target_3
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: interaction_target_4
+      kind: drawer_part
+      value: wooden_cabinet_1:top
+      color: cyan
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 15062
+      interaction_target_3: 5238
+      interaction_target_4: 955
+  COMPOSEFB2_012:
+    bindings:
+    - role: manipulated_object
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 1668
+      interaction_target_3: 5238
+  COMPOSEFB2_013:
+    bindings:
+    - role: manipulated_object
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target
+      kind: drawer_part
+      value: wooden_cabinet_1:middle
+      color: cyan
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 1668
+      interaction_target_3: 717
+  COMPOSEFB2_014:
+    bindings:
+    - role: manipulated_object
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target
+      kind: drawer_part
+      value: wooden_cabinet_1:top
+      color: cyan
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 1668
+      interaction_target_3: 955
+  COMPOSEFB2_015:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: plate_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: white_cabinet_1
+      color: yellow
+      exact_instance: true
+    - role: manipulated_object_3
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_4
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1668
+      goal_target_2: 15062
+      manipulated_object_3: 525
+      goal_target_4: 13689
+  COMPOSEFB2_016:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: plate_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: white_cabinet_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object_4
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_5
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1668
+      goal_target_2: 15062
+      interaction_target_3: 5238
+      manipulated_object_4: 525
+      goal_target_5: 13689
+  COMPOSEFB2_017:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: white_cabinet_1
+      color: yellow
+      exact_instance: true
+    - role: manipulated_object_3
+      kind: body_prefix
+      value: plate_1
+      color: green
+      exact_instance: true
+    - role: manipulated_object_4
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_5
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 15062
+      manipulated_object_3: 1668
+      manipulated_object_4: 525
+      goal_target_5: 13689
+  COMPOSEFB2_018:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: white_cabinet_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object_4
+      kind: body_prefix
+      value: plate_1
+      color: green
+      exact_instance: true
+    - role: manipulated_object_5
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_6
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 15062
+      interaction_target_3: 5238
+      manipulated_object_4: 1668
+      manipulated_object_5: 525
+      goal_target_6: 13689
+  COMPOSEFB2_019:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target_3
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: interaction_target_4
+      kind: drawer_part
+      value: wooden_cabinet_1:middle
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object_5
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_6
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 1668
+      interaction_target_3: 5238
+      interaction_target_4: 717
+      manipulated_object_5: 525
+      goal_target_6: 13689
+  COMPOSEFB2_020:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target_3
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: interaction_target_4
+      kind: drawer_part
+      value: wooden_cabinet_1:top
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object_5
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_6
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1114
+      goal_target_2: 1668
+      interaction_target_3: 5238
+      interaction_target_4: 955
+      manipulated_object_5: 525
+      goal_target_6: 13689
+  COMPOSEFB2_021:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: manipulated_object_3
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_4
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1116
+      goal_target_2: 1100
+      manipulated_object_3: 528
+      goal_target_4: 13734
+  COMPOSEFB2_022:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object_4
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_5
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1116
+      goal_target_2: 1100
+      interaction_target_3: 4900
+      manipulated_object_4: 528
+      goal_target_5: 13734
+  COMPOSEFB2_023:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target
+      kind: drawer_part
+      value: wooden_cabinet_1:middle
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object_4
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_5
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1116
+      goal_target_2: 1100
+      interaction_target_3: 708
+      manipulated_object_4: 528
+      goal_target_5: 13734
+  COMPOSEFB2_024:
+    bindings:
+    - role: manipulated_object_1
+      kind: body_prefix
+      value: akita_black_bowl_1
+      color: green
+      exact_instance: true
+    - role: goal_target_2
+      kind: body_prefix
+      value: plate_1
+      color: yellow
+      exact_instance: true
+    - role: interaction_target_3
+      kind: drawer_part
+      value: white_cabinet_1:bottom
+      color: cyan
+      exact_instance: true
+    - role: interaction_target_4
+      kind: drawer_part
+      value: wooden_cabinet_1:middle
+      color: cyan
+      exact_instance: true
+    - role: manipulated_object_5
+      kind: body_prefix
+      value: wine_bottle_1
+      color: green
+      exact_instance: true
+    - role: goal_target_6
+      kind: body_prefix
+      value: wooden_cabinet_1
+      color: yellow
+      exact_instance: true
+    rendered_mask_areas_px_at_320:
+      manipulated_object_1: 1116
+      goal_target_2: 1100
+      interaction_target_3: 4900
+      interaction_target_4: 708
+      manipulated_object_5: 528
+      goal_target_6: 13734

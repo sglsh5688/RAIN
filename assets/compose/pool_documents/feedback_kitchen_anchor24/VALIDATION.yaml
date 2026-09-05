@@ -1,0 +1,17 @@
+task_count: 24
+sequential_ids: true
+unique_canonical_signatures: 24
+exact_duplicates_with_original_or_existing_pools: 0
+parsed_bddl_tasks: 24
+parsed_goal_atoms: 69
+init_states_per_task: 5
+simulator_render_and_exact_mask_validation: true
+physical_groups: 3
+semantic_step_counts:
+  2: 8
+  3: 11
+  4: 5
+policy_inference_run: true
+coordinate_correction_verified: true
+evaluated_episodes_per_task: 5
+evaluation_result_root: private_evaluation_results/rain_ms_maskaug_gt_libero_compose_feedback24_5ep_gpu67_20260905

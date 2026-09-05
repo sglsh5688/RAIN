@@ -1,0 +1,13 @@
+name: COMPOSEFB_024
+language: Put the black bowl on the plate on top of the left white cabinet, then close the bottom drawer of the left white cabinet, then open the middle drawer of the right wooden cabinet, and finally put the wine bottle on top of the right wooden cabinet.
+problem: Libero
+problem_folder: tasks/composefb_024__put_the_black_bowl_on_the_plate_on_top_of_the_left_white_cabinet_then_close_the_bottom_drawer_of_the_left_white_cabinet_then_open_the_middle_drawer_of
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_10+libero_goal
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|be907a22a67925f151d32107d5041ab08e92a6e847bb0133795d27809705d8db|frozenset({close(white_cabinet_1_bottom_region),on(akita_black_bowl_1,plate_1),on(wine_bottle_1,wooden_cabinet_1_top_side),open(wooden_cabinet_1_middle_region)})

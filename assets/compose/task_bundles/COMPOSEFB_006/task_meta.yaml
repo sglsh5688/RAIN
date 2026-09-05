@@ -1,0 +1,77 @@
+task_id: COMPOSEFB_006
+task_name: Put the black bowl in the bottom drawer of the left white cabinet, then close the bottom drawer of the left white cabinet, and finally open the top drawer of the right wooden cabinet.
+language: Put the black bowl in the bottom drawer of the left white cabinet, then close the bottom drawer of the left white cabinet, and finally open the top drawer of the right wooden cabinet.
+primary_category: Composition
+composition_family: FB1_two_cabinets_goal_exact_wine
+anchor_suite: libero_10+libero_goal
+source_prior_task_ids:
+- '103'
+- '3'
+source_priors:
+- suite: libero_10
+  task_stem: KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it
+  instruction: put the black bowl in the bottom drawer of the cabinet and close it
+  bddl: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.bddl
+  init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.pruned_init
+  evidence: ''
+- suite: libero_goal
+  task_stem: open_the_top_drawer_and_put_the_bowl_inside
+  instruction: Open the top layer of the drawer and put the bowl inside
+  bddl: upstream_LIBERO/bddl_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.bddl
+  init: upstream_LIBERO/init_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the black bowl in the bottom drawer of the left white cabinet
+- Close the bottom drawer of the left white cabinet
+- Open the top drawer of the right wooden cabinet
+component_evidence:
+- The bowl-to-bottom-drawer primitive comes from LIBERO-10 Kitchen Scene 4; the left white cabinet pose and orientation are unchanged.
+- This exact drawer-opening subtrajectory is present in the cited LIBERO-40 task.
+semantic_subtask_count: 3
+action_plan_step_count: 4
+canonical_goal_atoms:
+- in(akita_black_bowl_1, white_cabinet_1_bottom_region)
+- close(white_cabinet_1_bottom_region)
+- open(wooden_cabinet_1_top_region)
+canonical_task_signature: composition|c4ca9b9b9e9b1c97b05bddb87d62abaf42f3bc40a377d93074c535f131cdac9e|frozenset({close(white_cabinet_1_bottom_region),in(akita_black_bowl_1,white_cabinet_1_bottom_region),open(wooden_cabinet_1_top_region)})
+objects_of_interest:
+- akita_black_bowl_1
+- white_cabinet_1_bottom_region
+- wooden_cabinet_1_top_region
+pure_composition: true
+requires_transition: false
+sequence_stages: []
+physical_group: feedback_kitchen4_two_cabinets_goal_exact_wine
+base_bddl_template: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- The original white cabinet stays at the LIBERO-10 Kitchen Scene 4 robot-left pose.
+- The wooden cabinet is at the exact LIBERO-Goal robot-right pose.
+- The wine bottle is at the exact LIBERO-Goal initial pose, correcting the earlier two-cabinet screen.
+- The wine rack is retained at its exact LIBERO-Goal pose as a learned-scene distractor.
+- The bowl remains at the exact Kitchen Scene 4 pose to preserve its learned left-drawer trajectory.
+compose_screen: user_feedback_two_cabinet_goal_exact_24
+feedback_parent_task: COMP_197 / COMPOSE_336 and related X11 variants
+coordinate_audit:
+  left_white_cabinet_kitchen4:
+  - -0.01
+  - 0.29
+  - 0.01
+  - 0.31
+  right_wooden_cabinet_libero_goal:
+  - 0.02
+  - -0.25
+  - 0.04
+  - -0.23
+  wine_bottle_libero_goal:
+  - -0.21000000000000002
+  - -0.060000000000000005
+  - -0.19
+  - -0.04
+  wine_rack_libero_goal:
+  - -0.27
+  - -0.27
+  - -0.25
+  - -0.25

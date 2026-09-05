@@ -20,9 +20,8 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 
 
 <!-- COMPOSE_README_START -->
-- `compose350/`: all 350 newly evaluated Compose candidates (1,750 episodes)
-- `compose_success/`: 3 successful new tasks (7 successful episodes)
-- `compose_selected20/`: final 20 successful tasks, retaining fixed `COMP2_001` and `COMP2_012`
+- `compose_success/`: all 3 successful new tasks (7 successful episodes); no final selection applied
+- `compose350/`: all 350 evaluated Compose candidates, including successes and failures (1,750 episodes)
 - Complete BDDL/init/metadata/mask/action-plan bundles are linked per task.
 - Media policy: 20 previews per JPEG sprite and one on-demand concatenated success reel per task.
 <!-- COMPOSE_README_END -->

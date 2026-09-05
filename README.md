@@ -49,3 +49,10 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - `diverse_adapt_success/`: 5 tasks with success, 16 successful episodes.
 - Shared JPEG preview sprites, one on-demand player (`preload=none`), success reels and one original-trial failure clip when a task failed.
 <!-- DIVERSE_ADAPT_README_END -->
+
+<!-- ADAPT_OBJECT_README_START -->
+- `adapt_object50/`: all 50 Adapt Object tasks (10 original Object scenes × 5 alternate targets), 250 original episodes.
+- `adapt_object_success/`: 7 tasks with success, 15 successful episodes.
+- Every candidate preserves the source physical layout and pruned init states; only language/object-of-interest/goal target changes.
+- Shared preview sprites and one on-demand `preload=none` video player avoid eager media requests.
+<!-- ADAPT_OBJECT_README_END -->

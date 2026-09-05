@@ -1,0 +1,14 @@
+name: OGDTSL_044
+language: Pick the milk and place it in the basket
+problem: Libero
+problem_folder: tasks/ogdtsl_044__salad_dressing_layout__pick_milk
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: OG-TOU-DTSL
+anchor_suite: libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+canonical_task_signature: libero_object_pick_up_the_salad_dressing_and_place_it_in_the_basket|condition=different_target_same_original_layout|goal_target=milk_1|initial_region=floor_other_object_region_3
+eval_category: Object
+source_benchmark: ObjectGroundingTargetObjectUnderstanding
+position_condition: original_distractor_only_region

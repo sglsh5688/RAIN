@@ -1,0 +1,66 @@
+{
+  "review_name": "Adapt Object",
+  "definition": "10 original LIBERO-Object scenes x 5 non-original target objects",
+  "candidate_count": 50,
+  "episodes_per_task": 5,
+  "episode_count": 250,
+  "tasks_with_success": 7,
+  "successful_episodes": 15,
+  "episode_success_rate_percent": 6.0,
+  "physical_gpus": [
+    6
+  ],
+  "seed": 7,
+  "mask_mode": "exact_simulator_gt_with_documented_fallback_audited",
+  "mask_source_counts": {
+    "sim_missing": 60,
+    "sim_seg": 15557
+  },
+  "unexpected_or_online_mask_points": 0,
+  "success_videos_decoded": 15,
+  "failure_videos": 0,
+  "candidate_inventory_sha256": "cf75fc3fab41bfb717fc082959f42249b7106279bc11124e543498ec85fc2208",
+  "benchmark_registry_sha256": "9a7855b15d7afefc2344eac732bb8c1c9cad1d4fe9ac75da985b91dd16bec145",
+  "run_config_sha256": "9c4df1c2b45bf7f4602586edab9e5eae41ac6e8347136ea039e5268adeeb0e30",
+  "aggregate_sha256": "fefd3ba5b115957d528e40b88022aa88a7366e34e62af391922512203b362eec",
+  "task_success_rates_sha256": "3c0cfb341dd8f2bf2e534470f96629b32d88f0950a8862ac8b02218758e9977e",
+  "success_videos_manifest_sha256": "15d27b947acf0e82551b647d73caeebf8906b75f44f52e97dce980997074fd9f",
+  "group_results": {
+    "all50": {
+      "tasks": 50,
+      "successes": 15,
+      "episodes": 250,
+      "success_rate_percent": 6.0,
+      "success_videos": 15
+    },
+    "seen_target_interaction_region10": {
+      "tasks": 10,
+      "successes": 15,
+      "episodes": 50,
+      "success_rate_percent": 30.0,
+      "success_videos": 15
+    },
+    "original_distractor_only_region40": {
+      "tasks": 40,
+      "successes": 0,
+      "episodes": 200,
+      "success_rate_percent": 0.0,
+      "success_videos": 0
+    },
+    "strict_no_current_source_goal_overlap41": {
+      "tasks": 41,
+      "successes": 15,
+      "episodes": 205,
+      "success_rate_percent": 7.317073170731707,
+      "success_videos": 15
+    },
+    "seen_and_strict9": {
+      "tasks": 9,
+      "successes": 15,
+      "episodes": 45,
+      "success_rate_percent": 33.33333333333333,
+      "success_videos": 15
+    }
+  },
+  "validated_at_utc": "2026-09-05T08:03:51.615659+00:00"
+}

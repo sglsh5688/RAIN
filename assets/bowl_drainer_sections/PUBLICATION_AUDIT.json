@@ -1,0 +1,43 @@
+{
+  "tasks": 10,
+  "successful_tasks": 10,
+  "episodes": 50,
+  "successes": 49,
+  "failures": 1,
+  "success_rate_percent": 98.0,
+  "episodes_with_final_drainer_contact": 0,
+  "episodes_with_final_floor_contact": 1,
+  "native_successes_with_final_drainer_contact": 0,
+  "native_successes_with_final_floor_contact": 0,
+  "native_successes_without_final_drainer_or_floor_contact": 49,
+  "native_successes_ending_at_first_selected_native_true": 49,
+  "settled_placement_validation_performed": false,
+  "task_ids": [
+    "BDRSIDE_001",
+    "BDRSIDE_002",
+    "BDRSIDE_003",
+    "BDRSIDE_004",
+    "BDRSIDE_005",
+    "BDRSIDE_006",
+    "BDRSIDE_007",
+    "BDRSIDE_008",
+    "BDRSIDE_009",
+    "BDRSIDE_010"
+  ],
+  "physical_gpus": [
+    6,
+    7
+  ],
+  "aggregate_sha256": "545213d482b4aca614e244bef8fbd4fb5430c532b09a6ca79bf00542cde18ae1",
+  "source_video_count": 50,
+  "definition": "one selected native compartment; no other compartment accepted",
+  "public_install_performed": false,
+  "one_empty_preload_none_video_player_per_page": true,
+  "one_comparison_sprite_request_per_page": true,
+  "all_original_episode_videos_included": true,
+  "every_video_faststart": true,
+  "every_video_full_decode_passed": true,
+  "native_vs_settled_placement_warning_visible": true,
+  "per_episode_contact_diagnostics_included": true,
+  "broken_links": 0
+}

@@ -1,0 +1,525 @@
+{
+  "task_id": "BDRSIDE_004",
+  "pool_count": 8,
+  "valid_count": 8,
+  "required_init_predicates": [
+    [
+      "not",
+      [
+        "in",
+        "cream_cheese_1",
+        "bowl_drainer_1_right_region"
+      ]
+    ],
+    [
+      "not",
+      [
+        "in",
+        "cream_cheese_1",
+        "bowl_drainer_1_left_region"
+      ]
+    ]
+  ],
+  "closed_drawer_initial_tolerance_m": 0.008,
+  "success_predicates_unmodified": true,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rows": [
+    {
+      "pool_index": 0,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 348,
+        "goal_target": 3547
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "cream_cheese_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      }
+    },
+    {
+      "pool_index": 1,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 352,
+        "goal_target": 3547
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "cream_cheese_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      }
+    },
+    {
+      "pool_index": 2,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 348,
+        "goal_target": 3547
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "cream_cheese_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      }
+    },
+    {
+      "pool_index": 3,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 343,
+        "goal_target": 3547
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "cream_cheese_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      }
+    },
+    {
+      "pool_index": 4,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 358,
+        "goal_target": 3547
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "cream_cheese_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      }
+    },
+    {
+      "pool_index": 5,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 348,
+        "goal_target": 3547
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "cream_cheese_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      }
+    },
+    {
+      "pool_index": 6,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 344,
+        "goal_target": 3547
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "cream_cheese_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      }
+    },
+    {
+      "pool_index": 7,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 350,
+        "goal_target": 3547
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null,
+      "drainer_sections_geometry": {
+        "passed": true,
+        "robot_side": "right",
+        "selected_native_region": "bowl_drainer_1_right_region",
+        "other_native_region": "bowl_drainer_1_left_region",
+        "target_object": "cream_cheese_1",
+        "fixture_world_position_m": [
+          0.0,
+          0.31153,
+          0.00602
+        ],
+        "selected_site_world_position_m": [
+          0.0,
+          0.25999999999999995,
+          0.07359
+        ],
+        "other_site_world_position_m": [
+          0.0,
+          0.37363999999999997,
+          0.07359
+        ],
+        "robot_root_body": "robot0_base",
+        "robot_base_world_position_m": [
+          -0.6,
+          0.0,
+          0.0
+        ],
+        "robot_forward_world_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "robot_left_world_axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "selected_goal_initially_false": true,
+        "other_goal_initially_false": true,
+        "selected_mask_pixels": 3547,
+        "other_mask_pixels": 3417,
+        "mask_xor_pixels": 5652,
+        "union_pixels_excluded": 2761,
+        "initial_drainer_object_contacts": [],
+        "success_predicate_unmodified": true,
+        "native_sites_unmodified": true
+      }
+    }
+  ],
+  "novel_fixture_height_normalization": true,
+  "single_compartment_native_goal": true,
+  "either_compartment_or_installed": false,
+  "exact_single_compartment_mask": true,
+  "all_initial_goals_checked_false": true,
+  "physical_build_gpus": [
+    6,
+    7
+  ],
+  "requested_episode_count": 5,
+  "raw_id": "RAWX_004"
+}

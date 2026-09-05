@@ -63,3 +63,10 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - `dining_set_dishware5/`: five dining-set dishware-placement tasks; 20/25 successes.
 - Includes full construction/success semantics, complete task bundles, and all 20 success plus 5 failure videos.
 <!-- DINING_SET_DISHWARE5_README_END -->
+
+
+<!-- BOWL_DRAINER_SECTIONS_README_START -->
+- `bowl_drainer_sections/`: 10 left/right compartment tasks, all 50 original episodes; 49/50 native successes.
+- `bowl_drainer_sections_success/`: 49 native-success videos, masked comparisons and contact diagnostics.
+- Native `In` entry terminates these episodes; stable landing/settled placement is **not validated**.
+<!-- BOWL_DRAINER_SECTIONS_README_END -->

@@ -1,0 +1,78 @@
+task_id: BDRSIDE_002
+task_name: Pick the alphabet soup and place it in the right compartment of the bowl drainer.
+language: Pick the alphabet soup and place it in the right compartment of the bowl drainer.
+primary_category: Adapt
+anchor_suite: libero_object
+source_prior_task_ids:
+- 1
+source_prior_task_stem: pick_up_the_alphabet_soup_and_place_it_in_the_basket
+source_prior_description: Pick the alphabet soup and place it in the basket
+canonical_goal_atoms:
+- in(alphabet_soup_1, bowl_drainer_1_right_region)
+canonical_task_signature: adapt|F1_object_to_right_bowl_drainer_compartment|object_01_alphabet_soup_drainer_right|in(alphabet_soup_1, bowl_drainer_1_right_region)
+objects_of_interest:
+- alphabet_soup_1
+- bowl_drainer_1_right_region
+held_fixed:
+- all original pickup/distractor regions and identities
+- native drainer yaw and geometry
+- selected destination center equals learned basket center (0, 0.26)
+- one native In goal
+varied:
+- target only the robot-right native compartment
+- translate drainer root to (0.0, 0.31153)
+single_semantic_goal: true
+physical_group: object_01_alphabet_soup_drainer_right
+base_bddl_template: local_sources/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl
+base_pruned_init: local_sources/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init
+definition_status: defined_simulator_validated_pending_5ep_eval
+notes:
+- 'Prior either-compartment task: BDRAIN_001.'
+- Left/right are robot-relative (+Y/-Y with unchanged native yaw 0), not camera left/right.
+- Wrong compartment and divider are not accepted. No union mask or OR success adapter.
+- Drainer translation is computed from native site centers before inference; no outcome-based pose tuning.
+- Set the drainer collision bottom on the real physical floor plane z=0, not LIBERO's logical floor_offset=-0.035.
+- No installed mesh, collision geometry, native site or native success predicate is edited.
+adapt_family: F1_object_to_right_bowl_drainer_compartment
+adapt_scope: bowl_drainer_dedicated_compartment_transfer
+transfer_summary: Align the robot-right compartment with the learned basket destination; mask and score only that compartment.
+provenance_evidence:
+- task_id: LIBERO_OBJECT_01
+  role: OBJECT PICK-PLACE AND SCENE SOURCE
+  reason: original alphabet soup pickup and receptacle-placement trajectory
+critical_objects:
+- alphabet_soup_1
+- salad_dressing_1
+- cream_cheese_1
+- milk_1
+- tomato_sauce_1
+- butter_1
+required_init_predicates:
+- - not
+  - - in
+    - alphabet_soup_1
+    - bowl_drainer_1_right_region
+- - not
+  - - in
+    - alphabet_soup_1
+    - bowl_drainer_1_left_region
+selected_compartment: right
+requested_robot_side: right
+selected_native_region: bowl_drainer_1_right_region
+target_object: alphabet_soup_1
+single_compartment_success: true
+either_compartment_success: false
+accepted_native_regions:
+- bowl_drainer_1_right_region
+divider_region_accepted: false
+drainer_root_xy:
+- 0.0
+- 0.31153
+learned_destination_xy:
+- 0.0
+- 0.26
+physical_floor_support_correction: true
+expected_drainer_root_z: 0.00602
+semantic_subtask_count: 1
+max_steps: 520
+comparison_reference: original LIBERO / prior either-compartment / selected-compartment task

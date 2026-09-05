@@ -1,0 +1,1007 @@
+{
+  "caution": "Native selected-In success is not verified settled placement; no post-success settling rollout.",
+  "summary": {
+    "episodes_with_final_drainer_contact": 0,
+    "episodes_with_final_floor_contact": 1,
+    "native_successes_with_final_drainer_contact": 0,
+    "native_successes_with_final_floor_contact": 0,
+    "native_successes_without_final_drainer_or_floor_contact": 49,
+    "native_successes_ending_at_first_selected_native_true": 49,
+    "settled_placement_validation_performed": false
+  },
+  "episodes": [
+    {
+      "task_id": "BDRSIDE_001",
+      "episode_idx": 0,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 161,
+      "selected_native_first_true_step": 161,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        -0.030260616509220645,
+        0.2468781965608238,
+        0.12764246252471206
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_001",
+      "episode_idx": 1,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 160,
+      "selected_native_first_true_step": 160,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.01251569052916812,
+        0.26618575145109874,
+        0.098426853566657
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_001",
+      "episode_idx": 2,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 167,
+      "selected_native_first_true_step": 167,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        -0.004613119137205518,
+        0.2635640884937999,
+        0.11692623949219481
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_001",
+      "episode_idx": 3,
+      "native_success": false,
+      "final_drainer_contact": false,
+      "final_floor_contact": true,
+      "termination_reason": "",
+      "total_steps": 520,
+      "selected_native_first_true_step": null,
+      "ended_at_first_selected_native_true": false,
+      "target_world_position_m": [
+        -0.056524713063863516,
+        0.023751674162638275,
+        0.03839291037244392
+      ],
+      "final_contacts": [
+        {
+          "other_geom_id": 6,
+          "other_geom_name": "floor",
+          "drainer": false,
+          "floor": true,
+          "distance_m": -3.2572721253218417e-06
+        },
+        {
+          "other_geom_id": 6,
+          "other_geom_name": "floor",
+          "drainer": false,
+          "floor": true,
+          "distance_m": -1.2457362317898346e-05
+        },
+        {
+          "other_geom_id": 6,
+          "other_geom_name": "floor",
+          "drainer": false,
+          "floor": true,
+          "distance_m": -2.0918335901655427e-05
+        },
+        {
+          "other_geom_id": 6,
+          "other_geom_name": "floor",
+          "drainer": false,
+          "floor": true,
+          "distance_m": -1.0513183833792128e-05
+        },
+        {
+          "other_geom_id": 6,
+          "other_geom_name": "floor",
+          "drainer": false,
+          "floor": true,
+          "distance_m": -4.237616464050631e-07
+        },
+        {
+          "other_geom_id": 6,
+          "other_geom_name": "floor",
+          "drainer": false,
+          "floor": true,
+          "distance_m": -1.0519109480314204e-05
+        }
+      ],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_001",
+      "episode_idx": 4,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 172,
+      "selected_native_first_true_step": 172,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        -0.00953152463905693,
+        0.2615863430176672,
+        0.13022848668162298
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_002",
+      "episode_idx": 0,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 194,
+      "selected_native_first_true_step": 194,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        -0.0228296544104266,
+        0.28142464094454056,
+        0.07219350533766059
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_002",
+      "episode_idx": 1,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 189,
+      "selected_native_first_true_step": 189,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        -0.0049408537466995445,
+        0.27656831683830674,
+        0.12720792577712717
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_002",
+      "episode_idx": 2,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 195,
+      "selected_native_first_true_step": 195,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        -0.018002369070762324,
+        0.2601587809597027,
+        0.11468639990039356
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_002",
+      "episode_idx": 3,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 164,
+      "selected_native_first_true_step": 164,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        -0.0104699627257069,
+        0.2616635013214906,
+        0.1038771386127458
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_002",
+      "episode_idx": 4,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 162,
+      "selected_native_first_true_step": 162,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        -0.018639042876034188,
+        0.2785399452435278,
+        0.10705132970285172
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_003",
+      "episode_idx": 0,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 186,
+      "selected_native_first_true_step": 186,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.024174993584185803,
+        0.23671286660171503,
+        0.0821526508605025
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_003",
+      "episode_idx": 1,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 151,
+      "selected_native_first_true_step": 151,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.01504646810902476,
+        0.23941447763881885,
+        0.11481498495644034
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_003",
+      "episode_idx": 2,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 155,
+      "selected_native_first_true_step": 155,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.022343142522652168,
+        0.23844499407068626,
+        0.10400206970652763
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_003",
+      "episode_idx": 3,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 149,
+      "selected_native_first_true_step": 149,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.009516213124208242,
+        0.23686619429925346,
+        0.10911728427835432
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_003",
+      "episode_idx": 4,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 159,
+      "selected_native_first_true_step": 159,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.02495968474817055,
+        0.23618587691245269,
+        0.11681319015070149
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_004",
+      "episode_idx": 0,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 152,
+      "selected_native_first_true_step": 152,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.0033589502598804846,
+        0.2810544652959028,
+        0.12541771605510393
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_004",
+      "episode_idx": 1,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 154,
+      "selected_native_first_true_step": 154,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.006949722841437183,
+        0.2789719061366501,
+        0.11841834055279682
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_004",
+      "episode_idx": 2,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 148,
+      "selected_native_first_true_step": 148,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.008341601816888486,
+        0.27724245635228634,
+        0.1140846333925145
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_004",
+      "episode_idx": 3,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 155,
+      "selected_native_first_true_step": 155,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.0010592830044344793,
+        0.28081321233453305,
+        0.1294512565800736
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_004",
+      "episode_idx": 4,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 153,
+      "selected_native_first_true_step": 153,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        -0.0072772316872598145,
+        0.285769201656893,
+        0.12222993781550798
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_005",
+      "episode_idx": 0,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 149,
+      "selected_native_first_true_step": 149,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.0012773692198947372,
+        0.2629123350252394,
+        0.09244160041189373
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_005",
+      "episode_idx": 1,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 170,
+      "selected_native_first_true_step": 170,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.015996343852985262,
+        0.26177553526086056,
+        0.10167676275274304
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_005",
+      "episode_idx": 2,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 179,
+      "selected_native_first_true_step": 179,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.01697785589035835,
+        0.2600251974582947,
+        0.11811977599072561
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_005",
+      "episode_idx": 3,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 148,
+      "selected_native_first_true_step": 148,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.00835677045951768,
+        0.261944372221924,
+        0.09296398604632432
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_005",
+      "episode_idx": 4,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 166,
+      "selected_native_first_true_step": 166,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.015118613240409286,
+        0.24607635974406944,
+        0.11894008538350767
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_006",
+      "episode_idx": 0,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 153,
+      "selected_native_first_true_step": 153,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.009654462980372844,
+        0.2729781853982962,
+        0.08478891699596612
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_006",
+      "episode_idx": 1,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 184,
+      "selected_native_first_true_step": 184,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        -0.0028276258296328132,
+        0.26410324936636187,
+        0.10033749930241632
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_006",
+      "episode_idx": 2,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 198,
+      "selected_native_first_true_step": 198,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        -0.011570956549581181,
+        0.2690096219637904,
+        0.11232040420814396
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_006",
+      "episode_idx": 3,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 185,
+      "selected_native_first_true_step": 185,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.003949410611278564,
+        0.26870879737050973,
+        0.09556620260792358
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_006",
+      "episode_idx": 4,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 153,
+      "selected_native_first_true_step": 153,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.00438367792187057,
+        0.27014628408901026,
+        0.0769086975945963
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_007",
+      "episode_idx": 0,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 169,
+      "selected_native_first_true_step": 169,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.00534768014260721,
+        0.23132584754709964,
+        0.08673837028938008
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_007",
+      "episode_idx": 1,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 178,
+      "selected_native_first_true_step": 178,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.023635767217002727,
+        0.23351744292667576,
+        0.11876142677964402
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_007",
+      "episode_idx": 2,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 171,
+      "selected_native_first_true_step": 171,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.005279747468312593,
+        0.233925689521426,
+        0.09216708796786958
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_007",
+      "episode_idx": 3,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 185,
+      "selected_native_first_true_step": 185,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.014318854745876916,
+        0.23041001324589047,
+        0.11920899496215126
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_007",
+      "episode_idx": 4,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 169,
+      "selected_native_first_true_step": 169,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.011030977174077522,
+        0.23933394152124232,
+        0.1285498076779581
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_008",
+      "episode_idx": 0,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 214,
+      "selected_native_first_true_step": 214,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.013173188920700466,
+        0.2944221557523293,
+        0.1305955734857652
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_008",
+      "episode_idx": 1,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 203,
+      "selected_native_first_true_step": 203,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.0063538656508649385,
+        0.29194116257031394,
+        0.12210472925135048
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_008",
+      "episode_idx": 2,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 178,
+      "selected_native_first_true_step": 178,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.021698487327924763,
+        0.2896300122225107,
+        0.09979980430069904
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_008",
+      "episode_idx": 3,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 177,
+      "selected_native_first_true_step": 177,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        -0.017022198034547777,
+        0.2939570830667434,
+        0.13155026123021682
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_008",
+      "episode_idx": 4,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 252,
+      "selected_native_first_true_step": 252,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.0046063839862554214,
+        0.2939670820760172,
+        0.1298921816451367
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_009",
+      "episode_idx": 0,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 169,
+      "selected_native_first_true_step": 169,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.012991283970464026,
+        0.2451783498580759,
+        0.10657404750235504
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_009",
+      "episode_idx": 1,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 160,
+      "selected_native_first_true_step": 160,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.012747605009085661,
+        0.23864861834807813,
+        0.12929998539493545
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_009",
+      "episode_idx": 2,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 171,
+      "selected_native_first_true_step": 171,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.00824478187437693,
+        0.23947500299383456,
+        0.12403982870998244
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_009",
+      "episode_idx": 3,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 168,
+      "selected_native_first_true_step": 168,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.007819054791220156,
+        0.2445918186710795,
+        0.08428121454241184
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_009",
+      "episode_idx": 4,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 167,
+      "selected_native_first_true_step": 167,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.016510122581400492,
+        0.24828195239369402,
+        0.0827247498087117
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_010",
+      "episode_idx": 0,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 168,
+      "selected_native_first_true_step": 168,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.01593819672886164,
+        0.2792668197317631,
+        0.10134207667691025
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_010",
+      "episode_idx": 1,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 172,
+      "selected_native_first_true_step": 172,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.004089565222206449,
+        0.2840884346171086,
+        0.08641774661027474
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_010",
+      "episode_idx": 2,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 176,
+      "selected_native_first_true_step": 176,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.01602070271996038,
+        0.2861251769360538,
+        0.08716932474312979
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_010",
+      "episode_idx": 3,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 177,
+      "selected_native_first_true_step": 177,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.0064898916523027156,
+        0.28246744505506477,
+        0.09113488536762017
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    },
+    {
+      "task_id": "BDRSIDE_010",
+      "episode_idx": 4,
+      "native_success": true,
+      "final_drainer_contact": false,
+      "final_floor_contact": false,
+      "termination_reason": "env_success",
+      "total_steps": 168,
+      "selected_native_first_true_step": 168,
+      "ended_at_first_selected_native_true": true,
+      "target_world_position_m": [
+        0.011192323902424885,
+        0.283446764177452,
+        0.07881053478691348
+      ],
+      "final_contacts": [],
+      "settled_placement_validated": false,
+      "settled_placement_status": "not measured; no post-success settling rollout"
+    }
+  ]
+}

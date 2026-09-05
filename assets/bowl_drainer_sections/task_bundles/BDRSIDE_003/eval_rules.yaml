@@ -1,0 +1,11 @@
+task_id: BDRSIDE_003
+category: Adapt
+required_goal_atoms:
+- in(cream_cheese_1, bowl_drainer_1_left_region)
+forbidden_goal_atoms: []
+order_sensitive: false
+continue_after_success: false
+requires_transition: false
+custom_eval_needed: false
+single_compartment_success: true
+either_compartment_success: false

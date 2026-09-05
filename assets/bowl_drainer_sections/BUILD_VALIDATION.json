@@ -1,0 +1,15 @@
+{
+  "raw_count": 10,
+  "accepted": 10,
+  "rejected": 0,
+  "families": {
+    "F1_object_to_left_bowl_drainer_compartment": 5,
+    "F1_object_to_right_bowl_drainer_compartment": 5
+  },
+  "original_definition_count": 0,
+  "prior_unique_definition_count": 719,
+  "exact_duplicate_count": 0,
+  "states_per_task": 5,
+  "initial_goal_false": true,
+  "all_saved_state_masks_visible": true
+}

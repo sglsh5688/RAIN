@@ -1,0 +1,19 @@
+{
+  "raw_count": 48,
+  "accepted": 45,
+  "rejected": 3,
+  "families": {
+    "D1_relocated_drawer_control": 8,
+    "D2_non_table_pickup": 7,
+    "D3_moved_relative_placement": 6,
+    "D4_reference_relative_push": 8,
+    "D5_imported_receptacle": 8,
+    "D6_repeated_fixture_selection": 8
+  },
+  "original_definition_count": 40,
+  "prior_unique_definition_count": 727,
+  "exact_duplicate_count": 0,
+  "states_per_task": 5,
+  "initial_goal_false": true,
+  "all_saved_state_masks_visible": true
+}

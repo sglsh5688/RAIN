@@ -7,9 +7,6 @@
 Open `index.html`, or enable GitHub Pages for this repository root.
 
 - `original40/`: all 40 original tasks with exact simulator interaction masks
-- `decomposition20/`: finalized 20-task Decomposition review
-- `analogy185/`: all 195 evaluated Analogy trials (legacy URL retained), including 10 LIBERO-EX object position swaps
-- `analogy_success70/`: the 76 Analogy tasks with at least one success (legacy URL retained)
 
 - `composition439/`: all 439 evaluated Composition trials
 - `composition_success/`: 4 Composition tasks with at least one success
@@ -24,7 +21,6 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 
 
 <!-- ADAPT_CROSS_README_START -->
-- `adapt_cross74/`: all 74 cross-suite Adapt candidates (370 episodes)
 - `adapt_cross_success/`: 46 candidates with success (158 successful episodes)
 - Media: shared preview sprites, `preload=none`, and one on-demand concatenated reel per task.
 <!-- ADAPT_CROSS_README_END -->
@@ -55,7 +51,3 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - `novel_adapt_feedback_success/`: 11 tasks with success, 34 successful episodes.
 - Shared JPEG preview sprites, one on-demand player (`preload=none`), success reels and one original-trial failure clip when a task failed.
 <!-- NOVEL_ADAPT_FEEDBACK_README_END -->
-
-<!-- NAF_REVISIONS_README_START -->
-- `naf_revisions/`: four NAF revision tasks on one page; five original trials/task, all successes, and one representative original failure when available.
-<!-- NAF_REVISIONS_README_END -->

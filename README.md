@@ -22,15 +22,12 @@ Comparison previews use shared sprite sheets to stay below Anonymous GitHub's 35
 
 No checkpoints are included. Stove turn actions use knob-only GT masks.
 
-
 <!-- COMPOSE_README_START -->
 - `compose_success/`: all 4 successful tasks (11 successful episodes); no final selection applied
 - `compose350/`: all 398 evaluated Compose candidates, including successes and failures (1,990 episodes)
 - Complete BDDL/init/metadata/mask/action-plan bundles are linked per task.
 - Media policy: 20 previews per JPEG sprite and one on-demand concatenated success reel per task.
 <!-- COMPOSE_README_END -->
-
-
 
 <!-- ADAPT_CROSS_README_START -->
 - `adapt_cross74/`: all 74 cross-suite Adapt candidates (370 episodes)
@@ -43,12 +40,6 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - `adapt_success/`: Adapt candidates with at least one success, excluding selected tasks (42 tasks, 125 successful episodes)
 - Adapt media policy: 20 previews per JPEG sprite, one on-demand video player, and one concatenated success reel per task; `preload=none` prevents eager video requests.
 <!-- ADAPT_README_END -->
-
-<!-- DIVERSE_ADAPT_README_START -->
-- `diverse_adapt_all/`: all 45 Diverse Adapt tasks, including zero-success tasks; five original trials per task.
-- `diverse_adapt_success/`: 5 tasks with success, 16 successful episodes.
-- Shared JPEG preview sprites, one on-demand player (`preload=none`), success reels and one original-trial failure clip when a task failed.
-<!-- DIVERSE_ADAPT_README_END -->
 
 <!-- ADAPT_OBJECT_README_START -->
 - `adapt_object50/`: all 50 Adapt Object tasks (10 original Object scenes × 5 alternate targets), 250 original episodes.

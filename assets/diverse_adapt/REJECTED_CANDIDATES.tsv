@@ -1,4 +1,0 @@
-raw_id	family	instruction	reason
-RAWX_011	D2_non_table_pickup	Put the black bowl from the bottom drawer on the plate.	runtime init/visibility gate failed; see benchmark_sources/LiberoDiverseAdapt/_build/RAWX_011.log
-RAWX_017	D3_moved_relative_placement	Put the chocolate pudding to the right of the plate.	runtime init/visibility gate failed; see benchmark_sources/LiberoDiverseAdapt/_build/RAWX_017.log
-RAWX_018	D3_moved_relative_placement	Put the butter to the right of the plate.	runtime init/visibility gate failed; see benchmark_sources/LiberoDiverseAdapt/_build/RAWX_018.log

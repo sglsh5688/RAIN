@@ -1,0 +1,9 @@
+task_id: ANLGX_089
+category: Analogy
+required_goal_atoms:
+- on(wine_bottle_1, plate_1)
+forbidden_goal_atoms: []
+order_sensitive: false
+continue_after_success: false
+requires_transition: false
+custom_eval_needed: false

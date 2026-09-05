@@ -1,0 +1,9 @@
+task_id: ANLGX_023
+category: Analogy
+required_goal_atoms:
+- close(white_cabinet_1_middle_region)
+forbidden_goal_atoms: []
+order_sensitive: false
+continue_after_success: false
+requires_transition: false
+custom_eval_needed: false

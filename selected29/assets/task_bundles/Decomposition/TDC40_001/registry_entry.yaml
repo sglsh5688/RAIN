@@ -1,0 +1,13 @@
+name: TDC40_001
+language: Turn on the stove.
+problem: Libero
+problem_folder: tasks/tdc40_001__turn_on_the_stove
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: TD
+anchor_suite: libero_10
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+canonical_task_signature: libero_10_kitchen_scene3|frozenset({turnon(flat_stove_1)})
+eval_category: Decomposition
+source_benchmark: LIBERO40DecompositionScreen

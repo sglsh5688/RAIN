@@ -1,0 +1,30 @@
+task_id: ANLGX_147
+task_name: Put the cream cheese in the top drawer of the wooden cabinet.
+language: Put the cream cheese in the top drawer of the wooden cabinet.
+primary_category: Analogy
+analogy_family: G6_goal_object_to_sibling_drawer
+anchor_suite: libero_goal
+source_prior_task_ids:
+- 4
+source_prior_task_stem: open_the_top_drawer_and_put_the_bowl_inside
+source_prior_description: Open the top layer of the drawer and put the bowl inside
+canonical_goal_atoms:
+- in(cream_cheese_1, wooden_cabinet_1_top_region)
+canonical_task_signature: analogy|G6_goal_object_to_sibling_drawer|goal_drawer_insert_top_cream_cheese|in(cream_cheese_1, wooden_cabinet_1_top_region)
+objects_of_interest:
+- cream_cheese_1
+- wooden_cabinet_1_top_region
+held_fixed:
+- wooden cabinet pose
+- drawer initialized open
+- single In predicate
+varied:
+- replace the bowl with cream cheese
+- transfer top-drawer insertion to top
+single_semantic_goal: true
+physical_group: goal_drawer_insert_top_cream_cheese
+base_bddl_template: upstream_LIBERO/bddl_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_goal/open_the_top_drawer_and_put_the_bowl_inside.pruned_init
+definition_status: defined_not_evaluated
+notes:
+- 'Training evidence: direct cream-cheese grasp in original Goal and LIBERO-Object tasks.'

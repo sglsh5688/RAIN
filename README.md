@@ -1,5 +1,10 @@
 # LIBERO-EX anonymous task review
 
+
+<!-- SELECTED29_README_START -->
+- `selected29/`: **Selected Tasks — 20 Decomposition + 9 Adapt**; category filters, recorded SR, masked comparisons, success reels and downloadable definitions.
+<!-- SELECTED29_README_END -->
+
 Open `index.html`, or enable GitHub Pages for this repository root.
 
 - `original40/`: all 40 original tasks with exact simulator interaction masks

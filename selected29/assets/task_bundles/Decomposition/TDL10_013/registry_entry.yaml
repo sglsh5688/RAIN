@@ -1,0 +1,13 @@
+name: TDL10_013
+language: Put the cream cheese box in the basket.
+problem: Libero
+problem_folder: Task/tdl10_013__put_the_cream_cheese_box_in_the_basket
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: TD
+anchor_suite: libero_10
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+canonical_task_signature: libero_10_living_room_scene2|frozenset({in(cream_cheese_1, basket_1_contain_region)})
+eval_category: Task
+source_benchmark: TaskDecomposition

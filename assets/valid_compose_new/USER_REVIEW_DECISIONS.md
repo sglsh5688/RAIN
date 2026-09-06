@@ -9,6 +9,7 @@ This file records the semantic-quality review separately from strict evaluator s
 | VCN8_008 | Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet. | 4/5 | Retain as the stronger replacement for the COMP2_001 pattern. |
 | VCN9_010 | Put the cream cheese on the stove, then turn on the stove. | 4/5 | Retain. |
 | VCN10_001 | Put the cream cheese on the stove, then push the plate to the front of the stove. | 2/5 | Retain. |
+| VCN19_020 | Open the top drawer of the wooden cabinet, then put the ramekin on the plate. | 1/5 | Retain after explicit user selection; ep000 was manually verified as a deliberate top-drawer open followed by the requested ramekin placement. |
 
 ## Rejected candidates
 

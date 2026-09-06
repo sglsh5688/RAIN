@@ -1,14 +1,15 @@
 {
   "schema": "batch19_assistant_manual_video_review_v1",
-  "scope": "pending_user_review_only_not_final_selection",
+  "scope": "manual_video_review_and_user_selection_record",
   "reviewed_at_utc": "2026-09-06T02:43:30Z",
   "tasks": {
     "VCN19_020": {
       "approved_success_episode_indices": [
         0
       ],
-      "status": "visual_sequence_pass_pending_user_decision",
-      "notes": "The gripper deliberately opens the top drawer, then picks the exact ramekin from the cookies box and places it on the plate. No accidental sibling-drawer interaction was observed."
+      "status": "visual_sequence_pass_and_explicitly_user_selected",
+      "user_selected_at_utc": "2026-09-06",
+      "notes": "The gripper deliberately opens the top drawer, then picks the exact ramekin from the cookies box and places it on the plate. No accidental sibling-drawer interaction was observed. The user explicitly instructed that VCN19_020 be added directly to Selected Compose."
     }
   }
 }

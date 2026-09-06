@@ -1,10 +1,11 @@
 {
   "review_date": "2026-09-06",
-  "scope": "valid_compose_new strict-success reviewer pool through Batch14A",
+  "scope": "valid_compose_new strict-success reviewer pool through Batch19",
   "accepted_ids": [
     "VCN8_008",
     "VCN9_010",
-    "VCN10_001"
+    "VCN10_001",
+    "VCN19_020"
   ],
   "rejected_ids": [
     "VCN1_006",

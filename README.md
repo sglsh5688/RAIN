@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 17 Adapt + 13 Compose (50 total)**; historical RAIN records, a separate official π0.5 LIBERO-40 5-episode evaluation, representative success/failure videos, masked comparisons and downloadable definitions.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 17 Adapt + 14 Compose (51 total)**; historical RAIN records, a separate official π0.5 LIBERO-40 5-episode evaluation, representative success/failure videos, masked comparisons and downloadable definitions.
 <!-- SELECTED29_README_END -->
 
 Open `index.html`, or enable GitHub Pages for this repository root.
@@ -74,11 +74,13 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - [Composition: strict-success episodes only](bowl_drainer_compose_success/index.html)
 <!-- BOWL_DRAINER_COMPOSE_README_END -->
 
+
+
 <!-- VALID_COMPOSE_NEW_README_START -->
-- `valid_compose_new/`: 3 fresh strict-success Compose candidates, 10 successful episodes.
+- `valid_compose_new/`: 4 fresh strict-success Compose candidates, 11 successful episodes.
 - Each card links the masked comparison, complete public task bundle, and one on-demand reel containing all success episodes.
 <!-- VALID_COMPOSE_NEW_README_END -->
 
 <!-- BATCH19_PENDING_README_START -->
-- `valid_compose_new_batch19_review/`: 1 manually inspected Batch19 pending-review task(s), 1 strict-success episode(s); not final-selected.
+- `valid_compose_new_batch19_review/`: 1 manually inspected Batch19 reviewed task(s), 1 strict-success episode(s); `VCN19_020` is final-selected.
 <!-- BATCH19_PENDING_README_END -->

@@ -1,7 +1,7 @@
 {
   "decision_date": "2026-09-06",
-  "selected_total": 50,
-  "compose_total": 13,
+  "selected_total": 51,
+  "compose_total": 14,
   "removed": [
     "COMP2_001"
   ],
@@ -12,18 +12,21 @@
   },
   "additions": [
     "VCN9_010",
-    "VCN10_001"
+    "VCN10_001",
+    "VCN19_020"
   ],
   "accepted_ids": [
     "VCN8_008",
     "VCN9_010",
-    "VCN10_001"
+    "VCN10_001",
+    "VCN19_020"
   ],
-  "accepted_decision_sha256": "2a78f9baf28c4a0636b66ebbc5368cf6093537f6c20c678d564b262d9c12f9ca",
-  "batch19_or_other_pending_included": false,
+  "accepted_decision_sha256": "78ad9e525153d290f6c3b4c6d48c19ac8c93d3349e17569b71ae24af1701404a",
+  "batch19_or_other_pending_included": true,
   "pi05_pending_ids": [
     "VCN8_008",
     "VCN9_010",
-    "VCN10_001"
+    "VCN10_001",
+    "VCN19_020"
   ]
 }

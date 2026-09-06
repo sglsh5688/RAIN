@@ -1,8 +1,8 @@
 # Selected LIBERO-EX tasks
 
-Selection updated 2026-09-06. 20 Decomposition + 17 Adapt + 13 Compose (50 total). The confirmed Compose IDs are VCN8_008, VCN9_010, VCN10_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001, BDRCOMP_021.
+Selection updated 2026-09-06. 20 Decomposition + 17 Adapt + 14 Compose (51 total). The confirmed Compose IDs are VCN8_008, VCN9_010, VCN10_001, VCN19_020, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001, BDRCOMP_021.
 
-A separate π0.5 evaluation was previously run with the official `pi05_libero` checkpoint fine-tuned on LIBERO-40. Of the current selection, 47/50 tasks retain exactly 5 evaluated episodes (235 total), with 58 successful episodes (24.7%) and 16/47 evaluated tasks succeeding at least once. VCN8_008, VCN9_010, and VCN10_001 were selected after that run and are explicitly marked not evaluated; no π0.5 result is inferred from their RAIN records. COMP2_001's old π0.5 record remains frozen in the source ledger but is retired from this page. See [`pi05_results.tsv`](pi05_results.tsv), [`pi05_episodes.tsv`](pi05_episodes.tsv), and [`pi05_evaluation.json`](pi05_evaluation.json).
+A separate π0.5 evaluation was previously run with the official `pi05_libero` checkpoint fine-tuned on LIBERO-40. Of the current selection, 47/51 tasks retain exactly 5 evaluated episodes (235 total), with 58 successful episodes (24.7%) and 16/47 evaluated tasks succeeding at least once. VCN8_008, VCN9_010, VCN10_001, VCN19_020 were selected after that run and are explicitly marked not evaluated; no π0.5 result is inferred from their RAIN records. COMP2_001's old π0.5 record remains frozen in the source ledger but is retired from this page. See [`pi05_results.tsv`](pi05_results.tsv), [`pi05_episodes.tsv`](pi05_episodes.tsv), and [`pi05_evaluation.json`](pi05_evaluation.json).
 
 Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. OGDTSL_011 and OGDTSL_046 retain their original Adapt Object five-episode evaluations. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt.
 
@@ -14,7 +14,7 @@ BDRSWAP_001 is selected as Adapt with its frozen native `In` 5/5 record; that hi
 
 Compose retains each selected Composition2Step, Compose-350, Long Basket/Cup Mix, MKDC, bowl-drainer, or accepted VCN task definition, five-episode RAIN evaluation, masked comparison and saved success videos. The user's COM2_027 shorthand was explicitly confirmed to mean COMP2_027.
 
-COMP2_001 is removed and replaced by VCN8_008 because both exercise the same placement→middle-drawer-open pattern, while VCN8_008 has the stronger RAIN result: 4/5 (80%) rather than 2/5 (40%). User-accepted VCN9_010 is added at 4/5 (80%) and VCN10_001 at 2/5 (40%). Only the three IDs in `USER_REVIEW_DECISIONS.accepted_ids` are included; new Batch19 and all other pending VCN candidates are excluded.
+COMP2_001 is removed and replaced by VCN8_008 because both exercise the same placement→middle-drawer-open pattern, while VCN8_008 has the stronger RAIN result: 4/5 (80%) rather than 2/5 (40%). User-accepted VCN9_010 is added at 4/5 (80%), VCN10_001 at 2/5 (40%), and VCN19_020 at 1/5 (20%). VCN19_020 ep000 was manually verified as a deliberate top-drawer open followed by ramekin-to-plate placement. Only IDs in `USER_REVIEW_DECISIONS.accepted_ids` are included; every other Batch19 candidate remains excluded.
 
 MKDC_001 is added as Compose using its historical RAIN goal/order-stop five-episode rerun: 4/5 (80%), saved successful episodes 000, 001, 003, 004. Every RAIN success stops exactly on the final goal step, without TC gating final termination; intermediate subtask switching remains TC>0.7 twice. The original pot/stove/cabinet root poses are preserved; the bottom drawer starts 7cm open for clearance and the inactive second moka pot is removed. The earlier long videos and failed ep002 are excluded from that historical record. The new π0.5 result is reported only in its separate column.
 
@@ -76,6 +76,7 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 | VCN8_008 | VCN8_008 | Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet. | 4/5 (80%) | Not evaluated | — |
 | VCN9_010 | VCN9_010 | Put the cream cheese on the stove, then turn on the stove. | 4/5 (80%) | Not evaluated | — |
 | VCN10_001 | VCN10_001 | Put the cream cheese on the stove, then push the plate to the front of the stove. | 2/5 (40%) | Not evaluated | — |
+| VCN19_020 | VCN19_020 | Open the top drawer of the wooden cabinet, then put the ramekin on the plate. | 1/5 (20%) | Not evaluated | — |
 | COMP2_012 | COMP2_012 | Put the butter in the basket, and then put the tomato sauce in the basket. | 5/5 (100.0%) | 0/5 (0%) | — |
 | COMP2_032 | COMP2_032 | Push the plate to the front of the stove, and then open the middle drawer of the cabinet. | 1/5 (20.0%) | 0/5 (0%) | — |
 | COMP2_222 | COMP2_222 | Put the alphabet soup in the basket, and then put the tomato sauce in the basket. | 1/5 (20.0%) | 0/5 (0%) | — |

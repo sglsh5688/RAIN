@@ -1,0 +1,50 @@
+{
+  "review_date": "2026-09-06",
+  "scope": "valid_compose_new strict-success reviewer pool through Batch14A",
+  "accepted_ids": [
+    "VCN8_008",
+    "VCN9_010",
+    "VCN10_001"
+  ],
+  "rejected_ids": [
+    "VCN1_006",
+    "VCN1_010",
+    "VCN1_014",
+    "VCN3_001",
+    "VCN3_003",
+    "VCN5_003",
+    "VCN6_002",
+    "VCN6_003",
+    "VCN6_004",
+    "VCN6_005",
+    "VCN8_007",
+    "VCN8_009",
+    "VCN8_010",
+    "VCN8_012",
+    "VCN9_011",
+    "VCN10_003",
+    "VCN11_004",
+    "VCN11_005",
+    "VCN11_006",
+    "VCN11_009",
+    "VCN11_010",
+    "VCN11_012",
+    "VCN11_015",
+    "VCN13_001",
+    "VCN13_002",
+    "VCN13_003",
+    "VCN13_010",
+    "VCN14A_005",
+    "VCN14A_006",
+    "VCN14A_008",
+    "VCN14A_009",
+    "VCN14A_010"
+  ],
+  "rules": {
+    "intentional_articulation": "A requested drawer close must be a deliberate interaction with that drawer. Contact with another drawer that incidentally closes the requested drawer is invalid.",
+    "close_initialization": "Every requested drawer-close target must start fully open, comfortably beyond the native open threshold; dead-band or slightly-open initialization is prohibited.",
+    "semantic_redundancy": "Keep the strongest representative of one pattern and reject weaker object substitutions or copies of LIBERO-10 patterns.",
+    "final_compose_tc_gate": false,
+    "gripper_trajectory": "soft_prior_not_exclusion"
+  }
+}

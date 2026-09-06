@@ -76,6 +76,17 @@
       "evaluator_sha256": "e5d9be4b6849b8e51d8d3eee33f9644c61eea73dc6d84bbe80fde59f78700cc4",
       "selected_tsv_sha256": "9042f55bfd69d798c408ff354a16b2348f2abcdeec7847f1b93677c2a264aeb1",
       "note": "Later concurrently selected bowl-drainer tasks; BDRCOMP_021 uses its strict released/support/order observer."
+    },
+    {
+      "task_count": 1,
+      "task_ids": [
+        "ANLGX_023"
+      ],
+      "evaluator_sha256": "e5d9be4b6849b8e51d8d3eee33f9644c61eea73dc6d84bbe80fde59f78700cc4",
+      "selected_tsv_sha256": "9042f55bfd69d798c408ff354a16b2348f2abcdeec7847f1b93677c2a264aeb1",
+      "eval_rule_sha256": "f42e65ad32292140e131fd085444eded52ccd88b8ad7cb2bc36b087b8162b76c",
+      "supersedes_public_result_only": true,
+      "note": "Close-only correction rerun. The frozen 3/5 result checked only the final Close atom; its saved success inserted the black bowl first. The correction requires the bowl and wine bottle to remain in their authored table regions and fails if either enters the drawer."
     }
   ],
   "selected_tasks": 51,
@@ -90,16 +101,37 @@
     "COMP2_001"
   ],
   "episodes": 235,
-  "successes": 58,
-  "successful_tasks": 16,
-  "success_videos": 16,
+  "successes": 55,
+  "successful_tasks": 15,
+  "success_videos": 15,
   "failure_videos": 41,
-  "representative_videos": 57,
+  "representative_videos": 56,
   "frozen_source_ledger": {
     "tasks": 48,
     "episodes": 240,
     "representative_videos": 58,
     "preserved": true
+  },
+  "corrections": {
+    "ANLGX_023": {
+      "original_public_result": {
+        "successes": 3,
+        "episodes": 5,
+        "success_rate_percent": 60.0,
+        "success_video_sha256": "76670f852c0ac1006624929fe623b1d894bab85b9de7c73024176ea79c5a75a0"
+      },
+      "corrected_public_result": {
+        "successes": 0,
+        "episodes": 5,
+        "success_rate_percent": 0.0
+      },
+      "reason": "semantic false positive: extra bowl insertion before the requested drawer-only close",
+      "original_source_ledger_preserved": true,
+      "eval_rule_sha256": "f42e65ad32292140e131fd085444eded52ccd88b8ad7cb2bc36b087b8162b76c",
+      "previous_permissive_eval_rule_sha256": "9bedb4b1c25cfdb5a8516ba19c53ddca2527ca714b4679e4c350ad7205fd8379",
+      "bddl_sha256": "64412bd3de612a6864bc976785b60c030fd1e4e4aa4ddee5afc54a5652524466",
+      "pruned_init_sha256": "b664fd5af67a762c2af9aee157ef1c6a75506000d2fb29d01f24e96bef39b43a"
+    }
   },
   "protocol": {
     "episodes_per_task": 5,
@@ -128,8 +160,8 @@
       "selected_tasks": 17,
       "evaluated_tasks": 17,
       "pending_tasks": 0,
-      "successful_tasks": 12,
-      "successes": 48,
+      "successful_tasks": 11,
+      "successes": 45,
       "episodes": 85
     },
     "Compose": {
@@ -483,12 +515,12 @@
       "category": "Adapt",
       "task_id": "ANLGX_023",
       "instruction": "Close the middle drawer of the white cabinet.",
-      "successes": 3,
+      "successes": 0,
       "episodes": 5,
-      "success_rate_percent": 60.0,
-      "success_episode": "1",
+      "success_rate_percent": 0.0,
+      "success_episode": "",
       "failure_episode": "0",
-      "success_video": "assets/pi05_videos/ANLGX_023/ANLGX_023_success.mp4",
+      "success_video": "",
       "failure_video": "assets/pi05_videos/ANLGX_023/ANLGX_023_failure.mp4",
       "complete": true
     },

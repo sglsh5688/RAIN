@@ -16,7 +16,7 @@ objects_of_interest:
 held_fixed:
 - white cabinet pose/type
 - target initialized open
-- no movable clutter
+- bowl and wine bottle remain in their authored table regions
 varied:
 - transfer learned bottom-drawer closing to the middle sibling
 single_semantic_goal: true
@@ -24,4 +24,6 @@ physical_group: white_close_middle
 base_bddl_template: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.bddl
 base_pruned_init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.pruned_init
 definition_status: defined_not_evaluated
-notes: []
+notes:
+- Close-only scoring requires the bowl and wine bottle to remain in their authored table regions and rejects either object entering the middle drawer.
+- The bowl and wine bottle remain scene context; they are not additional task steps.

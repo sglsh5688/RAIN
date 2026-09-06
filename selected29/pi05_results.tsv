@@ -23,7 +23,7 @@ order	category	task_id	instruction	successes	episodes	success_rate_percent	succe
 22	Adapt	ANLGX_003	Put the white mug on the right plate.	0	5	0.0		0		assets/pi05_videos/ANLGX_003/ANLGX_003_failure.mp4	True
 23	Adapt	ANLGX_017	Put the black bowl in the middle drawer of the white cabinet.	5	5	100.0	0		assets/pi05_videos/ANLGX_017/ANLGX_017_success.mp4		True
 24	Adapt	ANLGX_022	Close the top drawer of the white cabinet.	0	5	0.0		0		assets/pi05_videos/ANLGX_022/ANLGX_022_failure.mp4	True
-25	Adapt	ANLGX_023	Close the middle drawer of the white cabinet.	3	5	60.0	1	0	assets/pi05_videos/ANLGX_023/ANLGX_023_success.mp4	assets/pi05_videos/ANLGX_023/ANLGX_023_failure.mp4	True
+25	Adapt	ANLGX_023	Close the middle drawer of the white cabinet.	0	5	0.0		0		assets/pi05_videos/ANLGX_023/ANLGX_023_failure.mp4	True
 26	Adapt	ANLGX_089	Pick up the wine bottle at the table center and place it on the plate.	2	5	40.0	2	0	assets/pi05_videos/ANLGX_089/ANLGX_089_success.mp4	assets/pi05_videos/ANLGX_089/ANLGX_089_failure.mp4	True
 27	Adapt	ANLGX_134	Put the plate on the top of the wooden cabinet.	0	5	0.0		0		assets/pi05_videos/ANLGX_134/ANLGX_134_failure.mp4	True
 28	Adapt	ANLGX_147	Put the cream cheese in the top drawer of the wooden cabinet.	3	5	60.0	0	1	assets/pi05_videos/ANLGX_147/ANLGX_147_success.mp4	assets/pi05_videos/ANLGX_147/ANLGX_147_failure.mp4	True

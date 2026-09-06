@@ -119,11 +119,11 @@ ANLGX_022	Adapt	1	False	520	520	2308	timeout	True	False
 ANLGX_022	Adapt	2	False	520	520	2309	timeout	True	False
 ANLGX_022	Adapt	3	False	520	520	2310	timeout	True	False
 ANLGX_022	Adapt	4	False	520	520	2311	timeout	True	False
-ANLGX_023	Adapt	0	False	520	520	2407	timeout	True	False
-ANLGX_023	Adapt	1	True	196	520	2408	env_goal	True	False
-ANLGX_023	Adapt	2	False	520	520	2409	timeout	True	False
-ANLGX_023	Adapt	3	True	204	520	2410	env_goal	True	False
-ANLGX_023	Adapt	4	True	209	520	2411	env_goal	True	False
+ANLGX_023	Adapt	0	False	132	520	2407	custom_rule_violation	True	False
+ANLGX_023	Adapt	1	False	124	520	2408	custom_rule_violation	True	False
+ANLGX_023	Adapt	2	False	135	520	2409	custom_rule_violation	True	False
+ANLGX_023	Adapt	3	False	126	520	2410	custom_rule_violation	True	False
+ANLGX_023	Adapt	4	False	129	520	2411	custom_rule_violation	True	False
 ANLGX_089	Adapt	0	False	220	220	2507	timeout	True	False
 ANLGX_089	Adapt	1	False	220	220	2508	timeout	True	False
 ANLGX_089	Adapt	2	True	106	220	2509	env_goal	True	False

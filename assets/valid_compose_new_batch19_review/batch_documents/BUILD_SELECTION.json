@@ -1,0 +1,29 @@
+{
+  "candidate_count": 20,
+  "accepted_count": 18,
+  "accepted_ids": [
+    "VCN19_001",
+    "VCN19_002",
+    "VCN19_003",
+    "VCN19_004",
+    "VCN19_005",
+    "VCN19_007",
+    "VCN19_008",
+    "VCN19_009",
+    "VCN19_010",
+    "VCN19_011",
+    "VCN19_012",
+    "VCN19_013",
+    "VCN19_014",
+    "VCN19_015",
+    "VCN19_016",
+    "VCN19_017",
+    "VCN19_019",
+    "VCN19_020"
+  ],
+  "rejected_ids": [
+    "VCN19_006",
+    "VCN19_018"
+  ],
+  "publication_authorized": false
+}

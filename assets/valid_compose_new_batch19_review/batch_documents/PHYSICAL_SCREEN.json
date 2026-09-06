@@ -1,0 +1,5003 @@
+{
+  "screen": "Batch19FeedbackContractPhysicalScreen",
+  "created_at_utc": "2026-09-06T01:54:43.001733+00:00",
+  "gpu": 2,
+  "policy_inference_run": false,
+  "candidate_count": 20,
+  "corrected_retest_count": 1,
+  "checked_count": 21,
+  "accepted_novel_ids": [
+    "VCN19_001",
+    "VCN19_002",
+    "VCN19_003",
+    "VCN19_004",
+    "VCN19_005",
+    "VCN19_007",
+    "VCN19_008",
+    "VCN19_009",
+    "VCN19_010",
+    "VCN19_011",
+    "VCN19_012",
+    "VCN19_013",
+    "VCN19_014",
+    "VCN19_015",
+    "VCN19_016",
+    "VCN19_017",
+    "VCN19_019",
+    "VCN19_020"
+  ],
+  "rejected_novel_ids": [
+    "VCN19_006",
+    "VCN19_018"
+  ],
+  "corrected_retest_ids": [
+    "VCN19R_001"
+  ],
+  "minimum_fully_open_fraction": 0.9,
+  "final_tc_gate": false,
+  "publication_authorized": false,
+  "rows": [
+    {
+      "task_id": "VCN19_001",
+      "pool": "globally_novel",
+      "instruction": "Put the cream cheese on the stove, then push the plate to the front of the stove, then open the middle drawer of the wooden cabinet.",
+      "family": "accepted_vcn10_prefix_then_drawer_open",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "33cdc25aa5885cf81ac99b201550fa9858e3427c15d0201c2f308a23852f45ed",
+      "screened_init_sha256": "7699fc86beed3749cf2acc0ce875b9ed5092a09b134a2e841c0d90bc3d36977d",
+      "minimum_mask_areas": {
+        "goal_target_2": 736,
+        "manipulated_object_2": 1972,
+        "manipulated_object_1": 388,
+        "interaction_target_3": 681,
+        "goal_target_1": 3079
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 1
+    },
+    {
+      "task_id": "VCN19_002",
+      "pool": "globally_novel",
+      "instruction": "Put the cream cheese on the stove, then push the plate to the front of the stove, then open the bottom drawer of the wooden cabinet.",
+      "family": "accepted_vcn10_prefix_then_drawer_open",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "b5f093d37dcf79d47cb82c715c21e42e949b838814e7f4e6af33c769c5419851",
+      "screened_init_sha256": "c9aac749be6d5fad31a74b1c5d408e0efb9e6b400b2700f1bbc4856a496f195c",
+      "minimum_mask_areas": {
+        "goal_target_2": 736,
+        "manipulated_object_2": 1972,
+        "manipulated_object_1": 388,
+        "interaction_target_3": 578,
+        "goal_target_1": 3079
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 2
+    },
+    {
+      "task_id": "VCN19_003",
+      "pool": "globally_novel",
+      "instruction": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet, then put the loaded black bowl in the middle drawer.",
+      "family": "accepted_vcn8_prefix_then_loaded_bowl_move",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "96571ca0acb9f52cd7a2e0ff1edf878ea426a91f74197ea4c5dbe8c1afbef4b8",
+      "screened_init_sha256": "958b04754b94ec1dfbd97e867b3cee189327409c44cc87692053b81257863621",
+      "minimum_mask_areas": {
+        "interaction_target_2": 681,
+        "goal_target_1": 1095,
+        "manipulated_object_1": 567
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 3
+    },
+    {
+      "task_id": "VCN19_004",
+      "pool": "globally_novel",
+      "instruction": "Put the chocolate pudding on the black bowl, then put the loaded black bowl on the plate.",
+      "family": "loaded_bowl_direct_move",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "ab186c01a6623f7e25b8fce7d0c9aec944edbdfe8c2e96dcd4853b8cd4464616",
+      "screened_init_sha256": "75c5ac5d3a0dd67729cbd870e63de24c94c7e25184a2bc0452192f04d4bc47e8",
+      "minimum_mask_areas": {
+        "goal_target_1": 1095,
+        "manipulated_object_1": 567,
+        "goal_target_2": 2003
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 4
+    },
+    {
+      "task_id": "VCN19_005",
+      "pool": "globally_novel",
+      "instruction": "Put the tomato sauce in the basket, then open the middle drawer of the wooden cabinet.",
+      "family": "lbcm_atomic_then_goal_drawer",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "4cdce71bc85204ee9487f026dbaec8dc291fbdcbbe3b8736d9993faedeebcc21",
+      "screened_init_sha256": "b6b9ccae99b30e0106f3c1401ffaa33a21b895d149d80bcbcec41532e7fbb1c1",
+      "minimum_mask_areas": {
+        "interaction_target_2": 681,
+        "goal_target_1": 5455,
+        "manipulated_object_1": 690
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [
+        [
+          {
+            "state_index": 0,
+            "kind": "object",
+            "source_entity": "tomato_sauce_1",
+            "target_entity": "tomato_sauce_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.39245900153242197
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.05570959126855292
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.39245900153242197
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.05570959126855292
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 0,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5078842585157184
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2690198914964389
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5078842585157184
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2690198914964389
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 1,
+            "kind": "object",
+            "source_entity": "tomato_sauce_1",
+            "target_entity": "tomato_sauce_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.4076771561782885
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.043096956153716864
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.4076771561782885
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.043096956153716864
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 1,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5188472440997624
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.25881141000936836
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5188472440997624
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.25881141000936836
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 2,
+            "kind": "object",
+            "source_entity": "tomato_sauce_1",
+            "target_entity": "tomato_sauce_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.42969846708381154
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.02611857558756306
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.42969846708381154
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.02611857558756306
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 2,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.500370983484868
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2510097924356372
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.500370983484868
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2510097924356372
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 3,
+            "kind": "object",
+            "source_entity": "tomato_sauce_1",
+            "target_entity": "tomato_sauce_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.393129661758443
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.06710180180751413
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.393129661758443
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.06710180180751413
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 3,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5030458813628452
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2662793692932055
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5030458813628452
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2662793692932055
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 4,
+            "kind": "object",
+            "source_entity": "tomato_sauce_1",
+            "target_entity": "tomato_sauce_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.39294740181214904
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.03893845919667266
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.39294740181214904
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.03893845919667266
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 4,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5043826575473496
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.26769328013944566
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5043826575473496
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.26769328013944566
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ]
+      ],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 5
+    },
+    {
+      "task_id": "VCN19_006",
+      "pool": "globally_novel",
+      "instruction": "Put the tomato sauce in the basket, then put the white mug on the plate, then open the middle drawer of the wooden cabinet.",
+      "family": "successful_lbcm_prefix_then_goal_drawer",
+      "valid": false,
+      "phase": "complete",
+      "errors": [
+        "state 0: initial cross-entity penetration",
+        "state 0: settled cross-entity penetration",
+        "state 1: initial cross-entity penetration",
+        "state 2: initial cross-entity penetration",
+        "state 2: settled cross-entity penetration",
+        "state 2: mask below 10px: manipulated_object_2/0",
+        "state 3: initial cross-entity penetration",
+        "state 4: initial cross-entity penetration"
+      ],
+      "state_count": 5,
+      "valid_state_count": 0,
+      "screened_task_bddl_sha256": "0df882c84f4f5524c2460c2178c2b8b7ad0306701106e46d61cd3fc61e177db5",
+      "screened_init_sha256": "ad43efafbad95300c6b4772b5678473ac749a694fe95959968b394f7332781ef",
+      "minimum_mask_areas": {
+        "goal_target_2": 3763,
+        "manipulated_object_2": 0,
+        "manipulated_object_1": 1037,
+        "interaction_target_3": 1863,
+        "goal_target_1": 6913
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [
+        [
+          {
+            "state_index": 0,
+            "kind": "fixture",
+            "source_entity": "wooden_cabinet_1",
+            "target_entity": "wooden_cabinet_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoUserTasks/LongBasketCupPuddingMix20260905/tasks/lbcm_003__put_the_tomato_sauce_in_the_basket_then_put_the_white_mug_on_the_plate/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                -1.2246467991473532e-16,
+                0.0,
+                0.6846060575804194
+              ],
+              [
+                1.2246467991473532e-16,
+                -1.0,
+                0.0,
+                -0.2390302016152794
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.007000000000000006
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                -1.2246467991473532e-16,
+                0.0,
+                0.6846060575804194
+              ],
+              [
+                1.2246467991473532e-16,
+                -1.0,
+                0.0,
+                -0.2390302016152794
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.007000000000000006
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 1,
+            "kind": "fixture",
+            "source_entity": "wooden_cabinet_1",
+            "target_entity": "wooden_cabinet_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoUserTasks/LongBasketCupPuddingMix20260905/tasks/lbcm_003__put_the_tomato_sauce_in_the_basket_then_put_the_white_mug_on_the_plate/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                -1.2246467991473532e-16,
+                0.0,
+                0.681418856895004
+              ],
+              [
+                1.2246467991473532e-16,
+                -1.0,
+                0.0,
+                -0.2455046012206391
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.007000000000000006
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                -1.2246467991473532e-16,
+                0.0,
+                0.681418856895004
+              ],
+              [
+                1.2246467991473532e-16,
+                -1.0,
+                0.0,
+                -0.2455046012206391
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.007000000000000006
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 2,
+            "kind": "fixture",
+            "source_entity": "wooden_cabinet_1",
+            "target_entity": "wooden_cabinet_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoUserTasks/LongBasketCupPuddingMix20260905/tasks/lbcm_003__put_the_tomato_sauce_in_the_basket_then_put_the_white_mug_on_the_plate/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                -1.2246467991473532e-16,
+                0.0,
+                0.6877295433922933
+              ],
+              [
+                1.2246467991473532e-16,
+                -1.0,
+                0.0,
+                -0.23611122644471083
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.007000000000000006
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                -1.2246467991473532e-16,
+                0.0,
+                0.6877295433922933
+              ],
+              [
+                1.2246467991473532e-16,
+                -1.0,
+                0.0,
+                -0.23611122644471083
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.007000000000000006
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 3,
+            "kind": "fixture",
+            "source_entity": "wooden_cabinet_1",
+            "target_entity": "wooden_cabinet_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoUserTasks/LongBasketCupPuddingMix20260905/tasks/lbcm_003__put_the_tomato_sauce_in_the_basket_then_put_the_white_mug_on_the_plate/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                -1.2246467991473532e-16,
+                0.0,
+                0.68883666348846
+              ],
+              [
+                1.2246467991473532e-16,
+                -1.0,
+                0.0,
+                -0.24131972013333414
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.007000000000000006
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                -1.2246467991473532e-16,
+                0.0,
+                0.68883666348846
+              ],
+              [
+                1.2246467991473532e-16,
+                -1.0,
+                0.0,
+                -0.24131972013333414
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.007000000000000006
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 4,
+            "kind": "fixture",
+            "source_entity": "wooden_cabinet_1",
+            "target_entity": "wooden_cabinet_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoUserTasks/LongBasketCupPuddingMix20260905/tasks/lbcm_003__put_the_tomato_sauce_in_the_basket_then_put_the_white_mug_on_the_plate/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                -1.2246467991473532e-16,
+                0.0,
+                0.6822332246398932
+              ],
+              [
+                1.2246467991473532e-16,
+                -1.0,
+                0.0,
+                -0.24832093713355885
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.007000000000000006
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                -1.2246467991473532e-16,
+                0.0,
+                0.6822332246398932
+              ],
+              [
+                1.2246467991473532e-16,
+                -1.0,
+                0.0,
+                -0.24832093713355885
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                -0.007000000000000006
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ]
+      ],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 6
+    },
+    {
+      "task_id": "VCN19_007",
+      "pool": "globally_novel",
+      "instruction": "Put the cream cheese on the stove, then turn on the stove, then put the tomato sauce in the basket.",
+      "family": "accepted_vcn9_prefix_then_lbcm_atomic",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "c6bd14ae5ebe22ba9ce1b20fc345e63c220127e614424abdc7a4a42116f0fb68",
+      "screened_init_sha256": "c738b7cfc2a8547acf58d5b474a2094e16a2edb30edbc107feea052f5e545872",
+      "minimum_mask_areas": {
+        "interaction_target_2": 317,
+        "manipulated_object_1": 386,
+        "goal_target_3": 5455,
+        "manipulated_object_3": 690,
+        "goal_target_1": 1310
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [
+        [
+          {
+            "state_index": 0,
+            "kind": "object",
+            "source_entity": "tomato_sauce_1",
+            "target_entity": "tomato_sauce_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.39245900153242197
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.05570959126855292
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.39245900153242197
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.05570959126855292
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 0,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5078842585157184
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2690198914964389
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5078842585157184
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2690198914964389
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 1,
+            "kind": "object",
+            "source_entity": "tomato_sauce_1",
+            "target_entity": "tomato_sauce_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.4076771561782885
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.043096956153716864
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.4076771561782885
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.043096956153716864
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 1,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5188472440997624
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.25881141000936836
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5188472440997624
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.25881141000936836
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 2,
+            "kind": "object",
+            "source_entity": "tomato_sauce_1",
+            "target_entity": "tomato_sauce_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.42969846708381154
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.02611857558756306
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.42969846708381154
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.02611857558756306
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 2,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.500370983484868
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2510097924356372
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.500370983484868
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2510097924356372
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 3,
+            "kind": "object",
+            "source_entity": "tomato_sauce_1",
+            "target_entity": "tomato_sauce_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.393129661758443
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.06710180180751413
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.393129661758443
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.06710180180751413
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 3,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5030458813628452
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2662793692932055
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5030458813628452
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2662793692932055
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 4,
+            "kind": "object",
+            "source_entity": "tomato_sauce_1",
+            "target_entity": "tomato_sauce_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.39294740181214904
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.03893845919667266
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.39294740181214904
+              ],
+              [
+                0.0,
+                -2.220446049250313e-16,
+                1.0,
+                0.03893845919667266
+              ],
+              [
+                0.0,
+                1.0,
+                2.220446049250313e-16,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 4,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5043826575473496
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.26769328013944566
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.06
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5043826575473496
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.26769328013944566
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05999999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 5.551115123125783e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ]
+      ],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 7
+    },
+    {
+      "task_id": "VCN19_008",
+      "pool": "globally_novel",
+      "instruction": "Pick up the ramekin on the cookies box and place it on the plate, then turn on the stove.",
+      "family": "ramekin_plate_then_stove_control",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "1d358ffe6145904ba053641659bcc150f7b02cd23e0af85dc8c218b5d613d0d4",
+      "screened_init_sha256": "ab01041178d3eaa7200d4bc29d84d62dd84ddafe5e782afdb660fe5a39350925",
+      "minimum_mask_areas": {
+        "interaction_target_2": 460,
+        "goal_target_1": 2041,
+        "manipulated_object_1": 1201
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 8
+    },
+    {
+      "task_id": "VCN19_009",
+      "pool": "globally_novel",
+      "instruction": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet, then put the loaded black bowl on top of the wooden cabinet.",
+      "family": "accepted_vcn8_prefix_then_loaded_bowl_move",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "3594e18ddd05dc00e0405edcf3d2e3f9ecdf0df772d78aaa3a815dfc8959743b",
+      "screened_init_sha256": "240ddfdd04ab7eac0dfea17b7d8bb15c0245315282767e66d9a44cc23d771f11",
+      "minimum_mask_areas": {
+        "interaction_target_2": 681,
+        "goal_target_1": 1095,
+        "manipulated_object_1": 567,
+        "goal_target_3": 13564
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 9
+    },
+    {
+      "task_id": "VCN19_010",
+      "pool": "globally_novel",
+      "instruction": "Open the middle drawer of the wooden cabinet, then put the ramekin on the plate.",
+      "family": "drawer_open_then_ramekin_plate",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "f3de7196eda71b050311e6114f074c37d0f47bddb9127132a10ff8ec56ef8f3a",
+      "screened_init_sha256": "84f6eacbe2dd7ad2512a723ecc638a546e6390bd9800601fd8c8854ab797f7a8",
+      "minimum_mask_areas": {
+        "interaction_target_1": 1755,
+        "goal_target_2": 2041,
+        "manipulated_object_2": 1201
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 10
+    },
+    {
+      "task_id": "VCN19_011",
+      "pool": "globally_novel",
+      "instruction": "Put the cream cheese on the plate, then push the loaded plate to the front of the stove.",
+      "family": "loaded_plate_push",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "5a1eae9bab3bcd6ac5ca697c78c9e6e8b695285c58a035c073f1cced4587347c",
+      "screened_init_sha256": "e5fe23b9b357af3a0c65fb811038b68011a4b18a5f32e8b1acbf905037ffe9cd",
+      "minimum_mask_areas": {
+        "goal_target_1": 1987,
+        "manipulated_object_1": 366,
+        "goal_target_2": 736
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 11
+    },
+    {
+      "task_id": "VCN19_012",
+      "pool": "globally_novel",
+      "instruction": "Put the butter on the plate, then push the loaded plate to the front of the stove, then open the middle drawer of the wooden cabinet.",
+      "family": "loaded_plate_push_then_control",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "d8d26f62bc7e2e4f97ffad37c8d3995547389d6c1f55f062898ab0a28c911793",
+      "screened_init_sha256": "403a3b42737825fff74590c15a4058c81416d0f5d657beead089e7372980fd32",
+      "minimum_mask_areas": {
+        "goal_target_1": 1989,
+        "manipulated_object_1": 345,
+        "goal_target_2": 736,
+        "interaction_target_3": 681
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 12
+    },
+    {
+      "task_id": "VCN19_013",
+      "pool": "globally_novel",
+      "instruction": "Put the butter on the plate, then push the loaded plate to the front of the stove, then turn on the stove.",
+      "family": "loaded_plate_push_then_control",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "17909122530147764973b11d55d5541322e990349b60341b844b4f11c2800f6f",
+      "screened_init_sha256": "7ab27c555b2125daf7ab7a907a598f3539aa22e22e335a3f51d1494cf5b072ed",
+      "minimum_mask_areas": {
+        "goal_target_1": 1989,
+        "manipulated_object_1": 345,
+        "goal_target_2": 736,
+        "interaction_target_3": 471
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 13
+    },
+    {
+      "task_id": "VCN19_014",
+      "pool": "globally_novel",
+      "instruction": "Put the cream cheese on the plate, then push the loaded plate to the front of the stove, then open the bottom drawer of the wooden cabinet.",
+      "family": "loaded_plate_push_then_control",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "a0c7e3ba048403252765ab3a6d2910e8a2c1a6e9bbae95bc8fb542a48b733703",
+      "screened_init_sha256": "1759695e562d79fc3ed782967f550c76273b0db163b5a63bd47c7b14148b95d1",
+      "minimum_mask_areas": {
+        "goal_target_1": 1987,
+        "manipulated_object_1": 366,
+        "goal_target_2": 736,
+        "interaction_target_3": 578
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 14
+    },
+    {
+      "task_id": "VCN19_015",
+      "pool": "globally_novel",
+      "instruction": "Put the plate on top of the wooden cabinet, then put the cream cheese in the basket.",
+      "family": "goal_with_source_aligned_basket",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "8df03132c50d99bcdfd00ff0979dd927dd36a2f4b2654d803e4209dc163f4c04",
+      "screened_init_sha256": "d3a5dc917b6bb7d0cd5c270377c65f5c705ca28d36b69ce4c7ed2377be5b7733",
+      "minimum_mask_areas": {
+        "manipulated_object_2": 431,
+        "goal_target_1": 13564,
+        "manipulated_object_1": 1980,
+        "goal_target_2": 5915
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [
+        [
+          {
+            "state_index": 0,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5912190783942376
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2672733804567752
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.034999999999999996
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5912190783942376
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2672733804567752
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.03500000000000003
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 3.469446951953614e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 1,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.6075349026210684
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2614155978793028
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.034999999999999996
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.6075349026210684
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2614155978793028
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.03500000000000003
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 3.469446951953614e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 2,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.6060315276245201
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.25573115129835894
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.034999999999999996
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.6060315276245201
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.25573115129835894
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.03500000000000003
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 3.469446951953614e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 3,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5873331107694626
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.26830428254814576
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.034999999999999996
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5873331107694626
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.26830428254814576
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.03500000000000003
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 3.469446951953614e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 4,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.594762278923262
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.27113037949926555
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.034999999999999996
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.594762278923262
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.27113037949926555
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.03500000000000003
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 3.469446951953614e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ]
+      ],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 15
+    },
+    {
+      "task_id": "VCN19_016",
+      "pool": "globally_novel",
+      "instruction": "Put the cream cheese on the stove, then turn on the stove, then put the ramekin on the plate.",
+      "family": "accepted_vcn9_prefix_then_ramekin_plate",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "04a49b7fd4e59b9be473cb0b79bfcdac28df4961f5ca57bf90f4121d6e9a8455",
+      "screened_init_sha256": "9aa8f05ef14c03596770bb8a10004b724107d8b7aa495b60097fbe402c981cb0",
+      "minimum_mask_areas": {
+        "interaction_target_2": 466,
+        "manipulated_object_1": 386,
+        "goal_target_3": 2041,
+        "manipulated_object_3": 1203,
+        "goal_target_1": 3079
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [
+        [
+          {
+            "state_index": 0,
+            "kind": "object",
+            "source_entity": "glazed_rim_porcelain_ramekin_1",
+            "target_entity": "glazed_rim_porcelain_ramekin_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                1.665548479135026e-07,
+                -0.9999999999998952,
+                -4.2649014226532554e-07,
+                0.7210166688835908
+              ],
+              [
+                0.9999999993378343,
+                1.6657036827627536e-07,
+                -3.6390984533387686e-05,
+                0.03978621989505862
+              ],
+              [
+                3.6390984604424504e-05,
+                -4.264840808880208e-07,
+                0.9999999993377572,
+                0.006115734786266591
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                1.665548479135026e-07,
+                -0.9999999999998952,
+                -4.264901422653323e-07,
+                0.7210166688835908
+              ],
+              [
+                0.9999999993378343,
+                1.6657036827627536e-07,
+                -3.63909845333877e-05,
+                0.03978621989505862
+              ],
+              [
+                3.6390984604424504e-05,
+                -4.2648408088802756e-07,
+                0.9999999993377572,
+                0.006115734786266591
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 1.3552527156068805e-20,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 0,
+            "kind": "object",
+            "source_entity": "cookies_1",
+            "target_entity": "cookies_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                1.484063982815087e-10,
+                -0.9999999999999004,
+                -4.4663096772537984e-07,
+                0.7210136599014835
+              ],
+              [
+                0.9999999993200629,
+                1.648765568518229e-10,
+                -3.68764744802089e-05,
+                0.03977713805485657
+              ],
+              [
+                3.687647448027887e-05,
+                -4.4663096194898783e-07,
+                0.9999999993199631,
+                -0.002629050570787772
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                1.4840617623690378e-10,
+                -0.9999999999999004,
+                -4.4663096772537984e-07,
+                0.7210136599014835
+              ],
+              [
+                0.9999999993200629,
+                1.6487633480721797e-10,
+                -3.6876474480208904e-05,
+                0.03977713805485657
+              ],
+              [
+                3.687647448027887e-05,
+                -4.46630961948998e-07,
+                0.9999999993199631,
+                -0.002629050570787772
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 2.220446049250313e-16,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 0,
+            "kind": "object",
+            "source_entity": "plate_1",
+            "target_entity": "plate_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                8.183109567738711e-08,
+                -0.9999999999465061,
+                -1.0343170425502807e-05,
+                0.7052675827619869
+              ],
+              [
+                0.9999999996342641,
+                8.155135833298743e-08,
+                2.7045611202337544e-05,
+                0.20131731921827092
+              ],
+              [
+                -2.7045610357391168e-05,
+                -1.0343172634891938e-05,
+                0.9999999995807769,
+                -0.009493661470585057
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                8.183109567738711e-08,
+                -0.9999999999465061,
+                -1.0343170425502807e-05,
+                0.7052675827619869
+              ],
+              [
+                0.9999999996342641,
+                8.155135833298743e-08,
+                2.7045611202337544e-05,
+                0.20131731921827092
+              ],
+              [
+                -2.7045610357391168e-05,
+                -1.0343172634891938e-05,
+                0.9999999995807769,
+                -0.009493661470585057
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 1,
+            "kind": "object",
+            "source_entity": "glazed_rim_porcelain_ramekin_1",
+            "target_entity": "glazed_rim_porcelain_ramekin_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                1.665548479135026e-07,
+                -0.9999999999998951,
+                -4.2649014234325935e-07,
+                0.7230871743290577
+              ],
+              [
+                0.9999999993378342,
+                1.6657036827627536e-07,
+                -3.6390984533579305e-05,
+                0.02703587418724977
+              ],
+              [
+                3.639098460461611e-05,
+                -4.26484080965958e-07,
+                0.9999999993377572,
+                0.006115734786266591
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                1.6655484813554722e-07,
+                -0.9999999999998951,
+                -4.2649014234326274e-07,
+                0.7230871743290577
+              ],
+              [
+                0.9999999993378342,
+                1.6657036849831997e-07,
+                -3.63909845335793e-05,
+                0.02703587418724977
+              ],
+              [
+                3.63909846046161e-05,
+                -4.264840809659512e-07,
+                0.9999999993377572,
+                0.006115734786266591
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 2.220446049250313e-16,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 1,
+            "kind": "object",
+            "source_entity": "cookies_1",
+            "target_entity": "cookies_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                1.484058431699964e-10,
+                -0.9999999999999006,
+                -4.466309676346626e-07,
+                0.7230841653469512
+              ],
+              [
+                0.9999999993200631,
+                1.6487600174031058e-10,
+                -3.687647448013283e-05,
+                0.02702679234704727
+              ],
+              [
+                3.6876474480202785e-05,
+                -4.4663096185828754e-07,
+                0.9999999993199631,
+                -0.002629050570787772
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                1.48405510103089e-10,
+                -0.9999999999999003,
+                -4.4663096763464905e-07,
+                0.7230841653469512
+              ],
+              [
+                0.9999999993200628,
+                1.648756686734032e-10,
+                -3.687647448013282e-05,
+                0.02702679234704727
+              ],
+              [
+                3.6876474480202785e-05,
+                -4.466309618582977e-07,
+                0.9999999993199631,
+                -0.002629050570787772
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 3.3306690738754696e-16,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 1,
+            "kind": "object",
+            "source_entity": "plate_1",
+            "target_entity": "plate_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                8.183109567738711e-08,
+                -0.9999999999465061,
+                -1.0343170425572195e-05,
+                0.7097971709345352
+              ],
+              [
+                0.9999999996342641,
+                8.155135833298743e-08,
+                2.7045611202346523e-05,
+                0.2085413828061132
+              ],
+              [
+                -2.704561035740015e-05,
+                -1.0343172634961325e-05,
+                0.9999999995807769,
+                -0.009493661470585057
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                8.183109567738711e-08,
+                -0.9999999999465061,
+                -1.0343170425572193e-05,
+                0.7097971709345352
+              ],
+              [
+                0.9999999996342641,
+                8.155135833298743e-08,
+                2.7045611202346523e-05,
+                0.2085413828061132
+              ],
+              [
+                -2.704561035740015e-05,
+                -1.0343172634961323e-05,
+                0.9999999995807769,
+                -0.009493661470585057
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 1.6940658945086007e-21,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 2,
+            "kind": "object",
+            "source_entity": "glazed_rim_porcelain_ramekin_1",
+            "target_entity": "glazed_rim_porcelain_ramekin_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                1.6655484846861413e-07,
+                -0.9999999999998949,
+                -4.264901424564433e-07,
+                0.718867860083172
+              ],
+              [
+                0.999999999337834,
+                1.6657036883138687e-07,
+                -3.639098453616042e-05,
+                0.03020640545655359
+              ],
+              [
+                3.639098460719723e-05,
+                -4.2648408107912836e-07,
+                0.9999999993377572,
+                0.006115734786266591
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                1.6655484846861413e-07,
+                -0.9999999999998952,
+                -4.2649014245645683e-07,
+                0.718867860083172
+              ],
+              [
+                0.9999999993378343,
+                1.6657036883138687e-07,
+                -3.6390984536160425e-05,
+                0.03020640545655359
+              ],
+              [
+                3.639098460719723e-05,
+                -4.2648408107912836e-07,
+                0.9999999993377572,
+                0.006115734786266591
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 3.3306690738754696e-16,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 2,
+            "kind": "object",
+            "source_entity": "cookies_1",
+            "target_entity": "cookies_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                1.484063982815087e-10,
+                -0.9999999999999002,
+                -4.466309677311566e-07,
+                0.7188648511010648
+              ],
+              [
+                0.9999999993200627,
+                1.648765568518229e-10,
+                -3.687647448304482e-05,
+                0.030197323616540202
+              ],
+              [
+                3.6876474483114776e-05,
+                -4.4663096195477476e-07,
+                0.9999999993199631,
+                -0.002629050570787772
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                1.484063982815087e-10,
+                -0.9999999999999004,
+                -4.466309677311634e-07,
+                0.7188648511010648
+              ],
+              [
+                0.9999999993200629,
+                1.648765568518229e-10,
+                -3.687647448304482e-05,
+                0.030197323616540202
+              ],
+              [
+                3.687647448311478e-05,
+                -4.4663096195477137e-07,
+                0.9999999993199631,
+                -0.002629050570787772
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 2.220446049250313e-16,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 2,
+            "kind": "object",
+            "source_entity": "plate_1",
+            "target_entity": "plate_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                8.183109567738711e-08,
+                -0.9999999999465061,
+                -1.0343170425533792e-05,
+                0.7089112887599178
+              ],
+              [
+                0.9999999996342641,
+                8.155135833298743e-08,
+                2.7045611202411415e-05,
+                0.1936754926828225
+              ],
+              [
+                -2.7045610357465046e-05,
+                -1.034317263492292e-05,
+                0.9999999995807769,
+                -0.009493661470585057
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                8.183109567738711e-08,
+                -0.9999999999465061,
+                -1.0343170425533788e-05,
+                0.7089112887599178
+              ],
+              [
+                0.9999999996342641,
+                8.155135833298743e-08,
+                2.704561120241142e-05,
+                0.1936754926828225
+              ],
+              [
+                -2.7045610357465042e-05,
+                -1.0343172634922919e-05,
+                0.9999999995807769,
+                -0.009493661470585057
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 3.3881317890172014e-21,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 3,
+            "kind": "object",
+            "source_entity": "glazed_rim_porcelain_ramekin_1",
+            "target_entity": "glazed_rim_porcelain_ramekin_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                1.6655484813554722e-07,
+                -0.9999999999998949,
+                -4.264901423280636e-07,
+                0.7342347131703371
+              ],
+              [
+                0.999999999337834,
+                1.6657036849831997e-07,
+                -3.63909845337405e-05,
+                0.04390591128595485
+              ],
+              [
+                3.63909846047773e-05,
+                -4.264840809507622e-07,
+                0.9999999993377572,
+                0.006115734786266591
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                1.6655484813554722e-07,
+                -0.9999999999998952,
+                -4.2649014232807035e-07,
+                0.7342347131703371
+              ],
+              [
+                0.9999999993378343,
+                1.6657036849831997e-07,
+                -3.63909845337405e-05,
+                0.04390591128595485
+              ],
+              [
+                3.63909846047773e-05,
+                -4.2648408095075544e-07,
+                0.9999999993377572,
+                0.006115734786266591
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 3.3306690738754696e-16,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 3,
+            "kind": "object",
+            "source_entity": "cookies_1",
+            "target_entity": "cookies_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                1.484058431699964e-10,
+                -0.9999999999999006,
+                -4.4663096763856573e-07,
+                0.7342317041882305
+              ],
+              [
+                0.9999999993200631,
+                1.6487600174031058e-10,
+                -3.68764744801354e-05,
+                0.04389682944575283
+              ],
+              [
+                3.687647448020536e-05,
+                -4.4663096186219067e-07,
+                0.9999999993199631,
+                -0.002629050570787772
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                1.48405510103089e-10,
+                -0.9999999999999003,
+                -4.466309676385522e-07,
+                0.7342317041882305
+              ],
+              [
+                0.9999999993200628,
+                1.648756686734032e-10,
+                -3.68764744801354e-05,
+                0.04389682944575283
+              ],
+              [
+                3.687647448020536e-05,
+                -4.4663096186219745e-07,
+                0.9999999993199631,
+                -0.002629050570787772
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 3.3306690738754696e-16,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 3,
+            "kind": "object",
+            "source_entity": "plate_1",
+            "target_entity": "plate_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                8.183109567738711e-08,
+                -0.9999999999465061,
+                -1.0343170425508421e-05,
+                0.7330579637374857
+              ],
+              [
+                0.9999999996342641,
+                8.155135833298743e-08,
+                2.704561120232963e-05,
+                0.192323847740572
+              ],
+              [
+                -2.7045610357383256e-05,
+                -1.0343172634897552e-05,
+                0.9999999995807769,
+                -0.009493661470585057
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                8.183109567738711e-08,
+                -0.9999999999465061,
+                -1.0343170425508421e-05,
+                0.7330579637374857
+              ],
+              [
+                0.9999999996342641,
+                8.155135833298743e-08,
+                2.704561120232963e-05,
+                0.192323847740572
+              ],
+              [
+                -2.7045610357383256e-05,
+                -1.0343172634897552e-05,
+                0.9999999995807769,
+                -0.009493661470585057
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 4,
+            "kind": "object",
+            "source_entity": "glazed_rim_porcelain_ramekin_1",
+            "target_entity": "glazed_rim_porcelain_ramekin_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                1.6655484813554722e-07,
+                -0.9999999999998951,
+                -4.2649014226487153e-07,
+                0.7194411853651312
+              ],
+              [
+                0.9999999993378342,
+                1.6657036849831997e-07,
+                -3.639098453679407e-05,
+                0.04085561392066181
+              ],
+              [
+                3.639098460783088e-05,
+                -4.2648408088756e-07,
+                0.9999999993377572,
+                0.006115734786266591
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                1.6655484813554722e-07,
+                -0.9999999999998951,
+                -4.2649014226486814e-07,
+                0.7194411853651312
+              ],
+              [
+                0.9999999993378342,
+                1.6657036849831997e-07,
+                -3.639098453679407e-05,
+                0.04085561392066181
+              ],
+              [
+                3.639098460783088e-05,
+                -4.264840808875566e-07,
+                0.9999999993377572,
+                0.006115734786266591
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 3.3881317890172014e-21,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 4,
+            "kind": "object",
+            "source_entity": "cookies_1",
+            "target_entity": "cookies_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                1.4840617623690378e-10,
+                -0.9999999999999006,
+                -4.4663096761903993e-07,
+                0.7194381763830239
+              ],
+              [
+                0.9999999993200631,
+                1.6487633480721797e-10,
+                -3.687647448298634e-05,
+                0.04084653208064886
+              ],
+              [
+                3.68764744830563e-05,
+                -4.466309618426513e-07,
+                0.9999999993199631,
+                -0.002629050570787772
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                1.484058431699964e-10,
+                -0.9999999999999003,
+                -4.4663096761902977e-07,
+                0.7194381763830239
+              ],
+              [
+                0.9999999993200628,
+                1.6487600174031058e-10,
+                -3.687647448298634e-05,
+                0.04084653208064886
+              ],
+              [
+                3.68764744830563e-05,
+                -4.4663096184266487e-07,
+                0.9999999993199631,
+                -0.002629050570787772
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 3.3306690738754696e-16,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          },
+          {
+            "state_index": 4,
+            "kind": "object",
+            "source_entity": "plate_1",
+            "target_entity": "plate_1",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch9DependentPlacementControls/tasks/vcn9_010__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove/task.bddl",
+            "source_bddl": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_092__pick_up_the_ramekin_on_the_cookies_box_and_place_it_on_the_plate/task.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                8.183109567738711e-08,
+                -0.9999999999465061,
+                -1.0343170425482177e-05,
+                0.7156597104735453
+              ],
+              [
+                0.9999999996342641,
+                8.155135833298743e-08,
+                2.704561120238144e-05,
+                0.211684983445125
+              ],
+              [
+                -2.7045610357435068e-05,
+                -1.0343172634871307e-05,
+                0.9999999995807769,
+                -0.009493661470585057
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                8.183109567738711e-08,
+                -0.9999999999465061,
+                -1.0343170425482177e-05,
+                0.7156597104735453
+              ],
+              [
+                0.9999999996342641,
+                8.155135833298743e-08,
+                2.704561120238144e-05,
+                0.211684983445125
+              ],
+              [
+                -2.7045610357435068e-05,
+                -1.0343172634871307e-05,
+                0.9999999995807769,
+                -0.009493661470585057
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ]
+      ],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 16
+    },
+    {
+      "task_id": "VCN19_017",
+      "pool": "globally_novel",
+      "instruction": "Put the cream cheese on the stove, then turn on the stove, then close the top drawer of the wooden cabinet.",
+      "family": "accepted_vcn9_prefix_then_deliberate_close",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "1b88f451460cf8a11fd1bb6d738eaab4dff4d6266b38fb7fabc2e21bf3faf8ab",
+      "screened_init_sha256": "6825f081e916587efa7f6bfcd0393cf821784bae8e98b805951fb54b8c3c9fcf",
+      "minimum_mask_areas": {
+        "interaction_target_2": 466,
+        "goal_target_1": 3079,
+        "manipulated_object_1": 153,
+        "interaction_target_3": 7133
+      },
+      "fully_open_proofs": [
+        [
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "top",
+            "joint": "wooden_cabinet_1_top_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.1549,
+            "usable_open_fraction": 0.9700000000000001,
+            "native_open": true,
+            "native_close": false,
+            "passes": true
+          }
+        ],
+        [
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "top",
+            "joint": "wooden_cabinet_1_top_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.1549,
+            "usable_open_fraction": 0.9700000000000001,
+            "native_open": true,
+            "native_close": false,
+            "passes": true
+          }
+        ],
+        [
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "top",
+            "joint": "wooden_cabinet_1_top_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.1549,
+            "usable_open_fraction": 0.9700000000000001,
+            "native_open": true,
+            "native_close": false,
+            "passes": true
+          }
+        ],
+        [
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "top",
+            "joint": "wooden_cabinet_1_top_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.1549,
+            "usable_open_fraction": 0.9700000000000001,
+            "native_open": true,
+            "native_close": false,
+            "passes": true
+          }
+        ],
+        [
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "top",
+            "joint": "wooden_cabinet_1_top_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.1549,
+            "usable_open_fraction": 0.9700000000000001,
+            "native_open": true,
+            "native_close": false,
+            "passes": true
+          }
+        ]
+      ],
+      "robot_frame_pose_transfer_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "intentional_close_design_audit": "intentional top close only; top must start >=90% usable travel with Open true/Close false; rising Close requires direct gripper-to-top-moving-subtree contact within two actual control steps",
+      "direct_target_contact_runtime_gate": true,
+      "drawer_close_sweep_certificates": {
+        "wooden_cabinet_1_top_region": {
+          "all_five_states_checked": true,
+          "state_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "initial_scene_collision_free": true,
+          "reachable_preclose_payloads_collision_free": true,
+          "artifact": "DRAWER_SWEEP_EVIDENCE.json",
+          "artifact_sha256": "3d19a2ca73cb28b679c7d6f9ffb533704b1cea8a34679b16ccc92b78e85a8661",
+          "payload_method": "conservative target support envelope; no invented final object pose"
+        }
+      },
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 17
+    },
+    {
+      "task_id": "VCN19_018",
+      "pool": "globally_novel",
+      "instruction": "Put the black bowl next to the ramekin on the plate, then put the black bowl between the plate and ramekin in the basket.",
+      "family": "spatial_with_source_aligned_basket",
+      "valid": false,
+      "phase": "complete",
+      "errors": [
+        "state 0: initial cross-entity penetration",
+        "state 0: settled cross-entity penetration",
+        "state 0: mask below 10px: manipulated_object_1/7",
+        "state 0: mask below 10px: goal_target_1/6",
+        "state 1: Non-close event already true initially",
+        "state 1: final goal true initially: [False, True]",
+        "state 1: initial cross-entity penetration",
+        "state 1: settled cross-entity penetration",
+        "state 2: Non-close event already true initially",
+        "state 2: final goal true initially: [False, True]",
+        "state 2: initial cross-entity penetration",
+        "state 2: settled cross-entity penetration",
+        "state 3: initial cross-entity penetration",
+        "state 3: settled cross-entity penetration",
+        "state 4: initial cross-entity penetration",
+        "state 4: settled cross-entity penetration",
+        "state 4: mask below 10px: manipulated_object_1/5"
+      ],
+      "state_count": 5,
+      "valid_state_count": 0,
+      "screened_task_bddl_sha256": "e7d8bde3935e3bc9d85b627b04a5a4f5a1c124a900ded929e5e4a22e52cb6cfa",
+      "screened_init_sha256": "c4dd16701cc7f791efc184287abf3ce36942de8c9e6de0cc7eb87a637da53c48",
+      "minimum_mask_areas": {
+        "manipulated_object_2": 412,
+        "goal_target_1": 6,
+        "manipulated_object_1": 5,
+        "goal_target_2": 5216
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [
+        [
+          {
+            "state_index": 0,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "upstream_LIBERO/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5912190783942376
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2672733804567752
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.034999999999999996
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5912190783942376
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2672733804567752
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.03500000000000003
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 3.469446951953614e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 1,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "upstream_LIBERO/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.6075349026210684
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2614155978793028
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.034999999999999996
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.6075349026210684
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.2614155978793028
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.03500000000000003
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 3.469446951953614e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 2,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "upstream_LIBERO/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.6060315276245201
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.25573115129835894
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.034999999999999996
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.6060315276245201
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.25573115129835894
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.03500000000000003
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 3.469446951953614e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 3,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "upstream_LIBERO/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5873331107694626
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.26830428254814576
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.034999999999999996
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.5873331107694626
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.26830428254814576
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.03500000000000003
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 3.469446951953614e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 4,
+            "kind": "object",
+            "source_entity": "basket_1",
+            "target_entity": "basket_1",
+            "anchor_bddl": "upstream_LIBERO/bddl_files/libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.594762278923262
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.27113037949926555
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.034999999999999996
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -2.220446049250313e-16,
+                -1.0,
+                0.0,
+                0.594762278923262
+              ],
+              [
+                1.0,
+                -2.220446049250313e-16,
+                0.0,
+                0.27113037949926555
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.03500000000000003
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 3.469446951953614e-17,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ]
+      ],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 18
+    },
+    {
+      "task_id": "VCN19_019",
+      "pool": "globally_novel",
+      "instruction": "Pick up the ramekin on the cookies box and place it on the plate, then open the bottom drawer of the wooden cabinet.",
+      "family": "ramekin_plate_then_drawer_open",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "ab9e5c7c215c34aaa7270ee01d3a6d38888fae86c7c7dc6e03530d8f85ec120a",
+      "screened_init_sha256": "8b1e064fda23685a48f466ce768f4d49639349bf5d51955b8c2c22ed08c720c6",
+      "minimum_mask_areas": {
+        "interaction_target_2": 1443,
+        "goal_target_1": 2041,
+        "manipulated_object_1": 1201
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 19
+    },
+    {
+      "task_id": "VCN19_020",
+      "pool": "globally_novel",
+      "instruction": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+      "family": "drawer_open_then_ramekin_plate",
+      "valid": true,
+      "phase": "complete",
+      "errors": [],
+      "state_count": 5,
+      "valid_state_count": 5,
+      "screened_task_bddl_sha256": "12c011e2d1a49acd645e9d3fe8af1b4530a1a9d936e9c20431c334e0699214a2",
+      "screened_init_sha256": "41b1d7bedc7bae383ce331a2b4ff3528939cd19fdbe38d44e88debc70e7e72a0",
+      "minimum_mask_areas": {
+        "interaction_target_1": 2020,
+        "goal_target_2": 2041,
+        "manipulated_object_2": 1201
+      },
+      "fully_open_proofs": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "robot_frame_pose_transfer_proofs": [],
+      "intentional_close_design_audit": "not_applicable_no_close_goal",
+      "direct_target_contact_runtime_gate": false,
+      "drawer_close_sweep_certificates": {},
+      "corrected_retest_not_counted_as_global_novel": false,
+      "ordinal": 20
+    },
+    {
+      "task_id": "VCN19R_001",
+      "pool": "corrected_retest",
+      "instruction": "Close the top drawer of the wooden cabinet, then put the moka pot on the stove, then close the bottom drawer of the wooden cabinet.",
+      "family": "corrected_fully_open_close_moka_close_retest",
+      "valid": false,
+      "phase": "complete",
+      "errors": [
+        "state 0: initial cross-entity penetration",
+        "state 0: settled cross-entity penetration",
+        "state 0: requested close target is not >=90% fully open/Open=true/Close=false",
+        "state 0: open-to-close sweep failed native endpoint or collision gate",
+        "state 0: reachable pre-close payload envelope intersects the drawer sweep",
+        "state 1: initial cross-entity penetration",
+        "state 1: requested close target is not >=90% fully open/Open=true/Close=false",
+        "state 1: open-to-close sweep failed native endpoint or collision gate",
+        "state 2: initial cross-entity penetration",
+        "state 2: settled cross-entity penetration",
+        "state 2: requested close target is not >=90% fully open/Open=true/Close=false",
+        "state 2: open-to-close sweep failed native endpoint or collision gate",
+        "state 3: initial cross-entity penetration",
+        "state 3: open-to-close sweep failed native endpoint or collision gate",
+        "state 3: reachable pre-close payload envelope intersects the drawer sweep",
+        "state 4: initial cross-entity penetration",
+        "state 4: settled cross-entity penetration",
+        "state 4: open-to-close sweep failed native endpoint or collision gate",
+        "wooden_cabinet_1_top_region: invalid sweep certificate: sweep certificate does not prove initial_scene_collision_free",
+        "wooden_cabinet_1_bottom_region: invalid sweep certificate: sweep certificate does not prove initial_scene_collision_free"
+      ],
+      "state_count": 5,
+      "valid_state_count": 0,
+      "screened_task_bddl_sha256": "6d6278c02988a4683dfd1e91ef3c336ea8cb7b80547c28b6ff8594599cb978e6",
+      "screened_init_sha256": "e65397f726a9f082f0427839664253e99af37804c1163f783f93e11623c926b5",
+      "minimum_mask_areas": {
+        "interaction_target_1": 6564,
+        "interaction_target_3": 2932,
+        "goal_target_2": 3079,
+        "manipulated_object_2": 1710
+      },
+      "fully_open_proofs": [
+        [
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "top",
+            "joint": "wooden_cabinet_1_top_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.14062985126116934,
+            "usable_open_fraction": 0.8860579485951138,
+            "native_open": true,
+            "native_close": false,
+            "passes": false
+          },
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "bottom",
+            "joint": "wooden_cabinet_1_bottom_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.14267397482550082,
+            "usable_open_fraction": 0.8980822048558872,
+            "native_open": true,
+            "native_close": false,
+            "passes": false
+          }
+        ],
+        [
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "top",
+            "joint": "wooden_cabinet_1_top_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.13812065618519978,
+            "usable_open_fraction": 0.8712979775599987,
+            "native_open": false,
+            "native_close": false,
+            "passes": false
+          },
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "bottom",
+            "joint": "wooden_cabinet_1_bottom_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.1373257542964839,
+            "usable_open_fraction": 0.8666220840969641,
+            "native_open": false,
+            "native_close": false,
+            "passes": false
+          }
+        ],
+        [
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "top",
+            "joint": "wooden_cabinet_1_top_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.1411315286139607,
+            "usable_open_fraction": 0.8890089918468276,
+            "native_open": true,
+            "native_close": false,
+            "passes": false
+          },
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "bottom",
+            "joint": "wooden_cabinet_1_bottom_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.1365020709401724,
+            "usable_open_fraction": 0.8617768878833669,
+            "native_open": false,
+            "native_close": false,
+            "passes": false
+          }
+        ],
+        [
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "top",
+            "joint": "wooden_cabinet_1_top_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.15381374929659425,
+            "usable_open_fraction": 0.9636102899799661,
+            "native_open": true,
+            "native_close": false,
+            "passes": true
+          },
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "bottom",
+            "joint": "wooden_cabinet_1_bottom_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.15432647460917256,
+            "usable_open_fraction": 0.9666263212304268,
+            "native_open": true,
+            "native_close": false,
+            "passes": true
+          }
+        ],
+        [
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "top",
+            "joint": "wooden_cabinet_1_top_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.1549,
+            "usable_open_fraction": 0.9700000000000001,
+            "native_open": true,
+            "native_close": false,
+            "passes": true
+          },
+          {
+            "fixture": "wooden_cabinet_1",
+            "slot": "bottom",
+            "joint": "wooden_cabinet_1_bottom_level",
+            "joint_range": [
+              -0.16,
+              0.01
+            ],
+            "open_endpoint": -0.16,
+            "close_endpoint": 0.01,
+            "usable_range": 0.17,
+            "settled_qpos": -0.14418875481315452,
+            "usable_open_fraction": 0.9069926753714972,
+            "native_open": true,
+            "native_close": false,
+            "passes": true
+          }
+        ]
+      ],
+      "robot_frame_pose_transfer_proofs": [
+        [
+          {
+            "state_index": 0,
+            "kind": "object",
+            "source_entity": "moka_pot_2",
+            "target_entity": "moka_pot_2",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch10CrossSkillExactDonors6/tasks/vcn10_001__put_the_cream_cheese_on_the_stove_then_push_the_plate_to_the_front_of_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.7014477920298043
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0,
+                0.042578992199830176
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05799999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.7014477920298043
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0,
+                0.042578992199830176
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05799999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 1,
+            "kind": "object",
+            "source_entity": "moka_pot_2",
+            "target_entity": "moka_pot_2",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch10CrossSkillExactDonors6/tasks/vcn10_001__put_the_cream_cheese_on_the_stove_then_push_the_plate_to_the_front_of_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.6940123889803703
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0,
+                0.034389809515739875
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05799999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.6940123889803703
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0,
+                0.034389809515739875
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05799999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 2,
+            "kind": "object",
+            "source_entity": "moka_pot_2",
+            "target_entity": "moka_pot_2",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch10CrossSkillExactDonors6/tasks/vcn10_001__put_the_cream_cheese_on_the_stove_then_push_the_plate_to_the_front_of_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.7009147783715015
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0,
+                0.03369013054866655
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05799999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.7009147783715015
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0,
+                0.03369013054866655
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05799999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 3,
+            "kind": "object",
+            "source_entity": "moka_pot_2",
+            "target_entity": "moka_pot_2",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch10CrossSkillExactDonors6/tasks/vcn10_001__put_the_cream_cheese_on_the_stove_then_push_the_plate_to_the_front_of_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.6972016100658718
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0,
+                0.07408219264948723
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05799999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.6972016100658718
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0,
+                0.07408219264948723
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05799999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ],
+        [
+          {
+            "state_index": 4,
+            "kind": "object",
+            "source_entity": "moka_pot_2",
+            "target_entity": "moka_pot_2",
+            "anchor_bddl": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch10CrossSkillExactDonors6/tasks/vcn10_001__put_the_cream_cheese_on_the_stove_then_push_the_plate_to_the_front_of_the_stove/task.bddl",
+            "source_bddl": "upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.bddl",
+            "source_robot_body": "robot0_base",
+            "target_robot_body": "robot0_base",
+            "source_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.7141406573903853
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0,
+                0.07243933002563355
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05799999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "realized_entity_in_robot_frame": [
+              [
+                -1.0,
+                0.0,
+                0.0,
+                0.7141406573903853
+              ],
+              [
+                0.0,
+                -1.0,
+                0.0,
+                0.07243933002563355
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.05799999999999994
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "position_error_m": 0.0,
+            "rotation_matrix_error": 0.0,
+            "deliberate_offset_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bddl_sampling_region_used_as_pose_authority": false
+          }
+        ]
+      ],
+      "intentional_close_design_audit": "intentional close required twice; top-target contact must precede top Close, bottom-target contact must precede bottom Close; top sweep must not mechanically close bottom",
+      "direct_target_contact_runtime_gate": true,
+      "drawer_close_sweep_certificates": {
+        "wooden_cabinet_1_top_region": {
+          "all_five_states_checked": true,
+          "state_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "initial_scene_collision_free": false,
+          "reachable_preclose_payloads_collision_free": true,
+          "artifact": "DRAWER_SWEEP_EVIDENCE.json",
+          "artifact_sha256": "f2f4c019d0eeafee1218730dbbdaac94d373edf1ae696843aa37bb5956641e4d",
+          "payload_method": "conservative target support envelope; no invented final object pose"
+        },
+        "wooden_cabinet_1_bottom_region": {
+          "all_five_states_checked": true,
+          "state_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "initial_scene_collision_free": false,
+          "reachable_preclose_payloads_collision_free": false,
+          "artifact": "DRAWER_SWEEP_EVIDENCE.json",
+          "artifact_sha256": "f2f4c019d0eeafee1218730dbbdaac94d373edf1ae696843aa37bb5956641e4d",
+          "payload_method": "conservative target support envelope; no invented final object pose"
+        }
+      },
+      "corrected_retest_not_counted_as_global_novel": true,
+      "ordinal": 21
+    }
+  ]
+}

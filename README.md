@@ -78,3 +78,7 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - `valid_compose_new/`: 3 fresh strict-success Compose candidates, 10 successful episodes.
 - Each card links the masked comparison, complete public task bundle, and one on-demand reel containing all success episodes.
 <!-- VALID_COMPOSE_NEW_README_END -->
+
+<!-- BATCH19_PENDING_README_START -->
+- `valid_compose_new_batch19_review/`: 1 manually inspected Batch19 pending-review task(s), 1 strict-success episode(s); not final-selected.
+<!-- BATCH19_PENDING_README_END -->

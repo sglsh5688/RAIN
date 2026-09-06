@@ -1,0 +1,4 @@
+task_id	ordered_semantics	transfer_method	arbitrary_offsets	distractor_removals	physical_screen
+VCN35_002	on(tomato_sauce_1,plate_2); in(glazed_rim_porcelain_ramekin_1,basket_1_contain_region)	exact same-index robot-frame entity transfer	false	red_coffee_mug_1	5/5 PASS
+VCN35_004	in(glazed_rim_porcelain_ramekin_1,basket_1_contain_region); on(alphabet_soup_1,plate_2)	exact same-index robot-frame entity transfer	false	red_coffee_mug_1	5/5 PASS
+VCN35_005	in(glazed_rim_porcelain_ramekin_1,basket_1_contain_region); on(tomato_sauce_1,plate_2)	exact same-index robot-frame entity transfer	false	red_coffee_mug_1	5/5 PASS

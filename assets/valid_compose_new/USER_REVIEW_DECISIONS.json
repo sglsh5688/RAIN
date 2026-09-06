@@ -1,12 +1,15 @@
 {
   "review_date": "2026-09-06",
-  "scope": "valid_compose_new strict-success reviewer pool through VCN21",
+  "scope": "valid_compose_new strict-success reviewer pool through Batch35",
   "accepted_ids": [
     "VCN8_008",
     "VCN9_010",
     "VCN10_001",
     "VCN19_020",
     "VCN21_001"
+  ],
+  "pending_review_ids": [
+    "VCN35_002"
   ],
   "rejected_ids": [
     "VCN1_006",
@@ -40,13 +43,15 @@
     "VCN14A_006",
     "VCN14A_008",
     "VCN14A_009",
-    "VCN14A_010"
+    "VCN14A_010",
+    "COMPOSE_346"
   ],
   "rules": {
     "intentional_articulation": "A requested drawer close must be a deliberate interaction with that drawer. Contact with another drawer that incidentally closes the requested drawer is invalid.",
     "close_initialization": "Every requested drawer-close target must start fully open, comfortably beyond the native open threshold; dead-band or slightly-open initialization is prohibited.",
     "semantic_redundancy": "Keep the strongest representative of one pattern and reject weaker object substitutions or copies of LIBERO-10 patterns.",
     "final_compose_tc_gate": false,
-    "gripper_trajectory": "soft_prior_not_exclusion"
+    "gripper_trajectory": "soft_prior_not_exclusion",
+    "downstream_preservation": "A later subtask must not knock over, displace, or otherwise invalidate an object placement produced by an earlier subtask, even when the final native predicates remain true."
   }
 }

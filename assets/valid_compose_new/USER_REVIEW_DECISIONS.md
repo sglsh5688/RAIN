@@ -20,6 +20,7 @@ This file records the semantic-quality review separately from strict evaluator s
 - Redundant variants of the retained COMP2_001/VCN8_008 family: `VCN8_007`, `VCN8_009`, `VCN8_010`.
 - Weaker variants of retained VCN9_010 or VCN10_001: `VCN9_011`, `VCN10_003`, `VCN11_009`, `VCN11_010`, `VCN11_012`, `VCN13_001`, `VCN14A_010`.
 - Too close to an original LIBERO-10 action pattern: `VCN11_004`, `VCN11_005`, `VCN11_006`, `VCN13_002`, `VCN13_003`, `VCN13_010`.
+- Downstream-path damage despite strict native-predicate success: `COMPOSE_346`. During the final chocolate-pudding placement, the robot knocks over the already placed yellow-and-white mug; the user explicitly rejected this task on 2026-09-06.
 
 ## Rules for new candidates
 
@@ -29,6 +30,7 @@ This file records the semantic-quality review separately from strict evaluator s
 4. Gripper trajectory alignment is a soft success prior, never a hard exclusion rule.
 5. Prefer distinct semantic patterns over object-only substitutions. The final Compose set should include cross-layout combinations like `LBCM_003` and `LBCM_028`.
 6. Compose final success has no task-completion-head threshold.
+7. Every later subtask must preserve the physical result of every earlier subtask. A rollout is rejected when the robot knocks over or materially displaces an earlier placed object, even if all native predicates still evaluate true.
 
 ## Requested follow-up families
 

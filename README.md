@@ -5,7 +5,7 @@
 <!-- SELECTED29_README_END -->
 
 <!-- MICROWAVE_BODY_README_START -->
-- `microwave_body_mask/`: native BODY-mask alphabet-soup insertion re-evaluation; 1/5 (20%), all five original videos and a masked comparison PNG. Selected Tasks unchanged.
+- `microwave_body_mask/`: door-open correction: 0/5 reviewed successes (0%); former ep000 success withdrawn after visible door closing. Original five videos retained; no native door trajectory or policy rerun. Selected Tasks unchanged.
 <!-- MICROWAVE_BODY_README_END -->
 Open `index.html`, or enable GitHub Pages for this repository root.
 

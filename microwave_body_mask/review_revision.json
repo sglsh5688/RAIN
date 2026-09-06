@@ -1,0 +1,86 @@
+{
+  "task_id": "MWOBJ_004_BODY",
+  "revision": "no_door_close_v2_manual_historical_review",
+  "review_date_utc": "2026-09-06",
+  "source_aggregate_sha256": "3e055dbbfe105917561cb7140711e367a64b0c4be1c0f670b207304a27613823",
+  "source_results_sha256": "e63f175ccfbf9f53c52e103d7e51c1b8547473302b207b2b2d185db5826f062f",
+  "source_success_video_sha256": "f7e85a27e91d0c22635f50ff033144f021ddb3efcaa95ea886fbb4f19fe8190d",
+  "original_placement_successes": 1,
+  "reviewed_successes": 0,
+  "total_episodes": 5,
+  "reviewed_success_rate_percent": 0,
+  "native_door_trajectory_available": false,
+  "native_threshold_crossing_verified": false,
+  "policy_reevaluated": false,
+  "raw_results_modified": false,
+  "original_videos_modified": false,
+  "method": "Manual visual rejection of the sole historical placement success for visible door closing and failure to retain the open-door state; the other four trials already failed the required placement condition.",
+  "limitations": "59 sparse video frames in ep000 are not its 458 actual control steps. Door hinge qpos, full simulator states, actions, and native Open/Close observations were not recorded. No exact closure angle or first violating control step is inferred from pixels.",
+  "future_rule": {
+    "joint": "microwave_1_microjoint",
+    "native_open": "qpos < -1.3 rad",
+    "native_close": "qpos > -0.005 rad",
+    "initial_state_requires_open": true,
+    "native_close_at_any_control_step_permanently_fails": true,
+    "final_hold_requires_native_open": true,
+    "placement_hold_control_steps": 5,
+    "unknown_door_measurement_must_not_pass": true
+  },
+  "episodes": [
+    {
+      "episode_idx": 0,
+      "original_placement_success": true,
+      "reviewed_success": false,
+      "reason": "Door closing / open-door requirement violated (manual video review)",
+      "native_door_angle": null
+    },
+    {
+      "episode_idx": 1,
+      "original_placement_success": false,
+      "reviewed_success": false,
+      "reason": "Original required placement incomplete",
+      "native_door_angle": null
+    },
+    {
+      "episode_idx": 2,
+      "original_placement_success": false,
+      "reviewed_success": false,
+      "reason": "Original required placement incomplete",
+      "native_door_angle": null
+    },
+    {
+      "episode_idx": 3,
+      "original_placement_success": false,
+      "reviewed_success": false,
+      "reason": "Original required placement incomplete",
+      "native_door_angle": null
+    },
+    {
+      "episode_idx": 4,
+      "original_placement_success": false,
+      "reviewed_success": false,
+      "reason": "Original required placement incomplete",
+      "native_door_angle": null
+    }
+  ],
+  "visual_evidence": [
+    {
+      "video_frame_idx": 0,
+      "source_relative_path": "_qa/microwave_door_constraint_independent/ep000_source_frame_000.png",
+      "sha256": "57556880201e50ae57626a42cd9add7db8acb5abd6dd774f8dd304bda1eafcd6",
+      "observation": "Door initially extends outward in the open position."
+    },
+    {
+      "video_frame_idx": 54,
+      "source_relative_path": "_qa/microwave_door_constraint_independent/ep000_source_frame_054.png",
+      "sha256": "9d58617de0c675d6dc502b21e1d98944f4095ae5fd840d32491a9ca4a274d58d",
+      "observation": "Door visibly rotates toward closure."
+    },
+    {
+      "video_frame_idx": 58,
+      "source_relative_path": "_qa/microwave_door_constraint_independent/ep000_source_frame_058.png",
+      "sha256": "7d91900fdae137a0b8fdf9d68f8cfc16c9ca7419028bea05467179e4d25906b6",
+      "observation": "Terminal door lies near the microwave front instead of remaining open; legacy SUCCESS overlay is superseded."
+    }
+  ]
+}

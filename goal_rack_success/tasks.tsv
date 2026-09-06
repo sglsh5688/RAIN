@@ -1,0 +1,3 @@
+task_id	instruction	successes	episodes	success_rate_percent	asset	original_scene
+GRACK_002	Put the ketchup on the rack.	5	5	100	ketchup	LIBERO_GOAL_10
+GRACK_003	Put the salad dressing on the rack.	4	5	80	new_salad_dressing	LIBERO_GOAL_10

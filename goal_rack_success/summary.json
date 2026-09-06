@@ -1,0 +1,145 @@
+{
+  "title": "Goal Rack Adapt — Successes",
+  "date_utc": "2026-09-06",
+  "published_tasks": 2,
+  "published_success_videos": 9,
+  "displayed_task_evaluation_episodes": 10,
+  "all_trial_tasks": 3,
+  "all_trial_episodes": 15,
+  "all_trial_successes": 9,
+  "omitted_zero_success_task": {
+    "task_id": "GRACK_001",
+    "successes": 0,
+    "episodes": 5
+  },
+  "success_metric": "Adapt full upper-deck annotation plus physical deck support and release, held for five controls",
+  "source_goal_region_auxiliary_only": true,
+  "mask_caveat": "Disconnected stove-burner mask pixels are present in policy input and overlay; pixel-level quality needs further investigation.",
+  "source_videos_unmodified": true,
+  "published_video_processing": "Stream-copy faststart remux; decoded video frames identical to source",
+  "selected_collection_modified": false,
+  "tasks": [
+    {
+      "task_id": "GRACK_002",
+      "instruction": "Put the ketchup on the rack.",
+      "successes": 5,
+      "episodes": 5,
+      "success_rate_percent": 100,
+      "original_scene": "LIBERO_GOAL_10",
+      "asset": "ketchup",
+      "asset_note": "Same ketchup asset as original LIBERO_OBJECT_05.",
+      "auxiliary_original_native_on_final_count": 0,
+      "auxiliary_original_native_on_ever_count": 0,
+      "comparison_png": "../assets/goal_rack_success/comparison_png/GRACK_002__comparison.png",
+      "comparison_sha256": "d5180b5758b1ee18b7bfed70d3189ec298eb01fbd5aa4d19451a5470068268d8",
+      "success_episodes": [
+        {
+          "episode_idx": 0,
+          "seed": 7,
+          "success": true,
+          "video": "../assets/goal_rack_success/videos/GRACK_002_ep000_ok.mp4",
+          "sha256": "968ccd1f1360bd2192e900ecd608fdc30daf8e954062c667b3b0ddf09796d641",
+          "source_sha256": "0c41e350ef2a8e6e5eebbdcb84c25c7883812c8e43fc5470bacc03f37b8a1a1e",
+          "decoded_frame_sha256": "SHA256=08b8ddbd1e7097287355b0a7e87973ba3f073d66116bcb945e6649a487cd4fe9",
+          "faststart": true
+        },
+        {
+          "episode_idx": 1,
+          "seed": 8,
+          "success": true,
+          "video": "../assets/goal_rack_success/videos/GRACK_002_ep001_ok.mp4",
+          "sha256": "5b9e1be98809be52684ce3c7d5e41468076a0571219e749b7da335923168d252",
+          "source_sha256": "7a85a89c9c8c95f9566060557ecbb9526e5afc0a3c835cd4caa0f874176a0e8f",
+          "decoded_frame_sha256": "SHA256=92a21d11fb95b702438d81ef6e70c3ff0603c4b3a862260b3a21c9e317b0c9f7",
+          "faststart": true
+        },
+        {
+          "episode_idx": 2,
+          "seed": 9,
+          "success": true,
+          "video": "../assets/goal_rack_success/videos/GRACK_002_ep002_ok.mp4",
+          "sha256": "a0bb0f5ba532ed2e60e41268bf5ad36bae10d25e2d0e35879847263a1e0c6790",
+          "source_sha256": "4b1202f46fbe210adb4c11b9320350dce6cba89ba7639df651353c1fd0d607af",
+          "decoded_frame_sha256": "SHA256=aa14753b1529f71295785de97b0e1b0593214440271906da4f5c3256af8f45bc",
+          "faststart": true
+        },
+        {
+          "episode_idx": 3,
+          "seed": 10,
+          "success": true,
+          "video": "../assets/goal_rack_success/videos/GRACK_002_ep003_ok.mp4",
+          "sha256": "603492befffe6f74c8bd71c9655a4f835bd26d6fdc330c6715df09d562a24978",
+          "source_sha256": "6abc185868d7044c979cdcd33eda1fedeb71bd91131f6482b311581d19bf9290",
+          "decoded_frame_sha256": "SHA256=326233595dd691cb3edd6c51d1ea7058cbdd9ca1c9c9f25541caec558397b085",
+          "faststart": true
+        },
+        {
+          "episode_idx": 4,
+          "seed": 11,
+          "success": true,
+          "video": "../assets/goal_rack_success/videos/GRACK_002_ep004_ok.mp4",
+          "sha256": "3306358a44ea521dc3e667926a616d9daddb2f27ee30df1929f74f5742f640c8",
+          "source_sha256": "16678e5368c58119d6a9ab8a3180c8606b18f104157586069d6c563cedaee177",
+          "decoded_frame_sha256": "SHA256=6849570eca09033383058cd83f73db5c3d93517ba424e46f6ffbe99c50b6a727",
+          "faststart": true
+        }
+      ]
+    },
+    {
+      "task_id": "GRACK_003",
+      "instruction": "Put the salad dressing on the rack.",
+      "successes": 4,
+      "episodes": 5,
+      "success_rate_percent": 80,
+      "original_scene": "LIBERO_GOAL_10",
+      "asset": "new_salad_dressing",
+      "asset_note": "Uses new_salad_dressing, not the salad_dressing asset in original LIBERO_OBJECT_03.",
+      "auxiliary_original_native_on_final_count": 0,
+      "auxiliary_original_native_on_ever_count": 0,
+      "comparison_png": "../assets/goal_rack_success/comparison_png/GRACK_003__comparison.png",
+      "comparison_sha256": "4d4a43f501aa4b8cf8e455ec753333fc57374fc28f6edb4d4af1dbae0ce9612e",
+      "success_episodes": [
+        {
+          "episode_idx": 0,
+          "seed": 7,
+          "success": true,
+          "video": "../assets/goal_rack_success/videos/GRACK_003_ep000_ok.mp4",
+          "sha256": "9dcce8420492b82036a43086437f11835c56049438cae03919893941a43562cd",
+          "source_sha256": "0fb90175e47fff5009f3da7290f720fa799d21779a53138e09a98bad49c7cb39",
+          "decoded_frame_sha256": "SHA256=aede4c38a49bce1484e7ae68d4efc74a5808519d61a0b03a8cdda76a2812102f",
+          "faststart": true
+        },
+        {
+          "episode_idx": 1,
+          "seed": 8,
+          "success": true,
+          "video": "../assets/goal_rack_success/videos/GRACK_003_ep001_ok.mp4",
+          "sha256": "a006ca7ce9c8cbbef52baf97a10a933ef250f49a85701bafab72b959cf0e3e48",
+          "source_sha256": "59d9e65ab7e08004cc9c4e921c53260bc82e3b53597e108d4ee93628a94ef1da",
+          "decoded_frame_sha256": "SHA256=148d2024c4cbd4be69e41b2c8fb26b2d2c09d8e732d2872181522a3d575ab622",
+          "faststart": true
+        },
+        {
+          "episode_idx": 3,
+          "seed": 10,
+          "success": true,
+          "video": "../assets/goal_rack_success/videos/GRACK_003_ep003_ok.mp4",
+          "sha256": "5cb74ebb59616619d92ffda8bc93605cbb2696e212b5001200cabab9afe52865",
+          "source_sha256": "897d7c2d9d9f406f929648cd370a4664317be5f36d31ba78ae02a74e667ad82f",
+          "decoded_frame_sha256": "SHA256=0a4948f07c35c595b62d4093100e78191d663d4cf5b232b4bff35430df1b9980",
+          "faststart": true
+        },
+        {
+          "episode_idx": 4,
+          "seed": 11,
+          "success": true,
+          "video": "../assets/goal_rack_success/videos/GRACK_003_ep004_ok.mp4",
+          "sha256": "d0149e0e4e5753b291e26ec9e535a424daff1cf37be336c63f815b42456e936b",
+          "source_sha256": "03fff9a41fa45b55aa5d28f47a42b151ad77e79ac3dbe992d8e1cecdcef89690",
+          "decoded_frame_sha256": "SHA256=c065f52d31d8341966a38e6ea92f592b39bdd02d6c1452fde6a6aea23c96f280",
+          "faststart": true
+        }
+      ]
+    }
+  ]
+}

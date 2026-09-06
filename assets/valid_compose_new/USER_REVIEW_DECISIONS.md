@@ -16,13 +16,14 @@ This file records the semantic-quality review separately from strict evaluator s
 
 ## Pending user review
 
-These fresh Batch35 successes passed strict ordered native events, final BDDL, and manual video review for downstream preservation. They are public reviewer candidates, not yet selected tasks.
+These fresh Batch35/37 successes passed strict ordered native events, final BDDL, and manual video review for downstream preservation. They are public reviewer candidates, not yet selected tasks.
 
 | ID | Instruction | Recorded SR | Video review |
 |---|---|---:|---|
 | VCN35_002 | Put the tomato sauce on the right plate, then put the ramekin in the basket. | 1/5 | Pass: the tomato sauce stays upright on the right plate while the ramekin is deliberately placed in the basket. |
 | VCN35_004 | Put the ramekin in the basket, then put the alphabet soup on the right plate. | 3/5 | Pass for ep001, ep002, and ep004: the ramekin remains in the basket throughout the later soup placement, with no unrelated object knocked over. |
 | VCN35_005 | Put the ramekin in the basket, then put the tomato sauce on the right plate. | 2/5 | Pass for ep001 and ep002: the ramekin remains in the basket throughout the later tomato-sauce placement, with no unrelated object knocked over. |
+| VCN37_001 | Put the cream cheese box in the basket, then put the butter to the right of the plate. | 1/5 | Pass for ep003: the cream-cheese box remains contained in the basket while the butter is deliberately placed to the right of the plate; no unrelated object is knocked over. |
 
 ## Rejected candidates
 

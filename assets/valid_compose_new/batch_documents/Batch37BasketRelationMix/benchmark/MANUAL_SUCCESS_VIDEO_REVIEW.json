@@ -1,0 +1,16 @@
+{
+  "review_date": "2026-09-06",
+  "review_scope": "Batch37 strict-success videos available at first-success publication time",
+  "criteria": [
+    "requested actions are visibly deliberate and occur in instruction order",
+    "the first placement remains physically intact during and after the second action",
+    "no unrelated object is knocked over or materially displaced"
+  ],
+  "tasks": {
+    "VCN37_001": {
+      "success_episode_indices": [3],
+      "manual_review": "pass",
+      "notes": "The cream-cheese box remains visibly contained in the basket through the later butter placement to the right of the plate; no unrelated object is knocked over."
+    }
+  }
+}

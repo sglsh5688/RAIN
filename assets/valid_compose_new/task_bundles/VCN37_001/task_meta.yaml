@@ -1,0 +1,85 @@
+task_id: VCN37_001
+task_name: Put the cream cheese box in the basket, then put the butter to the right of the plate.
+language: Put the cream cheese box in the basket, then put the butter to the right of the plate.
+primary_category: Composition
+composition_family: basket_containment_then_right_relation
+anchor_suite: libero_10_living_room_tabletop_relation_mix
+source_prior_task_ids:
+- '307'
+source_priors:
+- suite: libero_10_composed_evaluated
+  task_stem: task
+  instruction: Put the cream cheese box in the basket, then put the white mug on the plate.
+  bddl: LIBERO_EX_ICRA27/LiberoUserTasks/LongBasketCupPuddingMix20260905/tasks/lbcm_005__put_the_cream_cheese_box_in_the_basket_then_put_the_white_mug_on_the_plate/task.bddl
+  init: LIBERO_EX_ICRA27/LiberoUserTasks/LongBasketCupPuddingMix20260905/tasks/lbcm_005__put_the_cream_cheese_box_in_the_basket_then_put_the_white_mug_on_the_plate/task.pruned_init
+  evidence: LBCM_005 cream-cheese-to-basket first atom completed 5/5; exact cream cheese and basket body transforms are reused.
+- suite: libero_10_adapt_evaluated
+  task_stem: task
+  instruction: Put the butter to the right of the plate.
+  bddl: LIBERO_EX_ICRA27/LiberoAdapt/tasks/adapt_168__put_the_butter_to_the_right_of_the_plate/task.bddl
+  init: LIBERO_EX_ICRA27/LiberoAdapt/tasks/adapt_168__put_the_butter_to_the_right_of_the_plate/task.pruned_init
+  evidence: ADAPT_168 butter-right-of-plate evaluated 5/5.
+component_task_instructions:
+- Put the cream cheese box in the basket
+- put the butter to the right of the plate
+component_evidence:
+- LBCM_005 cream-cheese-to-basket first atom completed 5/5; exact cream cheese and basket body transforms are reused.
+- ADAPT_168 butter-right-of-plate evaluated 5/5.
+semantic_subtask_count: 2
+action_plan_step_count: 4
+canonical_goal_atoms:
+- in(cream_cheese_1,basket_1_contain_region)
+- on(butter_1,living_room_table_plate_right_region)
+canonical_task_signature: composition|fcb66244c87992a1b356e9ea4fe9f0a731f69de1b8f1945ceba7492da6982776|frozenset({in(cream_cheese_1,basket_1_contain_region),on(butter_1,living_room_table_plate_right_region)})
+objects_of_interest:
+- cream_cheese_1
+- basket_1
+- butter_1
+- living_room_table_plate_right_region
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - in(cream_cheese_1,basket_1_contain_region)
+- - in(cream_cheese_1,basket_1_contain_region)
+  - on(butter_1,living_room_table_plate_right_region)
+physical_group: cheese_basket_butter_right
+base_bddl_template: LIBERO_EX_ICRA27/LiberoAdapt/tasks/adapt_168__put_the_butter_to_the_right_of_the_plate/task.bddl
+base_pruned_init: LIBERO_EX_ICRA27/LiberoAdapt/tasks/adapt_168__put_the_butter_to_the_right_of_the_plate/task.pruned_init
+max_steps: 1600
+definition_status: five_state_narrow_phase_verified
+notes:
+- High-prior 5/5 relation donor plus 5/5 basket prefix.
+- Cream cheese and basket retain exact LBCM_005 state-i robot-frame transforms; the relation object, plate and complete context retain the exact ADAPT state-i transforms.
+- No object, target, fixture or support pose is authored, mirrored or offset.
+- The pudding-right LBCM pairs are excluded as prior semantics; COMPOSE_346 is excluded after its last path knocked over an earlier mug.
+- Strict ordered native rises plus every final BDDL predicate determine success; Compose has no final TC gate.
+- The later action must physically preserve the first result; every nominal success requires manual video review.
+validation_version: batch37_basket_relation_exact_same_index_v1
+runtime_contract_version: batch37_two_ordered_native_rises_final_bddl_no_tc_v1
+ordered_event_atoms:
+- in(cream_cheese_1,basket_1_contain_region)
+- on(butter_1,living_room_table_plate_right_region)
+strict_event_order: true
+custom_eval_needed: true
+final_success_requires_all_bddl_goals: true
+compose_final_tc_gate: false
+final_tc_gate: false
+environment_ignore_done: true
+same_index_robot_frame_transfer: true
+arbitrary_coordinate_offsets: false
+support_only_z_correction: false
+source_state_indices:
+- 0
+- 1
+- 2
+- 3
+- 4
+distractors_removed: []
+distractor_removal_evidence: null
+downstream_preservation_required: true
+manual_success_video_preservation_review_required: true
+policy_evaluation_authorized: true
+publication_authorized: false
+evaluation_authorized: true
+physical_screen_report_sha256: 4f95485c8d86db34346f94c7aaf37737dcf9547c9071c1be840600b539901a92
+ordered_task_signature: e3c339321f12a78944136733d5a67625f19ce3a0f5891db3da6fe8b4b6195f56

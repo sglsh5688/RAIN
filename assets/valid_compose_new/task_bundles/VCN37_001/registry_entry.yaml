@@ -1,0 +1,13 @@
+name: VCN37_001
+language: Put the cream cheese box in the basket, then put the butter to the right of the plate.
+problem: Libero
+problem_folder: tasks/vcn37_001__put_the_cream_cheese_box_in_the_basket_then_put_the_butter_to_the_right_of_the_plate
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_10_living_room_tabletop_relation_mix
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|fcb66244c87992a1b356e9ea4fe9f0a731f69de1b8f1945ceba7492da6982776|frozenset({in(cream_cheese_1,basket_1_contain_region),on(butter_1,living_room_table_plate_right_region)})

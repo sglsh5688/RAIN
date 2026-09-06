@@ -1,0 +1,5 @@
+task_id	ordered_semantics	transfer_method	arbitrary_offsets	distractor_removals	physical_screen
+VCN37_001	in(cream_cheese_1,basket_1_contain_region); on(butter_1,living_room_table_plate_right_region)	exact same-index robot-frame entity transfer	false	none	5/5 PASS
+VCN37_002	on(butter_1,living_room_table_plate_right_region); in(cream_cheese_1,basket_1_contain_region)	exact same-index robot-frame entity transfer	false	none	5/5 PASS
+VCN37_005	in(cream_cheese_1,basket_1_contain_region); on(bbq_sauce_1,living_room_table_plate_right_region)	exact same-index robot-frame entity transfer	false	none	5/5 PASS
+VCN37_006	on(bbq_sauce_1,living_room_table_plate_right_region); in(cream_cheese_1,basket_1_contain_region)	exact same-index robot-frame entity transfer	false	none	5/5 PASS

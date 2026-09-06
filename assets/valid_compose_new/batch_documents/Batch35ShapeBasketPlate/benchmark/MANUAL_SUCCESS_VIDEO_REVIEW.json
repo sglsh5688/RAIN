@@ -1,0 +1,26 @@
+{
+  "review_date": "2026-09-06",
+  "review_scope": "all six strict-success Batch35 videos",
+  "criteria": [
+    "requested actions are visibly deliberate and occur in instruction order",
+    "the first placement remains physically intact during and after the second action",
+    "no unrelated object is knocked over or materially displaced"
+  ],
+  "tasks": {
+    "VCN35_002": {
+      "success_episode_indices": [4],
+      "manual_review": "pass",
+      "notes": "Tomato sauce remains upright on the right plate while the ramekin is deliberately placed in the basket."
+    },
+    "VCN35_004": {
+      "success_episode_indices": [1, 2, 4],
+      "manual_review": "pass",
+      "notes": "Ramekin remains in the basket through the later alphabet-soup placement; no unrelated object is knocked over."
+    },
+    "VCN35_005": {
+      "success_episode_indices": [1, 2],
+      "manual_review": "pass",
+      "notes": "Ramekin remains in the basket through the later tomato-sauce placement; no unrelated object is knocked over."
+    }
+  }
+}

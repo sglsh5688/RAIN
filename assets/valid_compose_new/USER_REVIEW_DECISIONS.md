@@ -14,6 +14,16 @@ This file records the semantic-quality review separately from strict evaluator s
 
 `VCN21_001` was first added to the reviewer candidate pool after its audited v3 run and is now also explicitly selected by the user. Its existing 4/5 record is reused without rerun or rescoring.
 
+## Pending user review
+
+These fresh Batch35 successes passed strict ordered native events, final BDDL, and manual video review for downstream preservation. They are public reviewer candidates, not yet selected tasks.
+
+| ID | Instruction | Recorded SR | Video review |
+|---|---|---:|---|
+| VCN35_002 | Put the tomato sauce on the right plate, then put the ramekin in the basket. | 1/5 | Pass: the tomato sauce stays upright on the right plate while the ramekin is deliberately placed in the basket. |
+| VCN35_004 | Put the ramekin in the basket, then put the alphabet soup on the right plate. | 3/5 | Pass for ep001, ep002, and ep004: the ramekin remains in the basket throughout the later soup placement, with no unrelated object knocked over. |
+| VCN35_005 | Put the ramekin in the basket, then put the tomato sauce on the right plate. | 2/5 | Pass for ep001 and ep002: the ramekin remains in the basket throughout the later tomato-sauce placement, with no unrelated object knocked over. |
+
 ## Rejected candidates
 
 - Accidental or weakly initialized drawer closure: `VCN1_006`, `VCN1_010`, `VCN1_014`, `VCN3_001`, `VCN3_003`, `VCN5_003`, `VCN6_002`, `VCN6_003`, `VCN6_004`, `VCN6_005`, `VCN8_012`, `VCN11_015`, `VCN14A_005`, `VCN14A_006`, `VCN14A_008`, `VCN14A_009`.

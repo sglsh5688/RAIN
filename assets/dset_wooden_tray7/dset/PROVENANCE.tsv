@@ -1,0 +1,2 @@
+task_id	family	instruction	skill_sources	scene_sources	all_sources	transfer_summary
+DSETRP_001	F1_dishware_to_ramekin_position_dining_set_mat	Pick up the black bowl at the table center and place it on the dining-set mat.		LIBERO_SPATIAL_03;DSET_001	LIBERO_SPATIAL_03;DSET_001	The ramekin is removed and the DSET_001 mat takes its exact authored pose, a -0.26 m main-table X translation.

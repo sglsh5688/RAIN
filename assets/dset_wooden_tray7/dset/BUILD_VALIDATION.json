@@ -1,0 +1,189 @@
+{
+  "task_id": "DSETRP_001",
+  "source_task_id": "DSET_001",
+  "same_instruction": true,
+  "same_manipuland_pickup_pose": true,
+  "authored_scene_changes": [
+    "remove glazed_rim_porcelain_ramekin_1",
+    "move dining_set_group_1 from main_table_plate_region to main_table_ramekin_region"
+  ],
+  "source_target_position_xy_m": [
+    0.06,
+    0.2
+  ],
+  "target_position_xy_m": [
+    -0.2,
+    0.2
+  ],
+  "target_translation_delta_xy_m": [
+    -0.26,
+    0.0
+  ],
+  "removed_context_object": "glazed_rim_porcelain_ramekin_1",
+  "destination_yaw_unchanged": true,
+  "physical_support_site_unchanged": true,
+  "target_parent_contact_required": true,
+  "initial_state_count": 5,
+  "source_state_dimension": 66,
+  "evaluation_state_dimension": 53,
+  "removed_free_body_state_dimension_delta": 13,
+  "fresh_states_generated": true,
+  "source_states_reused": false,
+  "build_gpu": 6,
+  "init_validation": {
+    "task_id": "DSETRP_001",
+    "pool_count": 5,
+    "valid_count": 5,
+    "required_init_predicates": [
+      [
+        "not",
+        [
+          "on",
+          "akita_black_bowl_1",
+          "dining_set_group_1_plate_support_region"
+        ]
+      ]
+    ],
+    "closed_drawer_initial_tolerance_m": 0.008,
+    "success_predicates_unmodified": true,
+    "selected_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rows": [
+      {
+        "pool_index": 0,
+        "valid": true,
+        "mask_areas": {
+          "manipulated_object": 1159,
+          "goal_target": 1791
+        },
+        "repaired_drawer_support": false,
+        "normalized_articulation": [],
+        "errors": [],
+        "initial_native_support_jitter": [],
+        "push_corridor": null
+      },
+      {
+        "pool_index": 1,
+        "valid": true,
+        "mask_areas": {
+          "manipulated_object": 1157,
+          "goal_target": 1791
+        },
+        "repaired_drawer_support": false,
+        "normalized_articulation": [],
+        "errors": [],
+        "initial_native_support_jitter": [],
+        "push_corridor": null
+      },
+      {
+        "pool_index": 2,
+        "valid": true,
+        "mask_areas": {
+          "manipulated_object": 1158,
+          "goal_target": 1791
+        },
+        "repaired_drawer_support": false,
+        "normalized_articulation": [],
+        "errors": [],
+        "initial_native_support_jitter": [],
+        "push_corridor": null
+      },
+      {
+        "pool_index": 3,
+        "valid": true,
+        "mask_areas": {
+          "manipulated_object": 1155,
+          "goal_target": 1791
+        },
+        "repaired_drawer_support": false,
+        "normalized_articulation": [],
+        "errors": [],
+        "initial_native_support_jitter": [],
+        "push_corridor": null
+      },
+      {
+        "pool_index": 4,
+        "valid": true,
+        "mask_areas": {
+          "manipulated_object": 1159,
+          "goal_target": 1791
+        },
+        "repaired_drawer_support": false,
+        "normalized_articulation": [],
+        "errors": [],
+        "initial_native_support_jitter": [],
+        "push_corridor": null
+      }
+    ],
+    "novel_fixture_height_normalization": true,
+    "dining_set_physical_support_site_installed": true,
+    "dining_set_parent_contact_required": true,
+    "all_initial_goals_checked_false": true,
+    "physical_build_gpus": [
+      6
+    ]
+  },
+  "artifacts_sha256": {
+    "TASK_INDEX.tsv": "a290a4cf27b9d8286b7a0c78b09c70ce139f3c282112e49ef9e9239e67511d78",
+    "DIVERSE_ADAPT_PROVENANCE.tsv": "72760da27a712cc85cee5d0a04970e2e46d2e1dcc53c488586d401355fdc80f7",
+    "registry.yaml": "5984be6c4d59560d2c84f070bf6130eb184844a736496dc638fbf48fd07f7134",
+    "action_plan_registry.yaml": "592634a4333e201240209f39e6c92099ade70d1e430ec84882bf09ec9c6f4650",
+    "benchmark_support/benchmark_registry_candidates.yaml": "5984be6c4d59560d2c84f070bf6130eb184844a736496dc638fbf48fd07f7134",
+    "benchmark_support/action_plan_registry.yaml": "592634a4333e201240209f39e6c92099ade70d1e430ec84882bf09ec9c6f4650",
+    "comparison_png/DSETRP_001__comparison.png": "5c23fda39c62b89391a8001e7b7fce863622347e03f9c8cdcd5711a1fb1d0d62",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/task.bddl": "12bb1b3b9afc050c9f4e93e73840f01f0fa08631df6ecaeaee3108a0d648b454",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/task.pruned_init": "55b2919ef642d5031633f267d107ca271f3a53996594955aaf96b49faa991a5b",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/candidate_pool.pruned_init": "8d26acde51c123064ecdd59d5ad811b11a27a2fabbb0c56866a592be32e3354e",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/task_meta.yaml": "d02bc43ea6af15c2a8971ec5599fb9933969eb276db8b914dd4cb6d1e6660003",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/eval_rules.yaml": "919e4a60de1fead95d012526354eaf00cfbe69de94bb0249eee9b5577d4f5c60",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/mask_bindings.yaml": "3bbb5a87f7f8841afd4c549da5c1d35ce67806d2308984ffe6c88124561952f7",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/action_plan.yaml": "780b02a6281a02d8667ff4b4a4c28cea20c0402b495eeee809b08390007837aa",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/registry_entry.yaml": "b98ec7322364194abcb6fd2492c5854f68008bd601cdef612a34e0d4a428ae3a",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/INIT_VALIDATION.json": "1fa5157da5f888381e52cb51470c0b13b1d784560d727cd9c04404b5371999c2"
+  },
+  "runtime_dependency_sha256": {
+    "build_dset_ramekin_position.py": "90f061e7a43875adf800ac6528bd4bb91cc11347b7c98377d9d19608476bfc50",
+    "run_dining_set_dishware_init_worker.py": "8c28115f20d64422ad637716ef3eb9b69178b40f79f9adb585ce4f4ee7eeba45",
+    "dining_set_dishware_support.py": "6033342a6f49e4e53cddefeac7fb0c240e018fe6776ff049feaa698b08cf3387",
+    "novel_feedback_fixture_geometry.py": "a283a180811a0ab6ed47d2436d47d52af6ecfedd820231045b91101aa1f2d874"
+  },
+  "policy_inference_run": true,
+  "github_upload_performed": false,
+  "rain_five_episode_result": {
+    "model": "RAINv2",
+    "successes": 0,
+    "episodes": 5,
+    "success_rate_percent": 0.0,
+    "physical_gpu": 6,
+    "episode_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "seed": 7,
+    "all_original_episode_videos_retained": true,
+    "result_manifest": "local_sources/run_manifest.json"
+  },
+  "evaluation_artifacts_sha256": {
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/results.json": "8fa448e1eea22e483c93f55967d856f422b4e7288b474aeec76d2719695bd4e2",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/partial/gpu_6.jsonl": "1b352835ee8c29a4d5486a7e9188a3bbed698a23a2f16fda8cde33d6214aa2b5",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/results_for_excel.tsv": "c892862b8933246653ac324cb1820bedb1ced8f27c2c0e9333b6e9dd181b9f6d",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/summary.md": "6f4e2878729bb08d1692975e99b439dbf130ff3828e8aa783d25c557eec8a470",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/text_features.npz": "a556f59d9ee61f8fde9126b3f3abdc4d473599ca562722174d00bfad6ed87480",
+    "evaluation_5ep/rain_ckpt/episodes.tsv": "79989b93f79c4194972b066b5418790a5fd6ff846aec3bcfd88997c5de19f383",
+    "evaluation_5ep/rain_ckpt/task_success_rates.tsv": "029af83d450183d82b78ac458c93356c23e9f587eaf39629f8d2c16f70a56aea",
+    "evaluation_5ep/rain_ckpt/videos.tsv": "a555f52df26d267e56c683c5f5a3d8e7ebac57bdc7fd21e11a66bd923b036221",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/videos/DSETRP_001_ep000_fail.mp4": "c6d25047a2e0d461ea8450dee47a54f2d96a08ddaa84fb449bea2dd69ad47ad7",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/videos/DSETRP_001_ep001_fail.mp4": "bf4bdfa1d4e26c9bdb4c8d40302d36d374d9762c6bd2d0d6247e340e0987a61d",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/videos/DSETRP_001_ep002_fail.mp4": "131e822310037a2a7af3fd8b6d970c4688571f27320a1537eb167f2ae5b02afa",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/videos/DSETRP_001_ep003_fail.mp4": "1c93726c0868cc3baaf159481a37d63cb419beb388087e706108fddb014dbbca",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/videos/DSETRP_001_ep004_fail.mp4": "314485827888f4e0e03d81d5948f8ab7d15badd286a959baf109276b3a73f99d"
+  }
+}

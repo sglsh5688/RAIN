@@ -1,0 +1,281 @@
+{
+  "created_at_utc": "2026-09-06T04:44:42.070216+00:00",
+  "audit_updated_at_utc": "2026-09-06T04:44:42.070216+00:00",
+  "model": "RAINv2",
+  "task_id": "DSETRP_001",
+  "protocol": "DSET_001 controlled target relocation to the removed ramekin pose; exact current-simulator masks and physical On predicate",
+  "episodes_per_task": 5,
+  "episode_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "seed": 7,
+  "elapsed_seconds": 136.7,
+  "physical_gpu": 6,
+  "physical_gpu_evidence": {
+    "worker_partial_ledger": "local_sources/gpu_6.jsonl",
+    "worker_partial_ledger_sha256": "1b352835ee8c29a4d5486a7e9188a3bbed698a23a2f16fda8cde33d6214aa2b5",
+    "rows": 5,
+    "episode_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "other_gpu_partial_ledgers": []
+  },
+  "dino_input_size": 224,
+  "replan_steps": 8,
+  "num_inference_steps": 4,
+  "feas_threshold": 0.7,
+  "consecutive_stop": 2,
+  "max_steps": 520,
+  "action_checkpoint": {
+    "path": "local_sources/checkpoint_final.pt",
+    "bytes": 2152701359,
+    "sha256": "7232043efb5b6d563def9fa378cd6f16b8e4623e103327605a5203714807252f"
+  },
+  "progress_checkpoint": {
+    "path": "local_sources/checkpoint_best.pt",
+    "bytes": 944123251,
+    "sha256": "e35566c8f366b49c79fd4e029b42ccde56438bd270f895fd286482febb605eae"
+  },
+  "evaluator": {
+    "path": "local_sources/run_dining_set_dishware_evaluator_entry.py",
+    "sha256": "39c179763ef09f2788c3b922a2b77765d40dceb4ba1abf3eee0e70bdc35e3818"
+  },
+  "runtime_dependency_sha256": {
+    "local_sources/finalize_dset_ramekin_position_eval.py": "d96e1bd9e639e32ce37844046af1e935bbff3fc001308f8bd227253544e5f412",
+    "local_sources/run_dining_set_dishware_evaluator_entry.py": "39c179763ef09f2788c3b922a2b77765d40dceb4ba1abf3eee0e70bdc35e3818",
+    "local_sources/run_diverse_adapt_evaluator_entry.py": "1abcb3be6a3b6949964a2b604e0db9955c663440208897d213c7428307278afd",
+    "local_sources/run_analogy_evaluator_entry.py": "b824f6d9446fcc17934d2f0528d53d9a23f531b879a10999af1f22e841df0226",
+    "local_sources/dining_set_dishware_support.py": "6033342a6f49e4e53cddefeac7fb0c240e018fe6776ff049feaa698b08cf3387",
+    "local_sources/diverse_adapt_mask_geometry.py": "44fc3a9568f422467e1d813de53bce45d54ff15d1f0a5818fe2de2d128ae2cc4",
+    "local_sources/novel_scene_mask_geometry.py": "ef9a2bd2b16567cafd5710829bb11fac8f45f35683791d0a8b1e53e85a6dab7b",
+    "local_sources/novel_scene_common.py": "1398f75e5a0a294cb8e0925a1bcbc20f45641cf4674aac2dd1622727eca93937",
+    "local_sources/novel_feedback_eval_support.py": "f4b405cd6589a9580a88b4dc2d291168303b76e4189abf0473799bd7054af843",
+    "local_sources/novel_feedback_fixture_geometry.py": "a283a180811a0ab6ed47d2436d47d52af6ecfedd820231045b91101aa1f2d874",
+    "local_sources/novel_feedback_object_bindings.py": "9b2f6b37d1d2f6208528a42f015750a48d6d87265f74e266b8aa460b8fccb4bc",
+    "local_sources/evaluator.py": "31aaf145909fe4c16250b1f358d43636b9fcfee7116e7b8e730ec4fd7fe71ff3",
+    "local_sources/rollout.py": "9536ce71b136faf089874b4bba8d74509780925a82a24b9f907c97b791b72879",
+    "local_sources/runtime.py": "2aacdbb0c82f10d410339a521c375b0cb0e242f0675f79349ef2b30a66a95840",
+    "local_sources/benchmark_support.py": "79c85581f0b37d26d9ca44b8bf796576e8534de55f02fb296698a668db9d019a"
+  },
+  "dining_set_asset": {
+    "path": "local_sources/dining_set_group.xml",
+    "bytes": 2706,
+    "sha256": "a80770ab226c5dcaeb2c9b436e13f646fcfe4d8e3e3d38dc1c117ddc89203e92",
+    "xml_unmodified_by_task": true
+  },
+  "episodes_json": {
+    "path": "local_sources/final_full.json",
+    "bytes": 892602037,
+    "sha256": "fdfc3de476f831d2db6874ae4183b79cdfe9c78d235ab54c3a34f5d1860b43e8",
+    "role": "runtime/training metadata input; current simulator masks replace stored masks during inference"
+  },
+  "benchmark_build_validation": {
+    "path": "local_sources/BUILD_VALIDATION.json",
+    "sha256": "b2b3645531fedd9782593f805d1998e814ae88380b29aa2e0d4d8aa260829d1e"
+  },
+  "task_artifacts_sha256": {
+    "TASK_INDEX.tsv": "a290a4cf27b9d8286b7a0c78b09c70ce139f3c282112e49ef9e9239e67511d78",
+    "DIVERSE_ADAPT_PROVENANCE.tsv": "72760da27a712cc85cee5d0a04970e2e46d2e1dcc53c488586d401355fdc80f7",
+    "registry.yaml": "5984be6c4d59560d2c84f070bf6130eb184844a736496dc638fbf48fd07f7134",
+    "action_plan_registry.yaml": "592634a4333e201240209f39e6c92099ade70d1e430ec84882bf09ec9c6f4650",
+    "benchmark_support/benchmark_registry_candidates.yaml": "5984be6c4d59560d2c84f070bf6130eb184844a736496dc638fbf48fd07f7134",
+    "benchmark_support/action_plan_registry.yaml": "592634a4333e201240209f39e6c92099ade70d1e430ec84882bf09ec9c6f4650",
+    "comparison_png/DSETRP_001__comparison.png": "5c23fda39c62b89391a8001e7b7fce863622347e03f9c8cdcd5711a1fb1d0d62",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/task.bddl": "12bb1b3b9afc050c9f4e93e73840f01f0fa08631df6ecaeaee3108a0d648b454",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/task.pruned_init": "55b2919ef642d5031633f267d107ca271f3a53996594955aaf96b49faa991a5b",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/candidate_pool.pruned_init": "8d26acde51c123064ecdd59d5ad811b11a27a2fabbb0c56866a592be32e3354e",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/task_meta.yaml": "d02bc43ea6af15c2a8971ec5599fb9933969eb276db8b914dd4cb6d1e6660003",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/eval_rules.yaml": "919e4a60de1fead95d012526354eaf00cfbe69de94bb0249eee9b5577d4f5c60",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/mask_bindings.yaml": "3bbb5a87f7f8841afd4c549da5c1d35ce67806d2308984ffe6c88124561952f7",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/action_plan.yaml": "780b02a6281a02d8667ff4b4a4c28cea20c0402b495eeee809b08390007837aa",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/registry_entry.yaml": "b98ec7322364194abcb6fd2492c5854f68008bd601cdef612a34e0d4a428ae3a",
+    "tasks/dsetrp_001__pick_up_the_black_bowl_at_the_table_center_and_place_it_on_the_dining_set_mat_at_the_removed_ramekin_position/INIT_VALIDATION.json": "1fa5157da5f888381e52cb51470c0b13b1d784560d727cd9c04404b5371999c2"
+  },
+  "raw_and_summary_artifacts_sha256": {
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/results.json": "8fa448e1eea22e483c93f55967d856f422b4e7288b474aeec76d2719695bd4e2",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/partial/gpu_6.jsonl": "1b352835ee8c29a4d5486a7e9188a3bbed698a23a2f16fda8cde33d6214aa2b5",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/results_for_excel.tsv": "c892862b8933246653ac324cb1820bedb1ced8f27c2c0e9333b6e9dd181b9f6d",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/summary.md": "6f4e2878729bb08d1692975e99b439dbf130ff3828e8aa783d25c557eec8a470",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/text_features.npz": "a556f59d9ee61f8fde9126b3f3abdc4d473599ca562722174d00bfad6ed87480",
+    "evaluation_5ep/rain_ckpt/episodes.tsv": "79989b93f79c4194972b066b5418790a5fd6ff846aec3bcfd88997c5de19f383",
+    "evaluation_5ep/rain_ckpt/task_success_rates.tsv": "029af83d450183d82b78ac458c93356c23e9f587eaf39629f8d2c16f70a56aea",
+    "evaluation_5ep/rain_ckpt/videos.tsv": "a555f52df26d267e56c683c5f5a3d8e7ebac57bdc7fd21e11a66bd923b036221",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/videos/DSETRP_001_ep000_fail.mp4": "c6d25047a2e0d461ea8450dee47a54f2d96a08ddaa84fb449bea2dd69ad47ad7",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/videos/DSETRP_001_ep001_fail.mp4": "bf4bdfa1d4e26c9bdb4c8d40302d36d374d9762c6bd2d0d6247e340e0987a61d",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/videos/DSETRP_001_ep002_fail.mp4": "131e822310037a2a7af3fd8b6d970c4688571f27320a1537eb167f2ae5b02afa",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/videos/DSETRP_001_ep003_fail.mp4": "1c93726c0868cc3baaf159481a37d63cb419beb388087e706108fddb014dbbca",
+    "evaluation_5ep/rain_ckpt/raw_results/DSETRP_001/videos/DSETRP_001_ep004_fail.mp4": "314485827888f4e0e03d81d5948f8ab7d15badd286a959baf109276b3a73f99d"
+  },
+  "raw_results": {
+    "path": "local_sources/results.json",
+    "sha256": "8fa448e1eea22e483c93f55967d856f422b4e7288b474aeec76d2719695bd4e2"
+  },
+  "command_provenance": {
+    "status": "equivalent command reconstructed from immutable raw result configuration; original stdout/stderr command log was not captured",
+    "python": "local_sources/python",
+    "argv": [
+      "local_sources/run_dining_set_dishware_evaluator_entry.py",
+      "--checkpoint",
+      "local_sources/checkpoint_final.pt",
+      "--progress-checkpoint",
+      "local_sources/checkpoint_best.pt",
+      "--benchmark-dir",
+      "local_sources/LiberoDSetRamekinPosition",
+      "--episodes-json",
+      "local_sources/final_full.json",
+      "--gpus",
+      "6",
+      "--episodes-per-task",
+      "5",
+      "--episode-ids",
+      "0,1,2,3,4",
+      "--dino-input-size",
+      "224",
+      "--replan-steps",
+      "8",
+      "--num-inference-steps",
+      "4",
+      "--feas-threshold",
+      "0.7",
+      "--consecutive-stop",
+      "2",
+      "--seed",
+      "7",
+      "--record-video",
+      "--max-success-videos",
+      "5",
+      "--max-fail-videos",
+      "5",
+      "--max-steps",
+      "520",
+      "--save-dir",
+      "local_sources/DSETRP_001",
+      "--task-ids",
+      "DSETRP_001"
+    ],
+    "working_directory": "local_sources/LIBERO_EX_ICRA27"
+  },
+  "successes": 0,
+  "episodes": 5,
+  "success_rate_percent": 0.0,
+  "all_original_episode_videos_retained": true,
+  "outcome_interpretation": {
+    "semantic_goal_atom_count": 1,
+    "semantic_goal": "on(akita_black_bowl_1, dining_set_group_1_plate_support_region)",
+    "goal_atom_ever_satisfied_in_any_episode": false,
+    "goal_atom_final_in_any_episode": false,
+    "all_episodes_reached_both_controller_phases": true,
+    "all_episodes_terminated_at_max_steps": true,
+    "controller_depth_note": "2/2 means the grasp and release controller phases were entered; it is not semantic task completion.",
+    "visual_audit_method": "All five complete videos were decoded; first and final frames were explicitly decoded and eight evenly spaced frames per video were visually inspected.",
+    "visual_audit": "All five rollouts grasped and transported the bowl to the relocated mat vicinity, then left it immediately outside or overhanging the valid support site near the mat's +X edge. None achieved physical On.",
+    "quantitative_terminal_pose_or_contact_margin_recorded": false
+  },
+  "source_position_baseline": {
+    "task_id": "DSET_001",
+    "mat_center_xy_m": [
+      0.06,
+      0.2
+    ],
+    "successes": 5,
+    "episodes": 5,
+    "success_rate_percent": 100.0,
+    "same_action_checkpoint": true,
+    "same_progress_checkpoint": true,
+    "task_success_rates_tsv": {
+      "path": "local_sources/task_success_rates.tsv",
+      "sha256": "d349def55de874010cfb47008b3900b8e119fc5604b0b09a15655b4e03e9987f"
+    },
+    "episodes_tsv": {
+      "path": "local_sources/episodes.tsv",
+      "sha256": "3d44b7710cd950251e6702dde5a31299371b3b6b0b90802055b8d6cfead2c96f"
+    },
+    "run_config": {
+      "path": "local_sources/run_config.json",
+      "sha256": "c5abbb588211ff41eaa5847d8b9172f8471b6470409f0e031d1b435e8030ca9f"
+    },
+    "task_bddl_sha256": "e8f79ca9bb670c61d25568aeb942efe77b26e12b813ee89d7c456ff54a6c02f0",
+    "task_pruned_init_sha256": "011e82c77863ca9ac9ccef01eafa4a848a5dc617fd21da51f5a8731559a2758d",
+    "comparison_scope": "The test removes the ramekin and moves the mat -0.26 m along main-table X to its exact authored center; task language, pickup relation, goal semantics, and RAIN checkpoints are held fixed."
+  },
+  "video_records": [
+    {
+      "task_id": "DSETRP_001",
+      "episode_idx": 0,
+      "success": false,
+      "video": "local_sources/DSETRP_001_ep000_fail.mp4",
+      "frame_count": 67,
+      "height": 304,
+      "width": 512,
+      "bytes": 291320,
+      "sha256": "c6d25047a2e0d461ea8450dee47a54f2d96a08ddaa84fb449bea2dd69ad47ad7",
+      "first_frame_decoded": true,
+      "final_frame_decoded": true,
+      "visual_outcome": "bowl transported to target vicinity but settled outside the valid mat support site on the near/+X side"
+    },
+    {
+      "task_id": "DSETRP_001",
+      "episode_idx": 1,
+      "success": false,
+      "video": "local_sources/DSETRP_001_ep001_fail.mp4",
+      "frame_count": 67,
+      "height": 304,
+      "width": 512,
+      "bytes": 306058,
+      "sha256": "bf4bdfa1d4e26c9bdb4c8d40302d36d374d9762c6bd2d0d6247e340e0987a61d",
+      "first_frame_decoded": true,
+      "final_frame_decoded": true,
+      "visual_outcome": "bowl transported to target vicinity but settled outside the valid mat support site on the near/+X side"
+    },
+    {
+      "task_id": "DSETRP_001",
+      "episode_idx": 2,
+      "success": false,
+      "video": "local_sources/DSETRP_001_ep002_fail.mp4",
+      "frame_count": 67,
+      "height": 304,
+      "width": 512,
+      "bytes": 305332,
+      "sha256": "131e822310037a2a7af3fd8b6d970c4688571f27320a1537eb167f2ae5b02afa",
+      "first_frame_decoded": true,
+      "final_frame_decoded": true,
+      "visual_outcome": "bowl transported to target vicinity but settled outside the valid mat support site on the near/+X side"
+    },
+    {
+      "task_id": "DSETRP_001",
+      "episode_idx": 3,
+      "success": false,
+      "video": "local_sources/DSETRP_001_ep003_fail.mp4",
+      "frame_count": 67,
+      "height": 304,
+      "width": 512,
+      "bytes": 319717,
+      "sha256": "1c93726c0868cc3baaf159481a37d63cb419beb388087e706108fddb014dbbca",
+      "first_frame_decoded": true,
+      "final_frame_decoded": true,
+      "visual_outcome": "bowl transported to target vicinity but settled outside the valid mat support site on the near/+X side"
+    },
+    {
+      "task_id": "DSETRP_001",
+      "episode_idx": 4,
+      "success": false,
+      "video": "local_sources/DSETRP_001_ep004_fail.mp4",
+      "frame_count": 67,
+      "height": 304,
+      "width": 512,
+      "bytes": 314328,
+      "sha256": "314485827888f4e0e03d81d5948f8ab7d15badd286a959baf109276b3a73f99d",
+      "first_frame_decoded": true,
+      "final_frame_decoded": true,
+      "visual_outcome": "bowl transported to target vicinity but settled outside the valid mat support site on the near/+X side"
+    }
+  ]
+}

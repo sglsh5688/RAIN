@@ -1,0 +1,89 @@
+{
+  "schema": "wtray_post_eval_audit_v1",
+  "finalized_at_utc": "2026-09-06T05:08:21.261095+00:00",
+  "aggregate_audit_original_sha256": "dd0161fda51faca23c31022de6ab0c9e41ade519816d4a6282d038e110e26eed",
+  "aggregate_audit": {
+    "tasks": 6,
+    "episodes": 30,
+    "unique_task_episode_keys": 30,
+    "physical_gpus": [
+      6,
+      7
+    ],
+    "family_task_counts": {
+      "F1_three_plate_choice": 3,
+      "F2_heterogeneous_dishware_choice": 3
+    },
+    "initial_goals_false": 30,
+    "success_video_cap_per_task": 5,
+    "failure_video_cap_per_task": 5,
+    "success_video_count": 2,
+    "failure_video_count": 28,
+    "failure_videos_from_original_trials": true,
+    "json_fallback_mask_sources": 0,
+    "active_mask_source_counts": {
+      "sim_seg": 856,
+      "sim_region": 1082,
+      "sim_missing": 1
+    },
+    "place_mask_source_counts": {
+      "sim_region_poly": 857,
+      "none": 1082
+    }
+  },
+  "verified": {
+    "ordered_task_ids": [
+      "WTRAY_001",
+      "WTRAY_002",
+      "WTRAY_003",
+      "WTRAY_004",
+      "WTRAY_005",
+      "WTRAY_006"
+    ],
+    "tasks": 6,
+    "episodes": 30,
+    "unique_task_episode_keys": 30,
+    "successes": 2,
+    "per_task_successes": {
+      "WTRAY_001": 0,
+      "WTRAY_002": 0,
+      "WTRAY_003": 0,
+      "WTRAY_004": 2,
+      "WTRAY_005": 0,
+      "WTRAY_006": 0
+    },
+    "all_initial_goals_false": true,
+    "strict_result_consistency_errors": 0,
+    "successful_final_states_pass_full_strict_predicate": true,
+    "pre_evaluation_artifact_hashes_verified_before_finalize": true,
+    "protected_inputs_unchanged_during_finalize": true,
+    "raw_evaluation_tree_unchanged_during_finalize": true,
+    "github_upload_performed": false
+  },
+  "video_audit": {
+    "count": 30,
+    "success_count": 2,
+    "failure_count": 28,
+    "dimensions": [
+      [
+        512,
+        304
+      ]
+    ],
+    "minimum_frames": 44,
+    "maximum_frames": 67,
+    "all_hashes_match": true,
+    "all_decode": true
+  },
+  "raw_run_config": {
+    "path": "local_sources/run_config.json",
+    "sha256": "c435bdd85a65ffc23f76c386785129a4b051ba53f40ca0e875653cb208f68b6a"
+  },
+  "raw_evaluation_file_count": 75,
+  "raw_evaluation_tree_sha256": "bd337669fb3d98615c0fd95f863a293f61aee6a0154ddb706a08cd72216493a7",
+  "post_evaluation_sha256_ledger": {
+    "path": "local_sources/POST_EVAL_SHA256.tsv",
+    "sha256": "8ea394ff369cdd89b8e70221a9b92dffe717def9439f8a6a4adad5f4ba068637",
+    "entries": 196
+  }
+}

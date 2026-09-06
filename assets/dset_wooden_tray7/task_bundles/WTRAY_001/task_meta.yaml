@@ -1,0 +1,125 @@
+task_id: WTRAY_001
+task_name: Pick up the left plate and place it in the wooden tray.
+language: Pick up the left plate and place it in the wooden tray.
+primary_category: Adapt
+anchor_suite: libero_10
+source_prior_task_ids:
+- 5
+source_prior_task_stem: LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate
+source_prior_description: put the white mug on the left plate and put the yellow and
+  white mug on the right plate
+canonical_goal_atoms:
+- in(plate_1, wooden_tray_1_contain_region)
+canonical_task_signature: adapt|F1_three_plate_choice|F1_three_plate_choice_left_plate_1|in(plate_1,
+  wooden_tray_1_contain_region)
+objects_of_interest:
+- plate_1
+- wooden_tray_1_contain_region
+held_fixed:
+- NAF_031 nominal tray and left/right pickup anchors
+- one added midpoint choice at the same pickup x coordinate
+- all three choices present and initially outside the tray
+- single exact In goal
+varied:
+- select only the left choice (plate_1) from three visible objects
+- replace the learned destination with the unscaled native wooden tray
+single_semantic_goal: true
+physical_group: F1_three_plate_choice_left_plate_1
+base_bddl_template: local_sources/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.bddl
+base_pruned_init: local_sources/LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate.pruned_init
+definition_status: defined_simulator_validated_and_rain_five_episode_evaluated
+notes:
+- Tray center is fixed at (0.10, 0.00).
+- Choice centers are left=(-0.13,-0.23), middle=(-0.13,0.00), and right=(-0.13,0.23).
+- The tray uses its installed unscaled contain_region; no mesh, collision geometry,
+  or native site is edited.
+- All three choice objects are critical initialization objects and must be visible
+  in every saved state.
+- 'Policy success is stricter than stock site-root In: full collision containment,
+  positive tray contact, release, and a five-control-step support hold are required.'
+adapt_family: F1_three_plate_choice
+adapt_scope: wooden_tray_object_choice
+transfer_summary: One of three simultaneously visible objects is selected for an atomic
+  transfer into the native wooden tray.
+provenance_evidence:
+- task_id: LIBERO_10_05
+  role: MULTIPLE-DISHWARE SCENE SOURCE
+  reason: supplies learned left/right tableware selection and a living-room workspace
+- task_id: LIBERO_GOAL_06
+  role: PLATE MOTION SOURCE
+  reason: directly moves the plate to a finite destination region
+- task_id: NAF_031
+  role: GEOMETRY ANCHOR
+  reason: supplies the nominal wooden-tray and separated left/right plate centers
+critical_objects: &id001
+- plate_1
+- plate_2
+- plate_3
+required_init_predicates:
+- - not
+  - - in
+    - plate_1
+    - wooden_tray_1_contain_region
+- - not
+  - - in
+    - plate_2
+    - wooden_tray_1_contain_region
+- - not
+  - - in
+    - plate_3
+    - wooden_tray_1_contain_region
+semantic_subtask_count: 1
+choice_object_ids: *id001
+selected_object_id: plate_1
+selected_choice_position: left
+all_choice_objects_visible_required: true
+all_choice_objects_initially_outside_tray_required: true
+target_fixture: wooden_tray_1
+target_support_site: wooden_tray_1_contain_region
+tray_completion_mode: full_containment_released_supported
+support_hold_control_steps: 5
+full_collision_containment_required: true
+positive_force_tray_contact_required: true
+no_gripper_contact_required: true
+mask_policy: exact_instance_no_union
+max_steps: 520
+policy_inference_run: true
+github_upload_performed: false
+rain_five_episode_result:
+  model: RAINv2
+  successes: 0
+  episodes: 5
+  success_rate_percent: 0.0
+  physical_gpu: 6
+  episode_ids:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  success_episode_ids: []
+  failure_episode_ids:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  base_seed: 7
+  derived_episode_seeds:
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  max_steps: 520
+  strict_success_protocol: RAIN exact current masks; native tray In plus full collision
+    containment, positive-force tray contact, and no gripper contact held for five
+    actual control steps
+  action_checkpoint_sha256: 7232043efb5b6d563def9fa378cd6f16b8e4623e103327605a5203714807252f
+  progress_checkpoint_sha256: e35566c8f366b49c79fd4e029b42ccde56438bd270f895fd286482febb605eae
+  all_initial_goals_false: true
+  strict_outcomes_verified: true
+  strict_success_witnesses: []
+  all_original_episode_videos_retained: true
+  raw_result_dir: local_sources/WTRAY_001
+  result_manifest: local_sources/run_manifest.json

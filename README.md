@@ -90,3 +90,8 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 <!-- BATCH19_PENDING_README_START -->
 - `valid_compose_new_batch19_review/`: 1 manually inspected Batch19 reviewed task(s), 1 strict-success episode(s); `VCN19_020` is final-selected.
 <!-- BATCH19_PENDING_README_END -->
+
+<!-- DSET_WOODEN_TRAY7_README_START -->
+- `dset_wooden_tray7/`: one dining-set relocation and six wooden-tray object-choice tasks; 2/35 strict or physical successes.
+- Includes full construction/scoring semantics, complete task bundles, and all 35 success/failure videos.
+<!-- DSET_WOODEN_TRAY7_README_END -->

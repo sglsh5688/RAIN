@@ -1,0 +1,13 @@
+name: WTRAY_003
+language: Pick up the right plate and place it in the wooden tray.
+problem: Libero
+problem_folder: tasks/wtray_003__pick_up_the_right_plate_and_place_it_in_the_wooden_tray
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Adapt
+anchor_suite: libero_10
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: adapt|F1_three_plate_choice|F1_three_plate_choice_right_plate_3|in(plate_3, wooden_tray_1_contain_region)

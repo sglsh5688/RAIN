@@ -1,0 +1,6 @@
+task_id	episode_idx	success	total_steps	controller_phases_reached	controller_phases_total	semantic_goal_atom_count	required_atom_first_step	required_atom_final	max_required_atoms_satisfied	initial_goal_satisfied	termination	visual_outcome
+DSETRP_001	0	False	520	2	2	1		false	0	False	max_steps_without_native_goal	bowl transported to target vicinity but settled outside the valid mat support site on the near/+X side
+DSETRP_001	1	False	520	2	2	1		false	0	False	max_steps_without_native_goal	bowl transported to target vicinity but settled outside the valid mat support site on the near/+X side
+DSETRP_001	2	False	520	2	2	1		false	0	False	max_steps_without_native_goal	bowl transported to target vicinity but settled outside the valid mat support site on the near/+X side
+DSETRP_001	3	False	520	2	2	1		false	0	False	max_steps_without_native_goal	bowl transported to target vicinity but settled outside the valid mat support site on the near/+X side
+DSETRP_001	4	False	520	2	2	1		false	0	False	max_steps_without_native_goal	bowl transported to target vicinity but settled outside the valid mat support site on the near/+X side

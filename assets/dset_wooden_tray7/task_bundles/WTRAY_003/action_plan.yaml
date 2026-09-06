@@ -1,0 +1,12 @@
+task_id: WTRAY_003
+steps:
+- action_type: grasp
+  primary_object_id: plate_3
+  target_object_id: plate_3
+  source_task_id: 5
+  source_task_description: Pick up the right plate and place it in the wooden tray.
+- action_type: release
+  primary_object_id: plate_3
+  target_object_id: wooden_tray_1_contain_region
+  source_task_id: 5
+  source_task_description: Pick up the right plate and place it in the wooden tray.

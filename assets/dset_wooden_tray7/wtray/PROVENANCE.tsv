@@ -1,0 +1,7 @@
+task_id	family	instruction	skill_sources	scene_sources	all_sources	transfer_summary
+WTRAY_001	F1_three_plate_choice	Pick up the left plate and place it in the wooden tray.		LIBERO_10_05	LIBERO_10_05,LIBERO_GOAL_06,NAF_031	One of three simultaneously visible objects is selected for an atomic transfer into the native wooden tray.
+WTRAY_002	F1_three_plate_choice	Pick up the middle plate and place it in the wooden tray.		LIBERO_10_05	LIBERO_10_05,LIBERO_GOAL_06,NAF_031	One of three simultaneously visible objects is selected for an atomic transfer into the native wooden tray.
+WTRAY_003	F1_three_plate_choice	Pick up the right plate and place it in the wooden tray.		LIBERO_10_05	LIBERO_10_05,LIBERO_GOAL_06,NAF_031	One of three simultaneously visible objects is selected for an atomic transfer into the native wooden tray.
+WTRAY_004	F2_heterogeneous_dishware_choice	Pick up the black bowl and place it in the wooden tray.			LIBERO_SPATIAL_03,NAF_031	One of three simultaneously visible objects is selected for an atomic transfer into the native wooden tray.
+WTRAY_005	F2_heterogeneous_dishware_choice	Pick up the ramekin and place it in the wooden tray.			LIBERO_SPATIAL_03,ANLGX_088,DSET_004,NAF_031	One of three simultaneously visible objects is selected for an atomic transfer into the native wooden tray.
+WTRAY_006	F2_heterogeneous_dishware_choice	Pick up the white bowl and place it in the wooden tray.			LIBERO_SPATIAL_03,DSET_005,NAF_031	One of three simultaneously visible objects is selected for an atomic transfer into the native wooden tray.

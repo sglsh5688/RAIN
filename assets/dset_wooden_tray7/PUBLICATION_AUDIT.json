@@ -1,0 +1,30 @@
+{
+  "category": "Dining-Set Relocation and Wooden-Tray Object Choices",
+  "task_ids": [
+    "DSETRP_001",
+    "WTRAY_001",
+    "WTRAY_002",
+    "WTRAY_003",
+    "WTRAY_004",
+    "WTRAY_005",
+    "WTRAY_006"
+  ],
+  "tasks": 7,
+  "episodes": 35,
+  "successes": 2,
+  "failures": 33,
+  "success_rate_percent": 5.7,
+  "all_original_episode_videos_published": true,
+  "physical_gpus": [
+    6,
+    7
+  ],
+  "dset_success_semantics": "physical On over exposed mat with dining-set-parent contact",
+  "wtray_success_semantics": "native In AND full collision containment AND positive-force tray contact AND no gripper contact for five consecutive control steps",
+  "wtray_strict_success_episodes": [
+    "WTRAY_004/2",
+    "WTRAY_004/4"
+  ],
+  "selected_collection_modified": false,
+  "github_upload_performed_by_builder": false
+}

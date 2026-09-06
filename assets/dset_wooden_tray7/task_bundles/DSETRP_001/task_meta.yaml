@@ -1,0 +1,86 @@
+task_id: DSETRP_001
+task_name: Pick up the black bowl at the table center and place it on the dining-set mat.
+language: Pick up the black bowl at the table center and place it on the dining-set mat.
+primary_category: Adapt
+anchor_suite: libero_spatial
+source_prior_task_ids:
+- 3
+source_prior_task_stem: pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate
+source_prior_description: Pick the akita black bowl from table center and place it on the plate
+canonical_goal_atoms:
+- on(akita_black_bowl_1, dining_set_group_1_plate_support_region)
+canonical_task_signature: adapt|F1_dishware_to_ramekin_position_dining_set_mat|spatial_03_akita_black_bowl_1_to_dining_set_mat_xy_-0.20_0.20_ramekin_removed|on(akita_black_bowl_1, dining_set_group_1_plate_support_region)
+objects_of_interest:
+- akita_black_bowl_1
+- dining_set_group_1_plate_support_region
+held_fixed:
+- source main-table, stove, cabinet, cookies, and black-bowl poses
+- manipuland pickup pose and source relation
+- dining-set yaw and physical support-site geometry
+- single exact On goal with physical parent contact
+varied:
+- remove glazed_rim_porcelain_ramekin_1
+- relocate dining_set_group_1 from the source plate center (0.06, 0.20) to the exact authored ramekin center (-0.20, 0.20)
+single_semantic_goal: true
+physical_group: spatial_03_akita_black_bowl_1_to_dining_set_mat_at_removed_ramekin_position
+base_bddl_template: local_sources/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.bddl
+base_pruned_init: local_sources/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.pruned_init
+definition_status: defined_simulator_validated_and_rain_five_episode_evaluated
+notes:
+- Controlled DSET_001 target-position test; task language and bowl pickup pose are unchanged.
+- The glazed-rim porcelain ramekin is removed and the mat takes its exact authored region.
+- The accepted target remains the audited exposed cloth between the utensil groups.
+- No installed asset XML, mesh, texture, collision geometry, native site, or yaw is edited.
+- Fresh simulator states are generated because removing one free body changes state dimensionality.
+adapt_family: F1_dishware_to_ramekin_position_dining_set_mat
+adapt_scope: dining_set_target_to_removed_ramekin_pose
+transfer_summary: Test whether the learned bowl-to-dining-set behavior transfers when the ramekin is removed and the mat occupies its exact source pose.
+provenance_evidence:
+- task_id: LIBERO_SPATIAL_03
+  role: SPATIAL PICK-PLACE AND SCENE SOURCE
+  reason: demonstrates pickup at the table center and placement onto a flat tableware destination in this layout
+critical_objects:
+- akita_black_bowl_1
+required_init_predicates:
+- - not
+  - - 'on'
+    - akita_black_bowl_1
+    - dining_set_group_1_plate_support_region
+semantic_subtask_count: 1
+raw_candidate_id: DSETRP_001
+target_fixture: dining_set_group_1
+target_support_site: dining_set_group_1_plate_support_region
+target_support_description: exposed central cloth between utensil groups
+target_parent_contact_required: true
+native_center_region_used: false
+removed_initial_collision_blocker: akita_black_bowl_2
+max_steps: 520
+source_target_position_xy_m:
+- 0.06
+- 0.2
+target_position_xy_m:
+- -0.2
+- 0.2
+target_translation_delta_xy_m:
+- -0.26
+- 0.0
+source_target_region: main_table_plate_region
+target_region: main_table_ramekin_region
+replaced_context_object: glazed_rim_porcelain_ramekin_1
+source_state_reuse_allowed: false
+state_regeneration_reason: Removing one free-joint object changes qpos/qvel state dimensionality.
+destination_yaw_unchanged: true
+evaluation_state_dimension: 53
+policy_inference_run: true
+rain_five_episode_result:
+  model: RAINv2
+  successes: 0
+  episodes: 5
+  success_rate_percent: 0.0
+  physical_gpu: 6
+  seed: 7
+  all_controller_phases_reached: true
+  goal_atom_ever_satisfied: false
+  visual_audit: All five bowls were transported to the relocated target vicinity but settled outside the valid support site near its +X edge.
+  result_manifest: local_sources/run_manifest.json
+github_upload_performed: false

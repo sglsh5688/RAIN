@@ -1,0 +1,7 @@
+task_id	predecessor_task_id	instruction	tray_old_xy_m	tray_new_xy_m	black_bowl_old_xy_m	black_bowl_new_xy_m	other_choice_poses
+WTRAYR_001	WTRAY_001	Pick up the left plate and place it in the wooden tray.	0.10,0.00	0.10,-0.06	unchanged/not-applicable	unchanged/not-applicable	unchanged
+WTRAYR_002	WTRAY_002	Pick up the middle plate and place it in the wooden tray.	0.10,0.00	0.10,-0.06	unchanged/not-applicable	unchanged/not-applicable	unchanged
+WTRAYR_003	WTRAY_003	Pick up the right plate and place it in the wooden tray.	0.10,0.00	0.10,-0.06	unchanged/not-applicable	unchanged/not-applicable	unchanged
+WTRAYR_004	WTRAY_004	Pick up the black bowl and place it in the wooden tray.	0.10,0.00	0.10,-0.06	-0.13,-0.23	-0.16,-0.18	unchanged
+WTRAYR_005	WTRAY_005	Pick up the ramekin and place it in the wooden tray.	0.10,0.00	0.10,-0.06	-0.13,-0.23	-0.16,-0.18	unchanged
+WTRAYR_006	WTRAY_006	Pick up the white bowl and place it in the wooden tray.	0.10,0.00	0.10,-0.06	-0.13,-0.23	-0.16,-0.18	unchanged

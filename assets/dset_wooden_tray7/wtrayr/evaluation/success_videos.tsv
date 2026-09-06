@@ -1,0 +1,6 @@
+task_id	instruction	episode_idx	success	video	source_video	source_sha256
+WTRAYR_004	Pick up the black bowl and place it in the wooden tray.	1	True	local_sources/WTRAYR_004_ep001_ok.mp4	local_sources/WTRAYR_004_ep001_ok.mp4	7eee2290f1cee7cd6c550abfdca2ca801692c5ba385ceba9f91bcfb16d19027b
+WTRAYR_004	Pick up the black bowl and place it in the wooden tray.	2	True	local_sources/WTRAYR_004_ep002_ok.mp4	local_sources/WTRAYR_004_ep002_ok.mp4	1ed579882778c0c43aa662f115b8fdef4cea6a88a5f77bd44e2bb7ae887c9cc1
+WTRAYR_005	Pick up the ramekin and place it in the wooden tray.	2	True	local_sources/WTRAYR_005_ep002_ok.mp4	local_sources/WTRAYR_005_ep002_ok.mp4	118e04d4174487e012a9af7b15502638b67e684446fbc14fd44130f2437fb12b
+WTRAYR_006	Pick up the white bowl and place it in the wooden tray.	0	True	local_sources/WTRAYR_006_ep000_ok.mp4	local_sources/WTRAYR_006_ep000_ok.mp4	89502d7c22fe97d95ae90377710b0036d6e79affa9d95c0597ee8ceeb8ba54f3
+WTRAYR_006	Pick up the white bowl and place it in the wooden tray.	2	True	local_sources/WTRAYR_006_ep002_ok.mp4	local_sources/WTRAYR_006_ep002_ok.mp4	6ac890be5344f453bd5162b81dc5bc5eb1b37ba62fe8aeffebb5c7b4add3d4eb

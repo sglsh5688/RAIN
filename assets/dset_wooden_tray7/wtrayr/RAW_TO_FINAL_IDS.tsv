@@ -1,0 +1,7 @@
+task_id	raw_id	family	instruction
+WTRAYR_001	RAWX_001	F1_three_plate_choice	Pick up the left plate and place it in the wooden tray.
+WTRAYR_002	RAWX_002	F1_three_plate_choice	Pick up the middle plate and place it in the wooden tray.
+WTRAYR_003	RAWX_003	F1_three_plate_choice	Pick up the right plate and place it in the wooden tray.
+WTRAYR_004	RAWX_004	F2_heterogeneous_dishware_choice	Pick up the black bowl and place it in the wooden tray.
+WTRAYR_005	RAWX_005	F2_heterogeneous_dishware_choice	Pick up the ramekin and place it in the wooden tray.
+WTRAYR_006	RAWX_006	F2_heterogeneous_dishware_choice	Pick up the white bowl and place it in the wooden tray.

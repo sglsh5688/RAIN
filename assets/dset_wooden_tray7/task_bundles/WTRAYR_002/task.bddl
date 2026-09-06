@@ -1,0 +1,56 @@
+; Reachable wooden-tray revision: F1_three_plate_choice.
+(define (problem libero_living_room_tabletop_manipulation)
+  (:domain robosuite)
+  (:language Pick up the middle plate and place it in the wooden tray.)
+  (:regions
+      (wooden_tray_1_init_region
+          (:target living_room_table)
+          (:ranges ((0.099000 -0.061000 0.101000 -0.059000)))
+          (:yaw_rotation ((0.0 0.0)))
+      )
+      (choice_left_init_region
+          (:target living_room_table)
+          (:ranges ((-0.133000 -0.233000 -0.127000 -0.227000)))
+          (:yaw_rotation ((0.0 0.0)))
+      )
+      (choice_middle_init_region
+          (:target living_room_table)
+          (:ranges ((-0.133000 -0.003000 -0.127000 0.003000)))
+          (:yaw_rotation ((0.0 0.0)))
+      )
+      (choice_right_init_region
+          (:target living_room_table)
+          (:ranges ((-0.133000 0.227000 -0.127000 0.233000)))
+          (:yaw_rotation ((0.0 0.0)))
+      )
+      (contain_region
+          (:target wooden_tray_1)
+      )
+  )
+
+  (:fixtures
+    living_room_table - living_room_table
+  )
+
+  (:objects
+    wooden_tray_1 - wooden_tray
+    plate_1 plate_2 plate_3 - plate
+  )
+
+  (:obj_of_interest
+    plate_2
+    wooden_tray_1_contain_region
+  )
+
+  (:init
+    (On wooden_tray_1 living_room_table_wooden_tray_1_init_region)
+    (On plate_1 living_room_table_choice_left_init_region)
+    (On plate_2 living_room_table_choice_middle_init_region)
+    (On plate_3 living_room_table_choice_right_init_region)
+  )
+
+  (:goal
+    (And (In plate_2 wooden_tray_1_contain_region))
+  )
+
+)

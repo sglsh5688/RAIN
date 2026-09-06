@@ -1,5 +1,5 @@
 {
-  "category": "Dining-Set Relocation and Wooden-Tray Object Choices",
+  "category": "Dining-Set Relocation and Wooden-Tray Object Choices with Reachable-Pose Revisions",
   "task_ids": [
     "DSETRP_001",
     "WTRAY_001",
@@ -7,13 +7,19 @@
     "WTRAY_003",
     "WTRAY_004",
     "WTRAY_005",
-    "WTRAY_006"
+    "WTRAY_006",
+    "WTRAYR_001",
+    "WTRAYR_002",
+    "WTRAYR_003",
+    "WTRAYR_004",
+    "WTRAYR_005",
+    "WTRAYR_006"
   ],
-  "tasks": 7,
-  "episodes": 35,
-  "successes": 2,
-  "failures": 33,
-  "success_rate_percent": 5.7,
+  "tasks": 13,
+  "episodes": 65,
+  "successes": 7,
+  "failures": 58,
+  "success_rate_percent": 10.8,
   "all_original_episode_videos_published": true,
   "physical_gpus": [
     6,
@@ -24,6 +30,34 @@
   "wtray_strict_success_episodes": [
     "WTRAY_004/2",
     "WTRAY_004/4"
+  ],
+  "wtrayr_pose_revision": {
+    "tray_xy_before_m": [
+      0.1,
+      0.0
+    ],
+    "tray_xy_after_m": [
+      0.1,
+      -0.06
+    ],
+    "black_bowl_xy_before_m": [
+      -0.13,
+      -0.23
+    ],
+    "black_bowl_xy_after_m": [
+      -0.16,
+      -0.18
+    ],
+    "plate_pickup_poses_changed": false,
+    "ramekin_and_white_bowl_pickup_poses_changed": false,
+    "task_language_or_success_semantics_changed": false
+  },
+  "wtrayr_strict_success_episodes": [
+    "WTRAYR_004/1",
+    "WTRAYR_004/2",
+    "WTRAYR_005/2",
+    "WTRAYR_006/0",
+    "WTRAYR_006/2"
   ],
   "selected_collection_modified": false,
   "github_upload_performed_by_builder": false

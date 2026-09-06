@@ -92,6 +92,6 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 <!-- BATCH19_PENDING_README_END -->
 
 <!-- DSET_WOODEN_TRAY7_README_START -->
-- `dset_wooden_tray7/`: one dining-set relocation and six wooden-tray object-choice tasks; 2/35 strict or physical successes.
-- Includes full construction/scoring semantics, complete task bundles, and all 35 success/failure videos.
+- `dset_wooden_tray7/`: one dining-set relocation, six original wooden-tray choices, and six reachable-pose revisions; 7/65 strict or physical successes.
+- Includes controlled old/new pose semantics, complete task bundles, audit ledgers, and all 65 success/failure videos.
 <!-- DSET_WOODEN_TRAY7_README_END -->

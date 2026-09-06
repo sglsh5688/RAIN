@@ -13,7 +13,16 @@
   "frozen_48_selected_tsv_sha256": "9042f55bfd69d798c408ff354a16b2348f2abcdeec7847f1b93677c2a264aeb1",
   "selected_50_tsv_sha256": "84436b8d78956e22b01258ff4f917c3993a851344fc073d015832096bb3ba0e9",
   "selected_52_tsv_sha256": "a3d04a0c7bdc875a52f0383d8fd3eda3841829cf9b161abb14ec5aab05dbaf01",
-  "selected_53_tsv_sha256": "52039fa3bcf2c2b9133b3d64df11c08813ce745019101b8586afce0aba41723e",
+  "selected_53_tsv_sha256": "2fab71b81122482f45d4563a89706ed6668a665d0001e9c43ed1f7c8030e4f51",
+  "post_evaluation_metadata_updates": {
+    "ADVCN19_001": {
+      "field": "note",
+      "evaluated_input_sha256": "52039fa3bcf2c2b9133b3d64df11c08813ce745019101b8586afce0aba41723e",
+      "published_ledger_sha256": "2fab71b81122482f45d4563a89706ed6668a665d0001e9c43ed1f7c8030e4f51",
+      "semantic_task_definition_changed": false,
+      "reason": "replace the pre-run pending status with the derived audited 4/5 result status"
+    }
+  },
   "evaluation_segments": [
     {
       "task_count": 46,
@@ -89,27 +98,45 @@
       "eval_rule_sha256": "f42e65ad32292140e131fd085444eded52ccd88b8ad7cb2bc36b087b8162b76c",
       "supersedes_public_result_only": true,
       "note": "Close-only correction rerun. The frozen 3/5 result checked only the final Close atom; its saved success inserted the black bowl first. The correction requires the bowl and wine bottle to remain in their authored table regions and fails if either enters the drawer."
+    },
+    {
+      "task_count": 1,
+      "task_ids": [
+        "ADVCN19_001"
+      ],
+      "evaluator_sha256": "79409eaebd839c8d9832f29fd49969c93b8dace57b195914b042e68b4976651a",
+      "base_evaluator_sha256": "e5d9be4b6849b8e51d8d3eee33f9644c61eea73dc6d84bbe80fde59f78700cc4",
+      "selected_tsv_sha256": "52039fa3bcf2c2b9133b3d64df11c08813ce745019101b8586afce0aba41723e",
+      "effective_atomic_scoring_rules_sha256": "660dd70435596260f9cd437e9292067fa2f80711b7f023d85756182064cde70a",
+      "final_evaluation_audit_sha256": "23e9118ef7b9dbabde0f8ed6048c47845b7115e03741adac04c6af23ef208249",
+      "all_five_outcome_videos_sha256": [
+        "918632c934b35cf15a72570d9a8a62e08eb214da166b0dcf938bbca5ba43283f",
+        "f764d785e59f6880ae398e1f9e329d6ec0ba08b0c7fb91b6592b7cd07342603d",
+        "7b1376df40bd60ba16a106fc4803cc6f770f4a0105b5e0e37f722847635c7801",
+        "17978af19199d3a5c47ee583028293c299a23d409a8d51502332e97fb9207f54",
+        "de920be76cdbffe2570b212f5b94c2a148f586a7b18eba150660d4cc55545b48"
+      ],
+      "note": "Independent atomic Adapt segment: native top-drawer Open only, with authored-context and sibling-interaction guards."
     }
   ],
   "selected_tasks": 53,
-  "tasks": 47,
+  "tasks": 48,
   "pending_task_ids": [
     "VCN8_008",
     "VCN9_010",
     "VCN10_001",
     "VCN19_020",
-    "VCN21_001",
-    "ADVCN19_001"
+    "VCN21_001"
   ],
   "retired_source_result_ids": [
     "COMP2_001"
   ],
-  "episodes": 235,
-  "successes": 55,
-  "successful_tasks": 15,
-  "success_videos": 15,
-  "failure_videos": 41,
-  "representative_videos": 56,
+  "episodes": 240,
+  "successes": 59,
+  "successful_tasks": 16,
+  "success_videos": 16,
+  "failure_videos": 42,
+  "representative_videos": 58,
   "frozen_source_ledger": {
     "tasks": 48,
     "episodes": 240,
@@ -162,11 +189,11 @@
     },
     "Adapt": {
       "selected_tasks": 18,
-      "evaluated_tasks": 17,
-      "pending_tasks": 1,
-      "successful_tasks": 11,
-      "successes": 45,
-      "episodes": 85
+      "evaluated_tasks": 18,
+      "pending_tasks": 0,
+      "successful_tasks": 12,
+      "successes": 49,
+      "episodes": 90
     },
     "Compose": {
       "selected_tasks": 15,
@@ -834,6 +861,20 @@
       "failure_episode": "0",
       "success_video": "",
       "failure_video": "assets/pi05_videos/BDRCOMP_021/BDRCOMP_021_failure.mp4",
+      "complete": true
+    },
+    {
+      "order": "53",
+      "category": "Adapt",
+      "task_id": "ADVCN19_001",
+      "instruction": "Open the top drawer of the wooden cabinet.",
+      "successes": 4,
+      "episodes": 5,
+      "success_rate_percent": 80.0,
+      "success_episode": "0",
+      "failure_episode": "2",
+      "success_video": "assets/pi05_videos/ADVCN19_001/ADVCN19_001_success.mp4",
+      "failure_video": "assets/pi05_videos/ADVCN19_001/ADVCN19_001_failure.mp4",
       "complete": true
     }
   ]

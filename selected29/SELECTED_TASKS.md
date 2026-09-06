@@ -2,7 +2,7 @@
 
 Selection updated 2026-09-06. 20 Decomposition + 18 Adapt + 15 Compose (53 total). The confirmed Compose IDs are VCN8_008, VCN9_010, VCN10_001, VCN19_020, VCN21_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001, BDRCOMP_021.
 
-A separate π0.5 evaluation was previously run with the official `pi05_libero` checkpoint fine-tuned on LIBERO-40. Of the current selection, 47/53 tasks retain exactly 5 evaluated episodes (235 total), with 55 successful episodes (23.4%) and 15/47 evaluated tasks succeeding at least once. VCN8_008, VCN9_010, VCN10_001, VCN19_020, VCN21_001, ADVCN19_001 were selected after that run and are explicitly marked not evaluated; no π0.5 result is inferred from their RAIN records. COMP2_001's old π0.5 record remains frozen in the source ledger but is retired from this page. ANLGX_023 is replaced by a fresh strict close-only five-episode correction run; its original permissive 3/5 record remains only in the frozen source ledger and correction provenance. See [`pi05_results.tsv`](pi05_results.tsv), [`pi05_episodes.tsv`](pi05_episodes.tsv), [`pi05_evaluation.json`](pi05_evaluation.json), and [`ANLGX_023_PI05_CORRECTION.json`](ANLGX_023_PI05_CORRECTION.json).
+A separate π0.5 evaluation uses the official `pi05_libero` checkpoint fine-tuned on LIBERO-40. Of the current selection, 48/53 tasks have exactly 5 evaluated episodes (240 total), with 59 successful episodes (24.6%) and 16/48 evaluated tasks succeeding at least once. VCN8_008, VCN9_010, VCN10_001, VCN19_020, VCN21_001 remain explicitly not evaluated; no π0.5 result is inferred from their RAIN records. ADVCN19_001 now contributes its independent strict atomic-Open five-episode segment (4/5). COMP2_001's old π0.5 record remains frozen in the source ledger but is retired from this page. ANLGX_023 is replaced by a fresh strict close-only five-episode correction run; its original permissive 3/5 record remains only in the frozen source ledger and correction provenance. See [`pi05_results.tsv`](pi05_results.tsv), [`pi05_episodes.tsv`](pi05_episodes.tsv), [`pi05_evaluation.json`](pi05_evaluation.json), [`ANLGX_023_PI05_CORRECTION.json`](ANLGX_023_PI05_CORRECTION.json), and [`ADVCN19_001_PROVENANCE.json`](ADVCN19_001_PROVENANCE.json).
 
 Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. OGDTSL_011 and OGDTSL_046 retain their original Adapt Object five-episode evaluations. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt.
 
@@ -68,7 +68,7 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 | NAFR3_002 | NAFR3_002 | Put the yellow book on top of the two-layer wooden shelf. | 4/5 (80%) | 5/5 (100%) | — |
 | DSET_001 | DSET_001 | Pick up the black bowl at the table center and place it on the dining-set mat. | 5/5 (100.0%) | 5/5 (100%) | — |
 | BDRSWAP_001 | BDRSWAP_001 | Pick the alphabet soup and place it in the right compartment of the bowl drainer. | 5/5 (100%) | 5/5 (100%) | — |
-| ADVCN19_001 | ADVCN19_001 | Open the top drawer of the wooden cabinet. | 4/5 (80%) | Not evaluated | — |
+| ADVCN19_001 | ADVCN19_001 | Open the top drawer of the wooden cabinet. | 4/5 (80%) | 4/5 (80%) | — |
 
 ## Compose
 
@@ -93,6 +93,6 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 
 ## Newly selected atomic Adapt — ADVCN19_001
 
-Atomic Adapt: only open the top drawer. The five initial states, all objects, positions and fixture poses are exactly preserved from VCN19_020; ramekin placement is removed from the instruction, goal and action plan. Native Open starts false and is the sole success condition. The interaction mask covers the moving top drawer only, not the whole cabinet or sibling drawers. The complete altered Spatial scene is not claimed to have appeared in training. π0.5 has not been evaluated for this addition.
+Atomic Adapt: only open the top drawer. The five initial states, all objects, positions and fixture poses are exactly preserved from VCN19_020; ramekin placement is removed from the instruction, goal and action plan. Native Open starts false and is the sole success condition. The interaction mask covers the moving top drawer only, not the whole cabinet or sibling drawers. The complete altered Spatial scene is not claimed to have appeared in training. A separate strict π0.5 five-episode segment scored 4/5; it requires native top-drawer Open while retaining authored context and rejecting removed-parent or sibling interactions.
 
 The native Open rate comes from five original RAIN trials, not from the parent's composition result. The comparison shows the learned Goal opening skill, the exact VCN19_020 parent scene, and this atomic task, with the evaluated interaction mask. Its frozen provenance remains linked from the task card.

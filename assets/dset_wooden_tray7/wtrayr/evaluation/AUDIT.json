@@ -1,0 +1,93 @@
+{
+  "schema": "wtrayr_post_eval_audit_v1",
+  "finalized_at_utc": "2026-09-06T06:49:24.202574+00:00",
+  "aggregate_audit_original_sha256": "5c0953df9225a8413cb9d27e3c189bf6e3709fc7573a3138583cb0119ee64551",
+  "aggregate_audit": {
+    "tasks": 6,
+    "episodes": 30,
+    "unique_task_episode_keys": 30,
+    "physical_gpus": [
+      6,
+      7
+    ],
+    "family_task_counts": {
+      "F1_three_plate_choice": 3,
+      "F2_heterogeneous_dishware_choice": 3
+    },
+    "initial_goals_false": 30,
+    "success_video_cap_per_task": 5,
+    "failure_video_cap_per_task": 5,
+    "success_video_count": 5,
+    "failure_video_count": 25,
+    "failure_videos_from_original_trials": true,
+    "json_fallback_mask_sources": 0,
+    "active_mask_source_counts": {
+      "sim_seg": 1077,
+      "sim_region": 714
+    },
+    "place_mask_source_counts": {
+      "sim_region_poly": 1077,
+      "none": 714
+    }
+  },
+  "verified": {
+    "ordered_task_ids": [
+      "WTRAYR_001",
+      "WTRAYR_002",
+      "WTRAYR_003",
+      "WTRAYR_004",
+      "WTRAYR_005",
+      "WTRAYR_006"
+    ],
+    "tasks": 6,
+    "episodes": 30,
+    "unique_task_episode_keys": 30,
+    "successes": 5,
+    "per_task_successes": {
+      "WTRAYR_001": 0,
+      "WTRAYR_002": 0,
+      "WTRAYR_003": 0,
+      "WTRAYR_004": 2,
+      "WTRAYR_005": 1,
+      "WTRAYR_006": 2
+    },
+    "all_initial_goals_false": true,
+    "strict_result_consistency_errors": 0,
+    "successful_final_states_pass_full_strict_predicate": true,
+    "pre_evaluation_artifact_hashes_verified_before_finalize": true,
+    "protected_inputs_unchanged_during_finalize": true,
+    "raw_evaluation_tree_unchanged_during_finalize": true,
+    "predecessor_wtray_unchanged_during_finalize": true,
+    "github_upload_performed": false
+  },
+  "video_audit": {
+    "count": 30,
+    "success_count": 5,
+    "failure_count": 25,
+    "dimensions": [
+      [
+        512,
+        304
+      ]
+    ],
+    "minimum_frames": 19,
+    "maximum_frames": 67,
+    "all_hashes_match": true,
+    "all_decode": true
+  },
+  "raw_run_config": {
+    "path": "local_sources/run_config.json",
+    "sha256": "88ab6914da9e1560b40b53a622eb5370f206b49a255711c176d19054e666f481"
+  },
+  "raw_evaluation_file_count": 75,
+  "raw_evaluation_tree_sha256": "35ddaf40a1eaab47c8f7c85ed8e6dba362766ca6577ecfc63e75956f734cacab",
+  "protected_input_file_count": 54,
+  "protected_input_tree_sha256": "6174006041d48fb0ebeefb806529d7b8afe1df810d350c440bbe9c9412435c89",
+  "predecessor_wtray_file_count": 433,
+  "predecessor_wtray_tree_sha256": "131c00991719a042f6010bc487d2410f4f39d0e95b1b2a2cbaa8d7d77fab18ab",
+  "post_evaluation_sha256_ledger": {
+    "path": "local_sources/POST_EVAL_SHA256.tsv",
+    "sha256": "538aed83a657e837988bb6747da1a8f585cd842d3ed26c0ac5b94d7bd2e2cfc7",
+    "entries": 199
+  }
+}

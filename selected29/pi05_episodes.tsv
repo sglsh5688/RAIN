@@ -234,3 +234,8 @@ BDRCOMP_021	Compose	1	False	1040	1040	4708	timeout	False	False
 BDRCOMP_021	Compose	2	False	1040	1040	4709	timeout	False	False
 BDRCOMP_021	Compose	3	False	1040	1040	4710	timeout	False	False
 BDRCOMP_021	Compose	4	False	1040	1040	4711	timeout	False	False
+ADVCN19_001	Adapt	0	True	85	520	5207	custom_goal	True	False
+ADVCN19_001	Adapt	1	True	286	520	5208	custom_goal	True	False
+ADVCN19_001	Adapt	2	False	520	520	5209	timeout	True	False
+ADVCN19_001	Adapt	3	True	67	520	5210	custom_goal	True	False
+ADVCN19_001	Adapt	4	True	63	520	5211	custom_goal	True	False

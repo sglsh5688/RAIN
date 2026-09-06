@@ -46,3 +46,4 @@ order	category	task_id	instruction	successes	episodes	success_rate_percent	succe
 50	Adapt	DSET_001	Pick up the black bowl at the table center and place it on the dining-set mat.	5	5	100.0	0		assets/pi05_videos/DSET_001/DSET_001_success.mp4		True
 51	Adapt	BDRSWAP_001	Pick the alphabet soup and place it in the right compartment of the bowl drainer.	5	5	100.0	0		assets/pi05_videos/BDRSWAP_001/BDRSWAP_001_success.mp4		True
 52	Compose	BDRCOMP_021	Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the salad dressing and place it in the right compartment of the bowl drainer.	0	5	0.0		0		assets/pi05_videos/BDRCOMP_021/BDRCOMP_021_failure.mp4	True
+53	Adapt	ADVCN19_001	Open the top drawer of the wooden cabinet.	4	5	80.0	0	2	assets/pi05_videos/ADVCN19_001/ADVCN19_001_success.mp4	assets/pi05_videos/ADVCN19_001/ADVCN19_001_failure.mp4	True

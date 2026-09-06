@@ -1,0 +1,224 @@
+{
+  "task_id": "WTRAYR_001",
+  "pool_count": 8,
+  "valid_count": 8,
+  "required_init_predicates": [
+    [
+      "not",
+      [
+        "in",
+        "plate_1",
+        "wooden_tray_1_contain_region"
+      ]
+    ],
+    [
+      "not",
+      [
+        "in",
+        "plate_2",
+        "wooden_tray_1_contain_region"
+      ]
+    ],
+    [
+      "not",
+      [
+        "in",
+        "plate_3",
+        "wooden_tray_1_contain_region"
+      ]
+    ]
+  ],
+  "closed_drawer_initial_tolerance_m": 0.008,
+  "success_predicates_unmodified": true,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rows": [
+    {
+      "pool_index": 0,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 1569,
+        "goal_target": 13833
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 1,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 1580,
+        "goal_target": 13798
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 2,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 1567,
+        "goal_target": 13775
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 3,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 1572,
+        "goal_target": 13829
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 4,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 1567,
+        "goal_target": 13901
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 5,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 1585,
+        "goal_target": 13851
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 6,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 1581,
+        "goal_target": 13901
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    },
+    {
+      "pool_index": 7,
+      "valid": true,
+      "mask_areas": {
+        "manipulated_object": 1582,
+        "goal_target": 13798
+      },
+      "repaired_drawer_support": false,
+      "normalized_articulation": [],
+      "errors": [],
+      "initial_native_support_jitter": [],
+      "push_corridor": null
+    }
+  ],
+  "novel_fixture_height_normalization": true,
+  "native_wooden_tray_contain_region": true,
+  "all_initial_goals_checked_false": true,
+  "all_three_choice_masks_checked": true,
+  "all_three_choices_initially_outside_tray": true,
+  "selected_state_choice_visibility": [
+    {
+      "saved_state_index": 0,
+      "choice_mask_areas": {
+        "plate_1": 1569,
+        "plate_2": 906,
+        "plate_3": 1606
+      },
+      "all_choice_objects_outside_tray": {
+        "plate_1": true,
+        "plate_2": true,
+        "plate_3": true
+      }
+    },
+    {
+      "saved_state_index": 1,
+      "choice_mask_areas": {
+        "plate_1": 1580,
+        "plate_2": 873,
+        "plate_3": 1612
+      },
+      "all_choice_objects_outside_tray": {
+        "plate_1": true,
+        "plate_2": true,
+        "plate_3": true
+      }
+    },
+    {
+      "saved_state_index": 2,
+      "choice_mask_areas": {
+        "plate_1": 1567,
+        "plate_2": 866,
+        "plate_3": 1613
+      },
+      "all_choice_objects_outside_tray": {
+        "plate_1": true,
+        "plate_2": true,
+        "plate_3": true
+      }
+    },
+    {
+      "saved_state_index": 3,
+      "choice_mask_areas": {
+        "plate_1": 1572,
+        "plate_2": 908,
+        "plate_3": 1604
+      },
+      "all_choice_objects_outside_tray": {
+        "plate_1": true,
+        "plate_2": true,
+        "plate_3": true
+      }
+    },
+    {
+      "saved_state_index": 4,
+      "choice_mask_areas": {
+        "plate_1": 1567,
+        "plate_2": 859,
+        "plate_3": 1619
+      },
+      "all_choice_objects_outside_tray": {
+        "plate_1": true,
+        "plate_2": true,
+        "plate_3": true
+      }
+    }
+  ],
+  "physical_build_gpus": [
+    6
+  ],
+  "fresh_state_generation": true,
+  "policy_inference_run": false,
+  "raw_id": "RAWX_001"
+}

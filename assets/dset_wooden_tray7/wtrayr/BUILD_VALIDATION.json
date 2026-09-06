@@ -1,0 +1,454 @@
+{
+  "raw_count": 6,
+  "accepted": 6,
+  "rejected": 0,
+  "families": {
+    "F1_three_plate_choice": 3,
+    "F2_heterogeneous_dishware_choice": 3
+  },
+  "original_definition_count": 0,
+  "prior_unique_definition_count": 719,
+  "exact_duplicate_count": 0,
+  "states_per_task": 5,
+  "initial_goal_false": true,
+  "all_saved_state_masks_visible": true,
+  "revision_of": "LiberoWoodenTrayObjectChoices/WTRAY_001..006",
+  "requested_task_count": 6,
+  "all_requested_tasks_survived": true,
+  "final_task_ids": [
+    "WTRAYR_001",
+    "WTRAYR_002",
+    "WTRAYR_003",
+    "WTRAYR_004",
+    "WTRAYR_005",
+    "WTRAYR_006"
+  ],
+  "build_physical_gpus": [
+    6,
+    7
+  ],
+  "fresh_seed_base": 1737000,
+  "source_state_reuse_allowed": false,
+  "reuse_valid_cache": false,
+  "reuse_identical_physics_pools": false,
+  "old_tray_center_xy": [
+    0.1,
+    0.0
+  ],
+  "new_tray_center_xy": [
+    0.1,
+    -0.06
+  ],
+  "tray_translation_delta_xy": [
+    0.0,
+    -0.06
+  ],
+  "old_black_bowl_center_xy": [
+    -0.13,
+    -0.23
+  ],
+  "new_black_bowl_center_xy": [
+    -0.16,
+    -0.18
+  ],
+  "black_bowl_translation_delta_xy": [
+    -0.03,
+    0.05
+  ],
+  "all_plate_centers_unchanged": true,
+  "ramekin_and_white_bowl_centers_unchanged": true,
+  "native_wooden_tray_contain_region": true,
+  "exact_instance_no_union_masks": true,
+  "all_initial_goals_checked_false": true,
+  "all_three_choice_masks_checked": true,
+  "all_three_choices_initially_outside_tray": true,
+  "strict_success_protocol_unchanged": true,
+  "tray_completion_mode": "full_containment_released_supported",
+  "support_hold_control_steps": 5,
+  "predecessor_file_count": 433,
+  "predecessor_snapshot_unchanged": true,
+  "task_validations": [
+    {
+      "task_id": "WTRAYR_001",
+      "predecessor_task_id": "WTRAY_001",
+      "bundle": "tasks/wtrayr_001__pick_up_the_left_plate_and_place_it_in_the_wooden_tray",
+      "task_bddl_sha256": "a2a80150acc97342dbdcbbc38cc7c7378827c388e4ec6325f05bba6dba595376",
+      "task_pruned_init_sha256": "4edce9cdba8cb4bacf215c94f078b6fc7f6cb19723a4d9e444913688e2f16e2c",
+      "comparison_png_sha256": "d51e24f992bf1757b0b998db8e320957eb8f35022b5ed0957b1378f7a51bc8b4",
+      "states": 5,
+      "initial_goal_false": true,
+      "exact_masks_visible": true
+    },
+    {
+      "task_id": "WTRAYR_002",
+      "predecessor_task_id": "WTRAY_002",
+      "bundle": "tasks/wtrayr_002__pick_up_the_middle_plate_and_place_it_in_the_wooden_tray",
+      "task_bddl_sha256": "94792da8641ebaac2f96f9e2f7d1fdae80cdcfe2ac8cf2bcd07c41cf1eb80ab4",
+      "task_pruned_init_sha256": "208997aa30658a8f018ecb6f13f0b4ac79a26fa9bcefb4c461b9a72edc2a136a",
+      "comparison_png_sha256": "2bd4dde24094dce8fd55e44a2a6f9a2af391c860648aa0c31a4bf23d3bd8504b",
+      "states": 5,
+      "initial_goal_false": true,
+      "exact_masks_visible": true
+    },
+    {
+      "task_id": "WTRAYR_003",
+      "predecessor_task_id": "WTRAY_003",
+      "bundle": "tasks/wtrayr_003__pick_up_the_right_plate_and_place_it_in_the_wooden_tray",
+      "task_bddl_sha256": "54ada1a2c8532d1c5571c240f8606fdfccaa0d5e3eff2674850de28a879bfbd5",
+      "task_pruned_init_sha256": "fe158af35695b57826e433ddf39afb031b355f80c8db875940b8380a04bd43a1",
+      "comparison_png_sha256": "01c4903f2106e9502c482a1c7190c17e89204aea3ab39e90752eadc8c3f926e0",
+      "states": 5,
+      "initial_goal_false": true,
+      "exact_masks_visible": true
+    },
+    {
+      "task_id": "WTRAYR_004",
+      "predecessor_task_id": "WTRAY_004",
+      "bundle": "tasks/wtrayr_004__pick_up_the_black_bowl_and_place_it_in_the_wooden_tray",
+      "task_bddl_sha256": "3ff2373fda8d26712c1610feb1d2496787694c869e0e0f9e46bbd288d039cd84",
+      "task_pruned_init_sha256": "d314c9b39062eb5e15db225b2f27b9a75e81cfa541c006855ac47de876e78b47",
+      "comparison_png_sha256": "c2dfc1c526371b9005febc31521222c045ba63794dcd0f77fed93d421b793da6",
+      "states": 5,
+      "initial_goal_false": true,
+      "exact_masks_visible": true
+    },
+    {
+      "task_id": "WTRAYR_005",
+      "predecessor_task_id": "WTRAY_005",
+      "bundle": "tasks/wtrayr_005__pick_up_the_ramekin_and_place_it_in_the_wooden_tray",
+      "task_bddl_sha256": "bac008648866f0d42dfba665cfe51e8a51bee014b5d7979bbe598019bd07a73c",
+      "task_pruned_init_sha256": "cc6666f3787534819d96cc06ee45fd22b90cd5a040e88525620143234cd628d2",
+      "comparison_png_sha256": "a8735f5ecee87d53e965eb77831bb6b30a51df12b07a59d770ab0553735ed1c7",
+      "states": 5,
+      "initial_goal_false": true,
+      "exact_masks_visible": true
+    },
+    {
+      "task_id": "WTRAYR_006",
+      "predecessor_task_id": "WTRAY_006",
+      "bundle": "tasks/wtrayr_006__pick_up_the_white_bowl_and_place_it_in_the_wooden_tray",
+      "task_bddl_sha256": "7e9a516d58be7324b21ea7ca48e6da511e180bb38a5a2830ff522d67f5fa7584",
+      "task_pruned_init_sha256": "db12721098ae08bdec0b64f3baff05a20c95e0c8529ca2f7b7c3a32fbd6c9f95",
+      "comparison_png_sha256": "d1bbb3c200f00bb76d87854801b98c92f2f4a103e9f145ba0425ad44e8fb990d",
+      "states": 5,
+      "initial_goal_false": true,
+      "exact_masks_visible": true
+    }
+  ],
+  "policy_inference_run": true,
+  "github_upload_performed": false,
+  "evaluation_completed": true,
+  "pre_evaluation_raw_run_config": "local_sources/run_config.json",
+  "pre_evaluation_raw_run_config_sha256": "88ab6914da9e1560b40b53a622eb5370f206b49a255711c176d19054e666f481",
+  "pre_evaluation_benchmark_artifacts_sha256": {
+    "TASK_INDEX.tsv": "0dfb30a266ff194a73180e77288019bd7ee20c9b4d5140e523a869841a36f429",
+    "DIVERSE_ADAPT_PROVENANCE.tsv": "05f49d7fec08f1e49fd01881b625456edbfc7244936e881d819ba350b79fbd5b",
+    "tasks/wtrayr_001__pick_up_the_left_plate_and_place_it_in_the_wooden_tray/task.bddl": "a2a80150acc97342dbdcbbc38cc7c7378827c388e4ec6325f05bba6dba595376",
+    "tasks/wtrayr_001__pick_up_the_left_plate_and_place_it_in_the_wooden_tray/task.pruned_init": "4edce9cdba8cb4bacf215c94f078b6fc7f6cb19723a4d9e444913688e2f16e2c",
+    "tasks/wtrayr_001__pick_up_the_left_plate_and_place_it_in_the_wooden_tray/task_meta.yaml": "1ee357d582abea1131bfc00cdcde4511507cba0cb8fa11eb093b642dc152992a",
+    "tasks/wtrayr_001__pick_up_the_left_plate_and_place_it_in_the_wooden_tray/eval_rules.yaml": "929868e26fbf95ef50f717bf027fba683052bb866a7c2bd54920f1ee0d8bf3dc",
+    "tasks/wtrayr_001__pick_up_the_left_plate_and_place_it_in_the_wooden_tray/mask_bindings.yaml": "49b63d5812b3561f002c150b44d3246177cd8e2eb564c92005b2e7af14867e48",
+    "tasks/wtrayr_001__pick_up_the_left_plate_and_place_it_in_the_wooden_tray/action_plan.yaml": "66697d27dda2109de82f300b86a2933c3bed22c3a5819d8d20baff1504afdc7c",
+    "tasks/wtrayr_001__pick_up_the_left_plate_and_place_it_in_the_wooden_tray/registry_entry.yaml": "42f94a91158a8bcd6fcaf6b3fc468079f0fabcbdb283c88f527ef0d2151ca45c",
+    "comparison_png/WTRAYR_001__comparison.png": "d51e24f992bf1757b0b998db8e320957eb8f35022b5ed0957b1378f7a51bc8b4",
+    "tasks/wtrayr_001__pick_up_the_left_plate_and_place_it_in_the_wooden_tray/INIT_VALIDATION.json": "95798b7c4a426292a7314f7dfce880f6d914cfd0372f989c9c8b63dd269ffd70",
+    "tasks/wtrayr_002__pick_up_the_middle_plate_and_place_it_in_the_wooden_tray/task.bddl": "94792da8641ebaac2f96f9e2f7d1fdae80cdcfe2ac8cf2bcd07c41cf1eb80ab4",
+    "tasks/wtrayr_002__pick_up_the_middle_plate_and_place_it_in_the_wooden_tray/task.pruned_init": "208997aa30658a8f018ecb6f13f0b4ac79a26fa9bcefb4c461b9a72edc2a136a",
+    "tasks/wtrayr_002__pick_up_the_middle_plate_and_place_it_in_the_wooden_tray/task_meta.yaml": "ebcefe3819f73266e991f7390db75530e64ecbd2e226c412f958dd2c718db666",
+    "tasks/wtrayr_002__pick_up_the_middle_plate_and_place_it_in_the_wooden_tray/eval_rules.yaml": "375669b302e7ca877335c3de56c2b241cd55bdb64960388f2ca8757ea55b3bd2",
+    "tasks/wtrayr_002__pick_up_the_middle_plate_and_place_it_in_the_wooden_tray/mask_bindings.yaml": "5dd9f49d9703e66d2d1ec05b09d5b97c496e8e088d7bd124f2e7dd0356de756e",
+    "tasks/wtrayr_002__pick_up_the_middle_plate_and_place_it_in_the_wooden_tray/action_plan.yaml": "8ae4181ff46b5f070d7f7a132593c47470487078010559b6070cc699a2471aea",
+    "tasks/wtrayr_002__pick_up_the_middle_plate_and_place_it_in_the_wooden_tray/registry_entry.yaml": "d5eea5b1a143dbf476581a55e9f8a559349376c5f250377c1773408312cad424",
+    "comparison_png/WTRAYR_002__comparison.png": "2bd4dde24094dce8fd55e44a2a6f9a2af391c860648aa0c31a4bf23d3bd8504b",
+    "tasks/wtrayr_002__pick_up_the_middle_plate_and_place_it_in_the_wooden_tray/INIT_VALIDATION.json": "9fa46f76cff27c9a450d20c5019e6ffbe2b91e4eae5662af967d86fd41210e40",
+    "tasks/wtrayr_003__pick_up_the_right_plate_and_place_it_in_the_wooden_tray/task.bddl": "54ada1a2c8532d1c5571c240f8606fdfccaa0d5e3eff2674850de28a879bfbd5",
+    "tasks/wtrayr_003__pick_up_the_right_plate_and_place_it_in_the_wooden_tray/task.pruned_init": "fe158af35695b57826e433ddf39afb031b355f80c8db875940b8380a04bd43a1",
+    "tasks/wtrayr_003__pick_up_the_right_plate_and_place_it_in_the_wooden_tray/task_meta.yaml": "c7453f83ccfded5c9ac7183d1cb1c872e934ef02ea4457cc170b6cde38163edf",
+    "tasks/wtrayr_003__pick_up_the_right_plate_and_place_it_in_the_wooden_tray/eval_rules.yaml": "49ffb67f9c9abfa141e27392dffc58eeee5d072a815f2f14f11183128b727b2b",
+    "tasks/wtrayr_003__pick_up_the_right_plate_and_place_it_in_the_wooden_tray/mask_bindings.yaml": "a439303a0aba6895cd4f9fdbff9a1332a4869d48ed73dda11939a365171fcf9d",
+    "tasks/wtrayr_003__pick_up_the_right_plate_and_place_it_in_the_wooden_tray/action_plan.yaml": "2a198d54ea10531afa4f701fc256728ac30809b40d618c7a19889162006077c0",
+    "tasks/wtrayr_003__pick_up_the_right_plate_and_place_it_in_the_wooden_tray/registry_entry.yaml": "12e967c54e0a51ce084e2c0e62e5d4485402c5cc071734417afc888b4dcaf9f4",
+    "comparison_png/WTRAYR_003__comparison.png": "01c4903f2106e9502c482a1c7190c17e89204aea3ab39e90752eadc8c3f926e0",
+    "tasks/wtrayr_003__pick_up_the_right_plate_and_place_it_in_the_wooden_tray/INIT_VALIDATION.json": "78d4c2f41b54c9fc5e02f8f5f738b7b3ab05b428ce8fc9899bec4c1beaf5a02c",
+    "tasks/wtrayr_004__pick_up_the_black_bowl_and_place_it_in_the_wooden_tray/task.bddl": "3ff2373fda8d26712c1610feb1d2496787694c869e0e0f9e46bbd288d039cd84",
+    "tasks/wtrayr_004__pick_up_the_black_bowl_and_place_it_in_the_wooden_tray/task.pruned_init": "d314c9b39062eb5e15db225b2f27b9a75e81cfa541c006855ac47de876e78b47",
+    "tasks/wtrayr_004__pick_up_the_black_bowl_and_place_it_in_the_wooden_tray/task_meta.yaml": "354704667a73915526224e6fbe8525c3e7ea504280ab6c8fc4279061c5d4cc42",
+    "tasks/wtrayr_004__pick_up_the_black_bowl_and_place_it_in_the_wooden_tray/eval_rules.yaml": "8b0b68b9fc72487810e37bf8f1d793f0f9193f94babad66f4fb71084fc55b485",
+    "tasks/wtrayr_004__pick_up_the_black_bowl_and_place_it_in_the_wooden_tray/mask_bindings.yaml": "c77d04968d15346ab41bc8cbc3df2f5c5224508c98789d4d43f880897885e12d",
+    "tasks/wtrayr_004__pick_up_the_black_bowl_and_place_it_in_the_wooden_tray/action_plan.yaml": "67d72bb4122164d4bb03a38db1140860449fb0043905704051de35e8ef5cfe86",
+    "tasks/wtrayr_004__pick_up_the_black_bowl_and_place_it_in_the_wooden_tray/registry_entry.yaml": "15e4df89ae9eca4326c7e1ae1701fa2c9ce3cb193236685d295bd2f874e1d550",
+    "comparison_png/WTRAYR_004__comparison.png": "c2dfc1c526371b9005febc31521222c045ba63794dcd0f77fed93d421b793da6",
+    "tasks/wtrayr_004__pick_up_the_black_bowl_and_place_it_in_the_wooden_tray/INIT_VALIDATION.json": "fcb77944685b56f0b34c3c778789db48b4422b3fc298fc029b026167feb92e30",
+    "tasks/wtrayr_005__pick_up_the_ramekin_and_place_it_in_the_wooden_tray/task.bddl": "bac008648866f0d42dfba665cfe51e8a51bee014b5d7979bbe598019bd07a73c",
+    "tasks/wtrayr_005__pick_up_the_ramekin_and_place_it_in_the_wooden_tray/task.pruned_init": "cc6666f3787534819d96cc06ee45fd22b90cd5a040e88525620143234cd628d2",
+    "tasks/wtrayr_005__pick_up_the_ramekin_and_place_it_in_the_wooden_tray/task_meta.yaml": "351469605ac38d30ec6241e76ff5a58e6541624a0d71bbbfc4b64c74257c8774",
+    "tasks/wtrayr_005__pick_up_the_ramekin_and_place_it_in_the_wooden_tray/eval_rules.yaml": "f635764e273f7ac3d7e23c3408d73cfbcb85290b4d198b8ac30811b6124788a9",
+    "tasks/wtrayr_005__pick_up_the_ramekin_and_place_it_in_the_wooden_tray/mask_bindings.yaml": "55af0dbde4df4bcff1090c007d7fe1a2d8ab14e2713dac2f2e3d7d306847bd45",
+    "tasks/wtrayr_005__pick_up_the_ramekin_and_place_it_in_the_wooden_tray/action_plan.yaml": "418a47482c2c90313cea5b0232f6c8190cfb910792c2afeacbc8053fb61c181b",
+    "tasks/wtrayr_005__pick_up_the_ramekin_and_place_it_in_the_wooden_tray/registry_entry.yaml": "19be606a4b80d26492cde2679ff4084471283190d18e694d6eb90677f70639bd",
+    "comparison_png/WTRAYR_005__comparison.png": "a8735f5ecee87d53e965eb77831bb6b30a51df12b07a59d770ab0553735ed1c7",
+    "tasks/wtrayr_005__pick_up_the_ramekin_and_place_it_in_the_wooden_tray/INIT_VALIDATION.json": "53ce888687e591a49f238b2dac53b9c0defdbac7e2fae461399bc35e089d4f10",
+    "tasks/wtrayr_006__pick_up_the_white_bowl_and_place_it_in_the_wooden_tray/task.bddl": "7e9a516d58be7324b21ea7ca48e6da511e180bb38a5a2830ff522d67f5fa7584",
+    "tasks/wtrayr_006__pick_up_the_white_bowl_and_place_it_in_the_wooden_tray/task.pruned_init": "db12721098ae08bdec0b64f3baff05a20c95e0c8529ca2f7b7c3a32fbd6c9f95",
+    "tasks/wtrayr_006__pick_up_the_white_bowl_and_place_it_in_the_wooden_tray/task_meta.yaml": "79f02ee4196b4456e6d4a4178966fe330b8d50b8371b4440b43bf2987f628d77",
+    "tasks/wtrayr_006__pick_up_the_white_bowl_and_place_it_in_the_wooden_tray/eval_rules.yaml": "739286a1954d6722a0dc836d73ca0f6874229a03de9e963c47d7c2cee2cc65f3",
+    "tasks/wtrayr_006__pick_up_the_white_bowl_and_place_it_in_the_wooden_tray/mask_bindings.yaml": "6df2704b1dd25817f46d5981d7dc74b6043118412d511e954ff118777468fb79",
+    "tasks/wtrayr_006__pick_up_the_white_bowl_and_place_it_in_the_wooden_tray/action_plan.yaml": "728714d2715fadb107c3bbcab3c28d0a3feb0b6dd995ce1fea11199de73ba586",
+    "tasks/wtrayr_006__pick_up_the_white_bowl_and_place_it_in_the_wooden_tray/registry_entry.yaml": "b1dc5cc2335d879b23376900af40d3b14171804933c09f8fcc541e5999f1a868",
+    "comparison_png/WTRAYR_006__comparison.png": "d1bbb3c200f00bb76d87854801b98c92f2f4a103e9f145ba0425ad44e8fb990d",
+    "tasks/wtrayr_006__pick_up_the_white_bowl_and_place_it_in_the_wooden_tray/INIT_VALIDATION.json": "df5f725511c654b80776085eaa697e5ed4712ef28c250135e8661c2071a72626"
+  },
+  "rain_five_episode_result": {
+    "model": "RAINv2",
+    "tasks": 6,
+    "episodes": 30,
+    "successes": 5,
+    "success_rate_percent": 16.7,
+    "physical_gpus": [
+      6,
+      7
+    ],
+    "base_seed": 7,
+    "derived_episode_seed_rule": "base_seed + 100*(task_ordinal-1) + episode_idx",
+    "max_steps": 520,
+    "strict_success_protocol": "RAIN exact current masks; native tray In plus full collision containment, positive-force tray contact, and no gripper contact held for five actual control steps",
+    "action_checkpoint": {
+      "path": "local_sources/checkpoint_final.pt",
+      "size_bytes": 2152701359,
+      "mtime_ns": 1787522314146875336,
+      "sha256": "7232043efb5b6d563def9fa378cd6f16b8e4623e103327605a5203714807252f"
+    },
+    "progress_checkpoint": {
+      "path": "local_sources/checkpoint_best.pt",
+      "size_bytes": 944123251,
+      "mtime_ns": 1787530439781144613,
+      "sha256": "e35566c8f366b49c79fd4e029b42ccde56438bd270f895fd286482febb605eae"
+    },
+    "all_initial_goals_false": true,
+    "all_original_episode_videos_retained": true,
+    "strict_outcomes_verified": true,
+    "task_results": [
+      {
+        "task_id": "WTRAYR_001",
+        "family": "F1_three_plate_choice",
+        "instruction": "Pick up the left plate and place it in the wooden tray.",
+        "goal_atom": "in(plate_1, wooden_tray_1_contain_region)",
+        "physical_gpu": 6,
+        "successes": 0,
+        "episodes": 5,
+        "success_rate_percent": 0.0,
+        "success_episode_ids": [],
+        "failure_episode_ids": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "derived_episode_seeds": [
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "strict_success_witnesses": [],
+        "result_dir": "local_sources/WTRAYR_001",
+        "results_json": "local_sources/results.json"
+      },
+      {
+        "task_id": "WTRAYR_002",
+        "family": "F1_three_plate_choice",
+        "instruction": "Pick up the middle plate and place it in the wooden tray.",
+        "goal_atom": "in(plate_2, wooden_tray_1_contain_region)",
+        "physical_gpu": 7,
+        "successes": 0,
+        "episodes": 5,
+        "success_rate_percent": 0.0,
+        "success_episode_ids": [],
+        "failure_episode_ids": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "derived_episode_seeds": [
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "strict_success_witnesses": [],
+        "result_dir": "local_sources/WTRAYR_002",
+        "results_json": "local_sources/results.json"
+      },
+      {
+        "task_id": "WTRAYR_003",
+        "family": "F1_three_plate_choice",
+        "instruction": "Pick up the right plate and place it in the wooden tray.",
+        "goal_atom": "in(plate_3, wooden_tray_1_contain_region)",
+        "physical_gpu": 6,
+        "successes": 0,
+        "episodes": 5,
+        "success_rate_percent": 0.0,
+        "success_episode_ids": [],
+        "failure_episode_ids": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "derived_episode_seeds": [
+          207,
+          208,
+          209,
+          210,
+          211
+        ],
+        "strict_success_witnesses": [],
+        "result_dir": "local_sources/WTRAYR_003",
+        "results_json": "local_sources/results.json"
+      },
+      {
+        "task_id": "WTRAYR_004",
+        "family": "F2_heterogeneous_dishware_choice",
+        "instruction": "Pick up the black bowl and place it in the wooden tray.",
+        "goal_atom": "in(akita_black_bowl_1, wooden_tray_1_contain_region)",
+        "physical_gpu": 7,
+        "successes": 2,
+        "episodes": 5,
+        "success_rate_percent": 40.0,
+        "success_episode_ids": [
+          1,
+          2
+        ],
+        "failure_episode_ids": [
+          0,
+          3,
+          4
+        ],
+        "derived_episode_seeds": [
+          307,
+          308,
+          309,
+          310,
+          311
+        ],
+        "strict_success_witnesses": [
+          {
+            "episode_idx": 1,
+            "strict_onset_control_step": 243,
+            "hold_complete_control_step": 247
+          },
+          {
+            "episode_idx": 2,
+            "strict_onset_control_step": 259,
+            "hold_complete_control_step": 263
+          }
+        ],
+        "result_dir": "local_sources/WTRAYR_004",
+        "results_json": "local_sources/results.json"
+      },
+      {
+        "task_id": "WTRAYR_005",
+        "family": "F2_heterogeneous_dishware_choice",
+        "instruction": "Pick up the ramekin and place it in the wooden tray.",
+        "goal_atom": "in(glazed_rim_porcelain_ramekin_1, wooden_tray_1_contain_region)",
+        "physical_gpu": 6,
+        "successes": 1,
+        "episodes": 5,
+        "success_rate_percent": 20.0,
+        "success_episode_ids": [
+          2
+        ],
+        "failure_episode_ids": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "derived_episode_seeds": [
+          407,
+          408,
+          409,
+          410,
+          411
+        ],
+        "strict_success_witnesses": [
+          {
+            "episode_idx": 2,
+            "strict_onset_control_step": 129,
+            "hold_complete_control_step": 133
+          }
+        ],
+        "result_dir": "local_sources/WTRAYR_005",
+        "results_json": "local_sources/results.json"
+      },
+      {
+        "task_id": "WTRAYR_006",
+        "family": "F2_heterogeneous_dishware_choice",
+        "instruction": "Pick up the white bowl and place it in the wooden tray.",
+        "goal_atom": "in(white_bowl_1, wooden_tray_1_contain_region)",
+        "physical_gpu": 7,
+        "successes": 2,
+        "episodes": 5,
+        "success_rate_percent": 40.0,
+        "success_episode_ids": [
+          0,
+          2
+        ],
+        "failure_episode_ids": [
+          1,
+          3,
+          4
+        ],
+        "derived_episode_seeds": [
+          507,
+          508,
+          509,
+          510,
+          511
+        ],
+        "strict_success_witnesses": [
+          {
+            "episode_idx": 0,
+            "strict_onset_control_step": 202,
+            "hold_complete_control_step": 206
+          },
+          {
+            "episode_idx": 2,
+            "strict_onset_control_step": 354,
+            "hold_complete_control_step": 358
+          }
+        ],
+        "result_dir": "local_sources/WTRAYR_006",
+        "results_json": "local_sources/results.json"
+      }
+    ],
+    "raw_result_root": "local_sources/raw_results",
+    "result_manifest": "local_sources/run_manifest.json"
+  },
+  "runtime_dependency_sha256": {
+    "local_sources/run_wooden_tray_object_choices_evaluator_entry.py": "382f7039517093161597b38a2794ab7e4954f9fc5b5b1f90201edeccbd894622",
+    "local_sources/run_libero_wooden_tray_object_choices_gt_5ep.py": "0be35f9966a4e24f47aae6ece2e1470b1048416556fea32d4a39b04d7adeff19",
+    "local_sources/wooden_tray_object_choices_support.py": "a11e181a0b6a1c13a27df7d8eeb54b6472cda7628f81b653f2d459ee2f1ae15b",
+    "local_sources/wooden_tray_strict_placement_observer.py": "ec77a4324e61d939e573cf7902eb031dc119e902c26576801df17263488c44be",
+    "local_sources/run_diverse_adapt_evaluator_entry.py": "1abcb3be6a3b6949964a2b604e0db9955c663440208897d213c7428307278afd",
+    "local_sources/run_analogy_evaluator_entry.py": "b824f6d9446fcc17934d2f0528d53d9a23f531b879a10999af1f22e841df0226",
+    "local_sources/diverse_adapt_mask_geometry.py": "44fc3a9568f422467e1d813de53bce45d54ff15d1f0a5818fe2de2d128ae2cc4",
+    "local_sources/novel_scene_mask_geometry.py": "ef9a2bd2b16567cafd5710829bb11fac8f45f35683791d0a8b1e53e85a6dab7b",
+    "local_sources/novel_scene_common.py": "1398f75e5a0a294cb8e0925a1bcbc20f45641cf4674aac2dd1622727eca93937",
+    "local_sources/novel_feedback_eval_support.py": "f4b405cd6589a9580a88b4dc2d291168303b76e4189abf0473799bd7054af843",
+    "local_sources/novel_feedback_fixture_geometry.py": "a283a180811a0ab6ed47d2436d47d52af6ecfedd820231045b91101aa1f2d874",
+    "local_sources/novel_feedback_object_bindings.py": "9b2f6b37d1d2f6208528a42f015750a48d6d87265f74e266b8aa460b8fccb4bc",
+    "local_sources/novel_feedback_gpu_config.py": "b41c438e271050537ca8f799fbc02d2d21fdaa28708ec180271f9fa0e07ba7ee",
+    "local_sources/run_libero_novel_feedback_gt_5ep.py": "f2a4b57695331a6a2a68f39a0bff27417c484b81d720552ca68c01042255312a",
+    "local_sources/run_libero_diverse_adapt_gt_5ep.py": "00e616ed59e28c9432b898dde57266654f35b40e78fb68bfee5a3fe6776252c1",
+    "local_sources/run_libero_analogy_gt_5ep.py": "15c676b56ccb75ceccda573661e51872085c9b01975b67210647d61520faf92d",
+    "local_sources/run_extra75_tc9_eval.py": "c64e59d795cf9f14584b02dff578bc3c0974901c34a359250b7a7c3a16f28db9",
+    "local_sources/run_libero_wooden_tray_object_choices_reachable_gt_5ep.py": "81e8bf599d9b7a88b751f1588fed2e28b9a20574f025be48b813de384d27d1fe"
+  }
+}

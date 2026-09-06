@@ -1,0 +1,2 @@
+task_id	anchor_donor	added_donor	transfer_method	arbitrary_offsets	physical_screen	terminal_pose_proof
+VCN21_001	LIBERO-10_09 KITCHEN_SCENE8 moka_pot_2 + stove	LIBERO-10_10 KITCHEN_SCENE6 microwave root + open joint	same-index rigid robot-frame transfer	false	5/5 PASS	all 50 successful K8 demonstration terminal moka poses replayed stove-relative and clear of microwave door sweep

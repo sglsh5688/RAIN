@@ -1,0 +1,131 @@
+{
+  "task_id": "VCN21_001",
+  "protocol": "vcn21_runtime_contact_clearance_v3",
+  "run_start_utc": "2026-09-06T04:44:57.122032+00:00",
+  "run_finish_utc": "2026-09-06T04:48:23+00:00",
+  "frozen_at_utc": "2026-09-06T04:52:45.345462+00:00",
+  "active_rain_root": "RAIN",
+  "all_scoring_sources_preexisted_run": true,
+  "source_files": [
+    {
+      "path": "RAIN/final_libero_ex_eval/impl/evaluator.py",
+      "sha256": "31aaf145909fe4c16250b1f358d43636b9fcfee7116e7b8e730ec4fd7fe71ff3",
+      "size_bytes": 30316,
+      "mtime_utc": "2026-09-04T12:32:39.098577+00:00",
+      "mtime_precedes_run_start": true
+    },
+    {
+      "path": "RAIN/final_libero_ex_eval/impl/rollout.py",
+      "sha256": "9536ce71b136faf089874b4bba8d74509780925a82a24b9f907c97b791b72879",
+      "size_bytes": 35879,
+      "mtime_utc": "2026-09-05T14:54:42.758882+00:00",
+      "mtime_precedes_run_start": true
+    },
+    {
+      "path": "RAIN/final_libero_ex_eval/impl/custom_eval.py",
+      "sha256": "6f967d491ac80b31099acd3f61e0f730b0d92d15f878946fe7f41743a3079f73",
+      "size_bytes": 8983,
+      "mtime_utc": "2026-09-05T14:54:42.751122+00:00",
+      "mtime_precedes_run_start": true
+    },
+    {
+      "path": "LIBERO_EX_ICRA27/run_moka_microwave_compose_evaluator_entry.py",
+      "sha256": "27b6d8a54afad9802b52afde27f6032321a3847297d0a8a098f6e4dc5b52b1f0",
+      "size_bytes": 14462,
+      "mtime_utc": "2026-09-06T04:43:04.664572+00:00",
+      "mtime_precedes_run_start": true
+    },
+    {
+      "path": "LIBERO_EX_ICRA27/run_moka_microwave_compose_5ep.py",
+      "sha256": "9ee212023c07ae94b884f1e8e389cc6247205b2f12d34923763264d2e3d2693b",
+      "size_bytes": 11340,
+      "mtime_utc": "2026-09-06T04:43:54.814111+00:00",
+      "mtime_precedes_run_start": true
+    },
+    {
+      "path": "LIBERO_EX_ICRA27/upgrade_moka_microwave_runtime_contract.py",
+      "sha256": "62b80af0d41a390da06075855982d8db292ba5fe6be102ecb400f5828cba33af",
+      "size_bytes": 4394,
+      "mtime_utc": "2026-09-06T04:43:36.578203+00:00",
+      "mtime_precedes_run_start": true
+    }
+  ],
+  "evidence_files": [
+    {
+      "path": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/MokaOneThenMicrowaveClose20260906/benchmark/tasks/vcn21_001__put_the_moka_pot_on_the_stove_then_close_the_microwave_door/MICROWAVE_SWEEP_EVIDENCE.json",
+      "sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646",
+      "size_bytes": 1061071,
+      "mtime_utc": "2026-09-06T04:43:40.980436+00:00",
+      "mtime_precedes_run_start": true
+    },
+    {
+      "path": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/MokaOneThenMicrowaveClose20260906/benchmark/tasks/vcn21_001__put_the_moka_pot_on_the_stove_then_close_the_microwave_door/FIXTURE_REPLAY.json",
+      "sha256": "312cf962e947aa276b92dfd957ff70b928a61639793a606ab6c062ecd4063927",
+      "size_bytes": 21756,
+      "mtime_utc": "2026-09-06T04:22:11.810706+00:00",
+      "mtime_precedes_run_start": true
+    },
+    {
+      "path": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/MokaOneThenMicrowaveClose20260906/RUNTIME_CONTRACT_UPGRADE.json",
+      "sha256": "e1c7844e4d63a79b24362b436c065c5442eecdf019d6f443964b3a07f896a5d5",
+      "size_bytes": 2077,
+      "mtime_utc": "2026-09-06T04:43:41.002374+00:00",
+      "mtime_precedes_run_start": true
+    },
+    {
+      "path": "private_evaluation_results/rain_ms_maskaug_gt_vcn21_moka_microwave_5ep_20260906_v3/run_config.json",
+      "sha256": "07605cf5104bfc693e3f3f52bf5aeab342620751f40f66d83bad4bd3cb615c58",
+      "size_bytes": 7510,
+      "mtime_utc": "2026-09-06T04:44:59.776212+00:00",
+      "mtime_precedes_run_start": false
+    },
+    {
+      "path": "private_evaluation_results/rain_ms_maskaug_gt_vcn21_moka_microwave_5ep_20260906_v3/tasks/all1/VCN21_001/results.json",
+      "sha256": "764dc6b4dcdb5d67fff3bf70eb8fbde4f09aed53879a64bb79dd33acbdb31c70",
+      "size_bytes": 503458,
+      "mtime_utc": "2026-09-06T04:48:04.417331+00:00",
+      "mtime_precedes_run_start": false
+    }
+  ],
+  "episode_sweep_bindings": [
+    {
+      "episode_idx": 0,
+      "init_state_index": 0,
+      "state_sha256": "b6a7f602ef7633d9e0cd7052043a4f7a405e8cdd60dab2f719aa46eda207a9c6",
+      "fixture_replay_sha256": "312cf962e947aa276b92dfd957ff70b928a61639793a606ab6c062ecd4063927",
+      "microwave_sweep_evidence_sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646"
+    },
+    {
+      "episode_idx": 1,
+      "init_state_index": 1,
+      "state_sha256": "f85b296acc80b0bfd9ca77570c0566247f6127dfd765e894fb1caf7539645f31",
+      "fixture_replay_sha256": "312cf962e947aa276b92dfd957ff70b928a61639793a606ab6c062ecd4063927",
+      "microwave_sweep_evidence_sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646"
+    },
+    {
+      "episode_idx": 2,
+      "init_state_index": 2,
+      "state_sha256": "f91dae088f014aa607d0b2f743641afeb3e81922675c51c4da02825bc5659b9c",
+      "fixture_replay_sha256": "312cf962e947aa276b92dfd957ff70b928a61639793a606ab6c062ecd4063927",
+      "microwave_sweep_evidence_sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646"
+    },
+    {
+      "episode_idx": 3,
+      "init_state_index": 3,
+      "state_sha256": "0d7c75dad595b9fc48b2141dda737874c7f238051057dbccfe2ceff02e5359b6",
+      "fixture_replay_sha256": "312cf962e947aa276b92dfd957ff70b928a61639793a606ab6c062ecd4063927",
+      "microwave_sweep_evidence_sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646"
+    },
+    {
+      "episode_idx": 4,
+      "init_state_index": 4,
+      "state_sha256": "4d6cd0aac2ffd7fc0b8cfe29b18d766e375444c8366ba74515007e6412a4e255",
+      "fixture_replay_sha256": "312cf962e947aa276b92dfd957ff70b928a61639793a606ab6c062ecd4063927",
+      "microwave_sweep_evidence_sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646"
+    }
+  ],
+  "result": {
+    "successes": 4,
+    "episodes": 5
+  }
+}

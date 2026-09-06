@@ -12,6 +12,8 @@
   "evaluator_sha256": "e5d9be4b6849b8e51d8d3eee33f9644c61eea73dc6d84bbe80fde59f78700cc4",
   "frozen_48_selected_tsv_sha256": "9042f55bfd69d798c408ff354a16b2348f2abcdeec7847f1b93677c2a264aeb1",
   "selected_50_tsv_sha256": "84436b8d78956e22b01258ff4f917c3993a851344fc073d015832096bb3ba0e9",
+  "selected_52_tsv_sha256": "a3d04a0c7bdc875a52f0383d8fd3eda3841829cf9b161abb14ec5aab05dbaf01",
+  "selected_53_tsv_sha256": "52039fa3bcf2c2b9133b3d64df11c08813ce745019101b8586afce0aba41723e",
   "evaluation_segments": [
     {
       "task_count": 46,
@@ -89,13 +91,14 @@
       "note": "Close-only correction rerun. The frozen 3/5 result checked only the final Close atom; its saved success inserted the black bowl first. The correction requires the bowl and wine bottle to remain in their authored table regions and fails if either enters the drawer."
     }
   ],
-  "selected_tasks": 52,
+  "selected_tasks": 53,
   "tasks": 47,
   "pending_task_ids": [
     "VCN8_008",
     "VCN9_010",
     "VCN10_001",
     "VCN19_020",
+    "VCN21_001",
     "ADVCN19_001"
   ],
   "retired_source_result_ids": [
@@ -166,9 +169,9 @@
       "episodes": 85
     },
     "Compose": {
-      "selected_tasks": 14,
+      "selected_tasks": 15,
       "evaluated_tasks": 10,
-      "pending_tasks": 4,
+      "pending_tasks": 5,
       "successful_tasks": 1,
       "successes": 3,
       "episodes": 50
@@ -638,7 +641,7 @@
       "complete": true
     },
     {
-      "order": "38",
+      "order": "39",
       "category": "Compose",
       "task_id": "COMP2_012",
       "instruction": "Put the butter in the basket, and then put the tomato sauce in the basket.",
@@ -652,7 +655,7 @@
       "complete": true
     },
     {
-      "order": "39",
+      "order": "40",
       "category": "Compose",
       "task_id": "COMP2_032",
       "instruction": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet.",
@@ -666,7 +669,7 @@
       "complete": true
     },
     {
-      "order": "40",
+      "order": "41",
       "category": "Compose",
       "task_id": "COMP2_222",
       "instruction": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket.",
@@ -680,7 +683,7 @@
       "complete": true
     },
     {
-      "order": "41",
+      "order": "42",
       "category": "Compose",
       "task_id": "COMP2_303",
       "instruction": "Put the milk in the basket, and then put the cream cheese box in the basket.",
@@ -694,7 +697,7 @@
       "complete": true
     },
     {
-      "order": "42",
+      "order": "43",
       "category": "Compose",
       "task_id": "COMPOSE_155",
       "instruction": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another.",
@@ -708,7 +711,7 @@
       "complete": true
     },
     {
-      "order": "43",
+      "order": "44",
       "category": "Compose",
       "task_id": "COMP2_027",
       "instruction": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove.",
@@ -722,7 +725,7 @@
       "complete": true
     },
     {
-      "order": "44",
+      "order": "45",
       "category": "Compose",
       "task_id": "LBCM_003",
       "instruction": "Put the tomato sauce in the basket, then put the white mug on the plate.",
@@ -736,7 +739,7 @@
       "complete": true
     },
     {
-      "order": "45",
+      "order": "46",
       "category": "Compose",
       "task_id": "LBCM_028",
       "instruction": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket.",
@@ -750,7 +753,7 @@
       "complete": true
     },
     {
-      "order": "46",
+      "order": "47",
       "category": "Adapt",
       "task_id": "NAFR3_001",
       "instruction": "Put the popcorn on top of the short fridge.",
@@ -764,7 +767,7 @@
       "complete": true
     },
     {
-      "order": "47",
+      "order": "48",
       "category": "Adapt",
       "task_id": "NAFR3_002",
       "instruction": "Put the yellow book on top of the two-layer wooden shelf.",
@@ -778,7 +781,7 @@
       "complete": true
     },
     {
-      "order": "48",
+      "order": "49",
       "category": "Compose",
       "task_id": "MKDC_001",
       "instruction": "Put the moka pot on the stove, then close the bottom drawer of the cabinet.",
@@ -792,7 +795,7 @@
       "complete": true
     },
     {
-      "order": "49",
+      "order": "50",
       "category": "Adapt",
       "task_id": "DSET_001",
       "instruction": "Pick up the black bowl at the table center and place it on the dining-set mat.",
@@ -806,7 +809,7 @@
       "complete": true
     },
     {
-      "order": "50",
+      "order": "51",
       "category": "Adapt",
       "task_id": "BDRSWAP_001",
       "instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer.",
@@ -820,7 +823,7 @@
       "complete": true
     },
     {
-      "order": "51",
+      "order": "52",
       "category": "Compose",
       "task_id": "BDRCOMP_021",
       "instruction": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the salad dressing and place it in the right compartment of the bowl drainer.",
@@ -833,6 +836,5 @@
       "failure_video": "assets/pi05_videos/BDRCOMP_021/BDRCOMP_021_failure.mp4",
       "complete": true
     }
-  ],
-  "selected_52_tsv_sha256": "a3d04a0c7bdc875a52f0383d8fd3eda3841829cf9b161abb14ec5aab05dbaf01"
+  ]
 }

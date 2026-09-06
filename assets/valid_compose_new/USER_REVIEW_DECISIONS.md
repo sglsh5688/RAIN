@@ -10,6 +10,9 @@ This file records the semantic-quality review separately from strict evaluator s
 | VCN9_010 | Put the cream cheese on the stove, then turn on the stove. | 4/5 | Retain. |
 | VCN10_001 | Put the cream cheese on the stove, then push the plate to the front of the stove. | 2/5 | Retain. |
 | VCN19_020 | Open the top drawer of the wooden cabinet, then put the ramekin on the plate. | 1/5 | Retain after explicit user selection; ep000 was manually verified as a deliberate top-drawer open followed by the requested ramekin placement. |
+| VCN21_001 | Put the moka pot on the stove, then close the microwave door. | 4/5 | Retain after explicit user selection. All four strict-v3 successes were manually reviewed; success requires ordered native events, final BDDL, direct active-constraint/positive-force contact with `microdoorroot` in the two-control-step close window, moka/door-sweep clearance, and no final TC gate. |
+
+`VCN21_001` was first added to the reviewer candidate pool after its audited v3 run and is now also explicitly selected by the user. Its existing 4/5 record is reused without rerun or rescoring.
 
 ## Rejected candidates
 

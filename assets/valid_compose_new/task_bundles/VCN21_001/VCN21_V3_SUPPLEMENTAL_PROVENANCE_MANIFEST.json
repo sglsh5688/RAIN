@@ -1,0 +1,211 @@
+{
+  "schema": "vcn21_v3_supplemental_provenance_v1",
+  "created_at_utc": "2026-09-06T04:52:50Z",
+  "immutable_after_creation": true,
+  "task_id": "VCN21_001",
+  "task_instruction": "Put the moka pot on the stove, then close the microwave door.",
+  "result_root": "private_evaluation_results/rain_ms_maskaug_gt_vcn21_moka_microwave_5ep_20260906_v3",
+  "result_summary": {
+    "episodes": 5,
+    "successes": 4,
+    "success_rate_percent": 80.0,
+    "successful_episode_indices": [0, 1, 3, 4],
+    "failed_episode_indices": [2]
+  },
+  "purpose": "Supplement the completed v3 run_config with hashes for the active RAIN runtime and the microwave sweep/upgrade contract, then bind every episode to its exact state-keyed sweep row and preserved video. This file does not rescore or modify any rollout artifact.",
+  "immutability_note": "Any later byte change to a listed source, contract, result, episode record, or video must fail verify_vcn21_v3_supplemental_provenance.py. Replace this manifest only by creating a separately versioned manifest; do not edit it in place after publication.",
+  "artifacts": [
+    {
+      "name": "active_rain_evaluator",
+      "role": "active RAIN evaluator imported through the runner PYTHONPATH",
+      "path": "RAIN/final_libero_ex_eval/impl/evaluator.py",
+      "sha256": "31aaf145909fe4c16250b1f358d43636b9fcfee7116e7b8e730ec4fd7fe71ff3"
+    },
+    {
+      "name": "active_rain_rollout",
+      "role": "active RAIN rollout containing custom_stops_on_goal and finish_custom_goal_if_ready",
+      "path": "RAIN/final_libero_ex_eval/impl/rollout.py",
+      "sha256": "9536ce71b136faf089874b4bba8d74509780925a82a24b9f907c97b791b72879"
+    },
+    {
+      "name": "active_rain_custom_eval",
+      "role": "active RAIN custom ordered-goal evaluator",
+      "path": "RAIN/final_libero_ex_eval/impl/custom_eval.py",
+      "sha256": "6f967d491ac80b31099acd3f61e0f730b0d92d15f878946fe7f41743a3079f73"
+    },
+    {
+      "name": "v3_evaluator_entrypoint",
+      "role": "VCN21 runtime contact and sweep-clearance guard",
+      "path": "LIBERO_EX_ICRA27/run_moka_microwave_compose_evaluator_entry.py",
+      "sha256": "27b6d8a54afad9802b52afde27f6032321a3847297d0a8a098f6e4dc5b52b1f0"
+    },
+    {
+      "name": "v3_runner",
+      "role": "five-episode launch and preflight wrapper",
+      "path": "LIBERO_EX_ICRA27/run_moka_microwave_compose_5ep.py",
+      "sha256": "9ee212023c07ae94b884f1e8e389cc6247205b2f12d34923763264d2e3d2693b"
+    },
+    {
+      "name": "runtime_contract_upgrader",
+      "role": "non-state-changing v3 contract upgrader",
+      "path": "LIBERO_EX_ICRA27/upgrade_moka_microwave_runtime_contract.py",
+      "sha256": "62b80af0d41a390da06075855982d8db292ba5fe6be102ecb400f5828cba33af"
+    },
+    {
+      "name": "runtime_contract_upgrade_report",
+      "role": "attestation that physical states were unchanged and both sweep copies were bound",
+      "path": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/MokaOneThenMicrowaveClose20260906/RUNTIME_CONTRACT_UPGRADE.json",
+      "sha256": "e1c7844e4d63a79b24362b436c065c5442eecdf019d6f443964b3a07f896a5d5"
+    },
+    {
+      "name": "benchmark_microwave_sweep_evidence",
+      "role": "authoritative five-state microwave moving-subtree sweep evidence",
+      "path": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/MokaOneThenMicrowaveClose20260906/benchmark/tasks/vcn21_001__put_the_moka_pot_on_the_stove_then_close_the_microwave_door/MICROWAVE_SWEEP_EVIDENCE.json",
+      "sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646"
+    },
+    {
+      "name": "physical_screen_microwave_sweep_evidence",
+      "role": "byte-identical physical-screen copy of sweep evidence",
+      "path": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/MokaOneThenMicrowaveClose20260906/physical_screen/VCN21_001/bundle/MICROWAVE_SWEEP_EVIDENCE.json",
+      "sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646"
+    },
+    {
+      "name": "benchmark_init_validation",
+      "role": "five-state physical validation whose sweep AABBs must equal the runtime sweep evidence",
+      "path": "LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/MokaOneThenMicrowaveClose20260906/benchmark/tasks/vcn21_001__put_the_moka_pot_on_the_stove_then_close_the_microwave_door/INIT_VALIDATION.json",
+      "sha256": "a4c433183ec4bf2afcc71eee2b1885a7c5da931078154374e59ec3ac2f93b1f5"
+    },
+    {
+      "name": "v3_run_config",
+      "role": "completed rollout configuration",
+      "path": "private_evaluation_results/rain_ms_maskaug_gt_vcn21_moka_microwave_5ep_20260906_v3/run_config.json",
+      "sha256": "07605cf5104bfc693e3f3f52bf5aeab342620751f40f66d83bad4bd3cb615c58"
+    },
+    {
+      "name": "v3_episode_jsonl",
+      "role": "authoritative five per-episode telemetry records",
+      "path": "private_evaluation_results/rain_ms_maskaug_gt_vcn21_moka_microwave_5ep_20260906_v3/tasks/all1/VCN21_001/partial/gpu_2.jsonl",
+      "sha256": "c96fd261bb86707db5676d76ac0d73b34829e17e9af21a2b60048e2a9be9a8be"
+    },
+    {
+      "name": "v3_results_json",
+      "role": "completed task result containing the same five episode records",
+      "path": "private_evaluation_results/rain_ms_maskaug_gt_vcn21_moka_microwave_5ep_20260906_v3/tasks/all1/VCN21_001/results.json",
+      "sha256": "764dc6b4dcdb5d67fff3bf70eb8fbde4f09aed53879a64bb79dd33acbdb31c70"
+    },
+    {
+      "name": "v3_aggregate_json",
+      "role": "completed aggregate result",
+      "path": "private_evaluation_results/rain_ms_maskaug_gt_vcn21_moka_microwave_5ep_20260906_v3/aggregate.json",
+      "sha256": "e4d65dc23ad6f14ac814914ad30b29e34c221c04b4cc4a8e57ea912e92d3b12e"
+    }
+  ],
+  "runtime_contract": {
+    "version": "vcn21_runtime_contact_clearance_v3",
+    "sweep_lookup_key": [
+      "init_state_index",
+      "state_sha256",
+      "fixture_replay_sha256"
+    ],
+    "fixture_replay_sha256": "312cf962e947aa276b92dfd957ff70b928a61639793a606ab6c062ecd4063927",
+    "moving_door_body": "microwave_1_microdoorroot",
+    "strict_order": [
+      "On(moka_pot_2, flat_stove_2)",
+      "Close(microwave_1)"
+    ],
+    "final_tc_gate": false,
+    "success_requirements": [
+      "strict ordered native rising events",
+      "all final BDDL predicates",
+      "gripper contact with the microdoorroot subtree backed by an active MuJoCo constraint and positive normal force in the two-control-step close window",
+      "runtime moka AABB disjoint from the state-keyed microwave moving-subtree sweep at first placement, accepted close rising, and final gate"
+    ]
+  },
+  "episodes": [
+    {
+      "episode_idx": 0,
+      "success": true,
+      "init_state_index": 0,
+      "state_sha256": "b6a7f602ef7633d9e0cd7052043a4f7a405e8cdd60dab2f719aa46eda207a9c6",
+      "sweep_evidence_sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646",
+      "sweep_row_canonical_sha256": "e3c41075ec008b229b9aef260d74e4a21813a3d9e721000162b667f5aa87d958",
+      "episode_record_canonical_sha256": "c3733cdd5410e762273bcae095359db45d64916b884ff9166f14c94190fb83ff",
+      "required_atom_first_steps": [172, 330],
+      "direct_contact_pass": true,
+      "maximum_certifying_normal_force_n": 22.79327614824183,
+      "runtime_clearance_pass": true,
+      "native_final_bddl_success": true,
+      "termination_reason": "custom_goal_without_tc",
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_vcn21_moka_microwave_5ep_20260906_v3/tasks/all1/VCN21_001/videos/VCN21_001_ep000_ok.mp4",
+      "video_sha256": "666c26f95fb8e7f016a11a4d12495f092f12109c7dbcb818238bc06c2443a540"
+    },
+    {
+      "episode_idx": 1,
+      "success": true,
+      "init_state_index": 1,
+      "state_sha256": "f85b296acc80b0bfd9ca77570c0566247f6127dfd765e894fb1caf7539645f31",
+      "sweep_evidence_sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646",
+      "sweep_row_canonical_sha256": "2b51f9569f67050c840b41113629cff019c215f5a28f0676fe59d89c0354e5cd",
+      "episode_record_canonical_sha256": "8d55bc2f2c3693ceba0309330f99a14d101fb8043dd22a9ac1c4555d5d8b1b4e",
+      "required_atom_first_steps": [203, 383],
+      "direct_contact_pass": true,
+      "maximum_certifying_normal_force_n": 19.907163062022967,
+      "runtime_clearance_pass": true,
+      "native_final_bddl_success": true,
+      "termination_reason": "custom_goal_without_tc",
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_vcn21_moka_microwave_5ep_20260906_v3/tasks/all1/VCN21_001/videos/VCN21_001_ep001_ok.mp4",
+      "video_sha256": "5e7577563e5b7fe581626091f24c6bf939afdf8bf7d1c9f8107118504e671401"
+    },
+    {
+      "episode_idx": 2,
+      "success": false,
+      "init_state_index": 2,
+      "state_sha256": "f91dae088f014aa607d0b2f743641afeb3e81922675c51c4da02825bc5659b9c",
+      "sweep_evidence_sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646",
+      "sweep_row_canonical_sha256": "04e98d709ff12a24168cd8325cea793c1afce7dd10d612da9c5d4bb337ae2cf5",
+      "episode_record_canonical_sha256": "af1b70646327cecf62c45d8a3f3cf25e9f3d53d4586f85260feb790857a93dd8",
+      "required_atom_first_steps": [181, null],
+      "direct_contact_pass": false,
+      "maximum_certifying_normal_force_n": null,
+      "runtime_clearance_pass": false,
+      "native_final_bddl_success": false,
+      "termination_reason": "",
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_vcn21_moka_microwave_5ep_20260906_v3/tasks/all1/VCN21_001/videos/VCN21_001_ep002_fail.mp4",
+      "video_sha256": "f28dc1c1179c3726bbdfd54ba8e8dc64c867c1c778954a5dcf432b60d32b6c5c"
+    },
+    {
+      "episode_idx": 3,
+      "success": true,
+      "init_state_index": 3,
+      "state_sha256": "0d7c75dad595b9fc48b2141dda737874c7f238051057dbccfe2ceff02e5359b6",
+      "sweep_evidence_sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646",
+      "sweep_row_canonical_sha256": "0c6fa8a8a82d9ad0b06ba9c07e06b236b8b0d246f17ee73a84814e83e0363bf7",
+      "episode_record_canonical_sha256": "c0ad95b3445f5aa60fb14ac9ca7a985fe5d5e9cf7222d880634d27bdc5a59e04",
+      "required_atom_first_steps": [171, 296],
+      "direct_contact_pass": true,
+      "maximum_certifying_normal_force_n": 14.132051603269819,
+      "runtime_clearance_pass": true,
+      "native_final_bddl_success": true,
+      "termination_reason": "custom_goal_without_tc",
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_vcn21_moka_microwave_5ep_20260906_v3/tasks/all1/VCN21_001/videos/VCN21_001_ep003_ok.mp4",
+      "video_sha256": "313bcfd1020cfcc7070eada5b9a4ad91f7cec0860e71249b3c1c7ab410463a61"
+    },
+    {
+      "episode_idx": 4,
+      "success": true,
+      "init_state_index": 4,
+      "state_sha256": "4d6cd0aac2ffd7fc0b8cfe29b18d766e375444c8366ba74515007e6412a4e255",
+      "sweep_evidence_sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646",
+      "sweep_row_canonical_sha256": "2df478f0a3543df65bd6d136989cc116c07ac1f15983695575a9eebfab601b8b",
+      "episode_record_canonical_sha256": "62e3711f91694b4fda5b616b30c98a4f92faa67b7549e313db453b6b305ef68c",
+      "required_atom_first_steps": [176, 1339],
+      "direct_contact_pass": true,
+      "maximum_certifying_normal_force_n": 48.859737811476734,
+      "runtime_clearance_pass": true,
+      "native_final_bddl_success": true,
+      "termination_reason": "custom_goal_without_tc",
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_vcn21_moka_microwave_5ep_20260906_v3/tasks/all1/VCN21_001/videos/VCN21_001_ep004_ok.mp4",
+      "video_sha256": "c95f240ca8dbb04fe0fb0c5eb1f54a7acf9eeb06c71593789cdadcb95fbe647b"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 18 Adapt + 14 Compose (52 total)**; historical RAIN records, a separate official π0.5 LIBERO-40 5-episode evaluation, representative success/failure videos, masked comparisons and downloadable definitions.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 18 Adapt + 15 Compose (53 total)**; historical RAIN records, a separate official π0.5 LIBERO-40 5-episode evaluation, representative success/failure videos, masked comparisons and downloadable definitions.
 <!-- SELECTED29_README_END -->
 
 Open `index.html`, or enable GitHub Pages for this repository root.
@@ -76,8 +76,14 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 
 
 
+
+
+
+
+
+
 <!-- VALID_COMPOSE_NEW_README_START -->
-- `valid_compose_new/`: 4 fresh strict-success Compose candidates, 11 successful episodes.
+- `valid_compose_new/`: 5 fresh strict-success Compose candidates, 15 successful episodes.
 - Each card links the masked comparison, complete public task bundle, and one on-demand reel containing all success episodes.
 <!-- VALID_COMPOSE_NEW_README_END -->
 

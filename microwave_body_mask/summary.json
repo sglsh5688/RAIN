@@ -1,0 +1,56 @@
+{
+  "task_id": "MWOBJ_004_BODY",
+  "instruction": "Put the alphabet soup inside the microwave.",
+  "successes": 1,
+  "total_episodes": 5,
+  "success_rate_percent": 20,
+  "date_utc": "2026-09-06",
+  "mask": "Native direct microwave main BODY; excludes articulated door/window/handle",
+  "metric": "Unchanged native In plus full physical microwave-shell containment, positive exact-floor support and no gripper contact for five controls; native microwave main-body GT masking",
+  "episodes": [
+    {
+      "episode_idx": 0,
+      "seed": 307,
+      "success": true,
+      "video": "../assets/microwave_body_mask/videos/MWOBJ_004_BODY_ep000_ok.mp4",
+      "sha256": "f7e85a27e91d0c22635f50ff033144f021ddb3efcaa95ea886fbb4f19fe8190d"
+    },
+    {
+      "episode_idx": 1,
+      "seed": 308,
+      "success": false,
+      "video": "../assets/microwave_body_mask/videos/MWOBJ_004_BODY_ep001_fail.mp4",
+      "sha256": "28cd2c6da2b29ca23ab525aca4d77ea46b142b71cebaf304f17f050072437913"
+    },
+    {
+      "episode_idx": 2,
+      "seed": 309,
+      "success": false,
+      "video": "../assets/microwave_body_mask/videos/MWOBJ_004_BODY_ep002_fail.mp4",
+      "sha256": "4ce22b11d527fae9e710be2f93f5fc1749f31552123b7197466ee6eca6504122"
+    },
+    {
+      "episode_idx": 3,
+      "seed": 310,
+      "success": false,
+      "video": "../assets/microwave_body_mask/videos/MWOBJ_004_BODY_ep003_fail.mp4",
+      "sha256": "68ca8144a5395e39f962a2adf7ec52ea0fa3e88268f38720fddf8c71e54aa707"
+    },
+    {
+      "episode_idx": 4,
+      "seed": 311,
+      "success": false,
+      "video": "../assets/microwave_body_mask/videos/MWOBJ_004_BODY_ep004_fail.mp4",
+      "sha256": "6d4dc4693417b4b1a63fcf4a0f413b31085ee650514021aafdb6a4f0d1aef28c"
+    }
+  ],
+  "comparison_png": "../assets/microwave_body_mask/MWOBJ_004_BODY__comparison.png",
+  "comparison_sha256": "11e1befe050ef9590e0bf15c6552b6f4219e2bd2a54843f9d1051da6da8bc9c0",
+  "parent_comparison": {
+    "task_id": "MWOBJ_004",
+    "mask": "visible interior floor",
+    "successes": 1,
+    "episodes": 5,
+    "success_episode_idx": 1
+  }
+}

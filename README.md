@@ -4,6 +4,9 @@
 - `selected29/`: **Selected Tasks — 20 Decomposition + 18 Adapt + 15 Compose (53 total)**; historical RAIN records, a separate official π0.5 LIBERO-40 5-episode evaluation, representative success/failure videos, masked comparisons and downloadable definitions.
 <!-- SELECTED29_README_END -->
 
+<!-- MICROWAVE_BODY_README_START -->
+- `microwave_body_mask/`: native BODY-mask alphabet-soup insertion re-evaluation; 1/5 (20%), all five original videos and a masked comparison PNG. Selected Tasks unchanged.
+<!-- MICROWAVE_BODY_README_END -->
 Open `index.html`, or enable GitHub Pages for this repository root.
 
 - `original40/`: all 40 original tasks with exact simulator interaction masks

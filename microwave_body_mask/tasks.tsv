@@ -1,0 +1,2 @@
+task_id	instruction	successes	episodes	success_rate_percent	destination_mask
+MWOBJ_004_BODY	Put the alphabet soup inside the microwave.	1	5	20	native main BODY (door excluded)

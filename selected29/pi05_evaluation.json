@@ -89,13 +89,14 @@
       "note": "Close-only correction rerun. The frozen 3/5 result checked only the final Close atom; its saved success inserted the black bowl first. The correction requires the bowl and wine bottle to remain in their authored table regions and fails if either enters the drawer."
     }
   ],
-  "selected_tasks": 51,
+  "selected_tasks": 52,
   "tasks": 47,
   "pending_task_ids": [
     "VCN8_008",
     "VCN9_010",
     "VCN10_001",
-    "VCN19_020"
+    "VCN19_020",
+    "ADVCN19_001"
   ],
   "retired_source_result_ids": [
     "COMP2_001"
@@ -157,9 +158,9 @@
       "episodes": 100
     },
     "Adapt": {
-      "selected_tasks": 17,
+      "selected_tasks": 18,
       "evaluated_tasks": 17,
-      "pending_tasks": 0,
+      "pending_tasks": 1,
       "successful_tasks": 11,
       "successes": 45,
       "episodes": 85
@@ -832,5 +833,6 @@
       "failure_video": "assets/pi05_videos/BDRCOMP_021/BDRCOMP_021_failure.mp4",
       "complete": true
     }
-  ]
+  ],
+  "selected_52_tsv_sha256": "a3d04a0c7bdc875a52f0383d8fd3eda3841829cf9b161abb14ec5aab05dbaf01"
 }

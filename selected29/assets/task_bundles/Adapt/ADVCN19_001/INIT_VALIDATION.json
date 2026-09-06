@@ -1,0 +1,217 @@
+{
+  "task_id": "ADVCN19_001",
+  "parent_task_id": "VCN19_020",
+  "valid_count": 5,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rows": [
+    {
+      "init_state_index": 0,
+      "valid": true,
+      "errors": [],
+      "state_sha256": "9071af773ce49de30e8bf230b8adc5b359f185cc14770b01f5b5dd9b58b84c14",
+      "initial_goal_true": false,
+      "initial_native_close": false,
+      "drawer_joint": "wooden_cabinet_1_top_level",
+      "initial_drawer_qpos": 0.0,
+      "drawer_joint_range": [
+        -0.16,
+        0.01
+      ],
+      "paired_rgb_identical": true,
+      "paired_qpos_max_abs_diff": 0.0,
+      "paired_body_position_max_abs_diff_m": 0.0,
+      "parent_fixture_replay_max_abs_diff_m": 0.0,
+      "mask_area_px_320": 2020,
+      "mask_matches_parent_first_action": true,
+      "mask_body_names": [
+        "wooden_cabinet_1_cabinet_top"
+      ],
+      "mask_geom_ids": [
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183
+      ],
+      "settled_cross_entity_penetrations": []
+    },
+    {
+      "init_state_index": 1,
+      "valid": true,
+      "errors": [],
+      "state_sha256": "02db978a57951a94e37ebdc94481105ef05824c64af6740930738732add4bcdf",
+      "initial_goal_true": false,
+      "initial_native_close": false,
+      "drawer_joint": "wooden_cabinet_1_top_level",
+      "initial_drawer_qpos": 0.0,
+      "drawer_joint_range": [
+        -0.16,
+        0.01
+      ],
+      "paired_rgb_identical": true,
+      "paired_qpos_max_abs_diff": 0.0,
+      "paired_body_position_max_abs_diff_m": 0.0,
+      "parent_fixture_replay_max_abs_diff_m": 0.0,
+      "mask_area_px_320": 2161,
+      "mask_matches_parent_first_action": true,
+      "mask_body_names": [
+        "wooden_cabinet_1_cabinet_top"
+      ],
+      "mask_geom_ids": [
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183
+      ],
+      "settled_cross_entity_penetrations": []
+    },
+    {
+      "init_state_index": 2,
+      "valid": true,
+      "errors": [],
+      "state_sha256": "ee9f6d9e5289fa6bf7f04115696c93b14d447e4c5d94e42e092670e257d72b58",
+      "initial_goal_true": false,
+      "initial_native_close": false,
+      "drawer_joint": "wooden_cabinet_1_top_level",
+      "initial_drawer_qpos": 0.0,
+      "drawer_joint_range": [
+        -0.16,
+        0.01
+      ],
+      "paired_rgb_identical": true,
+      "paired_qpos_max_abs_diff": 0.0,
+      "paired_body_position_max_abs_diff_m": 0.0,
+      "parent_fixture_replay_max_abs_diff_m": 0.0,
+      "mask_area_px_320": 2061,
+      "mask_matches_parent_first_action": true,
+      "mask_body_names": [
+        "wooden_cabinet_1_cabinet_top"
+      ],
+      "mask_geom_ids": [
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183
+      ],
+      "settled_cross_entity_penetrations": []
+    },
+    {
+      "init_state_index": 3,
+      "valid": true,
+      "errors": [],
+      "state_sha256": "7cff61d9e1b91048a3e37197f0c9939969b12bbc30aef1e38c8197791c8d578c",
+      "initial_goal_true": false,
+      "initial_native_close": false,
+      "drawer_joint": "wooden_cabinet_1_top_level",
+      "initial_drawer_qpos": 0.0,
+      "drawer_joint_range": [
+        -0.16,
+        0.01
+      ],
+      "paired_rgb_identical": true,
+      "paired_qpos_max_abs_diff": 0.0,
+      "paired_body_position_max_abs_diff_m": 0.0,
+      "parent_fixture_replay_max_abs_diff_m": 0.0,
+      "mask_area_px_320": 2123,
+      "mask_matches_parent_first_action": true,
+      "mask_body_names": [
+        "wooden_cabinet_1_cabinet_top"
+      ],
+      "mask_geom_ids": [
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183
+      ],
+      "settled_cross_entity_penetrations": []
+    },
+    {
+      "init_state_index": 4,
+      "valid": true,
+      "errors": [],
+      "state_sha256": "75fd75e8fcb6bdf0d96dba1a8ce8ce778cce99dc546802be3085faa74197fe68",
+      "initial_goal_true": false,
+      "initial_native_close": false,
+      "drawer_joint": "wooden_cabinet_1_top_level",
+      "initial_drawer_qpos": 0.0,
+      "drawer_joint_range": [
+        -0.16,
+        0.01
+      ],
+      "paired_rgb_identical": true,
+      "paired_qpos_max_abs_diff": 0.0,
+      "paired_body_position_max_abs_diff_m": 0.0,
+      "parent_fixture_replay_max_abs_diff_m": 0.0,
+      "mask_area_px_320": 2074,
+      "mask_matches_parent_first_action": true,
+      "mask_body_names": [
+        "wooden_cabinet_1_cabinet_top"
+      ],
+      "mask_geom_ids": [
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183
+      ],
+      "settled_cross_entity_penetrations": []
+    }
+  ],
+  "scene_physical_fingerprint_identical": true,
+  "all_parent_five_states_byte_preserved": true,
+  "evaluator_wait_steps": 10,
+  "evaluator_wait_action": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "copied_files_sha256": {
+    "task.pruned_init": "41b1d7bedc7bae383ce331a2b4ff3528939cd19fdbe38d44e88debc70e7e72a0",
+    "FIXTURE_REPLAY.json": "d372d3278ff7ebde65dc3cadfcbf765bd9931d30221f233d95b7b9a69c7620b2",
+    "layout_states.json": "f3edcdf02d72cb031bc098da0696e49f6dfcf73fa182e8ce2c80162ec08f5087"
+  },
+  "policy_evaluation_run": false
+}

@@ -1,0 +1,84 @@
+{
+  "task_id": "ADVCN19_001",
+  "category": "Adapt",
+  "parent_task_id": "VCN19_020",
+  "selected_order": 52,
+  "instruction": "Open the top drawer of the wooden cabinet.",
+  "goal": "open(wooden_cabinet_1_top_region)",
+  "successes": 4,
+  "episodes": 5,
+  "success_rate_percent": 80,
+  "metric": "native LIBERO Open, initially false",
+  "same_five_states_and_fixture_poses_as_parent": true,
+  "interaction_mask": "exact moving top drawer only",
+  "skill_source": "LIBERO_GOAL_04 opening action",
+  "scene_source": "VCN19_020 / ANLGX_092, Spatial-derived",
+  "no_complete_scene_training_claim": true,
+  "pi05_evaluation": null,
+  "original_success_videos": [
+    {
+      "episode_idx": 0,
+      "success": true,
+      "path": "assets/original_success_videos/ADVCN19_001/ADVCN19_001_ep000_ok.mp4",
+      "sha256": "5e9a6f4ada470264e4915e94b08823345222772440572cd8a37923ba0037f547"
+    },
+    {
+      "episode_idx": 1,
+      "success": true,
+      "path": "assets/original_success_videos/ADVCN19_001/ADVCN19_001_ep001_ok.mp4",
+      "sha256": "65dde1f42e61b810aadba4381297a01d798823e0a67efe6f12a4efb2eb291a3f"
+    },
+    {
+      "episode_idx": 2,
+      "success": true,
+      "path": "assets/original_success_videos/ADVCN19_001/ADVCN19_001_ep002_ok.mp4",
+      "sha256": "6da371d9ef80e81ee4f776ca59a7650407423c25326eb7b0420ff1c61b3b981b"
+    },
+    {
+      "episode_idx": 4,
+      "success": true,
+      "path": "assets/original_success_videos/ADVCN19_001/ADVCN19_001_ep004_ok.mp4",
+      "sha256": "4af2afc1526348eb906d88237b2ec2d947ea15a5626818a0b9e66ef8a90823bf"
+    }
+  ],
+  "original_outcomes": [
+    {
+      "episode_idx": 0,
+      "success": true
+    },
+    {
+      "episode_idx": 1,
+      "success": true
+    },
+    {
+      "episode_idx": 2,
+      "success": true
+    },
+    {
+      "episode_idx": 3,
+      "success": false
+    },
+    {
+      "episode_idx": 4,
+      "success": true
+    }
+  ],
+  "aggregate_sha256": "fdce54efe8e26ef97ffe182201628d524f12bf23554a1455052d778699e5027e",
+  "final_audit_sha256": "ddd957f2ba3acadef3e8640b9c7467a127b09cfa7381bb124999ea6b37b98eb0",
+  "comparison_sha256": "22992ad9935826cdea0a26993488cdbdce57a5cc34d8846a33ba11cea62a1ea6",
+  "source_bundle_sha256": {
+    "FIXTURE_REPLAY.json": "d372d3278ff7ebde65dc3cadfcbf765bd9931d30221f233d95b7b9a69c7620b2",
+    "INIT_VALIDATION.json": "3af871f544d5bf721f9aa606480d053cfec514054e70e028165948efbafca648",
+    "action_plan.yaml": "faffdff99244fe15ebd84ac311c5166586b02523e7a21f5997fd746f8f2bdc81",
+    "eval_rules.yaml": "cd75a0508ecb03a17d87f34378345940c1c3d14e7cb5d15c28029ef14c5436da",
+    "layout_states.json": "f3edcdf02d72cb031bc098da0696e49f6dfcf73fa182e8ce2c80162ec08f5087",
+    "mask_bindings.yaml": "90630d4fa3e9b9f59fc3b8c699b5dff302b45a0b95b3615c0e0ea63e938c9ae8",
+    "notes.md": "dd42c51aef0f8a0f1a13328bf90eaa0b017fb5049f438fb9d724d85bc5c50e88",
+    "registry_entry.yaml": "df8e9c568163213151bc074fd3b75dd1bd408c968cfe3273558ca345c92a5ced",
+    "task.bddl": "89345b069d996fa589c6d5d184ddd101387afa44c7b070efdd1912377b918a8c",
+    "task.pruned_init": "41b1d7bedc7bae383ce331a2b4ff3528939cd19fdbe38d44e88debc70e7e72a0",
+    "task_meta.yaml": "182540addea25c60ff744193f07a24ebcb5fceace06c88f1473097bb3f2c0aae"
+  },
+  "action_checkpoint_sha256": "7232043efb5b6d563def9fa378cd6f16b8e4623e103327605a5203714807252f",
+  "progress_checkpoint_sha256": "e35566c8f366b49c79fd4e029b42ccde56438bd270f895fd286482febb605eae"
+}

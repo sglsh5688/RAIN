@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "selected_count": 52,
+  "categories": {
+    "Decomposition": 20,
+    "Adapt": 18,
+    "Compose": 14
+  },
+  "added_ids": [
+    "ADVCN19_001"
+  ],
+  "preserved_ids": [
+    "TDL10_001",
+    "TDL10_002",
+    "TDL10_003",
+    "TDL10_004",
+    "TDL10_005",
+    "TDL10_006",
+    "TDL10_008",
+    "TDL10_009",
+    "TDL10_010",
+    "TDL10_011",
+    "TDL10_012",
+    "TDL10_013",
+    "TDL10_014",
+    "TDL10_016",
+    "TDC40_001",
+    "TDC40_002",
+    "TDC40_003",
+    "TDC40_004",
+    "TDC40_005",
+    "TDC40_006",
+    "ANLGX_002",
+    "ANLGX_003",
+    "ANLGX_017",
+    "ANLGX_022",
+    "ANLGX_023",
+    "ANLGX_089",
+    "ANLGX_134",
+    "ANLGX_147",
+    "ANLGX_178",
+    "OGTS_001",
+    "OGTS_010",
+    "OGDTSL_011",
+    "OGDTSL_046",
+    "VCN8_008",
+    "VCN9_010",
+    "VCN10_001",
+    "VCN19_020",
+    "COMP2_012",
+    "COMP2_032",
+    "COMP2_222",
+    "COMP2_303",
+    "COMPOSE_155",
+    "COMP2_027",
+    "LBCM_003",
+    "LBCM_028",
+    "NAFR3_001",
+    "NAFR3_002",
+    "MKDC_001",
+    "DSET_001",
+    "BDRSWAP_001",
+    "BDRCOMP_021"
+  ],
+  "existing51_rows_unchanged": true,
+  "existing51_cards_unchanged": true,
+  "existing51_media_unchanged": true,
+  "pi05_47_rows_235_episodes_unchanged": true,
+  "pi05_pending_ids": [
+    "VCN8_008",
+    "VCN9_010",
+    "VCN10_001",
+    "VCN19_020",
+    "ADVCN19_001"
+  ],
+  "exact_duplicates": [],
+  "source_head": "71c7d2551363af945eb5ae4ef7520600bd572655",
+  "evidence_aggregate_sha256": "fdce54efe8e26ef97ffe182201628d524f12bf23554a1455052d778699e5027e",
+  "extra_initial_preview_requests": 1,
+  "extra_eager_video_requests": 0,
+  "new_success_videos": 4,
+  "original_rain_outcomes": [
+    {
+      "episode_idx": 0,
+      "success": true
+    },
+    {
+      "episode_idx": 1,
+      "success": true
+    },
+    {
+      "episode_idx": 2,
+      "success": true
+    },
+    {
+      "episode_idx": 3,
+      "success": false
+    },
+    {
+      "episode_idx": 4,
+      "success": true
+    }
+  ],
+  "existing51_public_asset_set_preserved": true,
+  "publication_head_rebase": {
+    "previous_head": "b6a98922992446ae858118396ed87ddbf91e5f57",
+    "current_head": "71c7d2551363af945eb5ae4ef7520600bd572655",
+    "reason": "External owner committed their preexisting correction; source and public file snapshots are byte-identical."
+  }
+}

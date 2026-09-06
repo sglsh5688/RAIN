@@ -1,0 +1,145 @@
+{
+  "schema": "selected54_wtrayr004_provenance_v1",
+  "task_id": "WTRAYR_004",
+  "selected_order": 54,
+  "category": "Adapt",
+  "instruction": "Pick up the black bowl and place it in the wooden tray.",
+  "goal": "in(akita_black_bowl_1, wooden_tray_1_contain_region)",
+  "source_benchmark": "LiberoWoodenTrayObjectChoicesReachable",
+  "direct_predecessor": "WTRAY_004",
+  "geometry_revision": {
+    "tray_center_old_xy_m": [
+      0.1,
+      0.0
+    ],
+    "tray_center_new_xy_m": [
+      0.1,
+      -0.06
+    ],
+    "black_bowl_center_old_xy_m": [
+      -0.13,
+      -0.23
+    ],
+    "black_bowl_center_new_xy_m": [
+      -0.16,
+      -0.18
+    ]
+  },
+  "rain_evaluation": {
+    "model": "RAINv2",
+    "successes": 2,
+    "episodes": 5,
+    "success_rate_percent": 40.0,
+    "episode_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "episode_outcomes": [
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "success_episode_ids": [
+      1,
+      2
+    ],
+    "failure_episode_ids": [
+      0,
+      3,
+      4
+    ],
+    "physical_gpu": 7,
+    "base_seed": 7,
+    "derived_episode_seeds": [
+      307,
+      308,
+      309,
+      310,
+      311
+    ],
+    "max_steps": 520,
+    "strict_success_protocol": "RAIN exact current masks; native tray In plus full collision containment, positive-force tray contact, and no gripper contact held for five actual control steps",
+    "strict_success_witnesses": [
+      {
+        "episode_idx": 1,
+        "strict_onset_control_step": 243,
+        "hold_complete_control_step": 247
+      },
+      {
+        "episode_idx": 2,
+        "strict_onset_control_step": 259,
+        "hold_complete_control_step": 263
+      }
+    ],
+    "all_initial_goals_false": true,
+    "policy_actions_modified": false,
+    "action_checkpoint_sha256": "7232043efb5b6d563def9fa378cd6f16b8e4623e103327605a5203714807252f",
+    "progress_checkpoint_sha256": "e35566c8f366b49c79fd4e029b42ccde56438bd270f895fd286482febb605eae"
+  },
+  "strict_semantics": {
+    "native_in_required": true,
+    "full_collision_containment_required": true,
+    "full_containment_tolerance_m": 0.001,
+    "positive_force_tray_contact_required": true,
+    "no_gripper_contact_required": true,
+    "support_hold_control_steps": 5
+  },
+  "pi05_evaluation": null,
+  "pi05_status": "pending_not_evaluated_no_outcome_claimed",
+  "source_success_videos": [
+    {
+      "episode_idx": 1,
+      "path": "assets/original_success_videos/WTRAYR_004/WTRAYR_004_ep001_ok.mp4",
+      "sha256": "7eee2290f1cee7cd6c550abfdca2ca801692c5ba385ceba9f91bcfb16d19027b",
+      "source_sha256": "7eee2290f1cee7cd6c550abfdca2ca801692c5ba385ceba9f91bcfb16d19027b"
+    },
+    {
+      "episode_idx": 2,
+      "path": "assets/original_success_videos/WTRAYR_004/WTRAYR_004_ep002_ok.mp4",
+      "sha256": "1ed579882778c0c43aa662f115b8fdef4cea6a88a5f77bd44e2bb7ae887c9cc1",
+      "source_sha256": "1ed579882778c0c43aa662f115b8fdef4cea6a88a5f77bd44e2bb7ae887c9cc1"
+    }
+  ],
+  "source_artifact_sha256": {
+    "comparison": "c2dfc1c526371b9005febc31521222c045ba63794dcd0f77fed93d421b793da6",
+    "source_task_result": "47cc2693d273f77bdc11c619079009a5cb7e9b26837592349364bfbee048ba74",
+    "source_run_manifest": "4bc42f49b560f9aefe9ce6419b9afb67d320a681170ae05d9d9a1c6ad4fffd2f",
+    "source_post_eval_audit": "be9c0f0a75442352978dfa9a6cd1ad6a6a75ba0bce91b971fda36353db08eaf0"
+  },
+  "local_bundle_sha256": {
+    "INIT_VALIDATION.json": "fcb77944685b56f0b34c3c778789db48b4422b3fc298fc029b026167feb92e30",
+    "action_plan.yaml": "67d72bb4122164d4bb03a38db1140860449fb0043905704051de35e8ef5cfe86",
+    "eval_rules.yaml": "8b0b68b9fc72487810e37bf8f1d793f0f9193f94babad66f4fb71084fc55b485",
+    "mask_bindings.yaml": "c77d04968d15346ab41bc8cbc3df2f5c5224508c98789d4d43f880897885e12d",
+    "registry_entry.yaml": "15e4df89ae9eca4326c7e1ae1701fa2c9ce3cb193236685d295bd2f874e1d550",
+    "task.bddl": "3ff2373fda8d26712c1610feb1d2496787694c869e0e0f9e46bbd288d039cd84",
+    "task.pruned_init": "d314c9b39062eb5e15db225b2f27b9a75e81cfa541c006855ac47de876e78b47",
+    "task_meta.yaml": "5cde6cad922445105b6ae629b2f031ca6e29205245b4d5e3a8eaf64f8944c98c"
+  },
+  "frozen_rain_evidence_sha256": {
+    "rain_additions/WTRAYR_004/AUDIT.json": "be9c0f0a75442352978dfa9a6cd1ad6a6a75ba0bce91b971fda36353db08eaf0",
+    "rain_additions/WTRAYR_004/episodes.tsv": "98e6881587ea3373cb980762aa6f19568b62d59ce9701650c36793ea5c0dd515",
+    "rain_additions/WTRAYR_004/raw_run_config.json": "88ab6914da9e1560b40b53a622eb5370f206b49a255711c176d19054e666f481",
+    "rain_additions/WTRAYR_004/run_manifest.json": "4bc42f49b560f9aefe9ce6419b9afb67d320a681170ae05d9d9a1c6ad4fffd2f",
+    "rain_additions/WTRAYR_004/task_result/eval.log": "454f067894ead215c0a40192ea4caf8d71725ac6fa6b3abc1c081f182ac01d51",
+    "rain_additions/WTRAYR_004/task_result/partial/gpu_7.jsonl": "390bfbfb86c47385ccc1065f7b3ce3ac6766f6b7acdc5cf2e821f932a30d3eed",
+    "rain_additions/WTRAYR_004/task_result/results.json": "47cc2693d273f77bdc11c619079009a5cb7e9b26837592349364bfbee048ba74",
+    "rain_additions/WTRAYR_004/task_result/results_for_excel.tsv": "3a8bae60be5bd1b6df2f1236d6b69b28791f7b88c822dbcc6a8b61b4773d6b06",
+    "rain_additions/WTRAYR_004/task_result/summary.md": "ba904d830e5febd18d06f5fd5b5a4861dea5675d3199d59954b067fe3398b0b2",
+    "rain_additions/WTRAYR_004/task_result/text_features.npz": "631bf9fb6eeee8bddaa4de0142e79e344c540d5f109748408d88ff016d1eef4a",
+    "rain_additions/WTRAYR_004/task_result/videos/WTRAYR_004_ep000_fail.mp4": "87347e1e1cc39468ea0ee45132fce82b8163486519fb1535febe32553e161ea2",
+    "rain_additions/WTRAYR_004/task_result/videos/WTRAYR_004_ep001_ok.mp4": "7eee2290f1cee7cd6c550abfdca2ca801692c5ba385ceba9f91bcfb16d19027b",
+    "rain_additions/WTRAYR_004/task_result/videos/WTRAYR_004_ep002_ok.mp4": "1ed579882778c0c43aa662f115b8fdef4cea6a88a5f77bd44e2bb7ae887c9cc1",
+    "rain_additions/WTRAYR_004/task_result/videos/WTRAYR_004_ep003_fail.mp4": "f3f6090a0c2f456ed7e6ea7897f7ff9953723764778a701a6872914b5a8f3acf",
+    "rain_additions/WTRAYR_004/task_result/videos/WTRAYR_004_ep004_fail.mp4": "78bd458f8290142d6057b9aa2a09eeff1a9ff2285b9c655eed4c3ac261a7013b",
+    "rain_additions/WTRAYR_004/task_success_rates.tsv": "a83b22c030574d215aae0daa49f0bb9254b87497e620044739b4d95b860f422b"
+  },
+  "selected53_source_mutated": false,
+  "public_repository_mutated_by_builder": false,
+  "uploaded": false
+}

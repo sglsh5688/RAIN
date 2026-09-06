@@ -119,14 +119,15 @@
       "note": "Independent atomic Adapt segment: native top-drawer Open only, with authored-context and sibling-interaction guards."
     }
   ],
-  "selected_tasks": 53,
+  "selected_tasks": 54,
   "tasks": 48,
   "pending_task_ids": [
     "VCN8_008",
     "VCN9_010",
     "VCN10_001",
     "VCN19_020",
-    "VCN21_001"
+    "VCN21_001",
+    "WTRAYR_004"
   ],
   "retired_source_result_ids": [
     "COMP2_001"
@@ -188,9 +189,9 @@
       "episodes": 100
     },
     "Adapt": {
-      "selected_tasks": 18,
+      "selected_tasks": 19,
       "evaluated_tasks": 18,
-      "pending_tasks": 0,
+      "pending_tasks": 1,
       "successful_tasks": 12,
       "successes": 49,
       "episodes": 90
@@ -877,5 +878,6 @@
       "failure_video": "assets/pi05_videos/ADVCN19_001/ADVCN19_001_failure.mp4",
       "complete": true
     }
-  ]
+  ],
+  "selected_54_tsv_sha256": "79c6d42dc9cb71ea452c1f3f3e58f7aa86d05b266daacf5f347e9d84e4384c04"
 }

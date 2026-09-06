@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 18 Adapt + 15 Compose (53 total)**; historical RAIN records, a separate official π0.5 LIBERO-40 5-episode evaluation, representative success/failure videos, masked comparisons and downloadable definitions.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 19 Adapt + 15 Compose (54 total)**; historical RAIN records, a separate official π0.5 LIBERO-40 5-episode evaluation, representative success/failure videos, masked comparisons and downloadable definitions.
 <!-- SELECTED29_README_END -->
 
 <!-- MICROWAVE_BODY_README_START -->

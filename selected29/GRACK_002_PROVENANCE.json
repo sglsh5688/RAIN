@@ -1,0 +1,211 @@
+{
+  "schema": "selected55_grack002_provenance_v1",
+  "task_id": "GRACK_002",
+  "order": 55,
+  "category": "Adapt",
+  "instruction": "Put the ketchup on the rack.",
+  "goal": "on(ketchup_1, wine_rack_1_adapt_top_region)",
+  "source_benchmark": "LiberoAdaptGoalRackObjects20260906",
+  "rain_evaluation": {
+    "task_id": "GRACK_002",
+    "instruction": "Put the ketchup on the rack.",
+    "successes": 5,
+    "episodes": 5,
+    "success_rate_percent": 100,
+    "gpu": 7,
+    "actual_episode_seeds": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "native_on_final_count": 0,
+    "native_on_ever_count": 0,
+    "video_directory": "libero-ex://artifacts/LiberoAdaptGoalRackObjects20260906/evaluation_5ep/videos/GRACK_002",
+    "result_path": "libero-ex://artifacts/LiberoAdaptGoalRackObjects20260906/evaluation_5ep/GRACK_002/raw_results/tasks/all1/GRACK_002/results.json",
+    "metric": "Actual upper-deck footprint and positive physical upper-deck support, released without gripper contact for five consecutive controls; original wine-specific native On is auxiliary"
+  },
+  "rain_media": [
+    {
+      "task_id": "GRACK_002",
+      "episode_idx": 0,
+      "success": true,
+      "video": "libero-ex://artifacts/LiberoAdaptGoalRackObjects20260906/evaluation_5ep/videos/GRACK_002/GRACK_002_ep000_ok.mp4",
+      "sha256": "0c41e350ef2a8e6e5eebbdcb84c25c7883812c8e43fc5470bacc03f37b8a1a1e",
+      "raw_video": "libero-ex://artifacts/LiberoAdaptGoalRackObjects20260906/evaluation_5ep/GRACK_002/raw_results/tasks/all1/GRACK_002/videos/GRACK_002_ep000_ok.mp4",
+      "total_steps": 206,
+      "maximum_supported_hold": 5,
+      "adapt_on_final": true,
+      "native_on_final": false,
+      "native_on_ever": false
+    },
+    {
+      "task_id": "GRACK_002",
+      "episode_idx": 1,
+      "success": true,
+      "video": "libero-ex://artifacts/LiberoAdaptGoalRackObjects20260906/evaluation_5ep/videos/GRACK_002/GRACK_002_ep001_ok.mp4",
+      "sha256": "7a85a89c9c8c95f9566060557ecbb9526e5afc0a3c835cd4caa0f874176a0e8f",
+      "raw_video": "libero-ex://artifacts/LiberoAdaptGoalRackObjects20260906/evaluation_5ep/GRACK_002/raw_results/tasks/all1/GRACK_002/videos/GRACK_002_ep001_ok.mp4",
+      "total_steps": 433,
+      "maximum_supported_hold": 5,
+      "adapt_on_final": true,
+      "native_on_final": false,
+      "native_on_ever": false
+    },
+    {
+      "task_id": "GRACK_002",
+      "episode_idx": 2,
+      "success": true,
+      "video": "libero-ex://artifacts/LiberoAdaptGoalRackObjects20260906/evaluation_5ep/videos/GRACK_002/GRACK_002_ep002_ok.mp4",
+      "sha256": "4b1202f46fbe210adb4c11b9320350dce6cba89ba7639df651353c1fd0d607af",
+      "raw_video": "libero-ex://artifacts/LiberoAdaptGoalRackObjects20260906/evaluation_5ep/GRACK_002/raw_results/tasks/all1/GRACK_002/videos/GRACK_002_ep002_ok.mp4",
+      "total_steps": 166,
+      "maximum_supported_hold": 5,
+      "adapt_on_final": true,
+      "native_on_final": false,
+      "native_on_ever": false
+    },
+    {
+      "task_id": "GRACK_002",
+      "episode_idx": 3,
+      "success": true,
+      "video": "libero-ex://artifacts/LiberoAdaptGoalRackObjects20260906/evaluation_5ep/videos/GRACK_002/GRACK_002_ep003_ok.mp4",
+      "sha256": "6abc185868d7044c979cdcd33eda1fedeb71bd91131f6482b311581d19bf9290",
+      "raw_video": "libero-ex://artifacts/LiberoAdaptGoalRackObjects20260906/evaluation_5ep/GRACK_002/raw_results/tasks/all1/GRACK_002/videos/GRACK_002_ep003_ok.mp4",
+      "total_steps": 190,
+      "maximum_supported_hold": 5,
+      "adapt_on_final": true,
+      "native_on_final": false,
+      "native_on_ever": false
+    },
+    {
+      "task_id": "GRACK_002",
+      "episode_idx": 4,
+      "success": true,
+      "video": "libero-ex://artifacts/LiberoAdaptGoalRackObjects20260906/evaluation_5ep/videos/GRACK_002/GRACK_002_ep004_ok.mp4",
+      "sha256": "16678e5368c58119d6a9ab8a3180c8606b18f104157586069d6c563cedaee177",
+      "raw_video": "libero-ex://artifacts/LiberoAdaptGoalRackObjects20260906/evaluation_5ep/GRACK_002/raw_results/tasks/all1/GRACK_002/videos/GRACK_002_ep004_ok.mp4",
+      "total_steps": 250,
+      "maximum_supported_hold": 5,
+      "adapt_on_final": true,
+      "native_on_final": false,
+      "native_on_ever": false
+    }
+  ],
+  "pi05_evaluation": {
+    "order": "55",
+    "category": "Adapt",
+    "task_id": "GRACK_002",
+    "instruction": "Put the ketchup on the rack.",
+    "successes": 4,
+    "episodes": 5,
+    "success_rate_percent": 80.0,
+    "success_episode": "1",
+    "failure_episode": "0",
+    "success_video": "assets/pi05_videos/GRACK_002/GRACK_002_success.mp4",
+    "failure_video": "assets/pi05_videos/GRACK_002/GRACK_002_failure.mp4",
+    "complete": true
+  },
+  "pi05_status": "complete_five_original_episodes_final_audit_passed",
+  "source_task_bundle_sha256": {
+    "FIXTURE_REPLAY.json": "cb7d02b1e5aa22bd3a026ed6dd14499ba198c1b0a87abc3f48b35b93453117f7",
+    "INIT_VALIDATION.json": "666f84d82ff1c8f53849a2fc6415c188bfd8e5d1ee6e0d9b36b81d51caaf4916",
+    "action_plan.yaml": "196597a0b053cf59799cc6e27dc7924e053512bb4f2995b31c5761d29da4620f",
+    "eval_rules.yaml": "5c26f4bb64840b3acdf72e970f3577df90ca7a868bae9f73643706647e08d744",
+    "layout_states.json": "5fa9e64536d704cecb9aff89420e12481f0de21d140d4cfbd8293a137565f10a",
+    "mask_bindings.yaml": "0859d89bf0c5954dee44c8d3de81fb2c534deeb7d52f9e1550a123bf96f4b0f4",
+    "registry_entry.yaml": "267ab29a2d02b6b7ca3f0121a99886c1795b9984187e0be95884386beed7890e",
+    "task.bddl": "11b8bca1e5a57499c16223883f931ca1beb508bf92bfbdf60eff338b3e8aebb3",
+    "task.pruned_init": "9d8d49baa1efd5a48c78e3e8907f56ac2c9521a7a997911b782bff55357eca6a",
+    "task_meta.yaml": "b8d91620242cf5c5b92784d7ace52414d88c55b8055a827ea60924fb1a86e819"
+  },
+  "custom_support_sha256": {
+    "GEOMETRY_SPEC.json": "8d05606f53313af6e77dff60e22e5d9ec757508ef1956df67c30829de9bc6412",
+    "GEOMETRY_WITNESS_VALIDATION.json": "22074cb3fecebbf14d5eb5a2aa894fb66e7ed77710a85199ae188838d420281d",
+    "REGION_CORRECTION_VALIDATION.json": "a62f7ffa65b762c551dab86c18d89fba05a5a0e0765d4b993a0b0f22c6f38e76",
+    "SOURCE_PRESERVATION.json": "d64d1b04180e9f2e9f563b976d40148351c8dbd140326ec0f26687d5139fdb0f",
+    "SUPPORT_README.md": "6ff7b84d57c3ef8470f4c30635222abefc9c52e25f3dbc1040f6d734380cef76",
+    "novel_feedback_fixture_geometry.py": "a283a180811a0ab6ed47d2436d47d52af6ecfedd820231045b91101aa1f2d874",
+    "run_goal_rack_objects_5ep.py": "9caf1d5055961f1ec0b6658460eb33dc1d5519780e3abbccc7c19a01df04b9b5",
+    "run_wine_rack_objects_evaluator_entry.py": "ba7bd2a20e5375bd1edc55bf5de515b534a86d1f82618f1d46cd7b75c311bfae",
+    "wine_rack_object_support.py": "589f5ca100502edb87ae8d96a7df0a0be77a81958b7adc3a34b5e40bb7bd9569"
+  },
+  "source_result_sha256": "bd55034dcc8b31f3960502a2cbeee1850c6d6db5832b2ca9010e354fd63cc02a",
+  "source_run_config_sha256": "3ca125a3ce9d17a7ee0f31603736ed54b34572ebb82359a3d8ffcd2af925a141",
+  "source_audit_sha256": "135018996bf30b2569658cd10a6326fe2afbd925885673b3fe5a5d8d8ef85810",
+  "action_checkpoint": {
+    "path": "rain://source/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "size_bytes": 2152701359,
+    "mtime_ns": 1787522314146875336,
+    "sha256": "7232043efb5b6d563def9fa378cd6f16b8e4623e103327605a5203714807252f"
+  },
+  "progress_checkpoint": {
+    "path": "rain://source/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "size_bytes": 944123251,
+    "mtime_ns": 1787530439781144613,
+    "sha256": "e35566c8f366b49c79fd4e029b42ccde56438bd270f895fd286482febb605eae"
+  },
+  "legacy_wine_on_is_auxiliary_only": true,
+  "generic_native_only_evaluation_forbidden": true,
+  "gt_mask_limitation": "Observed stove-area stray pixels retained in historical RAIN input and comparison; no silently corrected rerun.",
+  "prior_selected54_unchanged": true,
+  "public_repository_modified_by_builder": false,
+  "pi05_addition_provenance": "GRACK_002_PI05_ADDITION.json",
+  "public_path_sanitization": {
+    "assets/task_bundles/Adapt/GRACK_002/task_meta.yaml": {
+      "source_sha256": "b8d91620242cf5c5b92784d7ace52414d88c55b8055a827ea60924fb1a86e819",
+      "public_sha256": "0ba2bbae1b300fa8cf5bec0d38446c2dc6ffb0ed4a20dae707f48866cd28ffdf",
+      "change": "Private path aliasing only; support README adds a public-copy notice"
+    },
+    "assets/evaluation_support/GRACK_002/GEOMETRY_SPEC.json": {
+      "source_sha256": "8d05606f53313af6e77dff60e22e5d9ec757508ef1956df67c30829de9bc6412",
+      "public_sha256": "5379136cd0fb657c5350f2d1ae153f1dab95e1c5b77504e31bccacc9318bac95",
+      "change": "Private path aliasing only; support README adds a public-copy notice"
+    },
+    "assets/evaluation_support/GRACK_002/SOURCE_PRESERVATION.json": {
+      "source_sha256": "d64d1b04180e9f2e9f563b976d40148351c8dbd140326ec0f26687d5139fdb0f",
+      "public_sha256": "f4d2183fc015e8a44c4a96436a4789a984f2f54a83681eba444f3d554c25cd76",
+      "change": "Private path aliasing only; support README adds a public-copy notice"
+    },
+    "assets/evaluation_support/GRACK_002/SUPPORT_README.md": {
+      "source_sha256": "6ff7b84d57c3ef8470f4c30635222abefc9c52e25f3dbc1040f6d734380cef76",
+      "public_sha256": "c834811c8726969f2c17f38824c793acae4a7bfbaa8e28295a67597e15b42e22",
+      "change": "Private path aliasing only; support README adds a public-copy notice"
+    },
+    "assets/evaluation_support/GRACK_002/novel_feedback_fixture_geometry.py": {
+      "source_sha256": "a283a180811a0ab6ed47d2436d47d52af6ecfedd820231045b91101aa1f2d874",
+      "public_sha256": "76e793854233f2c8a9aca1930fc9a6b047dd972eae19a25d0dbbf372d2459699",
+      "change": "Private path aliasing only; support README adds a public-copy notice"
+    },
+    "assets/evaluation_support/GRACK_002/run_goal_rack_objects_5ep.py": {
+      "source_sha256": "9caf1d5055961f1ec0b6658460eb33dc1d5519780e3abbccc7c19a01df04b9b5",
+      "public_sha256": "5c0b80df5a8249d842e8532ce769cfe3ca16e7984632bb7505a87139ea723dbd",
+      "change": "Private path aliasing only; support README adds a public-copy notice"
+    }
+  },
+  "public_task_bundle_sha256": {
+    "eval_rules.yaml": "5c26f4bb64840b3acdf72e970f3577df90ca7a868bae9f73643706647e08d744",
+    "registry_entry.yaml": "267ab29a2d02b6b7ca3f0121a99886c1795b9984187e0be95884386beed7890e",
+    "task.bddl": "11b8bca1e5a57499c16223883f931ca1beb508bf92bfbdf60eff338b3e8aebb3",
+    "INIT_VALIDATION.json": "666f84d82ff1c8f53849a2fc6415c188bfd8e5d1ee6e0d9b36b81d51caaf4916",
+    "mask_bindings.yaml": "0859d89bf0c5954dee44c8d3de81fb2c534deeb7d52f9e1550a123bf96f4b0f4",
+    "layout_states.json": "5fa9e64536d704cecb9aff89420e12481f0de21d140d4cfbd8293a137565f10a",
+    "action_plan.yaml": "196597a0b053cf59799cc6e27dc7924e053512bb4f2995b31c5761d29da4620f",
+    "task_meta.yaml": "0ba2bbae1b300fa8cf5bec0d38446c2dc6ffb0ed4a20dae707f48866cd28ffdf",
+    "task.pruned_init": "9d8d49baa1efd5a48c78e3e8907f56ac2c9521a7a997911b782bff55357eca6a",
+    "FIXTURE_REPLAY.json": "cb7d02b1e5aa22bd3a026ed6dd14499ba198c1b0a87abc3f48b35b93453117f7"
+  },
+  "public_support_sha256": {
+    "wine_rack_object_support.py": "589f5ca100502edb87ae8d96a7df0a0be77a81958b7adc3a34b5e40bb7bd9569",
+    "GEOMETRY_WITNESS_VALIDATION.json": "22074cb3fecebbf14d5eb5a2aa894fb66e7ed77710a85199ae188838d420281d",
+    "SOURCE_PRESERVATION.json": "f4d2183fc015e8a44c4a96436a4789a984f2f54a83681eba444f3d554c25cd76",
+    "run_wine_rack_objects_evaluator_entry.py": "ba7bd2a20e5375bd1edc55bf5de515b534a86d1f82618f1d46cd7b75c311bfae",
+    "GEOMETRY_SPEC.json": "5379136cd0fb657c5350f2d1ae153f1dab95e1c5b77504e31bccacc9318bac95",
+    "novel_feedback_fixture_geometry.py": "76e793854233f2c8a9aca1930fc9a6b047dd972eae19a25d0dbbf372d2459699",
+    "REGION_CORRECTION_VALIDATION.json": "a62f7ffa65b762c551dab86c18d89fba05a5a0e0765d4b993a0b0f22c6f38e76",
+    "run_goal_rack_objects_5ep.py": "5c0b80df5a8249d842e8532ce769cfe3ca16e7984632bb7505a87139ea723dbd",
+    "SUPPORT_README.md": "c834811c8726969f2c17f38824c793acae4a7bfbaa8e28295a67597e15b42e22"
+  },
+  "private_source_bundle_and_provenance_preserved": true
+}

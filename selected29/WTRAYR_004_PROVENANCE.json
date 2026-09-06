@@ -89,8 +89,21 @@
     "no_gripper_contact_required": true,
     "support_hold_control_steps": 5
   },
-  "pi05_evaluation": null,
-  "pi05_status": "pending_not_evaluated_no_outcome_claimed",
+  "pi05_evaluation": {
+    "order": "54",
+    "category": "Adapt",
+    "task_id": "WTRAYR_004",
+    "instruction": "Pick up the black bowl and place it in the wooden tray.",
+    "successes": 5,
+    "episodes": 5,
+    "success_rate_percent": 100.0,
+    "success_episode": "0",
+    "failure_episode": "",
+    "success_video": "assets/pi05_videos/WTRAYR_004/WTRAYR_004_success.mp4",
+    "failure_video": "",
+    "complete": true
+  },
+  "pi05_status": "complete_five_original_episodes_final_audit_passed",
   "source_success_videos": [
     {
       "episode_idx": 1,
@@ -141,5 +154,6 @@
   },
   "selected53_source_mutated": false,
   "public_repository_mutated_by_builder": false,
-  "uploaded": false
+  "uploaded": false,
+  "pi05_addition_provenance": "WTRAYR_004_PI05_ADDITION.json"
 }

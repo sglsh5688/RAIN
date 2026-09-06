@@ -1,0 +1,206 @@
+{
+  "task_id": "GRACK_002",
+  "rows": [
+    {
+      "init_state_index": 0,
+      "valid": true,
+      "errors": [],
+      "source_state_index": 0,
+      "source_state_sha256": "c12cdf642eb5c7b4fd04e4d3b55870f592770742ee5434ad8f80eda6168c9654",
+      "new_state_sha256": "2d05e00dcd12e197cf2bbb1750d1ba51031bf7a6d999c0b7e2824f5825b65b23",
+      "source_wine_xy": [
+        -0.1941966922303449,
+        -0.03720901954161364
+      ],
+      "new_object_initial_qpos": [
+        -0.1941966922303449,
+        -0.03720901954161364,
+        0.9724700000000001,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "native_default_object_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "initial_target_xy_exact_original": true,
+      "original_common_joints_initial_exact": true,
+      "original_common_settled_joint_max_abs_error": 6.938893903907228e-18,
+      "initial_goal_true": false,
+      "collision_bottom_above_table_m": -1.4547155843924742e-05,
+      "stability_drift_over_60_controls_m": 1.0408340855860843e-14,
+      "stable_linear_speed_m_s": 1.852101984934845e-14,
+      "fixture_replay_max_body_position_error_m": 0.0,
+      "settled_cross_entity_penetrations": [],
+      "mask_areas_px": {
+        "target_object": 815,
+        "rack": 5635
+      }
+    },
+    {
+      "init_state_index": 1,
+      "valid": true,
+      "errors": [],
+      "source_state_index": 1,
+      "source_state_sha256": "f1c7fced4b7c530aed064a27d8714e966e8a2a9c12a4abf8ba2bbb56b9d2a483",
+      "new_state_sha256": "4d37eabf628574e20c44bc5502af7b1865488b5cd844a0038a951b26f3888980",
+      "source_wine_xy": [
+        -0.18858951496802526,
+        -0.05864140385367182
+      ],
+      "new_object_initial_qpos": [
+        -0.18858951496802526,
+        -0.05864140385367182,
+        0.9724700000000001,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "native_default_object_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "initial_target_xy_exact_original": true,
+      "original_common_joints_initial_exact": true,
+      "original_common_settled_joint_max_abs_error": 1.9071793840377826e-17,
+      "initial_goal_true": false,
+      "collision_bottom_above_table_m": -1.4547155843924742e-05,
+      "stability_drift_over_60_controls_m": 1.0408340855860843e-14,
+      "stable_linear_speed_m_s": 1.903563235263857e-14,
+      "fixture_replay_max_body_position_error_m": 0.0,
+      "settled_cross_entity_penetrations": [],
+      "mask_areas_px": {
+        "target_object": 867,
+        "rack": 5682
+      }
+    },
+    {
+      "init_state_index": 2,
+      "valid": true,
+      "errors": [],
+      "source_state_index": 2,
+      "source_state_sha256": "dda954afd150660760d0fb98ac9ba4a26f0cbc8b96385242673145d8aef60a35",
+      "new_state_sha256": "62e1b084341889b9d0827d4d1ef673863271849129f2c60fa7311744b1331d9b",
+      "source_wine_xy": [
+        -0.1979620664292108,
+        -0.041338403741913714
+      ],
+      "new_object_initial_qpos": [
+        -0.1979620664292108,
+        -0.041338403741913714,
+        0.9724700000000001,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "native_default_object_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "initial_target_xy_exact_original": true,
+      "original_common_joints_initial_exact": true,
+      "original_common_settled_joint_max_abs_error": 2.609024107869118e-15,
+      "initial_goal_true": false,
+      "collision_bottom_above_table_m": -1.4547155843924742e-05,
+      "stability_drift_over_60_controls_m": 1.0408340855860843e-14,
+      "stable_linear_speed_m_s": 1.8654511666795462e-14,
+      "fixture_replay_max_body_position_error_m": 0.0,
+      "settled_cross_entity_penetrations": [],
+      "mask_areas_px": {
+        "target_object": 899,
+        "rack": 5543
+      }
+    },
+    {
+      "init_state_index": 3,
+      "valid": true,
+      "errors": [],
+      "source_state_index": 3,
+      "source_state_sha256": "0b4176247c74d2e333911df93b570f265c4b2939ecd6ab0029219140772c7976",
+      "new_state_sha256": "b7b27475374cbf2113d914034fc354cda0798231e157b487f1ef3ac6943b7ece",
+      "source_wine_xy": [
+        -0.19572828821973834,
+        -0.05562370755689233
+      ],
+      "new_object_initial_qpos": [
+        -0.19572828821973834,
+        -0.05562370755689233,
+        0.9724700000000001,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "native_default_object_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "initial_target_xy_exact_original": true,
+      "original_common_joints_initial_exact": true,
+      "original_common_settled_joint_max_abs_error": 4.440892098500626e-16,
+      "initial_goal_true": false,
+      "collision_bottom_above_table_m": -1.4547155843924742e-05,
+      "stability_drift_over_60_controls_m": 1.0408340855860843e-14,
+      "stable_linear_speed_m_s": 1.852536968379392e-14,
+      "fixture_replay_max_body_position_error_m": 0.0,
+      "settled_cross_entity_penetrations": [],
+      "mask_areas_px": {
+        "target_object": 901,
+        "rack": 5765
+      }
+    },
+    {
+      "init_state_index": 4,
+      "valid": true,
+      "errors": [],
+      "source_state_index": 4,
+      "source_state_sha256": "3a6fc8356805dc8d4a8bb2758d078ae197c59a415d891aae8674fb70365a9b1c",
+      "new_state_sha256": "81701e7b38fb070fc445e4bd2d39fd100e87cc23bc1e419ae2750212d8e90800",
+      "source_wine_xy": [
+        -0.21231061189164302,
+        -0.04776240209052849
+      ],
+      "new_object_initial_qpos": [
+        -0.21231061189164302,
+        -0.04776240209052849,
+        0.9724700000000001,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "native_default_object_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "initial_target_xy_exact_original": true,
+      "original_common_joints_initial_exact": true,
+      "original_common_settled_joint_max_abs_error": 4.440892098500626e-16,
+      "initial_goal_true": false,
+      "collision_bottom_above_table_m": -1.4547155843924742e-05,
+      "stability_drift_over_60_controls_m": 1.0408340855860843e-14,
+      "stable_linear_speed_m_s": 1.9036251818072923e-14,
+      "fixture_replay_max_body_position_error_m": 0.0,
+      "settled_cross_entity_penetrations": [],
+      "mask_areas_px": {
+        "target_object": 894,
+        "rack": 5902
+      }
+    }
+  ],
+  "required_fixed_fixture_replay": "FIXTURE_REPLAY.json"
+}

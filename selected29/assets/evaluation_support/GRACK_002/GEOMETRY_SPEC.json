@@ -1,0 +1,163 @@
+{
+  "fixture_id": "wine_rack_1",
+  "source_native_destination": "wine_rack_1_top_region",
+  "adapted_semantic_destination": "wine_rack_1_adapt_top_region",
+  "mask_scope": "original_whole_rack_body",
+  "asset_xml": "libero-assets://assets/turbosquid_objects/wine_rack/wine_rack.xml",
+  "asset_sha256": "18f97cd8bb76ed18b2f11d047c5abbe0a2d9490d53ac167e0657c596dd450c3e",
+  "rack_collision_box_count": 9,
+  "target_assets": {
+    "alphabet_soup_1": {
+      "asset_xml": "libero-assets://assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml",
+      "asset_sha256": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3",
+      "collision_box_count": 21,
+      "root_local_aabb_low_m": [
+        -0.03134342535642978,
+        -0.03859,
+        -0.0348779100907935
+      ],
+      "root_local_aabb_high_m": [
+        0.031085888120213515,
+        0.037600000000000015,
+        0.02752
+      ],
+      "root_local_aabb_dimensions_m": [
+        0.062429313476643294,
+        0.07619000000000001,
+        0.0623979100907935
+      ]
+    },
+    "ketchup_1": {
+      "asset_xml": "libero-assets://assets/stable_hope_objects/ketchup/ketchup.xml",
+      "asset_sha256": "9007c9658863067a55dcea588d2000c9779e9edb1ba9d816312a840cb190064b",
+      "collision_box_count": 12,
+      "root_local_aabb_low_m": [
+        -0.02766,
+        -0.07242000000000001,
+        -0.01763
+      ],
+      "root_local_aabb_high_m": [
+        0.02856,
+        0.07319,
+        0.019129999999999998
+      ],
+      "root_local_aabb_dimensions_m": [
+        0.05622,
+        0.14561000000000002,
+        0.03676
+      ]
+    },
+    "new_salad_dressing_1": {
+      "asset_xml": "libero-assets://assets/stable_hope_objects/new_salad_dressing/new_salad_dressing.xml",
+      "asset_sha256": "daa4f363607329fcc4d4c0edccce9f9584db074d00eef2f14291803b0accfeb3",
+      "collision_box_count": 15,
+      "root_local_aabb_low_m": [
+        -0.02733000000000001,
+        -0.022720000000000004,
+        -0.01795161392112948
+      ],
+      "root_local_aabb_high_m": [
+        0.025410000000000012,
+        0.12285000000000001,
+        0.017560000000000013
+      ],
+      "root_local_aabb_dimensions_m": [
+        0.05274000000000002,
+        0.14557000000000003,
+        0.03551161392112949
+      ]
+    }
+  },
+  "top_deck": {
+    "collision_center_m": [
+      0.0,
+      -0.0061,
+      0.25118
+    ],
+    "collision_half_size_m": [
+      0.0045,
+      0.07894,
+      0.13438
+    ],
+    "collision_rotation": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.5191705151316485,
+        0.8546706829053743,
+        0.0
+      ],
+      [
+        -0.8546706829053743,
+        0.5191705151316485,
+        0.0
+      ]
+    ],
+    "upper_face_center_m": [
+      0.0,
+      -0.008436267318092418,
+      0.2550260180730742
+    ],
+    "upper_face_normal": [
+      -0.0,
+      -0.5191705151316485,
+      0.8546706829053743
+    ],
+    "normal_axis": 0,
+    "normal_sign": -1,
+    "upper_face_full_dimensions_m": [
+      0.26876,
+      0.15788
+    ]
+  },
+  "semantic_site": {
+    "name": "wine_rack_1_adapt_top_region",
+    "position": [
+      0.0,
+      -0.008436267318092418,
+      0.2550260180730742
+    ],
+    "quaternion_wxyz": [
+      0.9629825239601637,
+      0.26956383019113095,
+      -0.0,
+      0.0
+    ],
+    "axes": [
+      [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.8546706829053743,
+        -0.5191705151316485
+      ],
+      [
+        0.0,
+        0.5191705151316485,
+        0.8546706829053743
+      ]
+    ],
+    "half_size_m": [
+      0.13438,
+      0.07894,
+      0.002
+    ],
+    "annotation_only": true,
+    "under_transform": "world_delta @ actual_site_axes",
+    "maximum_body_root_height_m": 0.2
+  },
+  "legacy_native_predicate_required": false,
+  "annotated_predicate_required": true,
+  "positive_normal_force_required": true,
+  "gripper_contact_forbidden": true,
+  "hold_control_steps": 5,
+  "original_assets_modified": false,
+  "original_native_predicate_modified": false,
+  "new_destination_semantics": "Actual full original upper-deck footprint; legacy wine-root strip auxiliary only"
+}

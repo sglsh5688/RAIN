@@ -1,0 +1,151 @@
+{
+  "valid": true,
+  "changed_before_any_policy_evaluation": true,
+  "reason": "Original wine-specific root coordinate site rejects a physically supported thicker soup can. New actual-deck annotation matches the requested object-placement semantics.",
+  "physical_start_files_byte_identical": true,
+  "before_sha256": {
+    "tasks/grack_001__put_the_alphabet_soup_on_the_rack/task.pruned_init": "2c7117512a76112a947ce19c9b1d49080154f7eb6db5c0de15ffe27d5f7acd58",
+    "tasks/grack_001__put_the_alphabet_soup_on_the_rack/FIXTURE_REPLAY.json": "c9a8be25045a286a1e6137aee3503d7a52b4be141df2e03069249fff06514eb3",
+    "tasks/grack_001__put_the_alphabet_soup_on_the_rack/layout_states.json": "5b885e25df0920d45a690bf87541f4aa694512cd92403d1c7ff35a2a21e8e3ef",
+    "tasks/grack_002__put_the_ketchup_on_the_rack/task.pruned_init": "9d8d49baa1efd5a48c78e3e8907f56ac2c9521a7a997911b782bff55357eca6a",
+    "tasks/grack_002__put_the_ketchup_on_the_rack/FIXTURE_REPLAY.json": "cb7d02b1e5aa22bd3a026ed6dd14499ba198c1b0a87abc3f48b35b93453117f7",
+    "tasks/grack_002__put_the_ketchup_on_the_rack/layout_states.json": "5fa9e64536d704cecb9aff89420e12481f0de21d140d4cfbd8293a137565f10a",
+    "tasks/grack_003__put_the_salad_dressing_on_the_rack/task.pruned_init": "cd4d6d68ffd84e6e2865e46a1ac8bac1f6b5be18d78899f87af9de61e8ddfc34",
+    "tasks/grack_003__put_the_salad_dressing_on_the_rack/FIXTURE_REPLAY.json": "92b8d0d067eb17b86878f1e8a21c53d3b3d5240fca6e57d0e4ca83d57529c6bd",
+    "tasks/grack_003__put_the_salad_dressing_on_the_rack/layout_states.json": "259593264908009788f3f5a6d32a4561594dd58d13f43d7374f73db841f053e7"
+  },
+  "after_sha256": {
+    "tasks/grack_001__put_the_alphabet_soup_on_the_rack/task.pruned_init": "2c7117512a76112a947ce19c9b1d49080154f7eb6db5c0de15ffe27d5f7acd58",
+    "tasks/grack_001__put_the_alphabet_soup_on_the_rack/FIXTURE_REPLAY.json": "c9a8be25045a286a1e6137aee3503d7a52b4be141df2e03069249fff06514eb3",
+    "tasks/grack_001__put_the_alphabet_soup_on_the_rack/layout_states.json": "5b885e25df0920d45a690bf87541f4aa694512cd92403d1c7ff35a2a21e8e3ef",
+    "tasks/grack_002__put_the_ketchup_on_the_rack/task.pruned_init": "9d8d49baa1efd5a48c78e3e8907f56ac2c9521a7a997911b782bff55357eca6a",
+    "tasks/grack_002__put_the_ketchup_on_the_rack/FIXTURE_REPLAY.json": "cb7d02b1e5aa22bd3a026ed6dd14499ba198c1b0a87abc3f48b35b93453117f7",
+    "tasks/grack_002__put_the_ketchup_on_the_rack/layout_states.json": "5fa9e64536d704cecb9aff89420e12481f0de21d140d4cfbd8293a137565f10a",
+    "tasks/grack_003__put_the_salad_dressing_on_the_rack/task.pruned_init": "cd4d6d68ffd84e6e2865e46a1ac8bac1f6b5be18d78899f87af9de61e8ddfc34",
+    "tasks/grack_003__put_the_salad_dressing_on_the_rack/FIXTURE_REPLAY.json": "92b8d0d067eb17b86878f1e8a21c53d3b3d5240fca6e57d0e4ca83d57529c6bd",
+    "tasks/grack_003__put_the_salad_dressing_on_the_rack/layout_states.json": "259593264908009788f3f5a6d32a4561594dd58d13f43d7374f73db841f053e7"
+  },
+  "initial_states_revalidated": 15,
+  "rows": [
+    {
+      "task_id": "GRACK_001",
+      "init_state_index": 0,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_001",
+      "init_state_index": 1,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_001",
+      "init_state_index": 2,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_001",
+      "init_state_index": 3,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_001",
+      "init_state_index": 4,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_002",
+      "init_state_index": 0,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_002",
+      "init_state_index": 1,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_002",
+      "init_state_index": 2,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_002",
+      "init_state_index": 3,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_002",
+      "init_state_index": 4,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_003",
+      "init_state_index": 0,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_003",
+      "init_state_index": 1,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_003",
+      "init_state_index": 2,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_003",
+      "init_state_index": 3,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    },
+    {
+      "task_id": "GRACK_003",
+      "init_state_index": 4,
+      "valid": true,
+      "exact_pre_correction_body_replay_max_error_m": 0.0,
+      "new_annotated_goal_initially_false": true,
+      "strict_instant": false
+    }
+  ]
+}

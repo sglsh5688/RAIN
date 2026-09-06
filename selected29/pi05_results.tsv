@@ -47,3 +47,5 @@ order	category	task_id	instruction	successes	episodes	success_rate_percent	succe
 51	Adapt	BDRSWAP_001	Pick the alphabet soup and place it in the right compartment of the bowl drainer.	5	5	100.0	0		assets/pi05_videos/BDRSWAP_001/BDRSWAP_001_success.mp4		True
 52	Compose	BDRCOMP_021	Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the salad dressing and place it in the right compartment of the bowl drainer.	0	5	0.0		0		assets/pi05_videos/BDRCOMP_021/BDRCOMP_021_failure.mp4	True
 53	Adapt	ADVCN19_001	Open the top drawer of the wooden cabinet.	4	5	80.0	0	2	assets/pi05_videos/ADVCN19_001/ADVCN19_001_success.mp4	assets/pi05_videos/ADVCN19_001/ADVCN19_001_failure.mp4	True
+54	Adapt	WTRAYR_004	Pick up the black bowl and place it in the wooden tray.	5	5	100.0	0		assets/pi05_videos/WTRAYR_004/WTRAYR_004_success.mp4		True
+55	Adapt	GRACK_002	Put the ketchup on the rack.	4	5	80.0	1	0	assets/pi05_videos/GRACK_002/GRACK_002_success.mp4	assets/pi05_videos/GRACK_002/GRACK_002_failure.mp4	True

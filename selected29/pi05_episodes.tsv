@@ -239,3 +239,13 @@ ADVCN19_001	Adapt	1	True	286	520	5208	custom_goal	True	False
 ADVCN19_001	Adapt	2	False	520	520	5209	timeout	True	False
 ADVCN19_001	Adapt	3	True	67	520	5210	custom_goal	True	False
 ADVCN19_001	Adapt	4	True	63	520	5211	custom_goal	True	False
+WTRAYR_004	Adapt	0	True	123	520	5307	released_supported_goal		
+WTRAYR_004	Adapt	1	True	131	520	5308	released_supported_goal		
+WTRAYR_004	Adapt	2	True	142	520	5309	released_supported_goal		
+WTRAYR_004	Adapt	3	True	131	520	5310	released_supported_goal		
+WTRAYR_004	Adapt	4	True	132	520	5311	released_supported_goal		
+GRACK_002	Adapt	0	False	520	520	5407	timeout		
+GRACK_002	Adapt	1	True	186	520	5408	released_supported_goal		
+GRACK_002	Adapt	2	True	155	520	5409	released_supported_goal		
+GRACK_002	Adapt	3	True	134	520	5410	released_supported_goal		
+GRACK_002	Adapt	4	True	153	520	5411	released_supported_goal		

@@ -21,6 +21,20 @@
       "published_ledger_sha256": "2fab71b81122482f45d4563a89706ed6668a665d0001e9c43ed1f7c8030e4f51",
       "semantic_task_definition_changed": false,
       "reason": "replace the pre-run pending status with the derived audited 4/5 result status"
+    },
+    "WTRAYR_004": {
+      "field": "note",
+      "evaluated_input_sha256": "93dfbcb66133c905dea1950379e7127d8ffff52898d29255ed1d4de46beeab77",
+      "published_ledger_sha256": "d8ccff63d337a9b26e0a751ed4ad96ece42975d38ef4728cac06cfbe07965490",
+      "semantic_task_definition_changed": false,
+      "reason": "Replace pending status with audited strict pi0.5 5/5; no historical RAIN or task input change"
+    },
+    "GRACK_002": {
+      "field": "note",
+      "evaluated_input_sha256": "93dfbcb66133c905dea1950379e7127d8ffff52898d29255ed1d4de46beeab77",
+      "published_ledger_sha256": "d8ccff63d337a9b26e0a751ed4ad96ece42975d38ef4728cac06cfbe07965490",
+      "semantic_task_definition_changed": false,
+      "reason": "Replace pending status with audited strict pi0.5 4/5; no historical RAIN or task input change"
     }
   },
   "evaluation_segments": [
@@ -117,27 +131,50 @@
         "de920be76cdbffe2570b212f5b94c2a148f586a7b18eba150660d4cc55545b48"
       ],
       "note": "Independent atomic Adapt segment: native top-drawer Open only, with authored-context and sibling-interaction guards."
+    },
+    {
+      "task_count": 2,
+      "task_ids": [
+        "WTRAYR_004",
+        "GRACK_002"
+      ],
+      "evaluator": "run_selected55_missing_adapt_pi05.py",
+      "evaluator_sha256": "6b6195354d68e47afe5c75be1ec595b16ffa7ede019d86678823ca94db242739",
+      "per_task_source_hashes": {
+        "WTRAYR_004": {
+          "aggregate.json": "010b17672239e9cf849a97b6371a4fd8db7e0bf9352bf2deeafd0b635674d8ce",
+          "episodes.jsonl": "1e18fcc2bc4cb28616a6b2c262eb998d41b0765cb023dc6696bc98cdec177c11",
+          "FINAL_EVALUATION_AUDIT.json": "a3b02dde5ef3a88a805a899b13fbcece3393d80d8449ce5188b4b7ca495b0659",
+          "run_manifest.json": "3a5ade188d9b39671c4e5517299e553dc0657514e0e7bf0b790ad77132667a12"
+        },
+        "GRACK_002": {
+          "aggregate.json": "77ccf16b6d5f688367090c4a0d05e45f6122514c8548943bae9d04c783438a3d",
+          "episodes.jsonl": "c8120f6e1560616ace7570ab44bfb05cc9532d6360d8e536a39174d2c34b9dbe",
+          "FINAL_EVALUATION_AUDIT.json": "4830130825f7ac89ec8724fae962cbea86a912d0a7c32f4a70985181863c94d3",
+          "run_manifest.json": "51ba35be810ad220b4c8a4f21d88235643131a97dfd258feb959f95f4b6c786b"
+        }
+      },
+      "note": "Newly selected tray and ketchup rack tasks; exact source physical starts; unchanged strict released/support observers after every control; official pi05_libero; no mask conditioning; all five original videos retained per task."
     }
   ],
-  "selected_tasks": 54,
-  "tasks": 48,
+  "selected_tasks": 55,
+  "tasks": 50,
   "pending_task_ids": [
     "VCN8_008",
     "VCN9_010",
     "VCN10_001",
     "VCN19_020",
-    "VCN21_001",
-    "WTRAYR_004"
+    "VCN21_001"
   ],
   "retired_source_result_ids": [
     "COMP2_001"
   ],
-  "episodes": 240,
-  "successes": 59,
-  "successful_tasks": 16,
-  "success_videos": 16,
-  "failure_videos": 42,
-  "representative_videos": 58,
+  "episodes": 250,
+  "successes": 68,
+  "successful_tasks": 18,
+  "success_videos": 18,
+  "failure_videos": 43,
+  "representative_videos": 61,
   "frozen_source_ledger": {
     "tasks": 48,
     "episodes": 240,
@@ -189,12 +226,12 @@
       "episodes": 100
     },
     "Adapt": {
-      "selected_tasks": 19,
-      "evaluated_tasks": 18,
-      "pending_tasks": 1,
-      "successful_tasks": 12,
-      "successes": 49,
-      "episodes": 90
+      "selected_tasks": 20,
+      "evaluated_tasks": 20,
+      "pending_tasks": 0,
+      "successful_tasks": 14,
+      "successes": 58,
+      "episodes": 100
     },
     "Compose": {
       "selected_tasks": 15,
@@ -877,7 +914,39 @@
       "success_video": "assets/pi05_videos/ADVCN19_001/ADVCN19_001_success.mp4",
       "failure_video": "assets/pi05_videos/ADVCN19_001/ADVCN19_001_failure.mp4",
       "complete": true
+    },
+    {
+      "order": "54",
+      "category": "Adapt",
+      "task_id": "WTRAYR_004",
+      "instruction": "Pick up the black bowl and place it in the wooden tray.",
+      "successes": 5,
+      "episodes": 5,
+      "success_rate_percent": 100.0,
+      "success_episode": "0",
+      "failure_episode": "",
+      "success_video": "assets/pi05_videos/WTRAYR_004/WTRAYR_004_success.mp4",
+      "failure_video": "",
+      "complete": true
+    },
+    {
+      "order": "55",
+      "category": "Adapt",
+      "task_id": "GRACK_002",
+      "instruction": "Put the ketchup on the rack.",
+      "successes": 4,
+      "episodes": 5,
+      "success_rate_percent": 80.0,
+      "success_episode": "1",
+      "failure_episode": "0",
+      "success_video": "assets/pi05_videos/GRACK_002/GRACK_002_success.mp4",
+      "failure_video": "assets/pi05_videos/GRACK_002/GRACK_002_failure.mp4",
+      "complete": true
     }
   ],
-  "selected_54_tsv_sha256": "79c6d42dc9cb71ea452c1f3f3e58f7aa86d05b266daacf5f347e9d84e4384c04"
+  "selected_54_tsv_sha256": "79c6d42dc9cb71ea452c1f3f3e58f7aa86d05b266daacf5f347e9d84e4384c04",
+  "selected_55_tsv_sha256": "d8ccff63d337a9b26e0a751ed4ad96ece42975d38ef4728cac06cfbe07965490",
+  "new_adapt_original_videos": 10,
+  "new_adapt_original_video_policy": "All five original episodes retained locally per task; all five browser copies and representative buttons use lossless faststart remuxes with source/public hashes",
+  "selected_55_pre_pi05_tsv_sha256": "93dfbcb66133c905dea1950379e7127d8ffff52898d29255ed1d4de46beeab77"
 }

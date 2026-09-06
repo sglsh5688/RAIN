@@ -1,0 +1,31 @@
+{
+  "manual_geometry_only": true,
+  "policy_episode": false,
+  "all_three_positive_witnesses_passed": true,
+  "rows": [
+    {
+      "task_id": "GRACK_001",
+      "manual_geometry_only": true,
+      "policy_episode": false,
+      "evaluation_initial_states_unchanged": true,
+      "table_negative_passed": true,
+      "strict_released_support_witness_passed": true
+    },
+    {
+      "task_id": "GRACK_002",
+      "manual_geometry_only": true,
+      "policy_episode": false,
+      "evaluation_initial_states_unchanged": true,
+      "table_negative_passed": true,
+      "strict_released_support_witness_passed": true
+    },
+    {
+      "task_id": "GRACK_003",
+      "manual_geometry_only": true,
+      "policy_episode": false,
+      "evaluation_initial_states_unchanged": true,
+      "table_negative_passed": true,
+      "strict_released_support_witness_passed": true
+    }
+  ]
+}

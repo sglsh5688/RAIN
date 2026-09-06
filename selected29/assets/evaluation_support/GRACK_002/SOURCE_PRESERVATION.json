@@ -1,0 +1,11 @@
+{
+  "unchanged": true,
+  "sha256": {
+    "libero://source/bddl_files/libero_goal/put_the_wine_bottle_on_the_rack.bddl": "3d3ee18139056aa3780572cde17b1c50dc20ae0d299403f65e514e8471ba0e8e",
+    "libero://source/init_files/libero_goal/put_the_wine_bottle_on_the_rack.pruned_init": "fa09aa4ade871c1c6be3dd8c93eb3437ea15190fd7dc73b8c986c8d2d3cfb062",
+    "libero-assets://assets/turbosquid_objects/wine_rack/wine_rack.xml": "18f97cd8bb76ed18b2f11d047c5abbe0a2d9490d53ac167e0657c596dd450c3e",
+    "libero-assets://assets/stable_hope_objects/alphabet_soup/alphabet_soup.xml": "09a230f3cc5cbb437190adb9d2212ad20edfb5904bda8094a5db7acb2595afc3",
+    "libero-assets://assets/stable_hope_objects/ketchup/ketchup.xml": "9007c9658863067a55dcea588d2000c9779e9edb1ba9d816312a840cb190064b",
+    "libero-assets://assets/stable_hope_objects/new_salad_dressing/new_salad_dressing.xml": "daa4f363607329fcc4d4c0edccce9f9584db074d00eef2f14291803b0accfeb3"
+  }
+}

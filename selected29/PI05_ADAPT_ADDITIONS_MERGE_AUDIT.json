@@ -1,0 +1,156 @@
+{
+  "schema": "selected55_pi05_additions_merge_v1",
+  "passed": true,
+  "selected_tasks": 55,
+  "evaluated_tasks": 50,
+  "evaluated_episodes": 250,
+  "pi05_successes": 68,
+  "adapt": {
+    "selected_tasks": 20,
+    "evaluated_tasks": 20,
+    "pending_tasks": 0,
+    "successful_tasks": 14,
+    "successes": 58,
+    "episodes": 100
+  },
+  "additions": {
+    "WTRAYR_004": {
+      "order": "54",
+      "category": "Adapt",
+      "task_id": "WTRAYR_004",
+      "instruction": "Pick up the black bowl and place it in the wooden tray.",
+      "successes": 5,
+      "episodes": 5,
+      "success_rate_percent": 100.0,
+      "success_episode": "0",
+      "failure_episode": "",
+      "success_video": "assets/pi05_videos/WTRAYR_004/WTRAYR_004_success.mp4",
+      "failure_video": "",
+      "complete": true
+    },
+    "GRACK_002": {
+      "order": "55",
+      "category": "Adapt",
+      "task_id": "GRACK_002",
+      "instruction": "Put the ketchup on the rack.",
+      "successes": 4,
+      "episodes": 5,
+      "success_rate_percent": 80.0,
+      "success_episode": "1",
+      "failure_episode": "0",
+      "success_video": "assets/pi05_videos/GRACK_002/GRACK_002_success.mp4",
+      "failure_video": "assets/pi05_videos/GRACK_002/GRACK_002_failure.mp4",
+      "complete": true
+    }
+  },
+  "compose_pending_task_ids": [
+    "VCN8_008",
+    "VCN9_010",
+    "VCN10_001",
+    "VCN19_020",
+    "VCN21_001"
+  ],
+  "previous_48_pi05_results_unchanged": true,
+  "corrected_anlgx023_preserved_zero_of_five": true,
+  "original_rain_records_unchanged": true,
+  "frozen_selected_task_inputs_unchanged": true,
+  "local_original_videos_retained": 10,
+  "public_lossless_faststart_videos": 10,
+  "source_and_public_decoded_frames_identical": true,
+  "public_new_artifacts_sanitized": true,
+  "public_sanitization": {
+    "assets/task_bundles/Adapt/GRACK_002/task_meta.yaml": {
+      "source_sha256": "b8d91620242cf5c5b92784d7ace52414d88c55b8055a827ea60924fb1a86e819",
+      "public_sha256": "0ba2bbae1b300fa8cf5bec0d38446c2dc6ffb0ed4a20dae707f48866cd28ffdf",
+      "change": "Private path aliasing only; support README adds a public-copy notice"
+    },
+    "assets/evaluation_support/GRACK_002/GEOMETRY_SPEC.json": {
+      "source_sha256": "8d05606f53313af6e77dff60e22e5d9ec757508ef1956df67c30829de9bc6412",
+      "public_sha256": "5379136cd0fb657c5350f2d1ae153f1dab95e1c5b77504e31bccacc9318bac95",
+      "change": "Private path aliasing only; support README adds a public-copy notice"
+    },
+    "assets/evaluation_support/GRACK_002/SOURCE_PRESERVATION.json": {
+      "source_sha256": "d64d1b04180e9f2e9f563b976d40148351c8dbd140326ec0f26687d5139fdb0f",
+      "public_sha256": "f4d2183fc015e8a44c4a96436a4789a984f2f54a83681eba444f3d554c25cd76",
+      "change": "Private path aliasing only; support README adds a public-copy notice"
+    },
+    "assets/evaluation_support/GRACK_002/SUPPORT_README.md": {
+      "source_sha256": "6ff7b84d57c3ef8470f4c30635222abefc9c52e25f3dbc1040f6d734380cef76",
+      "public_sha256": "c834811c8726969f2c17f38824c793acae4a7bfbaa8e28295a67597e15b42e22",
+      "change": "Private path aliasing only; support README adds a public-copy notice"
+    },
+    "assets/evaluation_support/GRACK_002/novel_feedback_fixture_geometry.py": {
+      "source_sha256": "a283a180811a0ab6ed47d2436d47d52af6ecfedd820231045b91101aa1f2d874",
+      "public_sha256": "76e793854233f2c8a9aca1930fc9a6b047dd972eae19a25d0dbbf372d2459699",
+      "change": "Private path aliasing only; support README adds a public-copy notice"
+    },
+    "assets/evaluation_support/GRACK_002/run_goal_rack_objects_5ep.py": {
+      "source_sha256": "9caf1d5055961f1ec0b6658460eb33dc1d5519780e3abbccc7c19a01df04b9b5",
+      "public_sha256": "5c0b80df5a8249d842e8532ce769cfe3ca16e7984632bb7505a87139ea723dbd",
+      "change": "Private path aliasing only; support README adds a public-copy notice"
+    }
+  },
+  "public_task_bundles_zip_sha256": "8942cd1b20fc51bb003258d90ea96d2d295b384f7887ff06d5f25020bb6b2c4a",
+  "all_ten_videos_decoded": true,
+  "page_links_checked": 328,
+  "public_repository_modified": false,
+  "source_artifact_sha256": {
+    "WTRAYR_004": {
+      "aggregate.json": "010b17672239e9cf849a97b6371a4fd8db7e0bf9352bf2deeafd0b635674d8ce",
+      "episodes.jsonl": "1e18fcc2bc4cb28616a6b2c262eb998d41b0765cb023dc6696bc98cdec177c11",
+      "FINAL_EVALUATION_AUDIT.json": "a3b02dde5ef3a88a805a899b13fbcece3393d80d8449ce5188b4b7ca495b0659",
+      "run_manifest.json": "3a5ade188d9b39671c4e5517299e553dc0657514e0e7bf0b790ad77132667a12"
+    },
+    "GRACK_002": {
+      "aggregate.json": "77ccf16b6d5f688367090c4a0d05e45f6122514c8548943bae9d04c783438a3d",
+      "episodes.jsonl": "c8120f6e1560616ace7570ab44bfb05cc9532d6360d8e536a39174d2c34b9dbe",
+      "FINAL_EVALUATION_AUDIT.json": "4830130825f7ac89ec8724fae962cbea86a912d0a7c32f4a70985181863c94d3",
+      "run_manifest.json": "51ba35be810ad220b4c8a4f21d88235643131a97dfd258feb959f95f4b6c786b"
+    }
+  },
+  "previous_document_sha256": {
+    "selected29/pi05_results.tsv": "ccbde9b7b470dbbf62c0dbeff84a14aad341a86c7b26d91b7301227843a3cb19",
+    "selected29/pi05_episodes.tsv": "5623268d34bc1fea4fc5f1266036d6d89beec052de19d1953cfee81e14d75e6d",
+    "selected_tasks.tsv": "93dfbcb66133c905dea1950379e7127d8ffff52898d29255ed1d4de46beeab77",
+    "selected29/tasks.tsv": "93dfbcb66133c905dea1950379e7127d8ffff52898d29255ed1d4de46beeab77",
+    "selected29/index.html": "e9cbbde81918b47b7a05d3337957aabd3878b76a03e40ea5c186767edfa015c5",
+    "SELECTED_TASKS.md": "03627e40c81367f015d52110de16613ccc92c49eee91aa88cdb3be20fd889a33",
+    "selected29/SELECTED_TASKS.md": "03627e40c81367f015d52110de16613ccc92c49eee91aa88cdb3be20fd889a33",
+    "selected29/pi05_evaluation.json": "5c5053bf0ea58533cb3758563058d8e12fbc09f7fc7647b2b71c2c89e5c5a488",
+    "WTRAYR_004_PROVENANCE.json": "c029b259f7c2caabe70bb0fb8838fe5cdffc4d949a85a3ee3cad1acccf3db7dc",
+    "selected29/WTRAYR_004_PROVENANCE.json": "c029b259f7c2caabe70bb0fb8838fe5cdffc4d949a85a3ee3cad1acccf3db7dc",
+    "GRACK_002_PROVENANCE.json": "3acabaaea1fd35a0893740d2a1a4cf7da02e558e56660fee8c639528610261ed",
+    "selected29/GRACK_002_PROVENANCE.json": "3acabaaea1fd35a0893740d2a1a4cf7da02e558e56660fee8c639528610261ed",
+    "selected29/assets/task_bundles/Adapt/GRACK_002/task_meta.yaml": "b8d91620242cf5c5b92784d7ace52414d88c55b8055a827ea60924fb1a86e819",
+    "selected29/assets/evaluation_support/GRACK_002/GEOMETRY_SPEC.json": "8d05606f53313af6e77dff60e22e5d9ec757508ef1956df67c30829de9bc6412",
+    "selected29/assets/evaluation_support/GRACK_002/SOURCE_PRESERVATION.json": "d64d1b04180e9f2e9f563b976d40148351c8dbd140326ec0f26687d5139fdb0f",
+    "selected29/assets/evaluation_support/GRACK_002/SUPPORT_README.md": "6ff7b84d57c3ef8470f4c30635222abefc9c52e25f3dbc1040f6d734380cef76",
+    "selected29/assets/evaluation_support/GRACK_002/novel_feedback_fixture_geometry.py": "a283a180811a0ab6ed47d2436d47d52af6ecfedd820231045b91101aa1f2d874",
+    "selected29/assets/evaluation_support/GRACK_002/run_goal_rack_objects_5ep.py": "9caf1d5055961f1ec0b6658460eb33dc1d5519780e3abbccc7c19a01df04b9b5",
+    "selected29/task_bundles.zip": "4f8648c38d18e933c276f53bd7dad5646969b7ab56279e279f4094fba19290b6"
+  },
+  "output_document_sha256": {
+    "selected29/pi05_results.tsv": "b5f4426eb2988f0729cdceafb373e28626e144cabacc3cb539480fc88701bbd4",
+    "selected29/pi05_episodes.tsv": "bd277142a02fb0e333d5c70a588f195ce400fe6b82fb70a13e9819a1ce55cca1",
+    "selected_tasks.tsv": "d8ccff63d337a9b26e0a751ed4ad96ece42975d38ef4728cac06cfbe07965490",
+    "selected29/tasks.tsv": "d8ccff63d337a9b26e0a751ed4ad96ece42975d38ef4728cac06cfbe07965490",
+    "selected29/index.html": "3eebd173d900f328c075aa111016ddda4b04beb898f987f658a4740ca3274a0c",
+    "SELECTED_TASKS.md": "960ada07a9ac2c6849c36a42d5f72033ad04505dd70d16cd8acea7d1e3759746",
+    "selected29/SELECTED_TASKS.md": "960ada07a9ac2c6849c36a42d5f72033ad04505dd70d16cd8acea7d1e3759746",
+    "selected29/pi05_evaluation.json": "fe8a6d83ab4a5e6457be3e8546982bd811dc770b9943208fcdde73790611c4b7",
+    "selected29/WTRAYR_004_PI05_ADDITION.json": "2d6e3a3aae3e43a6a1ed9c67abe6307861a454d2c5d66461af041c59d1c3eff8",
+    "WTRAYR_004_PROVENANCE.json": "e91fe1aedba9a216f00a2699a716254b844515838e782036f607047dc80c4f69",
+    "selected29/WTRAYR_004_PROVENANCE.json": "e91fe1aedba9a216f00a2699a716254b844515838e782036f607047dc80c4f69",
+    "selected29/GRACK_002_PI05_ADDITION.json": "c8e347cf09e75c828d1ffabcd7989b73926ff2501b42154d776ddc06e996a0bd",
+    "GRACK_002_PROVENANCE.json": "f98fa78c00449ed1fef95222660d381c3b99a4cea75561c7a60c237aeea094a8",
+    "selected29/GRACK_002_PROVENANCE.json": "4b937b8ac076d6ba03a52ebb6a153ccafcafb1b325991eff4658ff8cec79842e",
+    "selected29/assets/task_bundles/Adapt/GRACK_002/task_meta.yaml": "0ba2bbae1b300fa8cf5bec0d38446c2dc6ffb0ed4a20dae707f48866cd28ffdf",
+    "selected29/assets/evaluation_support/GRACK_002/GEOMETRY_SPEC.json": "5379136cd0fb657c5350f2d1ae153f1dab95e1c5b77504e31bccacc9318bac95",
+    "selected29/assets/evaluation_support/GRACK_002/SOURCE_PRESERVATION.json": "f4d2183fc015e8a44c4a96436a4789a984f2f54a83681eba444f3d554c25cd76",
+    "selected29/assets/evaluation_support/GRACK_002/SUPPORT_README.md": "c834811c8726969f2c17f38824c793acae4a7bfbaa8e28295a67597e15b42e22",
+    "selected29/assets/evaluation_support/GRACK_002/novel_feedback_fixture_geometry.py": "76e793854233f2c8a9aca1930fc9a6b047dd972eae19a25d0dbbf372d2459699",
+    "selected29/assets/evaluation_support/GRACK_002/run_goal_rack_objects_5ep.py": "5c0b80df5a8249d842e8532ce769cfe3ca16e7984632bb7505a87139ea723dbd"
+  },
+  "baseline_backup": "libero-ex://artifacts/LiberoSelected55/pi05_merge_baseline_20260906",
+  "merger_sha256": "df46a3eb37cfe97fc09f9b07f4b96280d52155d646261cb82958760984cca917"
+}

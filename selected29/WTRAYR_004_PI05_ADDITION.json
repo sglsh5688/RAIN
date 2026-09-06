@@ -1,0 +1,125 @@
+{
+  "schema": "selected55_missing_adapt_pi05_addition_v1",
+  "task_id": "WTRAYR_004",
+  "task_result": {
+    "order": "54",
+    "category": "Adapt",
+    "task_id": "WTRAYR_004",
+    "instruction": "Pick up the black bowl and place it in the wooden tray.",
+    "successes": 5,
+    "episodes": 5,
+    "success_rate_percent": 100.0,
+    "success_episode": "0",
+    "failure_episode": "",
+    "success_video": "assets/pi05_videos/WTRAYR_004/WTRAYR_004_success.mp4",
+    "failure_video": "",
+    "complete": true
+  },
+  "source_artifact_sha256": {
+    "aggregate.json": "010b17672239e9cf849a97b6371a4fd8db7e0bf9352bf2deeafd0b635674d8ce",
+    "episodes.jsonl": "1e18fcc2bc4cb28616a6b2c262eb998d41b0765cb023dc6696bc98cdec177c11",
+    "FINAL_EVALUATION_AUDIT.json": "a3b02dde5ef3a88a805a899b13fbcece3393d80d8449ce5188b4b7ca495b0659",
+    "run_manifest.json": "3a5ade188d9b39671c4e5517299e553dc0657514e0e7bf0b790ad77132667a12"
+  },
+  "checkpoint": {
+    "config": "pi05_libero",
+    "control_hashes": {
+      "assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+      "params/_METADATA": "303a4e354814928e1d29b75e310f2c1ac7e7e29b62f48395b631045ca1cffc73",
+      "params/_sharding": "63f4c57ba6ff10f4132a639b9942eabcc26942eb34081be1d93bf7ddab816501",
+      "params/manifest.ocdbt": "65246951e69bd2b5118e609646bc9e8c439229bccbc1325643833aeb74f77104"
+    },
+    "file_count": 16,
+    "path": "checkpoint://artifacts/openpi-assets/checkpoints/pi05_libero",
+    "source": "gs://openpi-assets/checkpoints/pi05_libero",
+    "total_bytes": 12439085481
+  },
+  "protocol": {
+    "wait_steps": 10,
+    "replan_steps": 5,
+    "resize_size": 224,
+    "max_steps": 520,
+    "policy_uses_masks": false,
+    "egl_gpu": 6,
+    "policy_gpu": 7,
+    "episode_seeds": [
+      5307,
+      5308,
+      5309,
+      5310,
+      5311
+    ],
+    "policy_rng_note": "Server starts default RNG0; evolves per request, not reset by environment seed"
+  },
+  "all_five_original_videos": [
+    {
+      "episode_idx": 0,
+      "success": true,
+      "path": "assets/pi05_all_videos/WTRAYR_004/WTRAYR_004_ep000_success.mp4",
+      "source_sha256": "b965185266e07d704f40ccc70d2860ffab434a2d078cef0dfa4999ac49fa468d",
+      "initial_state_sha256": "b15a54960fab2ca81a8e3ad2952e73113174edc2661d5b156462d4d1d43bfa13",
+      "source_initial_position_max_abs_diff_m": 0.0,
+      "public_sha256": "eb393c921aad2d8dd62defbe90b0884b2a79e1f1c556c7427f03579e852a197e",
+      "decoded_video_sha256": "SHA256=2c80a07445c52bc4e4b19fdb8048666841cbf81f7f74245fee5783b7eff12602",
+      "remux": "lossless video stream-copy +faststart",
+      "original_local_path": "libero-ex://artifacts/LiberoSelected55/pi05_additions/WTRAYR_004/videos/WTRAYR_004_ep000_success.mp4"
+    },
+    {
+      "episode_idx": 1,
+      "success": true,
+      "path": "assets/pi05_all_videos/WTRAYR_004/WTRAYR_004_ep001_success.mp4",
+      "source_sha256": "68a6b24735d41a2b2b0ed9825fc9e2dd8592545dde1d0077427d57df64eebb0d",
+      "initial_state_sha256": "c6959a721819b856fb5e38ebe4efd059053db3a68665a52af4350578636dfe91",
+      "source_initial_position_max_abs_diff_m": 0.0,
+      "public_sha256": "7585b5fe262f58bd85b8dc18c3524dfc3ba48e0de93e0fadee150c045f61ef84",
+      "decoded_video_sha256": "SHA256=95487e869f6fa6dca2978f404a9bf8d91d1e62b2d766d946d26c88cf9be8e532",
+      "remux": "lossless video stream-copy +faststart",
+      "original_local_path": "libero-ex://artifacts/LiberoSelected55/pi05_additions/WTRAYR_004/videos/WTRAYR_004_ep001_success.mp4"
+    },
+    {
+      "episode_idx": 2,
+      "success": true,
+      "path": "assets/pi05_all_videos/WTRAYR_004/WTRAYR_004_ep002_success.mp4",
+      "source_sha256": "b2984b1c0d405a44edadd84c37ab0ce2a65d7c8f825e926e8f855861be8f4589",
+      "initial_state_sha256": "9207eb7f0be9ba615a9b257023e3fe4aa60a5bfb71b5dd1b003206bc09fbbd29",
+      "source_initial_position_max_abs_diff_m": 0.0,
+      "public_sha256": "78f34d4f55a23c437987cde7c1c3cb643f24f19d0d4e73b87d82311d79087603",
+      "decoded_video_sha256": "SHA256=fbb4514121b6bae6d63983c442bea93941077171893de0a86f8bf038493f781a",
+      "remux": "lossless video stream-copy +faststart",
+      "original_local_path": "libero-ex://artifacts/LiberoSelected55/pi05_additions/WTRAYR_004/videos/WTRAYR_004_ep002_success.mp4"
+    },
+    {
+      "episode_idx": 3,
+      "success": true,
+      "path": "assets/pi05_all_videos/WTRAYR_004/WTRAYR_004_ep003_success.mp4",
+      "source_sha256": "aca595b1dba25b337ad537ea0cc7c509688312093f56f8437657084c9c1c0e2d",
+      "initial_state_sha256": "e99ad829da74a5e41dd20558e814eb5ec8b388a8ba751404aef937dcf56d771d",
+      "source_initial_position_max_abs_diff_m": 0.0,
+      "public_sha256": "6e410066ba9a7dad8f0021a5e58bc7d43beb5094314fe8f82508987361e4f592",
+      "decoded_video_sha256": "SHA256=84d359772cb12df268fe26ac02caf645cb455f292b4a6296ced2640a825120e2",
+      "remux": "lossless video stream-copy +faststart",
+      "original_local_path": "libero-ex://artifacts/LiberoSelected55/pi05_additions/WTRAYR_004/videos/WTRAYR_004_ep003_success.mp4"
+    },
+    {
+      "episode_idx": 4,
+      "success": true,
+      "path": "assets/pi05_all_videos/WTRAYR_004/WTRAYR_004_ep004_success.mp4",
+      "source_sha256": "a863df3f828a3cb777b17a534b3f2908d85f52940b55ddb1944a05bf981c94e6",
+      "initial_state_sha256": "3244cf988028dc968b161b88b9b82b9390cdbb051da479e563e0d548237b713c",
+      "source_initial_position_max_abs_diff_m": 0.0,
+      "public_sha256": "96593daa487a8f8bf492faa943d4e329c7e795ebd1a7ef51675855d80d8864fb",
+      "decoded_video_sha256": "SHA256=a311c14b9c19d512bd92a65151a0fc9d91d0443265fc980c838531c06695ab85",
+      "remux": "lossless video stream-copy +faststart",
+      "original_local_path": "libero-ex://artifacts/LiberoSelected55/pi05_additions/WTRAYR_004/videos/WTRAYR_004_ep004_success.mp4"
+    }
+  ],
+  "physical_audit": {
+    "every_control_replayed": true,
+    "all_initial_goals_false": true,
+    "source_scoring_helper_unchanged": true,
+    "hold_control_steps": 5,
+    "native_wine_on_auxiliary_only": false
+  },
+  "previous_48_results_unchanged": true,
+  "original_rain_result_unchanged": true
+}

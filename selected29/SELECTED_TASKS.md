@@ -1,10 +1,10 @@
 # Selected LIBERO-EX tasks
 
-Selection updated 2026-09-06. 20 Decomposition + 19 Adapt + 15 Compose (54 total). The confirmed Compose IDs are VCN8_008, VCN9_010, VCN10_001, VCN19_020, VCN21_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001, BDRCOMP_021.
+Selection updated 2026-09-06. 20 Decomposition + 20 Adapt + 15 Compose (55 total). The confirmed Compose IDs are VCN8_008, VCN9_010, VCN10_001, VCN19_020, VCN21_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001, BDRCOMP_021.
 
-A separate π0.5 evaluation uses the official `pi05_libero` checkpoint fine-tuned on LIBERO-40. Of the current selection, 48/54 tasks have exactly 5 evaluated episodes (240 total), with 59 successful episodes (24.6%) and 16/48 evaluated tasks succeeding at least once. VCN8_008, VCN9_010, VCN10_001, VCN19_020, VCN21_001, WTRAYR_004 remain explicitly not evaluated; no π0.5 result is inferred from their RAIN records. ADVCN19_001 now contributes its independent strict atomic-Open five-episode segment (4/5). COMP2_001's old π0.5 record remains frozen in the source ledger but is retired from this page. ANLGX_023 is replaced by a fresh strict close-only five-episode correction run; its original permissive 3/5 record remains only in the frozen source ledger and correction provenance. See [`pi05_results.tsv`](pi05_results.tsv), [`pi05_episodes.tsv`](pi05_episodes.tsv), [`pi05_evaluation.json`](pi05_evaluation.json), [`ANLGX_023_PI05_CORRECTION.json`](ANLGX_023_PI05_CORRECTION.json), and [`ADVCN19_001_PROVENANCE.json`](ADVCN19_001_PROVENANCE.json).
+A separate π0.5 evaluation uses the official `pi05_libero` checkpoint fine-tuned on LIBERO-40. Of the current selection, 50/55 tasks have exactly 5 evaluated episodes (250 total), with 68 successful episodes (27.2%) and 18/50 evaluated tasks succeeding at least once. All 20 selected Adapt tasks have now been evaluated. Only VCN8_008, VCN9_010, VCN10_001, VCN19_020, VCN21_001 remain explicitly not evaluated; no π0.5 result is inferred from their RAIN records. ADVCN19_001 now contributes its independent strict atomic-Open five-episode segment (4/5). COMP2_001's old π0.5 record remains frozen in the source ledger but is retired from this page. ANLGX_023 is replaced by a fresh strict close-only five-episode correction run; its original permissive 3/5 record remains only in the frozen source ledger and correction provenance. See [`pi05_results.tsv`](pi05_results.tsv), [`pi05_episodes.tsv`](pi05_episodes.tsv), [`pi05_evaluation.json`](pi05_evaluation.json), [`ANLGX_023_PI05_CORRECTION.json`](ANLGX_023_PI05_CORRECTION.json), and [`ADVCN19_001_PROVENANCE.json`](ADVCN19_001_PROVENANCE.json).
 
-Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. OGDTSL_011 and OGDTSL_046 retain their original Adapt Object five-episode evaluations. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt. WTRAYR_004 retains its exact five-state strict RAIN 2/5 result and has no π0.5 result yet.
+Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. OGDTSL_011 and OGDTSL_046 retain their original Adapt Object five-episode evaluations. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt. WTRAYR_004 retains its exact five-state strict RAIN 2/5 result and has a separate strict π0.5 result of 5/5.
 
 Selected Analogy/Adapt now also includes NAFR3_001 and NAFR3_002, each 4/5 (80%) on GPUs 6/7. Each retains all four original successful episodes and the original LIBERO / V2 / V3 masked comparison. The light-colored book remains the native yellow_book asset. No V1/V2 results or interrupted GPU5/6 episodes are mixed in. The standalone NAF revisions public page is retired; its experimental source records and offline review archive remain preserved.
 
@@ -69,7 +69,8 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 | DSET_001 | DSET_001 | Pick up the black bowl at the table center and place it on the dining-set mat. | 5/5 (100.0%) | 5/5 (100%) | — |
 | BDRSWAP_001 | BDRSWAP_001 | Pick the alphabet soup and place it in the right compartment of the bowl drainer. | 5/5 (100%) | 5/5 (100%) | — |
 | ADVCN19_001 | ADVCN19_001 | Open the top drawer of the wooden cabinet. | 4/5 (80%) | 4/5 (80%) | — |
-| WTRAYR_004 | WTRAYR_004 | Pick up the black bowl and place it in the wooden tray. | 2/5 (40.0%) | Not evaluated | — |
+| WTRAYR_004 | WTRAYR_004 | Pick up the black bowl and place it in the wooden tray. | 2/5 (40.0%) | 5/5 (100%) | — |
+| GRACK_002 | GRACK_002 | Put the ketchup on the rack. | 5/5 (100.0%) | 4/5 (80%) | — |
 
 ## Compose
 
@@ -100,6 +101,19 @@ The native Open rate comes from five original RAIN trials, not from the parent's
 
 ## Newly selected reachable wooden-tray Adapt — WTRAYR_004
 
-Selected reachable-pose wooden-tray Adapt. The tray is shifted 6 cm to robot-right and the black-bowl pickup is shifted 3 cm toward the robot and 5 cm toward the center relative to WTRAY_004. Historical RAIN success is strict 2/5 (episodes 1 and 2): native In, the complete collision envelope inside the native tray site with 1 mm tolerance, positive-force tray contact, no gripper contact, and all conditions held for five consecutive control steps. The π0.5 evaluation is pending; no π0.5 outcome is claimed.
+Selected reachable-pose wooden-tray Adapt. The tray is shifted 6 cm to robot-right and the black-bowl pickup is shifted 3 cm toward the robot and 5 cm toward the center relative to WTRAY_004. Historical RAIN success is strict 2/5 (episodes 1 and 2): native In, the complete collision envelope inside the native tray site with 1 mm tolerance, positive-force tray contact, no gripper contact, and all conditions held for five consecutive control steps. WTRAYR_004 now has an independent strict π0.5 result of 5/5 (100%). Its historical RAIN result is unchanged.
 
 The two successes are the original RAIN episodes 001 and 002. Their strict witnesses begin at control steps 243 and 259 and complete the five-control-step hold at steps 247 and 263. The exact source bundle, all five raw result records, comparison, source clips, checkpoint hashes, and evaluator protocol are frozen in the Selected54 provenance. The preceding LiberoSelected53 collection is not modified.
+
+## Newly selected Goal10 ketchup-to-rack Adapt — GRACK_002
+
+Only the original Goal10 wine identity is replaced by the native ketchup asset at the exact original wine pickup XY; all other scene objects, fixtures and rack orientation are preserved. Historical RAIN is strict 5/5: the actual upper-deck annotated On region, root above its footprint, positive upper-deck support force, no gripper contact and a five-control-step hold. The original wine-specific native On is auxiliary only (0/5 final and ever), not this Adapt success metric. The evaluated whole-rack GT mask contains observed stray stove pixels; this limitation is preserved, not silently corrected. GRACK_002 now has an independent strict π0.5 result of 4/5 (80%). Its historical RAIN result is unchanged.
+
+The complete eleven-file source bundle and geometry support are frozen. The original wine-specific native On remains a separately logged auxiliary metric, not the success criterion. See `GRACK_002_PROVENANCE.json`; no preceding Selected54 artifacts or experimental source records are modified.
+
+## Selected Adapt π0.5 completion — 2026-09-06
+
+- WTRAYR_004 now has an independent strict π0.5 result of 5/5 (100%). Its historical RAIN result is unchanged.
+- GRACK_002 now has an independent strict π0.5 result of 4/5 (80%). Its historical RAIN result is unchanged.
+
+The official `pi05_libero` checkpoint and prior 224px RGB/wrist/state observations, five-action replanning and 520-control limit are retained. π0.5 has no RAIN mask conditioning. Both additions use their exact five source initializations and original released/support scoring for five controls. All ten original success/failure videos are retained; representative playback buttons request media only on click. ANLGX_023's corrected 0/5 and all 48 previous results are preserved.

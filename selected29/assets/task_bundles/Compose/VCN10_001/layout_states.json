@@ -1,0 +1,124 @@
+{
+  "task_id": "VCN10_001",
+  "validation_version": "v2_scene_exact_predicate_range",
+  "valid_count": 5,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "evaluator_wait_steps": 10,
+  "evaluator_wait_action": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "exact_fixture_replay": true,
+  "donor_bundle": "LIBERO_EX_ICRA27/LiberoAnalogyExpanded/tasks/anlgx_127__put_the_cream_cheese_on_the_stove",
+  "donor_states_byte_identical": true,
+  "initial_state_protocol": "Five donor states copied byte-for-byte",
+  "policy_evaluation_run": false,
+  "rows": [
+    {
+      "pool_index": 0,
+      "valid": true,
+      "errors": [],
+      "donor_state_max_abs_error": 0.0,
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "mask_areas": {
+        "manipulated_object_1": 411,
+        "goal_target_2": 3156,
+        "manipulated_object_3": 2096,
+        "goal_target_4": 736
+      },
+      "fixture_replay_error_m": 0.0
+    },
+    {
+      "pool_index": 1,
+      "valid": true,
+      "errors": [],
+      "donor_state_max_abs_error": 0.0,
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "mask_areas": {
+        "manipulated_object_1": 392,
+        "goal_target_2": 3079,
+        "manipulated_object_3": 1972,
+        "goal_target_4": 736
+      },
+      "fixture_replay_error_m": 0.0
+    },
+    {
+      "pool_index": 2,
+      "valid": true,
+      "errors": [],
+      "donor_state_max_abs_error": 0.0,
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "mask_areas": {
+        "manipulated_object_1": 393,
+        "goal_target_2": 3171,
+        "manipulated_object_3": 2014,
+        "goal_target_4": 736
+      },
+      "fixture_replay_error_m": 0.0
+    },
+    {
+      "pool_index": 3,
+      "valid": true,
+      "errors": [],
+      "donor_state_max_abs_error": 0.0,
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "mask_areas": {
+        "manipulated_object_1": 388,
+        "goal_target_2": 3169,
+        "manipulated_object_3": 2115,
+        "goal_target_4": 736
+      },
+      "fixture_replay_error_m": 0.0
+    },
+    {
+      "pool_index": 4,
+      "valid": true,
+      "errors": [],
+      "donor_state_max_abs_error": 0.0,
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "mask_areas": {
+        "manipulated_object_1": 423,
+        "goal_target_2": 3087,
+        "manipulated_object_3": 2043,
+        "goal_target_4": 736
+      },
+      "fixture_replay_error_m": 0.0
+    }
+  ]
+}

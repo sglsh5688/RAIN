@@ -164,11 +164,6 @@ OGDTSL_046	Adapt	1	True	137	280	3208	env_goal	True	False
 OGDTSL_046	Adapt	2	True	136	280	3209	env_goal	True	False
 OGDTSL_046	Adapt	3	True	131	280	3210	env_goal	True	False
 OGDTSL_046	Adapt	4	True	131	280	3211	env_goal	True	False
-COMP2_001	Compose	0	False	800	800	3307	timeout	True	False
-COMP2_001	Compose	1	False	800	800	3308	timeout	True	False
-COMP2_001	Compose	2	False	800	800	3309	timeout	True	False
-COMP2_001	Compose	3	False	800	800	3310	timeout	True	False
-COMP2_001	Compose	4	False	800	800	3311	timeout	True	False
 COMP2_012	Compose	0	False	800	800	3407	timeout	True	False
 COMP2_012	Compose	1	False	800	800	3408	timeout	True	False
 COMP2_012	Compose	2	False	800	800	3409	timeout	True	False

@@ -1,0 +1,29 @@
+{
+  "decision_date": "2026-09-06",
+  "selected_total": 50,
+  "compose_total": 13,
+  "removed": [
+    "COMP2_001"
+  ],
+  "replacement": {
+    "removed": "COMP2_001",
+    "added": "VCN8_008",
+    "reason": "same placement-to-middle-drawer-open pattern; retained RAIN SR 4/5 versus 2/5"
+  },
+  "additions": [
+    "VCN9_010",
+    "VCN10_001"
+  ],
+  "accepted_ids": [
+    "VCN8_008",
+    "VCN9_010",
+    "VCN10_001"
+  ],
+  "accepted_decision_sha256": "2a78f9baf28c4a0636b66ebbc5368cf6093537f6c20c678d564b262d9c12f9ca",
+  "batch19_or_other_pending_included": false,
+  "pi05_pending_ids": [
+    "VCN8_008",
+    "VCN9_010",
+    "VCN10_001"
+  ]
+}

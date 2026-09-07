@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 20 Adapt + 17 Compose (57 total)**; official `pi05_libero` evaluation is complete for all 57 tasks (5 episodes each, 75/285 successes), including all 17 Compose tasks. Historical RAIN evaluations, exact task definitions, masked comparisons, and on-demand videos are retained.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 20 Adapt + 18 Compose (58 total)**; BDRMIN_002 is selected with its frozen strict RAIN 1/5 result. Separate official `pi05_libero` results cover 57/58 tasks (75/285 successes); BDRMIN_002 is pending. Historical evaluations, task definitions, masked comparisons, and on-demand videos are retained.
 <!-- SELECTED29_README_END -->
 
 <!-- MICROWAVE_BODY_README_START -->

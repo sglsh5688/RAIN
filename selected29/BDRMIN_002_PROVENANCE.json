@@ -1,0 +1,42 @@
+{
+  "schema": "selected58_bdrmin002_provenance_v1",
+  "task_id": "BDRMIN_002",
+  "selected_order": 58,
+  "selected_category": "Compose",
+  "instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
+  "goal_atoms": [
+    "in(alphabet_soup_1, bowl_drainer_1_right_region)",
+    "in(tomato_sauce_1, bowl_drainer_1_left_region)"
+  ],
+  "source_benchmark": "LiberoUserTasks/BowlDrainerRightLeftMinimalSearch20260907",
+  "source_result": "VLM_evaluation/results/rain_ms_maskaug_gt_bowl_drainer_right_left_minimal_search_5ep_20260907/tasks/all8/BDRMIN_002/results.json",
+  "rain_result": {
+    "successes": 1,
+    "episodes": 5,
+    "success_rate_percent": 20.0
+  },
+  "success_episode_indices": [
+    4
+  ],
+  "strict_released_supported_event_steps": [
+    191,
+    696
+  ],
+  "strict_rule": "selected native In AND exact compartment-bottom contact AND no gripper contact for five consecutive control steps, in requested order, both retained at termination",
+  "opposite_compartment_final": [
+    false,
+    false
+  ],
+  "compose_final_tc_gate": false,
+  "pi05_status": "pending_not_evaluated_no_outcome_claimed",
+  "user_selected_on": "2026-09-07",
+  "frozen_source_sha256": {
+    "task_bundle": "b1b44406f5fba29dfc22a89f042b08a32cb14a6a5f47e7eb89decbd0f13c6f2a",
+    "result": "6f323a7ed6d722a1d1a2885a775668bd8a2d0dc2d23fa1c9f1afc93a5c954948",
+    "comparison": "22ab181f5e27c8d9ea6e2c6344068b29bbde2973e97ca210c6367789bcfd7451",
+    "success_video": "a00ed3dbf920688d539ad883f024fb64990620b13c438728ab872907f9c42732"
+  },
+  "historical_result_rerun_or_rescored": false,
+  "prior_selected57_cards_byte_preserved": true,
+  "prior_selected57_rows_byte_prefix_preserved": true
+}

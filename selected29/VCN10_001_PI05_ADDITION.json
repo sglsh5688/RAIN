@@ -1,0 +1,248 @@
+{
+  "schema": "selected57_compose_pi05_addition_v1",
+  "task_id": "VCN10_001",
+  "task_result": {
+    "order": "36",
+    "category": "Compose",
+    "task_id": "VCN10_001",
+    "instruction": "Put the cream cheese on the stove, then push the plate to the front of the stove.",
+    "successes": 0,
+    "episodes": 5,
+    "success_rate_percent": 0.0,
+    "success_episode": "",
+    "failure_episode": "0",
+    "success_video": "",
+    "failure_video": "assets/pi05_videos/VCN10_001/VCN10_001_failure.mp4",
+    "complete": true
+  },
+  "checkpoint": {
+    "config": "pi05_libero",
+    "control_hashes": {
+      "assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+      "params/_METADATA": "303a4e354814928e1d29b75e310f2c1ac7e7e29b62f48395b631045ca1cffc73",
+      "params/_sharding": "63f4c57ba6ff10f4132a639b9942eabcc26942eb34081be1d93bf7ddab816501",
+      "params/manifest.ocdbt": "65246951e69bd2b5118e609646bc9e8c439229bccbc1325643833aeb74f77104"
+    },
+    "file_count": 16,
+    "path": "checkpoint://artifacts/openpi-assets/checkpoints/pi05_libero",
+    "source": "gs://openpi-assets/checkpoints/pi05_libero",
+    "total_bytes": 12439085481
+  },
+  "protocol": {
+    "wait_steps": 10,
+    "replan_steps": 5,
+    "resize_size": 224,
+    "max_steps": 1600,
+    "policy_uses_masks": false,
+    "episode_seeds": [
+      3507,
+      3508,
+      3509,
+      3510,
+      3511
+    ],
+    "egl_gpu": 6,
+    "policy_gpu": 7,
+    "policy_rng_note": "Server starts RNG0 and evolves per request; environment seeds do not reset policy RNG"
+  },
+  "source_artifact_sha256": {
+    "aggregate.json": "e20793f5c565d1c6216917add7528285b01fd761323e46927bc352c82420fd01",
+    "episodes.jsonl": "ef6ddf2a609b1a2450a17b275f81111957e3ce0eb106df22d67ea7b9b1572695",
+    "FINAL_EVALUATION_AUDIT.json": "548b7ba23406808673bf3d9bb3283d491ab4213581bac772a17024f1c227e026",
+    "run_manifest.json": "19a588f3ed45cf49ab89a415b7fac10ef5297fc7c4e65b1d88f8bd6c13e2c41e"
+  },
+  "all_five_videos": [
+    {
+      "episode_idx": 0,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN10_001/VCN10_001_ep000_failure.mp4",
+      "source_sha256": "8abe24c3f8ffe7b39f23a595ac254bbe5083a05d9924c84e1984752978a1d61a",
+      "public_sha256": "68b04931ca7e8502c6d498109515f4400cfad85312b9cf85224d5ba71f4578b1",
+      "decoded_video_sha256": "SHA256=95c134ab1aa273f724dfede47e9d0d59f82e2b979d98cb61db0d954361c9a4fa",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 1,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN10_001/VCN10_001_ep001_failure.mp4",
+      "source_sha256": "1a8bf959b1e952d7a2ee99da93867c0234b07e541bbb73b17c3d25965364b48d",
+      "public_sha256": "ec7c1d271692bf7b070cefc668a0d97f6b86f3fe807c6ae1032cec278c29c82f",
+      "decoded_video_sha256": "SHA256=0514f27c3b93a2602de55bf235835489314739c6f7222f175d6d65bb77b5c660",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 2,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN10_001/VCN10_001_ep002_failure.mp4",
+      "source_sha256": "bfbe3954c8c1590b5cd9a34559a66671cd5d23c0b4a6d0f8e4831296dc451698",
+      "public_sha256": "3ad9335446e9074807e95716f0ec20af75058eb121d46912b98477b0d0cba708",
+      "decoded_video_sha256": "SHA256=7ee3bded804f2086eb29051416c778409f2abe4a8915bc09da0f95deffac1e35",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 3,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN10_001/VCN10_001_ep003_failure.mp4",
+      "source_sha256": "7eb9b82a416e0c2beed12c5f2144e84c9469769b99b04ba3edb74aa7b466143a",
+      "public_sha256": "0967b6ab638d3b9117a73be684cd866c8ee8332168d30f6b9d2eb7b8570a2af8",
+      "decoded_video_sha256": "SHA256=855e611e054d10b50292508b7ff671b0fbb1bb52d8f7a86fa84146681c2c4a18",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 4,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN10_001/VCN10_001_ep004_failure.mp4",
+      "source_sha256": "87ab6b3cdb2b109162f4a28bc4360b9d31eb690a3974744eec9d3408c5ddbc80",
+      "public_sha256": "c4c95b526d337492b1263b24f5380b1a9236493b696a23ee2ab79a2a23af9883",
+      "decoded_video_sha256": "SHA256=e8ae7d4fd234c2074aa44bbb973911bd0e5751b083e3987d53c7fc6877165028",
+      "remux": "lossless video stream-copy +faststart"
+    }
+  ],
+  "manual_success_video_review": null,
+  "public_manual_review_notes": [],
+  "execution_metric_caveat": "Frozen ordered first milestones plus final goals, with task-specific gates; not an automatic claim of uninterrupted two-step execution.",
+  "runtime_distribution_caveat": "This review release includes task definitions and evaluation evidence; the complete common runtime evaluator/dependency package is not included. Running BDDL alone does not reproduce ordered/contact success semantics.",
+  "episode_scoring_summary": [
+    {
+      "episode_idx": 0,
+      "success": false,
+      "steps": 1600,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(cream_cheese_1, flat_stove_1_cook_region)",
+          "on(plate_1, main_table_stove_front_region)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 1,
+      "success": false,
+      "steps": 972,
+      "termination": "order_violation",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(cream_cheese_1, flat_stove_1_cook_region)",
+          "on(plate_1, main_table_stove_front_region)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": "later event occurred before its turn: step=972, expected=0, rising=[1]",
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 2,
+      "success": false,
+      "steps": 1600,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(cream_cheese_1, flat_stove_1_cook_region)",
+          "on(plate_1, main_table_stove_front_region)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 3,
+      "success": false,
+      "steps": 1600,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(cream_cheese_1, flat_stove_1_cook_region)",
+          "on(plate_1, main_table_stove_front_region)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 4,
+      "success": false,
+      "steps": 1600,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(cream_cheese_1, flat_stove_1_cook_region)",
+          "on(plate_1, main_table_stove_front_region)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    }
+  ],
+  "source_final_audit": {
+    "aggregate_sha256": "e20793f5c565d1c6216917add7528285b01fd761323e46927bc352c82420fd01",
+    "all_five_videos_decoded": true,
+    "every_control_physical_score_replayed": true,
+    "ledger_sha256": "ef6ddf2a609b1a2450a17b275f81111957e3ce0eb106df22d67ea7b9b1572695",
+    "original_sources_and_legacy_ledgers_unchanged": true,
+    "passed": true
+  },
+  "previous_50_results_unchanged": true,
+  "historical_rain_result_unchanged": true,
+  "selected_task_inputs_unchanged": true
+}

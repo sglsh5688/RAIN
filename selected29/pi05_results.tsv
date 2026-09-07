@@ -49,3 +49,10 @@ order	category	task_id	instruction	successes	episodes	success_rate_percent	succe
 53	Adapt	ADVCN19_001	Open the top drawer of the wooden cabinet.	4	5	80.0	0	2	assets/pi05_videos/ADVCN19_001/ADVCN19_001_success.mp4	assets/pi05_videos/ADVCN19_001/ADVCN19_001_failure.mp4	True
 54	Adapt	WTRAYR_004	Pick up the black bowl and place it in the wooden tray.	5	5	100.0	0		assets/pi05_videos/WTRAYR_004/WTRAYR_004_success.mp4		True
 55	Adapt	GRACK_002	Put the ketchup on the rack.	4	5	80.0	1	0	assets/pi05_videos/GRACK_002/GRACK_002_success.mp4	assets/pi05_videos/GRACK_002/GRACK_002_failure.mp4	True
+34	Compose	VCN8_008	Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.	0	5	0.0		0		assets/pi05_videos/VCN8_008/VCN8_008_failure.mp4	True
+35	Compose	VCN9_010	Put the cream cheese on the stove, then turn on the stove.	0	5	0.0		0		assets/pi05_videos/VCN9_010/VCN9_010_failure.mp4	True
+36	Compose	VCN10_001	Put the cream cheese on the stove, then push the plate to the front of the stove.	0	5	0.0		0		assets/pi05_videos/VCN10_001/VCN10_001_failure.mp4	True
+37	Compose	VCN19_020	Open the top drawer of the wooden cabinet, then put the ramekin on the plate.	3	5	60.0	1	0	assets/pi05_videos/VCN19_020/VCN19_020_success.mp4	assets/pi05_videos/VCN19_020/VCN19_020_failure.mp4	True
+38	Compose	VCN21_001	Put the moka pot on the stove, then close the microwave door.	4	5	80.0	1	0	assets/pi05_videos/VCN21_001/VCN21_001_success.mp4	assets/pi05_videos/VCN21_001/VCN21_001_failure.mp4	True
+56	Compose	VCN35_004	Put the ramekin in the basket, then put the alphabet soup on the right plate.	0	5	0.0		0		assets/pi05_videos/VCN35_004/VCN35_004_failure.mp4	True
+57	Compose	UCOMP_040	Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.	0	5	0.0		0		assets/pi05_videos/UCOMP_040/UCOMP_040_failure.mp4	True

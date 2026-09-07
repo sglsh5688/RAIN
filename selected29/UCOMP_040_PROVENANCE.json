@@ -19,7 +19,7 @@
   ],
   "manual_review": "pass",
   "user_selected_on": "2026-09-07",
-  "pi05_status": "pending_not_evaluated_no_outcome_claimed",
+  "pi05_status": "complete_five_original_episodes_final_audit_passed",
   "source_bundle_tree_sha256": "58d66e67c5913b408e34534259152f9893056f935571f2ab4f4d22c73841f57f",
   "source_result_sha256": "fea107c5e38844b4f9fce83ba361e0538be739baa6046a45aa74c75e0a71c1df",
   "source_comparison_sha256": "5fc243d6bffc01e31662d2972317e2112e14f73d4f17d6d8da2b8a5e4fb934ac",
@@ -33,5 +33,20 @@
   "downstream_preservation_manual_review_passed": true,
   "compose_final_tc_gate": false,
   "prior_selected56_unchanged": true,
-  "historical_result_rerun_or_rescored": false
+  "historical_result_rerun_or_rescored": false,
+  "pi05_evaluation": {
+    "order": "57",
+    "category": "Compose",
+    "task_id": "UCOMP_040",
+    "instruction": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.",
+    "successes": 0,
+    "episodes": 5,
+    "success_rate_percent": 0.0,
+    "success_episode": "",
+    "failure_episode": "0",
+    "success_video": "",
+    "failure_video": "assets/pi05_videos/UCOMP_040/UCOMP_040_failure.mp4",
+    "complete": true
+  },
+  "pi05_addition_provenance": "UCOMP_040_PI05_ADDITION.json"
 }

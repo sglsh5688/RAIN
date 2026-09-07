@@ -35,6 +35,20 @@
       "published_ledger_sha256": "d8ccff63d337a9b26e0a751ed4ad96ece42975d38ef4728cac06cfbe07965490",
       "semantic_task_definition_changed": false,
       "reason": "Replace pending status with audited strict pi0.5 4/5; no historical RAIN or task input change"
+    },
+    "VCN35_004": {
+      "field": "note",
+      "evaluated_input_sha256": "b1de4fa7bab748f3c796f9ee6e4441729e8beeb066f3188953d8cc1744660fab",
+      "published_ledger_sha256": "653af514022173a426cdd4b5822bccdc6e9cdc5902de23d7f43ccf2eb4524955",
+      "semantic_task_definition_changed": false,
+      "reason": "Replace pending pi0.5 note with the new audited five-episode result"
+    },
+    "UCOMP_040": {
+      "field": "note",
+      "evaluated_input_sha256": "b1de4fa7bab748f3c796f9ee6e4441729e8beeb066f3188953d8cc1744660fab",
+      "published_ledger_sha256": "653af514022173a426cdd4b5822bccdc6e9cdc5902de23d7f43ccf2eb4524955",
+      "semantic_task_definition_changed": false,
+      "reason": "Replace pending pi0.5 note with the new audited five-episode result"
     }
   },
   "evaluation_segments": [
@@ -155,28 +169,79 @@
         }
       },
       "note": "Newly selected tray and ketchup rack tasks; exact source physical starts; unchanged strict released/support observers after every control; official pi05_libero; no mask conditioning; all five original videos retained per task."
+    },
+    {
+      "task_count": 7,
+      "task_ids": [
+        "VCN8_008",
+        "VCN9_010",
+        "VCN10_001",
+        "VCN19_020",
+        "VCN21_001",
+        "VCN35_004",
+        "UCOMP_040"
+      ],
+      "source_artifact_sha256": {
+        "VCN8_008": {
+          "aggregate.json": "00824b992e16a7436c671724742c4bc0bd998caf90b5476f273ef54f1aaabce1",
+          "episodes.jsonl": "7ea9d7d9745a4f0d8591e505f735bac990c5dfa99e3ef78a236694b661131d74",
+          "FINAL_EVALUATION_AUDIT.json": "4c3729abea32dd9008d1b7e35fb35fa38363505dc2bbcb3f1df432a580b22b66",
+          "run_manifest.json": "92e9fe473bdbd9dfab8a68cca30487512fd2d88e9712ed5349b4392ae6368254"
+        },
+        "VCN9_010": {
+          "aggregate.json": "a28f71b0ed6fad3514312dacd1136201be46b275573bf0494cc33c9948c302f3",
+          "episodes.jsonl": "0edb82d2687600772dd5cc5fe8e5a15815f4b8c4be64de9bb00532acf4162e43",
+          "FINAL_EVALUATION_AUDIT.json": "29db20644acb88e62198a8ba2775534027d1a36a08eb7380b6be4b816637feec",
+          "run_manifest.json": "85de0346bfce50b5bf227a68a8b02870ffac622b6b88927605e335e9e58875cc"
+        },
+        "VCN10_001": {
+          "aggregate.json": "e20793f5c565d1c6216917add7528285b01fd761323e46927bc352c82420fd01",
+          "episodes.jsonl": "ef6ddf2a609b1a2450a17b275f81111957e3ce0eb106df22d67ea7b9b1572695",
+          "FINAL_EVALUATION_AUDIT.json": "548b7ba23406808673bf3d9bb3283d491ab4213581bac772a17024f1c227e026",
+          "run_manifest.json": "19a588f3ed45cf49ab89a415b7fac10ef5297fc7c4e65b1d88f8bd6c13e2c41e"
+        },
+        "VCN19_020": {
+          "aggregate.json": "96f3dfe87b1ce84d20f2360f439c59f4ff3c9030a145f51cf54424f97610204d",
+          "episodes.jsonl": "50ee91ada96b452dd79a5f9e3f1eb661475bcedb25f98bd31bfa2372e44635a9",
+          "FINAL_EVALUATION_AUDIT.json": "39dfb1fbe400050b913f8100bf19101ca00b6650222cb30927858cfc7489dec9",
+          "run_manifest.json": "562dca2ff2416846e1d8f7e0b9373047802bf89b9c02ae5015152ae6e82923b9",
+          "MANUAL_SUCCESS_VIDEO_REVIEW.json": "eef3a2c97e8766247d5aa4cc90e6e7a25abdc47b0908a237034b230f2b288278"
+        },
+        "VCN21_001": {
+          "aggregate.json": "588e9cc87d383a9f865930abc9b9716f0f8aaeecc1f894f9ecb60bf516a07a84",
+          "episodes.jsonl": "683bff86c6a00f4bfbad2ad31226f9a4166479d8338eff4f1fd3d234522ae687",
+          "FINAL_EVALUATION_AUDIT.json": "c2d286a82f7a030ac0caad19677d3b091898ab3aaf6efebe25f6412677f31851",
+          "run_manifest.json": "dcb48fbae37c90180b341b66185e71b069c3261f33d576d94f2a0bb06c67eadb",
+          "MANUAL_SUCCESS_VIDEO_REVIEW.json": "f9b9d20a03b983c808265ceecf20c651caf50e96876027f7be1f45e3be1071a7"
+        },
+        "VCN35_004": {
+          "aggregate.json": "d3f90cbb80f5967b3732354d7907dd28803202e56083aa065d64f52527e22530",
+          "episodes.jsonl": "b7eb1bd3d0550dbcf5889831951dbe9abd809eec67ef4b5644ca6553e528a92c",
+          "FINAL_EVALUATION_AUDIT.json": "d7d3372d61b8b1cb03dcbbeb67ff7ea47fe113ae43c6f12745df4e14333b493a",
+          "run_manifest.json": "973f9c453881fe0557fc9d6f55add86ef2b7fefdfac74da9b1af6a31f96ecbce"
+        },
+        "UCOMP_040": {
+          "aggregate.json": "7162a872cba2ed685fc30448bb66c1b8a1a11845c74772f0d6622b1873da14da",
+          "episodes.jsonl": "30a9e6c9045920976e88f990fc09bb3d835a2094b7b9238bec620e298dbd470c",
+          "FINAL_EVALUATION_AUDIT.json": "daf1ef9063487452a7cc5fd9265afea0b37f207a99e2940bee8c331c5e3846f8",
+          "run_manifest.json": "03b4b5d66aa938f084e01b08ef19e1e4f58bc07bac961b0379d7d93b02cf3196"
+        }
+      },
+      "note": "Seven new Selected Compose runs; unchanged official pi05_libero RGB/state/text protocol; exact task inputs; ordered task-specific scoring; all five original videos retained per task."
     }
   ],
   "selected_tasks": 57,
-  "tasks": 50,
-  "pending_task_ids": [
-    "VCN8_008",
-    "VCN9_010",
-    "VCN10_001",
-    "VCN19_020",
-    "VCN21_001",
-    "VCN35_004",
-    "UCOMP_040"
-  ],
+  "tasks": 57,
+  "pending_task_ids": [],
   "retired_source_result_ids": [
     "COMP2_001"
   ],
-  "episodes": 250,
-  "successes": 68,
-  "successful_tasks": 18,
-  "success_videos": 18,
-  "failure_videos": 43,
-  "representative_videos": 61,
+  "episodes": 285,
+  "successes": 75,
+  "successful_tasks": 20,
+  "success_videos": 20,
+  "failure_videos": 50,
+  "representative_videos": 70,
   "frozen_source_ledger": {
     "tasks": 48,
     "episodes": 240,
@@ -237,11 +302,11 @@
     },
     "Compose": {
       "selected_tasks": 17,
-      "evaluated_tasks": 10,
-      "pending_tasks": 7,
-      "successful_tasks": 1,
-      "successes": 3,
-      "episodes": 50
+      "evaluated_tasks": 17,
+      "pending_tasks": 0,
+      "successful_tasks": 3,
+      "successes": 10,
+      "episodes": 85
     }
   },
   "task_results": [
@@ -944,6 +1009,104 @@
       "success_video": "assets/pi05_videos/GRACK_002/GRACK_002_success.mp4",
       "failure_video": "assets/pi05_videos/GRACK_002/GRACK_002_failure.mp4",
       "complete": true
+    },
+    {
+      "order": "34",
+      "category": "Compose",
+      "task_id": "VCN8_008",
+      "instruction": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.",
+      "successes": 0,
+      "episodes": 5,
+      "success_rate_percent": 0.0,
+      "success_episode": "",
+      "failure_episode": "0",
+      "success_video": "",
+      "failure_video": "assets/pi05_videos/VCN8_008/VCN8_008_failure.mp4",
+      "complete": true
+    },
+    {
+      "order": "35",
+      "category": "Compose",
+      "task_id": "VCN9_010",
+      "instruction": "Put the cream cheese on the stove, then turn on the stove.",
+      "successes": 0,
+      "episodes": 5,
+      "success_rate_percent": 0.0,
+      "success_episode": "",
+      "failure_episode": "0",
+      "success_video": "",
+      "failure_video": "assets/pi05_videos/VCN9_010/VCN9_010_failure.mp4",
+      "complete": true
+    },
+    {
+      "order": "36",
+      "category": "Compose",
+      "task_id": "VCN10_001",
+      "instruction": "Put the cream cheese on the stove, then push the plate to the front of the stove.",
+      "successes": 0,
+      "episodes": 5,
+      "success_rate_percent": 0.0,
+      "success_episode": "",
+      "failure_episode": "0",
+      "success_video": "",
+      "failure_video": "assets/pi05_videos/VCN10_001/VCN10_001_failure.mp4",
+      "complete": true
+    },
+    {
+      "order": "37",
+      "category": "Compose",
+      "task_id": "VCN19_020",
+      "instruction": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+      "successes": 3,
+      "episodes": 5,
+      "success_rate_percent": 60.0,
+      "success_episode": "1",
+      "failure_episode": "0",
+      "success_video": "assets/pi05_videos/VCN19_020/VCN19_020_success.mp4",
+      "failure_video": "assets/pi05_videos/VCN19_020/VCN19_020_failure.mp4",
+      "complete": true
+    },
+    {
+      "order": "38",
+      "category": "Compose",
+      "task_id": "VCN21_001",
+      "instruction": "Put the moka pot on the stove, then close the microwave door.",
+      "successes": 4,
+      "episodes": 5,
+      "success_rate_percent": 80.0,
+      "success_episode": "1",
+      "failure_episode": "0",
+      "success_video": "assets/pi05_videos/VCN21_001/VCN21_001_success.mp4",
+      "failure_video": "assets/pi05_videos/VCN21_001/VCN21_001_failure.mp4",
+      "complete": true
+    },
+    {
+      "order": "56",
+      "category": "Compose",
+      "task_id": "VCN35_004",
+      "instruction": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+      "successes": 0,
+      "episodes": 5,
+      "success_rate_percent": 0.0,
+      "success_episode": "",
+      "failure_episode": "0",
+      "success_video": "",
+      "failure_video": "assets/pi05_videos/VCN35_004/VCN35_004_failure.mp4",
+      "complete": true
+    },
+    {
+      "order": "57",
+      "category": "Compose",
+      "task_id": "UCOMP_040",
+      "instruction": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.",
+      "successes": 0,
+      "episodes": 5,
+      "success_rate_percent": 0.0,
+      "success_episode": "",
+      "failure_episode": "0",
+      "success_video": "",
+      "failure_video": "assets/pi05_videos/UCOMP_040/UCOMP_040_failure.mp4",
+      "complete": true
     }
   ],
   "selected_54_tsv_sha256": "79c6d42dc9cb71ea452c1f3f3e58f7aa86d05b266daacf5f347e9d84e4384c04",
@@ -952,5 +1115,21 @@
   "new_adapt_original_video_policy": "All five original episodes retained locally per task; all five browser copies and representative buttons use lossless faststart remuxes with source/public hashes",
   "selected_55_pre_pi05_tsv_sha256": "93dfbcb66133c905dea1950379e7127d8ffff52898d29255ed1d4de46beeab77",
   "selected_56_tsv_sha256": "c96993f26031b4e9c1d3c94353189f2c0f12a82588221107ab0d5975b8347633",
-  "selected_57_tsv_sha256": "b1de4fa7bab748f3c796f9ee6e4441729e8beeb066f3188953d8cc1744660fab"
+  "selected_57_tsv_sha256": "653af514022173a426cdd4b5822bccdc6e9cdc5902de23d7f43ccf2eb4524955",
+  "selected_57_pre_compose_pi05_tsv_sha256": "b1de4fa7bab748f3c796f9ee6e4441729e8beeb066f3188953d8cc1744660fab",
+  "new_compose_original_videos": 35,
+  "new_compose_original_video_policy": "All five original episodes retained per task; browser copies are lossless faststart remuxes with decoded-frame and source/public SHA checks",
+  "new_compose_manual_review_notes": {
+    "VCN8_008": [],
+    "VCN9_010": [],
+    "VCN10_001": [],
+    "VCN19_020": [
+      "All three videos show the correct top drawer and ramekin-to-plate interaction. Episodes 001 and 002 lose the Open condition during manipulation and re-open the drawer after placement: valid ordered-milestone/final-state successes, not uninterrupted two-step executions. Episode 004 keeps the drawer open through placement. These are native-placement successes; no extra post-release or settling hold is evaluated."
+    ],
+    "VCN21_001": [
+      "All four successful episodes show the moka pot placed on the stove before the robot approaches and pushes the microwave door closed. Every close has exact moving-door/gripper contact with an active constraint and force above 1e-6 N in the required two-control window; both final goals and door-sweep clearance pass. Native On briefly flickers during placement in episodes 002 and 003, then remains true through closure. Review used sampled original frames plus complete control traces, not a long-duration stability test."
+    ],
+    "VCN35_004": [],
+    "UCOMP_040": []
+  }
 }

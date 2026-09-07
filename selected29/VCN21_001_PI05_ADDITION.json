@@ -1,0 +1,324 @@
+{
+  "schema": "selected57_compose_pi05_addition_v1",
+  "task_id": "VCN21_001",
+  "task_result": {
+    "order": "38",
+    "category": "Compose",
+    "task_id": "VCN21_001",
+    "instruction": "Put the moka pot on the stove, then close the microwave door.",
+    "successes": 4,
+    "episodes": 5,
+    "success_rate_percent": 80.0,
+    "success_episode": "1",
+    "failure_episode": "0",
+    "success_video": "assets/pi05_videos/VCN21_001/VCN21_001_success.mp4",
+    "failure_video": "assets/pi05_videos/VCN21_001/VCN21_001_failure.mp4",
+    "complete": true
+  },
+  "checkpoint": {
+    "config": "pi05_libero",
+    "control_hashes": {
+      "assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+      "params/_METADATA": "303a4e354814928e1d29b75e310f2c1ac7e7e29b62f48395b631045ca1cffc73",
+      "params/_sharding": "63f4c57ba6ff10f4132a639b9942eabcc26942eb34081be1d93bf7ddab816501",
+      "params/manifest.ocdbt": "65246951e69bd2b5118e609646bc9e8c439229bccbc1325643833aeb74f77104"
+    },
+    "file_count": 16,
+    "path": "checkpoint://artifacts/openpi-assets/checkpoints/pi05_libero",
+    "source": "gs://openpi-assets/checkpoints/pi05_libero",
+    "total_bytes": 12439085481
+  },
+  "protocol": {
+    "wait_steps": 10,
+    "replan_steps": 5,
+    "resize_size": 224,
+    "max_steps": 1600,
+    "policy_uses_masks": false,
+    "episode_seeds": [
+      3707,
+      3708,
+      3709,
+      3710,
+      3711
+    ],
+    "egl_gpu": 6,
+    "policy_gpu": 7,
+    "policy_rng_note": "Server starts RNG0 and evolves per request; environment seeds do not reset policy RNG"
+  },
+  "source_artifact_sha256": {
+    "aggregate.json": "588e9cc87d383a9f865930abc9b9716f0f8aaeecc1f894f9ecb60bf516a07a84",
+    "episodes.jsonl": "683bff86c6a00f4bfbad2ad31226f9a4166479d8338eff4f1fd3d234522ae687",
+    "FINAL_EVALUATION_AUDIT.json": "c2d286a82f7a030ac0caad19677d3b091898ab3aaf6efebe25f6412677f31851",
+    "run_manifest.json": "dcb48fbae37c90180b341b66185e71b069c3261f33d576d94f2a0bb06c67eadb",
+    "MANUAL_SUCCESS_VIDEO_REVIEW.json": "f9b9d20a03b983c808265ceecf20c651caf50e96876027f7be1f45e3be1071a7"
+  },
+  "all_five_videos": [
+    {
+      "episode_idx": 0,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN21_001/VCN21_001_ep000_failure.mp4",
+      "source_sha256": "f407ecc7cf1d63108533071dfd3a4f5d1e84fe4c811d6eafcd560e91062ac206",
+      "public_sha256": "6c29b9c791d508f25da421fd799d7ac11579f8d2b8ecb47ae85bb8e8b41db0f7",
+      "decoded_video_sha256": "SHA256=92eea1b82e69e2cbc7bdeccb8fdcf90f58404ba253903890622dd837c95e6cbc",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 1,
+      "success": true,
+      "path": "assets/pi05_all_videos/VCN21_001/VCN21_001_ep001_success.mp4",
+      "source_sha256": "ff1bf1c63bebd91ac71cfd9151641abd5e9e5b17c1f883abce7599fb3dc856f1",
+      "public_sha256": "8ad3164ed118aa04da9b74e2f3aeb1a52eaf06c2dff782f35e1f0a6120486b06",
+      "decoded_video_sha256": "SHA256=884a8f182320cf6875f8d5b38a57b9dce35e95967ab29a7e248838008132e5b8",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 2,
+      "success": true,
+      "path": "assets/pi05_all_videos/VCN21_001/VCN21_001_ep002_success.mp4",
+      "source_sha256": "476eb1c6607718b6c47dca85b51284c9c601a4b78e5d26ac7a64b7d9946a5000",
+      "public_sha256": "56cc4016e4e27e5c984364181e580a3fd742bd7a586374ebd0052f245d7e7bf4",
+      "decoded_video_sha256": "SHA256=0191fc4588c192a03bfdcfb23429402c3d97114db6427232ffe685c5a685079c",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 3,
+      "success": true,
+      "path": "assets/pi05_all_videos/VCN21_001/VCN21_001_ep003_success.mp4",
+      "source_sha256": "abf516f977e34aa776864e77ea9ffb07b8272758dda2e4e6e1123cb6d2f2aa8f",
+      "public_sha256": "b429a44c8af900f9e948dedfb8c3dbfa8b4d31582cae09be59cf54fd3527814b",
+      "decoded_video_sha256": "SHA256=85bc7396817dd3f6886bd33fc19f878e713cc4b544062b10dddd7d484c913bda",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 4,
+      "success": true,
+      "path": "assets/pi05_all_videos/VCN21_001/VCN21_001_ep004_success.mp4",
+      "source_sha256": "3c5c985004429f92cd1dcc34d194bdd64317fb4586a113bbe233acf1ba533cd9",
+      "public_sha256": "8f878f7e641ba2280e8fedfb9b3940736d6c59857f7d6006dbb43ddad09a485c",
+      "decoded_video_sha256": "SHA256=aa155297c16fb6a27ccd08c4e4b403546385eed8da0d6191ee747fc80cb2fe08",
+      "remux": "lossless video stream-copy +faststart"
+    }
+  ],
+  "manual_success_video_review": {
+    "task_id": "VCN21_001",
+    "passed": true,
+    "source_ledger_sha256": "683bff86c6a00f4bfbad2ad31226f9a4166479d8338eff4f1fd3d234522ae687",
+    "success_episode_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "reviewer": "Codex rack_publish_audit agent: direct inspection of sampled actual RGB frames and complete recorded native/contact/clearance traces",
+    "public_summary": "All four successful episodes show the moka pot placed on the stove before the robot approaches and pushes the microwave door closed. Every close has exact moving-door/gripper contact with an active constraint and force above 1e-6 N in the required two-control window; both final goals and door-sweep clearance pass. Native On briefly flickers during placement in episodes 002 and 003, then remains true through closure. Review used sampled original frames plus complete control traces, not a long-duration stability test.",
+    "methods": {
+      "actual_original_video_frames": true,
+      "sampling": "12 uniformly distributed frames plus event-adjacent frames per success, and a separate closing-motion sheet sampled at approximately 10-control intervals",
+      "entire_recorded_control_trace_reviewed": true,
+      "every_actual_control_checked": true,
+      "continuous_human_video_viewing_claimed": false,
+      "raw_result_or_video_modified": false,
+      "trace_audit": "visual_review/VCN21_001/FULL_TRACE_AND_FRAME_AUDIT.json",
+      "scope": "Original strict-v3 ordered placement and contact-backed close semantics; no additional final TC, no post-termination rollout, no continuous-On rule added"
+    },
+    "episodes": [
+      {
+        "episode_idx": 1,
+        "video_sha256": "ff1bf1c63bebd91ac71cfd9151641abd5e9e5b17c1f883abce7599fb3dc856f1",
+        "passed": true,
+        "notes": "Observed pickup of the moka pot, placement onto the stove, release/withdrawal, then approach to the microwave door and progressive door closure. Native On first becomes true at control 163 and stays true through final control 364. First native Close is 364; exact door/gripper active-contact forces in controls 363-364 are 1.7537-29.2944 N. Moka AABB is disjoint from the state-bound swept door AABB at placement, close, and final success. Both final native goals hold. Reviewed overview and closing sheets from the original video."
+      },
+      {
+        "episode_idx": 2,
+        "video_sha256": "476eb1c6607718b6c47dca85b51284c9c601a4b78e5d26ac7a64b7d9946a5000",
+        "passed": true,
+        "notes": "Observed grasp/transfer of the moka pot to the stove, subsequent hand withdrawal, then purposeful hand contact moving the microwave door toward closed. First native On is control 249; it flickers false during placement at 251-259 and 263-266, then remains true from 267 through first Close/final control 427. Exact active hand-to-moving-door contacts at 426-427 carry 16.8913-32.2403 N. Placement, close, and final swept-door clearance checks pass, with both goals true at termination. The placement flicker is retained as a qualification, not silently removed or rescored."
+      },
+      {
+        "episode_idx": 3,
+        "video_sha256": "abf516f977e34aa776864e77ea9ffb07b8272758dda2e4e6e1123cb6d2f2aa8f",
+        "passed": true,
+        "notes": "Observed the correct moka pot moved from the table onto the stove, followed by arm withdrawal and a separate door-closing motion. Native On first rises at control 184, is false only at 206 after that first rise, and remains true from 207 through first Close/final control 369. Exact active hand-to-door contact at 368-369 has force 3.6798-28.9874 N. Moka remains clear of the swept door AABB at placement, closing, and final checks, and both native goals hold at the recorded terminal control."
+      },
+      {
+        "episode_idx": 4,
+        "video_sha256": "3c5c985004429f92cd1dcc34d194bdd64317fb4586a113bbe233acf1ba533cd9",
+        "passed": true,
+        "notes": "Observed placement of the moka pot onto the stove followed by a longer door-closing attempt with repeated arm adjustments near the door. Native On remains true continuously from first rise at 163 to final control 521. The door does not reach native Close until 521; that actual control has an active exact hand-to-moving-door contact carrying 19.2588 N, while 520 has none, which still satisfies the original two-control window. The moka remains on the stove and disjoint from the door sweep at placement/close/final checks. Both final goals are true; no extra successful trial or post-termination stability claim is made."
+      }
+    ]
+  },
+  "public_manual_review_notes": [
+    "All four successful episodes show the moka pot placed on the stove before the robot approaches and pushes the microwave door closed. Every close has exact moving-door/gripper contact with an active constraint and force above 1e-6 N in the required two-control window; both final goals and door-sweep clearance pass. Native On briefly flickers during placement in episodes 002 and 003, then remains true through closure. Review used sampled original frames plus complete control traces, not a long-duration stability test."
+  ],
+  "execution_metric_caveat": "Frozen ordered first milestones plus final goals, with task-specific gates; not an automatic claim of uninterrupted two-step execution.",
+  "runtime_distribution_caveat": "This review release includes task definitions and evaluation evidence; the complete common runtime evaluator/dependency package is not included. Running BDDL alone does not reproduce ordered/contact success semantics.",
+  "episode_scoring_summary": [
+    {
+      "episode_idx": 0,
+      "success": false,
+      "steps": 1600,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(moka_pot_2,flat_stove_1_cook_region)",
+          "close(microwave_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          179,
+          null
+        ],
+        "completed_event_count": 1,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {
+        "microwave_close_direct_contact_pass": false,
+        "moka_at_close_runtime_door_clearance_pass": false,
+        "moka_placement_runtime_door_clearance_pass": false,
+        "vcn21_success_gate_participated_before_termination": true
+      }
+    },
+    {
+      "episode_idx": 1,
+      "success": true,
+      "steps": 364,
+      "termination": "ordered_composition",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(moka_pot_2,flat_stove_1_cook_region)",
+          "close(microwave_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          163,
+          364
+        ],
+        "completed_event_count": 2,
+        "order_violation": null,
+        "ordered_completion_observed": true
+      },
+      "final_bddl_success": true,
+      "special_microwave_gate": {
+        "microwave_close_direct_contact_pass": true,
+        "moka_at_close_runtime_door_clearance_pass": true,
+        "moka_placement_runtime_door_clearance_pass": true,
+        "vcn21_success_gate_participated_before_termination": true
+      }
+    },
+    {
+      "episode_idx": 2,
+      "success": true,
+      "steps": 427,
+      "termination": "ordered_composition",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(moka_pot_2,flat_stove_1_cook_region)",
+          "close(microwave_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          249,
+          427
+        ],
+        "completed_event_count": 2,
+        "order_violation": null,
+        "ordered_completion_observed": true
+      },
+      "final_bddl_success": true,
+      "special_microwave_gate": {
+        "microwave_close_direct_contact_pass": true,
+        "moka_at_close_runtime_door_clearance_pass": true,
+        "moka_placement_runtime_door_clearance_pass": true,
+        "vcn21_success_gate_participated_before_termination": true
+      }
+    },
+    {
+      "episode_idx": 3,
+      "success": true,
+      "steps": 369,
+      "termination": "ordered_composition",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(moka_pot_2,flat_stove_1_cook_region)",
+          "close(microwave_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          184,
+          369
+        ],
+        "completed_event_count": 2,
+        "order_violation": null,
+        "ordered_completion_observed": true
+      },
+      "final_bddl_success": true,
+      "special_microwave_gate": {
+        "microwave_close_direct_contact_pass": true,
+        "moka_at_close_runtime_door_clearance_pass": true,
+        "moka_placement_runtime_door_clearance_pass": true,
+        "vcn21_success_gate_participated_before_termination": true
+      }
+    },
+    {
+      "episode_idx": 4,
+      "success": true,
+      "steps": 521,
+      "termination": "ordered_composition",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(moka_pot_2,flat_stove_1_cook_region)",
+          "close(microwave_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          163,
+          521
+        ],
+        "completed_event_count": 2,
+        "order_violation": null,
+        "ordered_completion_observed": true
+      },
+      "final_bddl_success": true,
+      "special_microwave_gate": {
+        "microwave_close_direct_contact_pass": true,
+        "moka_at_close_runtime_door_clearance_pass": true,
+        "moka_placement_runtime_door_clearance_pass": true,
+        "vcn21_success_gate_participated_before_termination": true
+      }
+    }
+  ],
+  "source_final_audit": {
+    "aggregate_sha256": "588e9cc87d383a9f865930abc9b9716f0f8aaeecc1f894f9ecb60bf516a07a84",
+    "all_five_videos_decoded": true,
+    "every_control_physical_score_replayed": true,
+    "ledger_sha256": "683bff86c6a00f4bfbad2ad31226f9a4166479d8338eff4f1fd3d234522ae687",
+    "original_sources_and_legacy_ledgers_unchanged": true,
+    "passed": true
+  },
+  "previous_50_results_unchanged": true,
+  "historical_rain_result_unchanged": true,
+  "selected_task_inputs_unchanged": true
+}

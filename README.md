@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 20 Adapt + 17 Compose (57 total)**; UCOMP_040 is selected with its unchanged strict RAIN 3/5 result and pi0.5 pending. Historical evaluations, task definitions, masked comparisons, and on-demand videos are retained.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 20 Adapt + 17 Compose (57 total)**; official `pi05_libero` evaluation is complete for all 57 tasks (5 episodes each, 75/285 successes), including all 17 Compose tasks. Historical RAIN evaluations, exact task definitions, masked comparisons, and on-demand videos are retained.
 <!-- SELECTED29_README_END -->
 
 <!-- MICROWAVE_BODY_README_START -->

@@ -1,0 +1,8 @@
+task_id	successes	episodes	public_review_notes	manual_review_sha256
+VCN8_008	0	5	No successful episode; no success-video review applies.	
+VCN9_010	0	5	No successful episode; no success-video review applies.	
+VCN10_001	0	5	No successful episode; no success-video review applies.	
+VCN19_020	3	5	All three videos show the correct top drawer and ramekin-to-plate interaction. Episodes 001 and 002 lose the Open condition during manipulation and re-open the drawer after placement: valid ordered-milestone/final-state successes, not uninterrupted two-step executions. Episode 004 keeps the drawer open through placement. These are native-placement successes; no extra post-release or settling hold is evaluated.	eef3a2c97e8766247d5aa4cc90e6e7a25abdc47b0908a237034b230f2b288278
+VCN21_001	4	5	All four successful episodes show the moka pot placed on the stove before the robot approaches and pushes the microwave door closed. Every close has exact moving-door/gripper contact with an active constraint and force above 1e-6 N in the required two-control window; both final goals and door-sweep clearance pass. Native On briefly flickers during placement in episodes 002 and 003, then remains true through closure. Review used sampled original frames plus complete control traces, not a long-duration stability test.	f9b9d20a03b983c808265ceecf20c651caf50e96876027f7be1f45e3be1071a7
+VCN35_004	0	5	No successful episode; no success-video review applies.	
+UCOMP_040	0	5	No successful episode; no success-video review applies.	

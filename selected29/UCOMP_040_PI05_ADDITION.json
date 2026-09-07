@@ -1,0 +1,248 @@
+{
+  "schema": "selected57_compose_pi05_addition_v1",
+  "task_id": "UCOMP_040",
+  "task_result": {
+    "order": "57",
+    "category": "Compose",
+    "task_id": "UCOMP_040",
+    "instruction": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.",
+    "successes": 0,
+    "episodes": 5,
+    "success_rate_percent": 0.0,
+    "success_episode": "",
+    "failure_episode": "0",
+    "success_video": "",
+    "failure_video": "assets/pi05_videos/UCOMP_040/UCOMP_040_failure.mp4",
+    "complete": true
+  },
+  "checkpoint": {
+    "config": "pi05_libero",
+    "control_hashes": {
+      "assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+      "params/_METADATA": "303a4e354814928e1d29b75e310f2c1ac7e7e29b62f48395b631045ca1cffc73",
+      "params/_sharding": "63f4c57ba6ff10f4132a639b9942eabcc26942eb34081be1d93bf7ddab816501",
+      "params/manifest.ocdbt": "65246951e69bd2b5118e609646bc9e8c439229bccbc1325643833aeb74f77104"
+    },
+    "file_count": 16,
+    "path": "checkpoint://artifacts/openpi-assets/checkpoints/pi05_libero",
+    "source": "gs://openpi-assets/checkpoints/pi05_libero",
+    "total_bytes": 12439085481
+  },
+  "protocol": {
+    "wait_steps": 10,
+    "replan_steps": 5,
+    "resize_size": 224,
+    "max_steps": 1800,
+    "policy_uses_masks": false,
+    "episode_seeds": [
+      5607,
+      5608,
+      5609,
+      5610,
+      5611
+    ],
+    "egl_gpu": 6,
+    "policy_gpu": 7,
+    "policy_rng_note": "Server starts RNG0 and evolves per request; environment seeds do not reset policy RNG"
+  },
+  "source_artifact_sha256": {
+    "aggregate.json": "7162a872cba2ed685fc30448bb66c1b8a1a11845c74772f0d6622b1873da14da",
+    "episodes.jsonl": "30a9e6c9045920976e88f990fc09bb3d835a2094b7b9238bec620e298dbd470c",
+    "FINAL_EVALUATION_AUDIT.json": "daf1ef9063487452a7cc5fd9265afea0b37f207a99e2940bee8c331c5e3846f8",
+    "run_manifest.json": "03b4b5d66aa938f084e01b08ef19e1e4f58bc07bac961b0379d7d93b02cf3196"
+  },
+  "all_five_videos": [
+    {
+      "episode_idx": 0,
+      "success": false,
+      "path": "assets/pi05_all_videos/UCOMP_040/UCOMP_040_ep000_failure.mp4",
+      "source_sha256": "5b1fd97debe27405902f3fab24a1b967d53ccd455ca921ac09be2b2fa2a52890",
+      "public_sha256": "380aeccaa44f5c0f66ae1471475cf248f59f6dccd7a2b931fa92d94cfdf57bea",
+      "decoded_video_sha256": "SHA256=5f0e8291c0cfa00def06330abfda446b197114f51b937ecd22fea63e2d5dc210",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 1,
+      "success": false,
+      "path": "assets/pi05_all_videos/UCOMP_040/UCOMP_040_ep001_failure.mp4",
+      "source_sha256": "5af7726f4de6a9459b5533d4337296bed3e53135dfc268a2f255215849306adb",
+      "public_sha256": "faa1cf448a04d7a2a6ad16103974ef721be6e8c83132995a70295a5d14a7bfbc",
+      "decoded_video_sha256": "SHA256=89be2988a508ef1856cdc01a14439945571990126b4b3b0a817ac10b059a4454",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 2,
+      "success": false,
+      "path": "assets/pi05_all_videos/UCOMP_040/UCOMP_040_ep002_failure.mp4",
+      "source_sha256": "f7bd3480a57f776fc1f0362b56eaca05c43c9490a6a77377adb3a95c0bcc1917",
+      "public_sha256": "1cb5483051a1b6ed5876b8ca529139cec5dfa5c6052c2cd6b0e81718889185ce",
+      "decoded_video_sha256": "SHA256=652b90d66b36474cc39193163a280968ae4d7e5dafd3dd33a8ba51b57efb5638",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 3,
+      "success": false,
+      "path": "assets/pi05_all_videos/UCOMP_040/UCOMP_040_ep003_failure.mp4",
+      "source_sha256": "d23232fd7c86c29ef847e43108daf76edf5b86868d6aecd0c9a0b66b02a0f92a",
+      "public_sha256": "af316a14c2f32fbb7e5efb743385419edbcf0110f71080eb5babed4ccc51593f",
+      "decoded_video_sha256": "SHA256=26d851859ba8f6efcfb5383bc34f46ba007b4c0b61adf49b396f59fe869faa79",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 4,
+      "success": false,
+      "path": "assets/pi05_all_videos/UCOMP_040/UCOMP_040_ep004_failure.mp4",
+      "source_sha256": "c47ae6287bd79207e06b374242f461bcc16add793ba0311e40436463db89fb72",
+      "public_sha256": "59e8beb0306a0162fca3d93be54c18201814f199e7c24474e7e6f4ce8f8d7f3c",
+      "decoded_video_sha256": "SHA256=2df567e3a743d35c6372031d72767e272127fdb85189ccbd05b499da7aa99309",
+      "remux": "lossless video stream-copy +faststart"
+    }
+  ],
+  "manual_success_video_review": null,
+  "public_manual_review_notes": [],
+  "execution_metric_caveat": "Frozen ordered first milestones plus final goals, with task-specific gates; not an automatic claim of uninterrupted two-step execution.",
+  "runtime_distribution_caveat": "This review release includes task definitions and evaluation evidence; the complete common runtime evaluator/dependency package is not included. Running BDDL alone does not reproduce ordered/contact success semantics.",
+  "episode_scoring_summary": [
+    {
+      "episode_idx": 0,
+      "success": false,
+      "steps": 1800,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "in(tomato_sauce_1, basket_1_contain_region)",
+          "on(white_yellow_mug_1,plate_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 1,
+      "success": false,
+      "steps": 422,
+      "termination": "order_violation",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "in(tomato_sauce_1, basket_1_contain_region)",
+          "on(white_yellow_mug_1,plate_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": "later event occurred before its turn: step=422, expected=0, rising=[1]",
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 2,
+      "success": false,
+      "steps": 1800,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "in(tomato_sauce_1, basket_1_contain_region)",
+          "on(white_yellow_mug_1,plate_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 3,
+      "success": false,
+      "steps": 388,
+      "termination": "order_violation",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "in(tomato_sauce_1, basket_1_contain_region)",
+          "on(white_yellow_mug_1,plate_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": "later event occurred before its turn: step=388, expected=0, rising=[1]",
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 4,
+      "success": false,
+      "steps": 1800,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "in(tomato_sauce_1, basket_1_contain_region)",
+          "on(white_yellow_mug_1,plate_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    }
+  ],
+  "source_final_audit": {
+    "aggregate_sha256": "7162a872cba2ed685fc30448bb66c1b8a1a11845c74772f0d6622b1873da14da",
+    "all_five_videos_decoded": true,
+    "every_control_physical_score_replayed": true,
+    "ledger_sha256": "30a9e6c9045920976e88f990fc09bb3d835a2094b7b9238bec620e298dbd470c",
+    "original_sources_and_legacy_ledgers_unchanged": true,
+    "passed": true
+  },
+  "previous_50_results_unchanged": true,
+  "historical_rain_result_unchanged": true,
+  "selected_task_inputs_unchanged": true
+}

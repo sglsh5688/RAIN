@@ -1,0 +1,314 @@
+{
+  "schema": "selected57_compose_pi05_addition_v1",
+  "task_id": "VCN19_020",
+  "task_result": {
+    "order": "37",
+    "category": "Compose",
+    "task_id": "VCN19_020",
+    "instruction": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+    "successes": 3,
+    "episodes": 5,
+    "success_rate_percent": 60.0,
+    "success_episode": "1",
+    "failure_episode": "0",
+    "success_video": "assets/pi05_videos/VCN19_020/VCN19_020_success.mp4",
+    "failure_video": "assets/pi05_videos/VCN19_020/VCN19_020_failure.mp4",
+    "complete": true
+  },
+  "checkpoint": {
+    "config": "pi05_libero",
+    "control_hashes": {
+      "assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+      "params/_METADATA": "303a4e354814928e1d29b75e310f2c1ac7e7e29b62f48395b631045ca1cffc73",
+      "params/_sharding": "63f4c57ba6ff10f4132a639b9942eabcc26942eb34081be1d93bf7ddab816501",
+      "params/manifest.ocdbt": "65246951e69bd2b5118e609646bc9e8c439229bccbc1325643833aeb74f77104"
+    },
+    "file_count": 16,
+    "path": "checkpoint://artifacts/openpi-assets/checkpoints/pi05_libero",
+    "source": "gs://openpi-assets/checkpoints/pi05_libero",
+    "total_bytes": 12439085481
+  },
+  "protocol": {
+    "wait_steps": 10,
+    "replan_steps": 5,
+    "resize_size": 224,
+    "max_steps": 1600,
+    "policy_uses_masks": false,
+    "episode_seeds": [
+      3607,
+      3608,
+      3609,
+      3610,
+      3611
+    ],
+    "egl_gpu": 6,
+    "policy_gpu": 7,
+    "policy_rng_note": "Server starts RNG0 and evolves per request; environment seeds do not reset policy RNG"
+  },
+  "source_artifact_sha256": {
+    "aggregate.json": "96f3dfe87b1ce84d20f2360f439c59f4ff3c9030a145f51cf54424f97610204d",
+    "episodes.jsonl": "50ee91ada96b452dd79a5f9e3f1eb661475bcedb25f98bd31bfa2372e44635a9",
+    "FINAL_EVALUATION_AUDIT.json": "39dfb1fbe400050b913f8100bf19101ca00b6650222cb30927858cfc7489dec9",
+    "run_manifest.json": "562dca2ff2416846e1d8f7e0b9373047802bf89b9c02ae5015152ae6e82923b9",
+    "MANUAL_SUCCESS_VIDEO_REVIEW.json": "eef3a2c97e8766247d5aa4cc90e6e7a25abdc47b0908a237034b230f2b288278"
+  },
+  "all_five_videos": [
+    {
+      "episode_idx": 0,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN19_020/VCN19_020_ep000_failure.mp4",
+      "source_sha256": "cffae851866eff5d281d3a1e2dbefb80f3651042f41ec7d2d69f628ea65cfb4d",
+      "public_sha256": "828e7aa55a0e03b03dfad47af3999c29afaa241f686ec5ad3ac8c572ec5e97d4",
+      "decoded_video_sha256": "SHA256=a5f40257ce10b90b8810515c205e8792c14d5dfa4d86fcdb6aa7c73bcb0edb94",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 1,
+      "success": true,
+      "path": "assets/pi05_all_videos/VCN19_020/VCN19_020_ep001_success.mp4",
+      "source_sha256": "ad87276b9af0a315094d7420355681098018703a079006d93fe201dc7e547be1",
+      "public_sha256": "72ed00e14abe0fe5f0f8a682427a165e6cc8b637bba6b24c93e61a46e8b18df6",
+      "decoded_video_sha256": "SHA256=e1958d907c8268d7bd4ddb3a9e2774666fe80cb165aa79dfd35ecf48d03508bb",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 2,
+      "success": true,
+      "path": "assets/pi05_all_videos/VCN19_020/VCN19_020_ep002_success.mp4",
+      "source_sha256": "a556812c32defb0d288c0ebbd4a5ad8ec33d71e0c616126077bdbc54d492d96e",
+      "public_sha256": "260773164d26acfb32d6606d87c2bdb5a17d0e425b441781d1822f19e9d504f5",
+      "decoded_video_sha256": "SHA256=599c5cbd4f84c7deb24cffcd08992cf8e73675f16ffa227892986ef6613c46a7",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 3,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN19_020/VCN19_020_ep003_failure.mp4",
+      "source_sha256": "212cbaa3343ba7d7e106d087b07213625a1f4ee79928bec52a31d1ef261d424a",
+      "public_sha256": "704d04a52d6697cbce6381d8f6749515abf996b144a8880a34081f60be0f2f6a",
+      "decoded_video_sha256": "SHA256=cf5f90e7c0afe7ea5f22000d3eeda3ae7641c40cfec62f650599e21831eba16f",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 4,
+      "success": true,
+      "path": "assets/pi05_all_videos/VCN19_020/VCN19_020_ep004_success.mp4",
+      "source_sha256": "c26c76de6963e91d3804b0f53f9970ea789bbf919707f30b4e75f0745fa1bb22",
+      "public_sha256": "2d5bb714db6b5d21dd5a317dd3946e8c2e2fdf49c8db5aa076ee5c3c219b5d20",
+      "decoded_video_sha256": "SHA256=b863a903b1961e1a188fab390d35677e1f45031a45a10de3cb90b0c220ec9c22",
+      "remux": "lossless video stream-copy +faststart"
+    }
+  ],
+  "manual_success_video_review": {
+    "task_id": "VCN19_020",
+    "passed": true,
+    "source_ledger_sha256": "50ee91ada96b452dd79a5f9e3f1eb661475bcedb25f98bd31bfa2372e44635a9",
+    "success_episode_indices": [
+      1,
+      2,
+      4
+    ],
+    "reviewer": "pi05_history_audit",
+    "review_method": "Inspected 20 sampled original-video frames per successful episode, the original/new scene comparison, and the complete per-control native predicate traces. This was sampled-frame inspection, not continuous playback. Video hashes were checked before and after extraction.",
+    "review_scope": "Verify the intended upper-drawer interaction and correct ramekin-to-plate placement under the already-frozen native ordered-milestone plus final-both-goals metric. No rescoring, additional release/settling criterion, or raw-artifact modification.",
+    "public_summary": "All three videos show the correct top drawer and ramekin-to-plate interaction. Episodes 001 and 002 lose the Open condition during manipulation and re-open the drawer after placement: valid ordered-milestone/final-state successes, not uninterrupted two-step executions. Episode 004 keeps the drawer open through placement. These are native-placement successes; no extra post-release or settling hold is evaluated.",
+    "episodes": [
+      {
+        "episode_idx": 1,
+        "video_sha256": "ad87276b9af0a315094d7420355681098018703a079006d93fe201dc7e547be1",
+        "passed": true,
+        "notes": "Correct upper drawer opened at control 147; the ramekin is visibly lifted off the cookie box and placed on the separate plate, whose On predicate rises at 675. Open becomes false at 580 and is regained at 889 after returning to the cabinet. Final [Open, On] is [true, true]. Native-protocol success with re-opening/rework, not continuous preservation of the first goal.",
+        "sampled_frames": 20,
+        "contact_sheet": "../visual_review/VCN19_020/VCN19_020_ep001_sampled_contact_sheet.png",
+        "ordered_event_first_steps": [
+          147,
+          675
+        ],
+        "final_control_step": 889,
+        "first_goal_continuously_preserved": false,
+        "reopening_after_placement_observed": true,
+        "all_final_native_goals": true
+      },
+      {
+        "episode_idx": 2,
+        "video_sha256": "a556812c32defb0d288c0ebbd4a5ad8ec33d71e0c616126077bdbc54d492d96e",
+        "passed": true,
+        "notes": "Correct upper drawer opened at control 64. The correct ramekin is removed from the cookie box and placed on the separate plate at native On control 506. Open becomes false for the last time at 369 and is regained at 956 after returning to the cabinet. The ramekin remains on the plate through that return. Final [Open, On] is [true, true]. Native-protocol success with re-opening/rework, not uninterrupted two-step execution.",
+        "sampled_frames": 20,
+        "contact_sheet": "../visual_review/VCN19_020/VCN19_020_ep002_sampled_contact_sheet.png",
+        "ordered_event_first_steps": [
+          64,
+          506
+        ],
+        "final_control_step": 956,
+        "first_goal_continuously_preserved": false,
+        "reopening_after_placement_observed": true,
+        "all_final_native_goals": true
+      },
+      {
+        "episode_idx": 4,
+        "video_sha256": "c26c76de6963e91d3804b0f53f9970ea789bbf919707f30b4e75f0745fa1bb22",
+        "passed": true,
+        "notes": "Correct upper drawer opens at control 81 and remains Open in every subsequent logged control. The robot lifts the intended ramekin from the cookie box, carries it to the separate plate, and lowers it to the native On success at terminal control 484. Final [Open, On] is [true, true], with no drawer re-opening needed. The terminal video still shows the gripper near the ramekin; this review does not claim a separate released-and-settled hold, which is not part of the frozen task metric.",
+        "sampled_frames": 20,
+        "contact_sheet": "../visual_review/VCN19_020/VCN19_020_ep004_sampled_contact_sheet.png",
+        "ordered_event_first_steps": [
+          81,
+          484
+        ],
+        "final_control_step": 484,
+        "first_goal_continuously_preserved": true,
+        "reopening_after_placement_observed": false,
+        "all_final_native_goals": true
+      }
+    ]
+  },
+  "public_manual_review_notes": [
+    "All three videos show the correct top drawer and ramekin-to-plate interaction. Episodes 001 and 002 lose the Open condition during manipulation and re-open the drawer after placement: valid ordered-milestone/final-state successes, not uninterrupted two-step executions. Episode 004 keeps the drawer open through placement. These are native-placement successes; no extra post-release or settling hold is evaluated."
+  ],
+  "execution_metric_caveat": "Frozen ordered first milestones plus final goals, with task-specific gates; not an automatic claim of uninterrupted two-step execution.",
+  "runtime_distribution_caveat": "This review release includes task definitions and evaluation evidence; the complete common runtime evaluator/dependency package is not included. Running BDDL alone does not reproduce ordered/contact success semantics.",
+  "episode_scoring_summary": [
+    {
+      "episode_idx": 0,
+      "success": false,
+      "steps": 1600,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "open(wooden_cabinet_1_top_region)",
+          "on(glazed_rim_porcelain_ramekin_1, plate_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          64,
+          null
+        ],
+        "completed_event_count": 1,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 1,
+      "success": true,
+      "steps": 889,
+      "termination": "ordered_composition",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "open(wooden_cabinet_1_top_region)",
+          "on(glazed_rim_porcelain_ramekin_1, plate_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          147,
+          675
+        ],
+        "completed_event_count": 2,
+        "order_violation": null,
+        "ordered_completion_observed": true
+      },
+      "final_bddl_success": true,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 2,
+      "success": true,
+      "steps": 956,
+      "termination": "ordered_composition",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "open(wooden_cabinet_1_top_region)",
+          "on(glazed_rim_porcelain_ramekin_1, plate_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          64,
+          506
+        ],
+        "completed_event_count": 2,
+        "order_violation": null,
+        "ordered_completion_observed": true
+      },
+      "final_bddl_success": true,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 3,
+      "success": false,
+      "steps": 1600,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "open(wooden_cabinet_1_top_region)",
+          "on(glazed_rim_porcelain_ramekin_1, plate_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          64,
+          null
+        ],
+        "completed_event_count": 1,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 4,
+      "success": true,
+      "steps": 484,
+      "termination": "ordered_composition",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "open(wooden_cabinet_1_top_region)",
+          "on(glazed_rim_porcelain_ramekin_1, plate_1)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          81,
+          484
+        ],
+        "completed_event_count": 2,
+        "order_violation": null,
+        "ordered_completion_observed": true
+      },
+      "final_bddl_success": true,
+      "special_microwave_gate": {}
+    }
+  ],
+  "source_final_audit": {
+    "aggregate_sha256": "96f3dfe87b1ce84d20f2360f439c59f4ff3c9030a145f51cf54424f97610204d",
+    "all_five_videos_decoded": true,
+    "every_control_physical_score_replayed": true,
+    "ledger_sha256": "50ee91ada96b452dd79a5f9e3f1eb661475bcedb25f98bd31bfa2372e44635a9",
+    "original_sources_and_legacy_ledgers_unchanged": true,
+    "passed": true
+  },
+  "previous_50_results_unchanged": true,
+  "historical_rain_result_unchanged": true,
+  "selected_task_inputs_unchanged": true
+}

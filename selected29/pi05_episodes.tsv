@@ -249,3 +249,38 @@ GRACK_002	Adapt	1	True	186	520	5408	released_supported_goal
 GRACK_002	Adapt	2	True	155	520	5409	released_supported_goal		
 GRACK_002	Adapt	3	True	134	520	5410	released_supported_goal		
 GRACK_002	Adapt	4	True	153	520	5411	released_supported_goal		
+VCN8_008	Compose	0	False	138	1600	3307	order_violation	False	later event occurred before its turn: step=138, expected=0, rising=[1]
+VCN8_008	Compose	1	False	124	1600	3308	order_violation	False	later event occurred before its turn: step=124, expected=0, rising=[1]
+VCN8_008	Compose	2	False	175	1600	3309	order_violation	False	later event occurred before its turn: step=175, expected=0, rising=[1]
+VCN8_008	Compose	3	False	133	1600	3310	order_violation	False	later event occurred before its turn: step=133, expected=0, rising=[1]
+VCN8_008	Compose	4	False	165	1600	3311	order_violation	False	later event occurred before its turn: step=165, expected=0, rising=[1]
+VCN9_010	Compose	0	False	1600	1600	3407	timeout	False	
+VCN9_010	Compose	1	False	1600	1600	3408	timeout	False	
+VCN9_010	Compose	2	False	1600	1600	3409	timeout	False	
+VCN9_010	Compose	3	False	1600	1600	3410	timeout	False	
+VCN9_010	Compose	4	False	1600	1600	3411	timeout	False	
+VCN10_001	Compose	0	False	1600	1600	3507	timeout	False	
+VCN10_001	Compose	1	False	972	1600	3508	order_violation	False	later event occurred before its turn: step=972, expected=0, rising=[1]
+VCN10_001	Compose	2	False	1600	1600	3509	timeout	False	
+VCN10_001	Compose	3	False	1600	1600	3510	timeout	False	
+VCN10_001	Compose	4	False	1600	1600	3511	timeout	False	
+VCN19_020	Compose	0	False	1600	1600	3607	timeout	False	
+VCN19_020	Compose	1	True	889	1600	3608	ordered_composition	True	
+VCN19_020	Compose	2	True	956	1600	3609	ordered_composition	True	
+VCN19_020	Compose	3	False	1600	1600	3610	timeout	False	
+VCN19_020	Compose	4	True	484	1600	3611	ordered_composition	True	
+VCN21_001	Compose	0	False	1600	1600	3707	timeout	False	
+VCN21_001	Compose	1	True	364	1600	3708	ordered_composition	True	
+VCN21_001	Compose	2	True	427	1600	3709	ordered_composition	True	
+VCN21_001	Compose	3	True	369	1600	3710	ordered_composition	True	
+VCN21_001	Compose	4	True	521	1600	3711	ordered_composition	True	
+VCN35_004	Compose	0	False	1600	1600	5507	timeout	False	
+VCN35_004	Compose	1	False	1600	1600	5508	timeout	False	
+VCN35_004	Compose	2	False	1600	1600	5509	timeout	False	
+VCN35_004	Compose	3	False	1600	1600	5510	timeout	False	
+VCN35_004	Compose	4	False	1600	1600	5511	timeout	False	
+UCOMP_040	Compose	0	False	1800	1800	5607	timeout	False	
+UCOMP_040	Compose	1	False	422	1800	5608	order_violation	False	later event occurred before its turn: step=422, expected=0, rising=[1]
+UCOMP_040	Compose	2	False	1800	1800	5609	timeout	False	
+UCOMP_040	Compose	3	False	388	1800	5610	order_violation	False	later event occurred before its turn: step=388, expected=0, rising=[1]
+UCOMP_040	Compose	4	False	1800	1800	5611	timeout	False	

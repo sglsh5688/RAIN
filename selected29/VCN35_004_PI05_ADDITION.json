@@ -1,0 +1,248 @@
+{
+  "schema": "selected57_compose_pi05_addition_v1",
+  "task_id": "VCN35_004",
+  "task_result": {
+    "order": "56",
+    "category": "Compose",
+    "task_id": "VCN35_004",
+    "instruction": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+    "successes": 0,
+    "episodes": 5,
+    "success_rate_percent": 0.0,
+    "success_episode": "",
+    "failure_episode": "0",
+    "success_video": "",
+    "failure_video": "assets/pi05_videos/VCN35_004/VCN35_004_failure.mp4",
+    "complete": true
+  },
+  "checkpoint": {
+    "config": "pi05_libero",
+    "control_hashes": {
+      "assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+      "params/_METADATA": "303a4e354814928e1d29b75e310f2c1ac7e7e29b62f48395b631045ca1cffc73",
+      "params/_sharding": "63f4c57ba6ff10f4132a639b9942eabcc26942eb34081be1d93bf7ddab816501",
+      "params/manifest.ocdbt": "65246951e69bd2b5118e609646bc9e8c439229bccbc1325643833aeb74f77104"
+    },
+    "file_count": 16,
+    "path": "checkpoint://artifacts/openpi-assets/checkpoints/pi05_libero",
+    "source": "gs://openpi-assets/checkpoints/pi05_libero",
+    "total_bytes": 12439085481
+  },
+  "protocol": {
+    "wait_steps": 10,
+    "replan_steps": 5,
+    "resize_size": 224,
+    "max_steps": 1600,
+    "policy_uses_masks": false,
+    "episode_seeds": [
+      5507,
+      5508,
+      5509,
+      5510,
+      5511
+    ],
+    "egl_gpu": 6,
+    "policy_gpu": 7,
+    "policy_rng_note": "Server starts RNG0 and evolves per request; environment seeds do not reset policy RNG"
+  },
+  "source_artifact_sha256": {
+    "aggregate.json": "d3f90cbb80f5967b3732354d7907dd28803202e56083aa065d64f52527e22530",
+    "episodes.jsonl": "b7eb1bd3d0550dbcf5889831951dbe9abd809eec67ef4b5644ca6553e528a92c",
+    "FINAL_EVALUATION_AUDIT.json": "d7d3372d61b8b1cb03dcbbeb67ff7ea47fe113ae43c6f12745df4e14333b493a",
+    "run_manifest.json": "973f9c453881fe0557fc9d6f55add86ef2b7fefdfac74da9b1af6a31f96ecbce"
+  },
+  "all_five_videos": [
+    {
+      "episode_idx": 0,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN35_004/VCN35_004_ep000_failure.mp4",
+      "source_sha256": "25387f74169f98ccb6adbfbf0e53ad83d97e64ea232526a5028fd697b0626403",
+      "public_sha256": "94c18a5fcb543c270f1f1217567ee12d2d079f25ccea6d3dd2bdac6deaae9096",
+      "decoded_video_sha256": "SHA256=76a5c3582643c1c22fe1af13a3a28783e9be60fe3cfc8f041aea02a5c7166054",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 1,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN35_004/VCN35_004_ep001_failure.mp4",
+      "source_sha256": "61ac28a1c8e6e15b716854a4d0d3de860081a4afdc6d223636848889e041100f",
+      "public_sha256": "8e3a9d6c345447dcabf6f95407366fddc1b2c942481f7b37229b4c6f1d259c6c",
+      "decoded_video_sha256": "SHA256=4f72528b8cc8e1ca04ad05f68e59b866070178835d8ab8d99eecb2f136c1cb47",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 2,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN35_004/VCN35_004_ep002_failure.mp4",
+      "source_sha256": "cda7919f0271c0da38748a80ec7270f1c33677d3922790bf892f09f21a472581",
+      "public_sha256": "98321253066441bafcc624a452290a2fec2ead52cc0c564216fbc30d0cd14c96",
+      "decoded_video_sha256": "SHA256=9ccf9e29264f1e8ec6e2b0967bacc8888a46e15c9725b9eda560505dc673c769",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 3,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN35_004/VCN35_004_ep003_failure.mp4",
+      "source_sha256": "cef028f515dacf41a53767d5b033fcc26163461767678e16214f5914ab39230b",
+      "public_sha256": "7d62577c4028017eb5620b9422ce3892adb48224c53897d518d73ec073deefc7",
+      "decoded_video_sha256": "SHA256=d331bc09b4208e2bd69685803b5356c4bfe221cbd35b59cfbeb1267550c59741",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 4,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN35_004/VCN35_004_ep004_failure.mp4",
+      "source_sha256": "eccddafb2964ffa56d22403d76f5814026b1275cdd1b4e9d35f8606b0a4446b1",
+      "public_sha256": "a785eac35944137a465d19d0b16b3ed1674e6d62e0be0b3a3f216f7268d985ee",
+      "decoded_video_sha256": "SHA256=e4d887de8403b663b28874d315769058f749f5de29386ec2a484f178136edfec",
+      "remux": "lossless video stream-copy +faststart"
+    }
+  ],
+  "manual_success_video_review": null,
+  "public_manual_review_notes": [],
+  "execution_metric_caveat": "Frozen ordered first milestones plus final goals, with task-specific gates; not an automatic claim of uninterrupted two-step execution.",
+  "runtime_distribution_caveat": "This review release includes task definitions and evaluation evidence; the complete common runtime evaluator/dependency package is not included. Running BDDL alone does not reproduce ordered/contact success semantics.",
+  "episode_scoring_summary": [
+    {
+      "episode_idx": 0,
+      "success": false,
+      "steps": 1600,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "in(glazed_rim_porcelain_ramekin_1,basket_1_contain_region)",
+          "on(alphabet_soup_1,plate_2)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 1,
+      "success": false,
+      "steps": 1600,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "in(glazed_rim_porcelain_ramekin_1,basket_1_contain_region)",
+          "on(alphabet_soup_1,plate_2)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 2,
+      "success": false,
+      "steps": 1600,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "in(glazed_rim_porcelain_ramekin_1,basket_1_contain_region)",
+          "on(alphabet_soup_1,plate_2)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 3,
+      "success": false,
+      "steps": 1600,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "in(glazed_rim_porcelain_ramekin_1,basket_1_contain_region)",
+          "on(alphabet_soup_1,plate_2)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 4,
+      "success": false,
+      "steps": 1600,
+      "termination": "timeout",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "in(glazed_rim_porcelain_ramekin_1,basket_1_contain_region)",
+          "on(alphabet_soup_1,plate_2)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": null,
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    }
+  ],
+  "source_final_audit": {
+    "aggregate_sha256": "d3f90cbb80f5967b3732354d7907dd28803202e56083aa065d64f52527e22530",
+    "all_five_videos_decoded": true,
+    "every_control_physical_score_replayed": true,
+    "ledger_sha256": "b7eb1bd3d0550dbcf5889831951dbe9abd809eec67ef4b5644ca6553e528a92c",
+    "original_sources_and_legacy_ledgers_unchanged": true,
+    "passed": true
+  },
+  "previous_50_results_unchanged": true,
+  "historical_rain_result_unchanged": true,
+  "selected_task_inputs_unchanged": true
+}

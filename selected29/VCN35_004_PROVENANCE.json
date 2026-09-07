@@ -8,8 +8,8 @@
     "in(glazed_rim_porcelain_ramekin_1,basket_1_contain_region)",
     "on(alphabet_soup_1,plate_2)"
   ],
-  "source_benchmark": "/home/jovyan/drlee/code_backup/LIBERO_EX_ICRA27/LiberoValidComposeNew20260905/Batch35ShapeBasketPlate/benchmark",
-  "source_result": "/home/jovyan/drlee/code_backup/VLM_evaluation/results/rain_ms_maskaug_gt_valid_compose_new_batch35_shape_basket_plate_5ep_20260906/tasks/all3/VCN35_004/results.json",
+  "source_benchmark": "libero-ex://artifacts/LiberoValidComposeNew20260905/Batch35ShapeBasketPlate/benchmark",
+  "source_result": "local-runtime://root/code_backup/VLM_evaluation/results/rain_ms_maskaug_gt_valid_compose_new_batch35_shape_basket_plate_5ep_20260906/tasks/all3/VCN35_004/results.json",
   "rain_successes": 3,
   "rain_episodes": 5,
   "rain_success_episode_indices": [
@@ -28,8 +28,21 @@
   },
   "user_selected_on": "2026-09-07",
   "user_decision_sha256": "289e8c9aece3dbd6e9f76ee8d65732008e3d16bc2a57dd987a11baaa871392f9",
-  "pi05_evaluation": null,
-  "pi05_status": "pending_not_evaluated_no_outcome_claimed",
+  "pi05_evaluation": {
+    "order": "56",
+    "category": "Compose",
+    "task_id": "VCN35_004",
+    "instruction": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+    "successes": 0,
+    "episodes": 5,
+    "success_rate_percent": 0.0,
+    "success_episode": "",
+    "failure_episode": "0",
+    "success_video": "",
+    "failure_video": "assets/pi05_videos/VCN35_004/VCN35_004_failure.mp4",
+    "complete": true
+  },
+  "pi05_status": "complete_five_original_episodes_final_audit_passed",
   "source_bundle_tree_sha256": "1bb2c23883f2f297a0d01f37fa6ba7df713b221a06f8c4f688d19c1f9799318c",
   "source_result_sha256": "5a05974cf2ce49662018eaf4f0a56dad3c408c99287360f72c6d4c2285b098cb",
   "source_comparison_sha256": "7bd4ad0382194d9ccc0058945c17d33ae2d2d56b17bd384cbf0d82fc0d07a3e4",
@@ -43,5 +56,16 @@
   "downstream_preservation_manual_review_passed": true,
   "compose_final_tc_gate": false,
   "prior_selected55_unchanged": true,
-  "historical_result_rerun_or_rescored": false
+  "historical_result_rerun_or_rescored": false,
+  "pi05_addition_provenance": "VCN35_004_PI05_ADDITION.json",
+  "publication_path_aliasing": {
+    "previous_public_provenance_sha256": "4cba0c454bff79dad519ad647dc401525639a256ff0e8e20739bb3b35778b7b6",
+    "fields_rewritten": [
+      "source_benchmark",
+      "source_result"
+    ],
+    "private_filesystem_roots_replaced_by_documentary_aliases": true,
+    "identity_metrics_source_hashes_and_task_definition_unchanged": true,
+    "exact_previous_provenance_retained_in_private_staging_evidence": true
+  }
 }

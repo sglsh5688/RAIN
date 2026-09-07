@@ -2,7 +2,7 @@
 
 Selection updated 2026-09-07. 20 Decomposition + 20 Adapt + 17 Compose (57 total). The confirmed Compose IDs are VCN8_008, VCN9_010, VCN10_001, VCN19_020, VCN21_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001, BDRCOMP_021, VCN35_004, UCOMP_040.
 
-A separate π0.5 evaluation uses the official `pi05_libero` checkpoint fine-tuned on LIBERO-40. Of the current selection, 50/57 tasks have exactly 5 evaluated episodes (250 total), with 68 successful episodes (27.2%) and 18/50 evaluated tasks succeeding at least once. All 20 selected Adapt tasks have now been evaluated. Only VCN8_008, VCN9_010, VCN10_001, VCN19_020, VCN21_001, VCN35_004, UCOMP_040 remain explicitly not evaluated; no π0.5 result is inferred from their RAIN records. ADVCN19_001 now contributes its independent strict atomic-Open five-episode segment (4/5). COMP2_001's old π0.5 record remains frozen in the source ledger but is retired from this page. ANLGX_023 is replaced by a fresh strict close-only five-episode correction run; its original permissive 3/5 record remains only in the frozen source ledger and correction provenance. See [`pi05_results.tsv`](pi05_results.tsv), [`pi05_episodes.tsv`](pi05_episodes.tsv), [`pi05_evaluation.json`](pi05_evaluation.json), [`ANLGX_023_PI05_CORRECTION.json`](ANLGX_023_PI05_CORRECTION.json), and [`ADVCN19_001_PROVENANCE.json`](ADVCN19_001_PROVENANCE.json).
+A separate π0.5 evaluation uses the official `pi05_libero` checkpoint fine-tuned on LIBERO-40. Of the current selection, 57/57 tasks have exactly 5 evaluated episodes (285 total), with 75 successful episodes (26.3%) and 20/57 tasks succeeding at least once. All 20 Decomposition, 20 Adapt, and 17 Compose tasks are evaluated. The seven formerly pending Compose results come from new audited runs, not their historical RAIN records. ADVCN19_001 now contributes its independent strict atomic-Open five-episode segment (4/5). COMP2_001's old π0.5 record remains frozen in the source ledger but is retired from this page. ANLGX_023 is replaced by a fresh strict close-only five-episode correction run; its original permissive 3/5 record remains only in the frozen source ledger and correction provenance. See [`pi05_results.tsv`](pi05_results.tsv), [`pi05_episodes.tsv`](pi05_episodes.tsv), [`pi05_evaluation.json`](pi05_evaluation.json), [`ANLGX_023_PI05_CORRECTION.json`](ANLGX_023_PI05_CORRECTION.json), and [`ADVCN19_001_PROVENANCE.json`](ADVCN19_001_PROVENANCE.json).
 
 Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. OGDTSL_011 and OGDTSL_046 retain their original Adapt Object five-episode evaluations. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt. WTRAYR_004 retains its exact five-state strict RAIN 2/5 result and has a separate strict π0.5 result of 5/5.
 
@@ -76,11 +76,11 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 
 | Task ID | Alias | Recorded instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) | Additional historical SR |
 |---|---|---|---|---|---|
-| VCN8_008 | VCN8_008 | Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet. | 4/5 (80%) | Not evaluated | — |
-| VCN9_010 | VCN9_010 | Put the cream cheese on the stove, then turn on the stove. | 4/5 (80%) | Not evaluated | — |
-| VCN10_001 | VCN10_001 | Put the cream cheese on the stove, then push the plate to the front of the stove. | 2/5 (40%) | Not evaluated | — |
-| VCN19_020 | VCN19_020 | Open the top drawer of the wooden cabinet, then put the ramekin on the plate. | 1/5 (20%) | Not evaluated | — |
-| VCN21_001 | VCN21_001 | Put the moka pot on the stove, then close the microwave door. | 4/5 (80%) | Not evaluated | — |
+| VCN8_008 | VCN8_008 | Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet. | 4/5 (80%) | 0/5 (0%) | — |
+| VCN9_010 | VCN9_010 | Put the cream cheese on the stove, then turn on the stove. | 4/5 (80%) | 0/5 (0%) | — |
+| VCN10_001 | VCN10_001 | Put the cream cheese on the stove, then push the plate to the front of the stove. | 2/5 (40%) | 0/5 (0%) | — |
+| VCN19_020 | VCN19_020 | Open the top drawer of the wooden cabinet, then put the ramekin on the plate. | 1/5 (20%) | 3/5 (60%) | — |
+| VCN21_001 | VCN21_001 | Put the moka pot on the stove, then close the microwave door. | 4/5 (80%) | 4/5 (80%) | — |
 | COMP2_012 | COMP2_012 | Put the butter in the basket, and then put the tomato sauce in the basket. | 5/5 (100.0%) | 0/5 (0%) | — |
 | COMP2_032 | COMP2_032 | Push the plate to the front of the stove, and then open the middle drawer of the cabinet. | 1/5 (20.0%) | 0/5 (0%) | — |
 | COMP2_222 | COMP2_222 | Put the alphabet soup in the basket, and then put the tomato sauce in the basket. | 1/5 (20.0%) | 0/5 (0%) | — |
@@ -91,8 +91,8 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 | LBCM_028 | LBCM_028 | Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket. | 1/5 (20%) | 0/5 (0%) | — |
 | MKDC_001 | MKDC_001 | Put the moka pot on the stove, then close the bottom drawer of the cabinet. | 4/5 (80%) | 3/5 (60%) | — |
 | BDRCOMP_021 | BDRCOMP_021 | Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the salad dressing and place it in the right compartment of the bowl drainer. | 2/5 (40%) | 0/5 (0%) | — |
-| VCN35_004 | VCN35_004 | Put the ramekin in the basket, then put the alphabet soup on the right plate. | 3/5 (60%) | Not evaluated | — |
-| UCOMP_040 | UCOMP_040 | Put the tomato sauce in the basket, and then put the yellow and white mug on the plate. | 3/5 (60%) | Not evaluated | — |
+| VCN35_004 | VCN35_004 | Put the ramekin in the basket, then put the alphabet soup on the right plate. | 3/5 (60%) | 0/5 (0%) | — |
+| UCOMP_040 | UCOMP_040 | Put the tomato sauce in the basket, and then put the yellow and white mug on the plate. | 3/5 (60%) | 0/5 (0%) | — |
 
 
 ## Newly selected atomic Adapt — ADVCN19_001
@@ -122,12 +122,26 @@ The official `pi05_libero` checkpoint and prior 224px RGB/wrist/state observatio
 
 ## Newly selected Compose — VCN35_004
 
-Two-step user-selected composition. The ramekin pickup, basket target, alphabet-soup pickup, and right-plate target retain evaluated same-index robot-frame donor transforms; there is no manual coordinate offset or height repair. Strict success requires both native predicates to rise in the requested order, both final BDDL goals to hold, and the ramekin placement to remain intact through the later soup placement. Compose final completion has no TC threshold. Original episodes 001, 002, and 004 passed manual video review. The frozen 3/5 result is reused without rerun or rescoring. Pi0.5 is pending and no outcome is claimed.
+Two-step user-selected composition. The ramekin pickup, basket target, alphabet-soup pickup, and right-plate target retain evaluated same-index robot-frame donor transforms; there is no manual coordinate offset or height repair. Strict success requires both native predicates to rise in the requested order, both final BDDL goals to hold, and the ramekin placement to remain intact through the later soup placement. Compose final completion has no TC threshold. Original episodes 001, 002, and 004 passed manual video review. The frozen 3/5 result is reused without rerun or rescoring. A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
 
 The complete frozen task bundle, exact masked comparison, original strict-success episodes, manual downstream-preservation review, and explicit user decision are retained in `VCN35_004_PROVENANCE.json`. No preceding Selected55 task or evaluation is rescored.
 
 ## Newly selected Compose — UCOMP_040
 
-Two-step user-selected composition. Tomato sauce is placed in the basket first, followed by the yellow-and-white mug on the plate. The evaluated task keeps source-aligned pickup and destination slots. Strict success requires both native predicates to rise in the requested order, both final BDDL goals to hold, and the first relation to survive the second action. Compose final completion has no TC threshold. Episodes 000, 001, and 002 passed the campaign-wide manual success-video review. The frozen 3/5 result is reused without rerun or rescoring; pi0.5 is pending.
+Two-step user-selected composition. Tomato sauce is placed in the basket first, followed by the yellow-and-white mug on the plate. The evaluated task keeps source-aligned pickup and destination slots. Strict success requires both native predicates to rise in the requested order, both final BDDL goals to hold, and the first relation to survive the second action. Compose final completion has no TC threshold. Episodes 000, 001, and 002 passed the campaign-wide manual success-video review. The frozen 3/5 result is reused without rerun or rescoring; A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
 
 The frozen task bundle, masked comparison, strict-success episodes, campaign-wide manual review, and selection evidence are retained in `UCOMP_040_PROVENANCE.json`. No preceding Selected56 task or historical result is rescored.
+
+## Selected Compose π0.5 completion — 2026-09-07
+
+- VCN8_008: A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
+- VCN9_010: A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
+- VCN10_001: A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
+- VCN19_020: A separate π0.5 five-episode evaluation is now complete: 3/5 (60%). The historical RAIN record is unchanged. All three videos show the correct top drawer and ramekin-to-plate interaction. Episodes 001 and 002 lose the Open condition during manipulation and re-open the drawer after placement: valid ordered-milestone/final-state successes, not uninterrupted two-step executions. Episode 004 keeps the drawer open through placement. These are native-placement successes; no extra post-release or settling hold is evaluated.
+- VCN21_001: A separate π0.5 five-episode evaluation is now complete: 4/5 (80%). The historical RAIN record is unchanged. All four successful episodes show the moka pot placed on the stove before the robot approaches and pushes the microwave door closed. Every close has exact moving-door/gripper contact with an active constraint and force above 1e-6 N in the required two-control window; both final goals and door-sweep clearance pass. Native On briefly flickers during placement in episodes 002 and 003, then remains true through closure. Review used sampled original frames plus complete control traces, not a long-duration stability test.
+- VCN35_004: A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
+- UCOMP_040: A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
+
+The same official `pi05_libero` checkpoint receives 224px agent/wrist RGB, robot state and the unchanged task instruction; it does not receive RAIN GT masks. Six tasks retain their authored 1600-control limit; UCOMP_040 retains 1800 controls. All five original success/failure episodes per new task are preserved, with lossless faststart browser copies and representative success/failure buttons. Every new success passed the task-specific final control-trace audit and manual video review. Execution qualifications from that review remain visible and do not change the frozen metric. Ordered first milestones plus final goals do not by themselves certify uninterrupted two-step execution. See [manual review notes by task](pi05_manual_review_notes.tsv). The prior 50 π0.5 results, ANLGX_023 corrected 0/5, all task inputs and every historical RAIN result are unchanged. Per-task provenance records the exact ordered-success semantics and special physical gates.
+
+This review release includes task definitions and evaluation evidence; the complete common runtime evaluator/dependency package is not included. Running BDDL alone does not reproduce ordered/contact success semantics.

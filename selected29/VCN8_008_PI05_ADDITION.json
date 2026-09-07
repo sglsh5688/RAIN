@@ -1,0 +1,248 @@
+{
+  "schema": "selected57_compose_pi05_addition_v1",
+  "task_id": "VCN8_008",
+  "task_result": {
+    "order": "34",
+    "category": "Compose",
+    "task_id": "VCN8_008",
+    "instruction": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.",
+    "successes": 0,
+    "episodes": 5,
+    "success_rate_percent": 0.0,
+    "success_episode": "",
+    "failure_episode": "0",
+    "success_video": "",
+    "failure_video": "assets/pi05_videos/VCN8_008/VCN8_008_failure.mp4",
+    "complete": true
+  },
+  "checkpoint": {
+    "config": "pi05_libero",
+    "control_hashes": {
+      "assets/physical-intelligence/libero/norm_stats.json": "b3a44bb2810436fb62917decaea58bd4d9110255df527dea21e8fd40c960bd84",
+      "params/_METADATA": "303a4e354814928e1d29b75e310f2c1ac7e7e29b62f48395b631045ca1cffc73",
+      "params/_sharding": "63f4c57ba6ff10f4132a639b9942eabcc26942eb34081be1d93bf7ddab816501",
+      "params/manifest.ocdbt": "65246951e69bd2b5118e609646bc9e8c439229bccbc1325643833aeb74f77104"
+    },
+    "file_count": 16,
+    "path": "checkpoint://artifacts/openpi-assets/checkpoints/pi05_libero",
+    "source": "gs://openpi-assets/checkpoints/pi05_libero",
+    "total_bytes": 12439085481
+  },
+  "protocol": {
+    "wait_steps": 10,
+    "replan_steps": 5,
+    "resize_size": 224,
+    "max_steps": 1600,
+    "policy_uses_masks": false,
+    "episode_seeds": [
+      3307,
+      3308,
+      3309,
+      3310,
+      3311
+    ],
+    "egl_gpu": 6,
+    "policy_gpu": 7,
+    "policy_rng_note": "Server starts RNG0 and evolves per request; environment seeds do not reset policy RNG"
+  },
+  "source_artifact_sha256": {
+    "aggregate.json": "00824b992e16a7436c671724742c4bc0bd998caf90b5476f273ef54f1aaabce1",
+    "episodes.jsonl": "7ea9d7d9745a4f0d8591e505f735bac990c5dfa99e3ef78a236694b661131d74",
+    "FINAL_EVALUATION_AUDIT.json": "4c3729abea32dd9008d1b7e35fb35fa38363505dc2bbcb3f1df432a580b22b66",
+    "run_manifest.json": "92e9fe473bdbd9dfab8a68cca30487512fd2d88e9712ed5349b4392ae6368254"
+  },
+  "all_five_videos": [
+    {
+      "episode_idx": 0,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN8_008/VCN8_008_ep000_failure.mp4",
+      "source_sha256": "2af8ddc1ea3770df7d7a3e6b76e5e655582c984f41f069e1329f67224208ab48",
+      "public_sha256": "59806411e51ab403a8d1a7d918fd6afc4b72455a7d7192e8c14ce92cae924113",
+      "decoded_video_sha256": "SHA256=a494ecac2353cc35878b98240459660d6b4561f2e3578054e2f601b196257f63",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 1,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN8_008/VCN8_008_ep001_failure.mp4",
+      "source_sha256": "ce3f22f677db9a60c530abb98fa4b337cb121d63425a0171578d140011d24e12",
+      "public_sha256": "4db07ec7c232ae12d7617902737690f2b0303b3d138c43a271a678f511d07bfa",
+      "decoded_video_sha256": "SHA256=ed03d218e30f234fa46ffbb058f58e37777e6e2c413a29d3423f0c35449fc141",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 2,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN8_008/VCN8_008_ep002_failure.mp4",
+      "source_sha256": "5694a2cc27cde276292e6e8a5a42c2326d3a6624b071d8d074952c93228b6135",
+      "public_sha256": "975300f3274336ffcd232511cadfefa4d206e42d92850595d547cde49c6d19a2",
+      "decoded_video_sha256": "SHA256=a2b606ed9df123385226a7589a2f58eb86da9c42968648de0c3c5fee22cec463",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 3,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN8_008/VCN8_008_ep003_failure.mp4",
+      "source_sha256": "592ef27ea4697c505b1c0a02c882d9b9bcaa9abeb866f15d721b4f00000c24c2",
+      "public_sha256": "01f449301af2f52dcd94615acb8fd9c062ee2247dd1c939f07d3d3f7461cd93d",
+      "decoded_video_sha256": "SHA256=dd8114e3e7bb51958b83428827703bc8a9d7a5ad997cea33ff09ba275bc8d049",
+      "remux": "lossless video stream-copy +faststart"
+    },
+    {
+      "episode_idx": 4,
+      "success": false,
+      "path": "assets/pi05_all_videos/VCN8_008/VCN8_008_ep004_failure.mp4",
+      "source_sha256": "546297d16cee51906d1bdf281730ce6eb50f5b231958dea4ceb83a4c15170444",
+      "public_sha256": "862ae0087a287db21c25ed0bca11aeb6d31a53b75cf125191171f276566dcece",
+      "decoded_video_sha256": "SHA256=7df80cfc1a27ffa18608ea2aca4474338d4d9c4b59e1b9cba89aee58397c9a86",
+      "remux": "lossless video stream-copy +faststart"
+    }
+  ],
+  "manual_success_video_review": null,
+  "public_manual_review_notes": [],
+  "execution_metric_caveat": "Frozen ordered first milestones plus final goals, with task-specific gates; not an automatic claim of uninterrupted two-step execution.",
+  "runtime_distribution_caveat": "This review release includes task definitions and evaluation evidence; the complete common runtime evaluator/dependency package is not included. Running BDDL alone does not reproduce ordered/contact success semantics.",
+  "episode_scoring_summary": [
+    {
+      "episode_idx": 0,
+      "success": false,
+      "steps": 138,
+      "termination": "order_violation",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(chocolate_pudding_1, akita_black_bowl_1)",
+          "open(wooden_cabinet_1_middle_region)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": "later event occurred before its turn: step=138, expected=0, rising=[1]",
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 1,
+      "success": false,
+      "steps": 124,
+      "termination": "order_violation",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(chocolate_pudding_1, akita_black_bowl_1)",
+          "open(wooden_cabinet_1_middle_region)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": "later event occurred before its turn: step=124, expected=0, rising=[1]",
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 2,
+      "success": false,
+      "steps": 175,
+      "termination": "order_violation",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(chocolate_pudding_1, akita_black_bowl_1)",
+          "open(wooden_cabinet_1_middle_region)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": "later event occurred before its turn: step=175, expected=0, rising=[1]",
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 3,
+      "success": false,
+      "steps": 133,
+      "termination": "order_violation",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(chocolate_pudding_1, akita_black_bowl_1)",
+          "open(wooden_cabinet_1_middle_region)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": "later event occurred before its turn: step=133, expected=0, rising=[1]",
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    },
+    {
+      "episode_idx": 4,
+      "success": false,
+      "steps": 165,
+      "termination": "order_violation",
+      "protocol": "selected_compose_pi05_exact_rain_order_and_vcn21_v3_v1",
+      "composition_order": {
+        "ordered_event_atoms": [
+          "on(chocolate_pudding_1, akita_black_bowl_1)",
+          "open(wooden_cabinet_1_middle_region)"
+        ],
+        "initial_event_values": [
+          false,
+          false
+        ],
+        "event_first_steps": [
+          null,
+          null
+        ],
+        "completed_event_count": 0,
+        "order_violation": "later event occurred before its turn: step=165, expected=0, rising=[1]",
+        "ordered_completion_observed": false
+      },
+      "final_bddl_success": false,
+      "special_microwave_gate": {}
+    }
+  ],
+  "source_final_audit": {
+    "aggregate_sha256": "00824b992e16a7436c671724742c4bc0bd998caf90b5476f273ef54f1aaabce1",
+    "all_five_videos_decoded": true,
+    "every_control_physical_score_replayed": true,
+    "ledger_sha256": "7ea9d7d9745a4f0d8591e505f735bac990c5dfa99e3ef78a236694b661131d74",
+    "original_sources_and_legacy_ledgers_unchanged": true,
+    "passed": true
+  },
+  "previous_50_results_unchanged": true,
+  "historical_rain_result_unchanged": true,
+  "selected_task_inputs_unchanged": true
+}

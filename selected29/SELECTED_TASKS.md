@@ -1,8 +1,8 @@
 # Selected LIBERO-EX tasks
 
-Selection updated 2026-09-07. 20 Decomposition + 20 Adapt + 18 Compose (58 total). The confirmed Compose IDs are VCN8_008, VCN9_010, VCN10_001, VCN19_020, VCN21_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001, BDRCOMP_021, VCN35_004, UCOMP_040, BDRMIN_002.
+Selection updated 2026-09-07. 20 Decomposition + 20 Adapt + 19 Compose (59 total). The confirmed Compose IDs are VCN8_008, VCN9_010, VCN10_001, VCN19_020, VCN21_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001, BDRCOMP_021, VCN35_004, UCOMP_040, BDRMIN_002, VCN91_002.
 
-A separate π0.5 evaluation uses the official `pi05_libero` checkpoint fine-tuned on LIBERO-40. Of the current selection, 57/58 tasks have exactly 5 evaluated episodes (285 total), with 75 successful episodes (26.3%) and 20/58 tasks succeeding at least once. All 20 Decomposition and 20 Adapt tasks plus 17/18 Compose tasks are evaluated. BDRMIN_002 is newly selected from its strict RAIN evaluation and its separate π0.5 result is pending. The seven formerly pending Compose results come from audited runs, not their historical RAIN records. COMP2_001's old π0.5 record remains frozen in the source ledger but is retired from this page. ANLGX_023 uses its fresh strict close-only correction. See [`pi05_results.tsv`](pi05_results.tsv), [`pi05_episodes.tsv`](pi05_episodes.tsv), and [`pi05_evaluation.json`](pi05_evaluation.json).
+A separate π0.5 evaluation uses the official `pi05_libero` checkpoint fine-tuned on LIBERO-40. Of the current selection, 57/59 tasks have exactly 5 evaluated episodes (285 total), with 75 successful episodes (26.3%) and 20/59 tasks succeeding at least once. All 20 Decomposition and 20 Adapt tasks plus 17/19 Compose tasks are evaluated. BDRMIN_002 and VCN91_002 retain their frozen RAIN evaluations and have no separate π0.5 result yet. The seven formerly pending Compose results come from audited runs, not their historical RAIN records. COMP2_001's old π0.5 record remains frozen in the source ledger but is retired from this page. ANLGX_023 uses its fresh strict close-only correction. See [`pi05_results.tsv`](pi05_results.tsv), [`pi05_episodes.tsv`](pi05_episodes.tsv), and [`pi05_evaluation.json`](pi05_evaluation.json).
 
 Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. OGDTSL_011 and OGDTSL_046 retain their original Adapt Object five-episode evaluations. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt. WTRAYR_004 retains its exact five-state strict RAIN 2/5 result and has a separate strict π0.5 result of 5/5.
 
@@ -94,6 +94,7 @@ ANLGX_089 preserves the evaluated instruction. Its task-only wording for a futur
 | VCN35_004 | VCN35_004 | Put the ramekin in the basket, then put the alphabet soup on the right plate. | 3/5 (60%) | 0/5 (0%) | — |
 | UCOMP_040 | UCOMP_040 | Put the tomato sauce in the basket, and then put the yellow and white mug on the plate. | 3/5 (60%) | 0/5 (0%) | — |
 | BDRMIN_002 | BDRMIN_002 | Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer. | 1/5 (20%) | Pending | — |
+| VCN91_002 | VCN91_002 | Put the black bowl on top of the cabinet, then turn on the stove, then put the moka pot on the stove. | 1/5 (20%) | Pending | — |
 
 
 ## Newly selected atomic Adapt — ADVCN19_001
@@ -152,3 +153,9 @@ This review release includes task definitions and evaluation evidence; the compl
 User-selected reverse-order bowl-drainer Compose result. Strict RAIN success is 1/5 (episode 004): alphabet soup completes the right placement before tomato sauce completes the left placement. Both selected native In predicates are true at termination, neither opposite compartment is entered, and both objects are released with exact bottom support held for five consecutive control steps. The first placement remains supported through the second. Final termination has no TC threshold. The frozen five-episode result is reused without rerun or rescoring; a separate pi0.5 evaluation is pending.
 
 The frozen task bundle, exact masked comparison, strict success episode, and event/contact witness are retained in `BDRMIN_002_PROVENANCE.json`. No preceding Selected57 task or result is modified.
+
+## Newly selected Compose — VCN91_002
+
+User-selected full three-action composition, not a plate-moving task. Original episode 002 deliberately places the black bowl on the cabinet, turns on the stove, and places the moka pot on that stove; the bowl remains on the cabinet. All three native goals start false, rise in order at control steps 140, 300, and 445, and remain true at termination. Stove turn-on inference uses only the knob mask. Final Compose termination has no TC gate. The frozen 1/5 RAIN result is reused without rerun or rescoring. Source-reference PNGs identify the original tasks but are not episode002-specific replays. A separate pi0.5 evaluation is pending.
+
+The exact accepted task is the original Batch91 three-action task. The later no-turn-on Batch94 evaluation is a different task and is not substituted for this result. All prior 58 selections and their RAIN/π0.5 evidence are unchanged.

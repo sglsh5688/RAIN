@@ -1,0 +1,52 @@
+{
+  "schema": "selected59_vcn91002_provenance_v1",
+  "task_id": "VCN91_002",
+  "selected_order": 59,
+  "selected_category": "Compose",
+  "instruction": "Put the black bowl on top of the cabinet, then turn on the stove, then put the moka pot on the stove.",
+  "goal_atoms": [
+    "on(akita_black_bowl_1,wooden_cabinet_1_top_side)",
+    "turnon(flat_stove_1)",
+    "on(moka_pot_1,flat_stove_1_cook_region)"
+  ],
+  "rain_result": {
+    "successes": 1,
+    "episodes": 5,
+    "success_rate_percent": 20
+  },
+  "success_episode_indices": [
+    2
+  ],
+  "event_first_steps": [
+    140,
+    300,
+    445
+  ],
+  "final_native_goals": [
+    true,
+    true,
+    true
+  ],
+  "initial_native_goals": [
+    false,
+    false,
+    false
+  ],
+  "final_compose_tc_gate": false,
+  "turn_on_mask": "sim_seg_stove_knob",
+  "no_rerun_or_rescoring": true,
+  "pi05_status": "pending_not_evaluated",
+  "user_selection_date": "2026-09-07",
+  "accepted_definition_is_original_three_action_batch91": true,
+  "not_the_shortened_batch94_task": true,
+  "source_benchmark": "LiberoValidComposeNew20260905/Batch91K3StoveMokaGoalDrawer20260907/benchmarks/top3",
+  "source_result": "VLM_evaluation/results/rain_ms_maskaug_gt_valid_compose_new_batch91_top3_5ep_20260907/tasks/all2/VCN91_002/results.json",
+  "source_sha256": {
+    "result": "5b55600c55d530bfc80aa6afb8a41e778a877c2f39f66448d9cb7249a4f34d29",
+    "video": "f70be967bf36c57fc60f5289250594656feeeecbb84f4546a4e9ef15809a06f1",
+    "comparison": "938ccfde79abf02c5a8999a43aa3f0d556d863f4abc7b8e7084f5da3b2a500fe",
+    "bundle": "71d6ea880dfa0aa213697d5e22c4bf6ac00478f768eb97f362c4ac5cca94eccf"
+  },
+  "comparison_caveat": "Original40 masked source-reference catalog pictures plus new scene state0; not episode002-specific three-scene replays.",
+  "prior_58_rows_and_cards_unchanged": true
+}

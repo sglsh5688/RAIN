@@ -1,0 +1,97 @@
+[
+  {
+    "episode_idx": 0,
+    "success": false,
+    "manually_verified": false,
+    "event_first_steps": [
+      null,
+      null,
+      null
+    ],
+    "order_violation": "later event occurred before its turn: step=491, expected=0, rising=[1]",
+    "final_native_atom_values": [
+      false,
+      true,
+      false
+    ],
+    "video": "LIBERO_EX_ICRA27/COMPOSE_SOURCEMIX91_93_REVIEW/VCN91_002/VCN91_002_ep000_fail.mp4",
+    "raw_source": "private_evaluation_results/rain_ms_maskaug_gt_valid_compose_new_batch91_top3_5ep_20260907/tasks/all2/VCN91_002",
+    "sha256": "6748dff7648b014093f880cd1653b732cedb8626c232c08e28a40303866fbc38"
+  },
+  {
+    "episode_idx": 1,
+    "success": false,
+    "manually_verified": false,
+    "event_first_steps": [
+      null,
+      null,
+      null
+    ],
+    "order_violation": null,
+    "final_native_atom_values": [
+      false,
+      false,
+      false
+    ],
+    "video": "LIBERO_EX_ICRA27/COMPOSE_SOURCEMIX91_93_REVIEW/VCN91_002/VCN91_002_ep001_fail.mp4",
+    "raw_source": "private_evaluation_results/rain_ms_maskaug_gt_valid_compose_new_batch91_top3_5ep_20260907/tasks/all2/VCN91_002",
+    "sha256": "8a57b9149398893539858a4ffd52522d103b3396218e02ef9bd9749a0f47aa83"
+  },
+  {
+    "episode_idx": 2,
+    "success": true,
+    "manually_verified": true,
+    "event_first_steps": [
+      140,
+      300,
+      445
+    ],
+    "order_violation": null,
+    "final_native_atom_values": [
+      true,
+      true,
+      true
+    ],
+    "video": "LIBERO_EX_ICRA27/COMPOSE_SOURCEMIX91_93_REVIEW/VCN91_002/VCN91_002_ep002_ok.mp4",
+    "raw_source": "private_evaluation_results/rain_ms_maskaug_gt_valid_compose_new_batch91_top3_5ep_20260907/tasks/all2/VCN91_002",
+    "sha256": "f70be967bf36c57fc60f5289250594656feeeecbb84f4546a4e9ef15809a06f1"
+  },
+  {
+    "episode_idx": 3,
+    "success": false,
+    "manually_verified": false,
+    "event_first_steps": [
+      137,
+      null,
+      null
+    ],
+    "order_violation": null,
+    "final_native_atom_values": [
+      false,
+      false,
+      false
+    ],
+    "video": "LIBERO_EX_ICRA27/COMPOSE_SOURCEMIX91_93_REVIEW/VCN91_002/VCN91_002_ep003_fail.mp4",
+    "raw_source": "private_evaluation_results/rain_ms_maskaug_gt_valid_compose_new_batch91_top3_5ep_20260907/tasks/all2/VCN91_002",
+    "sha256": "cf1f28f3eb302976fc7c3b78fb2f9d481c803107071ce8830cef426216edd52c"
+  },
+  {
+    "episode_idx": 4,
+    "success": false,
+    "manually_verified": false,
+    "event_first_steps": [
+      null,
+      null,
+      null
+    ],
+    "order_violation": null,
+    "final_native_atom_values": [
+      false,
+      false,
+      false
+    ],
+    "video": "LIBERO_EX_ICRA27/COMPOSE_SOURCEMIX91_93_REVIEW/VCN91_002/VCN91_002_ep004_fail.mp4",
+    "raw_source": "private_evaluation_results/rain_ms_maskaug_gt_valid_compose_new_batch91_top3_5ep_20260907/tasks/all2/VCN91_002",
+    "sha256": "a1bfd1db837d5544c846b685c90a3c0d1ee71f8ed1d9675c4c0fb6e79410714a"
+  }
+]

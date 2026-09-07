@@ -230,10 +230,11 @@
       "note": "Seven new Selected Compose runs; unchanged official pi05_libero RGB/state/text protocol; exact task inputs; ordered task-specific scoring; all five original videos retained per task."
     }
   ],
-  "selected_tasks": 58,
+  "selected_tasks": 59,
   "tasks": 57,
   "pending_task_ids": [
-    "BDRMIN_002"
+    "BDRMIN_002",
+    "VCN91_002"
   ],
   "retired_source_result_ids": [
     "COMP2_001"
@@ -303,9 +304,9 @@
       "episodes": 100
     },
     "Compose": {
-      "selected_tasks": 18,
+      "selected_tasks": 19,
       "evaluated_tasks": 17,
-      "pending_tasks": 1,
+      "pending_tasks": 2,
       "successful_tasks": 3,
       "successes": 10,
       "episodes": 85
@@ -1135,5 +1136,7 @@
     "UCOMP_040": []
   },
   "selected_58_tsv_sha256": "1ce2c582f029f8f02aa2b9d6f781fde3c039e5debea4aa9fc3fcfca8bb9e6267",
-  "selected_58_note": "BDRMIN_002 is newly selected from its strict RAIN 1/5 evaluation; no pi0.5 result is claimed."
+  "selected_58_note": "BDRMIN_002 is newly selected from its strict RAIN 1/5 evaluation; no pi0.5 result is claimed.",
+  "selected_59_tsv_sha256": "bb450d391ce41946c4953bcbf0d0b32ee4c087319d48ee91ad4603098bc7d96d",
+  "selected_59_note": "VCN91_002 is user selected from its frozen RAIN 1/5 result; no pi0.5 outcome is claimed."
 }

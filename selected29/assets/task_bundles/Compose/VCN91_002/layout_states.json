@@ -1,0 +1,2570 @@
+{
+  "validation_version": "batch91_k3_full_prefix_goal_native_pairs_robot_sweep_v1",
+  "physical_group": "top3",
+  "candidate_ids": [
+    "VCN91_001",
+    "VCN91_002"
+  ],
+  "valid_count": 5,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "evaluator_wait_steps": 10,
+  "evaluator_wait_action": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "same_index_robot_frame_transfer": true,
+  "arbitrary_coordinate_offsets": false,
+  "support_only_z_correction": false,
+  "contact_depth_m": 0.0005,
+  "policy_evaluation_run": false,
+  "rows": [
+    {
+      "state_index": 0,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "anchor_source_initial_cross_entity_penetrations": [],
+      "accepted_source_native_initial_contacts": [],
+      "invalid_initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "akita_black_bowl_1",
+          "native_pre_to_post_translation_m": 0.07159293488414344,
+          "native_pre_to_post_angular_rad": 2.7949148919818185e-05,
+          "postwarmup_donor_position_error_m": 6.518499014193635e-17,
+          "postwarmup_donor_angular_error_rad": 2.397175067650949e-16,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "flat_stove_1",
+          "native_pre_to_post_translation_m": 0.0,
+          "native_pre_to_post_angular_rad": 0.0,
+          "postwarmup_donor_position_error_m": 0.0,
+          "postwarmup_donor_angular_error_rad": 0.0,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "moka_pot_1",
+          "native_pre_to_post_translation_m": 0.003892073071026087,
+          "native_pre_to_post_angular_rad": 4.613113662524908e-06,
+          "postwarmup_donor_position_error_m": 4.628819572127218e-17,
+          "postwarmup_donor_angular_error_rad": 2.1126485193712513e-17,
+          "finite": true,
+          "passes": true
+        }
+      ],
+      "mask_areas": {
+        "knob_0:body_prefix:flat_stove_1_button": 700,
+        "object_1:body_prefix:moka_pot_1": 2196,
+        "target_1:body_prefix:flat_stove_1_burner": 4174,
+        "object_2:body_prefix:akita_black_bowl_1": 621,
+        "target_2:body_prefix:wooden_cabinet_1": 13963
+      },
+      "fixture_replay_error_m": 2.7755575615628914e-17,
+      "straight_corridor_diagnostics": [],
+      "transfers": [
+        {
+          "target_entity": "flat_stove_1",
+          "donor_entity": "flat_stove_1",
+          "donor_world_pos": [
+            -0.1964154000775812,
+            0.2060747807220875,
+            0.905
+          ],
+          "realized_world_pos": [
+            -0.19641540007758118,
+            0.2060747807220875,
+            0.905
+          ],
+          "robot_frame_xyz": [
+            0.46358459992241885,
+            0.2060747807220875,
+            -0.007000000000000006
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "initial_knob_off": {
+            "joint": "flat_stove_1_button",
+            "qpos": -0.005,
+            "root_pose_unchanged": true
+          },
+          "donor_key": "K3"
+        },
+        {
+          "target_entity": "wooden_cabinet_1",
+          "donor_entity": "wooden_cabinet_1",
+          "donor_world_pos": [
+            0.024606057580419297,
+            -0.2390302016152794,
+            0.905
+          ],
+          "realized_world_pos": [
+            0.024606057580419338,
+            -0.2390302016152794,
+            0.905
+          ],
+          "robot_frame_xyz": [
+            0.6846060575804194,
+            -0.2390302016152794,
+            -0.007000000000000006
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "initial_drawers_closed": {
+            "wooden_cabinet_1_bottom_region": {
+              "region": "wooden_cabinet_1_bottom_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "bottom",
+              "joint_name": "wooden_cabinet_1_bottom_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_bottom",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208,
+                209
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g32",
+                "wooden_cabinet_1_g33",
+                "wooden_cabinet_1_g34",
+                "wooden_cabinet_1_g35",
+                "wooden_cabinet_1_g36",
+                "wooden_cabinet_1_g37",
+                "wooden_cabinet_1_g38",
+                "wooden_cabinet_1_g39",
+                "wooden_cabinet_1_g40",
+                "wooden_cabinet_1_g41",
+                "wooden_cabinet_1_g42"
+              ]
+            },
+            "wooden_cabinet_1_middle_region": {
+              "region": "wooden_cabinet_1_middle_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "middle",
+              "joint_name": "wooden_cabinet_1_middle_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_middle",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                188,
+                189,
+                190,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g21",
+                "wooden_cabinet_1_g22",
+                "wooden_cabinet_1_g23",
+                "wooden_cabinet_1_g24",
+                "wooden_cabinet_1_g25",
+                "wooden_cabinet_1_g26",
+                "wooden_cabinet_1_g27",
+                "wooden_cabinet_1_g28",
+                "wooden_cabinet_1_g29",
+                "wooden_cabinet_1_g30",
+                "wooden_cabinet_1_g31"
+              ]
+            },
+            "wooden_cabinet_1_top_region": {
+              "region": "wooden_cabinet_1_top_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "top",
+              "joint_name": "wooden_cabinet_1_top_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_top",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183,
+                184,
+                185,
+                186,
+                187
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g10",
+                "wooden_cabinet_1_g11",
+                "wooden_cabinet_1_g12",
+                "wooden_cabinet_1_g13",
+                "wooden_cabinet_1_g14",
+                "wooden_cabinet_1_g15",
+                "wooden_cabinet_1_g16",
+                "wooden_cabinet_1_g17",
+                "wooden_cabinet_1_g18",
+                "wooden_cabinet_1_g19",
+                "wooden_cabinet_1_g20"
+              ]
+            }
+          },
+          "donor_key": "GOAL_TOP"
+        },
+        {
+          "target_entity": "moka_pot_1",
+          "donor_entity": "moka_pot_1",
+          "donor_world_pos": [
+            0.030272506938512724,
+            -0.007332137032068288,
+            0.97
+          ],
+          "realized_world_pos": [
+            0.03027250693851269,
+            -0.007332137032068288,
+            0.97
+          ],
+          "robot_frame_xyz": [
+            0.6902725069385127,
+            -0.007332137032068288,
+            0.05799999999999994
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "donor_key": "K3"
+        },
+        {
+          "target_entity": "akita_black_bowl_1",
+          "donor_entity": "akita_black_bowl_1",
+          "donor_world_pos": [
+            -0.10046465890463151,
+            0.010042578382874975,
+            0.97
+          ],
+          "realized_world_pos": [
+            -0.10046465890463152,
+            0.010042578382874975,
+            0.97
+          ],
+          "robot_frame_xyz": [
+            0.5595353410953685,
+            0.010042578382874975,
+            0.05799999999999994
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 2.220446049250313e-16,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "donor_key": "GOAL_TOP"
+        }
+      ],
+      "robot_control_and_drawer_sweep": {
+        "state_index": 0,
+        "passes": true,
+        "initial_robot_penetrations": [],
+        "knob_sweep": {
+          "samples": 41,
+          "initial_qpos": -0.005,
+          "endpoint_qpos": 2.1,
+          "cross_object_penetrations": [],
+          "stationary_robot_penetrations": [],
+          "passes": true
+        },
+        "drawer_descriptor": {
+          "region": "wooden_cabinet_1_top_region",
+          "fixture": "wooden_cabinet_1",
+          "slot": "top",
+          "joint_name": "wooden_cabinet_1_top_level",
+          "moving_body_name": "wooden_cabinet_1_cabinet_top",
+          "joint_min": -0.16,
+          "joint_max": 0.01,
+          "open_endpoint": -0.16,
+          "closed_endpoint": 0.01,
+          "moving_geom_ids": [
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "moving_geom_names": [
+            "wooden_cabinet_1_g10",
+            "wooden_cabinet_1_g11",
+            "wooden_cabinet_1_g12",
+            "wooden_cabinet_1_g13",
+            "wooden_cabinet_1_g14",
+            "wooden_cabinet_1_g15",
+            "wooden_cabinet_1_g16",
+            "wooden_cabinet_1_g17",
+            "wooden_cabinet_1_g18",
+            "wooden_cabinet_1_g19",
+            "wooden_cabinet_1_g20"
+          ]
+        },
+        "drawer_full_open_sweep": {
+          "samples": 41,
+          "initial_qpos": 0.01,
+          "endpoint_qpos": -0.16,
+          "cross_object_penetrations": [
+            {
+              "sample": 38,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 38,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 38,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 38,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 39,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 39,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 39,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 39,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 40,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 40,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 40,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 40,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            }
+          ],
+          "stationary_robot_penetrations": [],
+          "passes": false
+        },
+        "drawer_open_required": false,
+        "native_open_at_full_endpoint": true,
+        "opened_bowl_agent_mask_pixels": 526,
+        "opened_bowl_visibility_note": "Visibility diagnostic from initial robot pose, not a hard learned-trajectory gate; actual wrist viewpoint changes after opening.",
+        "opened_cabinet_vs_stove_xy_footprint_overlap": false,
+        "poses": {
+          "flat_stove_1": {
+            "position": [
+              -0.19641540007758118,
+              0.2060747807220875,
+              0.905
+            ],
+            "quat": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bounds": [
+              [
+                -0.24849967898004152,
+                0.11107478072208751,
+                0.885
+              ],
+              [
+                0.048584599922418814,
+                0.3010747807220875,
+                0.9550200000000001
+              ]
+            ]
+          },
+          "wooden_cabinet_1": {
+            "position": [
+              0.024606057580419338,
+              -0.2390302016152794,
+              0.905
+            ],
+            "quat": [
+              6.123233995736766e-17,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              [
+                -0.10662394241958068,
+                -0.35073449599859596,
+                0.9095868098380617
+              ],
+              [
+                0.14795605758041935,
+                -0.1397202016152794,
+                1.12799
+              ]
+            ]
+          },
+          "moka_pot_1": {
+            "position": [
+              0.03027250693851269,
+              -0.007332137032068288,
+              0.97
+            ],
+            "quat": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              [
+                -0.010575661098405754,
+                -0.09856020108503737,
+                0.90389
+              ],
+              [
+                0.07084067497543113,
+                0.04897786296793171,
+                1.05569
+              ]
+            ]
+          },
+          "akita_black_bowl_1": {
+            "position": [
+              -0.10046465890463152,
+              0.010042578382874975,
+              0.97
+            ],
+            "quat": [
+              0.7071067811865475,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ],
+            "bounds": [
+              [
+                -0.153578189094313,
+                -0.043741334516591825,
+                0.97159
+              ],
+              [
+                -0.046570987724314894,
+                0.06345860580748618,
+                1.0221319285234878
+              ]
+            ]
+          }
+        },
+        "initial_robot_root": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "no_coordinate_offsets": true,
+        "postwarmup_robot_penetrations": []
+      }
+    },
+    {
+      "state_index": 1,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "anchor_source_initial_cross_entity_penetrations": [],
+      "accepted_source_native_initial_contacts": [],
+      "invalid_initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "akita_black_bowl_1",
+          "native_pre_to_post_translation_m": 0.07159293488414344,
+          "native_pre_to_post_angular_rad": 2.7949148919824466e-05,
+          "postwarmup_donor_position_error_m": 2.797157557069881e-17,
+          "postwarmup_donor_angular_error_rad": 2.3887504230589604e-16,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "flat_stove_1",
+          "native_pre_to_post_translation_m": 0.0,
+          "native_pre_to_post_angular_rad": 0.0,
+          "postwarmup_donor_position_error_m": 0.0,
+          "postwarmup_donor_angular_error_rad": 0.0,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "moka_pot_1",
+          "native_pre_to_post_translation_m": 0.003892073071026087,
+          "native_pre_to_post_angular_rad": 4.613113662524095e-06,
+          "postwarmup_donor_position_error_m": 1.4304896245381992e-17,
+          "postwarmup_donor_angular_error_rad": 1.917080229878099e-17,
+          "finite": true,
+          "passes": true
+        }
+      ],
+      "mask_areas": {
+        "knob_0:body_prefix:flat_stove_1_button": 711,
+        "object_1:body_prefix:moka_pot_1": 2290,
+        "target_1:body_prefix:flat_stove_1_burner": 4098,
+        "object_2:body_prefix:akita_black_bowl_1": 902,
+        "target_2:body_prefix:wooden_cabinet_1": 13561
+      },
+      "fixture_replay_error_m": 0.0,
+      "straight_corridor_diagnostics": [],
+      "transfers": [
+        {
+          "target_entity": "flat_stove_1",
+          "donor_entity": "flat_stove_1",
+          "donor_world_pos": [
+            -0.19478208848794143,
+            0.20424749148164184,
+            0.905
+          ],
+          "realized_world_pos": [
+            -0.19478208848794143,
+            0.20424749148164184,
+            0.905
+          ],
+          "robot_frame_xyz": [
+            0.4652179115120586,
+            0.20424749148164184,
+            -0.007000000000000006
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "initial_knob_off": {
+            "joint": "flat_stove_1_button",
+            "qpos": -0.005,
+            "root_pose_unchanged": true
+          },
+          "donor_key": "K3"
+        },
+        {
+          "target_entity": "wooden_cabinet_1",
+          "donor_entity": "wooden_cabinet_1",
+          "donor_world_pos": [
+            0.021418856895003974,
+            -0.2455046012206391,
+            0.905
+          ],
+          "realized_world_pos": [
+            0.021418856895004,
+            -0.2455046012206391,
+            0.905
+          ],
+          "robot_frame_xyz": [
+            0.681418856895004,
+            -0.2455046012206391,
+            -0.007000000000000006
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "initial_drawers_closed": {
+            "wooden_cabinet_1_bottom_region": {
+              "region": "wooden_cabinet_1_bottom_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "bottom",
+              "joint_name": "wooden_cabinet_1_bottom_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_bottom",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208,
+                209
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g32",
+                "wooden_cabinet_1_g33",
+                "wooden_cabinet_1_g34",
+                "wooden_cabinet_1_g35",
+                "wooden_cabinet_1_g36",
+                "wooden_cabinet_1_g37",
+                "wooden_cabinet_1_g38",
+                "wooden_cabinet_1_g39",
+                "wooden_cabinet_1_g40",
+                "wooden_cabinet_1_g41",
+                "wooden_cabinet_1_g42"
+              ]
+            },
+            "wooden_cabinet_1_middle_region": {
+              "region": "wooden_cabinet_1_middle_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "middle",
+              "joint_name": "wooden_cabinet_1_middle_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_middle",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                188,
+                189,
+                190,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g21",
+                "wooden_cabinet_1_g22",
+                "wooden_cabinet_1_g23",
+                "wooden_cabinet_1_g24",
+                "wooden_cabinet_1_g25",
+                "wooden_cabinet_1_g26",
+                "wooden_cabinet_1_g27",
+                "wooden_cabinet_1_g28",
+                "wooden_cabinet_1_g29",
+                "wooden_cabinet_1_g30",
+                "wooden_cabinet_1_g31"
+              ]
+            },
+            "wooden_cabinet_1_top_region": {
+              "region": "wooden_cabinet_1_top_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "top",
+              "joint_name": "wooden_cabinet_1_top_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_top",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183,
+                184,
+                185,
+                186,
+                187
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g10",
+                "wooden_cabinet_1_g11",
+                "wooden_cabinet_1_g12",
+                "wooden_cabinet_1_g13",
+                "wooden_cabinet_1_g14",
+                "wooden_cabinet_1_g15",
+                "wooden_cabinet_1_g16",
+                "wooden_cabinet_1_g17",
+                "wooden_cabinet_1_g18",
+                "wooden_cabinet_1_g19",
+                "wooden_cabinet_1_g20"
+              ]
+            }
+          },
+          "donor_key": "GOAL_TOP"
+        },
+        {
+          "target_entity": "moka_pot_1",
+          "donor_entity": "moka_pot_1",
+          "donor_world_pos": [
+            0.060337328454933205,
+            0.018515821142678766,
+            0.97
+          ],
+          "realized_world_pos": [
+            0.060337328454933226,
+            0.018515821142678766,
+            0.97
+          ],
+          "robot_frame_xyz": [
+            0.7203373284549333,
+            0.018515821142678766,
+            0.05799999999999994
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "donor_key": "K3"
+        },
+        {
+          "target_entity": "akita_black_bowl_1",
+          "donor_entity": "akita_black_bowl_1",
+          "donor_world_pos": [
+            -0.09873036658827769,
+            0.007992482292577848,
+            0.97
+          ],
+          "realized_world_pos": [
+            -0.09873036658827772,
+            0.007992482292577848,
+            0.97
+          ],
+          "robot_frame_xyz": [
+            0.5612696334117223,
+            0.007992482292577848,
+            0.05799999999999994
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 2.220446049250313e-16,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "donor_key": "GOAL_TOP"
+        }
+      ],
+      "robot_control_and_drawer_sweep": {
+        "state_index": 1,
+        "passes": true,
+        "initial_robot_penetrations": [],
+        "knob_sweep": {
+          "samples": 41,
+          "initial_qpos": -0.005,
+          "endpoint_qpos": 2.1,
+          "cross_object_penetrations": [],
+          "stationary_robot_penetrations": [],
+          "passes": true
+        },
+        "drawer_descriptor": {
+          "region": "wooden_cabinet_1_top_region",
+          "fixture": "wooden_cabinet_1",
+          "slot": "top",
+          "joint_name": "wooden_cabinet_1_top_level",
+          "moving_body_name": "wooden_cabinet_1_cabinet_top",
+          "joint_min": -0.16,
+          "joint_max": 0.01,
+          "open_endpoint": -0.16,
+          "closed_endpoint": 0.01,
+          "moving_geom_ids": [
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "moving_geom_names": [
+            "wooden_cabinet_1_g10",
+            "wooden_cabinet_1_g11",
+            "wooden_cabinet_1_g12",
+            "wooden_cabinet_1_g13",
+            "wooden_cabinet_1_g14",
+            "wooden_cabinet_1_g15",
+            "wooden_cabinet_1_g16",
+            "wooden_cabinet_1_g17",
+            "wooden_cabinet_1_g18",
+            "wooden_cabinet_1_g19",
+            "wooden_cabinet_1_g20"
+          ]
+        },
+        "drawer_full_open_sweep": {
+          "samples": 41,
+          "initial_qpos": 0.01,
+          "endpoint_qpos": -0.16,
+          "cross_object_penetrations": [],
+          "stationary_robot_penetrations": [],
+          "passes": true
+        },
+        "drawer_open_required": false,
+        "native_open_at_full_endpoint": true,
+        "opened_bowl_agent_mask_pixels": 570,
+        "opened_bowl_visibility_note": "Visibility diagnostic from initial robot pose, not a hard learned-trajectory gate; actual wrist viewpoint changes after opening.",
+        "opened_cabinet_vs_stove_xy_footprint_overlap": false,
+        "poses": {
+          "flat_stove_1": {
+            "position": [
+              -0.19478208848794143,
+              0.20424749148164184,
+              0.905
+            ],
+            "quat": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bounds": [
+              [
+                -0.24686636739040177,
+                0.10924749148164184,
+                0.885
+              ],
+              [
+                0.050217911512058566,
+                0.29924749148164187,
+                0.9550200000000001
+              ]
+            ]
+          },
+          "wooden_cabinet_1": {
+            "position": [
+              0.021418856895004,
+              -0.2455046012206391,
+              0.905
+            ],
+            "quat": [
+              6.123233995736766e-17,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              [
+                -0.10981114310499601,
+                -0.3572088956039557,
+                0.9095868098380617
+              ],
+              [
+                0.14476885689500402,
+                -0.1461946012206391,
+                1.12799
+              ]
+            ]
+          },
+          "moka_pot_1": {
+            "position": [
+              0.060337328454933226,
+              0.018515821142678766,
+              0.97
+            ],
+            "quat": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              [
+                0.01948916041801478,
+                -0.07271224291029033,
+                0.90389
+              ],
+              [
+                0.10090549649185167,
+                0.07482582114267877,
+                1.05569
+              ]
+            ]
+          },
+          "akita_black_bowl_1": {
+            "position": [
+              -0.09873036658827772,
+              0.007992482292577848,
+              0.97
+            ],
+            "quat": [
+              0.7071067811865475,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ],
+            "bounds": [
+              [
+                -0.1518438967779592,
+                -0.04579143060688896,
+                0.97159
+              ],
+              [
+                -0.04483669540796109,
+                0.06140850971718904,
+                1.0221319285234878
+              ]
+            ]
+          }
+        },
+        "initial_robot_root": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "no_coordinate_offsets": true,
+        "postwarmup_robot_penetrations": []
+      }
+    },
+    {
+      "state_index": 2,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "anchor_source_initial_cross_entity_penetrations": [],
+      "accepted_source_native_initial_contacts": [],
+      "invalid_initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "akita_black_bowl_1",
+          "native_pre_to_post_translation_m": 0.07159293488414344,
+          "native_pre_to_post_angular_rad": 2.7949148919819096e-05,
+          "postwarmup_donor_position_error_m": 2.2551405187698492e-17,
+          "postwarmup_donor_angular_error_rad": 2.3948523560631217e-16,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "flat_stove_1",
+          "native_pre_to_post_translation_m": 0.0,
+          "native_pre_to_post_angular_rad": 0.0,
+          "postwarmup_donor_position_error_m": 0.0,
+          "postwarmup_donor_angular_error_rad": 0.0,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "moka_pot_1",
+          "native_pre_to_post_translation_m": 0.003892073071026087,
+          "native_pre_to_post_angular_rad": 4.613113662524584e-06,
+          "postwarmup_donor_position_error_m": 1.0719531881670953e-16,
+          "postwarmup_donor_angular_error_rad": 2.7612266589979485e-17,
+          "finite": true,
+          "passes": true
+        }
+      ],
+      "mask_areas": {
+        "knob_0:body_prefix:flat_stove_1_button": 673,
+        "object_1:body_prefix:moka_pot_1": 2239,
+        "target_1:body_prefix:flat_stove_1_burner": 4053,
+        "object_2:body_prefix:akita_black_bowl_1": 619,
+        "target_2:body_prefix:wooden_cabinet_1": 14100
+      },
+      "fixture_replay_error_m": 0.0,
+      "straight_corridor_diagnostics": [],
+      "transfers": [
+        {
+          "target_entity": "flat_stove_1",
+          "donor_entity": "flat_stove_1",
+          "donor_world_pos": [
+            -0.20831880697669303,
+            0.196909972801008,
+            0.905
+          ],
+          "realized_world_pos": [
+            -0.20831880697669303,
+            0.196909972801008,
+            0.905
+          ],
+          "robot_frame_xyz": [
+            0.451681193023307,
+            0.196909972801008,
+            -0.007000000000000006
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "initial_knob_off": {
+            "joint": "flat_stove_1_button",
+            "qpos": -0.005,
+            "root_pose_unchanged": true
+          },
+          "donor_key": "K3"
+        },
+        {
+          "target_entity": "wooden_cabinet_1",
+          "donor_entity": "wooden_cabinet_1",
+          "donor_world_pos": [
+            0.027729543392293308,
+            -0.23611122644471083,
+            0.905
+          ],
+          "realized_world_pos": [
+            0.027729543392293277,
+            -0.23611122644471083,
+            0.905
+          ],
+          "robot_frame_xyz": [
+            0.6877295433922933,
+            -0.23611122644471083,
+            -0.007000000000000006
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "initial_drawers_closed": {
+            "wooden_cabinet_1_bottom_region": {
+              "region": "wooden_cabinet_1_bottom_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "bottom",
+              "joint_name": "wooden_cabinet_1_bottom_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_bottom",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208,
+                209
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g32",
+                "wooden_cabinet_1_g33",
+                "wooden_cabinet_1_g34",
+                "wooden_cabinet_1_g35",
+                "wooden_cabinet_1_g36",
+                "wooden_cabinet_1_g37",
+                "wooden_cabinet_1_g38",
+                "wooden_cabinet_1_g39",
+                "wooden_cabinet_1_g40",
+                "wooden_cabinet_1_g41",
+                "wooden_cabinet_1_g42"
+              ]
+            },
+            "wooden_cabinet_1_middle_region": {
+              "region": "wooden_cabinet_1_middle_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "middle",
+              "joint_name": "wooden_cabinet_1_middle_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_middle",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                188,
+                189,
+                190,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g21",
+                "wooden_cabinet_1_g22",
+                "wooden_cabinet_1_g23",
+                "wooden_cabinet_1_g24",
+                "wooden_cabinet_1_g25",
+                "wooden_cabinet_1_g26",
+                "wooden_cabinet_1_g27",
+                "wooden_cabinet_1_g28",
+                "wooden_cabinet_1_g29",
+                "wooden_cabinet_1_g30",
+                "wooden_cabinet_1_g31"
+              ]
+            },
+            "wooden_cabinet_1_top_region": {
+              "region": "wooden_cabinet_1_top_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "top",
+              "joint_name": "wooden_cabinet_1_top_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_top",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183,
+                184,
+                185,
+                186,
+                187
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g10",
+                "wooden_cabinet_1_g11",
+                "wooden_cabinet_1_g12",
+                "wooden_cabinet_1_g13",
+                "wooden_cabinet_1_g14",
+                "wooden_cabinet_1_g15",
+                "wooden_cabinet_1_g16",
+                "wooden_cabinet_1_g17",
+                "wooden_cabinet_1_g18",
+                "wooden_cabinet_1_g19",
+                "wooden_cabinet_1_g20"
+              ]
+            }
+          },
+          "donor_key": "GOAL_TOP"
+        },
+        {
+          "target_entity": "moka_pot_1",
+          "donor_entity": "moka_pot_1",
+          "donor_world_pos": [
+            0.04702480677981297,
+            0.00045011592268735107,
+            0.97
+          ],
+          "realized_world_pos": [
+            0.04702480677981302,
+            0.00045011592268735107,
+            0.97
+          ],
+          "robot_frame_xyz": [
+            0.707024806779813,
+            0.00045011592268735107,
+            0.05799999999999994
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "donor_key": "K3"
+        },
+        {
+          "target_entity": "akita_black_bowl_1",
+          "donor_entity": "akita_black_bowl_1",
+          "donor_world_pos": [
+            -0.07986385805845708,
+            -0.01354293710782216,
+            0.97
+          ],
+          "realized_world_pos": [
+            -0.07986385805845708,
+            -0.01354293710782216,
+            0.97
+          ],
+          "robot_frame_xyz": [
+            0.580136141941543,
+            -0.01354293710782216,
+            0.05799999999999994
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 2.220446049250313e-16,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "donor_key": "GOAL_TOP"
+        }
+      ],
+      "robot_control_and_drawer_sweep": {
+        "state_index": 2,
+        "passes": true,
+        "initial_robot_penetrations": [],
+        "knob_sweep": {
+          "samples": 41,
+          "initial_qpos": -0.005,
+          "endpoint_qpos": 2.1,
+          "cross_object_penetrations": [],
+          "stationary_robot_penetrations": [],
+          "passes": true
+        },
+        "drawer_descriptor": {
+          "region": "wooden_cabinet_1_top_region",
+          "fixture": "wooden_cabinet_1",
+          "slot": "top",
+          "joint_name": "wooden_cabinet_1_top_level",
+          "moving_body_name": "wooden_cabinet_1_cabinet_top",
+          "joint_min": -0.16,
+          "joint_max": 0.01,
+          "open_endpoint": -0.16,
+          "closed_endpoint": 0.01,
+          "moving_geom_ids": [
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "moving_geom_names": [
+            "wooden_cabinet_1_g10",
+            "wooden_cabinet_1_g11",
+            "wooden_cabinet_1_g12",
+            "wooden_cabinet_1_g13",
+            "wooden_cabinet_1_g14",
+            "wooden_cabinet_1_g15",
+            "wooden_cabinet_1_g16",
+            "wooden_cabinet_1_g17",
+            "wooden_cabinet_1_g18",
+            "wooden_cabinet_1_g19",
+            "wooden_cabinet_1_g20"
+          ]
+        },
+        "drawer_full_open_sweep": {
+          "samples": 41,
+          "initial_qpos": 0.01,
+          "endpoint_qpos": -0.16,
+          "cross_object_penetrations": [
+            {
+              "sample": 39,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0017786576326018167,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 39,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0017786576326018157,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 39,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0017786576326018167,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 39,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0017786576326018157,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 40,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 40,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 40,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 40,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            }
+          ],
+          "stationary_robot_penetrations": [],
+          "passes": false
+        },
+        "drawer_open_required": false,
+        "native_open_at_full_endpoint": true,
+        "opened_bowl_agent_mask_pixels": 180,
+        "opened_bowl_visibility_note": "Visibility diagnostic from initial robot pose, not a hard learned-trajectory gate; actual wrist viewpoint changes after opening.",
+        "opened_cabinet_vs_stove_xy_footprint_overlap": false,
+        "poses": {
+          "flat_stove_1": {
+            "position": [
+              -0.20831880697669303,
+              0.196909972801008,
+              0.905
+            ],
+            "quat": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bounds": [
+              [
+                -0.2604030858791534,
+                0.101909972801008,
+                0.885
+              ],
+              [
+                0.03668119302330697,
+                0.291909972801008,
+                0.9550200000000001
+              ]
+            ]
+          },
+          "wooden_cabinet_1": {
+            "position": [
+              0.027729543392293277,
+              -0.23611122644471083,
+              0.905
+            ],
+            "quat": [
+              6.123233995736766e-17,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              [
+                -0.10350045660770674,
+                -0.3478155208280274,
+                0.9095868098380617
+              ],
+              [
+                0.1510795433922933,
+                -0.13680122644471082,
+                1.12799
+              ]
+            ]
+          },
+          "moka_pot_1": {
+            "position": [
+              0.04702480677981302,
+              0.00045011592268735107,
+              0.97
+            ],
+            "quat": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              [
+                0.006176638742894579,
+                -0.09077794813028174,
+                0.90389
+              ],
+              [
+                0.08759297481673146,
+                0.05676011592268735,
+                1.05569
+              ]
+            ]
+          },
+          "akita_black_bowl_1": {
+            "position": [
+              -0.07986385805845708,
+              -0.01354293710782216,
+              0.97
+            ],
+            "quat": [
+              0.7071067811865475,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ],
+            "bounds": [
+              [
+                -0.13297738824813857,
+                -0.06732685000728897,
+                0.97159
+              ],
+              [
+                -0.025970186878140455,
+                0.03987309031678903,
+                1.0221319285234878
+              ]
+            ]
+          }
+        },
+        "initial_robot_root": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "no_coordinate_offsets": true,
+        "postwarmup_robot_penetrations": []
+      }
+    },
+    {
+      "state_index": 3,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "anchor_source_initial_cross_entity_penetrations": [],
+      "accepted_source_native_initial_contacts": [],
+      "invalid_initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "akita_black_bowl_1",
+          "native_pre_to_post_translation_m": 0.07159293488414344,
+          "native_pre_to_post_angular_rad": 2.794914891981898e-05,
+          "postwarmup_donor_position_error_m": 2.5153490401663703e-17,
+          "postwarmup_donor_angular_error_rad": 2.394483468494006e-16,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "flat_stove_1",
+          "native_pre_to_post_translation_m": 0.0,
+          "native_pre_to_post_angular_rad": 0.0,
+          "postwarmup_donor_position_error_m": 0.0,
+          "postwarmup_donor_angular_error_rad": 0.0,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "moka_pot_1",
+          "native_pre_to_post_translation_m": 0.003892073071026087,
+          "native_pre_to_post_angular_rad": 4.613113662524539e-06,
+          "postwarmup_donor_position_error_m": 1.5515838457795457e-17,
+          "postwarmup_donor_angular_error_rad": 8.140287276855e-18,
+          "finite": true,
+          "passes": true
+        }
+      ],
+      "mask_areas": {
+        "knob_0:body_prefix:flat_stove_1_button": 682,
+        "object_1:body_prefix:moka_pot_1": 2255,
+        "target_1:body_prefix:flat_stove_1_burner": 3978,
+        "object_2:body_prefix:akita_black_bowl_1": 699,
+        "target_2:body_prefix:wooden_cabinet_1": 13805
+      },
+      "fixture_replay_error_m": 2.7755575615628914e-17,
+      "straight_corridor_diagnostics": [],
+      "transfers": [
+        {
+          "target_entity": "flat_stove_1",
+          "donor_entity": "flat_stove_1",
+          "donor_world_pos": [
+            -0.20992103467344173,
+            0.20024384526771555,
+            0.905
+          ],
+          "realized_world_pos": [
+            -0.2099210346734417,
+            0.20024384526771555,
+            0.905
+          ],
+          "robot_frame_xyz": [
+            0.45007896532655833,
+            0.20024384526771555,
+            -0.007000000000000006
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "initial_knob_off": {
+            "joint": "flat_stove_1_button",
+            "qpos": -0.005,
+            "root_pose_unchanged": true
+          },
+          "donor_key": "K3"
+        },
+        {
+          "target_entity": "wooden_cabinet_1",
+          "donor_entity": "wooden_cabinet_1",
+          "donor_world_pos": [
+            0.028836663488459924,
+            -0.24131972013333414,
+            0.905
+          ],
+          "realized_world_pos": [
+            0.028836663488459924,
+            -0.24131972013333414,
+            0.905
+          ],
+          "robot_frame_xyz": [
+            0.68883666348846,
+            -0.24131972013333414,
+            -0.007000000000000006
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "initial_drawers_closed": {
+            "wooden_cabinet_1_bottom_region": {
+              "region": "wooden_cabinet_1_bottom_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "bottom",
+              "joint_name": "wooden_cabinet_1_bottom_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_bottom",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208,
+                209
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g32",
+                "wooden_cabinet_1_g33",
+                "wooden_cabinet_1_g34",
+                "wooden_cabinet_1_g35",
+                "wooden_cabinet_1_g36",
+                "wooden_cabinet_1_g37",
+                "wooden_cabinet_1_g38",
+                "wooden_cabinet_1_g39",
+                "wooden_cabinet_1_g40",
+                "wooden_cabinet_1_g41",
+                "wooden_cabinet_1_g42"
+              ]
+            },
+            "wooden_cabinet_1_middle_region": {
+              "region": "wooden_cabinet_1_middle_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "middle",
+              "joint_name": "wooden_cabinet_1_middle_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_middle",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                188,
+                189,
+                190,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g21",
+                "wooden_cabinet_1_g22",
+                "wooden_cabinet_1_g23",
+                "wooden_cabinet_1_g24",
+                "wooden_cabinet_1_g25",
+                "wooden_cabinet_1_g26",
+                "wooden_cabinet_1_g27",
+                "wooden_cabinet_1_g28",
+                "wooden_cabinet_1_g29",
+                "wooden_cabinet_1_g30",
+                "wooden_cabinet_1_g31"
+              ]
+            },
+            "wooden_cabinet_1_top_region": {
+              "region": "wooden_cabinet_1_top_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "top",
+              "joint_name": "wooden_cabinet_1_top_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_top",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183,
+                184,
+                185,
+                186,
+                187
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g10",
+                "wooden_cabinet_1_g11",
+                "wooden_cabinet_1_g12",
+                "wooden_cabinet_1_g13",
+                "wooden_cabinet_1_g14",
+                "wooden_cabinet_1_g15",
+                "wooden_cabinet_1_g16",
+                "wooden_cabinet_1_g17",
+                "wooden_cabinet_1_g18",
+                "wooden_cabinet_1_g19",
+                "wooden_cabinet_1_g20"
+              ]
+            }
+          },
+          "donor_key": "GOAL_TOP"
+        },
+        {
+          "target_entity": "moka_pot_1",
+          "donor_entity": "moka_pot_1",
+          "donor_world_pos": [
+            0.05196854895481652,
+            -0.006806773798151391,
+            0.97
+          ],
+          "realized_world_pos": [
+            0.05196854895481651,
+            -0.006806773798151391,
+            0.97
+          ],
+          "robot_frame_xyz": [
+            0.7119685489548165,
+            -0.006806773798151391,
+            0.05799999999999994
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "donor_key": "K3"
+        },
+        {
+          "target_entity": "akita_black_bowl_1",
+          "donor_entity": "akita_black_bowl_1",
+          "donor_world_pos": [
+            -0.08183617017873203,
+            -0.0021884363272566074,
+            0.97
+          ],
+          "realized_world_pos": [
+            -0.08183617017873202,
+            -0.0021884363272566074,
+            0.97
+          ],
+          "robot_frame_xyz": [
+            0.578163829821268,
+            -0.0021884363272566074,
+            0.05799999999999994
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 2.220446049250313e-16,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "donor_key": "GOAL_TOP"
+        }
+      ],
+      "robot_control_and_drawer_sweep": {
+        "state_index": 3,
+        "passes": true,
+        "initial_robot_penetrations": [],
+        "knob_sweep": {
+          "samples": 41,
+          "initial_qpos": -0.005,
+          "endpoint_qpos": 2.1,
+          "cross_object_penetrations": [],
+          "stationary_robot_penetrations": [],
+          "passes": true
+        },
+        "drawer_descriptor": {
+          "region": "wooden_cabinet_1_top_region",
+          "fixture": "wooden_cabinet_1",
+          "slot": "top",
+          "joint_name": "wooden_cabinet_1_top_level",
+          "moving_body_name": "wooden_cabinet_1_cabinet_top",
+          "joint_min": -0.16,
+          "joint_max": 0.01,
+          "open_endpoint": -0.16,
+          "closed_endpoint": 0.01,
+          "moving_geom_ids": [
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "moving_geom_names": [
+            "wooden_cabinet_1_g10",
+            "wooden_cabinet_1_g11",
+            "wooden_cabinet_1_g12",
+            "wooden_cabinet_1_g13",
+            "wooden_cabinet_1_g14",
+            "wooden_cabinet_1_g15",
+            "wooden_cabinet_1_g16",
+            "wooden_cabinet_1_g17",
+            "wooden_cabinet_1_g18",
+            "wooden_cabinet_1_g19",
+            "wooden_cabinet_1_g20"
+          ]
+        },
+        "drawer_full_open_sweep": {
+          "samples": 41,
+          "initial_qpos": 0.01,
+          "endpoint_qpos": -0.16,
+          "cross_object_penetrations": [
+            {
+              "sample": 39,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 39,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 39,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 39,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 40,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 40,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 40,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            },
+            {
+              "sample": 40,
+              "a": "moka_pot_1",
+              "b": "wooden_cabinet_1",
+              "depth_m": 0.0018699999999999342,
+              "geom_a": "moka_pot_1_g16",
+              "geom_b": "wooden_cabinet_1_g11"
+            }
+          ],
+          "stationary_robot_penetrations": [],
+          "passes": false
+        },
+        "drawer_open_required": false,
+        "native_open_at_full_endpoint": true,
+        "opened_bowl_agent_mask_pixels": 370,
+        "opened_bowl_visibility_note": "Visibility diagnostic from initial robot pose, not a hard learned-trajectory gate; actual wrist viewpoint changes after opening.",
+        "opened_cabinet_vs_stove_xy_footprint_overlap": false,
+        "poses": {
+          "flat_stove_1": {
+            "position": [
+              -0.2099210346734417,
+              0.20024384526771555,
+              0.905
+            ],
+            "quat": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bounds": [
+              [
+                -0.26200531357590207,
+                0.10524384526771555,
+                0.885
+              ],
+              [
+                0.0350789653265583,
+                0.2952438452677155,
+                0.9550200000000001
+              ]
+            ]
+          },
+          "wooden_cabinet_1": {
+            "position": [
+              0.028836663488459924,
+              -0.24131972013333414,
+              0.905
+            ],
+            "quat": [
+              6.123233995736766e-17,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              [
+                -0.10239333651154009,
+                -0.3530240145166507,
+                0.9095868098380617
+              ],
+              [
+                0.15218666348845994,
+                -0.14200972013333413,
+                1.12799
+              ]
+            ]
+          },
+          "moka_pot_1": {
+            "position": [
+              0.05196854895481651,
+              -0.006806773798151391,
+              0.97
+            ],
+            "quat": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              [
+                0.011120380917898064,
+                -0.09803483785112048,
+                0.90389
+              ],
+              [
+                0.09253671699173495,
+                0.04950322620184861,
+                1.05569
+              ]
+            ]
+          },
+          "akita_black_bowl_1": {
+            "position": [
+              -0.08183617017873202,
+              -0.0021884363272566074,
+              0.97
+            ],
+            "quat": [
+              0.7071067811865475,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ],
+            "bounds": [
+              [
+                -0.1349497003684135,
+                -0.05597234922672341,
+                0.97159
+              ],
+              [
+                -0.027942498998415388,
+                0.051227591097354586,
+                1.0221319285234878
+              ]
+            ]
+          }
+        },
+        "initial_robot_root": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "no_coordinate_offsets": true,
+        "postwarmup_robot_penetrations": []
+      }
+    },
+    {
+      "state_index": 4,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "anchor_source_initial_cross_entity_penetrations": [],
+      "accepted_source_native_initial_contacts": [],
+      "invalid_initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "akita_black_bowl_1",
+          "native_pre_to_post_translation_m": 0.07159293488414344,
+          "native_pre_to_post_angular_rad": 2.7949148919901004e-05,
+          "postwarmup_donor_position_error_m": 1.0747238460009962e-16,
+          "postwarmup_donor_angular_error_rad": 1.0740030399840659e-18,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "flat_stove_1",
+          "native_pre_to_post_translation_m": 0.0,
+          "native_pre_to_post_angular_rad": 0.0,
+          "postwarmup_donor_position_error_m": 0.0,
+          "postwarmup_donor_angular_error_rad": 0.0,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "moka_pot_1",
+          "native_pre_to_post_translation_m": 0.003892073071026087,
+          "native_pre_to_post_angular_rad": 4.613113662524428e-06,
+          "postwarmup_donor_position_error_m": 2.110382192020081e-17,
+          "postwarmup_donor_angular_error_rad": 2.0282364605376334e-18,
+          "finite": true,
+          "passes": true
+        }
+      ],
+      "mask_areas": {
+        "knob_0:body_prefix:flat_stove_1_button": 704,
+        "object_1:body_prefix:moka_pot_1": 2179,
+        "target_1:body_prefix:flat_stove_1_burner": 4191,
+        "object_2:body_prefix:akita_black_bowl_1": 613,
+        "target_2:body_prefix:wooden_cabinet_1": 13386
+      },
+      "fixture_replay_error_m": 0.0,
+      "straight_corridor_diagnostics": [],
+      "transfers": [
+        {
+          "target_entity": "flat_stove_1",
+          "donor_entity": "flat_stove_1",
+          "donor_world_pos": [
+            -0.1921219165942984,
+            0.2071430849414566,
+            0.905
+          ],
+          "realized_world_pos": [
+            -0.1921219165942984,
+            0.2071430849414566,
+            0.905
+          ],
+          "robot_frame_xyz": [
+            0.46787808340570164,
+            0.2071430849414566,
+            -0.007000000000000006
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "initial_knob_off": {
+            "joint": "flat_stove_1_button",
+            "qpos": -0.005,
+            "root_pose_unchanged": true
+          },
+          "donor_key": "K3"
+        },
+        {
+          "target_entity": "wooden_cabinet_1",
+          "donor_entity": "wooden_cabinet_1",
+          "donor_world_pos": [
+            0.022233224639893207,
+            -0.24832093713355885,
+            0.905
+          ],
+          "realized_world_pos": [
+            0.02223322463989319,
+            -0.24832093713355885,
+            0.905
+          ],
+          "robot_frame_xyz": [
+            0.6822332246398932,
+            -0.24832093713355885,
+            -0.007000000000000006
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "initial_drawers_closed": {
+            "wooden_cabinet_1_bottom_region": {
+              "region": "wooden_cabinet_1_bottom_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "bottom",
+              "joint_name": "wooden_cabinet_1_bottom_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_bottom",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                199,
+                200,
+                201,
+                202,
+                203,
+                204,
+                205,
+                206,
+                207,
+                208,
+                209
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g32",
+                "wooden_cabinet_1_g33",
+                "wooden_cabinet_1_g34",
+                "wooden_cabinet_1_g35",
+                "wooden_cabinet_1_g36",
+                "wooden_cabinet_1_g37",
+                "wooden_cabinet_1_g38",
+                "wooden_cabinet_1_g39",
+                "wooden_cabinet_1_g40",
+                "wooden_cabinet_1_g41",
+                "wooden_cabinet_1_g42"
+              ]
+            },
+            "wooden_cabinet_1_middle_region": {
+              "region": "wooden_cabinet_1_middle_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "middle",
+              "joint_name": "wooden_cabinet_1_middle_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_middle",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                188,
+                189,
+                190,
+                191,
+                192,
+                193,
+                194,
+                195,
+                196,
+                197,
+                198
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g21",
+                "wooden_cabinet_1_g22",
+                "wooden_cabinet_1_g23",
+                "wooden_cabinet_1_g24",
+                "wooden_cabinet_1_g25",
+                "wooden_cabinet_1_g26",
+                "wooden_cabinet_1_g27",
+                "wooden_cabinet_1_g28",
+                "wooden_cabinet_1_g29",
+                "wooden_cabinet_1_g30",
+                "wooden_cabinet_1_g31"
+              ]
+            },
+            "wooden_cabinet_1_top_region": {
+              "region": "wooden_cabinet_1_top_region",
+              "fixture": "wooden_cabinet_1",
+              "slot": "top",
+              "joint_name": "wooden_cabinet_1_top_level",
+              "moving_body_name": "wooden_cabinet_1_cabinet_top",
+              "joint_min": -0.16,
+              "joint_max": 0.01,
+              "open_endpoint": -0.16,
+              "closed_endpoint": 0.01,
+              "moving_geom_ids": [
+                177,
+                178,
+                179,
+                180,
+                181,
+                182,
+                183,
+                184,
+                185,
+                186,
+                187
+              ],
+              "moving_geom_names": [
+                "wooden_cabinet_1_g10",
+                "wooden_cabinet_1_g11",
+                "wooden_cabinet_1_g12",
+                "wooden_cabinet_1_g13",
+                "wooden_cabinet_1_g14",
+                "wooden_cabinet_1_g15",
+                "wooden_cabinet_1_g16",
+                "wooden_cabinet_1_g17",
+                "wooden_cabinet_1_g18",
+                "wooden_cabinet_1_g19",
+                "wooden_cabinet_1_g20"
+              ]
+            }
+          },
+          "donor_key": "GOAL_TOP"
+        },
+        {
+          "target_entity": "moka_pot_1",
+          "donor_entity": "moka_pot_1",
+          "donor_world_pos": [
+            0.030045783050460996,
+            0.017947436661373432,
+            0.97
+          ],
+          "realized_world_pos": [
+            0.030045783050461017,
+            0.017947436661373432,
+            0.97
+          ],
+          "robot_frame_xyz": [
+            0.690045783050461,
+            0.017947436661373432,
+            0.05799999999999994
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "donor_key": "K3"
+        },
+        {
+          "target_entity": "akita_black_bowl_1",
+          "donor_entity": "akita_black_bowl_1",
+          "donor_world_pos": [
+            -0.09766966996494747,
+            -0.0071926031429303,
+            0.97
+          ],
+          "realized_world_pos": [
+            -0.09766966996494741,
+            -0.0071926031429303,
+            0.97
+          ],
+          "robot_frame_xyz": [
+            0.5623303300350526,
+            -0.0071926031429303,
+            0.05799999999999994
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 2.220446049250313e-16,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "free_joint_absolute_world_restore_skipped": true,
+          "donor_key": "GOAL_TOP"
+        }
+      ],
+      "robot_control_and_drawer_sweep": {
+        "state_index": 4,
+        "passes": true,
+        "initial_robot_penetrations": [],
+        "knob_sweep": {
+          "samples": 41,
+          "initial_qpos": -0.005,
+          "endpoint_qpos": 2.1,
+          "cross_object_penetrations": [],
+          "stationary_robot_penetrations": [],
+          "passes": true
+        },
+        "drawer_descriptor": {
+          "region": "wooden_cabinet_1_top_region",
+          "fixture": "wooden_cabinet_1",
+          "slot": "top",
+          "joint_name": "wooden_cabinet_1_top_level",
+          "moving_body_name": "wooden_cabinet_1_cabinet_top",
+          "joint_min": -0.16,
+          "joint_max": 0.01,
+          "open_endpoint": -0.16,
+          "closed_endpoint": 0.01,
+          "moving_geom_ids": [
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187
+          ],
+          "moving_geom_names": [
+            "wooden_cabinet_1_g10",
+            "wooden_cabinet_1_g11",
+            "wooden_cabinet_1_g12",
+            "wooden_cabinet_1_g13",
+            "wooden_cabinet_1_g14",
+            "wooden_cabinet_1_g15",
+            "wooden_cabinet_1_g16",
+            "wooden_cabinet_1_g17",
+            "wooden_cabinet_1_g18",
+            "wooden_cabinet_1_g19",
+            "wooden_cabinet_1_g20"
+          ]
+        },
+        "drawer_full_open_sweep": {
+          "samples": 41,
+          "initial_qpos": 0.01,
+          "endpoint_qpos": -0.16,
+          "cross_object_penetrations": [],
+          "stationary_robot_penetrations": [],
+          "passes": true
+        },
+        "drawer_open_required": false,
+        "native_open_at_full_endpoint": true,
+        "opened_bowl_agent_mask_pixels": 411,
+        "opened_bowl_visibility_note": "Visibility diagnostic from initial robot pose, not a hard learned-trajectory gate; actual wrist viewpoint changes after opening.",
+        "opened_cabinet_vs_stove_xy_footprint_overlap": false,
+        "poses": {
+          "flat_stove_1": {
+            "position": [
+              -0.1921219165942984,
+              0.2071430849414566,
+              0.905
+            ],
+            "quat": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bounds": [
+              [
+                -0.24420619549675873,
+                0.11214308494145661,
+                0.885
+              ],
+              [
+                0.052878083405701604,
+                0.3021430849414566,
+                0.9550200000000001
+              ]
+            ]
+          },
+          "wooden_cabinet_1": {
+            "position": [
+              0.02223322463989319,
+              -0.24832093713355885,
+              0.905
+            ],
+            "quat": [
+              6.123233995736766e-17,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              [
+                -0.10899677536010682,
+                -0.36002523151687543,
+                0.9095868098380617
+              ],
+              [
+                0.1455832246398932,
+                -0.14901093713355884,
+                1.12799
+              ]
+            ]
+          },
+          "moka_pot_1": {
+            "position": [
+              0.030045783050461017,
+              0.017947436661373432,
+              0.97
+            ],
+            "quat": [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bounds": [
+              [
+                -0.010802384986457426,
+                -0.07328062739159566,
+                0.90389
+              ],
+              [
+                0.07061395108737946,
+                0.07425743666137344,
+                1.05569
+              ]
+            ]
+          },
+          "akita_black_bowl_1": {
+            "position": [
+              -0.09766966996494741,
+              -0.0071926031429303,
+              0.97
+            ],
+            "quat": [
+              0.7071067811865475,
+              0.0,
+              0.0,
+              0.7071067811865477
+            ],
+            "bounds": [
+              [
+                -0.1507832001546289,
+                -0.0609765160423971,
+                0.97159
+              ],
+              [
+                -0.04377599878463079,
+                0.04622342428168089,
+                1.0221319285234878
+              ]
+            ]
+          }
+        },
+        "initial_robot_root": [
+          -0.66,
+          0.0,
+          0.912
+        ],
+        "no_coordinate_offsets": true,
+        "postwarmup_robot_penetrations": []
+      }
+    }
+  ]
+}

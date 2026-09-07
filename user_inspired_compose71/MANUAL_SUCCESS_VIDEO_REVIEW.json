@@ -1,0 +1,20 @@
+{
+  "review_date": "2026-09-06",
+  "reviewed_ids": [
+    "UCOMP_012",
+    "UCOMP_036",
+    "UCOMP_037",
+    "UCOMP_038",
+    "UCOMP_040",
+    "UCOMP_044",
+    "UCOMP_046",
+    "UCOMP_050",
+    "UCOMP_052",
+    "UCOMP_060",
+    "UCOMP_062",
+    "UCOMP_066",
+    "UCOMP_068"
+  ],
+  "criterion": "deliberate ordered execution with prior-goal preservation; final release is not required by native LIBERO success",
+  "status": "pass"
+}

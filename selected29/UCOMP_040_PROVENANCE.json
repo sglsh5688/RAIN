@@ -1,0 +1,37 @@
+{
+  "schema": "selected57_ucomp040_provenance_v1",
+  "task_id": "UCOMP_040",
+  "order": 57,
+  "category": "Compose",
+  "instruction": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.",
+  "goal_atoms": [
+    "in(tomato_sauce_1, basket_1_contain_region)",
+    "on(white_yellow_mug_1,plate_1)"
+  ],
+  "source_benchmark": "LiberoUserTasks/UserInspiredComposeFollowup20260906",
+  "source_result": "rain_ms_maskaug_gt_user_inspired_compose_followup26_5ep_20260906/tasks/all26/UCOMP_040/results.json",
+  "rain_successes": 3,
+  "rain_episodes": 5,
+  "rain_success_episode_indices": [
+    0,
+    1,
+    2
+  ],
+  "manual_review": "pass",
+  "user_selected_on": "2026-09-07",
+  "pi05_status": "pending_not_evaluated_no_outcome_claimed",
+  "source_bundle_tree_sha256": "58d66e67c5913b408e34534259152f9893056f935571f2ab4f4d22c73841f57f",
+  "source_result_sha256": "fea107c5e38844b4f9fce83ba361e0538be739baa6046a45aa74c75e0a71c1df",
+  "source_comparison_sha256": "5fc243d6bffc01e31662d2972317e2112e14f73d4f17d6d8da2b8a5e4fb934ac",
+  "source_success_video_sha256": {
+    "UCOMP_040_ep000_ok.mp4": "b96ec4cd889ddf8a5a95170cead68df2977d2b039c872c9e40df5f89be49e0d7",
+    "UCOMP_040_ep001_ok.mp4": "dee20a7cadb856550489f1e104055bda24b17fdce59d7bfe619b331dfac7ae8f",
+    "UCOMP_040_ep002_ok.mp4": "333b8b67d0a18b5e4b1228c3b8adf76f01d47c17f4fff3f6c27e309384321c9a"
+  },
+  "strict_ordered_native_events": true,
+  "all_final_bddl_required": true,
+  "downstream_preservation_manual_review_passed": true,
+  "compose_final_tc_gate": false,
+  "prior_selected56_unchanged": true,
+  "historical_result_rerun_or_rescored": false
+}

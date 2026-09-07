@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 20 Adapt + 16 Compose (56 total)**; VCN35_004 is selected with its unchanged strict RAIN 3/5 result and π0.5 pending. Historical evaluations, task definitions, masked comparisons, and on-demand videos are retained.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 20 Adapt + 17 Compose (57 total)**; UCOMP_040 is selected with its unchanged strict RAIN 3/5 result and pi0.5 pending. Historical evaluations, task definitions, masked comparisons, and on-demand videos are retained.
 <!-- SELECTED29_README_END -->
 
 <!-- MICROWAVE_BODY_README_START -->

@@ -1,16 +1,16 @@
 {
-  "review_date": "2026-09-06",
-  "scope": "valid_compose_new strict-success reviewer pool through the first reviewed Batch37 success",
+  "review_date": "2026-09-07",
+  "scope": "valid_compose_new strict-success reviewer pool through the user selection of VCN35_004",
   "accepted_ids": [
     "VCN8_008",
     "VCN9_010",
     "VCN10_001",
     "VCN19_020",
-    "VCN21_001"
+    "VCN21_001",
+    "VCN35_004"
   ],
   "pending_review_ids": [
     "VCN35_002",
-    "VCN35_004",
     "VCN35_005",
     "VCN37_001"
   ],
@@ -55,6 +55,7 @@
     "semantic_redundancy": "Keep the strongest representative of one pattern and reject weaker object substitutions or copies of LIBERO-10 patterns.",
     "final_compose_tc_gate": false,
     "gripper_trajectory": "soft_prior_not_exclusion",
-    "downstream_preservation": "A later subtask must not knock over, displace, or otherwise invalidate an object placement produced by an earlier subtask, even when the final native predicates remain true."
+    "downstream_preservation": "A later subtask must not knock over, displace, or otherwise invalidate an object placement produced by an earlier subtask, even when the final native predicates remain true.",
+    "avoid_pudding_beside_plate_in_compose": "Do not generate new Compose tasks whose requested action places chocolate pudding beside, left of, or right of a plate unless the user explicitly requests an exception. Batch61 showed dynamic path interference even after a static physics screen passed."
   }
 }

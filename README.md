@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 20 Adapt + 15 Compose (55 total)**; historical RAIN records, a separate official π0.5 LIBERO-40 5-episode evaluation (all 20 Adapt tasks complete), representative success/failure videos, masked comparisons and downloadable definitions.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 20 Adapt + 16 Compose (56 total)**; VCN35_004 is selected with its unchanged strict RAIN 3/5 result and π0.5 pending. Historical evaluations, task definitions, masked comparisons, and on-demand videos are retained.
 <!-- SELECTED29_README_END -->
 
 <!-- MICROWAVE_BODY_README_START -->

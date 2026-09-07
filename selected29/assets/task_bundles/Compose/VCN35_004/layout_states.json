@@ -1,0 +1,1022 @@
+{
+  "validation_version": "batch35_shape_cross_target_exact_same_index_v1",
+  "physical_group": "soup_right_plus_ramekin_basket",
+  "candidate_ids": [
+    "VCN35_004"
+  ],
+  "valid_count": 5,
+  "selected_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "evaluator_wait_steps": 10,
+  "evaluator_wait_action": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "same_index_robot_frame_transfer": true,
+  "arbitrary_coordinate_offsets": false,
+  "support_only_z_correction": false,
+  "contact_depth_m": 0.0005,
+  "policy_evaluation_run": false,
+  "rows": [
+    {
+      "state_index": 0,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "alphabet_soup_1",
+          "native_pre_to_post_translation_m": 0.0,
+          "native_pre_to_post_angular_rad": 6.803453203487387e-17,
+          "postwarmup_donor_position_error_m": 1.3877787807814457e-17,
+          "postwarmup_donor_angular_error_rad": 7.217324518855931e-17,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "basket_1",
+          "native_pre_to_post_translation_m": 0.04780790742716467,
+          "native_pre_to_post_angular_rad": 0.004794173367519403,
+          "postwarmup_donor_position_error_m": 3.5385324076656666e-15,
+          "postwarmup_donor_angular_error_rad": 2.1982483713175513e-14,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "native_pre_to_post_translation_m": 5.564820138878016e-17,
+          "native_pre_to_post_angular_rad": 1.0836621175292357e-16,
+          "postwarmup_donor_position_error_m": 6.214294647234621e-17,
+          "postwarmup_donor_angular_error_rad": 1.337303233657532e-16,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "plate_2",
+          "native_pre_to_post_translation_m": 0.0,
+          "native_pre_to_post_angular_rad": 2.8205807450002165e-17,
+          "postwarmup_donor_position_error_m": 2.7755575615628914e-17,
+          "postwarmup_donor_angular_error_rad": 1.2521008758587838e-16,
+          "finite": true,
+          "passes": true
+        }
+      ],
+      "mask_areas": {
+        "step_1_round_object:body_prefix:glazed_rim_porcelain_ramekin_1": 943,
+        "step_1_basket_target:body_prefix:basket_1": 6913,
+        "step_2_cylinder_object:body_prefix:alphabet_soup_1": 1282,
+        "step_2_plate_target:body_prefix:plate_2": 3723
+      },
+      "fixture_replay_error_m": 0.0,
+      "straight_corridor_diagnostics": [],
+      "transfers": [
+        {
+          "target_entity": "alphabet_soup_1",
+          "donor_entity": "alphabet_soup_1",
+          "donor_world_pos": [
+            -0.1105809363052445,
+            -0.16326689448401702,
+            0.4751702612163866
+          ],
+          "realized_world_pos": [
+            -0.1105809363052445,
+            -0.16326689448401702,
+            0.4751702612163866
+          ],
+          "robot_frame_xyz": [
+            0.3994190636947555,
+            -0.16326689448401702,
+            0.05517026121638663
+          ],
+          "world_position_error_m": 1.3877787807814457e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "plate_1",
+          "donor_entity": "plate_1",
+          "donor_world_pos": [
+            0.14030655362402528,
+            -0.11422542912362266,
+            0.43927290817462056
+          ],
+          "realized_world_pos": [
+            0.14030655362402528,
+            -0.11422542912362266,
+            0.43927290817462056
+          ],
+          "robot_frame_xyz": [
+            0.6503065536240253,
+            -0.11422542912362266,
+            0.019272908174620573
+          ],
+          "world_position_error_m": 5.551115123125783e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "plate_2",
+          "donor_entity": "plate_2",
+          "donor_world_pos": [
+            0.12841817347626203,
+            0.0966837147497499,
+            0.43927290817462056
+          ],
+          "realized_world_pos": [
+            0.12841817347626203,
+            0.0966837147497499,
+            0.43927290817462056
+          ],
+          "robot_frame_xyz": [
+            0.6384181734762621,
+            0.0966837147497499,
+            0.019272908174620573
+          ],
+          "world_position_error_m": 2.7755575615628914e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "glazed_rim_porcelain_ramekin_1",
+          "donor_entity": "glazed_rim_porcelain_ramekin_1",
+          "donor_world_pos": [
+            -0.13187331107955122,
+            0.0009223703987969237,
+            0.43610484826223034
+          ],
+          "realized_world_pos": [
+            -0.13187331107955122,
+            0.0009223703987969237,
+            0.43610484826223034
+          ],
+          "robot_frame_xyz": [
+            0.37812668892044876,
+            0.0009223703987969237,
+            0.016104848262230353
+          ],
+          "world_position_error_m": 2.7755575615628914e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "RAMEKIN"
+        },
+        {
+          "target_entity": "basket_1",
+          "donor_entity": "basket_1",
+          "donor_world_pos": [
+            -0.002115741484281673,
+            0.2690198914964389,
+            0.48
+          ],
+          "realized_world_pos": [
+            -0.002115741484281673,
+            0.2690198914964389,
+            0.48
+          ],
+          "robot_frame_xyz": [
+            0.5078842585157184,
+            0.2690198914964389,
+            0.06
+          ],
+          "world_position_error_m": 5.377642775528102e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "BASKET"
+        }
+      ]
+    },
+    {
+      "state_index": 1,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "alphabet_soup_1",
+          "native_pre_to_post_translation_m": 2.498001805406602e-16,
+          "native_pre_to_post_angular_rad": 3.9512239491421173e-16,
+          "postwarmup_donor_position_error_m": 2.636779683484747e-16,
+          "postwarmup_donor_angular_error_rad": 3.977621747873199e-16,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "basket_1",
+          "native_pre_to_post_translation_m": 0.047807907427164675,
+          "native_pre_to_post_angular_rad": 0.004794173367519331,
+          "postwarmup_donor_position_error_m": 6.06447046068552e-15,
+          "postwarmup_donor_angular_error_rad": 2.953213964618814e-14,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "native_pre_to_post_translation_m": 0.0,
+          "native_pre_to_post_angular_rad": 3.861852639885705e-17,
+          "postwarmup_donor_position_error_m": 2.7755575615628914e-17,
+          "postwarmup_donor_angular_error_rad": 1.6387627997934122e-18,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "plate_2",
+          "native_pre_to_post_translation_m": 0.0,
+          "native_pre_to_post_angular_rad": 7.505073174391731e-17,
+          "postwarmup_donor_position_error_m": 2.7755575615628914e-17,
+          "postwarmup_donor_angular_error_rad": 2.5999743144396285e-16,
+          "finite": true,
+          "passes": true
+        }
+      ],
+      "mask_areas": {
+        "step_1_round_object:body_prefix:glazed_rim_porcelain_ramekin_1": 949,
+        "step_1_basket_target:body_prefix:basket_1": 7425,
+        "step_2_cylinder_object:body_prefix:alphabet_soup_1": 1332,
+        "step_2_plate_target:body_prefix:plate_2": 4299
+      },
+      "fixture_replay_error_m": 0.0,
+      "straight_corridor_diagnostics": [],
+      "transfers": [
+        {
+          "target_entity": "alphabet_soup_1",
+          "donor_entity": "alphabet_soup_1",
+          "donor_world_pos": [
+            -0.08692261038125078,
+            -0.15024695891878004,
+            0.47517026121638656
+          ],
+          "realized_world_pos": [
+            -0.08692261038125078,
+            -0.15024695891878004,
+            0.47517026121638656
+          ],
+          "robot_frame_xyz": [
+            0.42307738961874924,
+            -0.15024695891878004,
+            0.055170261216386574
+          ],
+          "world_position_error_m": 1.3877787807814457e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "plate_1",
+          "donor_entity": "plate_1",
+          "donor_world_pos": [
+            0.1725636725562474,
+            -0.09953457586810577,
+            0.43927290817462056
+          ],
+          "realized_world_pos": [
+            0.1725636725562474,
+            -0.09953457586810577,
+            0.43927290817462056
+          ],
+          "robot_frame_xyz": [
+            0.6825636725562474,
+            -0.09953457586810577,
+            0.019272908174620573
+          ],
+          "world_position_error_m": 2.7755575615628914e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "plate_2",
+          "donor_entity": "plate_2",
+          "donor_world_pos": [
+            0.1652966121155954,
+            0.11934000853280635,
+            0.43927290817462056
+          ],
+          "realized_world_pos": [
+            0.1652966121155954,
+            0.11934000853280635,
+            0.43927290817462056
+          ],
+          "robot_frame_xyz": [
+            0.6752966121155954,
+            0.11934000853280635,
+            0.019272908174620573
+          ],
+          "world_position_error_m": 2.7755575615628914e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "glazed_rim_porcelain_ramekin_1",
+          "donor_entity": "glazed_rim_porcelain_ramekin_1",
+          "donor_world_pos": [
+            -0.12882932089388535,
+            -0.0023981413011272723,
+            0.43610484826223034
+          ],
+          "realized_world_pos": [
+            -0.12882932089388535,
+            -0.0023981413011272723,
+            0.43610484826223034
+          ],
+          "robot_frame_xyz": [
+            0.3811706791061147,
+            -0.0023981413011272723,
+            0.016104848262230353
+          ],
+          "world_position_error_m": 2.7755575615628914e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "RAMEKIN"
+        },
+        {
+          "target_entity": "basket_1",
+          "donor_entity": "basket_1",
+          "donor_world_pos": [
+            0.008847244099762388,
+            0.25881141000936836,
+            0.48
+          ],
+          "realized_world_pos": [
+            0.008847244099762388,
+            0.25881141000936836,
+            0.48
+          ],
+          "robot_frame_xyz": [
+            0.5188472440997624,
+            0.25881141000936836,
+            0.06
+          ],
+          "world_position_error_m": 4.683753385137379e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "BASKET"
+        }
+      ]
+    },
+    {
+      "state_index": 2,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "alphabet_soup_1",
+          "native_pre_to_post_translation_m": 0.0,
+          "native_pre_to_post_angular_rad": 1.5456088388611394e-16,
+          "postwarmup_donor_position_error_m": 1.3877787807814457e-17,
+          "postwarmup_donor_angular_error_rad": 2.6707992591255304e-17,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "basket_1",
+          "native_pre_to_post_translation_m": 0.047807907427164675,
+          "native_pre_to_post_angular_rad": 0.004794173367519347,
+          "postwarmup_donor_position_error_m": 1.5079760701109605e-14,
+          "postwarmup_donor_angular_error_rad": 2.7814004382526002e-15,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "native_pre_to_post_translation_m": 5.204170427930421e-18,
+          "native_pre_to_post_angular_rad": 1.0906175090569166e-17,
+          "postwarmup_donor_position_error_m": 2.823925224926892e-17,
+          "postwarmup_donor_angular_error_rad": 1.5205355290735192e-17,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "plate_2",
+          "native_pre_to_post_translation_m": 0.0,
+          "native_pre_to_post_angular_rad": 6.379676168264667e-17,
+          "postwarmup_donor_position_error_m": 5.551115123125783e-17,
+          "postwarmup_donor_angular_error_rad": 2.3560590080673235e-16,
+          "finite": true,
+          "passes": true
+        }
+      ],
+      "mask_areas": {
+        "step_1_round_object:body_prefix:glazed_rim_porcelain_ramekin_1": 950,
+        "step_1_basket_target:body_prefix:basket_1": 7796,
+        "step_2_cylinder_object:body_prefix:alphabet_soup_1": 1320,
+        "step_2_plate_target:body_prefix:plate_2": 3838
+      },
+      "fixture_replay_error_m": 0.0,
+      "straight_corridor_diagnostics": [],
+      "transfers": [
+        {
+          "target_entity": "alphabet_soup_1",
+          "donor_entity": "alphabet_soup_1",
+          "donor_world_pos": [
+            -0.09620300191246649,
+            -0.1723599415207206,
+            0.4751702612163866
+          ],
+          "realized_world_pos": [
+            -0.09620300191246649,
+            -0.1723599415207206,
+            0.4751702612163866
+          ],
+          "robot_frame_xyz": [
+            0.4137969980875335,
+            -0.1723599415207206,
+            0.05517026121638663
+          ],
+          "world_position_error_m": 1.3877787807814457e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "plate_1",
+          "donor_entity": "plate_1",
+          "donor_world_pos": [
+            0.1655053892668302,
+            -0.09800784383318784,
+            0.43927290817462056
+          ],
+          "realized_world_pos": [
+            0.1655053892668302,
+            -0.09800784383318784,
+            0.43927290817462056
+          ],
+          "robot_frame_xyz": [
+            0.6755053892668302,
+            -0.09800784383318784,
+            0.019272908174620573
+          ],
+          "world_position_error_m": 2.7755575615628914e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "plate_2",
+          "donor_entity": "plate_2",
+          "donor_world_pos": [
+            0.13663443594487862,
+            0.08867498511319002,
+            0.43927290817462056
+          ],
+          "realized_world_pos": [
+            0.13663443594487862,
+            0.08867498511319002,
+            0.43927290817462056
+          ],
+          "robot_frame_xyz": [
+            0.6466344359448786,
+            0.08867498511319002,
+            0.019272908174620573
+          ],
+          "world_position_error_m": 5.551115123125783e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "glazed_rim_porcelain_ramekin_1",
+          "donor_entity": "glazed_rim_porcelain_ramekin_1",
+          "donor_world_pos": [
+            -0.12855742970986897,
+            0.0028726254047302816,
+            0.43610484826223034
+          ],
+          "realized_world_pos": [
+            -0.12855742970986897,
+            0.0028726254047302816,
+            0.43610484826223034
+          ],
+          "robot_frame_xyz": [
+            0.38144257029013107,
+            0.0028726254047302816,
+            0.016104848262230353
+          ],
+          "world_position_error_m": 2.7755575615628914e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "RAMEKIN"
+        },
+        {
+          "target_entity": "basket_1",
+          "donor_entity": "basket_1",
+          "donor_world_pos": [
+            -0.00962901651513209,
+            0.2510097924356372,
+            0.48
+          ],
+          "realized_world_pos": [
+            -0.00962901651513209,
+            0.2510097924356372,
+            0.48
+          ],
+          "robot_frame_xyz": [
+            0.500370983484868,
+            0.2510097924356372,
+            0.06
+          ],
+          "world_position_error_m": 5.204170427930421e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "BASKET"
+        }
+      ]
+    },
+    {
+      "state_index": 3,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "alphabet_soup_1",
+          "native_pre_to_post_translation_m": 5.551115123125783e-17,
+          "native_pre_to_post_angular_rad": 2.115429147266326e-16,
+          "postwarmup_donor_position_error_m": 5.551115123125783e-17,
+          "postwarmup_donor_angular_error_rad": 3.3285261408962947e-16,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "basket_1",
+          "native_pre_to_post_translation_m": 0.04780790742716466,
+          "native_pre_to_post_angular_rad": 0.004794173367519359,
+          "postwarmup_donor_position_error_m": 5.601265229866495e-15,
+          "postwarmup_donor_angular_error_rad": 3.080967102624802e-14,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "native_pre_to_post_translation_m": 5.55149627486669e-17,
+          "native_pre_to_post_angular_rad": 1.6778674090882826e-16,
+          "postwarmup_donor_position_error_m": 5.552173813354909e-17,
+          "postwarmup_donor_angular_error_rad": 1.7021453563421703e-16,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "plate_2",
+          "native_pre_to_post_translation_m": 0.0,
+          "native_pre_to_post_angular_rad": 5.037323366934696e-17,
+          "postwarmup_donor_position_error_m": 0.0,
+          "postwarmup_donor_angular_error_rad": 1.60487667206068e-16,
+          "finite": true,
+          "passes": true
+        }
+      ],
+      "mask_areas": {
+        "step_1_round_object:body_prefix:glazed_rim_porcelain_ramekin_1": 947,
+        "step_1_basket_target:body_prefix:basket_1": 7057,
+        "step_2_cylinder_object:body_prefix:alphabet_soup_1": 1305,
+        "step_2_plate_target:body_prefix:plate_2": 4327
+      },
+      "fixture_replay_error_m": 0.0,
+      "straight_corridor_diagnostics": [],
+      "transfers": [
+        {
+          "target_entity": "alphabet_soup_1",
+          "donor_entity": "alphabet_soup_1",
+          "donor_world_pos": [
+            -0.10162619622203051,
+            -0.1722690398845012,
+            0.47517026121638656
+          ],
+          "realized_world_pos": [
+            -0.10162619622203051,
+            -0.1722690398845012,
+            0.47517026121638656
+          ],
+          "robot_frame_xyz": [
+            0.4083738037779695,
+            -0.1722690398845012,
+            0.055170261216386574
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "plate_1",
+          "donor_entity": "plate_1",
+          "donor_world_pos": [
+            0.174189051978796,
+            -0.10856268802270766,
+            0.43927290817462056
+          ],
+          "realized_world_pos": [
+            0.174189051978796,
+            -0.10856268802270766,
+            0.43927290817462056
+          ],
+          "robot_frame_xyz": [
+            0.684189051978796,
+            -0.10856268802270766,
+            0.019272908174620573
+          ],
+          "world_position_error_m": 2.7755575615628914e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "plate_2",
+          "donor_entity": "plate_2",
+          "donor_world_pos": [
+            0.16742973985694842,
+            0.07729373647989927,
+            0.43927290817462056
+          ],
+          "realized_world_pos": [
+            0.16742973985694842,
+            0.07729373647989927,
+            0.43927290817462056
+          ],
+          "robot_frame_xyz": [
+            0.6774297398569484,
+            0.07729373647989927,
+            0.019272908174620573
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "glazed_rim_porcelain_ramekin_1",
+          "donor_entity": "glazed_rim_porcelain_ramekin_1",
+          "donor_world_pos": [
+            -0.13055730958319,
+            0.0011553717488895416,
+            0.43610484826223034
+          ],
+          "realized_world_pos": [
+            -0.13055730958319,
+            0.0011553717488895416,
+            0.43610484826223034
+          ],
+          "robot_frame_xyz": [
+            0.37944269041681,
+            0.0011553717488895416,
+            0.016104848262230353
+          ],
+          "world_position_error_m": 0.0,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "RAMEKIN"
+        },
+        {
+          "target_entity": "basket_1",
+          "donor_entity": "basket_1",
+          "donor_world_pos": [
+            -0.006954118637154822,
+            0.2662793692932055,
+            0.48
+          ],
+          "realized_world_pos": [
+            -0.006954118637154822,
+            0.2662793692932055,
+            0.48
+          ],
+          "robot_frame_xyz": [
+            0.5030458813628452,
+            0.2662793692932055,
+            0.06
+          ],
+          "world_position_error_m": 3.9898639947466563e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "BASKET"
+        }
+      ]
+    },
+    {
+      "state_index": 4,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "alphabet_soup_1",
+          "native_pre_to_post_translation_m": 4.718447854656915e-16,
+          "native_pre_to_post_angular_rad": 2.8662143522540113e-16,
+          "postwarmup_donor_position_error_m": 1.5265566588595902e-16,
+          "postwarmup_donor_angular_error_rad": 3.9389641441732165e-16,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "basket_1",
+          "native_pre_to_post_translation_m": 0.04780790742716466,
+          "native_pre_to_post_angular_rad": 0.004794173367519375,
+          "postwarmup_donor_position_error_m": 7.265792519556072e-15,
+          "postwarmup_donor_angular_error_rad": 7.09435881327535e-14,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "native_pre_to_post_translation_m": 4.336808689942018e-19,
+          "native_pre_to_post_angular_rad": 4.289168423840886e-17,
+          "postwarmup_donor_position_error_m": 2.776319786554118e-17,
+          "postwarmup_donor_angular_error_rad": 4.324583208320212e-17,
+          "finite": true,
+          "passes": true
+        },
+        {
+          "entity": "plate_2",
+          "native_pre_to_post_translation_m": 5.551115123125783e-17,
+          "native_pre_to_post_angular_rad": 1.3460407346122538e-16,
+          "postwarmup_donor_position_error_m": 7.850462293418876e-17,
+          "postwarmup_donor_angular_error_rad": 1.7953762749943383e-16,
+          "finite": true,
+          "passes": true
+        }
+      ],
+      "mask_areas": {
+        "step_1_round_object:body_prefix:glazed_rim_porcelain_ramekin_1": 945,
+        "step_1_basket_target:body_prefix:basket_1": 6994,
+        "step_2_cylinder_object:body_prefix:alphabet_soup_1": 1296,
+        "step_2_plate_target:body_prefix:plate_2": 4150
+      },
+      "fixture_replay_error_m": 0.0,
+      "straight_corridor_diagnostics": [],
+      "transfers": [
+        {
+          "target_entity": "alphabet_soup_1",
+          "donor_entity": "alphabet_soup_1",
+          "donor_world_pos": [
+            -0.10068875062390224,
+            -0.1464552278561766,
+            0.47517026121638656
+          ],
+          "realized_world_pos": [
+            -0.10068875062390224,
+            -0.1464552278561766,
+            0.47517026121638656
+          ],
+          "robot_frame_xyz": [
+            0.40931124937609775,
+            -0.1464552278561766,
+            0.055170261216386574
+          ],
+          "world_position_error_m": 1.3877787807814457e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "plate_1",
+          "donor_entity": "plate_1",
+          "donor_world_pos": [
+            0.1725453361795459,
+            -0.0820083597047007,
+            0.43927290817462056
+          ],
+          "realized_world_pos": [
+            0.1725453361795459,
+            -0.0820083597047007,
+            0.43927290817462056
+          ],
+          "robot_frame_xyz": [
+            0.6825453361795459,
+            -0.0820083597047007,
+            0.019272908174620573
+          ],
+          "world_position_error_m": 2.7755575615628914e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "plate_2",
+          "donor_entity": "plate_2",
+          "donor_world_pos": [
+            0.1565246213523545,
+            0.12053511433890043,
+            0.439272914400002
+          ],
+          "realized_world_pos": [
+            0.1565246213523545,
+            0.12053511433890043,
+            0.439272914400002
+          ],
+          "robot_frame_xyz": [
+            0.6665246213523546,
+            0.12053511433890043,
+            0.019272914400002006
+          ],
+          "world_position_error_m": 5.551115123125783e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "SOUP_RIGHT"
+        },
+        {
+          "target_entity": "glazed_rim_porcelain_ramekin_1",
+          "donor_entity": "glazed_rim_porcelain_ramekin_1",
+          "donor_world_pos": [
+            -0.13063790151549123,
+            -0.0018225721503641874,
+            0.43610484826223034
+          ],
+          "realized_world_pos": [
+            -0.13063790151549123,
+            -0.0018225721503641874,
+            0.43610484826223034
+          ],
+          "robot_frame_xyz": [
+            0.37936209848450875,
+            -0.0018225721503641874,
+            0.016104848262230353
+          ],
+          "world_position_error_m": 2.7755575615628914e-17,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "RAMEKIN"
+        },
+        {
+          "target_entity": "basket_1",
+          "donor_entity": "basket_1",
+          "donor_world_pos": [
+            -0.005617342452650447,
+            0.26769328013944566,
+            0.48
+          ],
+          "realized_world_pos": [
+            -0.005617342452650447,
+            0.26769328013944566,
+            0.48
+          ],
+          "robot_frame_xyz": [
+            0.5043826575473496,
+            0.26769328013944566,
+            0.06
+          ],
+          "world_position_error_m": 4.336808689942018e-18,
+          "rotation_matrix_error": 0.0,
+          "arbitrary_offset_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "donor_key": "BASKET"
+        }
+      ]
+    }
+  ]
+}

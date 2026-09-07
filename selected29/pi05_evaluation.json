@@ -157,14 +157,15 @@
       "note": "Newly selected tray and ketchup rack tasks; exact source physical starts; unchanged strict released/support observers after every control; official pi05_libero; no mask conditioning; all five original videos retained per task."
     }
   ],
-  "selected_tasks": 55,
+  "selected_tasks": 56,
   "tasks": 50,
   "pending_task_ids": [
     "VCN8_008",
     "VCN9_010",
     "VCN10_001",
     "VCN19_020",
-    "VCN21_001"
+    "VCN21_001",
+    "VCN35_004"
   ],
   "retired_source_result_ids": [
     "COMP2_001"
@@ -234,9 +235,9 @@
       "episodes": 100
     },
     "Compose": {
-      "selected_tasks": 15,
+      "selected_tasks": 16,
       "evaluated_tasks": 10,
-      "pending_tasks": 5,
+      "pending_tasks": 6,
       "successful_tasks": 1,
       "successes": 3,
       "episodes": 50
@@ -948,5 +949,6 @@
   "selected_55_tsv_sha256": "d8ccff63d337a9b26e0a751ed4ad96ece42975d38ef4728cac06cfbe07965490",
   "new_adapt_original_videos": 10,
   "new_adapt_original_video_policy": "All five original episodes retained locally per task; all five browser copies and representative buttons use lossless faststart remuxes with source/public hashes",
-  "selected_55_pre_pi05_tsv_sha256": "93dfbcb66133c905dea1950379e7127d8ffff52898d29255ed1d4de46beeab77"
+  "selected_55_pre_pi05_tsv_sha256": "93dfbcb66133c905dea1950379e7127d8ffff52898d29255ed1d4de46beeab77",
+  "selected_56_tsv_sha256": "c96993f26031b4e9c1d3c94353189f2c0f12a82588221107ab0d5975b8347633"
 }

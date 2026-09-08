@@ -104,7 +104,7 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 <!-- UCOMP71_REVIEW_README_END -->
 
 <!-- VALID_COMPOSE_NEW_README_START -->
-- `valid_compose_new/`: 9 fresh strict-success Compose candidates, 22 successful episodes.
+- `valid_compose_new/`: 11 fresh strict-success Compose candidates, 27 successful episodes.
 - Each card links the masked comparison, complete public task bundle, and one on-demand reel containing all success episodes.
 <!-- VALID_COMPOSE_NEW_README_END -->
 

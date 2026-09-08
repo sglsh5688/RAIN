@@ -1,0 +1,2 @@
+task_id	ordered_semantics	transfer_method	arbitrary_offsets	distractor_removals	physical_screen
+SPBSC_001	in(akita_black_bowl_1,basket_1_contain_region); in(alphabet_soup_1,basket_1_contain_region)	exact same-index rigid robot-frame entity transfer	false	plate_1,cookies_1	5/5 PASS

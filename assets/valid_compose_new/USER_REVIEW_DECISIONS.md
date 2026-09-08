@@ -1,4 +1,4 @@
-# Compose user review decisions — 2026-09-06
+# Compose user review decisions — 2026-09-08
 
 This file records the semantic-quality review separately from strict evaluator success. A task can satisfy ordered native predicates yet still be rejected if the observed behavior is an accidental side effect or the composition is redundant.
 
@@ -12,18 +12,20 @@ This file records the semantic-quality review separately from strict evaluator s
 | VCN19_020 | Open the top drawer of the wooden cabinet, then put the ramekin on the plate. | 1/5 | Retain after explicit user selection; ep000 was manually verified as a deliberate top-drawer open followed by the requested ramekin placement. |
 | VCN21_001 | Put the moka pot on the stove, then close the microwave door. | 4/5 | Retain after explicit user selection. All four strict-v3 successes were manually reviewed; success requires ordered native events, final BDDL, direct active-constraint/positive-force contact with `microdoorroot` in the two-control-step close window, moka/door-sweep clearance, and no final TC gate. |
 | VCN35_004 | Put the ramekin in the basket, then put the alphabet soup on the right plate. | 3/5 | Retain after explicit user selection on 2026-09-07. Episodes 001, 002, and 004 were manually verified: the ramekin remains in the basket while the alphabet soup is deliberately placed on the right plate. |
+| VCN91_002 | Put the black bowl on top of the cabinet, then turn on the stove, then put the moka pot on the stove. | 1/5 | Retain after explicit user selection on 2026-09-07. Original episode 002 deliberately completes all three actions at native milestones 140, 300, and 445, with every final goal true and the bowl placement preserved. Turn-on uses the knob-only mask; no final TC gate. The task moves a black bowl, not a plate, and is not the later shortened VCN94 variant. |
 
 `VCN21_001` was first added to the reviewer candidate pool after its audited v3 run and is now also explicitly selected by the user. Its existing 4/5 record is reused without rerun or rescoring.
 
 ## Pending user review
 
-These fresh Batch35/37 successes passed strict ordered native events, final BDDL, and manual video review for downstream preservation. They are public reviewer candidates, not yet selected tasks.
+These fresh successes passed strict ordered native events, final BDDL, and manual video review for downstream preservation. They are public reviewer candidates, not yet selected tasks.
 
 | ID | Instruction | Recorded SR | Video review |
 |---|---|---:|---|
 | VCN35_002 | Put the tomato sauce on the right plate, then put the ramekin in the basket. | 1/5 | Pass: the tomato sauce stays upright on the right plate while the ramekin is deliberately placed in the basket. |
 | VCN35_005 | Put the ramekin in the basket, then put the tomato sauce on the right plate. | 2/5 | Pass for ep001 and ep002: the ramekin remains in the basket throughout the later tomato-sauce placement, with no unrelated object knocked over. |
 | VCN37_001 | Put the cream cheese box in the basket, then put the butter to the right of the plate. | 1/5 | Pass for ep003: the cream-cheese box remains contained in the basket while the butter is deliberately placed to the right of the plate; no unrelated object is knocked over. |
+| SPBSC_001 | Put the black bowl from the top of the wooden cabinet in the basket, then put the alphabet soup in the basket. | 4/5 | Pass for ep000, ep002, ep003, and ep004: the bowl is deliberately placed in the plate-slot basket first, the alphabet soup is then picked from the original cookie-box slot and placed in the same basket, and the earlier bowl placement remains intact. |
 
 ## Rejected candidates
 

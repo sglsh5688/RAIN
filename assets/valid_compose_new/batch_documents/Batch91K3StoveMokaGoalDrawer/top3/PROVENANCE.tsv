@@ -1,0 +1,3 @@
+task_id	semantic_subtasks	transfer_method	removed	preserved
+VCN91_001	3	Same-index rigid robot frame; complete source object/target pairs; no coordinate offset	chefmate_8_frypan_1	K3 stove knob+moka pickup/stove configuration
+VCN91_002	3	Same-index rigid robot frame; complete source object/target pairs; no coordinate offset	chefmate_8_frypan_1	K3 stove knob+moka pickup/stove configuration

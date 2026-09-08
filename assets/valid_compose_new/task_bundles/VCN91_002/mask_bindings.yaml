@@ -1,0 +1,33 @@
+task_id: VCN91_002
+policy: exact_instance_no_union
+bindings:
+- role: object_0
+  kind: body_prefix
+  value: akita_black_bowl_1
+  color: green
+  exact_instance: true
+- role: target_0
+  kind: body_prefix
+  value: wooden_cabinet_1
+  color: yellow
+  exact_instance: true
+- role: knob_1
+  kind: body_prefix
+  value: flat_stove_1_button
+  color: cyan
+  exact_instance: true
+- role: object_2
+  kind: body_prefix
+  value: moka_pot_1
+  color: green
+  exact_instance: true
+- role: target_2
+  kind: body_prefix
+  value: flat_stove_1_burner
+  color: yellow
+  exact_instance: true
+runtime_requirements:
+  resolve_by_current_sim_model: true
+  allow_source_episode_json_fallback: false
+  new_instance_support: false
+  region_projection_from_current_bddl: false

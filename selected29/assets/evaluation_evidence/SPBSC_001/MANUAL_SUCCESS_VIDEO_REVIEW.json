@@ -1,0 +1,68 @@
+{
+  "schema": "spbsc001_manual_success_video_review_v1",
+  "task_id": "SPBSC_001",
+  "instruction": "Put the black bowl from the top of the wooden cabinet in the basket, then put the alphabet soup in the basket.",
+  "reviewed_success_episode_indices": [
+    0,
+    2,
+    3,
+    4
+  ],
+  "all_successes_deliberately_complete_bowl_then_soup": true,
+  "both_objects_retained_in_basket_at_final": true,
+  "episodes": [
+    {
+      "episode_idx": 0,
+      "sha256": "a6101ce845ea49bf334e682324e65634f880b9e1febace5e5750fcb7b7f7d60e",
+      "ordered_event_first_steps": [
+        115,
+        384
+      ],
+      "final_native_goals": [
+        true,
+        true
+      ],
+      "video_decodes": true
+    },
+    {
+      "episode_idx": 2,
+      "sha256": "89435fd0019b327955d8ec44de344fe02d55462411e834df6f6a820a47f9776b",
+      "ordered_event_first_steps": [
+        119,
+        1400
+      ],
+      "final_native_goals": [
+        true,
+        true
+      ],
+      "video_decodes": true
+    },
+    {
+      "episode_idx": 3,
+      "sha256": "be9a83aa1c74311c31c56492840dce60a54cd86721941bcff35d75cd0b3cc878",
+      "ordered_event_first_steps": [
+        119,
+        481
+      ],
+      "final_native_goals": [
+        true,
+        true
+      ],
+      "video_decodes": true
+    },
+    {
+      "episode_idx": 4,
+      "sha256": "9de6d3ef81c91012982b47e6044ec68e3a4d533d56290e965c3c34e93a17eab0",
+      "ordered_event_first_steps": [
+        113,
+        410
+      ],
+      "final_native_goals": [
+        true,
+        true
+      ],
+      "video_decodes": true
+    }
+  ],
+  "review_note": "All four clips were inspected before selection. The black bowl is intentionally placed in the basket before alphabet soup; the bowl remains while soup is added."
+}

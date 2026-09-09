@@ -1,0 +1,68 @@
+{
+  "schema": "selected60_spbsc001_provenance_v1",
+  "task_id": "SPBSC_001",
+  "selected_order": 60,
+  "selected_category": "Compose",
+  "instruction": "Put the black bowl from the top of the wooden cabinet in the basket, then put the alphabet soup in the basket.",
+  "goal_atoms": [
+    "in(akita_black_bowl_1,basket_1_contain_region)",
+    "in(alphabet_soup_1,basket_1_contain_region)"
+  ],
+  "rain_result": {
+    "successes": 4,
+    "episodes": 5,
+    "success_rate_percent": 80
+  },
+  "success_episode_indices": [
+    0,
+    2,
+    3,
+    4
+  ],
+  "event_first_steps": {
+    "0": [
+      115,
+      384
+    ],
+    "2": [
+      119,
+      1400
+    ],
+    "3": [
+      119,
+      481
+    ],
+    "4": [
+      113,
+      410
+    ]
+  },
+  "all_success_final_native_goals": [
+    true,
+    true
+  ],
+  "all_success_initial_native_goals": [
+    false,
+    false
+  ],
+  "final_compose_tc_gate": false,
+  "no_rerun_or_rescoring": true,
+  "pi05_status": "pending_not_evaluated",
+  "user_selection_date": "2026-09-09",
+  "selected_definition_is_original_cookie_slot_spbsc001": true,
+  "farther_position_spbsc002_not_selected": true,
+  "source_benchmark": "LiberoUserTasks/Spatial10PlateBasketBowlSoup20260908/benchmark",
+  "source_result": "VLM_evaluation/results/rain_ms_maskaug_gt_spatial10_plate_basket_bowl_soup_5ep_20260908/tasks/all1/SPBSC_001/results.json",
+  "source_sha256": {
+    "result": "3c253805040e73a4d4990c012cddeae5c100cf3c87bfded4ad57fd317210aa9e",
+    "videos": {
+      "0": "a6101ce845ea49bf334e682324e65634f880b9e1febace5e5750fcb7b7f7d60e",
+      "2": "89435fd0019b327955d8ec44de344fe02d55462411e834df6f6a820a47f9776b",
+      "3": "be9a83aa1c74311c31c56492840dce60a54cd86721941bcff35d75cd0b3cc878",
+      "4": "9de6d3ef81c91012982b47e6044ec68e3a4d533d56290e965c3c34e93a17eab0"
+    },
+    "comparison": "160f262272adc154bf054ef7ef9cfb546062fa20ecaf910554702c1618425059",
+    "bundle": "76adcdd82617e43d66f324496c802bbfb6212e2c7aa97bd338f05d6e9a4ff201"
+  },
+  "prior_59_rows_and_cards_unchanged": true
+}

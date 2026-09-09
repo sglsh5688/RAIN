@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "tasks": 60,
+  "category_counts": {
+    "Decomposition": 20,
+    "Adapt": 20,
+    "Compose": 20
+  },
+  "task_id": "SPBSC_001",
+  "selected_order": 60,
+  "rain_successes": 4,
+  "rain_episodes": 5,
+  "success_episode_indices": [
+    0,
+    2,
+    3,
+    4
+  ],
+  "event_first_steps": {
+    "0": [
+      115,
+      384
+    ],
+    "2": [
+      119,
+      1400
+    ],
+    "3": [
+      119,
+      481
+    ],
+    "4": [
+      113,
+      410
+    ]
+  },
+  "previous_59_cards_and_ledger_rows_byte_preserved": true,
+  "all_previous_media_byte_preserved": true,
+  "pi05_results_and_episodes_byte_preserved": true,
+  "exact_selected_physical_definition_duplicates": [],
+  "checked_links": 432,
+  "broken_links": 0,
+  "pi05_evaluated_tasks": 57,
+  "pi05_pending_task_ids": [
+    "BDRMIN_002",
+    "VCN91_002",
+    "SPBSC_001"
+  ],
+  "baseline_tree_sha256": "6e8f171a74747334521d4937ea481b7aa097ce54c43f1457815562b1783e856d",
+  "builder_sha256": "25fddcdbc05df1ccbc944ad7cda5ed83de1d8d7cd795385512c313f7c74af031"
+}

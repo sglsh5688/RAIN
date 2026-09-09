@@ -1,6 +1,6 @@
 {
-  "review_date": "2026-09-08",
-  "scope": "valid_compose_new strict-success reviewer pool through the SPBSC_001 five-episode evaluation",
+  "review_date": "2026-09-09",
+  "scope": "valid_compose_new strict-success reviewer pool through the user selection of SPBSC_001",
   "accepted_ids": [
     "VCN8_008",
     "VCN9_010",
@@ -8,13 +8,13 @@
     "VCN19_020",
     "VCN21_001",
     "VCN35_004",
-    "VCN91_002"
+    "VCN91_002",
+    "SPBSC_001"
   ],
   "pending_review_ids": [
     "VCN35_002",
     "VCN35_005",
-    "VCN37_001",
-    "SPBSC_001"
+    "VCN37_001"
   ],
   "rejected_ids": [
     "VCN1_006",

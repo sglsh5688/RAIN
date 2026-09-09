@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 20 Adapt + 19 Compose (59 total)**; VCN91_002 is selected with its unchanged RAIN 1/5 result. Separate π0.5 results cover 57/59 tasks (75/285 successes); BDRMIN_002 and VCN91_002 are pending.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 20 Adapt + 20 Compose (60 total)**; SPBSC_001 is selected with its unchanged RAIN 4/5 result. Separate π0.5 results cover 57/60 tasks (75/285 successes); BDRMIN_002, VCN91_002, and SPBSC_001 are pending.
 <!-- SELECTED29_README_END -->
 
 <!-- MICROWAVE_BODY_README_START -->
@@ -102,6 +102,9 @@ No checkpoints are included. Stove turn actions use knob-only GT masks.
 - `user_inspired_compose71/index.html`: all 71 candidates and 355 fresh five-episode trials.
 - Media uses four JPEG preview sprites and one on-demand reel per successful task.
 <!-- UCOMP71_REVIEW_README_END -->
+
+
+
 
 <!-- VALID_COMPOSE_NEW_README_START -->
 - `valid_compose_new/`: 11 fresh strict-success Compose candidates, 27 successful episodes.

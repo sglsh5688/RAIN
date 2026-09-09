@@ -1,0 +1,88 @@
+task_id: SPBSC_001
+task_name: Put the black bowl from the top of the wooden cabinet in the basket, then put the alphabet soup in the basket.
+language: Put the black bowl from the top of the wooden cabinet in the basket, then put the alphabet soup in the basket.
+primary_category: Composition
+composition_family: spatial10_bowl_then_soup_same_basket
+anchor_suite: libero_spatial_10_plate_and_cookie_slot_replacement
+source_prior_task_ids: []
+source_priors:
+- suite: libero_spatial
+  task_stem: pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate
+  instruction: Pick the akita black bowl on the wooden cabinet and place it on the plate
+  bddl: upstream_LIBERO/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.bddl
+  init: upstream_LIBERO/init_files/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_alphabet_soup_and_place_it_in_the_basket
+  instruction: Pick the alphabet soup and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the black bowl from the top of the wooden cabinet in the basket
+- Put the alphabet soup in the basket
+component_evidence:
+- The bowl keeps its exact original LIBERO_SPATIAL_10 pickup pose; the basket replaces the original plate target slot.
+- The alphabet soup replaces the original Spatial-10 cookie box at its exact same-index robot-frame XY/yaw.
+semantic_subtask_count: 2
+action_plan_step_count: 4
+canonical_goal_atoms:
+- in(akita_black_bowl_1,basket_1_contain_region)
+- in(alphabet_soup_1,basket_1_contain_region)
+canonical_task_signature: composition|6af156cb33bb8c6ece56cb7fcf70176b306ed9ca828e0a8d46522a2639bd7189|frozenset({in(akita_black_bowl_1,basket_1_contain_region),in(alphabet_soup_1,basket_1_contain_region)})
+objects_of_interest:
+- akita_black_bowl_1
+- basket_1_contain_region
+- alphabet_soup_1
+pure_composition: false
+requires_transition: true
+sequence_stages:
+- - in(akita_black_bowl_1,basket_1_contain_region)
+- - in(akita_black_bowl_1,basket_1_contain_region)
+  - in(alphabet_soup_1,basket_1_contain_region)
+physical_group: spatial10_plate_slot_basket_cookie_slot_soup
+base_bddl_template: upstream_LIBERO/bddl_files/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.pruned_init
+max_steps: 1600
+definition_status: five_state_narrow_phase_verified
+notes:
+- Exact LIBERO_SPATIAL_10 scene and five states. Replace only plate_1 by basket_1 at the original same-index plate XY, and cookies_1 by alphabet_soup_1 at the original same-index cookie XY. The bowl/cabinet and all unrelated retained entities keep their original poses.
+- The bowl keeps its exact original LIBERO_SPATIAL_10 pickup pose; the basket replaces the original plate target slot.
+- The alphabet soup replaces the original Spatial-10 cookie box at its exact same-index robot-frame XY/yaw.
+- Strict ordered native rising events and both relations retained at final determine success.
+- Compose has no final TC gate.
+validation_version: spatial10_plate_slot_basket_cookie_slot_soup_5state_v1
+runtime_contract_version: two_ordered_in_rises_both_final_no_tc_v1
+ordered_event_atoms:
+- in(akita_black_bowl_1,basket_1_contain_region)
+- in(alphabet_soup_1,basket_1_contain_region)
+strict_event_order: true
+custom_eval_needed: true
+final_success_requires_all_bddl_goals: true
+compose_final_tc_gate: false
+final_tc_gate: false
+compose_final_termination: ordered_native_goals_without_tc
+environment_ignore_done: true
+same_index_robot_frame_transfer: true
+plate_slot_basket_replacement: true
+cookie_slot_alphabet_soup_replacement: true
+arbitrary_coordinate_offsets: false
+support_only_z_correction: true
+source_state_indices:
+- 0
+- 1
+- 2
+- 3
+- 4
+distractors_removed:
+- plate_1
+- cookies_1
+downstream_preservation_required: true
+manual_success_video_preservation_review_required: true
+policy_evaluation_authorized: true
+publication_authorized: false
+fixture_replay_required: true
+fixture_replay_file: FIXTURE_REPLAY.json
+evaluation_authorized: true
+physical_screen_report_sha256: e14ecf64b578e2e684eaf7f37f3864b9980aa21174a58fd81f477fdbaa903eef
+ordered_task_signature: 53d07f448faf95aae2d99eebd48098a33c6740b49f7a05a0ba0cc802f0c0abaa

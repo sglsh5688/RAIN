@@ -1,0 +1,22 @@
+{
+  "task_id": "CTR_175",
+  "parent_task_id": "CTR_162",
+  "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch60/tasks/ctr_162",
+  "pose_changes": {},
+  "terminal_contract": {
+    "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+    "support_hold_control_steps": 5,
+    "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+    "settle_linear_speed_max_m_s": 0.02,
+    "settle_angular_speed_max_rad_s": 0.5
+  },
+  "evidence": "Future-only supported-placement followup of CTR_162, a soup -> butter -> cheese basket source-pose repair of historical COMPOSE_152. The parent completes all three ordered native In events in all five fresh episodes, but zero-added-step terminal-state reconstruction finds the last cheese airborne in some episodes and only just contacting the earlier butter in others. Native 5/5 remains frozen and is not a certified settled-placement rate. This new candidate keeps every physical pose, action plan, native goal, seed and original1200-control cap unchanged and explicitly predeclares the established released-supported-settled5-control terminal contract. The existing RAIN final-release policy continues inside the same cap; no final TC gate, forced action, passive continuation or extra budget. This is a protocol followup, not a new scene or semantic task family.",
+  "classification": "repair_variant_not_new_semantic_family",
+  "parent_files_sha256": {
+    "task.bddl": "1a106f705263d8fe185ebc34ea6bea6e59f8cc00bfb69472536d9c353fcc5b8e",
+    "task.pruned_init": "44ae15ccd700c032dce0b3fc4e5efde2022ee9676344c752db67cb7ca78bb084",
+    "FIXTURE_REPLAY.json": "a6208fd22bfc8cc6519e0749db518adb528d69d564468993687ec9c08509454c",
+    "action_plan.yaml": "699ab37ac01bf930ae1a359778df2dedb5cad56da8d0f4ec804cfa77e0fd01eb"
+  },
+  "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+}

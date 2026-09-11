@@ -1,0 +1,198 @@
+{
+  "task_id": "CTR_112",
+  "instruction": "Pick the ketchup and place it in the left compartment of the bowl drainer, then pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+  "status": "pending_user_review_not_selected",
+  "variant_of": "BDRCOMP_030",
+  "classification": "repair_variant_not_new_semantic_family",
+  "episodes": 5,
+  "nominal_successes": 1,
+  "manually_valid_successes": 1,
+  "nominal_success_episode_indices": [
+    2
+  ],
+  "certified_episode_indices": [
+    2
+  ],
+  "ordered_native_milestones": {
+    "2": [
+      347,
+      780
+    ]
+  },
+  "final_success_requires_all_bddl_goals": true,
+  "compose_final_tc_gate": false,
+  "results_sha256": "a7b46951137427927679c38795097a9c2e39054d9fc8a69a3102325a7250ea83",
+  "parent_results_sha256": "143761ab80d9b7553d9bd7b4f1d9b24414ad8274aaa0b2cfdcbfd844ea0455e3",
+  "parent_nominal_successes": 0,
+  "parent_episodes": 5,
+  "parent_instruction": "Pick the ketchup and place it in the left compartment of the bowl drainer, then pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+  "parent_state_verification": {
+    "method": "original_run_manifest_and_byte_identical_five_state_source",
+    "original_historical_state_file_digest_available": true,
+    "run_config_sha256": "108092f1236210498a6a085d61e179823e170c39e767c7399c43eb2060b34814",
+    "task_pruned_init_sha256": "e105446e118224c794101187028ecd3b6cb961a05d157f2acc8ec332e3ff18a5"
+  },
+  "repair": {
+    "task_id": "CTR_112",
+    "parent_task_id": "BDRCOMP_030",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/drainer_parent_snapshots/BDRCOMP_030",
+    "pose_changes": {
+      "alphabet_soup_1": {
+        "delta_xyz": [
+          -0.05,
+          0.075,
+          0
+        ]
+      },
+      "bbq_sauce_1": {
+        "delta_xyz": [
+          0.065,
+          0,
+          0
+        ]
+      }
+    },
+    "evidence": "Parent ketchup released into left compartment5/5; ep000/001/004 subsequent alphabet-soup closures miss source by[-.028,+.049],[-.053,+.073],[-.056,+.081]m. Ep000 video shows repeated empty closures by the stationary can. Move only second can toward this path, retain exact native right compartment and strict released+supported5controlstep gate. Parent0/5, fresh5ep mandatory. Initial target-only screens CTR101/102 intersect the nearby BBQ bottle; this new variant also moves that uninstructed distractor +6.5cmX to provide physical clearance. The original collision is recorded; target and distractor changes are explicit and all5states must pass."
+  },
+  "frozen_repair_provenance": {
+    "task_id": "CTR_112",
+    "parent_task_id": "BDRCOMP_030",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/drainer_parent_snapshots/BDRCOMP_030",
+    "pose_changes": {
+      "alphabet_soup_1": {
+        "delta_xyz": [
+          -0.05,
+          0.075,
+          0
+        ]
+      },
+      "bbq_sauce_1": {
+        "delta_xyz": [
+          0.065,
+          0,
+          0
+        ]
+      }
+    },
+    "evidence": "Parent ketchup released into left compartment5/5; ep000/001/004 subsequent alphabet-soup closures miss source by[-.028,+.049],[-.053,+.073],[-.056,+.081]m. Ep000 video shows repeated empty closures by the stationary can. Move only second can toward this path, retain exact native right compartment and strict released+supported5controlstep gate. Parent0/5, fresh5ep mandatory. Initial target-only screens CTR101/102 intersect the nearby BBQ bottle; this new variant also moves that uninstructed distractor +6.5cmX to provide physical clearance. The original collision is recorded; target and distractor changes are explicit and all5states must pass.",
+    "classification": "repair_variant_not_new_semantic_family",
+    "parent_files_sha256": {
+      "task.bddl": "e2f90d6c7f6bd6d6bbc18bf12c9b449baf1335a470c62513bf5d8be8bad0877c",
+      "task.pruned_init": "e105446e118224c794101187028ecd3b6cb961a05d157f2acc8ec332e3ff18a5",
+      "FIXTURE_REPLAY.json": "2b77352ebcb8666c41a0ff61d93b6b13b35d14e244a62062298cc10dbcf67c12",
+      "action_plan.yaml": "a56fe7ac63e665bd1f9226a2a5f405a77cdab58eccb708e3572b89f43bced6b9"
+    },
+    "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+  },
+  "original40_skill_lineage": [
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_ketchup_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_05",
+      "instruction": "Pick the ketchup and place it in the basket",
+      "transfer": "The directly trained original40 object grasp and basket-release skill transfers to the left drainer compartment for ketchup or right compartment for alphabet soup. The destination binding and two-step chain are adaptations; the original40 does not directly demonstrate drainer placement."
+    },
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_01",
+      "instruction": "Pick the alphabet soup and place it in the basket",
+      "transfer": "The directly trained original40 object grasp and basket-release skill transfers to the left drainer compartment for ketchup or right compartment for alphabet soup. The destination binding and two-step chain are adaptations; the original40 does not directly demonstrate drainer placement."
+    }
+  ],
+  "manual_review_notes": "Trajectory-guided repair of BDRCOMP_030 (historical0/5). Move alphabet soup5cm in negative worldX and7.5cm in positive worldY toward the observed empty gripper closures; move the uninstructed BBQ distractor6.5cm in positiveX to clear the resulting initial collision. Both edits are explicit and all five frozen states pass physical screening. The inherited ordered release-and-exact-drainer-base-support rule remains unchanged. This fresh RAIN run achieves1/5, with its complete successful video and trace reviewed. Seeds7-11 differ from the historical parent, so the result does not isolate the causal effect of either pose edit. The selected60 tasks are unchanged.",
+  "episode_reviews": [
+    {
+      "episode_idx": 2,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 98,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch28_5ep_20260911/tasks/all1/CTR_112/videos/CTR_112_ep002_ok.mp4",
+      "video_sha256": "5f4532917a10a8fc10919d717c67bee259257b4ee14a7ef2c655dd59cc7166db",
+      "trace_npz_sha256": "feaf55aef38feadea4c381c385445855a04de147aec4d3bf490187ab69bdf3e6",
+      "native_success": true,
+      "milestones": [
+        347,
+        780
+      ],
+      "released_supported_milestones": [
+        354,
+        786
+      ],
+      "final_native_values": [
+        true,
+        true
+      ],
+      "final_opposite_native_values": [
+        false,
+        false
+      ],
+      "final_consecutive_supported_steps": [
+        437,
+        5
+      ],
+      "first_object_max_displacement_during_second_task_m": 5.0515910130503314e-17,
+      "all_final_bddl_predicates_true": true,
+      "notes": "Reviewed all98 saved video frames and the full786-control trace. The robot deliberately grasps ketchup, carries it to the left drainer compartment and eventually releases it after a long final-release approach. It then approaches the shifted blue alphabet-soup can, retries its grasp, lifts and carries the intended can to the right compartment, and releases it. Native milestones347/780 are followed by the inherited release-and-exact-base-support holds354/786. Ketchup is stationary throughout the second task from control541 onward (maximum displacement5.1e-17m), remains nativeIn, and stays released and base-supported for the final437 controls. Soup has no gripper contact from778, and exact native bottom support holds782-786. Both opposite-compartment predicates stay false. The uninstructed BBQ bottle is displaced during the soup pickup, but no earlier requested placement or drainer is disturbed and no substitute object is credited. The inherited five-control support rule is not a velocity-based settlement guarantee."
+    }
+  ],
+  "episode_outcomes": [
+    {
+      "episode_idx": 0,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 1,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 2,
+      "parent_same_index_native_success": false,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 3,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 4,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    }
+  ],
+  "rain_settings": {
+    "checkpoint": "RAIN/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "progress_checkpoint": "RAIN/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "replan_steps": 8,
+    "num_inference_steps": 4,
+    "feas_threshold": 0.7,
+    "consecutive_stop": 2,
+    "seed": 7,
+    "clip_model_name": "openai/clip-vit-large-patch14"
+  },
+  "source_bundle_sha256": {
+    "task.bddl": "e2f90d6c7f6bd6d6bbc18bf12c9b449baf1335a470c62513bf5d8be8bad0877c",
+    "task.pruned_init": "9f4e502075b4bb8c60295a1d0839c84e27ff72bb4943db18e03e049ff796b503",
+    "task_meta.yaml": "4c0e41d8813a87cadd2c2344ba30e051c43eca16bcab80ec647a377e21aac32e",
+    "eval_rules.yaml": "c64b6e31e71e45f9d14229549d78e4f92014a52fe4efb708e736f5c699e72aa3",
+    "registry_entry.yaml": "4926330fdd5e3215efd1322806dececf9c63991a06e6d4a81767d90d18dfe0f2",
+    "mask_bindings.yaml": "ed9fdddb903ac8fbdde23030ddfd65976dd1246a6f2e83475a981d5e75627068",
+    "action_plan.yaml": "5c2346c378ec03c27a81db37317b1f424231f2b8e68b9b37bdd1ce57df1a5dca",
+    "FIXTURE_REPLAY.json": "f8faed4ed9068f543b6ec8e4aaaef694bcb3e8c2f1911a8090370ca8c631618c",
+    "INIT_VALIDATION.json": "f27578294c50a1f1cce3997d947f5e9d5ef7a7808e912f07512bac91565b82be",
+    "REPAIR_PROVENANCE.json": "79342f38a7eee576497d909af6529595ec4b2b72d1d45a07998545dee5dfc469"
+  },
+  "comparison_design_note": "The historical run is a reference; this comparison alone does not isolate the effect of the repair.",
+  "parent_failure_video_sha256": "4049fff6768f0bf5086f102267dc07a553146b15f596bb14b05812d4775337b8"
+}

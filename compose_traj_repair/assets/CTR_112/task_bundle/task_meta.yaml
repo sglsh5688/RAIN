@@ -1,0 +1,148 @@
+task_id: CTR_112
+task_name: Pick the ketchup and place it in the left compartment of the bowl drainer,
+  then pick the alphabet soup and place it in the right compartment of the bowl drainer.
+language: Pick the ketchup and place it in the left compartment of the bowl drainer,
+  then pick the alphabet soup and place it in the right compartment of the bowl drainer.
+primary_category: Composition
+anchor_suite: libero_object
+source_prior_task_ids:
+- 5
+source_prior_task_stem: pick_up_the_ketchup_and_place_it_in_the_basket
+source_prior_description: Pick the ketchup and place it in the basket
+canonical_goal_atoms:
+- in(ketchup_1, bowl_drainer_1_left_region)
+- in(alphabet_soup_1, bowl_drainer_1_right_region)
+canonical_task_signature: composition|abcf59bca8fa8d9e9c71a0be2743b38e23060ae98a7aa2f4ad68b460edf60a89|('in(ketchup_1,
+  bowl_drainer_1_left_region)', 'in(alphabet_soup_1, bowl_drainer_1_right_region)')
+objects_of_interest:
+- ketchup_1
+- bowl_drainer_1_left_region
+- alphabet_soup_1
+- bowl_drainer_1_right_region
+held_fixed:
+- all original six food identities and pickup regions
+- native object geometry and orientation sampling
+- native drainer geometry and yaw 0
+- one unchanged drainer pose throughout both stages
+varied:
+- replace basket by a fixed two-compartment drainer
+- two different objects, left placement followed by right placement
+single_semantic_goal: false
+physical_group: ctr_112
+base_bddl_template: upstream_LIBERO/bddl_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_object/pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init
+definition_status: defined_simulator_validated_pending_5ep_eval
+notes:
+- Trajectory-guided repair authorized on 2026-09-11; see REPAIR_PROVENANCE.json.
+transfer_summary: Complete the left placement, then the right; retain both objects
+  in their own compartments.
+provenance_evidence:
+- task_id: LIBERO_OBJECT_05
+  role: ORIGINAL SCENE SOURCE
+  reason: same six foods and original pickup regions; basket replaced by one fixed
+    drainer
+- task_id: LIBERO_OBJECT_05
+  role: LEFT OBJECT GRASP SOURCE
+  reason: object-class grasp provenance; not a claim that this distractor pickup was
+    demonstrated in the same scene
+- task_id: LIBERO_OBJECT_01
+  role: RIGHT OBJECT GRASP SOURCE
+  reason: object-class grasp provenance; not a claim that this distractor pickup was
+    demonstrated in the same scene
+critical_objects:
+- ketchup_1
+- bbq_sauce_1
+- salad_dressing_1
+- alphabet_soup_1
+- cream_cheese_1
+- milk_1
+required_init_predicates:
+- - not
+  - - in
+    - ketchup_1
+    - bowl_drainer_1_left_region
+- - not
+  - - in
+    - ketchup_1
+    - bowl_drainer_1_right_region
+- - not
+  - - in
+    - alphabet_soup_1
+    - bowl_drainer_1_left_region
+- - not
+  - - in
+    - alphabet_soup_1
+    - bowl_drainer_1_right_region
+composition_family: F1_left_then_right_extension20
+census_candidate_id: BDRCENS_123
+pilot_batch: extension20
+left_object: ketchup_1
+right_object: alphabet_soup_1
+semantic_subtask_count: 2
+max_steps: 1040
+drainer_completion_mode: released_supported
+support_hold_control_steps: 5
+native_success_is_auxiliary: true
+order: left_then_right
+drainer_root_xy:
+- 0.0
+- 0.25471
+expected_drainer_root_z: 0.00602
+physical_floor_support_correction: true
+either_compartment_success: false
+accepted_native_regions:
+- bowl_drainer_1_left_region
+- bowl_drainer_1_right_region
+divider_region_accepted: false
+all_source_food_pickup_regions_unchanged: true
+comparison_reference: masked original source scene / step 1 exact masks / step 2 exact
+  masks
+grasp_provenance:
+  left:
+    task_id: LIBERO_OBJECT_05
+    exact_source_scene_target: true
+  right:
+    task_id: LIBERO_OBJECT_01
+    exact_source_scene_target: false
+validation_version: trajectory_repair_five_state_screen_v2_fixture_snapshot
+policy_evaluation_authorized: true
+evaluation_authorized: true
+publication_authorized: false
+selected: false
+final_tc_gate: false
+globally_novel_additive_candidate: false
+new_semantic_family: false
+compose_final_tc_gate: false
+trajectory_guided_repair: true
+parent_task_id: BDRCOMP_030
+parent_bundle: LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/drainer_parent_snapshots/BDRCOMP_030
+repair_definition:
+  task_id: CTR_112
+  parent_task_id: BDRCOMP_030
+  parent_bundle: LiberoComposeTrajRepair20260911/drainer_parent_snapshots/BDRCOMP_030
+  pose_changes:
+    alphabet_soup_1:
+      delta_xyz:
+      - -0.05
+      - 0.075
+      - 0
+    bbq_sauce_1:
+      delta_xyz:
+      - 0.065
+      - 0
+      - 0
+  evidence: Parent ketchup released into left compartment5/5; ep000/001/004 subsequent
+    alphabet-soup closures miss source by[-.028,+.049],[-.053,+.073],[-.056,+.081]m.
+    Ep000 video shows repeated empty closures by the stationary can. Move only second
+    can toward this path, retain exact native right compartment and strict released+supported5controlstep
+    gate. Parent0/5, fresh5ep mandatory. Initial target-only screens CTR101/102 intersect
+    the nearby BBQ bottle; this new variant also moves that uninstructed distractor
+    +6.5cmX to provide physical clearance. The original collision is recorded; target
+    and distractor changes are explicit and all5states must pass.
+arbitrary_coordinate_offsets: true
+same_index_parent_states: true
+same_index_robot_frame_transfer: false
+downstream_preservation_required: true
+environment_ignore_done: true
+manual_success_video_preservation_review_required: true
+parent_canonical_task_signature: compose|154a9132fe172090f2ae2783b1307584c08d0857dfb3dd513e43ad2214c5bbec

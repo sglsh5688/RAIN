@@ -1,0 +1,30 @@
+{
+  "task_id": "CTR_112",
+  "parent_task_id": "BDRCOMP_030",
+  "parent_bundle": "LiberoComposeTrajRepair20260911/drainer_parent_snapshots/BDRCOMP_030",
+  "pose_changes": {
+    "alphabet_soup_1": {
+      "delta_xyz": [
+        -0.05,
+        0.075,
+        0
+      ]
+    },
+    "bbq_sauce_1": {
+      "delta_xyz": [
+        0.065,
+        0,
+        0
+      ]
+    }
+  },
+  "evidence": "Parent ketchup released into left compartment5/5; ep000/001/004 subsequent alphabet-soup closures miss source by[-.028,+.049],[-.053,+.073],[-.056,+.081]m. Ep000 video shows repeated empty closures by the stationary can. Move only second can toward this path, retain exact native right compartment and strict released+supported5controlstep gate. Parent0/5, fresh5ep mandatory. Initial target-only screens CTR101/102 intersect the nearby BBQ bottle; this new variant also moves that uninstructed distractor +6.5cmX to provide physical clearance. The original collision is recorded; target and distractor changes are explicit and all5states must pass.",
+  "classification": "repair_variant_not_new_semantic_family",
+  "parent_files_sha256": {
+    "task.bddl": "e2f90d6c7f6bd6d6bbc18bf12c9b449baf1335a470c62513bf5d8be8bad0877c",
+    "task.pruned_init": "e105446e118224c794101187028ecd3b6cb961a05d157f2acc8ec332e3ff18a5",
+    "FIXTURE_REPLAY.json": "2b77352ebcb8666c41a0ff61d93b6b13b35d14e244a62062298cc10dbcf67c12",
+    "action_plan.yaml": "a56fe7ac63e665bd1f9226a2a5f405a77cdab58eccb708e3572b89f43bced6b9"
+  },
+  "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+}

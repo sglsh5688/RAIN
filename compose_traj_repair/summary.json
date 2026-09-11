@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-09-11T10:54:34.315643+00:00",
+  "created_at_utc": "2026-09-11T10:57:49.261794+00:00",
   "review_status": "pending_user_review_not_selected",
   "tasks": [
     {
@@ -91,11 +91,21 @@
       "nominal_successes": 4,
       "manually_valid_successes": 3,
       "certified_episode_indices": "0,1,3"
+    },
+    {
+      "task_id": "CTR_112",
+      "instruction": "Pick the ketchup and place it in the left compartment of the bowl drainer, then pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+      "variant_of": "BDRCOMP_030",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 1,
+      "manually_valid_successes": 1,
+      "certified_episode_indices": "2"
     }
   ],
-  "source_manual_review_sha256": "fe658fe4e79998e2cf293b43fab5e2fcf7d6cd973900be448fc504a350f27583",
-  "nominal_successes": 21,
-  "manually_valid_successes": 20,
-  "episodes": 45,
+  "source_manual_review_sha256": "17635a823b28caf42d7e481906650d3b7202185a3f5847c7a1b260a0c7ce75d2",
+  "nominal_successes": 22,
+  "manually_valid_successes": 21,
+  "episodes": 50,
   "selected60_modified": false
 }

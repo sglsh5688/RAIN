@@ -113,7 +113,7 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px 5px;
 </style></head><body><header><a href="../index.html">LIBERO-EX review</a> · <a href="../selected29/index.html">Selected 60</a>
 <h1>Compose trajectory repair</h1><p>Compose tests whether skills learned from the original LIBERO-40 can be executed in sequence.
 These experiments repair failed compositions using observed trajectories, object poses, or object substitutions.</p>
-<p><b>9 reviewer candidates.</b> Each rate uses all five fresh evaluation episodes. Native success requires ordered events
+<p><b>10 reviewer candidates.</b> Each rate uses all five fresh evaluation episodes. Native success requires ordered events
 and all final task predicates, with no final TC threshold. Every displayed success also passed full video review for deliberate actions
 and preservation of earlier results. These variants are separate from the selected 60 tasks.</p><p><a href="tasks.tsv">Candidate manifest</a> · <a href="summary.json">Evaluation summary</a></p></header>
 <main><article class="task card" id="CTR_028">
@@ -338,6 +338,42 @@ and preservation of earlier results. These variants are separate from the select
 <div class="actions"><button type="button" data-video="assets/CTR_116/success_reel.mp4">Play 3 success episode(s)</button>
 <a href="assets/CTR_116/evidence.json">Evidence and provenance</a><a href="assets/CTR_116/task_bundle/task.bddl">Task definition</a></div>
 <video controls playsinline preload="none" aria-label="CTR_116 episode reel" hidden></video>
+</article><article class="task card" id="CTR_112">
+<div class="task-head"><span class="tag">Reviewer candidate · variant of BDRCOMP_030</span><h2>CTR_112</h2></div>
+<p class="instruction">Pick the ketchup and place it in the left compartment of the bowl drainer, then pick the alphabet soup and place it in the right compartment of the bowl drainer.</p><p class="score">Manually valid <b>1/5</b> (20%) · Native evaluator 1/5</p>
+<img class="preview" src="assets/CTR_112/preview.jpg" loading="lazy" decoding="async" alt="CTR_112 scene preview">
+<p><b>Parent experiment:</b> BDRCOMP_030, native evaluator 0/5. Pick the ketchup and place it in the left compartment of the bowl drainer, then pick the alphabet soup and place it in the right compartment of the bowl drainer.</p>
+<p>Trajectory-guided repair of BDRCOMP_030 (historical0/5). Move alphabet soup5cm in negative worldX and7.5cm in positive worldY toward the observed empty gripper closures; move the uninstructed BBQ distractor6.5cm in positiveX to clear the resulting initial collision. Both edits are explicit and all five frozen states pass physical screening. The inherited ordered release-and-exact-drainer-base-support rule remains unchanged. This fresh RAIN run achieves1/5, with its complete successful video and trace reviewed. Seeds7-11 differ from the historical parent, so the result does not isolate the causal effect of either pose edit. The selected60 tasks are unchanged.</p><details><summary>Failure evidence and repair</summary><pre>{
+  &quot;task_id&quot;: &quot;CTR_112&quot;,
+  &quot;parent_task_id&quot;: &quot;BDRCOMP_030&quot;,
+  &quot;parent_bundle&quot;: &quot;LiberoComposeTrajRepair20260911/drainer_parent_snapshots/BDRCOMP_030&quot;,
+  &quot;pose_changes&quot;: {
+    &quot;alphabet_soup_1&quot;: {
+      &quot;delta_xyz&quot;: [
+        -0.05,
+        0.075,
+        0
+      ]
+    },
+    &quot;bbq_sauce_1&quot;: {
+      &quot;delta_xyz&quot;: [
+        0.065,
+        0,
+        0
+      ]
+    }
+  },
+  &quot;evidence&quot;: &quot;Parent ketchup released into left compartment5/5; ep000/001/004 subsequent alphabet-soup closures miss source by[-.028,+.049],[-.053,+.073],[-.056,+.081]m. Ep000 video shows repeated empty closures by the stationary can. Move only second can toward this path, retain exact native right compartment and strict released+supported5controlstep gate. Parent0/5, fresh5ep mandatory. Initial target-only screens CTR101/102 intersect the nearby BBQ bottle; this new variant also moves that uninstructed distractor +6.5cmX to provide physical clearance. The original collision is recorded; target and distractor changes are explicit and all5states must pass.&quot;
+}</pre></details>
+<details><summary>Parent and repaired starting states</summary>
+<p>Each repair derives from the matching parent state below. The historical run is a reference; this comparison alone does not isolate the effect of the repair.</p>
+<table><thead><tr><th>State</th><th>Historical parent</th><th>Fresh repair</th></tr></thead><tbody><tr><td>000</td><td>Failed</td><td>Failed</td></tr><tr><td>001</td><td>Failed</td><td>Failed</td></tr><tr><td>002</td><td>Failed</td><td>Verified success</td></tr><tr><td>003</td><td>Failed</td><td>Failed</td></tr><tr><td>004</td><td>Failed</td><td>Failed</td></tr></tbody></table></details>
+<details><summary>Original LIBERO-40 skill lineage</summary><ul><li><b>libero_object</b>: pick_up_the_ketchup_and_place_it_in_the_basket<br>The directly trained original40 object grasp and basket-release skill transfers to the left drainer compartment for ketchup or right compartment for alphabet soup. The destination binding and two-step chain are adaptations; the original40 does not directly demonstrate drainer placement.</li><li><b>libero_object</b>: pick_up_the_alphabet_soup_and_place_it_in_the_basket<br>The directly trained original40 object grasp and basket-release skill transfers to the left drainer compartment for ketchup or right compartment for alphabet soup. The destination binding and two-step chain are adaptations; the original40 does not directly demonstrate drainer placement.</li></ul></details>
+<p>Certified episodes: 002.</p>
+
+<div class="actions"><button type="button" data-video="assets/CTR_112/success_reel.mp4">Play 1 success episode(s)</button><button type="button" data-video="assets/CTR_112/parent_failure.mp4">Play parent failure</button>
+<a href="assets/CTR_112/evidence.json">Evidence and provenance</a><a href="assets/CTR_112/task_bundle/task.bddl">Task definition</a></div>
+<video controls playsinline preload="none" aria-label="CTR_112 episode reel" hidden></video>
 </article></main><script>
 let active = null;
 document.querySelectorAll('button[data-video]').forEach(button => button.addEventListener('click', () => {

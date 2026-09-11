@@ -8,3 +8,4 @@ CTR_117	Put the cream cheese box in the basket, and then put the alphabet soup i
 CTR_118	Put the cream cheese box in the basket, and then put the alphabet soup in the basket.	CTR_121	pending_user_review_not_selected	5	2	2	1,2
 CTR_115	Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.	CTR_084	pending_user_review_not_selected	5	2	2	1,4
 CTR_116	Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.	CTR_085	pending_user_review_not_selected	5	4	3	0,1,3
+CTR_112	Pick the ketchup and place it in the left compartment of the bowl drainer, then pick the alphabet soup and place it in the right compartment of the bowl drainer.	BDRCOMP_030	pending_user_review_not_selected	5	1	1	2

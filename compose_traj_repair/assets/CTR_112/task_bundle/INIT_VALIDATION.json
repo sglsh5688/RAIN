@@ -1,0 +1,672 @@
+{
+  "validation_version": "trajectory_repair_five_state_screen_v2_fixture_snapshot",
+  "valid_count": 5,
+  "rows": [
+    {
+      "state_index": 0,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "bowl_drainer_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "ketchup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 9.792993869713126e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "salad_dressing_1",
+          "passes": true,
+          "xy_drift_m": 1.7277845820728999e-15,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 1.734723475976807e-15
+        },
+        {
+          "entity": "alphabet_soup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.8086141385661173e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "cream_cheese_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 7.131681360903427e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "milk_1",
+          "passes": true,
+          "xy_drift_m": 3.4555691641457997e-15,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 3.469446951953614e-15
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:ketchup_1_main": 819,
+        "goal_target_1:bowl_drainer_1_left_region": 3690,
+        "manipulated_object_2:alphabet_soup_1_main": 518,
+        "goal_target_2:bowl_drainer_1_right_region": 3367
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "bbq_sauce_1",
+          "before_xyz": [
+            0.057773477165495704,
+            -0.1020404202893321,
+            0.05462547741860809
+          ],
+          "after_xyz": [
+            0.1227734771654957,
+            -0.1020404202893321,
+            0.05462547741860809
+          ],
+          "applied_delta_xyz": [
+            0.065,
+            0.0,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              0.065,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "entity": "alphabet_soup_1",
+          "before_xyz": [
+            0.10090574451786259,
+            -0.19978121719843148,
+            0.03839291037244388
+          ],
+          "after_xyz": [
+            0.05090574451786259,
+            -0.12478121719843148,
+            0.03839291037244388
+          ],
+          "applied_delta_xyz": [
+            -0.05,
+            0.075,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.05,
+              0.075,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "bowl_drainer_1": {}
+      },
+      "reachability": [],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "faa9929782655417c1eb83db02e996269dbad7d81ee750ed80728e12748e7cbd"
+    },
+    {
+      "state_index": 1,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "bowl_drainer_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "ketchup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 2.9534587906017146e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "salad_dressing_1",
+          "passes": true,
+          "xy_drift_m": 1.7277845820728999e-15,
+          "angular_drift_rad": 1.8411513485215902e-16,
+          "second_window_drift_m": 1.734723475976807e-15
+        },
+        {
+          "entity": "alphabet_soup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.8086141385661173e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "cream_cheese_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "milk_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:ketchup_1_main": 819,
+        "goal_target_1:bowl_drainer_1_left_region": 3690,
+        "manipulated_object_2:alphabet_soup_1_main": 488,
+        "goal_target_2:bowl_drainer_1_right_region": 3367
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "bbq_sauce_1",
+          "before_xyz": [
+            0.040574344443320545,
+            -0.1011487365303841,
+            0.05462547741860809
+          ],
+          "after_xyz": [
+            0.10557434444332055,
+            -0.1011487365303841,
+            0.05462547741860809
+          ],
+          "applied_delta_xyz": [
+            0.065,
+            0.0,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              0.065,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "entity": "alphabet_soup_1",
+          "before_xyz": [
+            0.10090574451786259,
+            -0.19978121719843148,
+            0.03839291037244388
+          ],
+          "after_xyz": [
+            0.05090574451786259,
+            -0.12478121719843148,
+            0.03839291037244388
+          ],
+          "applied_delta_xyz": [
+            -0.05,
+            0.075,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.05,
+              0.075,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "bowl_drainer_1": {}
+      },
+      "reachability": [],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "2a93904801d21b0adc08aac85a9c9d7aace7e63b6dc2b320ba9bc463f5f07553"
+    },
+    {
+      "state_index": 2,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "bowl_drainer_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "ketchup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 2.5244600753803688e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "salad_dressing_1",
+          "passes": true,
+          "xy_drift_m": 1.7277845820728999e-15,
+          "angular_drift_rad": 1.8411513485215902e-16,
+          "second_window_drift_m": 1.734723475976807e-15
+        },
+        {
+          "entity": "alphabet_soup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.8086141385661173e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "cream_cheese_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 7.131681360903427e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "milk_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:ketchup_1_main": 819,
+        "goal_target_1:bowl_drainer_1_left_region": 3690,
+        "manipulated_object_2:alphabet_soup_1_main": 523,
+        "goal_target_2:bowl_drainer_1_right_region": 3367
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "bbq_sauce_1",
+          "before_xyz": [
+            0.055003413178675784,
+            -0.10037034002613726,
+            0.05462547741860809
+          ],
+          "after_xyz": [
+            0.12000341317867579,
+            -0.10037034002613726,
+            0.05462547741860809
+          ],
+          "applied_delta_xyz": [
+            0.065,
+            0.0,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              0.065,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "entity": "alphabet_soup_1",
+          "before_xyz": [
+            0.10090574451786259,
+            -0.19978121719843148,
+            0.03839291037244388
+          ],
+          "after_xyz": [
+            0.05090574451786259,
+            -0.12478121719843148,
+            0.03839291037244388
+          ],
+          "applied_delta_xyz": [
+            -0.05,
+            0.075,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.05,
+              0.075,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "bowl_drainer_1": {}
+      },
+      "reachability": [],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "e6893c9e8ad9caf35c9b50aff57c381ffc7104935c8159c1aefcfd2f9c885c3a"
+    },
+    {
+      "state_index": 3,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "bowl_drainer_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "ketchup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.686585498370258e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "salad_dressing_1",
+          "passes": true,
+          "xy_drift_m": 1.7277845820728999e-15,
+          "angular_drift_rad": 1.8411513485215902e-16,
+          "second_window_drift_m": 1.734723475976807e-15
+        },
+        {
+          "entity": "alphabet_soup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.8086141385661173e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "cream_cheese_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 5.79821402895467e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "milk_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.5202354860079244e-16,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:ketchup_1_main": 819,
+        "goal_target_1:bowl_drainer_1_left_region": 3690,
+        "manipulated_object_2:alphabet_soup_1_main": 480,
+        "goal_target_2:bowl_drainer_1_right_region": 3367
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "bbq_sauce_1",
+          "before_xyz": [
+            0.04031255280618034,
+            -0.10193843938911387,
+            0.05462547741860809
+          ],
+          "after_xyz": [
+            0.10531255280618035,
+            -0.10193843938911387,
+            0.05462547741860809
+          ],
+          "applied_delta_xyz": [
+            0.065,
+            0.0,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              0.065,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "entity": "alphabet_soup_1",
+          "before_xyz": [
+            0.10090574451786259,
+            -0.19978121719843148,
+            0.03839291037244388
+          ],
+          "after_xyz": [
+            0.05090574451786259,
+            -0.12478121719843148,
+            0.03839291037244388
+          ],
+          "applied_delta_xyz": [
+            -0.05,
+            0.075,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.05,
+              0.075,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "bowl_drainer_1": {}
+      },
+      "reachability": [],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "7c1e0d737de68565caee1db5e5cfa983198e7b3185313df46d0af8b780ac6ec0"
+    },
+    {
+      "state_index": 4,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "bowl_drainer_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "ketchup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 5.265018954740226e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "salad_dressing_1",
+          "passes": true,
+          "xy_drift_m": 1.7277845820728999e-15,
+          "angular_drift_rad": 1.8411513485215902e-16,
+          "second_window_drift_m": 1.734723475976807e-15
+        },
+        {
+          "entity": "alphabet_soup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.8086141385661173e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "cream_cheese_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "milk_1",
+          "passes": true,
+          "xy_drift_m": 5.551115123125783e-17,
+          "angular_drift_rad": 2.220445433152314e-16,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:ketchup_1_main": 819,
+        "goal_target_1:bowl_drainer_1_left_region": 3690,
+        "manipulated_object_2:alphabet_soup_1_main": 486,
+        "goal_target_2:bowl_drainer_1_right_region": 3367
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "bbq_sauce_1",
+          "before_xyz": [
+            0.04513563556186173,
+            -0.10236211489097762,
+            0.05462547741860809
+          ],
+          "after_xyz": [
+            0.11013563556186173,
+            -0.10236211489097762,
+            0.05462547741860809
+          ],
+          "applied_delta_xyz": [
+            0.065,
+            0.0,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              0.065,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "entity": "alphabet_soup_1",
+          "before_xyz": [
+            0.10090574451786259,
+            -0.19978121719843148,
+            0.03839291037244388
+          ],
+          "after_xyz": [
+            0.05090574451786259,
+            -0.12478121719843148,
+            0.03839291037244388
+          ],
+          "applied_delta_xyz": [
+            -0.05,
+            0.075,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.05,
+              0.075,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "bowl_drainer_1": {}
+      },
+      "reachability": [],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "2ceee554667c8a0550e2b3e5cb51c4dd6f23727b5ef75742bf7b5f77e161f763"
+    }
+  ],
+  "evaluator_wait_steps": 10,
+  "evaluator_wait_action": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "policy_evaluation_run": false
+}

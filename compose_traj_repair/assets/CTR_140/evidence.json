@@ -1,0 +1,1458 @@
+{
+  "task_id": "CTR_140",
+  "instruction": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+  "status": "pending_user_review_not_selected",
+  "variant_of": "VCN16_001",
+  "classification": "repair_variant_not_new_semantic_family",
+  "episodes": 5,
+  "nominal_successes": 1,
+  "manually_valid_successes": 1,
+  "nominal_success_episode_indices": [
+    3
+  ],
+  "certified_episode_indices": [
+    3
+  ],
+  "ordered_native_milestones": {
+    "3": [
+      160,
+      212,
+      488
+    ]
+  },
+  "final_success_requires_all_bddl_goals": true,
+  "compose_final_tc_gate": false,
+  "results_sha256": "601ce5802cd94702f5112a3cedc78137d8d36da83d18e3a8eb60e7f7eea69b72",
+  "parent_results_sha256": "b418ba223cb9bbb3552cc1844c80fa2ed7d965da17268f3e45d47b1553b571d7",
+  "parent_nominal_successes": 0,
+  "parent_episodes": 5,
+  "parent_instruction": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+  "parent_state_verification": {
+    "method": "historical_per_episode_state_hash"
+  },
+  "repair": {
+    "task_id": "CTR_140",
+    "parent_task_id": "VCN16_001",
+    "parent_bundle": "LiberoValidComposeNew20260905/Batch16DiverseExactDonorExtensions/tasks/vcn16_001__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove_then_open_the_top_drawer_of_the_wooden_cabinet",
+    "pose_changes": {
+      "flat_stove_1": {
+        "delta_xyz": [
+          0.1,
+          0,
+          0
+        ]
+      }
+    },
+    "evidence": "Historical three-step VCN16_001 cheese onto stove -> turn on same stove -> open wooden top drawer was0/5. First cheese native placement reached in all5 episodes at152/162/169/164/160 controls; the stove turned on only inep004 at368 after action-stage transition, and no top-drawer goal completed. Actual recorded turn-on stage is short: ep000 controls161–177 endsEEF[-.301,.201,.957], ep001169–209 ends[-.287,.225,.973], ep004169–177 ends[-.284,.196,.969]. Exact frozen stove/knob root begins[-.415,.211,.905], while burner is+.15m X away, so robot remains near burner-side corridor and misses knob. Test coherent whole-stove +10/+12cm X shift, retaining yaw, OFF control joint, cheese object, fully closed top drawer and all original40 source action descriptions. This also moves the first placement target and must be re-evaluated rather than claiming fixed policy replay. Initial collision/stability/nativefalse/fixture replay all5required. New control trace/manual review must prove actual knob interaction and preserve placed cheese and stoveON before deliberate top opening.",
+    "source_result": "private_evaluation_results/rain_ms_maskaug_gt_valid_compose_new_batch16_diverse_exact_donor18_5ep_20260905/tasks/all18/VCN16_001/results.json"
+  },
+  "frozen_repair_provenance": {
+    "task_id": "CTR_140",
+    "parent_task_id": "VCN16_001",
+    "parent_bundle": "LiberoValidComposeNew20260905/Batch16DiverseExactDonorExtensions/tasks/vcn16_001__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove_then_open_the_top_drawer_of_the_wooden_cabinet",
+    "pose_changes": {
+      "flat_stove_1": {
+        "delta_xyz": [
+          0.1,
+          0,
+          0
+        ]
+      }
+    },
+    "evidence": "Historical three-step VCN16_001 cheese onto stove -> turn on same stove -> open wooden top drawer was0/5. First cheese native placement reached in all5 episodes at152/162/169/164/160 controls; the stove turned on only inep004 at368 after action-stage transition, and no top-drawer goal completed. Actual recorded turn-on stage is short: ep000 controls161–177 endsEEF[-.301,.201,.957], ep001169–209 ends[-.287,.225,.973], ep004169–177 ends[-.284,.196,.969]. Exact frozen stove/knob root begins[-.415,.211,.905], while burner is+.15m X away, so robot remains near burner-side corridor and misses knob. Test coherent whole-stove +10/+12cm X shift, retaining yaw, OFF control joint, cheese object, fully closed top drawer and all original40 source action descriptions. This also moves the first placement target and must be re-evaluated rather than claiming fixed policy replay. Initial collision/stability/nativefalse/fixture replay all5required. New control trace/manual review must prove actual knob interaction and preserve placed cheese and stoveON before deliberate top opening.",
+    "source_result": "private_evaluation_results/rain_ms_maskaug_gt_valid_compose_new_batch16_diverse_exact_donor18_5ep_20260905/tasks/all18/VCN16_001/results.json",
+    "classification": "repair_variant_not_new_semantic_family",
+    "parent_files_sha256": {
+      "task.bddl": "4c30bce9b2acc5e5ab23a97bb4a26e6b5e12394a1b8d87affeb4a66967265e08",
+      "task.pruned_init": "17733028692cc4e6323eb82cb9bba59a885482621c0154e7503cc63a45941e9b",
+      "FIXTURE_REPLAY.json": "ade324678796bbf036f6bfdf9be5ca4042ad63aefe48f43042e517c97cd9eb5e",
+      "action_plan.yaml": "9bf66abe90510c5d9f9ee056523403547fa7ca421e277361ae2c6eba2ff8a133"
+    },
+    "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+  },
+  "original40_skill_lineage": [
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_02",
+      "instruction": "Pick the cream cheese and place it in the basket",
+      "transfer": "creamcheese pickup. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task."
+    },
+    {
+      "suite": "libero_goal",
+      "task": "put_the_bowl_on_the_stove",
+      "original40_task_id": "LIBERO_GOAL_02",
+      "instruction": "Put the bowl on the stove",
+      "transfer": "stove placement trained with black bowl; cheese placement is object adaptation. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task."
+    },
+    {
+      "suite": "libero_goal",
+      "task": "turn_on_the_stove",
+      "original40_task_id": "LIBERO_GOAL_08",
+      "instruction": "Turn on the stove",
+      "transfer": "stove turn-on. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task."
+    },
+    {
+      "suite": "libero_goal",
+      "task": "open_the_top_drawer_and_put_the_bowl_inside",
+      "original40_task_id": "LIBERO_GOAL_04",
+      "instruction": "Open the top layer of the drawer and put the bowl inside",
+      "transfer": "top-drawer open primitive from open-and-insert task. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task."
+    }
+  ],
+  "manual_review_notes": "Three-step repair of historical VCN16_001 (0/5): place cheese on the stove, turn on that stove, then open the wooden top drawer. The entire stove moves10cm in positive worldX toward the observed missed-knob approach, carrying its burner and knob together. This also changes the first placement target. Cheese, cabinet, action plan and native ordered goals retain their parent definitions. All five frozen states pass physical validation; the fresh existing-RAIN run completes1/5 with a full video/trace certificate. The first placement includes a documented transfer of the trained bowl-to-stove destination to directly trained cream-cheese grasping. This is an exploratory repaired composition, not an additional selected60 task or a general success-rate claim.",
+  "episode_reviews": [
+    {
+      "episode_idx": 3,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 63,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch46_5ep_20260911/tasks/all1/CTR_140/videos/CTR_140_ep003_ok.mp4",
+      "video_sha256": "e3384a4c4363f7e3f4a9d8b19f04891dadcd653b44dd7cfe2a6391c453423a88",
+      "trace_npz_sha256": "48f9b67e36db9ce696cdad072065797fd40b12034d09b0ef7a688217c84d8ca0",
+      "milestones": [
+        160,
+        212,
+        488
+      ],
+      "initial_native_goals": [
+        false,
+        false,
+        false
+      ],
+      "final_native_goals": [
+        true,
+        true,
+        true
+      ],
+      "cheese_max_displacement_after_release_m": 0.0,
+      "top_drawer_final_qpos_m": -0.1435246709382228,
+      "stove_final_angle_rad": 0.9927109191661376,
+      "contact_audit": {
+        "episode_idx": 3,
+        "policy_calls": 0,
+        "simulation_steps_added": 0,
+        "records": [
+          {
+            "control_step": 0,
+            "body_forward_max_error_m": 6.395824083453572e-06,
+            "contacts": [
+              {
+                "geom_a": "table_collision",
+                "geom_b": "cream_cheese_1_g1",
+                "distance_m": -1.4522581392263645e-05
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "cream_cheese_1_g1",
+                "distance_m": -1.4522581392263645e-05
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "cream_cheese_1_g1",
+                "distance_m": -1.4522581392263645e-05
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "cream_cheese_1_g1",
+                "distance_m": -1.4522581392263645e-05
+              }
+            ],
+            "joint_qpos": {
+              "wooden_cabinet_1_top_level": 0.0,
+              "wooden_cabinet_1_middle_level": 0.0,
+              "wooden_cabinet_1_bottom_level": 0.0,
+              "flat_stove_1_button": 0.0
+            },
+            "eef_pos": [
+              -0.20846466056582386,
+              1.9293325433420346e-12,
+              1.17327947572964
+            ],
+            "gripper_qpos": [
+              0.03872836678979037,
+              -0.03872830662253034
+            ],
+            "collision_bounds": {
+              "cream_cheese_1": [
+                [
+                  -0.14727372956704682,
+                  -0.023239985264057773,
+                  0.8999854774186077
+                ],
+                [
+                  -0.06605772956704681,
+                  0.019432014735942235,
+                  0.9178574774186078
+                ]
+              ],
+              "flat_stove_1": [
+                [
+                  -0.36318542833094786,
+                  0.11368027986666587,
+                  0.885
+                ],
+                [
+                  -0.06616333651154005,
+                  0.3036802798666659,
+                  0.9550200000000001
+                ]
+              ],
+              "wooden_cabinet_1": [
+                [
+                  -0.10838659904796948,
+                  -0.35423747918228715,
+                  0.9095868098380617
+                ],
+                [
+                  0.14619340095203054,
+                  -0.1332231847989706,
+                  1.12799
+                ]
+              ]
+            }
+          },
+          {
+            "control_step": 169,
+            "body_forward_max_error_m": 1.411187580008244e-05,
+            "contacts": [
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537899007005e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.2625378987474765e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898993479e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898733951e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537899007005e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.2625378987474765e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898993479e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898733951e-06
+              }
+            ],
+            "joint_qpos": {
+              "wooden_cabinet_1_top_level": 0.0,
+              "wooden_cabinet_1_middle_level": 0.0,
+              "wooden_cabinet_1_bottom_level": 0.0,
+              "flat_stove_1_button": 0.0
+            },
+            "eef_pos": [
+              -0.19663976523620594,
+              0.20164654687241565,
+              1.0539024040091103
+            ],
+            "gripper_qpos": [
+              0.03896235414909016,
+              -0.03896901576997129
+            ],
+            "collision_bounds": {
+              "cream_cheese_1": [
+                [
+                  -0.2183913179709159,
+                  0.1752012105596985,
+                  0.924992737462101
+                ],
+                [
+                  -0.13494736370190444,
+                  0.2222836077265687,
+                  0.9428647374621013
+                ]
+              ],
+              "flat_stove_1": [
+                [
+                  -0.36318542833094786,
+                  0.11368027986666587,
+                  0.885
+                ],
+                [
+                  -0.06616333651154005,
+                  0.3036802798666659,
+                  0.9550200000000001
+                ]
+              ],
+              "wooden_cabinet_1": [
+                [
+                  -0.10838659904796948,
+                  -0.35423747918228715,
+                  0.9095868098380617
+                ],
+                [
+                  0.14619340095203054,
+                  -0.1332231847989706,
+                  1.12799
+                ]
+              ]
+            }
+          },
+          {
+            "control_step": 195,
+            "body_forward_max_error_m": 4.8178985264629715e-05,
+            "contacts": [
+              {
+                "geom_a": "gripper0_finger1_pad_collision",
+                "geom_b": "flat_stove_1_g20",
+                "distance_m": -4.25316117332752e-06
+              },
+              {
+                "geom_a": "gripper0_finger1_pad_collision",
+                "geom_b": "flat_stove_1_g21",
+                "distance_m": -5.5976047883302365e-06
+              },
+              {
+                "geom_a": "gripper0_finger2_pad_collision",
+                "geom_b": "flat_stove_1_g19",
+                "distance_m": -1.3967042991152871e-05
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              }
+            ],
+            "joint_qpos": {
+              "wooden_cabinet_1_top_level": 0.0,
+              "wooden_cabinet_1_middle_level": 0.0,
+              "wooden_cabinet_1_bottom_level": 0.0,
+              "flat_stove_1_button": 0.020952890069170324
+            },
+            "eef_pos": [
+              -0.29791792100374254,
+              0.2124636894730824,
+              0.9284750041130021
+            ],
+            "gripper_qpos": [
+              0.01536679421334808,
+              -0.010654310713955666
+            ],
+            "collision_bounds": {
+              "cream_cheese_1": [
+                [
+                  -0.2183913179709159,
+                  0.17520121055969856,
+                  0.9249927374621012
+                ],
+                [
+                  -0.13494736370190444,
+                  0.22228360772656863,
+                  0.9428647374621011
+                ]
+              ],
+              "flat_stove_1": [
+                [
+                  -0.36333981649078934,
+                  0.11368027986666587,
+                  0.885
+                ],
+                [
+                  -0.06616333651154005,
+                  0.3036802798666659,
+                  0.9550200000000001
+                ]
+              ],
+              "wooden_cabinet_1": [
+                [
+                  -0.10838659904796948,
+                  -0.35423747918228715,
+                  0.9095868098380617
+                ],
+                [
+                  0.14619340095203054,
+                  -0.1332231847989706,
+                  1.12799
+                ]
+              ]
+            }
+          },
+          {
+            "control_step": 201,
+            "body_forward_max_error_m": 9.390293238131786e-05,
+            "contacts": [
+              {
+                "geom_a": "flat_stove_1_g5",
+                "geom_b": "gripper0_finger1_collision",
+                "distance_m": -0.0003460971413752345
+              },
+              {
+                "geom_a": "gripper0_finger2_pad_collision",
+                "geom_b": "flat_stove_1_g19",
+                "distance_m": -4.498951939603048e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              }
+            ],
+            "joint_qpos": {
+              "wooden_cabinet_1_top_level": 0.0,
+              "wooden_cabinet_1_middle_level": 0.0,
+              "wooden_cabinet_1_bottom_level": 0.0,
+              "flat_stove_1_button": 0.15668843846493904
+            },
+            "eef_pos": [
+              -0.2989874472102798,
+              0.21600357715517304,
+              0.9285424749463148
+            ],
+            "gripper_qpos": [
+              0.017427586183949916,
+              -0.008892012596861674
+            ],
+            "collision_bounds": {
+              "cream_cheese_1": [
+                [
+                  -0.2183913179709159,
+                  0.17520121055969856,
+                  0.9249927374621012
+                ],
+                [
+                  -0.13494736370190444,
+                  0.22228360772656863,
+                  0.9428647374621011
+                ]
+              ],
+              "flat_stove_1": [
+                [
+                  -0.36484395650636026,
+                  0.11368027986666587,
+                  0.885
+                ],
+                [
+                  -0.06616333651154005,
+                  0.3036802798666659,
+                  0.9550200000000001
+                ]
+              ],
+              "wooden_cabinet_1": [
+                [
+                  -0.10838659904796948,
+                  -0.35423747918228715,
+                  0.9095868098380617
+                ],
+                [
+                  0.14619340095203054,
+                  -0.1332231847989706,
+                  1.12799
+                ]
+              ]
+            }
+          },
+          {
+            "control_step": 202,
+            "body_forward_max_error_m": 9.552145175908966e-05,
+            "contacts": [
+              {
+                "geom_a": "flat_stove_1_g5",
+                "geom_b": "gripper0_finger1_collision",
+                "distance_m": -0.00039162173946782897
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              }
+            ],
+            "joint_qpos": {
+              "wooden_cabinet_1_top_level": 0.0,
+              "wooden_cabinet_1_middle_level": 0.0,
+              "wooden_cabinet_1_bottom_level": 0.0,
+              "flat_stove_1_button": 0.18885784401257877
+            },
+            "eef_pos": [
+              -0.2992129629073983,
+              0.2164569758685105,
+              0.9286052531048629
+            ],
+            "gripper_qpos": [
+              0.017513210188864786,
+              -0.008842478229758482
+            ],
+            "collision_bounds": {
+              "cream_cheese_1": [
+                [
+                  -0.2183913179709159,
+                  0.17520121055969856,
+                  0.9249927374621012
+                ],
+                [
+                  -0.13494736370190444,
+                  0.22228360772656863,
+                  0.9428647374621011
+                ]
+              ],
+              "flat_stove_1": [
+                [
+                  -0.36505634096235984,
+                  0.11368027986666587,
+                  0.885
+                ],
+                [
+                  -0.06616333651154005,
+                  0.3036802798666659,
+                  0.9550200000000001
+                ]
+              ],
+              "wooden_cabinet_1": [
+                [
+                  -0.10838659904796948,
+                  -0.35423747918228715,
+                  0.9095868098380617
+                ],
+                [
+                  0.14619340095203054,
+                  -0.1332231847989706,
+                  1.12799
+                ]
+              ]
+            }
+          },
+          {
+            "control_step": 208,
+            "body_forward_max_error_m": 7.52145035212981e-05,
+            "contacts": [
+              {
+                "geom_a": "flat_stove_1_g5",
+                "geom_b": "gripper0_finger1_collision",
+                "distance_m": -0.000429016550459238
+              },
+              {
+                "geom_a": "gripper0_finger2_pad_collision",
+                "geom_b": "flat_stove_1_g19",
+                "distance_m": -2.650278145479123e-05
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              }
+            ],
+            "joint_qpos": {
+              "wooden_cabinet_1_top_level": 0.0,
+              "wooden_cabinet_1_middle_level": 0.0,
+              "wooden_cabinet_1_bottom_level": 0.0,
+              "flat_stove_1_button": 0.3901435697124627
+            },
+            "eef_pos": [
+              -0.3002455813735677,
+              0.2174190192009465,
+              0.9291001920142005
+            ],
+            "gripper_qpos": [
+              0.01620115002878853,
+              -0.010500506366895123
+            ],
+            "collision_bounds": {
+              "cream_cheese_1": [
+                [
+                  -0.2183913179709159,
+                  0.17520121055969856,
+                  0.9249927374621012
+                ],
+                [
+                  -0.13494736370190444,
+                  0.22228360772656863,
+                  0.9428647374621011
+                ]
+              ],
+              "flat_stove_1": [
+                [
+                  -0.3659884680650746,
+                  0.11368027986666587,
+                  0.885
+                ],
+                [
+                  -0.06616333651154005,
+                  0.3036802798666659,
+                  0.9550200000000001
+                ]
+              ],
+              "wooden_cabinet_1": [
+                [
+                  -0.10838659904796948,
+                  -0.35423747918228715,
+                  0.9095868098380617
+                ],
+                [
+                  0.14619340095203054,
+                  -0.1332231847989706,
+                  1.12799
+                ]
+              ]
+            }
+          },
+          {
+            "control_step": 211,
+            "body_forward_max_error_m": 6.208388383074914e-05,
+            "contacts": [
+              {
+                "geom_a": "flat_stove_1_g5",
+                "geom_b": "gripper0_finger1_collision",
+                "distance_m": -0.0004319131010702693
+              },
+              {
+                "geom_a": "gripper0_finger2_pad_collision",
+                "geom_b": "flat_stove_1_g19",
+                "distance_m": -1.0918961174205446e-05
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              }
+            ],
+            "joint_qpos": {
+              "wooden_cabinet_1_top_level": 0.0,
+              "wooden_cabinet_1_middle_level": 0.0,
+              "wooden_cabinet_1_bottom_level": 0.0,
+              "flat_stove_1_button": 0.4924473154327542
+            },
+            "eef_pos": [
+              -0.30041149879199885,
+              0.2172108350541774,
+              0.9293690880409298
+            ],
+            "gripper_qpos": [
+              0.01481623359127066,
+              -0.012172201100812947
+            ],
+            "collision_bounds": {
+              "cream_cheese_1": [
+                [
+                  -0.2183913179709159,
+                  0.17520121055969856,
+                  0.9249927374621012
+                ],
+                [
+                  -0.13494736370190444,
+                  0.22228360772656863,
+                  0.9428647374621011
+                ]
+              ],
+              "flat_stove_1": [
+                [
+                  -0.3663301973992985,
+                  0.11368027986666587,
+                  0.885
+                ],
+                [
+                  -0.06616333651154005,
+                  0.3036802798666659,
+                  0.9550200000000001
+                ]
+              ],
+              "wooden_cabinet_1": [
+                [
+                  -0.10838659904796948,
+                  -0.35423747918228715,
+                  0.9095868098380617
+                ],
+                [
+                  0.14619340095203054,
+                  -0.1332231847989706,
+                  1.12799
+                ]
+              ]
+            }
+          },
+          {
+            "control_step": 212,
+            "body_forward_max_error_m": 5.788814694795974e-05,
+            "contacts": [
+              {
+                "geom_a": "flat_stove_1_g5",
+                "geom_b": "gripper0_finger1_collision",
+                "distance_m": -0.0004308067195523124
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              }
+            ],
+            "joint_qpos": {
+              "wooden_cabinet_1_top_level": 0.0,
+              "wooden_cabinet_1_middle_level": 0.0,
+              "wooden_cabinet_1_bottom_level": 0.0,
+              "flat_stove_1_button": 0.5267791088302494
+            },
+            "eef_pos": [
+              -0.30034083106750964,
+              0.21700032462052374,
+              0.9294649926620663
+            ],
+            "gripper_qpos": [
+              0.014175094679938462,
+              -0.012944833014885597
+            ],
+            "collision_bounds": {
+              "cream_cheese_1": [
+                [
+                  -0.2183913179709159,
+                  0.17520121055969856,
+                  0.9249927374621012
+                ],
+                [
+                  -0.13494736370190444,
+                  0.22228360772656863,
+                  0.9428647374621011
+                ]
+              ],
+              "flat_stove_1": [
+                [
+                  -0.3663156003476204,
+                  0.11368027986666587,
+                  0.885
+                ],
+                [
+                  -0.06616333651154005,
+                  0.3036802798666659,
+                  0.9550200000000001
+                ]
+              ],
+              "wooden_cabinet_1": [
+                [
+                  -0.10838659904796948,
+                  -0.35423747918228715,
+                  0.9095868098380617
+                ],
+                [
+                  0.14619340095203054,
+                  -0.1332231847989706,
+                  1.12799
+                ]
+              ]
+            }
+          },
+          {
+            "control_step": 220,
+            "body_forward_max_error_m": 4.76519770476469e-05,
+            "contacts": [
+              {
+                "geom_a": "flat_stove_1_g5",
+                "geom_b": "gripper0_finger1_collision",
+                "distance_m": -0.0004565918818569825
+              },
+              {
+                "geom_a": "gripper0_finger2_pad_collision",
+                "geom_b": "flat_stove_1_g19",
+                "distance_m": -4.0771536379394886e-05
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              }
+            ],
+            "joint_qpos": {
+              "wooden_cabinet_1_top_level": 0.0,
+              "wooden_cabinet_1_middle_level": 0.0,
+              "wooden_cabinet_1_bottom_level": 0.0,
+              "flat_stove_1_button": 0.8038233366565223
+            },
+            "eef_pos": [
+              -0.29858848216141737,
+              0.21551851127961114,
+              0.9298790222799167
+            ],
+            "gripper_qpos": [
+              0.008467360956671884,
+              -0.01950285144870121
+            ],
+            "collision_bounds": {
+              "cream_cheese_1": [
+                [
+                  -0.2183913179709159,
+                  0.17520121055969856,
+                  0.9249927374621012
+                ],
+                [
+                  -0.13494736370190444,
+                  0.22228360772656863,
+                  0.9428647374621011
+                ]
+              ],
+              "flat_stove_1": [
+                [
+                  -0.3644998883564541,
+                  0.11368027986666587,
+                  0.885
+                ],
+                [
+                  -0.06616333651154005,
+                  0.3036802798666659,
+                  0.9550200000000001
+                ]
+              ],
+              "wooden_cabinet_1": [
+                [
+                  -0.10838659904796948,
+                  -0.35423747918228715,
+                  0.9095868098380617
+                ],
+                [
+                  0.14619340095203054,
+                  -0.1332231847989706,
+                  1.12799
+                ]
+              ]
+            }
+          },
+          {
+            "control_step": 450,
+            "body_forward_max_error_m": 3.687688076195461e-06,
+            "contacts": [
+              {
+                "geom_a": "wooden_cabinet_1_g18",
+                "geom_b": "gripper0_finger2_collision",
+                "distance_m": -0.00011870012681547414
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870848e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898870107e-06
+              },
+              {
+                "geom_a": "wooden_cabinet_1_g6",
+                "geom_b": "wooden_cabinet_1_g11",
+                "distance_m": -4.9492777902416445e-08
+              },
+              {
+                "geom_a": "wooden_cabinet_1_g6",
+                "geom_b": "wooden_cabinet_1_g11",
+                "distance_m": -4.603610330969581e-08
+              }
+            ],
+            "joint_qpos": {
+              "wooden_cabinet_1_top_level": 0.0016596487658817076,
+              "wooden_cabinet_1_middle_level": 0.0,
+              "wooden_cabinet_1_bottom_level": 0.0,
+              "flat_stove_1_button": 0.9927107916509674
+            },
+            "eef_pos": [
+              0.05925299529756407,
+              -0.13710188553092362,
+              1.1045405045977512
+            ],
+            "gripper_qpos": [
+              0.040002792765622006,
+              -0.040684314683107535
+            ],
+            "collision_bounds": {
+              "cream_cheese_1": [
+                [
+                  -0.21839131797091588,
+                  0.17520121055969856,
+                  0.9249927374621012
+                ],
+                [
+                  -0.13494736370190447,
+                  0.22228360772656863,
+                  0.9428647374621011
+                ]
+              ],
+              "flat_stove_1": [
+                [
+                  -0.3651673844213891,
+                  0.11368027986666587,
+                  0.885
+                ],
+                [
+                  -0.06616333651154005,
+                  0.3036802798666659,
+                  0.9550200000000001
+                ]
+              ],
+              "wooden_cabinet_1": [
+                [
+                  -0.10838659904796948,
+                  -0.35423747918228715,
+                  0.9095868098380617
+                ],
+                [
+                  0.14619340095203054,
+                  -0.1332231847989706,
+                  1.12799
+                ]
+              ]
+            }
+          },
+          {
+            "control_step": 480,
+            "body_forward_max_error_m": 0.00031270271725150275,
+            "contacts": [
+              {
+                "geom_a": "wooden_cabinet_1_g18",
+                "geom_b": "gripper0_finger2_collision",
+                "distance_m": -9.934871561090297e-05
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898871144e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898869812e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898871144e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898869812e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898871144e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898869812e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898871144e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898869812e-06
+              }
+            ],
+            "joint_qpos": {
+              "wooden_cabinet_1_top_level": -0.08891784210237472,
+              "wooden_cabinet_1_middle_level": 0.0,
+              "wooden_cabinet_1_bottom_level": 0.0,
+              "flat_stove_1_button": 0.9927109081269451
+            },
+            "eef_pos": [
+              0.05958578245707533,
+              -0.04792965110472982,
+              1.1047146825631704
+            ],
+            "gripper_qpos": [
+              0.04000259367727893,
+              -0.040111095609139176
+            ],
+            "collision_bounds": {
+              "cream_cheese_1": [
+                [
+                  -0.21839131797091588,
+                  0.17520121055969856,
+                  0.9249927374621012
+                ],
+                [
+                  -0.13494736370190447,
+                  0.22228360772656863,
+                  0.9428647374621011
+                ]
+              ],
+              "flat_stove_1": [
+                [
+                  -0.36516738449042746,
+                  0.11368027986666587,
+                  0.885
+                ],
+                [
+                  -0.06616333651154005,
+                  0.3036802798666659,
+                  0.9550200000000001
+                ]
+              ],
+              "wooden_cabinet_1": [
+                [
+                  -0.10838659904796948,
+                  -0.35423747918228715,
+                  0.9095868098380617
+                ],
+                [
+                  0.14619340095203054,
+                  -0.0443053426965959,
+                  1.12799
+                ]
+              ]
+            }
+          },
+          {
+            "control_step": 488,
+            "body_forward_max_error_m": 0.00022110518467472265,
+            "contacts": [
+              {
+                "geom_a": "wooden_cabinet_1_g18",
+                "geom_b": "gripper0_finger2_collision",
+                "distance_m": -9.600687301958288e-05
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898871144e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898869812e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898871144e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base_vis",
+                "distance_m": -7.262537898869812e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898871144e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898869812e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898871144e-06
+              },
+              {
+                "geom_a": "cream_cheese_1_g1",
+                "geom_b": "flat_stove_1_base",
+                "distance_m": -7.262537898869812e-06
+              }
+            ],
+            "joint_qpos": {
+              "wooden_cabinet_1_top_level": -0.1435246709382228,
+              "wooden_cabinet_1_middle_level": 0.0,
+              "wooden_cabinet_1_bottom_level": 0.0,
+              "flat_stove_1_button": 0.9927109191661376
+            },
+            "eef_pos": [
+              0.059740485144699776,
+              0.00680273500905448,
+              1.1053774864564103
+            ],
+            "gripper_qpos": [
+              0.040002209022511816,
+              -0.04042312421657906
+            ],
+            "collision_bounds": {
+              "cream_cheese_1": [
+                [
+                  -0.21839131797091588,
+                  0.17520121055969856,
+                  0.9249927374621012
+                ],
+                [
+                  -0.13494736370190447,
+                  0.22228360772656863,
+                  0.9428647374621011
+                ]
+              ],
+              "flat_stove_1": [
+                [
+                  -0.36516738449697056,
+                  0.11368027986666587,
+                  0.885
+                ],
+                [
+                  -0.06616333651154005,
+                  0.3036802798666659,
+                  0.9550200000000001
+                ]
+              ],
+              "wooden_cabinet_1": [
+                [
+                  -0.10838659904796948,
+                  -0.35423747918228715,
+                  0.9095868098380617
+                ],
+                [
+                  0.14619340095203054,
+                  0.010301486139252185,
+                  1.12799
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "notes": "Reviewed all63 saved video frames and the full488-control trace. The robot deliberately grasps cream cheese, carries it to the stove and releases it. It then engages the stove knob with finger pads (reconstructed contacts with knob geoms19-21 at195; knob angle rises0.02095rad at195 to0.52678rad at212) and turns it on. The action-plan TC switches at201, eleven controls before the nativeOn threshold at212, while the same ongoing knob interaction continues; this timing is disclosed and no terminalTC criterion is used. The robot subsequently travels to the actual top-drawer handle, pulls the initially closed drawer from0 to-0.143525m, with finger-handle geom18 contact at450,480,488. Cheese remains on the stove throughout, with effectively zero motion after its release at169, and stoveOn remains true throughout the drawer action. All final native/BDDL goals hold. The contact check reconstructs saved states with zero added policy calls or simulator steps; forward-cache differences are recorded in the audit."
+    }
+  ],
+  "episode_outcomes": [
+    {
+      "episode_idx": 0,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 1,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 2,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 3,
+      "parent_same_index_native_success": false,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 4,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    }
+  ],
+  "rain_settings": {
+    "checkpoint": "RAIN/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "progress_checkpoint": "RAIN/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "replan_steps": 8,
+    "num_inference_steps": 4,
+    "feas_threshold": 0.7,
+    "consecutive_stop": 2,
+    "seed": 7,
+    "clip_model_name": "openai/clip-vit-large-patch14"
+  },
+  "source_bundle_sha256": {
+    "task.bddl": "4c30bce9b2acc5e5ab23a97bb4a26e6b5e12394a1b8d87affeb4a66967265e08",
+    "task.pruned_init": "7d3adc16f30ba07eabc212414b9182c95a1c8758a8450e7e9d8c866db95099dd",
+    "task_meta.yaml": "db7b389bc33648c0e161df88ed498f6ccfe295f9c8ca716aab90d1cca971aa0a",
+    "eval_rules.yaml": "b4f956daf3da8b08e072ac26e6cd3458a2d7829f12dda7bbb44d0a7d1728a1a8",
+    "registry_entry.yaml": "eb2108050f5e1e238e38853afa8e6cf99cd0d5116233f6ffbb9815df2433c7b8",
+    "mask_bindings.yaml": "09cc72c5889a257866137a1bc80b683718cd161619b4266f0f6da1805765a929",
+    "action_plan.yaml": "ffb140296f52e537971dc7c2f230b39b7a89bae0da6eafa9b0661df02e91bce2",
+    "FIXTURE_REPLAY.json": "70114d620f128668b4d7394adc4143b7f8bd16fd5d6280d8d76bdb36163530ff",
+    "INIT_VALIDATION.json": "ce2e1fff809a2dac5200bdac4ac242f9cb56c9afacaf7cdd5ea9f29306c680c4",
+    "REPAIR_PROVENANCE.json": "f4c6c55c3964c24c7c089df85ae195d4041a944d3c04799495bd56e8e5a06676"
+  },
+  "comparison_design_note": "The historical run is a reference; this comparison alone does not isolate the effect of the repair.",
+  "parent_failure_video_sha256": "790d1903f3049a9d42ea34cea7837d1725ec56b84f830cc231406ac6434a4d06"
+}

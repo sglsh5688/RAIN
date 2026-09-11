@@ -1,0 +1,677 @@
+{
+  "validation_version": "trajectory_repair_five_state_screen_v2_fixture_snapshot",
+  "valid_count": 5,
+  "rows": [
+    {
+      "state_index": 0,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "wooden_cabinet_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "flat_stove_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "wine_rack_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "cream_cheese_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.771983495410124e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "wine_bottle_1",
+          "passes": true,
+          "xy_drift_m": 1.0863773429461799e-11,
+          "angular_drift_rad": 5.018345333795005e-09,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_1",
+          "passes": true,
+          "xy_drift_m": 3.3504016330101467e-11,
+          "angular_drift_rad": 1.4942387895308796e-08,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:cream_cheese_1": 411,
+        "goal_target_1:flat_stove_1": 3814,
+        "interaction_target_2:flat_stove_1_button": 558,
+        "interaction_target_3:wooden_cabinet_1:top": 889
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "flat_stove_1",
+          "before_xyz": [
+            -0.4153939424195807,
+            0.2109697983847206,
+            0.905
+          ],
+          "after_xyz": [
+            -0.31539394241958074,
+            0.2109697983847206,
+            0.905
+          ],
+          "before_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "after_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "applied_delta_xyz": [
+            0.09999999999999998,
+            0.0,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              0.1,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "wooden_cabinet_1": {
+          "wooden_cabinet_1_top_level": 0.0,
+          "wooden_cabinet_1_middle_level": 0.0,
+          "wooden_cabinet_1_bottom_level": 0.0
+        },
+        "flat_stove_1": {
+          "flat_stove_1_button": 0.0
+        },
+        "wine_rack_1": {}
+      },
+      "reachability": [
+        {
+          "entity": "cream_cheese_1",
+          "robot_base_distance_m": 0.5788220133319519,
+          "passes": true
+        },
+        {
+          "entity": "flat_stove_1",
+          "robot_base_distance_m": 0.40411705080534394,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "a17962a451f626461657dd701345d94c15b556c841a7b9b488a6e92056a0a976"
+    },
+    {
+      "state_index": 1,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "wooden_cabinet_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "flat_stove_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "wine_rack_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "cream_cheese_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "wine_bottle_1",
+          "passes": true,
+          "xy_drift_m": 1.0863773429461799e-11,
+          "angular_drift_rad": 5.018345334522462e-09,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_1",
+          "passes": true,
+          "xy_drift_m": 3.3504005477145804e-11,
+          "angular_drift_rad": 1.4942387820077447e-08,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:cream_cheese_1": 392,
+        "goal_target_1:flat_stove_1": 3784,
+        "interaction_target_2:flat_stove_1_button": 548,
+        "interaction_target_3:wooden_cabinet_1:top": 980
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "flat_stove_1",
+          "before_xyz": [
+            -0.418581143104996,
+            0.2044953987793609,
+            0.905
+          ],
+          "after_xyz": [
+            -0.31858114310499597,
+            0.2044953987793609,
+            0.905
+          ],
+          "before_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "after_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "applied_delta_xyz": [
+            0.10000000000000003,
+            0.0,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              0.1,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "wooden_cabinet_1": {
+          "wooden_cabinet_1_top_level": 0.0,
+          "wooden_cabinet_1_middle_level": 0.0,
+          "wooden_cabinet_1_bottom_level": 0.0
+        },
+        "flat_stove_1": {
+          "flat_stove_1_button": 0.0
+        },
+        "wine_rack_1": {}
+      },
+      "reachability": [
+        {
+          "entity": "cream_cheese_1",
+          "robot_base_distance_m": 0.5806465159458916,
+          "passes": true
+        },
+        {
+          "entity": "flat_stove_1",
+          "robot_base_distance_m": 0.3980379428715573,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "3597c96e2af221bbc1aafd1ec7b01fdcee5f0df09b0411a73dd9ff8f259b2d63"
+    },
+    {
+      "state_index": 2,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "wooden_cabinet_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "flat_stove_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "wine_rack_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "cream_cheese_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "wine_bottle_1",
+          "passes": true,
+          "xy_drift_m": 1.0863773429461799e-11,
+          "angular_drift_rad": 5.018345334941454e-09,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_1",
+          "passes": true,
+          "xy_drift_m": 3.350400026908339e-11,
+          "angular_drift_rad": 1.4942387860157005e-08,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:cream_cheese_1": 393,
+        "goal_target_1:flat_stove_1": 3842,
+        "interaction_target_2:flat_stove_1_button": 573,
+        "interaction_target_3:wooden_cabinet_1:top": 926
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "flat_stove_1",
+          "before_xyz": [
+            -0.41227045660770667,
+            0.21388877355528918,
+            0.905
+          ],
+          "after_xyz": [
+            -0.3122704566077067,
+            0.21388877355528918,
+            0.905
+          ],
+          "before_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "after_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "applied_delta_xyz": [
+            0.09999999999999998,
+            0.0,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              0.1,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "wooden_cabinet_1": {
+          "wooden_cabinet_1_top_level": 0.0,
+          "wooden_cabinet_1_middle_level": 0.0,
+          "wooden_cabinet_1_bottom_level": 0.0
+        },
+        "flat_stove_1": {
+          "flat_stove_1_button": 0.0
+        },
+        "wine_rack_1": {}
+      },
+      "reachability": [
+        {
+          "entity": "cream_cheese_1",
+          "robot_base_distance_m": 0.5619679399814937,
+          "passes": true
+        },
+        {
+          "entity": "flat_stove_1",
+          "robot_base_distance_m": 0.4083053303605019,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "a0274b7de64f7280563db775bde606eeda6a34c0c1c4aed98f685c023bf50c50"
+    },
+    {
+      "state_index": 3,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "wooden_cabinet_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "flat_stove_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "wine_rack_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "cream_cheese_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "wine_bottle_1",
+          "passes": true,
+          "xy_drift_m": 1.0863773429461799e-11,
+          "angular_drift_rad": 5.0183453343397165e-09,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_1",
+          "passes": true,
+          "xy_drift_m": 3.3504020692848e-11,
+          "angular_drift_rad": 1.4942387899991872e-08,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:cream_cheese_1": 388,
+        "goal_target_1:flat_stove_1": 3828,
+        "interaction_target_2:flat_stove_1_button": 566,
+        "interaction_target_3:wooden_cabinet_1:top": 916
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "flat_stove_1",
+          "before_xyz": [
+            -0.4111633365115401,
+            0.20868027986666587,
+            0.905
+          ],
+          "after_xyz": [
+            -0.31116333651154005,
+            0.20868027986666587,
+            0.905
+          ],
+          "before_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "after_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "applied_delta_xyz": [
+            0.10000000000000003,
+            0.0,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              0.1,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "wooden_cabinet_1": {
+          "wooden_cabinet_1_top_level": 0.0,
+          "wooden_cabinet_1_middle_level": 0.0,
+          "wooden_cabinet_1_bottom_level": 0.0
+        },
+        "flat_stove_1": {
+          "flat_stove_1_button": 0.0
+        },
+        "wine_rack_1": {}
+      },
+      "reachability": [
+        {
+          "entity": "cream_cheese_1",
+          "robot_base_distance_m": 0.5533461098595873,
+          "passes": true
+        },
+        {
+          "entity": "flat_stove_1",
+          "robot_base_distance_m": 0.40655070655330444,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "7e5aea05d6963f710735b1a72a640023c52cd5e033ee88d9ffa25c7d9f17cebe"
+    },
+    {
+      "state_index": 4,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "wooden_cabinet_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "flat_stove_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "wine_rack_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "cream_cheese_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "wine_bottle_1",
+          "passes": true,
+          "xy_drift_m": 1.0863773429461799e-11,
+          "angular_drift_rad": 5.018345334331835e-09,
+          "second_window_drift_m": 6.938893903907228e-18
+        },
+        {
+          "entity": "plate_1",
+          "passes": true,
+          "xy_drift_m": 3.3504020692848e-11,
+          "angular_drift_rad": 1.4942387850353012e-08,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:cream_cheese_1": 423,
+        "goal_target_1:flat_stove_1": 3745,
+        "interaction_target_2:flat_stove_1_button": 564,
+        "interaction_target_3:wooden_cabinet_1:top": 949
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "flat_stove_1",
+          "before_xyz": [
+            -0.41776677536010676,
+            0.20167906286644116,
+            0.905
+          ],
+          "after_xyz": [
+            -0.3177667753601068,
+            0.20167906286644116,
+            0.905
+          ],
+          "before_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "after_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "applied_delta_xyz": [
+            0.09999999999999998,
+            0.0,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              0.1,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "wooden_cabinet_1": {
+          "wooden_cabinet_1_top_level": 0.0,
+          "wooden_cabinet_1_middle_level": 0.0,
+          "wooden_cabinet_1_bottom_level": 0.0
+        },
+        "flat_stove_1": {
+          "flat_stove_1_button": 0.0
+        },
+        "wine_rack_1": {}
+      },
+      "reachability": [
+        {
+          "entity": "cream_cheese_1",
+          "robot_base_distance_m": 0.5786969358799725,
+          "passes": true
+        },
+        {
+          "entity": "flat_stove_1",
+          "robot_base_distance_m": 0.3972996658016535,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "a7b0b034d1322d8b4b9509dd5c3dcb7bd899e652aebe0bf61eae05bca1323cc9"
+    }
+  ],
+  "evaluator_wait_steps": 10,
+  "evaluator_wait_action": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "policy_evaluation_run": false
+}

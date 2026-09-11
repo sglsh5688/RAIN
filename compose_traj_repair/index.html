@@ -113,7 +113,7 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px 5px;
 </style></head><body><header><a href="../index.html">LIBERO-EX review</a> · <a href="../selected29/index.html">Selected 60</a>
 <h1>Compose trajectory repair</h1><p>Compose tests whether skills learned from the original LIBERO-40 can be executed in sequence.
 These experiments repair failed compositions using observed trajectories, object poses, or object substitutions.</p>
-<p><b>10 reviewer candidates.</b> Each rate uses all five fresh evaluation episodes. Native success requires ordered events
+<p><b>11 reviewer candidates.</b> Each rate uses all five fresh evaluation episodes. Native success requires ordered events
 and all final task predicates, with no final TC threshold. Every displayed success also passed full video review for deliberate actions
 and preservation of earlier results. These variants are separate from the selected 60 tasks.</p><p><a href="tasks.tsv">Candidate manifest</a> · <a href="summary.json">Evaluation summary</a></p></header>
 <main><article class="task card" id="CTR_028">
@@ -374,6 +374,36 @@ and preservation of earlier results. These variants are separate from the select
 <div class="actions"><button type="button" data-video="assets/CTR_112/success_reel.mp4">Play 1 success episode(s)</button><button type="button" data-video="assets/CTR_112/parent_failure.mp4">Play parent failure</button>
 <a href="assets/CTR_112/evidence.json">Evidence and provenance</a><a href="assets/CTR_112/task_bundle/task.bddl">Task definition</a></div>
 <video controls playsinline preload="none" aria-label="CTR_112 episode reel" hidden></video>
+</article><article class="task card" id="CTR_140">
+<div class="task-head"><span class="tag">Reviewer candidate · variant of VCN16_001</span><h2>CTR_140</h2></div>
+<p class="instruction">Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.</p><p class="score">Manually valid <b>1/5</b> (20%) · Native evaluator 1/5</p>
+<img class="preview" src="assets/CTR_140/preview.jpg" loading="lazy" decoding="async" alt="CTR_140 scene preview">
+<p><b>Parent experiment:</b> VCN16_001, native evaluator 0/5. Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.</p>
+<p>Three-step repair of historical VCN16_001 (0/5): place cheese on the stove, turn on that stove, then open the wooden top drawer. The entire stove moves10cm in positive worldX toward the observed missed-knob approach, carrying its burner and knob together. This also changes the first placement target. Cheese, cabinet, action plan and native ordered goals retain their parent definitions. All five frozen states pass physical validation; the fresh existing-RAIN run completes1/5 with a full video/trace certificate. The first placement includes a documented transfer of the trained bowl-to-stove destination to directly trained cream-cheese grasping. This is an exploratory repaired composition, not an additional selected60 task or a general success-rate claim.</p><details><summary>Failure evidence and repair</summary><pre>{
+  &quot;task_id&quot;: &quot;CTR_140&quot;,
+  &quot;parent_task_id&quot;: &quot;VCN16_001&quot;,
+  &quot;parent_bundle&quot;: &quot;LiberoValidComposeNew20260905/Batch16DiverseExactDonorExtensions/tasks/vcn16_001__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove_then_open_the_top_drawer_of_the_wooden_cabinet&quot;,
+  &quot;pose_changes&quot;: {
+    &quot;flat_stove_1&quot;: {
+      &quot;delta_xyz&quot;: [
+        0.1,
+        0,
+        0
+      ]
+    }
+  },
+  &quot;evidence&quot;: &quot;Historical three-step VCN16_001 cheese onto stove -&gt; turn on same stove -&gt; open wooden top drawer was0/5. First cheese native placement reached in all5 episodes at152/162/169/164/160 controls; the stove turned on only inep004 at368 after action-stage transition, and no top-drawer goal completed. Actual recorded turn-on stage is short: ep000 controls161–177 endsEEF[-.301,.201,.957], ep001169–209 ends[-.287,.225,.973], ep004169–177 ends[-.284,.196,.969]. Exact frozen stove/knob root begins[-.415,.211,.905], while burner is+.15m X away, so robot remains near burner-side corridor and misses knob. Test coherent whole-stove +10/+12cm X shift, retaining yaw, OFF control joint, cheese object, fully closed top drawer and all original40 source action descriptions. This also moves the first placement target and must be re-evaluated rather than claiming fixed policy replay. Initial collision/stability/nativefalse/fixture replay all5required. New control trace/manual review must prove actual knob interaction and preserve placed cheese and stoveON before deliberate top opening.&quot;,
+  &quot;source_result&quot;: &quot;private_evaluation_results/rain_ms_maskaug_gt_valid_compose_new_batch16_diverse_exact_donor18_5ep_20260905/tasks/all18/VCN16_001/results.json&quot;
+}</pre></details>
+<details><summary>Parent and repaired starting states</summary>
+<p>Each repair derives from the matching parent state below. The historical run is a reference; this comparison alone does not isolate the effect of the repair.</p>
+<table><thead><tr><th>State</th><th>Historical parent</th><th>Fresh repair</th></tr></thead><tbody><tr><td>000</td><td>Failed</td><td>Failed</td></tr><tr><td>001</td><td>Failed</td><td>Failed</td></tr><tr><td>002</td><td>Failed</td><td>Failed</td></tr><tr><td>003</td><td>Failed</td><td>Verified success</td></tr><tr><td>004</td><td>Failed</td><td>Failed</td></tr></tbody></table></details>
+<details><summary>Original LIBERO-40 skill lineage</summary><ul><li><b>libero_object</b>: pick_up_the_cream_cheese_and_place_it_in_the_basket<br>creamcheese pickup. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task.</li><li><b>libero_goal</b>: put_the_bowl_on_the_stove<br>stove placement trained with black bowl; cheese placement is object adaptation. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task.</li><li><b>libero_goal</b>: turn_on_the_stove<br>stove turn-on. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task.</li><li><b>libero_goal</b>: open_the_top_drawer_and_put_the_bowl_inside<br>top-drawer open primitive from open-and-insert task. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task.</li></ul></details>
+<p>Certified episodes: 003.</p>
+
+<div class="actions"><button type="button" data-video="assets/CTR_140/success_reel.mp4">Play 1 success episode(s)</button><button type="button" data-video="assets/CTR_140/parent_failure.mp4">Play parent failure</button>
+<a href="assets/CTR_140/evidence.json">Evidence and provenance</a><a href="assets/CTR_140/task_bundle/task.bddl">Task definition</a></div>
+<video controls playsinline preload="none" aria-label="CTR_140 episode reel" hidden></video>
 </article></main><script>
 let active = null;
 document.querySelectorAll('button[data-video]').forEach(button => button.addEventListener('click', () => {

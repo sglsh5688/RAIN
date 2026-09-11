@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-09-11T10:57:49.261794+00:00",
+  "created_at_utc": "2026-09-11T11:04:07.268186+00:00",
   "review_status": "pending_user_review_not_selected",
   "tasks": [
     {
@@ -101,11 +101,21 @@
       "nominal_successes": 1,
       "manually_valid_successes": 1,
       "certified_episode_indices": "2"
+    },
+    {
+      "task_id": "CTR_140",
+      "instruction": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+      "variant_of": "VCN16_001",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 1,
+      "manually_valid_successes": 1,
+      "certified_episode_indices": "3"
     }
   ],
-  "source_manual_review_sha256": "17635a823b28caf42d7e481906650d3b7202185a3f5847c7a1b260a0c7ce75d2",
-  "nominal_successes": 22,
-  "manually_valid_successes": 21,
-  "episodes": 50,
+  "source_manual_review_sha256": "9f5fcb668c309a24d2f4e02c81517cba58207a77cd11c69353bce93b11acf8db",
+  "nominal_successes": 23,
+  "manually_valid_successes": 22,
+  "episodes": 55,
   "selected60_modified": false
 }

@@ -1,0 +1,1751 @@
+{
+  "task_id": "CTR_207",
+  "instruction": "Put the black bowl on top of the cabinet, and then put the cream cheese box in the basket.",
+  "status": "pending_user_review_not_selected",
+  "variant_of": "CTR_157",
+  "classification": "repair_variant_not_new_semantic_family",
+  "episodes": 5,
+  "nominal_successes": 1,
+  "manually_valid_successes": 1,
+  "nominal_success_episode_indices": [
+    3
+  ],
+  "certified_episode_indices": [
+    3
+  ],
+  "ordered_native_milestones": {
+    "3": [
+      91,
+      358
+    ]
+  },
+  "final_success_requires_all_bddl_goals": true,
+  "compose_final_tc_gate": false,
+  "results_sha256": "72041281b1a37a2d565eab5a757d1bec1fa45a82d0d0819be614abc662b5fae0",
+  "parent_results_sha256": "f5c01287800a8468cb15256177c54cf2210ff03987683bec7fb178378e54f59c",
+  "parent_nominal_successes": 1,
+  "parent_episodes": 5,
+  "parent_instruction": "Put the black bowl on top of the cabinet, and then put the cream cheese box in the basket.",
+  "parent_state_verification": {
+    "method": "historical_per_episode_state_hash"
+  },
+  "repair": {
+    "task_id": "CTR_207",
+    "parent_task_id": "CTR_157",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch57/tasks/ctr_157",
+    "pose_changes": {},
+    "terminal_contract": {
+      "basket_completion_mode": "ordered_native_mixed_and_released_supported_settled_v1",
+      "support_hold_control_steps": 5,
+      "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+      "settle_linear_speed_max_m_s": 0.02,
+      "settle_angular_speed_max_rad_s": 0.5
+    },
+    "evidence": "Original40 Goal bowl onto cabinet then Object cheese into basket. Immediate157native1/5(ep3) stays frozen and excluded from certification: manual review and savedstatecontactaudit show cheese released but airborne at nativecutoff358. This future-only protocol followup uses exactsame geometry, stored initialstates, action/progresscheckpoints,seeds7-11, actionplan, GTmasks, intermediateTC andmaxstepcap. Retain both orderednativeevents andallfinalBDDL. Add fiveactualcontrols of each requestedbasketobject released, supported through exactbasketbase andsettled(.02m/s,.5rad/s), using unchanged existingphysicalobserver/runtimeconjunction but explicitnewmixed-contract validator/entry. The earlier bowl-on-cabinet nativepredicate remains required; all-success video/fulltrace/manual physicalpreservation also mandatory. No finalTC or postbudget wait, no policyactiongeneration changes, no parentreclassification. Exactly5fresh episodes, physicalGPU4/5. This is a terminal-protocol followup, not a newscene or measuredisolatedpose improvement."
+  },
+  "frozen_repair_provenance": {
+    "task_id": "CTR_207",
+    "parent_task_id": "CTR_157",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch57/tasks/ctr_157",
+    "source_result": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch57_5ep_20260911/tasks/all1/CTR_157/results.json",
+    "pose_changes": {},
+    "terminal_contract": {
+      "basket_completion_mode": "ordered_native_mixed_and_released_supported_settled_v1",
+      "support_hold_control_steps": 5,
+      "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+      "settle_linear_speed_max_m_s": 0.02,
+      "settle_angular_speed_max_rad_s": 0.5
+    },
+    "evidence": "Original40 Goal bowl onto cabinet then Object cheese into basket. Immediate157native1/5(ep3) stays frozen and excluded from certification: manual review and savedstatecontactaudit show cheese released but airborne at nativecutoff358. This future-only protocol followup uses exactsame geometry, stored initialstates, action/progresscheckpoints,seeds7-11, actionplan, GTmasks, intermediateTC andmaxstepcap. Retain both orderednativeevents andallfinalBDDL. Add fiveactualcontrols of each requestedbasketobject released, supported through exactbasketbase andsettled(.02m/s,.5rad/s), using unchanged existingphysicalobserver/runtimeconjunction but explicitnewmixed-contract validator/entry. The earlier bowl-on-cabinet nativepredicate remains required; all-success video/fulltrace/manual physicalpreservation also mandatory. No finalTC or postbudget wait, no policyactiongeneration changes, no parentreclassification. Exactly5fresh episodes, physicalGPU4/5. This is a terminal-protocol followup, not a newscene or measuredisolatedpose improvement.",
+    "classification": "repair_variant_not_new_semantic_family",
+    "parent_files_sha256": {
+      "task.bddl": "c8998197db0f34fd6cefd661f8b7279f1657263ef322f24dc0e1ebc5d97fbbd0",
+      "task.pruned_init": "19fab9404f088b48125918a166c47319db317954fe5f258264c30a827012d423",
+      "FIXTURE_REPLAY.json": "f849a26bdbdc147fabc16b9a9980aaf2d1abcc4c6a2fec5c5f37b872bc33f35d",
+      "action_plan.yaml": "afa59477f14634813f43b88a33b99e9679079cdbe0b6bbd9bd3d2582d92ab079"
+    },
+    "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+  },
+  "original40_skill_lineage": [
+    {
+      "suite": "libero_goal",
+      "task": "put_the_bowl_on_top_of_the_cabinet",
+      "instruction": "Put the bowl on the top of the drawer",
+      "transfer": "Directly trained bowl placement on top of the cabinet, followed by the Object cream-cheese basket skill. The bowl must remain supported on the cabinet throughout the later action."
+    },
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "instruction": "Pick the cream cheese and place it in the basket",
+      "transfer": "Directly trained cream-cheese grasp and basket placement, chained with the other skill in the repaired shared scene."
+    }
+  ],
+  "manual_review_notes": "Black bowl onto cabinet, then cream cheese into basket: 1/5 fully reviewed released, supported and settled success. This connects the original Goal bowl-on-cabinet skill to the Object cheese-in-basket skill. The underlying CTR_157 scene repair moved cheese +9.5 cm in X and -2.5 cm in Y from historical COMPOSE_261 (0/5). CTR_207 retains all CTR_157 geometry and seeds exactly, and predeclares a stricter mixed-task endpoint requiring all ordered native and final BDDL goals plus five actual controls of released, supported and settled basket contents. The immediate parent remains native 1/5 but its successful episode 003 stops at control 358 with released cheese airborne and is excluded from certification. All five new saved action/state/controller/native prefixes match the parent bitwise. Episode 003 continues the same final-release policy for seven controls within the original 1200-control cap, reaches stable basket support through controls 361-365, and preserves the earlier bowl on the cabinet. This is a protocol followup of the same scene, not a new scene or a 1/5-to-1/5 improvement claim.",
+  "episode_reviews": [
+    {
+      "episode_idx": 3,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 47,
+      "reviewed_complete_trace": true,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch81_5ep_20260911/tasks/all1/CTR_207/videos/CTR_207_ep003_ok.mp4",
+      "video_sha256": "14f478e42e02f45616fa81a7223ce82ebb8b71ce1b6916e85c2ce934a7152515",
+      "trace_npz_sha256": "3f1728d0cba4158fc6147d5a727742979c2aa0c6ec9f3642ecb792849ecb7a9a",
+      "trace_json_sha256": "fbdb5bafe0fc02b59b5daea0e5d55fd3b6258eee2d907991bb0f38624f668ff0",
+      "milestones": [
+        91,
+        358
+      ],
+      "initial_native_goals": [
+        false,
+        false
+      ],
+      "final_native_goals": [
+        true,
+        true
+      ],
+      "contact_audit": {
+        "episode_idx": 3,
+        "saved_state_reconstruction_only": true,
+        "policy_calls": 0,
+        "trajectory_controls_added": 0,
+        "records": [
+          {
+            "control_step": 0,
+            "reconstructed_body_max_error_m": 6.454784427199767e-06,
+            "basket_released_supported_settled": false,
+            "basket_snapshot": {
+              "entities": {
+                "basket_1": {
+                  "world_position_m": [
+                    -0.014912357670540357,
+                    0.24740552666231216,
+                    0.8954176546734635
+                  ],
+                  "linear_speed_m_s": 1.8215867779405192e-14,
+                  "angular_speed_rad_s": 7.383933960875594e-16,
+                  "any_robot_contact": false,
+                  "upright": true,
+                  "original_support_contact": true
+                },
+                "cream_cheese_1": {
+                  "world_position_m": [
+                    0.051734864564071635,
+                    0.10775320056963816,
+                    0.9089214774186077
+                  ],
+                  "linear_speed_m_s": 1.7684368344663884e-14,
+                  "angular_speed_rad_s": 8.528928597418479e-16,
+                  "any_robot_contact": false,
+                  "native_in": false
+                }
+              },
+              "support_edges": [],
+              "contacts": [
+                {
+                  "geom1": 7,
+                  "geom2": 125,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "cream_cheese_1_g1",
+                  "normal_force_n": 0.015190314523324432,
+                  "distance_m": -1.4522581392265793e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.09234286456407165,
+                    0.12908920056963816,
+                    0.8999927387093039
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 125,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "cream_cheese_1_g1",
+                  "normal_force_n": 0.0151903145233244,
+                  "distance_m": -1.4522581392264966e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.09234286456407165,
+                    0.08641720056963814,
+                    0.8999927387093039
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 125,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "cream_cheese_1_g1",
+                  "normal_force_n": 0.015190314523324436,
+                  "distance_m": -1.4522581392265793e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.011126864564071637,
+                    0.12908920056963816,
+                    0.8999927387093039
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 125,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "cream_cheese_1_g1",
+                  "normal_force_n": 0.015190314523324406,
+                  "distance_m": -1.4522581392264966e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.011126864564071637,
+                    0.08641720056963814,
+                    0.8999927387093039
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.3386512138198683,
+                  "distance_m": -1.473344492661089e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    -0.08731235861473878,
+                    0.1733981938469844,
+                    0.8999926332775366
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.3377510382767111,
+                  "distance_m": -1.4694300045213444e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.057487641385255986,
+                    0.1733981944155643,
+                    0.8999926528499774
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.3298534184823997,
+                  "distance_m": -1.4350859241070482e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    -0.08731235921624896,
+                    0.32655819384650664,
+                    0.8999928245703794
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.3289532755215021,
+                  "distance_m": -1.4311714359673036e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.057487640783745804,
+                    0.3265581944150865,
+                    0.8999928441428202
+                  ]
+                }
+              ]
+            },
+            "other_contacts": [
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g36",
+                "distance_m": -3.5344409956083015e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g36",
+                "distance_m": -3.0002944258910053e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g36",
+                "distance_m": -2.8236147259559693e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g36",
+                "distance_m": -2.289468156238673e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g37",
+                "distance_m": -3.0058188894416073e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g37",
+                "distance_m": -2.857003652500331e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g37",
+                "distance_m": -2.294992619789275e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g37",
+                "distance_m": -2.1461773828479988e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g38",
+                "distance_m": -3.7037898908938798e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g38",
+                "distance_m": -3.4861900124290903e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g38",
+                "distance_m": -3.169643321181736e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g38",
+                "distance_m": -2.9520434427169466e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g39",
+                "distance_m": -2.8944006882386733e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g39",
+                "distance_m": -2.695263829764836e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g39",
+                "distance_m": -2.3602541185265295e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g39",
+                "distance_m": -2.161117260052692e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g40",
+                "distance_m": -3.6654743655092065e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g40",
+                "distance_m": -3.409622647241258e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g40",
+                "distance_m": -2.954648095855977e-06
+              },
+              {
+                "geom_a": "table_collision",
+                "geom_b": "akita_black_bowl_1_g40",
+                "distance_m": -2.6987963775880283e-06
+              }
+            ]
+          },
+          {
+            "control_step": 121,
+            "reconstructed_body_max_error_m": 6.946581321934375e-05,
+            "basket_released_supported_settled": false,
+            "basket_snapshot": {
+              "entities": {
+                "basket_1": {
+                  "world_position_m": [
+                    -0.014912357670540357,
+                    0.24740552666231216,
+                    0.8954176546734635
+                  ],
+                  "linear_speed_m_s": 1.821258932615365e-14,
+                  "angular_speed_rad_s": 5.960567836315334e-16,
+                  "any_robot_contact": false,
+                  "upright": true,
+                  "original_support_contact": true
+                },
+                "cream_cheese_1": {
+                  "world_position_m": [
+                    0.051734864564071635,
+                    0.10775320056963816,
+                    0.9089214774186077
+                  ],
+                  "linear_speed_m_s": 1.7684367076416075e-14,
+                  "angular_speed_rad_s": 9.066842995548282e-16,
+                  "any_robot_contact": false,
+                  "native_in": false
+                }
+              },
+              "support_edges": [],
+              "contacts": [
+                {
+                  "geom1": 7,
+                  "geom2": 125,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "cream_cheese_1_g1",
+                  "normal_force_n": 0.015190314523324429,
+                  "distance_m": -1.452258139226565e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.09234286456407165,
+                    0.12908920056963816,
+                    0.8999927387093039
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 125,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "cream_cheese_1_g1",
+                  "normal_force_n": 0.0151903145233244,
+                  "distance_m": -1.452258139226511e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.09234286456407165,
+                    0.08641720056963814,
+                    0.8999927387093039
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 125,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "cream_cheese_1_g1",
+                  "normal_force_n": 0.015190314523324436,
+                  "distance_m": -1.452258139226565e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.011126864564071637,
+                    0.12908920056963816,
+                    0.8999927387093039
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 125,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "cream_cheese_1_g1",
+                  "normal_force_n": 0.015190314523324406,
+                  "distance_m": -1.452258139226511e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.011126864564071637,
+                    0.08641720056963814,
+                    0.8999927387093039
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.33865121381986824,
+                  "distance_m": -1.473344492661089e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    -0.08731235861473878,
+                    0.1733981938469844,
+                    0.8999926332775366
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.33775103827671127,
+                  "distance_m": -1.4694300045213444e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.057487641385255986,
+                    0.1733981944155643,
+                    0.8999926528499774
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.3298534184823995,
+                  "distance_m": -1.4350859241070482e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    -0.08731235921624896,
+                    0.32655819384650664,
+                    0.8999928245703794
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.3289532755215023,
+                  "distance_m": -1.4311714359673036e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.057487640783745804,
+                    0.3265581944150865,
+                    0.8999928441428202
+                  ]
+                }
+              ]
+            },
+            "other_contacts": [
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.909527812345033e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.6209951574630985e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5255532798800626e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.2370206249981282e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.6239793453628887e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5435930659484647e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.2400048128979185e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.1596185334834944e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -2.0010067096169623e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.8834634852830797e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.7124740555937852e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5949308312599026e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5637903975071615e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.4562205376622145e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.2752577434839844e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.1676878836390375e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.9803087662398217e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.842104049195534e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5963342337748517e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.4581295167305636e-08
+              }
+            ]
+          },
+          {
+            "control_step": 358,
+            "reconstructed_body_max_error_m": 0.0009443321074911193,
+            "basket_released_supported_settled": false,
+            "basket_snapshot": {
+              "entities": {
+                "basket_1": {
+                  "world_position_m": [
+                    0.0009372137964584914,
+                    0.2698251797109155,
+                    0.8954174399317748
+                  ],
+                  "linear_speed_m_s": 1.6050111497454265e-05,
+                  "angular_speed_rad_s": 0.00017945202592033584,
+                  "any_robot_contact": false,
+                  "upright": true,
+                  "original_support_contact": true
+                },
+                "cream_cheese_1": {
+                  "world_position_m": [
+                    -0.007311574844939423,
+                    0.2284183886950345,
+                    1.0129568356307586
+                  ],
+                  "linear_speed_m_s": 0.47866865865040087,
+                  "angular_speed_rad_s": 0.381968890748277,
+                  "any_robot_contact": false,
+                  "native_in": true
+                }
+              },
+              "support_edges": [],
+              "contacts": [
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.3386010394286212,
+                  "distance_m": -1.5197973570712465e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    -0.05105169079513839,
+                    0.18029305403347073,
+                    0.8999924010132146
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.33771932853009506,
+                  "distance_m": -1.511636486605703e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.08930636402506953,
+                    0.21588317130049908,
+                    0.899992441817567
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.32984921420105323,
+                  "distance_m": -1.4342387631204957e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    -0.08869659660039775,
+                    0.3287546540052516,
+                    0.8999928288061844
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.328967603638463,
+                  "distance_m": -1.4260778926549523e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.05166145821981018,
+                    0.36434477127228,
+                    0.8999928696105367
+                  ]
+                }
+              ]
+            },
+            "other_contacts": [
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.909527767936112e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.6209951130541775e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5255532354711416e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.2370205805892072e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.6239793009539677e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5435930215395437e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.2400047684889975e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.1596184890745734e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -2.0010066657207143e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.8834634412219637e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.7124740110105313e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5949307865117807e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5637903536039192e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.4562204936080928e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.2752576988937362e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.1676878388979097e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.9803087218309008e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.842104004786613e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5963341893659307e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.4581294723216427e-08
+              }
+            ]
+          },
+          {
+            "control_step": 361,
+            "reconstructed_body_max_error_m": 1.611024298225905e-05,
+            "basket_released_supported_settled": true,
+            "basket_snapshot": {
+              "entities": {
+                "basket_1": {
+                  "world_position_m": [
+                    0.0009372207052875975,
+                    0.26982520206489996,
+                    0.8954168393003923
+                  ],
+                  "linear_speed_m_s": 9.411142129176956e-06,
+                  "angular_speed_rad_s": 5.47037473057369e-05,
+                  "any_robot_contact": false,
+                  "upright": true,
+                  "original_support_contact": true
+                },
+                "cream_cheese_1": {
+                  "world_position_m": [
+                    -0.0035089019408931373,
+                    0.23371432627086053,
+                    0.939971949115759
+                  ],
+                  "linear_speed_m_s": 0.008083077380808113,
+                  "angular_speed_rad_s": 0.3666790352530738,
+                  "any_robot_contact": false,
+                  "native_in": true
+                }
+              },
+              "support_edges": [
+                {
+                  "child": "cream_cheese_1",
+                  "support": "basket_1",
+                  "positive_upward_contact": true,
+                  "exact_basket_base_upper_face": true,
+                  "normal_force_n": 0.030177228755667255,
+                  "normal_toward_child_world": [
+                    -3.110536828110355e-07,
+                    -7.528572463000316e-06,
+                    0.999999999971612
+                  ],
+                  "child_geom": 125,
+                  "support_geom": 162
+                },
+                {
+                  "child": "cream_cheese_1",
+                  "support": "basket_1",
+                  "positive_upward_contact": true,
+                  "exact_basket_base_upper_face": true,
+                  "normal_force_n": 0.030295848206587112,
+                  "normal_toward_child_world": [
+                    -3.110536828110355e-07,
+                    -7.528572463000316e-06,
+                    0.999999999971612
+                  ],
+                  "child_geom": 125,
+                  "support_geom": 162
+                }
+              ],
+              "contacts": [
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.36308643695340626,
+                  "distance_m": -1.60345994829075e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    -0.05105169170128077,
+                    0.18029306888676466,
+                    0.8999919827002586
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.3570429910750339,
+                  "distance_m": -1.5722997846806922e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.08930636415958174,
+                    0.21588318204845494,
+                    0.8999921385010766
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.3407701505602838,
+                  "distance_m": -1.492860514646951e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    -0.08869659316570785,
+                    0.3287546699575815,
+                    0.8999925356974268
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.3347274234707551,
+                  "distance_m": -1.461700351036893e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.05166146269515466,
+                    0.36434478311927176,
+                    0.8999926914982448
+                  ]
+                },
+                {
+                  "geom1": 125,
+                  "geom2": 162,
+                  "geom1_name": "cream_cheese_1_g1",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.030177228755667255,
+                  "distance_m": -4.141095906347344e-06,
+                  "normal_world": [
+                    3.110536828110355e-07,
+                    7.528572463000316e-06,
+                    -0.999999999971612
+                  ],
+                  "contact_position_m": [
+                    -0.04379307982319638,
+                    0.23942873271870005,
+                    0.9169823423179947
+                  ]
+                },
+                {
+                  "geom1": 125,
+                  "geom2": 162,
+                  "geom1_name": "cream_cheese_1_g1",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.030295848206587112,
+                  "distance_m": -7.618321483146268e-07,
+                  "normal_world": [
+                    3.110536828110355e-07,
+                    7.528572463000316e-06,
+                    -0.999999999971612
+                  ],
+                  "contact_position_m": [
+                    0.037175782461545834,
+                    0.23309769923509935,
+                    0.9169840094718923
+                  ]
+                }
+              ]
+            },
+            "other_contacts": [
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.909527767936112e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.6209951130541775e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5255532354711416e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.2370205805892072e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.6239793009539677e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5435930215395437e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.2400047684889975e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.1596184890745734e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -2.001006665386676e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.8834634413825297e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.712474010676493e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5949307866723467e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5637903532908644e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.456220493747676e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.2752576985806814e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.167687839037493e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.9803087218309008e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.842104004786613e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5963341893659307e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.4581294723216427e-08
+              }
+            ]
+          },
+          {
+            "control_step": 365,
+            "reconstructed_body_max_error_m": 3.736665395692729e-05,
+            "basket_released_supported_settled": true,
+            "basket_snapshot": {
+              "entities": {
+                "basket_1": {
+                  "world_position_m": [
+                    0.0009372212357311943,
+                    0.26982519859272946,
+                    0.8954169835133677
+                  ],
+                  "linear_speed_m_s": 2.264268849695121e-08,
+                  "angular_speed_rad_s": 3.635419373751042e-07,
+                  "any_robot_contact": false,
+                  "upright": true,
+                  "original_support_contact": true
+                },
+                "cream_cheese_1": {
+                  "world_position_m": [
+                    -0.0035119838791506037,
+                    0.23360922865485967,
+                    0.9399617334679404
+                  ],
+                  "linear_speed_m_s": 2.9721165030880043e-06,
+                  "angular_speed_rad_s": 0.0009951361303191153,
+                  "any_robot_contact": false,
+                  "native_in": true
+                }
+              },
+              "support_edges": [
+                {
+                  "child": "cream_cheese_1",
+                  "support": "basket_1",
+                  "positive_upward_contact": true,
+                  "exact_basket_base_upper_face": true,
+                  "normal_force_n": 0.03007913683827879,
+                  "normal_toward_child_world": [
+                    -2.49727719225934e-07,
+                    -6.893670838448164e-06,
+                    0.9999999999762075
+                  ],
+                  "child_geom": 125,
+                  "support_geom": 162
+                },
+                {
+                  "child": "cream_cheese_1",
+                  "support": "basket_1",
+                  "positive_upward_contact": true,
+                  "exact_basket_base_upper_face": true,
+                  "normal_force_n": 0.030080592409533213,
+                  "normal_toward_child_world": [
+                    -2.49727719225934e-07,
+                    -6.893670838448164e-06,
+                    0.9999999999762075
+                  ],
+                  "child_geom": 125,
+                  "support_geom": 162
+                }
+              ],
+              "contacts": [
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.3626004819490139,
+                  "distance_m": -1.5830354145712758e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    -0.05105168972823895,
+                    0.18029306763924868,
+                    0.8999920848229271
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.3567487704015456,
+                  "distance_m": -1.5549956310862127e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.08930636567052838,
+                    0.21588318262358,
+                    0.8999922250218446
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.34093949268819423,
+                  "distance_m": -1.4816309714988946e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    -0.08869659312027312,
+                    0.3287546682219452,
+                    0.8999925918451425
+                  ]
+                },
+                {
+                  "geom1": 7,
+                  "geom2": 162,
+                  "geom1_name": "table_collision",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.33508839423890724,
+                  "distance_m": -1.4535911880138314e-05,
+                  "normal_world": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "contact_position_m": [
+                    0.05166146227849422,
+                    0.3643447832062765,
+                    0.8999927320440599
+                  ]
+                },
+                {
+                  "geom1": 125,
+                  "geom2": 162,
+                  "geom1_name": "cream_cheese_1_g1",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.03007913683827879,
+                  "distance_m": -1.9094743460097272e-07,
+                  "normal_world": [
+                    2.49727719225934e-07,
+                    6.893670838448164e-06,
+                    -0.9999999999762075
+                  ],
+                  "contact_position_m": [
+                    -0.04378939118612144,
+                    0.23942805324931507,
+                    0.9169844836432646
+                  ]
+                },
+                {
+                  "geom1": 125,
+                  "geom2": 162,
+                  "geom1_name": "cream_cheese_1_g1",
+                  "geom2_name": "basket_1_g1",
+                  "normal_force_n": 0.030080592409533213,
+                  "distance_m": -1.8993719587328142e-07,
+                  "normal_world": [
+                    2.49727719225934e-07,
+                    6.893670838448164e-06,
+                    -0.9999999999762075
+                  ],
+                  "contact_position_m": [
+                    0.03718049928347833,
+                    0.23311018229934458,
+                    0.9169844608154872
+                  ]
+                }
+              ]
+            },
+            "other_contacts": [
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.909527767936112e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.6209951130541775e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5255532354711416e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g36",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.2370205805892072e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.6239793009539677e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5435930215395437e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.2400047684889975e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g37",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.1596184890745734e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -2.0010066652080413e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.8834634408741587e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.7124740111848642e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g38",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5949307868509816e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5637903530982405e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.4562204932532935e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.2752576990750634e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g39",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.1676878392301166e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.9803087218309008e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.842104004786613e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.5963341893659307e-08
+              },
+              {
+                "geom_a": "akita_black_bowl_1_g40",
+                "geom_b": "wooden_cabinet_1_g9",
+                "distance_m": -1.4581294723216427e-08
+              }
+            ]
+          }
+        ],
+        "caveat": "Forward reconstruction corroborates stored dynamics; contact cache may differ at first impact. Online207gate remains authoritative."
+      },
+      "parent_prefix_comparison": {
+        "episode_idx": 3,
+        "parent_native_success": true,
+        "fresh_success": true,
+        "parent_total_steps": 358,
+        "fresh_total_steps": 365,
+        "parent_initial_state_sha256": "da60ff41d4925de662de4178596093e46cb20f129cfbd878a46cc0d517203645",
+        "fresh_initial_state_sha256": "da60ff41d4925de662de4178596093e46cb20f129cfbd878a46cc0d517203645",
+        "parent_trace_sha256": "8572222cadbf1ba08a27a932c9bf799b54cbbe54794d5d29036bf5aa74181ca8",
+        "fresh_trace_sha256": "3f1728d0cba4158fc6147d5a727742979c2aa0c6ec9f3642ecb792849ecb7a9a",
+        "fields": {
+          "sim_state": {
+            "compared_shape": [
+              369,
+              92
+            ],
+            "future_prefix_shape": [
+              369,
+              92
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": 0.0
+          },
+          "body_pos": {
+            "compared_shape": [
+              369,
+              39,
+              3
+            ],
+            "future_prefix_shape": [
+              369,
+              39,
+              3
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": 0.0
+          },
+          "body_quat": {
+            "compared_shape": [
+              369,
+              39,
+              4
+            ],
+            "future_prefix_shape": [
+              369,
+              39,
+              4
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": 0.0
+          },
+          "eef_pos": {
+            "compared_shape": [
+              369,
+              3
+            ],
+            "future_prefix_shape": [
+              369,
+              3
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": 0.0
+          },
+          "eef_rotation": {
+            "compared_shape": [
+              369,
+              3,
+              3
+            ],
+            "future_prefix_shape": [
+              369,
+              3,
+              3
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": 0.0
+          },
+          "gripper_qpos": {
+            "compared_shape": [
+              369,
+              2
+            ],
+            "future_prefix_shape": [
+              369,
+              2
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": 0.0
+          },
+          "native_goals": {
+            "compared_shape": [
+              369,
+              2
+            ],
+            "future_prefix_shape": [
+              369,
+              2
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": null
+          },
+          "ctrl": {
+            "compared_shape": [
+              369,
+              9
+            ],
+            "future_prefix_shape": [
+              369,
+              9
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": 0.0
+          },
+          "qacc_warmstart": {
+            "compared_shape": [
+              369,
+              43
+            ],
+            "future_prefix_shape": [
+              369,
+              43
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": 0.0
+          },
+          "actions": {
+            "compared_shape": [
+              368,
+              7
+            ],
+            "future_prefix_shape": [
+              368,
+              7
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": 0.0
+          },
+          "control_steps": {
+            "compared_shape": [
+              368
+            ],
+            "future_prefix_shape": [
+              368
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": 0.0
+          },
+          "subtask_indices": {
+            "compared_shape": [
+              368
+            ],
+            "future_prefix_shape": [
+              368
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": 0.0
+          },
+          "body_names": {
+            "compared_shape": [
+              39
+            ],
+            "future_prefix_shape": [
+              39
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": null
+          },
+          "site_names": {
+            "compared_shape": [
+              32
+            ],
+            "future_prefix_shape": [
+              32
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": null
+          },
+          "gripper_joint_names": {
+            "compared_shape": [
+              2
+            ],
+            "future_prefix_shape": [
+              2
+            ],
+            "exactly_equal": true,
+            "max_abs_difference": null
+          }
+        },
+        "all_fields_bitwise_equal_through_parent_cutoff": true,
+        "after_first_native": {
+          "from_state_row": 101,
+          "max_xyz_displacement_m": 0.001515527097048426,
+          "max_rotation_deg": 3.4737955269148633,
+          "native_bowl_always_true": true
+        },
+        "from_cheese_grasp": {
+          "from_state_row": 131,
+          "max_xyz_displacement_m": 4.815412394636862e-16,
+          "max_rotation_deg": 2.4148365394514667e-06,
+          "native_bowl_always_true": true
+        }
+      },
+      "supported_settled_control_range": [
+        361,
+        365
+      ],
+      "basket_support_contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "earlier_bowl_preservation": {
+        "from_state_row": 131,
+        "max_xyz_displacement_m": 4.815412394636862e-16,
+        "max_rotation_deg": 2.4148365394514667e-06,
+        "native_bowl_always_true": true
+      },
+      "notes": "Root reviewed all47decodedframes and complete365-controltrace. Blackbowl is deliberately grasped, carried and released oncabinet atnative91, remainingphysicallysupportedandunchanged throughoutcheesegrasp/transport. Cheese is deliberatelygrasped, carriedandreleasedintobasket; nativeIn358 precedesbaselanding. Sharedonlinephysicalprobe recordsreleased,supportedonexactbasketbase,settledandnorobotcontact at361–365, terminal365. All5parent action/state/controller/nativeprefixes arebitwiseidentical; ep3onlycontinuesunchangedfinalreleasepolicy7controls beyondparent358 insideunchanged1200cap. Parent157native1/5/exclusion staysfrozen. Fullbowlpose isunchangedfromcheesegrasp onward, nativebowlalwaysTrue; zero-added-control finalsnapshotconfirmsbowl-cabinettop support."
+    }
+  ],
+  "episode_outcomes": [
+    {
+      "episode_idx": 0,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 1,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 2,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 3,
+      "parent_same_index_native_success": true,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 4,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    }
+  ],
+  "rain_settings": {
+    "checkpoint": "RAIN/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "progress_checkpoint": "RAIN/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "replan_steps": 8,
+    "num_inference_steps": 4,
+    "feas_threshold": 0.7,
+    "consecutive_stop": 2,
+    "seed": 7,
+    "clip_model_name": "openai/clip-vit-large-patch14"
+  },
+  "source_bundle_sha256": {
+    "task.bddl": "c8998197db0f34fd6cefd661f8b7279f1657263ef322f24dc0e1ebc5d97fbbd0",
+    "task.pruned_init": "d4a336e13ee40c3425748f078a9ccaca12ef72e6db01fcc12bb12264c373b83c",
+    "task_meta.yaml": "92e95b6918f33e12193fcdf84724b28b5686fb75acdc30a58a56108c8281a93f",
+    "eval_rules.yaml": "4bcb8d6ce815e600b532a0a230a21876c659a63f5243283bc26fc9fcc83401d9",
+    "registry_entry.yaml": "0032b353971ed4526247dcd52979eac1120c816d75175f4a0b45a921d225cf6f",
+    "mask_bindings.yaml": "7ee0dd71f2eca0e00e0f223bf5b181ca24cf615298c190033dd1fc2e76e79358",
+    "action_plan.yaml": "c4e8c10f6b436346ab5d0be2518636404970905284756c672ae40d9052b73605",
+    "FIXTURE_REPLAY.json": "f849a26bdbdc147fabc16b9a9980aaf2d1abcc4c6a2fec5c5f37b872bc33f35d",
+    "INIT_VALIDATION.json": "93018ddd9e6af702f41177effa733138a46d451e62d9782193a8b247b74866dd",
+    "REPAIR_PROVENANCE.json": "02b2720f3b5d69e14d06a4c2d30ec55bb6b19984a7675ca564d54f0307bed1bd"
+  },
+  "comparison_design_note": "Parent CTR_157 native 1/5 and CTR_207 certified 1/5 use different terminal conditions. The old result is frozen, with its released-airborne endpoint excluded. Exact initial-scene equality and all-five bitwise trace-prefix comparisons show that the prospective stricter contract retains the prior behavior through every old cutoff.",
+  "additional_terminal_contract": {
+    "basket_completion_mode": "ordered_native_mixed_and_released_supported_settled_v1",
+    "support_hold_control_steps": 5,
+    "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+    "settle_linear_speed_max_m_s": 0.02,
+    "settle_angular_speed_max_rad_s": 0.5
+  },
+  "parent_terminal_protocol_different": true,
+  "runtime_sources_sha256": {
+    "basket_released_support_observer.py": "599995e94641d631c3e8e8ed16a1ae5d0214e97c58e2b71d124a3d587e6d8329",
+    "basket_supported_runtime.py": "9aff4bb0e51b683c53287070e06b469e0ce26a4d93e4ecf256ddbddcaec7e73e",
+    "mixed_basket_contract.py": "86f0b765a555c81f7a12805a72fc08340ccd7f71d034932ad7478570a1f87fef",
+    "run_compose_traj_repair_mixed_basket_supported_entry.py": "219f685853c5f3e64ddadffeff6a9704840b0cdc7b1cf2472ab19436e17248d6",
+    "run_compose_traj_repair_mixed_basket_supported_5ep.py": "b6aeeea85f405b510b4282dfc39e16a69be510b2fbe992308d39ad95facb0124"
+  },
+  "supported_settled_success_audit": {
+    "3": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 365,
+      "actual_control_steps_observed": 365,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    }
+  }
+}

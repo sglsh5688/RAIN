@@ -1,0 +1,14 @@
+name: CTR_206
+language: Put the cream cheese in the basket, then close the microwave door.
+problem: Libero
+problem_folder: tasks/ctr_206
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_object_plus_libero10_microwave
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|5dad35b79cdcfda81f14ad2cdf503d69a8c78c1be30c5903c5322ac526e2136f|('in(cream_cheese_1,basket_1_contain_region)',
+  'close(microwave_1)')

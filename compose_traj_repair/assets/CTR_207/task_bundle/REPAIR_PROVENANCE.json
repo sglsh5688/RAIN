@@ -1,0 +1,23 @@
+{
+  "task_id": "CTR_207",
+  "parent_task_id": "CTR_157",
+  "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch57/tasks/ctr_157",
+  "source_result": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch57_5ep_20260911/tasks/all1/CTR_157/results.json",
+  "pose_changes": {},
+  "terminal_contract": {
+    "basket_completion_mode": "ordered_native_mixed_and_released_supported_settled_v1",
+    "support_hold_control_steps": 5,
+    "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+    "settle_linear_speed_max_m_s": 0.02,
+    "settle_angular_speed_max_rad_s": 0.5
+  },
+  "evidence": "Original40 Goal bowl onto cabinet then Object cheese into basket. Immediate157native1/5(ep3) stays frozen and excluded from certification: manual review and savedstatecontactaudit show cheese released but airborne at nativecutoff358. This future-only protocol followup uses exactsame geometry, stored initialstates, action/progresscheckpoints,seeds7-11, actionplan, GTmasks, intermediateTC andmaxstepcap. Retain both orderednativeevents andallfinalBDDL. Add fiveactualcontrols of each requestedbasketobject released, supported through exactbasketbase andsettled(.02m/s,.5rad/s), using unchanged existingphysicalobserver/runtimeconjunction but explicitnewmixed-contract validator/entry. The earlier bowl-on-cabinet nativepredicate remains required; all-success video/fulltrace/manual physicalpreservation also mandatory. No finalTC or postbudget wait, no policyactiongeneration changes, no parentreclassification. Exactly5fresh episodes, physicalGPU4/5. This is a terminal-protocol followup, not a newscene or measuredisolatedpose improvement.",
+  "classification": "repair_variant_not_new_semantic_family",
+  "parent_files_sha256": {
+    "task.bddl": "c8998197db0f34fd6cefd661f8b7279f1657263ef322f24dc0e1ebc5d97fbbd0",
+    "task.pruned_init": "19fab9404f088b48125918a166c47319db317954fe5f258264c30a827012d423",
+    "FIXTURE_REPLAY.json": "f849a26bdbdc147fabc16b9a9980aaf2d1abcc4c6a2fec5c5f37b872bc33f35d",
+    "action_plan.yaml": "afa59477f14634813f43b88a33b99e9679079cdbe0b6bbd9bd3d2582d92ab079"
+  },
+  "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+}

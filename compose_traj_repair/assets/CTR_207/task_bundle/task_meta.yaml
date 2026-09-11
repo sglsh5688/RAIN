@@ -1,0 +1,113 @@
+task_id: CTR_207
+task_name: Put the black bowl on top of the cabinet, and then put the cream cheese
+  box in the basket.
+language: Put the black bowl on top of the cabinet, and then put the cream cheese
+  box in the basket.
+primary_category: Composition
+composition_family: X6_goal_plus_left_basket_2_task
+anchor_suite: libero_goal+libero_object
+source_prior_task_ids:
+- '9'
+- '302'
+source_priors:
+- suite: libero_goal
+  task_stem: put_the_bowl_on_top_of_the_cabinet
+  instruction: Put the bowl on the top of the drawer
+  bddl: upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_top_of_the_cabinet.bddl
+  init: upstream_LIBERO/init_files/libero_goal/put_the_bowl_on_top_of_the_cabinet.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_cream_cheese_and_place_it_in_the_basket
+  instruction: Pick the cream cheese and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the black bowl on top of the cabinet
+- Put the cream cheese box in the basket
+component_evidence:
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its
+  pose in the composite scene may differ.
+semantic_subtask_count: 2
+action_plan_step_count: 4
+canonical_goal_atoms:
+- on(akita_black_bowl_1, wooden_cabinet_1_top_side)
+- in(cream_cheese_1, basket_1_contain_region)
+canonical_task_signature: composition|d68ed467b4d14983c4848b7c998068c5871fbdfe7ef6bc40d180daaf0b4368c0|('on(akita_black_bowl_1,
+  wooden_cabinet_1_top_side)', 'in(cream_cheese_1, basket_1_contain_region)')
+objects_of_interest:
+- akita_black_bowl_1
+- wooden_cabinet_1_top_side
+- cream_cheese_1
+- basket_1
+pure_composition: true
+requires_transition: true
+sequence_stages: []
+physical_group: ctr_207
+base_bddl_template: upstream_LIBERO/bddl_files/libero_goal/put_the_bowl_on_the_plate.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_goal/put_the_bowl_on_the_plate.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- Trajectory-guided repair authorized on 2026-09-11; see REPAIR_PROVENANCE.json.
+compose_screen: exhaustive_novel_350
+selected: false
+policy_evaluation_authorized: true
+evaluation_authorized: true
+publication_authorized: false
+legacy_parent_snapshot: true
+legacy_parent_source_bundle: LIBERO_EX_ICRA27/LiberoCompose/tasks/compose_261__put_the_black_bowl_on_top_of_the_cabinet_and_then_put_the_cream_cheese_box_in_the_basket
+custom_eval_needed: true
+order_sensitive: true
+historical_results_json: private_evaluation_results/rain_ms_maskaug_gt_libero_compose350_5ep_gpu67_20260904/tasks/all350/CTR_207/results.json
+same_five_state_bytes_as_legacy_source: true
+validation_version: trajectory_repair_five_state_screen_v2_fixture_snapshot
+final_tc_gate: false
+globally_novel_additive_candidate: false
+new_semantic_family: false
+compose_final_tc_gate: false
+trajectory_guided_repair: true
+parent_task_id: CTR_157
+parent_bundle: LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/benchmark_batch57/tasks/ctr_157
+repair_definition:
+  task_id: CTR_207
+  parent_task_id: CTR_157
+  parent_bundle: LiberoComposeTrajRepair20260911/benchmark_batch57/tasks/ctr_157
+  source_result: private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch57_5ep_20260911/tasks/all1/CTR_157/results.json
+  pose_changes: {}
+  terminal_contract:
+    basket_completion_mode: ordered_native_mixed_and_released_supported_settled_v1
+    support_hold_control_steps: 5
+    basket_support_graph_mode: required_targets_to_exact_basket_base
+    settle_linear_speed_max_m_s: 0.02
+    settle_angular_speed_max_rad_s: 0.5
+  evidence: 'Original40 Goal bowl onto cabinet then Object cheese into basket. Immediate157native1/5(ep3)
+    stays frozen and excluded from certification: manual review and savedstatecontactaudit
+    show cheese released but airborne at nativecutoff358. This future-only protocol
+    followup uses exactsame geometry, stored initialstates, action/progresscheckpoints,seeds7-11,
+    actionplan, GTmasks, intermediateTC andmaxstepcap. Retain both orderednativeevents
+    andallfinalBDDL. Add fiveactualcontrols of each requestedbasketobject released,
+    supported through exactbasketbase andsettled(.02m/s,.5rad/s), using unchanged
+    existingphysicalobserver/runtimeconjunction but explicitnewmixed-contract validator/entry.
+    The earlier bowl-on-cabinet nativepredicate remains required; all-success video/fulltrace/manual
+    physicalpreservation also mandatory. No finalTC or postbudget wait, no policyactiongeneration
+    changes, no parentreclassification. Exactly5fresh episodes, physicalGPU4/5. This
+    is a terminal-protocol followup, not a newscene or measuredisolatedpose improvement.'
+arbitrary_coordinate_offsets: false
+same_index_parent_states: true
+same_index_robot_frame_transfer: false
+downstream_preservation_required: true
+environment_ignore_done: true
+manual_success_video_preservation_review_required: true
+parent_canonical_task_signature: composition|d262e6c12e2103e47509b1ef1b57dbdc8e40e5331a7cabb0f4e60a9009f9d96e|('on(akita_black_bowl_1,
+  wooden_cabinet_1_top_side)', 'in(cream_cheese_1, basket_1_contain_region)')
+basket_completion_mode: ordered_native_mixed_and_released_supported_settled_v1
+support_hold_control_steps: 5
+basket_support_graph_mode: required_targets_to_exact_basket_base
+settle_linear_speed_max_m_s: 0.02
+settle_angular_speed_max_rad_s: 0.5
+future_only_terminal_contract: true
+parent_terminal_protocol_different: true
+parent_native_successes_not_reclassified: true
+policy_action_generation_modified: false
+policy_tc_switching_modified: false

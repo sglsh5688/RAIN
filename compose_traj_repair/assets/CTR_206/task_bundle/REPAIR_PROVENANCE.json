@@ -1,0 +1,31 @@
+{
+  "task_id": "CTR_206",
+  "parent_task_id": "CTR_196",
+  "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch75/tasks/ctr_196",
+  "source_result": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch75_5ep_20260911/tasks/all1/CTR_196/results.json",
+  "pose_changes": {
+    "microwave_1": {
+      "delta_xyz": [
+        -0.05,
+        0,
+        0
+      ]
+    },
+    "butter_1": {
+      "delta_xyz": [
+        0,
+        -0.12,
+        0
+      ]
+    }
+  },
+  "evidence": "Object02cheesebasket\u2192LIBERO10K6microwaveclose. Parent1960/5 withfirstbasket5/5. Root now reviewed all151recordedframesofparent196ep4 andcomplete1200-controltrace. Door closes\u2212119.98\u2192\u221253.84deg by500,\u22125.88by800,\u22123.57by900,\u22122.72by1000andremainsajar to1200; nativeclosefalse. Last EEF~[.209-.216,.214-.217,.155-.158] sitsneardoorhinge[.228,.234,.104], makingpoorleverage nearclosure. Sourcepartialclosefirsttouchesbodyg3, latermoving-door g14/g17. LargerYshift followups199/200 stillfirstbasket5/5butpartialdooronly(max82.9/108deg); preserve196Y here and movewholefixture[-0.05, 0, 0]m inX toputlaterdoor surface fartheracross logged handcorridor. This is prospectiveposehypothesis, notguaranteed contactmapping orisolatedcausaleffect. Preserve196yaw35degrees, initial\u22122.094radFULLopening, cheese/basket/otherobjects,1200cap,exactsourceprompts and5episodeRAINsettings. Fivephysicalstates andmanualdeliberateclosure/preservationreviewrequired. Noendpointrelaxation orinitialajarcondition. Followup to staticrejected203/204, which had movingdoor lowercollision geomg17 penetrating unusedbutter by2.3\u20134.1mm aftersettling(ep4only for203; allfivefor204). Retain their prospectivefixtureXshift but move unusedbutter12cmnegativeY on samefloor toclearwholeopen-door endpoint. Otherobjects stayunchanged. This is an explicitdistractor-clearance change, no policy was run on rejected203/204.",
+  "classification": "repair_variant_not_new_semantic_family",
+  "parent_files_sha256": {
+    "task.bddl": "927bd7ce00e182aea8b7d0b82a0a89824837524eedd684e1c7583013375a0ae1",
+    "task.pruned_init": "6b86c191be43911b5fa73bdb363f5bdddadbb8131f33704bc090a111f3da20c3",
+    "FIXTURE_REPLAY.json": "f18e9a992eedb5eee9eb1f7577b0b8768a637d6d9dbe9efa51c917d2889b999e",
+    "action_plan.yaml": "835bd0f7fe486e169ee44ce77e8b498df5db71f006b8c5527481874b7b9aa0d4"
+  },
+  "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+}

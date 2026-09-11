@@ -1,0 +1,143 @@
+task_id: CTR_206
+task_name: Put the cream cheese in the basket, then close the microwave door.
+language: Put the cream cheese in the basket, then close the microwave door.
+primary_category: Composition
+composition_family: object_basket_and_k6_microwave_order_pair
+anchor_suite: libero_object_plus_libero10_microwave
+source_prior_task_ids:
+- '302'
+- '109'
+source_priors:
+- suite: libero_object
+  task_stem: pick_up_the_cream_cheese_and_place_it_in_the_basket
+  instruction: Pick the cream cheese and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_10
+  task_stem: KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it
+  instruction: put the yellow and white mug in the microwave and close it
+  bddl: upstream_LIBERO/bddl_files/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.bddl
+  init: upstream_LIBERO/init_files/libero_10/KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the cream cheese in the basket
+- Close the microwave door
+component_evidence:
+- Original LIBERO Object cream-cheese grasp and basket placement, exact same-index
+  states.
+- Original K6 close skill, door-only mask; root has the minimum documented clearance
+  translation.
+semantic_subtask_count: 2
+action_plan_step_count: 3
+canonical_goal_atoms:
+- in(cream_cheese_1,basket_1_contain_region)
+- close(microwave_1)
+canonical_task_signature: composition|5dad35b79cdcfda81f14ad2cdf503d69a8c78c1be30c5903c5322ac526e2136f|('in(cream_cheese_1,basket_1_contain_region)',
+  'close(microwave_1)')
+objects_of_interest:
+- cream_cheese_1
+- microwave_1
+pure_composition: true
+requires_transition: true
+sequence_stages:
+- - in(cream_cheese_1,basket_1_contain_region)
+- - in(cream_cheese_1,basket_1_contain_region)
+  - close(microwave_1)
+physical_group: ctr_206
+base_bddl_template: upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init
+max_steps: 1200
+definition_status: five_state_narrow_phase_verified
+notes:
+- Trajectory-guided repair authorized on 2026-09-11; see REPAIR_PROVENANCE.json.
+validation_version: trajectory_repair_five_state_screen_v2_fixture_snapshot
+runtime_contract_version: batch86_ordered_native_final_no_tc_v1
+ordered_event_atoms:
+- in(cream_cheese_1,basket_1_contain_region)
+- close(microwave_1)
+strict_event_order: true
+custom_eval_needed: true
+final_success_requires_all_bddl_goals: true
+compose_final_tc_gate: false
+final_tc_gate: false
+compose_final_termination: ordered_native_goals_without_tc
+environment_ignore_done: true
+same_index_robot_frame_transfer: false
+arbitrary_coordinate_offsets: true
+support_only_z_correction: false
+source_state_indices:
+- 0
+- 1
+- 2
+- 3
+- 4
+distractors_removed:
+- milk_1
+downstream_preservation_required: true
+manual_success_video_preservation_review_required: true
+policy_evaluation_authorized: true
+publication_authorized: false
+fixture_replay_required: true
+fixture_replay_file: FIXTURE_REPLAY.json
+user_requested_diagnostic: true
+do_not_count_orders_as_distinct_novelty: true
+microwave_mask_scope: door_only
+geometry_plan:
+  microwave_offset_m:
+  - -0.35000000000000003
+  - 0.08
+  - 0.0
+  removed_distractors:
+  - milk_1
+  displacement_m: 0.35902646142032485
+  direction: toward_robot_x_plus_minimum_positive_y_robot_clearance
+  extra_robot_margin_m: 0.01
+minimum_geometry_adjustment_authorized: true
+exact_pickup_and_basket_preserved: true
+fully_open_microwave_before_inference: true
+evaluation_authorized: true
+physical_screen_report_sha256: bf3375dcbba758750fe3060f078e6981020f8eb5a63c5d2ab4183bb2c0124754
+ordered_task_signature: 41937a8e9c1972f5d9bc524edae7a7dea3ab5b16d5868d0345ee898ba93e7f36
+selected: false
+globally_novel_additive_candidate: false
+new_semantic_family: false
+trajectory_guided_repair: true
+parent_task_id: CTR_196
+parent_bundle: LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/benchmark_batch75/tasks/ctr_196
+repair_definition:
+  task_id: CTR_206
+  parent_task_id: CTR_196
+  parent_bundle: LiberoComposeTrajRepair20260911/benchmark_batch75/tasks/ctr_196
+  source_result: private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch75_5ep_20260911/tasks/all1/CTR_196/results.json
+  pose_changes:
+    microwave_1:
+      delta_xyz:
+      - -0.05
+      - 0
+      - 0
+    butter_1:
+      delta_xyz:
+      - 0
+      - -0.12
+      - 0
+  evidence: "Object02cheesebasket\u2192LIBERO10K6microwaveclose. Parent1960/5 withfirstbasket5/5.\
+    \ Root now reviewed all151recordedframesofparent196ep4 andcomplete1200-controltrace.\
+    \ Door closes\u2212119.98\u2192\u221253.84deg by500,\u22125.88by800,\u22123.57by900,\u2212\
+    2.72by1000andremainsajar to1200; nativeclosefalse. Last EEF~[.209-.216,.214-.217,.155-.158]\
+    \ sitsneardoorhinge[.228,.234,.104], makingpoorleverage nearclosure. Sourcepartialclosefirsttouchesbodyg3,\
+    \ latermoving-door g14/g17. LargerYshift followups199/200 stillfirstbasket5/5butpartialdooronly(max82.9/108deg);\
+    \ preserve196Y here and movewholefixture[-0.05, 0, 0]m inX toputlaterdoor surface\
+    \ fartheracross logged handcorridor. This is prospectiveposehypothesis, notguaranteed\
+    \ contactmapping orisolatedcausaleffect. Preserve196yaw35degrees, initial\u2212\
+    2.094radFULLopening, cheese/basket/otherobjects,1200cap,exactsourceprompts and5episodeRAINsettings.\
+    \ Fivephysicalstates andmanualdeliberateclosure/preservationreviewrequired. Noendpointrelaxation\
+    \ orinitialajarcondition. Followup to staticrejected203/204, which had movingdoor\
+    \ lowercollision geomg17 penetrating unusedbutter by2.3\u20134.1mm aftersettling(ep4only\
+    \ for203; allfivefor204). Retain their prospectivefixtureXshift but move unusedbutter12cmnegativeY\
+    \ on samefloor toclearwholeopen-door endpoint. Otherobjects stayunchanged. This\
+    \ is an explicitdistractor-clearance change, no policy was run on rejected203/204."
+same_index_parent_states: true
+order_sensitive: true
+parent_canonical_task_signature: composition|77a3f938e1faecf81feba1ee9a207aafe6fae9c5e645b928cb254851a5cb4a60|('in(cream_cheese_1,basket_1_contain_region)',
+  'close(microwave_1)')

@@ -1,0 +1,3134 @@
+{
+  "task_id": "CTR_206",
+  "instruction": "Put the cream cheese in the basket, then close the microwave door.",
+  "status": "pending_user_review_not_selected",
+  "variant_of": "CTR_196",
+  "classification": "repair_variant_not_new_semantic_family",
+  "episodes": 5,
+  "nominal_successes": 2,
+  "manually_valid_successes": 2,
+  "nominal_success_episode_indices": [
+    1,
+    4
+  ],
+  "certified_episode_indices": [
+    1,
+    4
+  ],
+  "ordered_native_milestones": {
+    "1": [
+      150,
+      738
+    ],
+    "4": [
+      156,
+      245
+    ]
+  },
+  "final_success_requires_all_bddl_goals": true,
+  "compose_final_tc_gate": false,
+  "results_sha256": "d9c059cec34a00a75db454e014d07d8e542f5cb45acc52bbd93630a7438006df",
+  "parent_results_sha256": "9d78c8cf179d7a5659d41d37f002b253230555f26f1a000f66bcf276a3ea79a2",
+  "parent_nominal_successes": 0,
+  "parent_episodes": 5,
+  "parent_instruction": "Put the cream cheese in the basket, then close the microwave door.",
+  "parent_state_verification": {
+    "method": "historical_per_episode_state_hash"
+  },
+  "repair": {
+    "task_id": "CTR_206",
+    "parent_task_id": "CTR_196",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch75/tasks/ctr_196",
+    "pose_changes": {
+      "microwave_1": {
+        "delta_xyz": [
+          -0.05,
+          0,
+          0
+        ]
+      },
+      "butter_1": {
+        "delta_xyz": [
+          0,
+          -0.12,
+          0
+        ]
+      }
+    },
+    "evidence": "Object02cheesebasket→LIBERO10K6microwaveclose. Parent1960/5 withfirstbasket5/5. Root now reviewed all151recordedframesofparent196ep4 andcomplete1200-controltrace. Door closes−119.98→−53.84deg by500,−5.88by800,−3.57by900,−2.72by1000andremainsajar to1200; nativeclosefalse. Last EEF~[.209-.216,.214-.217,.155-.158] sitsneardoorhinge[.228,.234,.104], makingpoorleverage nearclosure. Sourcepartialclosefirsttouchesbodyg3, latermoving-door g14/g17. LargerYshift followups199/200 stillfirstbasket5/5butpartialdooronly(max82.9/108deg); preserve196Y here and movewholefixture[-0.05, 0, 0]m inX toputlaterdoor surface fartheracross logged handcorridor. This is prospectiveposehypothesis, notguaranteed contactmapping orisolatedcausaleffect. Preserve196yaw35degrees, initial−2.094radFULLopening, cheese/basket/otherobjects,1200cap,exactsourceprompts and5episodeRAINsettings. Fivephysicalstates andmanualdeliberateclosure/preservationreviewrequired. Noendpointrelaxation orinitialajarcondition. Followup to staticrejected203/204, which had movingdoor lowercollision geomg17 penetrating unusedbutter by2.3–4.1mm aftersettling(ep4only for203; allfivefor204). Retain their prospectivefixtureXshift but move unusedbutter12cmnegativeY on samefloor toclearwholeopen-door endpoint. Otherobjects stayunchanged. This is an explicitdistractor-clearance change, no policy was run on rejected203/204."
+  },
+  "frozen_repair_provenance": {
+    "task_id": "CTR_206",
+    "parent_task_id": "CTR_196",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch75/tasks/ctr_196",
+    "source_result": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch75_5ep_20260911/tasks/all1/CTR_196/results.json",
+    "pose_changes": {
+      "microwave_1": {
+        "delta_xyz": [
+          -0.05,
+          0,
+          0
+        ]
+      },
+      "butter_1": {
+        "delta_xyz": [
+          0,
+          -0.12,
+          0
+        ]
+      }
+    },
+    "evidence": "Object02cheesebasket→LIBERO10K6microwaveclose. Parent1960/5 withfirstbasket5/5. Root now reviewed all151recordedframesofparent196ep4 andcomplete1200-controltrace. Door closes−119.98→−53.84deg by500,−5.88by800,−3.57by900,−2.72by1000andremainsajar to1200; nativeclosefalse. Last EEF~[.209-.216,.214-.217,.155-.158] sitsneardoorhinge[.228,.234,.104], makingpoorleverage nearclosure. Sourcepartialclosefirsttouchesbodyg3, latermoving-door g14/g17. LargerYshift followups199/200 stillfirstbasket5/5butpartialdooronly(max82.9/108deg); preserve196Y here and movewholefixture[-0.05, 0, 0]m inX toputlaterdoor surface fartheracross logged handcorridor. This is prospectiveposehypothesis, notguaranteed contactmapping orisolatedcausaleffect. Preserve196yaw35degrees, initial−2.094radFULLopening, cheese/basket/otherobjects,1200cap,exactsourceprompts and5episodeRAINsettings. Fivephysicalstates andmanualdeliberateclosure/preservationreviewrequired. Noendpointrelaxation orinitialajarcondition. Followup to staticrejected203/204, which had movingdoor lowercollision geomg17 penetrating unusedbutter by2.3–4.1mm aftersettling(ep4only for203; allfivefor204). Retain their prospectivefixtureXshift but move unusedbutter12cmnegativeY on samefloor toclearwholeopen-door endpoint. Otherobjects stayunchanged. This is an explicitdistractor-clearance change, no policy was run on rejected203/204.",
+    "classification": "repair_variant_not_new_semantic_family",
+    "parent_files_sha256": {
+      "task.bddl": "927bd7ce00e182aea8b7d0b82a0a89824837524eedd684e1c7583013375a0ae1",
+      "task.pruned_init": "6b86c191be43911b5fa73bdb363f5bdddadbb8131f33704bc090a111f3da20c3",
+      "FIXTURE_REPLAY.json": "f18e9a992eedb5eee9eb1f7577b0b8768a637d6d9dbe9efa51c917d2889b999e",
+      "action_plan.yaml": "835bd0f7fe486e169ee44ce77e8b498df5db71f006b8c5527481874b7b9aa0d4"
+    },
+    "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+  },
+  "original40_skill_lineage": [
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "instruction": "Pick the cream cheese and place it in the basket",
+      "transfer": "Directly trained cream-cheese grasp and basket placement, chained with the other skill in the repaired shared scene."
+    },
+    {
+      "suite": "libero_10",
+      "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "instruction": "put the yellow and white mug in the microwave and close it",
+      "transfer": "The closing subtask from the trained KITCHEN_SCENE6 mug-in-microwave-and-close task; only door closing is transferred, after cheese goes into the separate basket. The entire fixture is translated and yawed; the door starts fully open."
+    }
+  ],
+  "manual_review_notes": "Cream cheese into basket, then close the microwave: 2/5 fully reviewed successes. The original historical VCN86_002 and immediate parent CTR_196 each achieved 0/5 complete chains. The parent placed cheese in all five episodes but left the door ajar; its closest episode ended 2.72 degrees open. This candidate moves the whole microwave to a net translation [+0.550, -0.015, 0] m and yaw +35 degrees relative to VCN86_002, including the parent layout repair, and moves unused butter 12 cm in negative Y for clearance. The requested cheese and basket are unchanged. Each door starts fully open at -2.094 radians, and successful episodes close it through direct robot-door contact while preserving the placed cheese. CTR_205 and CTR_206 are two layout variants of the same Object + LIBERO10 composition, not separate semantic families. The changes are not an isolated causal comparison or a population-level success-rate estimate.",
+  "episode_reviews": [
+    {
+      "episode_idx": 1,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 94,
+      "reviewed_complete_trace": true,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch80_5ep_20260911/tasks/all1/CTR_206/videos/CTR_206_ep001_ok.mp4",
+      "video_sha256": "35150f93cf4fbfead4032f05c6bce889d39e5d95e442f1a034602053a6bef5d8",
+      "trace_npz_sha256": "cda648b40c44bc7622d42d2a39a6b30357ef7014fc817d2a92b4c133666f41fc",
+      "trace_json_sha256": "4ec438d621b1e27f36d220c79ac59b602975af421548176575ed340276956523",
+      "milestones": [
+        150,
+        738
+      ],
+      "initial_native_goals": [
+        false,
+        false
+      ],
+      "final_native_goals": [
+        true,
+        true
+      ],
+      "initial_door_angle_deg": -119.977,
+      "final_door_angle_deg": 0.215347,
+      "earlier_object_motion": {
+        "cream_cheese_1_main": {
+          "170": {
+            "max_displacement_m": 0.020872373715170065,
+            "max_rotation_deg": 33.41551082860198
+          },
+          "200": {
+            "max_displacement_m": 0.01758185441104349,
+            "max_rotation_deg": 27.299187268276633
+          },
+          "400": {
+            "max_displacement_m": 4.225279094102755e-11,
+            "max_rotation_deg": 0.0
+          }
+        },
+        "basket_1_main": {
+          "170": {
+            "max_displacement_m": 3.5251887887848327e-07,
+            "max_rotation_deg": 5.053878465470131e-05
+          },
+          "200": {
+            "max_displacement_m": 3.5875169216592534e-07,
+            "max_rotation_deg": 4.7933136678443936e-05
+          },
+          "400": {
+            "max_displacement_m": 6.071532165918825e-18,
+            "max_rotation_deg": 0.0
+          }
+        }
+      },
+      "full_saved_state_contact_audit": "LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/analysis/CTR206_PRESERVATION_CONTACT_AUDIT.json",
+      "full_saved_state_contact_audit_sha256": "a5476cd65515420b3c2d8250008e60233423c39192c584e3daebb2df6953729e",
+      "unexpected_later_cheese_or_basket_contacts": [],
+      "terminal_contact_corroboration": [
+        {
+          "control_step": 734,
+          "basket_released_supported_settled": true,
+          "reconstructed_body_max_error_m": 7.523729189107264e-06,
+          "basket_snapshot": {
+            "entities": {
+              "basket_1": {
+                "world_position_m": [
+                  0.007539173994415873,
+                  0.26138791061918726,
+                  -0.0045830110343183135
+                ],
+                "linear_speed_m_s": 1.6912991619029547e-16,
+                "angular_speed_rad_s": 2.421701295524184e-15,
+                "any_robot_contact": false,
+                "upright": true,
+                "original_support_contact": true
+              },
+              "cream_cheese_1": {
+                "world_position_m": [
+                  0.02472124062516736,
+                  0.24616071911945955,
+                  0.025920622103082738
+                ],
+                "linear_speed_m_s": 2.5053397408640484e-12,
+                "angular_speed_rad_s": 7.117072573233803e-15,
+                "any_robot_contact": false,
+                "native_in": true
+              }
+            },
+            "support_edges": [
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190349628388996,
+                "normal_toward_child_world": [
+                  1.895311957822441e-06,
+                  -4.502911332138199e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190294085049414,
+                "normal_toward_child_world": [
+                  1.895311957822441e-06,
+                  -4.502911332138199e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.01519033496123626,
+                "normal_toward_child_world": [
+                  1.895311957822441e-06,
+                  -4.502911332138199e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190279417896684,
+                "normal_toward_child_world": [
+                  1.895311957822441e-06,
+                  -4.502911332138199e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              }
+            ],
+            "contacts": [
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3600782731593964,
+                "distance_m": -1.5665174113582703e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.07994267254008332,
+                  0.18738398318556745,
+                  -7.832587056791351e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.35376742590377064,
+                "distance_m": -1.5390763689834136e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.06485732729865439,
+                  0.18737715483973666,
+                  -7.695381844917068e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3442174609441528,
+                "distance_m": -1.4975494525674288e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.07993544996233344,
+                  0.340543983013717,
+                  -7.487747262837144e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.33790704418645784,
+                "distance_m": -1.4701084101925721e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.06486454987640426,
+                  0.3405371546678862,
+                  -7.3505420509628605e-06
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190349628388996,
+                "distance_m": -8.205157337188097e-08,
+                "normal_world": [
+                  -1.895311957822441e-06,
+                  4.502911332138199e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  0.06380205997206516,
+                  0.2221415421477485,
+                  0.016984480902004773
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190294085049414,
+                "distance_m": -8.205127335313731e-08,
+                "normal_world": [
+                  -1.895311957822441e-06,
+                  4.502911332138199e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  0.06667243893431611,
+                  0.264716893098485,
+                  0.016984667174921482
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.01519033496123626,
+                "distance_m": -8.205149414664794e-08,
+                "normal_world": [
+                  -1.895311957822441e-06,
+                  4.502911332138199e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  -0.01722999155685006,
+                  0.2276046256162224,
+                  0.01698465908284107
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190279417896684,
+                "distance_m": -8.205119412790428e-08,
+                "normal_world": [
+                  -1.895311957822441e-06,
+                  4.502911332138199e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  -0.014359612594599107,
+                  0.2701799765669589,
+                  0.01698484535575778
+                ]
+              }
+            ]
+          },
+          "contacts": [
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5665174113582703e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5390763689834136e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4975494525674288e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4701084101925721e-05
+            },
+            {
+              "geom_a": "microwave_1_g17",
+              "geom_b": "gripper0_hand_collision",
+              "distance_m": 0.0008798703494331385
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205157337188097e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205127335313731e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205149414664794e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205119412790428e-08
+            }
+          ]
+        },
+        {
+          "control_step": 735,
+          "basket_released_supported_settled": true,
+          "reconstructed_body_max_error_m": 6.140385879982446e-06,
+          "basket_snapshot": {
+            "entities": {
+              "basket_1": {
+                "world_position_m": [
+                  0.007539173994415873,
+                  0.26138791061918726,
+                  -0.0045830110343183135
+                ],
+                "linear_speed_m_s": 1.2888398633670894e-16,
+                "angular_speed_rad_s": 1.7205340990707935e-15,
+                "any_robot_contact": false,
+                "upright": true,
+                "original_support_contact": true
+              },
+              "cream_cheese_1": {
+                "world_position_m": [
+                  0.024721240625215933,
+                  0.24616071911934437,
+                  0.025920622103082738
+                ],
+                "linear_speed_m_s": 2.505388576018105e-12,
+                "angular_speed_rad_s": 3.4788886455078235e-15,
+                "any_robot_contact": false,
+                "native_in": true
+              }
+            },
+            "support_edges": [
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190349628389966,
+                "normal_toward_child_world": [
+                  1.8953119577114187e-06,
+                  -4.502911332027177e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190294085050052,
+                "normal_toward_child_world": [
+                  1.8953119577114187e-06,
+                  -4.502911332027177e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190334961236786,
+                "normal_toward_child_world": [
+                  1.8953119577114187e-06,
+                  -4.502911332027177e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190279417896874,
+                "normal_toward_child_world": [
+                  1.8953119577114187e-06,
+                  -4.502911332027177e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              }
+            ],
+            "contacts": [
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3600782731594178,
+                "distance_m": -1.5665174113565355e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.0799426725400833,
+                  0.18738398318556748,
+                  -7.832587056782678e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.35376742590378385,
+                "distance_m": -1.5390763689834136e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.0648573272986544,
+                  0.1873771548397367,
+                  -7.695381844917068e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.34421746094414096,
+                "distance_m": -1.4975494525674288e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.07993544996233345,
+                  0.34054398301371697,
+                  -7.487747262837144e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.337907044186437,
+                "distance_m": -1.4701084101943068e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.06486454987640425,
+                  0.34053715466788614,
+                  -7.350542050971534e-06
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190349628389966,
+                "distance_m": -8.205157338294815e-08,
+                "normal_world": [
+                  -1.8953119577114187e-06,
+                  4.502911332027177e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  0.06380205997211373,
+                  0.22214154214763335,
+                  0.016984480902004776
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190294085050052,
+                "distance_m": -8.205127335861193e-08,
+                "normal_world": [
+                  -1.8953119577114187e-06,
+                  4.502911332027177e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  0.06667243893436468,
+                  0.2647168930983698,
+                  0.016984667174921482
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190334961236786,
+                "distance_m": -8.205149414811221e-08,
+                "normal_world": [
+                  -1.8953119577114187e-06,
+                  4.502911332027177e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  -0.017229991556801473,
+                  0.22760462561610723,
+                  0.01698465908284107
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190279417896874,
+                "distance_m": -8.2051194123776e-08,
+                "normal_world": [
+                  -1.8953119577114187e-06,
+                  4.502911332027177e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  -0.01435961259455052,
+                  0.2701799765668437,
+                  0.016984845355757776
+                ]
+              }
+            ]
+          },
+          "contacts": [
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5665174113565355e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5390763689834136e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4975494525674288e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4701084101943068e-05
+            },
+            {
+              "geom_a": "microwave_1_g17",
+              "geom_b": "gripper0_hand_collision",
+              "distance_m": 0.0009311808315541289
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205157338294815e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205127335861193e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205149414811221e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.2051194123776e-08
+            }
+          ]
+        },
+        {
+          "control_step": 736,
+          "basket_released_supported_settled": true,
+          "reconstructed_body_max_error_m": 5.9540622536491394e-06,
+          "basket_snapshot": {
+            "entities": {
+              "basket_1": {
+                "world_position_m": [
+                  0.007539173994415873,
+                  0.26138791061918726,
+                  -0.0045830110343183135
+                ],
+                "linear_speed_m_s": 8.266488094330168e-17,
+                "angular_speed_rad_s": 4.750426011774264e-16,
+                "any_robot_contact": false,
+                "upright": true,
+                "original_support_contact": true
+              },
+              "cream_cheese_1": {
+                "world_position_m": [
+                  0.02472124062526451,
+                  0.24616071911922918,
+                  0.025920622103082738
+                ],
+                "linear_speed_m_s": 2.505433976313738e-12,
+                "angular_speed_rad_s": 1.9165701714031767e-15,
+                "any_robot_contact": false,
+                "native_in": true
+              }
+            },
+            "support_edges": [
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190349628389421,
+                "normal_toward_child_world": [
+                  1.895311957822441e-06,
+                  -4.502911332138199e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190294085049726,
+                "normal_toward_child_world": [
+                  1.895311957822441e-06,
+                  -4.502911332138199e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190334961236581,
+                "normal_toward_child_world": [
+                  1.895311957822441e-06,
+                  -4.502911332138199e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190279417896885,
+                "normal_toward_child_world": [
+                  1.895311957822441e-06,
+                  -4.502911332138199e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              }
+            ],
+            "contacts": [
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.36007827315945967,
+                "distance_m": -1.5665174113582703e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.07994267254008332,
+                  0.18738398318556745,
+                  -7.832587056791351e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3537674259037958,
+                "distance_m": -1.5390763689834136e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.06485732729865439,
+                  0.18737715483973666,
+                  -7.695381844917068e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.344217460944128,
+                "distance_m": -1.4975494525674288e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.07993544996233344,
+                  0.340543983013717,
+                  -7.487747262837144e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.33790704418639506,
+                "distance_m": -1.4701084101925721e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.06486454987640426,
+                  0.3405371546678862,
+                  -7.3505420509628605e-06
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190349628389421,
+                "distance_m": -8.205157337247317e-08,
+                "normal_world": [
+                  -1.895311957822441e-06,
+                  4.502911332138199e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  0.06380205997216232,
+                  0.22214154214751813,
+                  0.01698448090200477
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190294085049726,
+                "distance_m": -8.205127335254511e-08,
+                "normal_world": [
+                  -1.895311957822441e-06,
+                  4.502911332138199e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  0.06667243893441327,
+                  0.26471689309825464,
+                  0.01698466717492148
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190334961236581,
+                "distance_m": -8.205149414724014e-08,
+                "normal_world": [
+                  -1.895311957822441e-06,
+                  4.502911332138199e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  -0.017229991556752904,
+                  0.22760462561599204,
+                  0.016984659082841067
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190279417896885,
+                "distance_m": -8.205119412731208e-08,
+                "normal_world": [
+                  -1.895311957822441e-06,
+                  4.502911332138199e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  -0.014359612594501952,
+                  0.27017997656672854,
+                  0.016984845355757776
+                ]
+              }
+            ]
+          },
+          "contacts": [
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5665174113582703e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5390763689834136e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4975494525674288e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4701084101925721e-05
+            },
+            {
+              "geom_a": "microwave_1_g17",
+              "geom_b": "gripper0_hand_collision",
+              "distance_m": 0.0009513259080287214
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205157337247317e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205127335254511e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205149414724014e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205119412731208e-08
+            }
+          ]
+        },
+        {
+          "control_step": 737,
+          "basket_released_supported_settled": true,
+          "reconstructed_body_max_error_m": 6.234598687621107e-06,
+          "basket_snapshot": {
+            "entities": {
+              "basket_1": {
+                "world_position_m": [
+                  0.007539173994415873,
+                  0.26138791061918726,
+                  -0.0045830110343183135
+                ],
+                "linear_speed_m_s": 1.2461049698083028e-16,
+                "angular_speed_rad_s": 1.6644149716043751e-15,
+                "any_robot_contact": false,
+                "upright": true,
+                "original_support_contact": true
+              },
+              "cream_cheese_1": {
+                "world_position_m": [
+                  0.024721240625313085,
+                  0.246160719119114,
+                  0.025920622103082738
+                ],
+                "linear_speed_m_s": 2.5053255445748475e-12,
+                "angular_speed_rad_s": 2.4640117227681895e-15,
+                "any_robot_contact": false,
+                "native_in": true
+              }
+            },
+            "support_edges": [
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190349628389912,
+                "normal_toward_child_world": [
+                  1.8953119577114187e-06,
+                  -4.502911332027177e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190294085050071,
+                "normal_toward_child_world": [
+                  1.8953119577114187e-06,
+                  -4.502911332027177e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190334961236743,
+                "normal_toward_child_world": [
+                  1.8953119577114187e-06,
+                  -4.502911332027177e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.0151902794178969,
+                "normal_toward_child_world": [
+                  1.8953119577114187e-06,
+                  -4.502911332027177e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              }
+            ],
+            "contacts": [
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.36007827315948365,
+                "distance_m": -1.5665174113565355e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.0799426725400833,
+                  0.18738398318556748,
+                  -7.832587056782678e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.35376742590381,
+                "distance_m": -1.5390763689834136e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.0648573272986544,
+                  0.1873771548397367,
+                  -7.695381844917068e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.34421746094411476,
+                "distance_m": -1.4975494525674288e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.07993544996233345,
+                  0.34054398301371697,
+                  -7.487747262837144e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.33790704418637135,
+                "distance_m": -1.4701084101943068e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.06486454987640425,
+                  0.34053715466788614,
+                  -7.350542050971534e-06
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190349628389912,
+                "distance_m": -8.205157338324424e-08,
+                "normal_world": [
+                  -1.8953119577114187e-06,
+                  4.502911332027177e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  0.06380205997221088,
+                  0.22214154214740298,
+                  0.016984480902004773
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190294085050071,
+                "distance_m": -8.205127335831584e-08,
+                "normal_world": [
+                  -1.8953119577114187e-06,
+                  4.502911332027177e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  0.06667243893446183,
+                  0.26471689309813945,
+                  0.016984667174921482
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190334961236743,
+                "distance_m": -8.20514941484083e-08,
+                "normal_world": [
+                  -1.8953119577114187e-06,
+                  4.502911332027177e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  -0.01722999155670432,
+                  0.22760462561587685,
+                  0.01698465908284107
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.0151902794178969,
+                "distance_m": -8.205119412347991e-08,
+                "normal_world": [
+                  -1.8953119577114187e-06,
+                  4.502911332027177e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  -0.014359612594453373,
+                  0.27017997656661336,
+                  0.016984845355757776
+                ]
+              }
+            ]
+          },
+          "contacts": [
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5665174113565355e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5390763689834136e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4975494525674288e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4701084101943068e-05
+            },
+            {
+              "geom_a": "microwave_1_g17",
+              "geom_b": "gripper0_hand_collision",
+              "distance_m": 0.0009607359912279558
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205157338324424e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205127335831584e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.20514941484083e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205119412347991e-08
+            }
+          ]
+        },
+        {
+          "control_step": 738,
+          "basket_released_supported_settled": true,
+          "reconstructed_body_max_error_m": 4.63928464042862e-05,
+          "basket_snapshot": {
+            "entities": {
+              "basket_1": {
+                "world_position_m": [
+                  0.007539173994415873,
+                  0.26138791061918726,
+                  -0.0045830110343183135
+                ],
+                "linear_speed_m_s": 8.294283675509085e-17,
+                "angular_speed_rad_s": 4.824582136488551e-16,
+                "any_robot_contact": false,
+                "upright": true,
+                "original_support_contact": true
+              },
+              "cream_cheese_1": {
+                "world_position_m": [
+                  0.024721240625361657,
+                  0.2461607191189988,
+                  0.025920622103082738
+                ],
+                "linear_speed_m_s": 2.5054028934111496e-12,
+                "angular_speed_rad_s": 4.3831742096865287e-16,
+                "any_robot_contact": false,
+                "native_in": true
+              }
+            },
+            "support_edges": [
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190349628389402,
+                "normal_toward_child_world": [
+                  1.895311957822441e-06,
+                  -4.502911332138199e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190294085049724,
+                "normal_toward_child_world": [
+                  1.895311957822441e-06,
+                  -4.502911332138199e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190334961236517,
+                "normal_toward_child_world": [
+                  1.895311957822441e-06,
+                  -4.502911332138199e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190279417896838,
+                "normal_toward_child_world": [
+                  1.895311957822441e-06,
+                  -4.502911332138199e-06,
+                  0.9999999999880658
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              }
+            ],
+            "contacts": [
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.36007827315952295,
+                "distance_m": -1.5665174113580968e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.07994267254008332,
+                  0.18738398318556748,
+                  -7.832587056790484e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.35376742590381666,
+                "distance_m": -1.5390763689825462e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.06485732729865439,
+                  0.18737715483973666,
+                  -7.695381844912731e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.344217460944107,
+                "distance_m": -1.4975494525682961e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.07993544996233344,
+                  0.34054398301371697,
+                  -7.487747262841481e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3379070441863316,
+                "distance_m": -1.4701084101927456e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.06486454987640426,
+                  0.34053715466788614,
+                  -7.350542050963728e-06
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190349628389402,
+                "distance_m": -8.205157337276929e-08,
+                "normal_world": [
+                  -1.895311957822441e-06,
+                  4.502911332138199e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  0.06380205997225946,
+                  0.2221415421472878,
+                  0.016984480902004766
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190294085049724,
+                "distance_m": -8.205127335224901e-08,
+                "normal_world": [
+                  -1.895311957822441e-06,
+                  4.502911332138199e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  0.06667243893451041,
+                  0.26471689309802426,
+                  0.016984667174921475
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190334961236517,
+                "distance_m": -8.205149414753625e-08,
+                "normal_world": [
+                  -1.895311957822441e-06,
+                  4.502911332138199e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  -0.01722999155665576,
+                  0.22760462561576167,
+                  0.016984659082841073
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190279417896838,
+                "distance_m": -8.205119412701598e-08,
+                "normal_world": [
+                  -1.895311957822441e-06,
+                  4.502911332138199e-06,
+                  -0.9999999999880658
+                ],
+                "contact_position_m": [
+                  -0.01435961259440481,
+                  0.27017997656649817,
+                  0.016984845355757776
+                ]
+              }
+            ]
+          },
+          "contacts": [
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5665174113580968e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5390763689825462e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4975494525682961e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4701084101927456e-05
+            },
+            {
+              "geom_a": "microwave_1_g17",
+              "geom_b": "gripper0_hand_collision",
+              "distance_m": 0.0006679468227229971
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205157337276929e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205127335224901e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205149414753625e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205119412701598e-08
+            }
+          ]
+        }
+      ],
+      "saved_state_audit_policy_calls": 0,
+      "saved_state_audit_trajectory_controls_added": 0,
+      "notes": "Reviewed all 94 decoded frames and the full 738-control trace. Cheese is deliberately grasped, carried and released into the basket; the robot then directly pushes the moving microwave door from fully open (-119.977 degrees) to native closed (+0.215347 degrees). Palm/hand contact with moving door geom g17 is recorded through controls 733-738. The released cheese continues sliding and rotating down inside the basket through its own settling: from control 200 it moves at most 1.758 cm and 27.30 degrees. The basket moves less than 0.36 micrometers. Every saved state from control 170 to the end was reconstructed without new controls: cheese contacts only the basket, and the basket contacts only cheese and its original floor; there is no later robot, door or other-object contact with either. From control 400 through 738 the cheese pose is constant to numerical precision. Native In stays true. This is its own release settling, not damage from the later door operation. The final five saved states 734-738 corroborate released, exact-basket-base supported and settled cheese. This is a read-only terminal audit of the ordinary ordered-native run, not a newly applied online gate or extended trajectory. Both final BDDL goals hold; no final TC gate."
+    },
+    {
+      "episode_idx": 4,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 32,
+      "reviewed_complete_trace": true,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch80_5ep_20260911/tasks/all1/CTR_206/videos/CTR_206_ep004_ok.mp4",
+      "video_sha256": "d5b110e6cc0ecd66bcd34403e869df7ade78343ae0f62d97d6ba43be840eab4c",
+      "trace_npz_sha256": "95ed9dca8dbc8e12f2ecc864f2a26eb8f949cecab0a75a5a4d9ca8f50cda7752",
+      "trace_json_sha256": "5acd9b56758e90a98db2b11b3b75dd771821a5191880c5f3c9c5381dc82a5e5e",
+      "milestones": [
+        156,
+        245
+      ],
+      "initial_native_goals": [
+        false,
+        false
+      ],
+      "final_native_goals": [
+        true,
+        true
+      ],
+      "initial_door_angle_deg": -119.977,
+      "final_door_angle_deg": 0.326386,
+      "earlier_object_motion": {
+        "cream_cheese_1_main": {
+          "170": {
+            "max_displacement_m": 1.1668262005978771e-11,
+            "max_rotation_deg": 5.122641877509564e-06
+          },
+          "200": {
+            "max_displacement_m": 7.000955158805558e-12,
+            "max_rotation_deg": 5.122641877509564e-06
+          },
+          "240": {
+            "max_displacement_m": 7.778892770932529e-13,
+            "max_rotation_deg": 5.122641877509564e-06
+          }
+        },
+        "basket_1_main": {
+          "170": {
+            "max_displacement_m": 0.0,
+            "max_rotation_deg": 0.0
+          },
+          "200": {
+            "max_displacement_m": 0.0,
+            "max_rotation_deg": 0.0
+          },
+          "240": {
+            "max_displacement_m": 0.0,
+            "max_rotation_deg": 0.0
+          }
+        }
+      },
+      "full_saved_state_contact_audit": "LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/analysis/CTR206_PRESERVATION_CONTACT_AUDIT.json",
+      "full_saved_state_contact_audit_sha256": "a5476cd65515420b3c2d8250008e60233423c39192c584e3daebb2df6953729e",
+      "unexpected_later_cheese_or_basket_contacts": [],
+      "terminal_contact_corroboration": [
+        {
+          "control_step": 241,
+          "basket_released_supported_settled": true,
+          "reconstructed_body_max_error_m": 0.00010037174631924439,
+          "basket_snapshot": {
+            "entities": {
+              "basket_1": {
+                "world_position_m": [
+                  -0.0052374891043852475,
+                  0.27110580939554646,
+                  -0.004583014667177503
+                ],
+                "linear_speed_m_s": 1.0787560914327008e-16,
+                "angular_speed_rad_s": 1.0865290139300617e-15,
+                "any_robot_contact": false,
+                "upright": true,
+                "original_support_contact": true
+              },
+              "cream_cheese_1": {
+                "world_position_m": [
+                  0.007224928361017961,
+                  0.2433292507344511,
+                  0.025920539054855744
+                ],
+                "linear_speed_m_s": 3.1065628863500215e-12,
+                "angular_speed_rad_s": 6.991650334807806e-15,
+                "any_robot_contact": false,
+                "native_in": true
+              }
+            },
+            "support_edges": [
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190358050728768,
+                "normal_toward_child_world": [
+                  1.3003585366821978e-06,
+                  -5.916572460518122e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190290513750936,
+                "normal_toward_child_world": [
+                  1.3003585366821978e-06,
+                  -5.916572460518122e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190338532339608,
+                "normal_toward_child_world": [
+                  1.3003585366821978e-06,
+                  -5.916572460518122e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190270995361771,
+                "normal_toward_child_world": [
+                  1.3003585366821978e-06,
+                  -5.916572460518122e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              }
+            ],
+            "contacts": [
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.36157748560994585,
+                "distance_m": -1.573036225870593e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.06716254990788281,
+                  0.19709849360474252,
+                  -7.865181129352965e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.35724713935652974,
+                "distance_m": -1.554207072544493e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.07763745009198056,
+                  0.1970984288951193,
+                  -7.771035362722466e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.340737768678819,
+                "distance_m": -1.4824179931647793e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.06716248146344037,
+                  0.35025849360204675,
+                  -7.412089965823897e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3364078105484843,
+                "distance_m": -1.4635888398386795e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.077637518536423,
+                  0.35025842889242353,
+                  -7.317944199193398e-06
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190358050728768,
+                "distance_m": -8.205161885880163e-08,
+                "normal_world": [
+                  -1.3003585366821978e-06,
+                  5.916572460518122e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  0.0401469868290792,
+                  0.21138604357911506,
+                  0.0169843482754866
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190290513750936,
+                "distance_m": -8.205125405797759e-08,
+                "normal_world": [
+                  -1.3003585366821978e-06,
+                  5.916572460518122e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  0.05220751212886089,
+                  0.2523182230158618,
+                  0.01698457477086758
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190338532339608,
+                "distance_m": -8.205151343486876e-08,
+                "normal_world": [
+                  -1.3003585366821978e-06,
+                  5.916572460518122e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  -0.03775767864670504,
+                  0.23434038419369085,
+                  0.016984585390555647
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190270995361771,
+                "distance_m": -8.205114863404472e-08,
+                "normal_world": [
+                  -1.3003585366821978e-06,
+                  5.916572460518122e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  -0.025697153346923345,
+                  0.2752725636304376,
+                  0.016984811885936625
+                ]
+              }
+            ]
+          },
+          "contacts": [
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.573036225870593e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.554207072544493e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4824179931647793e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4635888398386795e-05
+            },
+            {
+              "geom_a": "gripper0_finger2_pad_collision",
+              "geom_b": "microwave_1_g17",
+              "distance_m": 0.0009052520957506441
+            },
+            {
+              "geom_a": "gripper0_finger2_pad_collision",
+              "geom_b": "microwave_1_g17",
+              "distance_m": 0.0007707516719520064
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205161885880163e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205125405797759e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205151343486876e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205114863404472e-08
+            }
+          ]
+        },
+        {
+          "control_step": 242,
+          "basket_released_supported_settled": true,
+          "reconstructed_body_max_error_m": 8.966161308943121e-05,
+          "basket_snapshot": {
+            "entities": {
+              "basket_1": {
+                "world_position_m": [
+                  -0.0052374891043852475,
+                  0.27110580939554646,
+                  -0.004583014667177503
+                ],
+                "linear_speed_m_s": 1.9704540625052854e-16,
+                "angular_speed_rad_s": 3.386542543396979e-15,
+                "any_robot_contact": false,
+                "upright": true,
+                "original_support_contact": true
+              },
+              "cream_cheese_1": {
+                "world_position_m": [
+                  0.007224928361051308,
+                  0.24332925073429915,
+                  0.025920539054855744
+                ],
+                "linear_speed_m_s": 3.106558607473278e-12,
+                "angular_speed_rad_s": 1.4681702126792288e-14,
+                "any_robot_contact": false,
+                "native_in": true
+              }
+            },
+            "support_edges": [
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.01519035805072997,
+                "normal_toward_child_world": [
+                  1.3003585365711757e-06,
+                  -5.916572460407101e-06,
+                  0.9999999999816517
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190290513751955,
+                "normal_toward_child_world": [
+                  1.3003585365711757e-06,
+                  -5.916572460407101e-06,
+                  0.9999999999816517
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190338532340005,
+                "normal_toward_child_world": [
+                  1.3003585365711757e-06,
+                  -5.916572460407101e-06,
+                  0.9999999999816517
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190270995361984,
+                "normal_toward_child_world": [
+                  1.3003585365711757e-06,
+                  -5.916572460407101e-06,
+                  0.9999999999816517
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              }
+            ],
+            "contacts": [
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.36157748560997166,
+                "distance_m": -1.5730362258686847e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.0671625499078828,
+                  0.19709849360474252,
+                  -7.865181129343424e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.35724713935655517,
+                "distance_m": -1.5542070725443197e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.07763745009198057,
+                  0.1970984288951193,
+                  -7.771035362721598e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3407377686787934,
+                "distance_m": -1.4824179931646059e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.06716248146344038,
+                  0.35025849360204675,
+                  -7.412089965823029e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3364078105484583,
+                "distance_m": -1.4635888398402408e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.07763751853642299,
+                  0.35025842889242353,
+                  -7.317944199201204e-06
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.01519035805072997,
+                "distance_m": -8.205161887239166e-08,
+                "normal_world": [
+                  -1.3003585365711757e-06,
+                  5.916572460407101e-06,
+                  -0.9999999999816517
+                ],
+                "contact_position_m": [
+                  0.04014698682911254,
+                  0.2113860435789631,
+                  0.016984348275486606
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190290513751955,
+                "distance_m": -8.205125406599347e-08,
+                "normal_world": [
+                  -1.3003585365711757e-06,
+                  5.916572460407101e-06,
+                  -0.9999999999816517
+                ],
+                "contact_position_m": [
+                  0.05220751212889423,
+                  0.2523182230157099,
+                  0.01698457477086758
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190338532340005,
+                "distance_m": -8.205151343726122e-08,
+                "normal_world": [
+                  -1.3003585365711757e-06,
+                  5.916572460407101e-06,
+                  -0.9999999999816517
+                ],
+                "contact_position_m": [
+                  -0.03775767864667168,
+                  0.2343403841935389,
+                  0.016984585390555647
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190270995361984,
+                "distance_m": -8.205114863086302e-08,
+                "normal_world": [
+                  -1.3003585365711757e-06,
+                  5.916572460407101e-06,
+                  -0.9999999999816517
+                ],
+                "contact_position_m": [
+                  -0.02569715334688998,
+                  0.2752725636302856,
+                  0.016984811885936625
+                ]
+              }
+            ]
+          },
+          "contacts": [
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5730362258686847e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5542070725443197e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4824179931646059e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4635888398402408e-05
+            },
+            {
+              "geom_a": "gripper0_finger2_pad_collision",
+              "geom_b": "microwave_1_g17",
+              "distance_m": 0.0009937817081591264
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205161887239166e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205125406599347e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205151343726122e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205114863086302e-08
+            }
+          ]
+        },
+        {
+          "control_step": 243,
+          "basket_released_supported_settled": true,
+          "reconstructed_body_max_error_m": 6.45104990416312e-05,
+          "basket_snapshot": {
+            "entities": {
+              "basket_1": {
+                "world_position_m": [
+                  -0.0052374891043852475,
+                  0.27110580939554646,
+                  -0.004583014667177503
+                ],
+                "linear_speed_m_s": 6.897662538766585e-17,
+                "angular_speed_rad_s": 8.067250801808027e-16,
+                "any_robot_contact": false,
+                "upright": true,
+                "original_support_contact": true
+              },
+              "cream_cheese_1": {
+                "world_position_m": [
+                  0.007224928361084656,
+                  0.24332925073414718,
+                  0.025920539054855744
+                ],
+                "linear_speed_m_s": 3.106522381277694e-12,
+                "angular_speed_rad_s": 5.25347766406544e-15,
+                "any_robot_contact": false,
+                "native_in": true
+              }
+            },
+            "support_edges": [
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190358050729465,
+                "normal_toward_child_world": [
+                  1.300358536682198e-06,
+                  -5.9165724602960785e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.01519029051375112,
+                "normal_toward_child_world": [
+                  1.300358536682198e-06,
+                  -5.9165724602960785e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190338532340102,
+                "normal_toward_child_world": [
+                  1.300358536682198e-06,
+                  -5.9165724602960785e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190270995361764,
+                "normal_toward_child_world": [
+                  1.300358536682198e-06,
+                  -5.9165724602960785e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              }
+            ],
+            "contacts": [
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3615774856100105,
+                "distance_m": -1.5730362258686847e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.0671625499078828,
+                  0.19709849360474255,
+                  -7.865181129343424e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3572471393565672,
+                "distance_m": -1.554207072542585e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.07763745009198054,
+                  0.19709842889511933,
+                  -7.771035362712925e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3407377686787805,
+                "distance_m": -1.4824179931663406e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.06716248146344035,
+                  0.35025849360204675,
+                  -7.412089965831703e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3364078105484186,
+                "distance_m": -1.4635888398402408e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.07763751853642299,
+                  0.35025842889242353,
+                  -7.317944199201204e-06
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190358050729465,
+                "distance_m": -8.205161887228298e-08,
+                "normal_world": [
+                  -1.300358536682198e-06,
+                  5.9165724602960785e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  0.04014698682914588,
+                  0.21138604357881116,
+                  0.016984348275486602
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.01519029051375112,
+                "distance_m": -8.205125406000142e-08,
+                "normal_world": [
+                  -1.300358536682198e-06,
+                  5.9165724602960785e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  0.052207512128927575,
+                  0.25231822301555795,
+                  0.01698457477086758
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190338532340102,
+                "distance_m": -8.205151344325326e-08,
+                "normal_world": [
+                  -1.300358536682198e-06,
+                  5.9165724602960785e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  -0.03775767864663833,
+                  0.23434038419338693,
+                  0.016984585390555647
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190270995361764,
+                "distance_m": -8.205114863097171e-08,
+                "normal_world": [
+                  -1.300358536682198e-06,
+                  5.9165724602960785e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  -0.025697153346856634,
+                  0.2752725636301337,
+                  0.016984811885936625
+                ]
+              }
+            ]
+          },
+          "contacts": [
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.5730362258686847e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.554207072542585e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4824179931663406e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4635888398402408e-05
+            },
+            {
+              "geom_a": "gripper0_finger2_pad_collision",
+              "geom_b": "microwave_1_g17",
+              "distance_m": 0.000870651635581052
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205161887228298e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205125406000142e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205151344325326e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205114863097171e-08
+            }
+          ]
+        },
+        {
+          "control_step": 244,
+          "basket_released_supported_settled": true,
+          "reconstructed_body_max_error_m": 4.2939346179105e-05,
+          "basket_snapshot": {
+            "entities": {
+              "basket_1": {
+                "world_position_m": [
+                  -0.0052374891043852475,
+                  0.27110580939554646,
+                  -0.004583014667177503
+                ],
+                "linear_speed_m_s": 6.372982437743388e-17,
+                "angular_speed_rad_s": 8.655404207818103e-16,
+                "any_robot_contact": false,
+                "upright": true,
+                "original_support_contact": true
+              },
+              "cream_cheese_1": {
+                "world_position_m": [
+                  0.007224928361118004,
+                  0.24332925073399522,
+                  0.02592053905485574
+                ],
+                "linear_speed_m_s": 3.10663411024816e-12,
+                "angular_speed_rad_s": 5.96531205586161e-15,
+                "any_robot_contact": false,
+                "native_in": true
+              }
+            },
+            "support_edges": [
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190358050729425,
+                "normal_toward_child_world": [
+                  1.3003585366821978e-06,
+                  -5.916572460518122e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190290513751478,
+                "normal_toward_child_world": [
+                  1.3003585366821978e-06,
+                  -5.916572460518122e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.01519033853234,
+                "normal_toward_child_world": [
+                  1.3003585366821978e-06,
+                  -5.916572460518122e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.01519027099536205,
+                "normal_toward_child_world": [
+                  1.3003585366821978e-06,
+                  -5.916572460518122e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              }
+            ],
+            "contacts": [
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3615774856100542,
+                "distance_m": -1.573036225870593e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.06716254990788281,
+                  0.19709849360474252,
+                  -7.865181129352965e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.35724713935659935,
+                "distance_m": -1.554207072544493e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.07763745009198056,
+                  0.1970984288951193,
+                  -7.771035362722466e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.34073776867874966,
+                "distance_m": -1.4824179931647793e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.06716248146344037,
+                  0.35025849360204675,
+                  -7.412089965823897e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.33640781054837615,
+                "distance_m": -1.4635888398386795e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.077637518536423,
+                  0.35025842889242353,
+                  -7.317944199193398e-06
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190358050729425,
+                "distance_m": -8.205161885998602e-08,
+                "normal_world": [
+                  -1.3003585366821978e-06,
+                  5.916572460518122e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  0.04014698682917924,
+                  0.21138604357865917,
+                  0.016984348275486595
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190290513751478,
+                "distance_m": -8.205125405679321e-08,
+                "normal_world": [
+                  -1.3003585366821978e-06,
+                  5.916572460518122e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  0.05220751212896094,
+                  0.25231822301540596,
+                  0.016984574770867573
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.01519033853234,
+                "distance_m": -8.205151343605315e-08,
+                "normal_world": [
+                  -1.3003585366821978e-06,
+                  5.916572460518122e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  -0.037757678646604995,
+                  0.23434038419323497,
+                  0.016984585390555647
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.01519027099536205,
+                "distance_m": -8.205114863286034e-08,
+                "normal_world": [
+                  -1.3003585366821978e-06,
+                  5.916572460518122e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  -0.0256971533468233,
+                  0.2752725636299817,
+                  0.016984811885936625
+                ]
+              }
+            ]
+          },
+          "contacts": [
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.573036225870593e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.554207072544493e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4824179931647793e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4635888398386795e-05
+            },
+            {
+              "geom_a": "gripper0_finger2_pad_collision",
+              "geom_b": "microwave_1_g17",
+              "distance_m": 0.0008831269220369566
+            },
+            {
+              "geom_a": "gripper0_finger2_pad_collision",
+              "geom_b": "microwave_1_g17",
+              "distance_m": 0.0007666407726683977
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205161885998602e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205125405679321e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205151343605315e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205114863286034e-08
+            }
+          ]
+        },
+        {
+          "control_step": 245,
+          "basket_released_supported_settled": true,
+          "reconstructed_body_max_error_m": 3.6835930270179285e-05,
+          "basket_snapshot": {
+            "entities": {
+              "basket_1": {
+                "world_position_m": [
+                  -0.0052374891043852475,
+                  0.27110580939554646,
+                  -0.004583014667177503
+                ],
+                "linear_speed_m_s": 8.117397488113076e-17,
+                "angular_speed_rad_s": 1.1741047105780773e-15,
+                "any_robot_contact": false,
+                "upright": true,
+                "original_support_contact": true
+              },
+              "cream_cheese_1": {
+                "world_position_m": [
+                  0.007224928361151351,
+                  0.24332925073384326,
+                  0.02592053905485574
+                ],
+                "linear_speed_m_s": 3.1064631456425586e-12,
+                "angular_speed_rad_s": 8.07144983816628e-15,
+                "any_robot_contact": false,
+                "native_in": true
+              }
+            },
+            "support_edges": [
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190358050728736,
+                "normal_toward_child_world": [
+                  1.3003585366821978e-06,
+                  -5.916572460518122e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190290513750893,
+                "normal_toward_child_world": [
+                  1.3003585366821978e-06,
+                  -5.916572460518122e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190338532339571,
+                "normal_toward_child_world": [
+                  1.3003585366821978e-06,
+                  -5.916572460518122e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              },
+              {
+                "child": "cream_cheese_1",
+                "support": "basket_1",
+                "positive_upward_contact": true,
+                "exact_basket_base_upper_face": true,
+                "normal_force_n": 0.015190270995361722,
+                "normal_toward_child_world": [
+                  1.3003585366821978e-06,
+                  -5.916572460518122e-06,
+                  0.9999999999816516
+                ],
+                "child_geom": 73,
+                "support_geom": 75
+              }
+            ],
+            "contacts": [
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3615774856100914,
+                "distance_m": -1.573036225870593e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.06716254990788281,
+                  0.19709849360474252,
+                  -7.865181129352965e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.35724713935662067,
+                "distance_m": -1.554207072544493e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.07763745009198056,
+                  0.1970984288951193,
+                  -7.771035362722466e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.34073776867872724,
+                "distance_m": -1.4824179931647793e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  0.06716248146344037,
+                  0.35025849360204675,
+                  -7.412089965823897e-06
+                ]
+              },
+              {
+                "geom1": 6,
+                "geom2": 75,
+                "geom1_name": "floor",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.3364078105483379,
+                "distance_m": -1.4635888398386795e-05,
+                "normal_world": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "contact_position_m": [
+                  -0.077637518536423,
+                  0.35025842889242353,
+                  -7.317944199193398e-06
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190358050728736,
+                "distance_m": -8.205161885998602e-08,
+                "normal_world": [
+                  -1.3003585366821978e-06,
+                  5.916572460518122e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  0.04014698682921259,
+                  0.2113860435785072,
+                  0.016984348275486595
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190290513750893,
+                "distance_m": -8.205125405679321e-08,
+                "normal_world": [
+                  -1.3003585366821978e-06,
+                  5.916572460518122e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  0.052207512128994285,
+                  0.252318223015254,
+                  0.016984574770867573
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190338532339571,
+                "distance_m": -8.205151343605315e-08,
+                "normal_world": [
+                  -1.3003585366821978e-06,
+                  5.916572460518122e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  -0.037757678646571646,
+                  0.234340384193083,
+                  0.016984585390555643
+                ]
+              },
+              {
+                "geom1": 73,
+                "geom2": 75,
+                "geom1_name": "cream_cheese_1_g1",
+                "geom2_name": "basket_1_g1",
+                "normal_force_n": 0.015190270995361722,
+                "distance_m": -8.205114863286034e-08,
+                "normal_world": [
+                  -1.3003585366821978e-06,
+                  5.916572460518122e-06,
+                  -0.9999999999816516
+                ],
+                "contact_position_m": [
+                  -0.02569715334678995,
+                  0.27527256362982977,
+                  0.016984811885936625
+                ]
+              }
+            ]
+          },
+          "contacts": [
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.573036225870593e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.554207072544493e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4824179931647793e-05
+            },
+            {
+              "geom_a": "floor",
+              "geom_b": "basket_1_g1",
+              "distance_m": -1.4635888398386795e-05
+            },
+            {
+              "geom_a": "gripper0_finger2_pad_collision",
+              "geom_b": "microwave_1_g17",
+              "distance_m": 0.0009464997897749551
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205161885998602e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205125405679321e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205151343605315e-08
+            },
+            {
+              "geom_a": "cream_cheese_1_g1",
+              "geom_b": "basket_1_g1",
+              "distance_m": -8.205114863286034e-08
+            }
+          ]
+        }
+      ],
+      "saved_state_audit_policy_calls": 0,
+      "saved_state_audit_trajectory_controls_added": 0,
+      "notes": "Reviewed all 32 decoded frames and the full 245-control trace. Cheese is deliberately grasped, carried and released into the basket; the robot then directly pushes the moving microwave door from fully open (-119.977 degrees) to native closed (+0.326386 degrees). Finger-pad contact with moving door geom g17 is recorded through controls 240-245. From control 170 to 245 the cheese and basket poses remain constant to numerical precision. There is no later robot, door or other-object contact with either; native In stays true. The final five saved states 241-245 corroborate released, exact-basket-base supported and settled cheese. This is a read-only terminal audit of the ordinary ordered-native run, not a newly applied online gate or extended trajectory. Both final BDDL goals hold; no final TC gate."
+    }
+  ],
+  "episode_outcomes": [
+    {
+      "episode_idx": 0,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 1,
+      "parent_same_index_native_success": false,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 2,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 3,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 4,
+      "parent_same_index_native_success": false,
+      "nominal_success": true,
+      "manually_valid_success": true
+    }
+  ],
+  "rain_settings": {
+    "checkpoint": "RAIN/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "progress_checkpoint": "RAIN/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "replan_steps": 8,
+    "num_inference_steps": 4,
+    "feas_threshold": 0.7,
+    "consecutive_stop": 2,
+    "seed": 7,
+    "clip_model_name": "openai/clip-vit-large-patch14"
+  },
+  "source_bundle_sha256": {
+    "task.bddl": "927bd7ce00e182aea8b7d0b82a0a89824837524eedd684e1c7583013375a0ae1",
+    "task.pruned_init": "d45574baaa0b9baaab2136c90bf5982fcce03f763500dfe9fab0695fe25dba59",
+    "task_meta.yaml": "e6d9a2f549be6fdc9752ee066b22fe930d1d3f9b4cb010e1030f1688a547bfcd",
+    "eval_rules.yaml": "a2dc35089c73aea5288893e0c632068dda5c393f86fe2f6c42f4af5846ca95fc",
+    "registry_entry.yaml": "5ccf5dbd3dcbc3380ea199556c2a85a086da77cabe690c56d2ac5fdfb87ae55a",
+    "mask_bindings.yaml": "7d970fa66b8d3b8866374ca41a2b860538825a7b972ebc506c1d115e0098f19c",
+    "action_plan.yaml": "6f0edade8479de4c22e403cf469cdaaba6a4d2e0ad63d21e41d2f4bd8c2a30fb",
+    "FIXTURE_REPLAY.json": "c257ba0cc9dc2fe836dada2c58de0ecfa8056071a9a07a17947d947a74da8c8d",
+    "INIT_VALIDATION.json": "dd9c6b8cf341b257e4d78e9736c41de852c2f97a5923e760eabeb4761e975812",
+    "REPAIR_PROVENANCE.json": "027dcb22a539735ccff3748cc970a3bd6b380c8843e5d4519fb83cd920c86448"
+  },
+  "comparison_design_note": "The frozen parent CTR_196 has the same five indexed initial-state sources but a different fixture/distractor layout. Parent 0/5 is a complete-chain native result. Its optional failure video is episode 004, which ends with the microwave door still 2.72 degrees ajar.",
+  "parent_failure_video_sha256": "28662e58bc63822ed6e52bf583352b15f5a3f48e5fd90487aba908bfcee5fe54"
+}

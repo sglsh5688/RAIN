@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-09-11T11:30:52.103230+00:00",
+  "created_at_utc": "2026-09-11T13:06:12.739953+00:00",
   "review_status": "pending_user_review_not_selected",
   "tasks": [
     {
@@ -141,11 +141,41 @@
       "nominal_successes": 5,
       "manually_valid_successes": 5,
       "certified_episode_indices": "0,1,2,3,4"
+    },
+    {
+      "task_id": "CTR_205",
+      "instruction": "Put the cream cheese in the basket, then close the microwave door.",
+      "variant_of": "CTR_196",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 1,
+      "manually_valid_successes": 1,
+      "certified_episode_indices": "4"
+    },
+    {
+      "task_id": "CTR_206",
+      "instruction": "Put the cream cheese in the basket, then close the microwave door.",
+      "variant_of": "CTR_196",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 2,
+      "manually_valid_successes": 2,
+      "certified_episode_indices": "1,4"
+    },
+    {
+      "task_id": "CTR_207",
+      "instruction": "Put the black bowl on top of the cabinet, and then put the cream cheese box in the basket.",
+      "variant_of": "CTR_157",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 1,
+      "manually_valid_successes": 1,
+      "certified_episode_indices": "3"
     }
   ],
-  "source_manual_review_sha256": "1eca873b0d636bb1fbd604a9e549c154087ec0a53fdf2ebff2b7b0d912d47ee6",
-  "nominal_successes": 34,
-  "manually_valid_successes": 33,
-  "episodes": 70,
+  "source_manual_review_sha256": "6a6ba79c77d117a18655171596d654ef932a9534bafc27069e5c9a33b105dd60",
+  "nominal_successes": 38,
+  "manually_valid_successes": 37,
+  "episodes": 85,
   "selected60_modified": false
 }

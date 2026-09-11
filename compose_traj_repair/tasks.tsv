@@ -13,3 +13,6 @@ CTR_140	Put the cream cheese on the stove, then turn on the stove, then open the
 CTR_166	Put the tomato sauce in the basket, then put the butter in the basket, and finally put the chocolate pudding in the basket.	CTR_088	pending_user_review_not_selected	5	1	1	2
 CTR_175	Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.	CTR_162	pending_user_review_not_selected	5	5	5	0,1,2,3,4
 CTR_176	Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.	CTR_163	pending_user_review_not_selected	5	5	5	0,1,2,3,4
+CTR_205	Put the cream cheese in the basket, then close the microwave door.	CTR_196	pending_user_review_not_selected	5	1	1	4
+CTR_206	Put the cream cheese in the basket, then close the microwave door.	CTR_196	pending_user_review_not_selected	5	2	2	1,4
+CTR_207	Put the black bowl on top of the cabinet, and then put the cream cheese box in the basket.	CTR_157	pending_user_review_not_selected	5	1	1	3

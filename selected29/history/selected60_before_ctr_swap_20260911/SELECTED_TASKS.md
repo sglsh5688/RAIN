@@ -1,0 +1,168 @@
+# Selected LIBERO-EX tasks
+
+Selection updated 2026-09-07. 20 Decomposition + 20 Adapt + 20 Compose (60 total). The confirmed Compose IDs are VCN8_008, VCN9_010, VCN10_001, VCN19_020, VCN21_001, COMP2_012, COMP2_032, COMP2_222, COMP2_303, COMPOSE_155, COMP2_027, LBCM_003, LBCM_028, MKDC_001, BDRCOMP_021, VCN35_004, UCOMP_040, BDRMIN_002, VCN91_002, SPBSC_001.
+
+A separate π0.5 evaluation uses the official `pi05_libero` checkpoint fine-tuned on LIBERO-40. Of the current selection, 57/60 tasks have exactly 5 evaluated episodes (285 total), with 75 successful episodes (26.3%) and 20/60 tasks succeeding at least once. All 20 Decomposition and 20 Adapt tasks plus 17/20 Compose tasks are evaluated. BDRMIN_002, VCN91_002, and SPBSC_001 retain their frozen RAIN evaluations and have no separate π0.5 result yet. The seven formerly pending Compose results come from audited runs, not their historical RAIN records. COMP2_001's old π0.5 record remains frozen in the source ledger but is retired from this page. ANLGX_023 uses its fresh strict close-only correction. See [`pi05_results.tsv`](pi05_results.tsv), [`pi05_episodes.tsv`](pi05_episodes.tsv), and [`pi05_evaluation.json`](pi05_evaluation.json).
+
+Adapt retains the selected task definitions and evaluation records. ADAPT_001–009 are task-definition matches for the nine ANLGX tasks and have separate five-episode reruns. OGTS_001 and OGTS_010 use their finalized exact-GT 50-episode evaluations as primary, while retaining their earlier 4/5 results as additional records. OGDTSL_011 and OGDTSL_046 retain their original Adapt Object five-episode evaluations. Historical metadata may still call some sources Analogy or Object; the collection category is Adapt. WTRAYR_004 retains its exact five-state strict RAIN 2/5 result and has a separate strict π0.5 result of 5/5.
+
+Selected Analogy/Adapt now also includes NAFR3_001 and NAFR3_002, each 4/5 (80%) on GPUs 6/7. Each retains all four original successful episodes and the original LIBERO / V2 / V3 masked comparison. The light-colored book remains the native yellow_book asset. No V1/V2 results or interrupted GPU5/6 episodes are mixed in. The standalone NAF revisions public page is retired; its experimental source records and offline review archive remain preserved.
+
+DSET_001 is selected as Adapt using its unchanged 5/5 (100%) GPU6 evaluation. The black bowl retains the learned LIBERO_SPATIAL_03 table-center pickup pose, while the plate destination is replaced by the exposed center of the physical dining-set mat. The Selected page retains all five original successful episodes, the masked comparison, and a self-contained task bundle after the standalone dining-set review page is retired.
+
+BDRSWAP_001 is selected as Adapt with its frozen native `In` 5/5 record; that historical metric is first entry into the exact right compartment and is not a released/support claim. Its separate π0.5 run uses the same native goal. BDRCOMP_021 is selected as Compose with its frozen strict 2/5 record and is also scored strictly for π0.5: left then right, exact native compartment `In`, gripper released, positive bottom-support force held for five consecutive control steps, with both placements retained at termination.
+
+Compose retains each selected Composition2Step, Compose-350, Long Basket/Cup Mix, MKDC, bowl-drainer, or accepted VCN task definition, five-episode RAIN evaluation, masked comparison and saved success videos. The user's COM2_027 shorthand was explicitly confirmed to mean COMP2_027.
+
+COMP2_001 is removed and replaced by VCN8_008 because both exercise the same placement→middle-drawer-open pattern, while VCN8_008 has the stronger RAIN result: 4/5 (80%) rather than 2/5 (40%). User-accepted VCN9_010 is included at 4/5 (80%), VCN10_001 at 2/5 (40%), VCN19_020 at 1/5 (20%), and VCN21_001 at 4/5 (80%). VCN19_020 ep000 was manually verified as a deliberate top-drawer open followed by ramekin-to-plate placement. All four VCN21_001 strict-v3 successes were manually verified as moka placement followed by deliberate microwave-door closure, with active physical contact and door-sweep clearance gates. Only IDs in `USER_REVIEW_DECISIONS.accepted_ids` are included; every other unselected Valid Compose candidate remains excluded.
+
+MKDC_001 is added as Compose using its historical RAIN goal/order-stop five-episode rerun: 4/5 (80%), saved successful episodes 000, 001, 003, 004. Every RAIN success stops exactly on the final goal step, without TC gating final termination; intermediate subtask switching remains TC>0.7 twice. The original pot/stove/cabinet root poses are preserved; the bottom drawer starts 7cm open for clearance and the inactive second moka pot is removed. The earlier long videos and failed ep002 are excluded from that historical record. The new π0.5 result is reported only in its separate column.
+
+ANLGX_023 is **middle drawer close only**, not bowl insertion followed by close and not bottom drawer close. The prior π0.5 3/5 display used a permissive final-`Close` rule; its retained ep001 video inserts `akita_black_bowl_1` before closing and is a semantic false positive. The corrected rule requires the bowl and wine bottle to remain in their authored table regions and rejects either entering the middle drawer. A fresh run with the same checkpoint, task definition, initialization seeds, and evaluator code is 0/5: all five attempts insert the bowl and terminate as `custom_rule_violation` before closure. The old ledger is preserved for audit but no longer contributes to the public aggregate. ANLGX_178 is **yellow-and-white mug to the left compartment of the caddy**.
+
+ANLGX_089 preserves the evaluated instruction. Its task-only wording for a future evaluation is `Pick up the wine bottle and place it on the plate.`; its historical SR is not a result for that revised prompt.
+
+## Decomposition
+
+| Task ID | Alias | Recorded instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) | Additional historical SR |
+|---|---|---|---|---|---|
+| TDL10_001 | DECOMP_001 | Put the white mug on the left plate. | 33/50 (66.0%) | 0/5 (0%) | — |
+| TDL10_002 | DECOMP_002 | Put the yellow and white mug on the right plate. | 50/50 (100.0%) | 0/5 (0%) | — |
+| TDL10_003 | DECOMP_003 | Put the white mug on the plate. | 14/50 (28.0%) | 0/5 (0%) | — |
+| TDL10_004 | DECOMP_004 | Put the chocolate pudding to the right of the plate. | 49/50 (98.0%) | 0/5 (0%) | — |
+| TDL10_005 | DECOMP_005 | Put the yellow and white mug in the microwave. | 20/50 (40.0%) | 0/5 (0%) | — |
+| TDL10_006 | DECOMP_006 | Close the microwave. | 47/50 (94.0%) | 1/5 (20%) | — |
+| TDL10_008 | DECOMP_007 | Put the moka pot on the stove. | 10/50 (20.0%) | 0/5 (0%) | — |
+| TDL10_009 | DECOMP_008 | Put the alphabet soup in the basket. | 50/50 (100.0%) | 0/5 (0%) | — |
+| TDL10_010 | DECOMP_009 | Put the cream cheese box in the basket. | 41/50 (82.0%) | 0/5 (0%) | — |
+| TDL10_011 | DECOMP_010 | Put the alphabet soup in the basket. | 45/50 (90.0%) | 0/5 (0%) | — |
+| TDL10_012 | DECOMP_011 | Put the tomato sauce in the basket. | 48/50 (96.0%) | 0/5 (0%) | — |
+| TDL10_013 | DECOMP_012 | Put the cream cheese box in the basket. | 22/50 (44.0%) | 0/5 (0%) | — |
+| TDL10_014 | DECOMP_013 | Put the butter in the basket. | 50/50 (100.0%) | 0/5 (0%) | — |
+| TDL10_016 | DECOMP_014 | Close the bottom drawer of the cabinet. | 16/50 (32.0%) | 0/5 (0%) | — |
+| TDC40_001 | DECOMP_015 | Turn on the stove. | 2/10 (20.0%) | 0/5 (0%) | — |
+| TDC40_002 | DECOMP_016 | Put the black bowl in the bottom drawer of the cabinet. | 0/10 (0.0%) | 0/5 (0%) | — |
+| TDC40_003 | DECOMP_017 | Put the left moka pot on the stove. | 9/10 (90.0%) | 2/5 (40%) | — |
+| TDC40_004 | DECOMP_018 | Put the right moka pot on the stove. | 0/10 (0.0%) | 0/5 (0%) | — |
+| TDC40_005 | DECOMP_019 | Open the top drawer of the cabinet. | 1/10 (10.0%) | 0/5 (0%) | — |
+| TDC40_006 | DECOMP_020 | Put the black bowl inside the top drawer of the cabinet. | 10/10 (100.0%) | 4/5 (80%) | — |
+
+## Adapt
+
+| Task ID | Alias | Recorded instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) | Additional historical SR |
+|---|---|---|---|---|---|
+| ANLGX_002 | ADAPT_001 | Put the white mug on the middle plate. | 4/5 (80.0%) | 4/5 (80%) | Later ADAPT_001: 3/5 (60.0%) |
+| ANLGX_003 | ADAPT_002 | Put the white mug on the right plate. | 3/5 (60.0%) | 0/5 (0%) | Later ADAPT_002: 3/5 (60.0%) |
+| ANLGX_017 | ADAPT_003 | Put the black bowl in the middle drawer of the white cabinet. | 5/5 (100.0%) | 5/5 (100%) | Later ADAPT_003: 5/5 (100.0%) |
+| ANLGX_022 | ADAPT_004 | Close the top drawer of the white cabinet. | 4/5 (80.0%) | 0/5 (0%) | Later ADAPT_004: 3/5 (60.0%) |
+| ANLGX_023 | ADAPT_005 | Close the middle drawer of the white cabinet. | 4/5 (80.0%) | 0/5 (0%) | Later ADAPT_005: 5/5 (100.0%) |
+| ANLGX_089 | ADAPT_006 | Pick up the wine bottle at the table center and place it on the plate. | 3/5 (60.0%) | 2/5 (40%) | Later ADAPT_006: 3/5 (60.0%) |
+| ANLGX_134 | ADAPT_007 | Put the plate on the top of the wooden cabinet. | 1/5 (20.0%) | 0/5 (0%) | Later ADAPT_007: 0/5 (0.0%) |
+| ANLGX_147 | ADAPT_008 | Put the cream cheese in the top drawer of the wooden cabinet. | 3/5 (60.0%) | 3/5 (60%) | Later ADAPT_008: 3/5 (60.0%) |
+| ANLGX_178 | ADAPT_009 | Put the yellow and white mug in the left compartment of the caddy. | 3/5 (60.0%) | 0/5 (0%) | Later ADAPT_009: 1/5 (20.0%) |
+| OGTS_001 | OGTS_001 | Pick the alphabet soup and place it in the basket | 48/50 (96.0%) | 4/5 (80%) | Earlier PositionSwap 5ep: 4/5 (80.0%) |
+| OGTS_010 | OGTS_010 | Pick the orange juice and place it in the basket | 26/50 (52.0%) | 0/5 (0%) | Earlier PositionSwap 5ep: 4/5 (80.0%) |
+| OGDTSL_011 | OGDTSL_011 | Pick the tomato sauce and place it in the basket | 4/5 (80.0%) | 5/5 (100%) | — |
+| OGDTSL_046 | OGDTSL_046 | Pick the milk and place it in the basket | 2/5 (40.0%) | 5/5 (100%) | — |
+| NAFR3_001 | NAFR3_001 | Put the popcorn on top of the short fridge. | 4/5 (80%) | 2/5 (40%) | — |
+| NAFR3_002 | NAFR3_002 | Put the yellow book on top of the two-layer wooden shelf. | 4/5 (80%) | 5/5 (100%) | — |
+| DSET_001 | DSET_001 | Pick up the black bowl at the table center and place it on the dining-set mat. | 5/5 (100.0%) | 5/5 (100%) | — |
+| BDRSWAP_001 | BDRSWAP_001 | Pick the alphabet soup and place it in the right compartment of the bowl drainer. | 5/5 (100%) | 5/5 (100%) | — |
+| ADVCN19_001 | ADVCN19_001 | Open the top drawer of the wooden cabinet. | 4/5 (80%) | 4/5 (80%) | — |
+| WTRAYR_004 | WTRAYR_004 | Pick up the black bowl and place it in the wooden tray. | 2/5 (40.0%) | 5/5 (100%) | — |
+| GRACK_002 | GRACK_002 | Put the ketchup on the rack. | 5/5 (100.0%) | 4/5 (80%) | — |
+
+## Compose
+
+| Task ID | Alias | Recorded instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) | Additional historical SR |
+|---|---|---|---|---|---|
+| VCN8_008 | VCN8_008 | Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet. | 4/5 (80%) | 0/5 (0%) | — |
+| VCN9_010 | VCN9_010 | Put the cream cheese on the stove, then turn on the stove. | 4/5 (80%) | 0/5 (0%) | — |
+| VCN10_001 | VCN10_001 | Put the cream cheese on the stove, then push the plate to the front of the stove. | 2/5 (40%) | 0/5 (0%) | — |
+| VCN19_020 | VCN19_020 | Open the top drawer of the wooden cabinet, then put the ramekin on the plate. | 1/5 (20%) | 3/5 (60%) | — |
+| VCN21_001 | VCN21_001 | Put the moka pot on the stove, then close the microwave door. | 4/5 (80%) | 4/5 (80%) | — |
+| COMP2_012 | COMP2_012 | Put the butter in the basket, and then put the tomato sauce in the basket. | 5/5 (100.0%) | 0/5 (0%) | — |
+| COMP2_032 | COMP2_032 | Push the plate to the front of the stove, and then open the middle drawer of the cabinet. | 1/5 (20.0%) | 0/5 (0%) | — |
+| COMP2_222 | COMP2_222 | Put the alphabet soup in the basket, and then put the tomato sauce in the basket. | 1/5 (20.0%) | 0/5 (0%) | — |
+| COMP2_303 | COMP2_303 | Put the milk in the basket, and then put the cream cheese box in the basket. | 1/5 (20.0%) | 0/5 (0%) | — |
+| COMPOSE_155 | COMPOSE_155 | Put the alphabet soup, the butter, and the tomato sauce in the basket one after another. | 2/5 (40.0%) | 0/5 (0%) | — |
+| COMP2_027 | COMP2_027 | Put the cream cheese on the black bowl, and then push the plate to the front of the stove. | 1/5 (20.0%) | 0/5 (0%) | — |
+| LBCM_003 | LBCM_003 | Put the tomato sauce in the basket, then put the white mug on the plate. | 2/5 (40%) | 0/5 (0%) | — |
+| LBCM_028 | LBCM_028 | Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket. | 1/5 (20%) | 0/5 (0%) | — |
+| MKDC_001 | MKDC_001 | Put the moka pot on the stove, then close the bottom drawer of the cabinet. | 4/5 (80%) | 3/5 (60%) | — |
+| BDRCOMP_021 | BDRCOMP_021 | Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the salad dressing and place it in the right compartment of the bowl drainer. | 2/5 (40%) | 0/5 (0%) | — |
+| VCN35_004 | VCN35_004 | Put the ramekin in the basket, then put the alphabet soup on the right plate. | 3/5 (60%) | 0/5 (0%) | — |
+| UCOMP_040 | UCOMP_040 | Put the tomato sauce in the basket, and then put the yellow and white mug on the plate. | 3/5 (60%) | 0/5 (0%) | — |
+| BDRMIN_002 | BDRMIN_002 | Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer. | 1/5 (20%) | Pending | — |
+| VCN91_002 | VCN91_002 | Put the black bowl on top of the cabinet, then turn on the stove, then put the moka pot on the stove. | 1/5 (20%) | Pending | — |
+| SPBSC_001 | SPBSC_001 | Put the black bowl from the top of the wooden cabinet in the basket, then put the alphabet soup in the basket. | 4/5 (80%) | Pending | — |
+
+
+## Newly selected atomic Adapt — ADVCN19_001
+
+Atomic Adapt: only open the top drawer. The five initial states, all objects, positions and fixture poses are exactly preserved from VCN19_020; ramekin placement is removed from the instruction, goal and action plan. Native Open starts false and is the sole success condition. The interaction mask covers the moving top drawer only, not the whole cabinet or sibling drawers. The complete altered Spatial scene is not claimed to have appeared in training. A separate strict π0.5 five-episode segment scored 4/5; it requires native top-drawer Open while retaining authored context and rejecting removed-parent or sibling interactions.
+
+The native Open rate comes from five original RAIN trials, not from the parent's composition result. The comparison shows the learned Goal opening skill, the exact VCN19_020 parent scene, and this atomic task, with the evaluated interaction mask. Its frozen provenance remains linked from the task card.
+
+## Newly selected reachable wooden-tray Adapt — WTRAYR_004
+
+Selected reachable-pose wooden-tray Adapt. The tray is shifted 6 cm to robot-right and the black-bowl pickup is shifted 3 cm toward the robot and 5 cm toward the center relative to WTRAY_004. Historical RAIN success is strict 2/5 (episodes 1 and 2): native In, the complete collision envelope inside the native tray site with 1 mm tolerance, positive-force tray contact, no gripper contact, and all conditions held for five consecutive control steps. WTRAYR_004 now has an independent strict π0.5 result of 5/5 (100%). Its historical RAIN result is unchanged.
+
+The two successes are the original RAIN episodes 001 and 002. Their strict witnesses begin at control steps 243 and 259 and complete the five-control-step hold at steps 247 and 263. The exact source bundle, all five raw result records, comparison, source clips, checkpoint hashes, and evaluator protocol are frozen in the Selected54 provenance. The preceding LiberoSelected53 collection is not modified.
+
+## Newly selected Goal10 ketchup-to-rack Adapt — GRACK_002
+
+Only the original Goal10 wine identity is replaced by the native ketchup asset at the exact original wine pickup XY; all other scene objects, fixtures and rack orientation are preserved. Historical RAIN is strict 5/5: the actual upper-deck annotated On region, root above its footprint, positive upper-deck support force, no gripper contact and a five-control-step hold. The original wine-specific native On is auxiliary only (0/5 final and ever), not this Adapt success metric. The evaluated whole-rack GT mask contains observed stray stove pixels; this limitation is preserved, not silently corrected. GRACK_002 now has an independent strict π0.5 result of 4/5 (80%). Its historical RAIN result is unchanged.
+
+The complete eleven-file source bundle and geometry support are frozen. The original wine-specific native On remains a separately logged auxiliary metric, not the success criterion. See `GRACK_002_PROVENANCE.json`; no preceding Selected54 artifacts or experimental source records are modified.
+
+## Selected Adapt π0.5 completion — 2026-09-06
+
+- WTRAYR_004 now has an independent strict π0.5 result of 5/5 (100%). Its historical RAIN result is unchanged.
+- GRACK_002 now has an independent strict π0.5 result of 4/5 (80%). Its historical RAIN result is unchanged.
+
+The official `pi05_libero` checkpoint and prior 224px RGB/wrist/state observations, five-action replanning and 520-control limit are retained. π0.5 has no RAIN mask conditioning. Both additions use their exact five source initializations and original released/support scoring for five controls. All ten original success/failure videos are retained; representative playback buttons request media only on click. ANLGX_023's corrected 0/5 and all 48 previous results are preserved.
+
+## Newly selected Compose — VCN35_004
+
+Two-step user-selected composition. The ramekin pickup, basket target, alphabet-soup pickup, and right-plate target retain evaluated same-index robot-frame donor transforms; there is no manual coordinate offset or height repair. Strict success requires both native predicates to rise in the requested order, both final BDDL goals to hold, and the ramekin placement to remain intact through the later soup placement. Compose final completion has no TC threshold. Original episodes 001, 002, and 004 passed manual video review. The frozen 3/5 result is reused without rerun or rescoring. A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
+
+The complete frozen task bundle, exact masked comparison, original strict-success episodes, manual downstream-preservation review, and explicit user decision are retained in `VCN35_004_PROVENANCE.json`. No preceding Selected55 task or evaluation is rescored.
+
+## Newly selected Compose — UCOMP_040
+
+Two-step user-selected composition. Tomato sauce is placed in the basket first, followed by the yellow-and-white mug on the plate. The evaluated task keeps source-aligned pickup and destination slots. Strict success requires both native predicates to rise in the requested order, both final BDDL goals to hold, and the first relation to survive the second action. Compose final completion has no TC threshold. Episodes 000, 001, and 002 passed the campaign-wide manual success-video review. The frozen 3/5 result is reused without rerun or rescoring; A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
+
+The frozen task bundle, masked comparison, strict-success episodes, campaign-wide manual review, and selection evidence are retained in `UCOMP_040_PROVENANCE.json`. No preceding Selected56 task or historical result is rescored.
+
+## Selected Compose π0.5 completion — 2026-09-07
+
+- VCN8_008: A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
+- VCN9_010: A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
+- VCN10_001: A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
+- VCN19_020: A separate π0.5 five-episode evaluation is now complete: 3/5 (60%). The historical RAIN record is unchanged. All three videos show the correct top drawer and ramekin-to-plate interaction. Episodes 001 and 002 lose the Open condition during manipulation and re-open the drawer after placement: valid ordered-milestone/final-state successes, not uninterrupted two-step executions. Episode 004 keeps the drawer open through placement. These are native-placement successes; no extra post-release or settling hold is evaluated.
+- VCN21_001: A separate π0.5 five-episode evaluation is now complete: 4/5 (80%). The historical RAIN record is unchanged. All four successful episodes show the moka pot placed on the stove before the robot approaches and pushes the microwave door closed. Every close has exact moving-door/gripper contact with an active constraint and force above 1e-6 N in the required two-control window; both final goals and door-sweep clearance pass. Native On briefly flickers during placement in episodes 002 and 003, then remains true through closure. Review used sampled original frames plus complete control traces, not a long-duration stability test.
+- VCN35_004: A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
+- UCOMP_040: A separate π0.5 five-episode evaluation is now complete: 0/5 (0%). The historical RAIN record is unchanged.
+
+The same official `pi05_libero` checkpoint receives 224px agent/wrist RGB, robot state and the unchanged task instruction; it does not receive RAIN GT masks. Six tasks retain their authored 1600-control limit; UCOMP_040 retains 1800 controls. All five original success/failure episodes per new task are preserved, with lossless faststart browser copies and representative success/failure buttons. Every new success passed the task-specific final control-trace audit and manual video review. Execution qualifications from that review remain visible and do not change the frozen metric. Ordered first milestones plus final goals do not by themselves certify uninterrupted two-step execution. See [manual review notes by task](pi05_manual_review_notes.tsv). The prior 50 π0.5 results, ANLGX_023 corrected 0/5, all task inputs and every historical RAIN result are unchanged. Per-task provenance records the exact ordered-success semantics and special physical gates.
+
+This review release includes task definitions and evaluation evidence; the complete common runtime evaluator/dependency package is not included. Running BDDL alone does not reproduce ordered/contact success semantics.
+
+## Newly selected Compose — BDRMIN_002
+
+User-selected reverse-order bowl-drainer Compose result. Strict RAIN success is 1/5 (episode 004): alphabet soup completes the right placement before tomato sauce completes the left placement. Both selected native In predicates are true at termination, neither opposite compartment is entered, and both objects are released with exact bottom support held for five consecutive control steps. The first placement remains supported through the second. Final termination has no TC threshold. The frozen five-episode result is reused without rerun or rescoring; a separate pi0.5 evaluation is pending.
+
+The frozen task bundle, exact masked comparison, strict success episode, and event/contact witness are retained in `BDRMIN_002_PROVENANCE.json`. No preceding Selected57 task or result is modified.
+
+## Newly selected Compose — VCN91_002
+
+User-selected full three-action composition, not a plate-moving task. Original episode 002 deliberately places the black bowl on the cabinet, turns on the stove, and places the moka pot on that stove; the bowl remains on the cabinet. All three native goals start false, rise in order at control steps 140, 300, and 445, and remain true at termination. Stove turn-on inference uses only the knob mask. Final Compose termination has no TC gate. The frozen 1/5 RAIN result is reused without rerun or rescoring. Source-reference PNGs identify the original tasks but are not episode002-specific replays. A separate pi0.5 evaluation is pending.
+
+The exact accepted task is the original Batch91 three-action task. The later no-turn-on Batch94 evaluation is a different task and is not substituted for this result. All prior 58 selections and their RAIN/π0.5 evidence are unchanged.
+
+## Newly selected Compose — SPBSC_001
+
+User-selected two-action cross-suite composition. Frozen RAIN evaluation is 4/5: episodes 000, 002, 003, and 004 deliberately put the cabinet-top black bowl in the plate-slot basket and then put the alphabet soup from the cookie-box slot into the same basket. Ordered native milestones are [115,384], [119,1400], [119,481], and [113,410]. Both objects remain in the basket at final success. Compose final termination has no task-completion-head gate. The unchanged frozen result is reused without rerun or rescoring; the later 5 cm farther SPBSC_002 probe is not selected. A separate pi0.5 evaluation is pending.
+
+The accepted task is the original exact cookie-slot version. The later SPBSC_002 5 cm farther-position sensitivity probe remains a separate experiment. All prior 59 selections and their RAIN/π0.5 evidence are unchanged.

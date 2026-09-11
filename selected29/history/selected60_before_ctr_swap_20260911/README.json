@@ -1,0 +1,19 @@
+{
+  "status": "historical pre-swap snapshot; excluded from current selected aggregates",
+  "retired_task_results": [
+    {
+      "order": "52",
+      "category": "Compose",
+      "task_id": "BDRCOMP_021",
+      "instruction": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the salad dressing and place it in the right compartment of the bowl drainer.",
+      "successes": 0,
+      "episodes": 5,
+      "success_rate_percent": 0.0,
+      "success_episode": "",
+      "failure_episode": "0",
+      "success_video": "",
+      "failure_video": "assets/pi05_videos/BDRCOMP_021/BDRCOMP_021_failure.mp4",
+      "complete": true
+    }
+  ]
+}

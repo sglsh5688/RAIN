@@ -2,6 +2,8 @@
   "task_id": "CTR_207",
   "instruction": "Put the black bowl on top of the cabinet, and then put the cream cheese box in the basket.",
   "status": "pending_user_review_not_selected",
+  "selected60": false,
+  "selected_page": "",
   "variant_of": "CTR_157",
   "classification": "repair_variant_not_new_semantic_family",
   "episodes": 5,

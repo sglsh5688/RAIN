@@ -1,7 +1,7 @@
 # LIBERO-EX anonymous task review
 
 <!-- SELECTED29_README_START -->
-- `selected29/`: **Selected Tasks — 20 Decomposition + 20 Adapt + 20 Compose (60 total)**; SPBSC_001 is selected with its unchanged RAIN 4/5 result. Separate π0.5 results cover 57/60 tasks (75/285 successes); BDRMIN_002, VCN91_002, and SPBSC_001 are pending.
+- `selected29/`: **Selected Tasks — 20 Decomposition + 20 Adapt + 20 Compose (60 total)**. User-selected CTR_176 (RAIN 5/5), CTR_140 (1/5), CTR_103 (4/5) replace VCN91_002, SPBSC_001, BDRCOMP_021. RAIN Compose: 50/100. Separate π0.5: 56/60 tasks, 75/280 successes; CTR_103, BDRMIN_002, CTR_176, CTR_140 pending.
 <!-- SELECTED29_README_END -->
 
 <!-- MICROWAVE_BODY_README_START -->

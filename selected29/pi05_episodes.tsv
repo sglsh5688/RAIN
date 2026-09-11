@@ -229,11 +229,6 @@ BDRSWAP_001	Adapt	1	True	134	520	4608	env_goal	True	False
 BDRSWAP_001	Adapt	2	True	139	520	4609	env_goal	True	False
 BDRSWAP_001	Adapt	3	True	136	520	4610	env_goal	True	False
 BDRSWAP_001	Adapt	4	True	152	520	4611	env_goal	True	False
-BDRCOMP_021	Compose	0	False	438	1040	4707	custom_rule_violation	False	True
-BDRCOMP_021	Compose	1	False	1040	1040	4708	timeout	False	False
-BDRCOMP_021	Compose	2	False	1040	1040	4709	timeout	False	False
-BDRCOMP_021	Compose	3	False	1040	1040	4710	timeout	False	False
-BDRCOMP_021	Compose	4	False	1040	1040	4711	timeout	False	False
 ADVCN19_001	Adapt	0	True	85	520	5207	custom_goal	True	False
 ADVCN19_001	Adapt	1	True	286	520	5208	custom_goal	True	False
 ADVCN19_001	Adapt	2	False	520	520	5209	timeout	True	False

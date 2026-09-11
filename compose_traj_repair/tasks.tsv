@@ -1,18 +1,18 @@
-task_id	instruction	variant_of	status	episodes	nominal_successes	manually_valid_successes	certified_episode_indices
-CTR_028	Put the ramekin in the basket, then put the tomato sauce on the right plate.	VCN35_005	pending_user_review_not_selected	5	2	2	0,4
-CTR_103	Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.	BDRCOMP_013	pending_user_review_not_selected	5	4	4	0,2,3,4
-CTR_104	Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.	BDRCOMP_013	pending_user_review_not_selected	5	2	2	0,3
-CTR_105	Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the cream cheese and place it in the right compartment of the bowl drainer.	BDRCOMP_001	pending_user_review_not_selected	5	1	1	3
-CTR_067	Turn on the stove, and then open the middle drawer of the cabinet.	COMP2_003	pending_user_review_not_selected	5	2	2	1,4
-CTR_117	Put the cream cheese box in the basket, and then put the alphabet soup in the basket.	CTR_066	pending_user_review_not_selected	5	2	2	0,1
-CTR_118	Put the cream cheese box in the basket, and then put the alphabet soup in the basket.	CTR_121	pending_user_review_not_selected	5	2	2	1,2
-CTR_115	Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.	CTR_084	pending_user_review_not_selected	5	2	2	1,4
-CTR_116	Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.	CTR_085	pending_user_review_not_selected	5	4	3	0,1,3
-CTR_112	Pick the ketchup and place it in the left compartment of the bowl drainer, then pick the alphabet soup and place it in the right compartment of the bowl drainer.	BDRCOMP_030	pending_user_review_not_selected	5	1	1	2
-CTR_140	Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.	VCN16_001	pending_user_review_not_selected	5	1	1	3
-CTR_166	Put the tomato sauce in the basket, then put the butter in the basket, and finally put the chocolate pudding in the basket.	CTR_088	pending_user_review_not_selected	5	1	1	2
-CTR_175	Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.	CTR_162	pending_user_review_not_selected	5	5	5	0,1,2,3,4
-CTR_176	Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.	CTR_163	pending_user_review_not_selected	5	5	5	0,1,2,3,4
-CTR_205	Put the cream cheese in the basket, then close the microwave door.	CTR_196	pending_user_review_not_selected	5	1	1	4
-CTR_206	Put the cream cheese in the basket, then close the microwave door.	CTR_196	pending_user_review_not_selected	5	2	2	1,4
-CTR_207	Put the black bowl on top of the cabinet, and then put the cream cheese box in the basket.	CTR_157	pending_user_review_not_selected	5	1	1	3
+task_id	instruction	variant_of	status	selected60	selected_page	episodes	nominal_successes	manually_valid_successes	certified_episode_indices
+CTR_028	Put the ramekin in the basket, then put the tomato sauce on the right plate.	VCN35_005	pending_user_review_not_selected	False		5	2	2	0,4
+CTR_103	Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.	BDRCOMP_013	selected60	True	../selected29/index.html#CTR_103	5	4	4	0,2,3,4
+CTR_104	Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.	BDRCOMP_013	pending_user_review_not_selected	False		5	2	2	0,3
+CTR_105	Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the cream cheese and place it in the right compartment of the bowl drainer.	BDRCOMP_001	pending_user_review_not_selected	False		5	1	1	3
+CTR_067	Turn on the stove, and then open the middle drawer of the cabinet.	COMP2_003	pending_user_review_not_selected	False		5	2	2	1,4
+CTR_117	Put the cream cheese box in the basket, and then put the alphabet soup in the basket.	CTR_066	pending_user_review_not_selected	False		5	2	2	0,1
+CTR_118	Put the cream cheese box in the basket, and then put the alphabet soup in the basket.	CTR_121	pending_user_review_not_selected	False		5	2	2	1,2
+CTR_115	Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.	CTR_084	pending_user_review_not_selected	False		5	2	2	1,4
+CTR_116	Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.	CTR_085	pending_user_review_not_selected	False		5	4	3	0,1,3
+CTR_112	Pick the ketchup and place it in the left compartment of the bowl drainer, then pick the alphabet soup and place it in the right compartment of the bowl drainer.	BDRCOMP_030	pending_user_review_not_selected	False		5	1	1	2
+CTR_140	Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.	VCN16_001	selected60	True	../selected29/index.html#CTR_140	5	1	1	3
+CTR_166	Put the tomato sauce in the basket, then put the butter in the basket, and finally put the chocolate pudding in the basket.	CTR_088	pending_user_review_not_selected	False		5	1	1	2
+CTR_175	Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.	CTR_162	pending_user_review_not_selected	False		5	5	5	0,1,2,3,4
+CTR_176	Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.	CTR_163	selected60	True	../selected29/index.html#CTR_176	5	5	5	0,1,2,3,4
+CTR_205	Put the cream cheese in the basket, then close the microwave door.	CTR_196	pending_user_review_not_selected	False		5	1	1	4
+CTR_206	Put the cream cheese in the basket, then close the microwave door.	CTR_196	pending_user_review_not_selected	False		5	2	2	1,4
+CTR_207	Put the black bowl on top of the cabinet, and then put the cream cheese box in the basket.	CTR_157	pending_user_review_not_selected	False		5	1	1	3

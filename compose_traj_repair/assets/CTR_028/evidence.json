@@ -2,6 +2,8 @@
   "task_id": "CTR_028",
   "instruction": "Put the ramekin in the basket, then put the tomato sauce on the right plate.",
   "status": "pending_user_review_not_selected",
+  "selected60": false,
+  "selected_page": "",
   "variant_of": "VCN35_005",
   "classification": "repair_variant_not_new_semantic_family",
   "episodes": 5,

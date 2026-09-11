@@ -231,21 +231,23 @@
     }
   ],
   "selected_tasks": 60,
-  "tasks": 57,
+  "tasks": 56,
   "pending_task_ids": [
+    "CTR_103",
     "BDRMIN_002",
-    "VCN91_002",
-    "SPBSC_001"
+    "CTR_176",
+    "CTR_140"
   ],
   "retired_source_result_ids": [
-    "COMP2_001"
+    "COMP2_001",
+    "BDRCOMP_021"
   ],
-  "episodes": 285,
+  "episodes": 280,
   "successes": 75,
   "successful_tasks": 20,
   "success_videos": 20,
-  "failure_videos": 50,
-  "representative_videos": 70,
+  "failure_videos": 49,
+  "representative_videos": 69,
   "frozen_source_ledger": {
     "tasks": 48,
     "episodes": 240,
@@ -306,11 +308,11 @@
     },
     "Compose": {
       "selected_tasks": 20,
-      "evaluated_tasks": 17,
-      "pending_tasks": 3,
+      "evaluated_tasks": 16,
+      "pending_tasks": 4,
       "successful_tasks": 3,
       "successes": 10,
-      "episodes": 85
+      "episodes": 80
     }
   },
   "task_results": [
@@ -959,20 +961,6 @@
       "complete": true
     },
     {
-      "order": "52",
-      "category": "Compose",
-      "task_id": "BDRCOMP_021",
-      "instruction": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the salad dressing and place it in the right compartment of the bowl drainer.",
-      "successes": 0,
-      "episodes": 5,
-      "success_rate_percent": 0.0,
-      "success_episode": "",
-      "failure_episode": "0",
-      "success_video": "",
-      "failure_video": "assets/pi05_videos/BDRCOMP_021/BDRCOMP_021_failure.mp4",
-      "complete": true
-    },
-    {
       "order": "53",
       "category": "Adapt",
       "task_id": "ADVCN19_001",
@@ -1140,6 +1128,7 @@
   "selected_58_note": "BDRMIN_002 is newly selected from its strict RAIN 1/5 evaluation; no pi0.5 result is claimed.",
   "selected_59_tsv_sha256": "f34d1067e7ef055ac09ed532a8085820e524a4d5375505729b209a20ea93932f",
   "selected_59_note": "VCN91_002 is user selected from its frozen RAIN 1/5 result; no pi0.5 outcome is claimed.",
-  "selected_60_tsv_sha256": "7766bc21d56ae310df640027f524377a01f7dda4068a26fce73f2704ead87ca9",
-  "selected_60_note": "SPBSC_001 is user selected from its frozen RAIN 4/5 result; no pi0.5 outcome is claimed."
+  "selected_60_tsv_sha256": "8daa41c8da5e845cfd3e9e8f4ea2d57d7baf2c026d3fdde4e3585d55a3e52d62",
+  "selected_60_note": "User-authorized 2026-09-11 replacement: BDRCOMP_021→CTR_103, VCN91_002→CTR_176, SPBSC_001→CTR_140. All three incoming pi0.5 results are pending; old source evaluation segments remain historical.",
+  "selected_60_pre_ctr_swap_tsv_sha256": "7766bc21d56ae310df640027f524377a01f7dda4068a26fce73f2704ead87ca9"
 }

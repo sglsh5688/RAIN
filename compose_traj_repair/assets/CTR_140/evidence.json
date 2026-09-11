@@ -1,7 +1,25 @@
 {
   "task_id": "CTR_140",
   "instruction": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
-  "status": "pending_user_review_not_selected",
+  "status": "selected60",
+  "selected60": true,
+  "selected_page": "../selected29/index.html#CTR_140",
+  "selected_bundle_verification": {
+    "method": "byte_identical_frozen_reviewed_bundle",
+    "canonical_bundle": "Compose/CTR_140",
+    "artifacts_sha256": {
+      "task.bddl": "4c30bce9b2acc5e5ab23a97bb4a26e6b5e12394a1b8d87affeb4a66967265e08",
+      "task.pruned_init": "7d3adc16f30ba07eabc212414b9182c95a1c8758a8450e7e9d8c866db95099dd",
+      "task_meta.yaml": "db7b389bc33648c0e161df88ed498f6ccfe295f9c8ca716aab90d1cca971aa0a",
+      "eval_rules.yaml": "b4f956daf3da8b08e072ac26e6cd3458a2d7829f12dda7bbb44d0a7d1728a1a8",
+      "registry_entry.yaml": "eb2108050f5e1e238e38853afa8e6cf99cd0d5116233f6ffbb9815df2433c7b8",
+      "mask_bindings.yaml": "09cc72c5889a257866137a1bc80b683718cd161619b4266f0f6da1805765a929",
+      "action_plan.yaml": "ffb140296f52e537971dc7c2f230b39b7a89bae0da6eafa9b0661df02e91bce2",
+      "FIXTURE_REPLAY.json": "70114d620f128668b4d7394adc4143b7f8bd16fd5d6280d8d76bdb36163530ff",
+      "INIT_VALIDATION.json": "ce2e1fff809a2dac5200bdac4ac242f9cb56c9afacaf7cdd5ea9f29306c680c4",
+      "REPAIR_PROVENANCE.json": "f4c6c55c3964c24c7c089df85ae195d4041a944d3c04799495bd56e8e5a06676"
+    }
+  },
   "variant_of": "VCN16_001",
   "classification": "repair_variant_not_new_semantic_family",
   "episodes": 5,

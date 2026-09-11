@@ -1,0 +1,49 @@
+{
+  "schema": "selected60_ctr_selection_overlay_v1",
+  "selected": true,
+  "publication_authorized": true,
+  "task_id": "CTR_103",
+  "category": "Compose",
+  "order": 52,
+  "replaces": "BDRCOMP_021",
+  "authorized_date": "2026-09-11",
+  "source_bundle_immutable": true,
+  "frozen_source_status_is_historical": true,
+  "source_file_sha256": {
+    "task.bddl": "e05fb28d019f154a718609256c20cb5ea1758e07fc27eb7ae1cea1e924226344",
+    "task.pruned_init": "b3bf0f5bf3f7ac0e939a750bce9e7c8838054e5b31a96bc6f01e2b30ba1b0d77",
+    "task_meta.yaml": "2220846679a0a4900988a338c54127720c23fd7693e5c29b6dbf9f8bc326c126",
+    "eval_rules.yaml": "2bb18b75f67505a13404a6cb74a6fcdf09eda5ecdbd5cf13a83cf73b95aa98b0",
+    "registry_entry.yaml": "0e306a754a19e79f5101d045bc74b2363e5d28c9bca5eeb3d070dc2e59f156ec",
+    "mask_bindings.yaml": "f2058ff27fc1ed34a3761cc7e87cf7d230b7373fedda639c838e8e8edbd2bd54",
+    "action_plan.yaml": "0ef0354aee4176e569809793ab63bf6639f6d5e1beff0fb22b7c3aa8f799ebeb",
+    "FIXTURE_REPLAY.json": "f765db1a2d9f755a661206274172f68c08a25fd9c51ccd72061c9cbb194d4685",
+    "INIT_VALIDATION.json": "5dc30363e54da05c0e25c22d9fa2373c1aea9c0702f9ef5247088c46ff036bfb",
+    "REPAIR_PROVENANCE.json": "0026a9f3c44992c402a2328651d419e94833198abc4effb302aa05dabf413783"
+  },
+  "results_sha256": "c15b3d09c9da04ef8f501b79ecfd4aa32f2d4fbdc2b996efa8d03ef481cc6e40",
+  "certified_episode_indices": [
+    0,
+    2,
+    3,
+    4
+  ],
+  "successes": 4,
+  "episodes": 5,
+  "runtime_contract": "Ordered native left then right compartments; each object released with positive exact drainer-bottom support for five consecutive controls, with both placements retained. No velocity-settling claim. No final TC gate.",
+  "pi05_status": "pending",
+  "no_policy_rerun": true,
+  "source_hash_scope": "Immutable canonical source files. Public text exports sanitize workstation paths; their hashes are recorded separately.",
+  "public_source_file_sha256": {
+    "task.bddl": "e05fb28d019f154a718609256c20cb5ea1758e07fc27eb7ae1cea1e924226344",
+    "task.pruned_init": "b3bf0f5bf3f7ac0e939a750bce9e7c8838054e5b31a96bc6f01e2b30ba1b0d77",
+    "task_meta.yaml": "6b2824d23615ddcadb3cc1101e0b7ccb6f8a8849c547ac38102e4794a666227f",
+    "eval_rules.yaml": "2bb18b75f67505a13404a6cb74a6fcdf09eda5ecdbd5cf13a83cf73b95aa98b0",
+    "registry_entry.yaml": "0e306a754a19e79f5101d045bc74b2363e5d28c9bca5eeb3d070dc2e59f156ec",
+    "mask_bindings.yaml": "f2058ff27fc1ed34a3761cc7e87cf7d230b7373fedda639c838e8e8edbd2bd54",
+    "action_plan.yaml": "0ef0354aee4176e569809793ab63bf6639f6d5e1beff0fb22b7c3aa8f799ebeb",
+    "FIXTURE_REPLAY.json": "f765db1a2d9f755a661206274172f68c08a25fd9c51ccd72061c9cbb194d4685",
+    "INIT_VALIDATION.json": "5dc30363e54da05c0e25c22d9fa2373c1aea9c0702f9ef5247088c46ff036bfb",
+    "REPAIR_PROVENANCE.json": "0026a9f3c44992c402a2328651d419e94833198abc4effb302aa05dabf413783"
+  }
+}

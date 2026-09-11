@@ -1,7 +1,25 @@
 {
   "task_id": "CTR_176",
   "instruction": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
-  "status": "pending_user_review_not_selected",
+  "status": "selected60",
+  "selected60": true,
+  "selected_page": "../selected29/index.html#CTR_176",
+  "selected_bundle_verification": {
+    "method": "byte_identical_frozen_reviewed_bundle",
+    "canonical_bundle": "Compose/CTR_176",
+    "artifacts_sha256": {
+      "task.bddl": "1a106f705263d8fe185ebc34ea6bea6e59f8cc00bfb69472536d9c353fcc5b8e",
+      "task.pruned_init": "1b7e18e36592104abad43cf8980c2ce5d35641f5982e6f2e8deb8015d5912a1f",
+      "task_meta.yaml": "afbda4323bc53ce7589ef32cc20d87f333cccc57b2bca17aace90bc53daf02d5",
+      "eval_rules.yaml": "40af37ae13ed82bb0492b93f57b536a1da7480c2dd46fbe7b070569b3b10c1e1",
+      "registry_entry.yaml": "b75b1ecf4d385e6b9f2c014b2e01b20e4427a0e76bb811ded1a3df7b11c3631e",
+      "mask_bindings.yaml": "8adb5fca9bf7db4c04deca48ebc32f2733c292edb521501b9778ebcfa35bc57a",
+      "action_plan.yaml": "042c9049212ccb7b2065c501b71ae04fdb1993a0603eb7252bf7cefc170628bf",
+      "FIXTURE_REPLAY.json": "2b06d01924b020bcc5150b460f7b559283071a37050dd9ac09d84f19eff1ecf8",
+      "INIT_VALIDATION.json": "d0f5f6aefc30fc503b7fdab985952042fcc482b794283e7a95a82db49bca4f2b",
+      "REPAIR_PROVENANCE.json": "0b29d86081eb602734255476294c8f975fbaded3ecf1a52a4814db2a89de8ac6"
+    }
+  },
   "variant_of": "CTR_163",
   "classification": "repair_variant_not_new_semantic_family",
   "episodes": 5,

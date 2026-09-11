@@ -1,0 +1,547 @@
+{
+  "validation_version": "trajectory_repair_five_state_screen_v2_fixture_snapshot",
+  "valid_count": 5,
+  "rows": [
+    {
+      "state_index": 0,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "bowl_drainer_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "butter_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 8.604228440844963e-16,
+          "angular_drift_rad": 2.344330702142171e-16,
+          "second_window_drift_m": 8.673617379884035e-16
+        },
+        {
+          "entity": "orange_juice_1",
+          "passes": true,
+          "xy_drift_m": 1.7277845820728999e-15,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 1.734723475976807e-15
+        },
+        {
+          "entity": "chocolate_pudding_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 5.2431765439107566e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "ketchup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:butter_1_main": 229,
+        "goal_target_1:bowl_drainer_1_left_region": 3690,
+        "manipulated_object_2:tomato_sauce_1_main": 782,
+        "goal_target_2:bowl_drainer_1_right_region": 3367
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "tomato_sauce_1",
+          "before_xyz": [
+            0.0502390974120273,
+            -0.09993923005860601,
+            0.038392596419837194
+          ],
+          "after_xyz": [
+            0.005239097412027299,
+            -0.029939230058606006,
+            0.038392596419837194
+          ],
+          "applied_delta_xyz": [
+            -0.045,
+            0.07,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.045,
+              0.07,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "bowl_drainer_1": {}
+      },
+      "reachability": [],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "7a2132f9c6aec90ad4e172337972e1f20b3bf94dd7ecff372e5eef2afee0e4a7"
+    },
+    {
+      "state_index": 1,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "bowl_drainer_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "butter_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.730239492550134e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 8.604228440844963e-16,
+          "angular_drift_rad": 2.344330702142171e-16,
+          "second_window_drift_m": 8.673617379884035e-16
+        },
+        {
+          "entity": "orange_juice_1",
+          "passes": true,
+          "xy_drift_m": 1.7277845820728999e-15,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 1.734723475976807e-15
+        },
+        {
+          "entity": "chocolate_pudding_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 5.2431765439107566e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 7.582318103327695e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "ketchup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:butter_1_main": 231,
+        "goal_target_1:bowl_drainer_1_left_region": 3690,
+        "manipulated_object_2:tomato_sauce_1_main": 782,
+        "goal_target_2:bowl_drainer_1_right_region": 3367
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "tomato_sauce_1",
+          "before_xyz": [
+            0.0502390974120273,
+            -0.09993923005860601,
+            0.038392596419837194
+          ],
+          "after_xyz": [
+            0.005239097412027299,
+            -0.029939230058606006,
+            0.038392596419837194
+          ],
+          "applied_delta_xyz": [
+            -0.045,
+            0.07,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.045,
+              0.07,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "bowl_drainer_1": {}
+      },
+      "reachability": [],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "f7a70d61efa285aad211f89eb2c2b5467f7ecf3aa7a2bfeb055da4d8f9173da1"
+    },
+    {
+      "state_index": 2,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "bowl_drainer_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "butter_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 8.604228440844963e-16,
+          "angular_drift_rad": 2.344330702142171e-16,
+          "second_window_drift_m": 8.673617379884035e-16
+        },
+        {
+          "entity": "orange_juice_1",
+          "passes": true,
+          "xy_drift_m": 1.7277845820728999e-15,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 1.734723475976807e-15
+        },
+        {
+          "entity": "chocolate_pudding_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 5.2431765439107566e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "ketchup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:butter_1_main": 229,
+        "goal_target_1:bowl_drainer_1_left_region": 3690,
+        "manipulated_object_2:tomato_sauce_1_main": 782,
+        "goal_target_2:bowl_drainer_1_right_region": 3367
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "tomato_sauce_1",
+          "before_xyz": [
+            0.0502390974120273,
+            -0.09993923005860601,
+            0.038392596419837194
+          ],
+          "after_xyz": [
+            0.005239097412027299,
+            -0.029939230058606006,
+            0.038392596419837194
+          ],
+          "applied_delta_xyz": [
+            -0.045,
+            0.07,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.045,
+              0.07,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "bowl_drainer_1": {}
+      },
+      "reachability": [],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "a41c97e7491a6b5512be6c9ca1d3c36b56c8c7c67322e274c307e428a33daec4"
+    },
+    {
+      "state_index": 3,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "bowl_drainer_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "butter_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 8.604228440844963e-16,
+          "angular_drift_rad": 2.344330702142171e-16,
+          "second_window_drift_m": 8.673617379884035e-16
+        },
+        {
+          "entity": "orange_juice_1",
+          "passes": true,
+          "xy_drift_m": 1.7277845820728999e-15,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 1.734723475976807e-15
+        },
+        {
+          "entity": "chocolate_pudding_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 5.2431765439107566e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "ketchup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:butter_1_main": 227,
+        "goal_target_1:bowl_drainer_1_left_region": 3690,
+        "manipulated_object_2:tomato_sauce_1_main": 782,
+        "goal_target_2:bowl_drainer_1_right_region": 3367
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "tomato_sauce_1",
+          "before_xyz": [
+            0.0502390974120273,
+            -0.09993923005860601,
+            0.038392596419837194
+          ],
+          "after_xyz": [
+            0.005239097412027299,
+            -0.029939230058606006,
+            0.038392596419837194
+          ],
+          "applied_delta_xyz": [
+            -0.045,
+            0.07,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.045,
+              0.07,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "bowl_drainer_1": {}
+      },
+      "reachability": [],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "136c8878c839e6493db9fa98f9c412977407394a3652a4d094c1c90b6e39b3cd"
+    },
+    {
+      "state_index": 4,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "bowl_drainer_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "butter_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 8.604228440844963e-16,
+          "angular_drift_rad": 2.344330702142171e-16,
+          "second_window_drift_m": 8.673617379884035e-16
+        },
+        {
+          "entity": "orange_juice_1",
+          "passes": true,
+          "xy_drift_m": 1.7277845820728999e-15,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 1.734723475976807e-15
+        },
+        {
+          "entity": "chocolate_pudding_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 5.2431765439107566e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "ketchup_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:butter_1_main": 229,
+        "goal_target_1:bowl_drainer_1_left_region": 3690,
+        "manipulated_object_2:tomato_sauce_1_main": 782,
+        "goal_target_2:bowl_drainer_1_right_region": 3367
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "tomato_sauce_1",
+          "before_xyz": [
+            0.0502390974120273,
+            -0.09993923005860601,
+            0.038392596419837194
+          ],
+          "after_xyz": [
+            0.005239097412027299,
+            -0.029939230058606006,
+            0.038392596419837194
+          ],
+          "applied_delta_xyz": [
+            -0.045,
+            0.07,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.045,
+              0.07,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {
+        "bowl_drainer_1": {}
+      },
+      "reachability": [],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "8e4da90939a676098325681ce34d66c90883c14c3394217428e9d4914b119917"
+    }
+  ],
+  "evaluator_wait_steps": 10,
+  "evaluator_wait_action": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "policy_evaluation_run": false
+}

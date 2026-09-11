@@ -1,0 +1,948 @@
+{
+  "task_id": "CTR_103",
+  "instruction": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+  "status": "pending_user_review_not_selected",
+  "variant_of": "BDRCOMP_013",
+  "classification": "repair_variant_not_new_semantic_family",
+  "episodes": 5,
+  "nominal_successes": 4,
+  "manually_valid_successes": 4,
+  "nominal_success_episode_indices": [
+    0,
+    2,
+    3,
+    4
+  ],
+  "certified_episode_indices": [
+    0,
+    2,
+    3,
+    4
+  ],
+  "ordered_native_milestones": {
+    "0": [
+      176,
+      390
+    ],
+    "2": [
+      190,
+      399
+    ],
+    "3": [
+      180,
+      378
+    ],
+    "4": [
+      170,
+      357
+    ]
+  },
+  "final_success_requires_all_bddl_goals": true,
+  "compose_final_tc_gate": false,
+  "results_sha256": "c15b3d09c9da04ef8f501b79ecfd4aa32f2d4fbdc2b996efa8d03ef481cc6e40",
+  "parent_results_sha256": "d4926f42506dc0326575c1e00d56ab5b01dbd207f158104c878b96a365e9f403",
+  "parent_nominal_successes": 0,
+  "parent_episodes": 5,
+  "parent_instruction": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+  "parent_state_verification": {
+    "method": "original_run_manifest_and_byte_identical_five_state_source",
+    "original_historical_state_file_digest_available": true,
+    "run_config_sha256": "108092f1236210498a6a085d61e179823e170c39e767c7399c43eb2060b34814",
+    "task_pruned_init_sha256": "c6ae405e25c06bfd8bd4eb3aaed6ccbe5c0900b017932c0955a9c6b33ed3c1fa"
+  },
+  "repair": {
+    "object_id": "tomato_sauce_1",
+    "offset_world_m": [
+      -0.045,
+      0.07,
+      0
+    ],
+    "notes": "The same translation is applied to all five frozen states: 4.5 cm in negative world X and 7 cm in positive world Y, toward the empty gripper closure recorded in parent episode 000. The drainer and butter retain their original poses. The original ordered release and support rule is preserved."
+  },
+  "frozen_repair_provenance": {
+    "task_id": "CTR_103",
+    "parent_task_id": "BDRCOMP_013",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/drainer_parent_snapshots/BDRCOMP_013",
+    "pose_changes": {
+      "tomato_sauce_1": {
+        "delta_xyz": [
+          -0.045,
+          0.07,
+          0
+        ]
+      }
+    },
+    "evidence": "Parent butter first placement5/5; ep000 second pickup closes at[+.006,-.026,.018] vs tomato[+.050,-.100,.038], then empty hand goes to drainer and stalls. Video reviewed at every fourth recorded frame. Shift second can toward empty closure; all5newstates static screened and5ep freshly rolled out, strict release/support gate retained.",
+    "classification": "repair_variant_not_new_semantic_family",
+    "parent_files_sha256": {
+      "task.bddl": "e05fb28d019f154a718609256c20cb5ea1758e07fc27eb7ae1cea1e924226344",
+      "task.pruned_init": "c6ae405e25c06bfd8bd4eb3aaed6ccbe5c0900b017932c0955a9c6b33ed3c1fa",
+      "FIXTURE_REPLAY.json": "6ba6b59c3b5366d5bc235743349c8a1966f5fe845c47ddd8af3b5773ea72e66c",
+      "action_plan.yaml": "3bae52fe98866fd4f3cd0bfe9d15be70ccc36fa4135231da237270bb9b96cec3"
+    },
+    "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+  },
+  "original40_skill_lineage": [
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_06",
+      "instruction": "Pick the tomato sauce and place it in the basket",
+      "transfer": "Directly trained object grasp and basket release are rebound to the native right compartment of the bowl drainer. The destination substitution and two-step chain are adaptations of the original40 skills; original40 does not directly demonstrate this drainer placement."
+    },
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_butter_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_07",
+      "instruction": "Pick the butter and place it in the basket",
+      "transfer": "Directly trained object grasp and basket release are rebound to the native left compartment of the bowl drainer. The destination substitution and two-step chain are adaptations of the original40 skills; original40 does not directly demonstrate this drainer placement."
+    }
+  ],
+  "manual_review_notes": "Fresh trajectory-guided repair of BDRCOMP_013, whose historical result was 0/5. Both food identities are directly trained in the original LIBERO-40; their basket-placement skills transfer to the two drainer compartments. The original completion rule is retained: each object must be released and supported by the drainer floor for five consecutive control steps, in the requested order. All four successes passed full video review. This run uses the existing RAIN action and progress checkpoints. Policy seeds 7–11 differ from the parent, so the comparison does not isolate the effect of the pose change. The selected 60 tasks remain unchanged.",
+  "episode_reviews": [
+    {
+      "episode_idx": 0,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 49,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch25_5ep_20260911/tasks/all1/CTR_103/videos/CTR_103_ep000_ok.mp4",
+      "video_sha256": "d3f6a6b29d2f1712f9acccd227989441d4de746f83569979db5c091d97b29d63",
+      "trace_npz_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch25_5ep_20260911/tasks/all1/CTR_103/traces/CTR_103_ep000.npz",
+      "trace_npz_sha256": "bcfaf40f0e9ae8eaa348caa98eb92451b54eb530dc0a9313017aa3658a6f2037",
+      "trace_json_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch25_5ep_20260911/tasks/all1/CTR_103/traces/CTR_103_ep000.json",
+      "trace_json_sha256": "86f767538d3cf7db1ffde5c20bf277ec7da0034ba1f099b7e96a9c7fa27e3478",
+      "native_success": true,
+      "milestones": [
+        176,
+        390
+      ],
+      "released_supported_milestones": [
+        183,
+        395
+      ],
+      "final_native_values": [
+        true,
+        true
+      ],
+      "final_opposite_native_values": [
+        false,
+        false
+      ],
+      "final_consecutive_supported_steps": [
+        217,
+        5
+      ],
+      "all_final_bddl_predicates_true": true,
+      "reviewed_complete_trace": true,
+      "notes": "Manually reviewed all 49 decoded saved frames, including complete first grasp/carry/release, second grasp/carry/release, and final frame; reviewed full continuous trace and exact drainer contact state changes. Butter is deliberately grasped from the floor, carried to the left compartment and released. Tomato sauce is then deliberately grasped, lifted and carried to the right compartment and released. Native events occur at [176, 390]; exact native bottom-box contact with no gripper contact for five actual controls certifies placements at [183, 395]. Both objects finish supported and ungrasped, opposite compartments false; earlier butter In predicate never falls false after its rise. The support certificate is the pre-existing parent rule and is not a longer-term velocity-stability claim. No unrelated object displacement or drainer motion is visible; numerical unrelated motion is below 1e-12 m.",
+      "final_gripper_qpos": [
+        0.03928080761926281,
+        -0.039267171762832405
+      ],
+      "final_contacts": {
+        "native_base_geom_id": 125,
+        "native_base_geom_name": "bowl_drainer_1_g2",
+        "minimum_base_support_normal_force_n": 1e-06,
+        "gripper_contact_distance_tolerance_m": 1e-07,
+        "support_definition": "positive_normal_force_on_exact_native_bottom_box",
+        "support_is_not_a_velocity_based_stability_certificate": true,
+        "gripper_geom_names": [
+          "gripper0_finger1_collision",
+          "gripper0_finger1_pad_collision",
+          "gripper0_finger2_collision",
+          "gripper0_finger2_pad_collision",
+          "gripper0_hand_collision"
+        ],
+        "objects": [
+          {
+            "object_id": "butter_1",
+            "native_predicates": {
+              "bowl_drainer_1_left_region": true,
+              "bowl_drainer_1_right_region": false
+            },
+            "native_base_contact": true,
+            "any_gripper_contact": false,
+            "world_position_m": [
+              0.01838417410868245,
+              0.3042591460927859,
+              0.02470992151999999
+            ],
+            "contacts": [
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -7.847999999519017e-08,
+                "normal_force_n": 0.012868703658486011
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -7.847999999519017e-08,
+                "normal_force_n": 0.012868703658485995
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -7.847999999519017e-08,
+                "normal_force_n": 0.012868703658486006
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -7.847999999519017e-08,
+                "normal_force_n": 0.012868703658485992
+              }
+            ]
+          },
+          {
+            "object_id": "tomato_sauce_1",
+            "native_predicates": {
+              "bowl_drainer_1_left_region": false,
+              "bowl_drainer_1_right_region": true
+            },
+            "native_base_contact": true,
+            "any_gripper_contact": false,
+            "world_position_m": [
+              0.004418304880638081,
+              0.20383067204043734,
+              0.059831960699950316
+            ],
+            "contacts": [
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -2.383330870176642e-07,
+                "normal_force_n": 0.19718249721832
+              },
+              {
+                "other_geom_id": 127,
+                "other_geom_name": "bowl_drainer_1_g4",
+                "native_base": false,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -1.3418224685535218e-07,
+                "normal_force_n": 0.10785291938840443
+              }
+            ]
+          }
+        ]
+      },
+      "complete_video_review_sheets": [
+        "LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/analysis/CTR103_ep000/CTR_103_ep000_frames_0000_0039.jpg",
+        "LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/analysis/CTR103_ep000/CTR_103_ep000_frames_0040_0048.jpg"
+      ],
+      "post_milestone_preservation_metrics": [
+        {
+          "goal_index": 0,
+          "goal_atom": "in(butter_1, bowl_drainer_1_left_region)",
+          "milestone_control_step": 176,
+          "object_id": "butter_1",
+          "native_predicate_false_control_ranges": [],
+          "native_final_value": true,
+          "body_name": "butter_1_main",
+          "milestone_world_xyz": [
+            0.01874615171538071,
+            0.2936452733139716,
+            0.1211847045226737
+          ],
+          "final_world_xyz": [
+            0.01838417410868245,
+            0.3042591460927859,
+            0.02470992151999999
+          ],
+          "max_xyz_displacement_after_milestone_m": 0.0970803808460218,
+          "max_xy_displacement_after_milestone_m": 0.010620043462839806,
+          "max_root_z_drop_after_milestone_m": 0.09649862536583279,
+          "max_rotation_from_milestone_deg": 16.715217655941416
+        },
+        {
+          "goal_index": 1,
+          "goal_atom": "in(tomato_sauce_1, bowl_drainer_1_right_region)",
+          "milestone_control_step": 390,
+          "object_id": "tomato_sauce_1",
+          "native_predicate_false_control_ranges": [],
+          "native_final_value": true,
+          "body_name": "tomato_sauce_1_main",
+          "milestone_world_xyz": [
+            0.004676133918734204,
+            0.2037601565932668,
+            0.10104411245104775
+          ],
+          "final_world_xyz": [
+            0.004418304880638081,
+            0.20383067204043734,
+            0.059831960699950316
+          ],
+          "max_xyz_displacement_after_milestone_m": 0.041213675404379514,
+          "max_xy_displacement_after_milestone_m": 0.0039048732006510974,
+          "max_root_z_drop_after_milestone_m": 0.0412129493200991,
+          "max_rotation_from_milestone_deg": 2.999914855839283
+        }
+      ]
+    },
+    {
+      "episode_idx": 2,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 51,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch25_5ep_20260911/tasks/all1/CTR_103/videos/CTR_103_ep002_ok.mp4",
+      "video_sha256": "6c5c8ecc7cde797fe2876ea0ba6136b5ea4a69b4f8dccf4c2666bcaa8e5b53da",
+      "trace_npz_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch25_5ep_20260911/tasks/all1/CTR_103/traces/CTR_103_ep002.npz",
+      "trace_npz_sha256": "1ff512ed76868d4c11da59a2e48a28d8a559cf1e90ce566ef40e1c2b98411e0a",
+      "trace_json_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch25_5ep_20260911/tasks/all1/CTR_103/traces/CTR_103_ep002.json",
+      "trace_json_sha256": "cb13dbbd332a185c48d7195ad938006b2979ae55561af076762d8e0852087bdf",
+      "native_success": true,
+      "milestones": [
+        190,
+        399
+      ],
+      "released_supported_milestones": [
+        196,
+        405
+      ],
+      "final_native_values": [
+        true,
+        true
+      ],
+      "final_opposite_native_values": [
+        false,
+        false
+      ],
+      "final_consecutive_supported_steps": [
+        197,
+        5
+      ],
+      "all_final_bddl_predicates_true": true,
+      "reviewed_complete_trace": true,
+      "notes": "Manually reviewed all 51 decoded saved frames, including complete first grasp/carry/release, second grasp/carry/release, and final frame; reviewed full continuous trace and exact drainer contact state changes. Butter is deliberately grasped from the floor, carried to the left compartment and released. Tomato sauce is then deliberately grasped, lifted and carried to the right compartment and released. Native events occur at [190, 399]; exact native bottom-box contact with no gripper contact for five actual controls certifies placements at [196, 405]. Both objects finish supported and ungrasped, opposite compartments false; earlier butter In predicate never falls false after its rise. The support certificate is the pre-existing parent rule and is not a longer-term velocity-stability claim. No unrelated object displacement or drainer motion is visible; numerical unrelated motion is below 1e-12 m.",
+      "final_gripper_qpos": [
+        0.03879064220801162,
+        -0.038921840125378256
+      ],
+      "final_contacts": {
+        "native_base_geom_id": 125,
+        "native_base_geom_name": "bowl_drainer_1_g2",
+        "minimum_base_support_normal_force_n": 1e-06,
+        "gripper_contact_distance_tolerance_m": 1e-07,
+        "support_definition": "positive_normal_force_on_exact_native_bottom_box",
+        "support_is_not_a_velocity_based_stability_certificate": true,
+        "gripper_geom_names": [
+          "gripper0_finger1_collision",
+          "gripper0_finger1_pad_collision",
+          "gripper0_finger2_collision",
+          "gripper0_finger2_pad_collision",
+          "gripper0_hand_collision"
+        ],
+        "objects": [
+          {
+            "object_id": "butter_1",
+            "native_predicates": {
+              "bowl_drainer_1_left_region": true,
+              "bowl_drainer_1_right_region": false
+            },
+            "native_base_contact": true,
+            "any_gripper_contact": false,
+            "world_position_m": [
+              -0.014785018497233238,
+              0.2842699779015003,
+              0.02470992151751057
+            ],
+            "contacts": [
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -7.848351289540558e-08,
+                "normal_force_n": 0.012868703627980012
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -7.848156877106359e-08,
+                "normal_force_n": 0.012868703552801078
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -7.848341008385963e-08,
+                "normal_force_n": 0.012868703628321553
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -7.848146595951764e-08,
+                "normal_force_n": 0.012868703553142619
+              }
+            ]
+          },
+          {
+            "object_id": "tomato_sauce_1",
+            "native_predicates": {
+              "bowl_drainer_1_left_region": false,
+              "bowl_drainer_1_right_region": true
+            },
+            "native_base_contact": true,
+            "any_gripper_contact": false,
+            "world_position_m": [
+              0.002955926745547085,
+              0.1992713525360055,
+              0.04974892267754099
+            ],
+            "contacts": [
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -3.2963646337702216e-07,
+                "normal_force_n": 0.12703451272517696
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -3.2897776887132694e-07,
+                "normal_force_n": 0.12834064269446327
+              }
+            ]
+          }
+        ]
+      },
+      "complete_video_review_sheets": [
+        "LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/analysis/CTR103_ep002/CTR_103_ep002_frames_0000_0039.jpg",
+        "LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/analysis/CTR103_ep002/CTR_103_ep002_frames_0040_0050.jpg"
+      ],
+      "post_milestone_preservation_metrics": [
+        {
+          "goal_index": 0,
+          "goal_atom": "in(butter_1, bowl_drainer_1_left_region)",
+          "milestone_control_step": 190,
+          "object_id": "butter_1",
+          "native_predicate_false_control_ranges": [],
+          "native_final_value": true,
+          "body_name": "butter_1_main",
+          "milestone_world_xyz": [
+            -0.016443596895059604,
+            0.2880024488320823,
+            0.12077742761947682
+          ],
+          "final_world_xyz": [
+            -0.014785018497233238,
+            0.2842699779015003,
+            0.02470992151751057
+          ],
+          "max_xyz_displacement_after_milestone_m": 0.09618924165809002,
+          "max_xy_displacement_after_milestone_m": 0.013018335414807632,
+          "max_root_z_drop_after_milestone_m": 0.09609936587443302,
+          "max_rotation_from_milestone_deg": 55.60826225504275
+        },
+        {
+          "goal_index": 1,
+          "goal_atom": "in(tomato_sauce_1, bowl_drainer_1_right_region)",
+          "milestone_control_step": 399,
+          "object_id": "tomato_sauce_1",
+          "native_predicate_false_control_ranges": [],
+          "native_final_value": true,
+          "body_name": "tomato_sauce_1_main",
+          "milestone_world_xyz": [
+            -0.0006280733616623206,
+            0.20129909021782885,
+            0.10623159872539624
+          ],
+          "final_world_xyz": [
+            0.002955926745547085,
+            0.1992713525360055,
+            0.04974892267754099
+          ],
+          "max_xyz_displacement_after_milestone_m": 0.05663258311609779,
+          "max_xy_displacement_after_milestone_m": 0.009085449701512475,
+          "max_root_z_drop_after_milestone_m": 0.05648267604785525,
+          "max_rotation_from_milestone_deg": 15.547576476250669
+        }
+      ]
+    },
+    {
+      "episode_idx": 3,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 48,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch25_5ep_20260911/tasks/all1/CTR_103/videos/CTR_103_ep003_ok.mp4",
+      "video_sha256": "4ab3604ac50c664fada232e7bf1f8dd944240e2138df734cdcf1829045c009d8",
+      "trace_npz_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch25_5ep_20260911/tasks/all1/CTR_103/traces/CTR_103_ep003.npz",
+      "trace_npz_sha256": "7237abbbde5119e1046d96081c6021219bdbdd11adb9b269a871712337e1115e",
+      "trace_json_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch25_5ep_20260911/tasks/all1/CTR_103/traces/CTR_103_ep003.json",
+      "trace_json_sha256": "974ff05db8c1e4fa0f4aa5e449af2f6a9de9f50ef7c1411464231e0c97baceeb",
+      "native_success": true,
+      "milestones": [
+        180,
+        378
+      ],
+      "released_supported_milestones": [
+        186,
+        383
+      ],
+      "final_native_values": [
+        true,
+        true
+      ],
+      "final_opposite_native_values": [
+        false,
+        false
+      ],
+      "final_consecutive_supported_steps": [
+        130,
+        5
+      ],
+      "all_final_bddl_predicates_true": true,
+      "reviewed_complete_trace": true,
+      "notes": "Manually reviewed all 48 decoded saved frames, including complete first grasp/carry/release, second grasp/carry/release, and final frame; reviewed full continuous trace and exact drainer contact state changes. Butter is deliberately grasped from the floor, carried to the left compartment and released. Tomato sauce is then deliberately grasped, lifted and carried to the right compartment and released. Native events occur at [180, 378]; exact native bottom-box contact with no gripper contact for five actual controls certifies placements at [186, 383]. Both objects finish supported and ungrasped, opposite compartments false; earlier butter In predicate never falls false after its rise. The support certificate is the pre-existing parent rule and is not a longer-term velocity-stability claim. No unrelated object displacement or drainer motion is visible; numerical unrelated motion is below 1e-12 m.",
+      "final_gripper_qpos": [
+        0.03903148714395552,
+        -0.0391225851758041
+      ],
+      "final_contacts": {
+        "native_base_geom_id": 125,
+        "native_base_geom_name": "bowl_drainer_1_g2",
+        "minimum_base_support_normal_force_n": 1e-06,
+        "gripper_contact_distance_tolerance_m": 1e-07,
+        "support_definition": "positive_normal_force_on_exact_native_bottom_box",
+        "support_is_not_a_velocity_based_stability_certificate": true,
+        "gripper_geom_names": [
+          "gripper0_finger1_collision",
+          "gripper0_finger1_pad_collision",
+          "gripper0_finger2_collision",
+          "gripper0_finger2_pad_collision",
+          "gripper0_hand_collision"
+        ],
+        "objects": [
+          {
+            "object_id": "butter_1",
+            "native_predicates": {
+              "bowl_drainer_1_left_region": true,
+              "bowl_drainer_1_right_region": false
+            },
+            "native_base_contact": true,
+            "any_gripper_contact": false,
+            "world_position_m": [
+              -0.015724471583560194,
+              0.2844493876326963,
+              0.02468690315511874
+            ],
+            "contacts": [
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -3.174784559929288e-05,
+                "normal_force_n": 0.012419814228262264
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -1.4444176066475187e-05,
+                "normal_force_n": 0.012025702810191994
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -3.174784559917024e-05,
+                "normal_force_n": 0.012419814228259468
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -1.444417606635255e-05,
+                "normal_force_n": 0.012025702810180476
+              }
+            ]
+          },
+          {
+            "object_id": "tomato_sauce_1",
+            "native_predicates": {
+              "bowl_drainer_1_left_region": false,
+              "bowl_drainer_1_right_region": true
+            },
+            "native_base_contact": true,
+            "any_gripper_contact": false,
+            "world_position_m": [
+              0.0019079243215779616,
+              0.2010570557365522,
+              0.05556125401944822
+            ],
+            "contacts": [
+              {
+                "other_geom_id": 127,
+                "other_geom_name": "bowl_drainer_1_g4",
+                "native_base": false,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -1.6157253470566735e-07,
+                "normal_force_n": 0.13538601763842367
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -2.5134607920581503e-07,
+                "normal_force_n": 0.16791862412972866
+              }
+            ]
+          }
+        ]
+      },
+      "complete_video_review_sheets": [
+        "LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/analysis/CTR103_ep003/CTR_103_ep003_frames_0000_0039.jpg",
+        "LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/analysis/CTR103_ep003/CTR_103_ep003_frames_0040_0047.jpg"
+      ],
+      "post_milestone_preservation_metrics": [
+        {
+          "goal_index": 0,
+          "goal_atom": "in(butter_1, bowl_drainer_1_left_region)",
+          "milestone_control_step": 180,
+          "object_id": "butter_1",
+          "native_predicate_false_control_ranges": [],
+          "native_final_value": true,
+          "body_name": "butter_1_main",
+          "milestone_world_xyz": [
+            -0.01769254928027702,
+            0.28730717893308055,
+            0.12055950872660037
+          ],
+          "final_world_xyz": [
+            -0.015724471583560194,
+            0.2844493876326963,
+            0.02468690315511874
+          ],
+          "max_xyz_displacement_after_milestone_m": 0.09593581647300962,
+          "max_xy_displacement_after_milestone_m": 0.00826050130805285,
+          "max_root_z_drop_after_milestone_m": 0.09587260557148167,
+          "max_rotation_from_milestone_deg": 55.01064606486661
+        },
+        {
+          "goal_index": 1,
+          "goal_atom": "in(tomato_sauce_1, bowl_drainer_1_right_region)",
+          "milestone_control_step": 378,
+          "object_id": "tomato_sauce_1",
+          "native_predicate_false_control_ranges": [],
+          "native_final_value": true,
+          "body_name": "tomato_sauce_1_main",
+          "milestone_world_xyz": [
+            0.0032342165493818905,
+            0.20100012262444567,
+            0.09081514716369295
+          ],
+          "final_world_xyz": [
+            0.0019079243215779616,
+            0.2010570557365522,
+            0.05556125401944822
+          ],
+          "max_xyz_displacement_after_milestone_m": 0.035278878585899134,
+          "max_xy_displacement_after_milestone_m": 0.005399582392526456,
+          "max_root_z_drop_after_milestone_m": 0.03526681532996685,
+          "max_rotation_from_milestone_deg": 4.738344110193953
+        }
+      ]
+    },
+    {
+      "episode_idx": 4,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 46,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch25_5ep_20260911/tasks/all1/CTR_103/videos/CTR_103_ep004_ok.mp4",
+      "video_sha256": "5762ac95359213cdfc9f016903b2cbf666fba73e667ff3f95cb39d1afad73521",
+      "trace_npz_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch25_5ep_20260911/tasks/all1/CTR_103/traces/CTR_103_ep004.npz",
+      "trace_npz_sha256": "1270d4dd1e11181bb63064957a8728866ba5b73fd4b70e2af486c0f6bc5b194f",
+      "trace_json_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch25_5ep_20260911/tasks/all1/CTR_103/traces/CTR_103_ep004.json",
+      "trace_json_sha256": "5ef18c4faba0b84800652dc9c0dbe25a9e2e6b95bab634ed3b11858198315e34",
+      "native_success": true,
+      "milestones": [
+        170,
+        357
+      ],
+      "released_supported_milestones": [
+        176,
+        368
+      ],
+      "final_native_values": [
+        true,
+        true
+      ],
+      "final_opposite_native_values": [
+        false,
+        false
+      ],
+      "final_consecutive_supported_steps": [
+        197,
+        5
+      ],
+      "all_final_bddl_predicates_true": true,
+      "reviewed_complete_trace": true,
+      "notes": "Manually reviewed all 46 decoded saved frames, including complete first grasp/carry/release, second grasp/carry/release, and final frame; reviewed full continuous trace and exact drainer contact state changes. Butter is deliberately grasped from the floor, carried to the left compartment and released. Tomato sauce is then deliberately grasped, lifted and carried to the right compartment and released. Native events occur at [170, 357]; exact native bottom-box contact with no gripper contact for five actual controls certifies placements at [176, 368]. Both objects finish supported and ungrasped, opposite compartments false; earlier butter In predicate never falls false after its rise. The support certificate is the pre-existing parent rule and is not a longer-term velocity-stability claim. No unrelated object displacement or drainer motion is visible; numerical unrelated motion is below 1e-12 m.",
+      "final_gripper_qpos": [
+        0.02169257951981325,
+        -0.02172820752393424
+      ],
+      "final_contacts": {
+        "native_base_geom_id": 125,
+        "native_base_geom_name": "bowl_drainer_1_g2",
+        "minimum_base_support_normal_force_n": 1e-06,
+        "gripper_contact_distance_tolerance_m": 1e-07,
+        "support_definition": "positive_normal_force_on_exact_native_bottom_box",
+        "support_is_not_a_velocity_based_stability_certificate": true,
+        "gripper_geom_names": [
+          "gripper0_finger1_collision",
+          "gripper0_finger1_pad_collision",
+          "gripper0_finger2_collision",
+          "gripper0_finger2_pad_collision",
+          "gripper0_hand_collision"
+        ],
+        "objects": [
+          {
+            "object_id": "butter_1",
+            "native_predicates": {
+              "bowl_drainer_1_left_region": true,
+              "bowl_drainer_1_right_region": false
+            },
+            "native_base_contact": true,
+            "any_gripper_contact": false,
+            "world_position_m": [
+              -0.014716998311124697,
+              0.29566093415681516,
+              0.024709921519999997
+            ],
+            "contacts": [
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -7.847999999359263e-08,
+                "normal_force_n": 0.01286870365848601
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -7.847999999331827e-08,
+                "normal_force_n": 0.012868703658485995
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -7.847999999359263e-08,
+                "normal_force_n": 0.012868703658486006
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -7.847999999331827e-08,
+                "normal_force_n": 0.012868703658485995
+              }
+            ]
+          },
+          {
+            "object_id": "tomato_sauce_1",
+            "native_predicates": {
+              "bowl_drainer_1_left_region": false,
+              "bowl_drainer_1_right_region": true
+            },
+            "native_base_contact": true,
+            "any_gripper_contact": false,
+            "world_position_m": [
+              -0.015958823389019192,
+              0.19799519860782155,
+              0.04988560413387298
+            ],
+            "contacts": [
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -2.512602925415823e-07,
+                "normal_force_n": 0.12848879181411627
+              },
+              {
+                "other_geom_id": 125,
+                "other_geom_name": "bowl_drainer_1_g2",
+                "native_base": true,
+                "drainer": true,
+                "gripper": false,
+                "distance_m": -2.505620460089446e-07,
+                "normal_force_n": 0.12717778965032409
+              }
+            ]
+          }
+        ]
+      },
+      "complete_video_review_sheets": [
+        "LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/analysis/CTR103_ep004/CTR_103_ep004_frames_0000_0039.jpg",
+        "LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/analysis/CTR103_ep004/CTR_103_ep004_frames_0040_0045.jpg"
+      ],
+      "post_milestone_preservation_metrics": [
+        {
+          "goal_index": 0,
+          "goal_atom": "in(butter_1, bowl_drainer_1_left_region)",
+          "milestone_control_step": 170,
+          "object_id": "butter_1",
+          "native_predicate_false_control_ranges": [],
+          "native_final_value": true,
+          "body_name": "butter_1_main",
+          "milestone_world_xyz": [
+            -0.017099038835568674,
+            0.29108541735027366,
+            0.13026623402179838
+          ],
+          "final_world_xyz": [
+            -0.014716998311124697,
+            0.29566093415681516,
+            0.024709921519999997
+          ],
+          "max_xyz_displacement_after_milestone_m": 0.10571376487431319,
+          "max_xy_displacement_after_milestone_m": 0.007382279136992661,
+          "max_root_z_drop_after_milestone_m": 0.10558817227675653,
+          "max_rotation_from_milestone_deg": 18.423224612731453
+        },
+        {
+          "goal_index": 1,
+          "goal_atom": "in(tomato_sauce_1, bowl_drainer_1_right_region)",
+          "milestone_control_step": 357,
+          "object_id": "tomato_sauce_1",
+          "native_predicate_false_control_ranges": [],
+          "native_final_value": true,
+          "body_name": "tomato_sauce_1_main",
+          "milestone_world_xyz": [
+            -0.010504078365720398,
+            0.20454205786420826,
+            0.11916559555346319
+          ],
+          "final_world_xyz": [
+            -0.015958823389019192,
+            0.19799519860782155,
+            0.04988560413387298
+          ],
+          "max_xyz_displacement_after_milestone_m": 0.0698134047341611,
+          "max_xy_displacement_after_milestone_m": 0.009296993567450852,
+          "max_root_z_drop_after_milestone_m": 0.06928743692121696,
+          "max_rotation_from_milestone_deg": 19.708303219900486
+        }
+      ]
+    }
+  ],
+  "episode_outcomes": [
+    {
+      "episode_idx": 0,
+      "parent_same_index_native_success": false,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 1,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 2,
+      "parent_same_index_native_success": false,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 3,
+      "parent_same_index_native_success": false,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 4,
+      "parent_same_index_native_success": false,
+      "nominal_success": true,
+      "manually_valid_success": true
+    }
+  ],
+  "rain_settings": {
+    "checkpoint": "RAIN/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "progress_checkpoint": "RAIN/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "replan_steps": 8,
+    "num_inference_steps": 4,
+    "feas_threshold": 0.7,
+    "consecutive_stop": 2,
+    "seed": 7,
+    "clip_model_name": "openai/clip-vit-large-patch14"
+  },
+  "source_bundle_sha256": {
+    "task.bddl": "e05fb28d019f154a718609256c20cb5ea1758e07fc27eb7ae1cea1e924226344",
+    "task.pruned_init": "b3bf0f5bf3f7ac0e939a750bce9e7c8838054e5b31a96bc6f01e2b30ba1b0d77",
+    "task_meta.yaml": "2220846679a0a4900988a338c54127720c23fd7693e5c29b6dbf9f8bc326c126",
+    "eval_rules.yaml": "2bb18b75f67505a13404a6cb74a6fcdf09eda5ecdbd5cf13a83cf73b95aa98b0",
+    "registry_entry.yaml": "0e306a754a19e79f5101d045bc74b2363e5d28c9bca5eeb3d070dc2e59f156ec",
+    "mask_bindings.yaml": "f2058ff27fc1ed34a3761cc7e87cf7d230b7373fedda639c838e8e8edbd2bd54",
+    "action_plan.yaml": "0ef0354aee4176e569809793ab63bf6639f6d5e1beff0fb22b7c3aa8f799ebeb",
+    "FIXTURE_REPLAY.json": "f765db1a2d9f755a661206274172f68c08a25fd9c51ccd72061c9cbb194d4685",
+    "INIT_VALIDATION.json": "5dc30363e54da05c0e25c22d9fa2373c1aea9c0702f9ef5247088c46ff036bfb",
+    "REPAIR_PROVENANCE.json": "0026a9f3c44992c402a2328651d419e94833198abc4effb302aa05dabf413783"
+  },
+  "comparison_design_note": "The historical run is a reference; this comparison alone does not isolate the effect of the repair.",
+  "parent_failure_video_sha256": "bce566b8264c48b669adf6a6bfa0943249f764736c0d9ea80ad6ee94b5ad158f"
+}

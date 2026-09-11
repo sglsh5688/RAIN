@@ -2,6 +2,8 @@
   "task_id": "CTR_067",
   "instruction": "Turn on the stove, and then open the middle drawer of the cabinet.",
   "status": "pending_user_review_not_selected",
+  "selected60": false,
+  "selected_page": "",
   "variant_of": "COMP2_003",
   "classification": "repair_variant_not_new_semantic_family",
   "episodes": 5,

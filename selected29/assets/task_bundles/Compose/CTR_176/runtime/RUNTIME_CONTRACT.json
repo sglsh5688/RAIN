@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "task_id": "CTR_176",
+  "description": "Alphabet soup, butter, then cream cheese into the basket.",
+  "source_entrypoint": "run_compose_traj_repair_basket_supported_entry.py",
+  "terminal_mode": "ordered_native_and_released_supported_settled_v1",
+  "terminal_requirement": "All requested ordered native In events and final BDDL conjunction, plus all target objects free of robot contact, connected by positive support paths to the exact basket base and original table, with linear speed at most 0.02 m/s and angular speed at most 0.5 rad/s, simultaneously for five consecutive actual controls. Supported stacking is allowed. Continue the same final release policy within the unchanged cap; no forced actions or passive simulator continuation.",
+  "max_policy_controls": 1200,
+  "final_tc_gate": false,
+  "strict_order": true,
+  "all_final_bddl_goals_required": true,
+  "environment_ignore_done": true,
+  "fixture_replay_file": "../FIXTURE_REPLAY.json",
+  "frozen_states_file": "../task.pruned_init",
+  "rules_file": "../eval_rules.yaml",
+  "action_plan_file": "../action_plan.yaml",
+  "mask_bindings_file": "../mask_bindings.yaml",
+  "selected_result": {
+    "successes": 5,
+    "episodes": 5,
+    "certified_episode_indices": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "results_sha256": "b39fc54dba61bb9ddac5a0c11fd2a1b18fe23471ed054d2573060bae30407625",
+    "recorded_gpu": "5",
+    "effective_episode_seeds": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "entrypoint_and_recorded_support_checks": {
+    "run_compose_traj_repair_basket_supported_entry.py": {
+      "expected": "00900b93d3c310215507831423062445f8c13088d1c3298915f2a884ba1215f3",
+      "actual": "00900b93d3c310215507831423062445f8c13088d1c3298915f2a884ba1215f3",
+      "matches": true
+    },
+    "basket_released_support_observer.py": {
+      "expected": "599995e94641d631c3e8e8ed16a1ae5d0214e97c58e2b71d124a3d587e6d8329",
+      "actual": "599995e94641d631c3e8e8ed16a1ae5d0214e97c58e2b71d124a3d587e6d8329",
+      "matches": true
+    },
+    "basket_supported_runtime.py": {
+      "expected": "9aff4bb0e51b683c53287070e06b469e0ce26a4d93e4ecf256ddbddcaec7e73e",
+      "actual": "9aff4bb0e51b683c53287070e06b469e0ce26a4d93e4ecf256ddbddcaec7e73e",
+      "matches": true
+    }
+  },
+  "closure": {
+    "search_roots": [
+      "LIBERO_EX_ICRA27",
+      "VLM_evaluation"
+    ],
+    "method": "Recursive static Python import closure of the saved evaluator entrypoint; local modules only; includes deferred imports when resolvable under these roots.",
+    "files_count": 14,
+    "files": [
+      {
+        "source": "LIBERO_EX_ICRA27/basket_released_support_observer.py",
+        "published_file": "basket_released_support_observer.py",
+        "source_sha256": "599995e94641d631c3e8e8ed16a1ae5d0214e97c58e2b71d124a3d587e6d8329",
+        "published_sha256": "599995e94641d631c3e8e8ed16a1ae5d0214e97c58e2b71d124a3d587e6d8329",
+        "bytes": 17156,
+        "source_unchanged": true,
+        "local_import_dependencies": [],
+        "external_import_roots": [
+          "__future__",
+          "dataclasses",
+          "hashlib",
+          "libero",
+          "math",
+          "mujoco",
+          "numpy",
+          "pathlib",
+          "re",
+          "xml"
+        ]
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/basket_supported_runtime.py",
+        "published_file": "basket_supported_runtime.py",
+        "source_sha256": "9aff4bb0e51b683c53287070e06b469e0ce26a4d93e4ecf256ddbddcaec7e73e",
+        "published_sha256": "9aff4bb0e51b683c53287070e06b469e0ce26a4d93e4ecf256ddbddcaec7e73e",
+        "bytes": 3815,
+        "source_unchanged": true,
+        "local_import_dependencies": [
+          "basket_released_support_observer.py"
+        ],
+        "external_import_roots": []
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/build_libero_analogy.py",
+        "published_file": "build_libero_analogy.py",
+        "source_sha256": "03cb9d814a1b27e78cbee149437d8d06224794473b52a565edeb47f3167d77c5",
+        "published_sha256": "a882ccf7fe0f0d1c1c90f11d4ee842b045b5aa9977660541331d3f1fe9ee292b",
+        "bytes": 65079,
+        "source_unchanged": true,
+        "local_import_dependencies": [],
+        "external_import_roots": [
+          "PIL",
+          "__future__",
+          "argparse",
+          "csv",
+          "cv2",
+          "dataclasses",
+          "generate_libero10_generalization_scaffolds",
+          "hashlib",
+          "mujoco",
+          "numpy",
+          "os",
+          "pathlib",
+          "pickle",
+          "re",
+          "robosuite",
+          "shutil",
+          "sys",
+          "tempfile",
+          "textwrap",
+          "typing",
+          "yaml",
+          "zipfile"
+        ]
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/build_libero_analogy_expanded.py",
+        "published_file": "build_libero_analogy_expanded.py",
+        "source_sha256": "06df7cac812f8ff3e63421886b25c56b068b01c6420376fc1a62f340e566e9c3",
+        "published_sha256": "06df7cac812f8ff3e63421886b25c56b068b01c6420376fc1a62f340e566e9c3",
+        "bytes": 136062,
+        "source_unchanged": true,
+        "local_import_dependencies": [
+          "build_libero_analogy.py"
+        ],
+        "external_import_roots": [
+          "PIL",
+          "__future__",
+          "argparse",
+          "collections",
+          "concurrent",
+          "hashlib",
+          "json",
+          "numpy",
+          "os",
+          "pathlib",
+          "re",
+          "shutil",
+          "subprocess",
+          "sys",
+          "tempfile",
+          "threading",
+          "typing",
+          "yaml"
+        ]
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/composition_batch_order.py",
+        "published_file": "composition_batch_order.py",
+        "source_sha256": "7fa777a78765369ca5a2c76cbfaa39ebba6c7d8e04f33589178e8b65442d1a5f",
+        "published_sha256": "7fa777a78765369ca5a2c76cbfaa39ebba6c7d8e04f33589178e8b65442d1a5f",
+        "bytes": 3612,
+        "source_unchanged": true,
+        "local_import_dependencies": [],
+        "external_import_roots": [
+          "re"
+        ]
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/cream_cheese_bowl_layout.py",
+        "published_file": "cream_cheese_bowl_layout.py",
+        "source_sha256": "53212929662bc8b74611068bf05e9dad0a2026dd0da7aafedd0203fe712f0233",
+        "published_sha256": "53212929662bc8b74611068bf05e9dad0a2026dd0da7aafedd0203fe712f0233",
+        "bytes": 1211,
+        "source_unchanged": true,
+        "local_import_dependencies": [],
+        "external_import_roots": [
+          "hashlib",
+          "numpy"
+        ]
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/diverse_adapt_mask_geometry.py",
+        "published_file": "diverse_adapt_mask_geometry.py",
+        "source_sha256": "44fc3a9568f422467e1d813de53bce45d54ff15d1f0a5818fe2de2d128ae2cc4",
+        "published_sha256": "44fc3a9568f422467e1d813de53bce45d54ff15d1f0a5818fe2de2d128ae2cc4",
+        "bytes": 5202,
+        "source_unchanged": true,
+        "local_import_dependencies": [
+          "build_libero_analogy_expanded.py"
+        ],
+        "external_import_roots": [
+          "__future__",
+          "cv2",
+          "numpy",
+          "pathlib",
+          "re"
+        ]
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/run_analogy_evaluator_entry.py",
+        "published_file": "run_analogy_evaluator_entry.py",
+        "source_sha256": "b824f6d9446fcc17934d2f0528d53d9a23f531b879a10999af1f22e841df0226",
+        "published_sha256": "b824f6d9446fcc17934d2f0528d53d9a23f531b879a10999af1f22e841df0226",
+        "bytes": 2125,
+        "source_unchanged": true,
+        "local_import_dependencies": [],
+        "external_import_roots": [
+          "__future__",
+          "final_libero_ex_eval"
+        ]
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/run_compose_traj_repair_basket_supported_entry.py",
+        "published_file": "run_compose_traj_repair_basket_supported_entry.py",
+        "source_sha256": "00900b93d3c310215507831423062445f8c13088d1c3298915f2a884ba1215f3",
+        "published_sha256": "00900b93d3c310215507831423062445f8c13088d1c3298915f2a884ba1215f3",
+        "bytes": 1857,
+        "source_unchanged": true,
+        "local_import_dependencies": [
+          "basket_released_support_observer.py",
+          "basket_supported_runtime.py",
+          "run_compose_traj_repair_dual_stove_entry.py",
+          "run_diverse_adapt_evaluator_entry.py"
+        ],
+        "external_import_roots": [
+          "pathlib",
+          "sys",
+          "yaml"
+        ]
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/run_compose_traj_repair_dual_stove_entry.py",
+        "published_file": "run_compose_traj_repair_dual_stove_entry.py",
+        "source_sha256": "8c2b94b410859ffc9578b3b96e5d0748f2dff1f09422cb207166cc4c6ccd7111",
+        "published_sha256": "8c2b94b410859ffc9578b3b96e5d0748f2dff1f09422cb207166cc4c6ccd7111",
+        "bytes": 663,
+        "source_unchanged": true,
+        "local_import_dependencies": [
+          "run_compose_traj_repair_evaluator_entry.py"
+        ],
+        "external_import_roots": []
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/run_compose_traj_repair_evaluator_entry.py",
+        "published_file": "run_compose_traj_repair_evaluator_entry.py",
+        "source_sha256": "ef26e992a1f8586bdeff59f4b9cf21bca078cc66c3a863728409fa7d71c3f529",
+        "published_sha256": "ef26e992a1f8586bdeff59f4b9cf21bca078cc66c3a863728409fa7d71c3f529",
+        "bytes": 11870,
+        "source_unchanged": true,
+        "local_import_dependencies": [
+          "composition_batch_order.py",
+          "cream_cheese_bowl_layout.py",
+          "run_diverse_compose_evaluator_entry.py"
+        ],
+        "external_import_roots": [
+          "__future__",
+          "hashlib",
+          "json",
+          "numpy",
+          "os",
+          "pathlib",
+          "sys",
+          "yaml"
+        ]
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/run_composition_revision_evaluator_entry.py",
+        "published_file": "run_composition_revision_evaluator_entry.py",
+        "source_sha256": "4181c7d94bc6cd8216553f441796052072fd668dda8e4e0cd33bd344947a6454",
+        "published_sha256": "4181c7d94bc6cd8216553f441796052072fd668dda8e4e0cd33bd344947a6454",
+        "bytes": 7320,
+        "source_unchanged": true,
+        "local_import_dependencies": [
+          "composition_batch_order.py",
+          "cream_cheese_bowl_layout.py",
+          "run_diverse_adapt_evaluator_entry.py"
+        ],
+        "external_import_roots": [
+          "copy",
+          "hashlib",
+          "json",
+          "pathlib"
+        ]
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/run_diverse_adapt_evaluator_entry.py",
+        "published_file": "run_diverse_adapt_evaluator_entry.py",
+        "source_sha256": "1abcb3be6a3b6949964a2b604e0db9955c663440208897d213c7428307278afd",
+        "published_sha256": "1abcb3be6a3b6949964a2b604e0db9955c663440208897d213c7428307278afd",
+        "bytes": 4463,
+        "source_unchanged": true,
+        "local_import_dependencies": [
+          "diverse_adapt_mask_geometry.py",
+          "run_analogy_evaluator_entry.py"
+        ],
+        "external_import_roots": [
+          "__future__",
+          "dataclasses",
+          "final_libero_ex_eval",
+          "numpy",
+          "pathlib"
+        ]
+      },
+      {
+        "source": "LIBERO_EX_ICRA27/run_diverse_compose_evaluator_entry.py",
+        "published_file": "run_diverse_compose_evaluator_entry.py",
+        "source_sha256": "5a56f5f8c523d7a02d496143b8cc7ef10bd0580fa9fd5ea9b9063b756d9fc995",
+        "published_sha256": "5a56f5f8c523d7a02d496143b8cc7ef10bd0580fa9fd5ea9b9063b756d9fc995",
+        "bytes": 890,
+        "source_unchanged": true,
+        "local_import_dependencies": [
+          "run_composition_revision_evaluator_entry.py"
+        ],
+        "external_import_roots": []
+      }
+    ],
+    "unbundled_import_roots": [
+      "PIL",
+      "__future__",
+      "argparse",
+      "collections",
+      "concurrent",
+      "copy",
+      "csv",
+      "cv2",
+      "dataclasses",
+      "final_libero_ex_eval",
+      "generate_libero10_generalization_scaffolds",
+      "hashlib",
+      "json",
+      "libero",
+      "math",
+      "mujoco",
+      "numpy",
+      "os",
+      "pathlib",
+      "pickle",
+      "re",
+      "robosuite",
+      "shutil",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "textwrap",
+      "threading",
+      "typing",
+      "xml",
+      "yaml",
+      "zipfile"
+    ]
+  },
+  "external_dependency_boundary": {
+    "required": [
+      "Existing RAIN final_libero_ex_eval package and its policy/model dependencies",
+      "LIBERO simulator, asset tree, predicates and robosuite/MuJoCo integration matching the evaluated environment",
+      "PyTorch, NumPy, PyYAML, Pillow and OpenCV as used by the original evaluator",
+      "The unchanged RAIN action/progress checkpoints and original source episode/action-prior data"
+    ],
+    "not_included": [
+      "Model checkpoint weights",
+      "Training/source episode dataset",
+      "Simulator asset tree",
+      "Third-party Python packages",
+      "RAIN final_libero_ex_eval package",
+      "Historical scene-authoring scaffold outside the runtime source roots"
+    ],
+    "not_runtime_dependency_note": "generate_libero10_generalization_scaffolds is imported only by the deferred legacy scene-authoring helper import_scaffold_helpers in build_libero_analogy.py; the saved evaluator uses the included geometry parsing helpers and does not call scene authoring.",
+    "current_external_rain_impl_fingerprints": {
+      "RAIN/final_libero_ex_eval/impl/__init__.py": "a662441520e6300285070f6ee65b5f6f28a994340499137fd736450a7b6a6a3f",
+      "RAIN/final_libero_ex_eval/impl/benchmark_support.py": "79c85581f0b37d26d9ca44b8bf796576e8534de55f02fb296698a668db9d019a",
+      "RAIN/final_libero_ex_eval/impl/clip_utils.py": "5778c71e0c286a456749b2ab30d56ab3297c2f30d735f4d2639cfee3c88f5877",
+      "RAIN/final_libero_ex_eval/impl/conditions.py": "7fc6abd97438c493d1ada1c0cdba1576226bbdd8612a8403afc7966f9791cc38",
+      "RAIN/final_libero_ex_eval/impl/custom_eval.py": "6f967d491ac80b31099acd3f61e0f730b0d92d15f878946fe7f41743a3079f73",
+      "RAIN/final_libero_ex_eval/impl/episode_io.py": "8ee5fe7f57d8c7fa42f367d03759d29166b9b051a3acc29a86eec1fe05088afd",
+      "RAIN/final_libero_ex_eval/impl/evaluator.py": "31aaf145909fe4c16250b1f358d43636b9fcfee7116e7b8e730ec4fd7fe71ff3",
+      "RAIN/final_libero_ex_eval/impl/online_rollout.py": "194cce0b244c030e939964014555f4819f80d6b312e157ec91ae04696300ad29",
+      "RAIN/final_libero_ex_eval/impl/reporting.py": "797ec7a0d8eb8918dc41927ec548c61e0fd14566cf624cc490df371379f5d03b",
+      "RAIN/final_libero_ex_eval/impl/rollout.py": "9536ce71b136faf089874b4bba8d74509780925a82a24b9f907c97b791b72879",
+      "RAIN/final_libero_ex_eval/impl/runtime.py": "ab466f75cd3793cfe068be170217f97f19033a02b27869fbfa8222f57dffdb30",
+      "RAIN/final_libero_ex_eval/impl/text_features.py": "04a038114aaffb7f08cb03609d806225196cf03834508b72f773ea6ff52904a2"
+    },
+    "external_fingerprints_are_current_readonly_snapshot_not_claimed_historical_manifest": true
+  },
+  "public_path_aliases": "copy_public_file followed by the existing selected-gallery sanitized_public_text(..., .py) convention; /path/to placeholders require configuration before execution.",
+  "no_policy_run_performed": true,
+  "not_standalone": true,
+  "generic_bddl_only_evaluation_is_equivalent": false,
+  "support_hold_control_steps": 5,
+  "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+  "settle_linear_speed_max_m_s": 0.02,
+  "settle_angular_speed_max_rad_s": 0.5
+}

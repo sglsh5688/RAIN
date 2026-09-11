@@ -1,0 +1,23 @@
+{
+  "task_id": "CTR_103",
+  "parent_task_id": "BDRCOMP_013",
+  "parent_bundle": "LiberoComposeTrajRepair20260911/drainer_parent_snapshots/BDRCOMP_013",
+  "pose_changes": {
+    "tomato_sauce_1": {
+      "delta_xyz": [
+        -0.045,
+        0.07,
+        0
+      ]
+    }
+  },
+  "evidence": "Parent butter first placement5/5; ep000 second pickup closes at[+.006,-.026,.018] vs tomato[+.050,-.100,.038], then empty hand goes to drainer and stalls. Video reviewed at every fourth recorded frame. Shift second can toward empty closure; all5newstates static screened and5ep freshly rolled out, strict release/support gate retained.",
+  "classification": "repair_variant_not_new_semantic_family",
+  "parent_files_sha256": {
+    "task.bddl": "e05fb28d019f154a718609256c20cb5ea1758e07fc27eb7ae1cea1e924226344",
+    "task.pruned_init": "c6ae405e25c06bfd8bd4eb3aaed6ccbe5c0900b017932c0955a9c6b33ed3c1fa",
+    "FIXTURE_REPLAY.json": "6ba6b59c3b5366d5bc235743349c8a1966f5fe845c47ddd8af3b5773ea72e66c",
+    "action_plan.yaml": "3bae52fe98866fd4f3cd0bfe9d15be70ccc36fa4135231da237270bb9b96cec3"
+  },
+  "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+}

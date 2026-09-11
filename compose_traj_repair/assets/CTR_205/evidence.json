@@ -2,6 +2,8 @@
   "task_id": "CTR_205",
   "instruction": "Put the cream cheese in the basket, then close the microwave door.",
   "status": "pending_user_review_not_selected",
+  "selected60": false,
+  "selected_page": "",
   "variant_of": "CTR_196",
   "classification": "repair_variant_not_new_semantic_family",
   "episodes": 5,

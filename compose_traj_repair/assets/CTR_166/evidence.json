@@ -2,6 +2,8 @@
   "task_id": "CTR_166",
   "instruction": "Put the tomato sauce in the basket, then put the butter in the basket, and finally put the chocolate pudding in the basket.",
   "status": "pending_user_review_not_selected",
+  "selected60": false,
+  "selected_page": "",
   "variant_of": "CTR_088",
   "classification": "repair_variant_not_new_semantic_family",
   "episodes": 5,

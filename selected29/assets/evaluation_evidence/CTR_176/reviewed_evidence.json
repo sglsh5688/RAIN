@@ -1,0 +1,1074 @@
+{
+  "task_id": "CTR_176",
+  "instruction": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+  "status": "pending_user_review_not_selected",
+  "variant_of": "CTR_163",
+  "classification": "repair_variant_not_new_semantic_family",
+  "episodes": 5,
+  "nominal_successes": 5,
+  "manually_valid_successes": 5,
+  "nominal_success_episode_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "certified_episode_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "ordered_native_milestones": {
+    "0": [
+      168,
+      292,
+      482
+    ],
+    "1": [
+      158,
+      291,
+      481
+    ],
+    "2": [
+      161,
+      296,
+      505
+    ],
+    "3": [
+      155,
+      313,
+      514
+    ],
+    "4": [
+      149,
+      466,
+      617
+    ]
+  },
+  "final_success_requires_all_bddl_goals": true,
+  "compose_final_tc_gate": false,
+  "results_sha256": "b39fc54dba61bb9ddac5a0c11fd2a1b18fe23471ed054d2573060bae30407625",
+  "parent_results_sha256": "e32776c876b992eae488040db7d7e9368f4916ec3493a178833f2431bbb162b3",
+  "parent_nominal_successes": 5,
+  "parent_episodes": 5,
+  "parent_instruction": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+  "parent_state_verification": {
+    "method": "historical_per_episode_state_hash"
+  },
+  "repair": {
+    "task_id": "CTR_176",
+    "parent_task_id": "CTR_163",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch60/tasks/ctr_163",
+    "pose_changes": {},
+    "terminal_contract": {
+      "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+      "support_hold_control_steps": 5,
+      "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+      "settle_linear_speed_max_m_s": 0.02,
+      "settle_angular_speed_max_rad_s": 0.5
+    },
+    "evidence": "Future-only supported-placement followup of CTR_163, a soup -> butter -> cheese basket source-pose repair of historical COMPOSE_152. The parent completes all three ordered native In events in all five fresh episodes, but zero-added-step terminal-state reconstruction finds the last cheese airborne in some episodes and only just contacting the earlier butter in others. Native 5/5 remains frozen and is not a certified settled-placement rate. This new candidate keeps every physical pose, action plan, native goal, seed and original1200-control cap unchanged and explicitly predeclares the established released-supported-settled5-control terminal contract. The existing RAIN final-release policy continues inside the same cap; no final TC gate, forced action, passive continuation or extra budget. This is a protocol followup, not a new scene or semantic task family."
+  },
+  "frozen_repair_provenance": {
+    "task_id": "CTR_176",
+    "parent_task_id": "CTR_163",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch60/tasks/ctr_163",
+    "pose_changes": {},
+    "terminal_contract": {
+      "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+      "support_hold_control_steps": 5,
+      "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+      "settle_linear_speed_max_m_s": 0.02,
+      "settle_angular_speed_max_rad_s": 0.5
+    },
+    "evidence": "Future-only supported-placement followup of CTR_163, a soup -> butter -> cheese basket source-pose repair of historical COMPOSE_152. The parent completes all three ordered native In events in all five fresh episodes, but zero-added-step terminal-state reconstruction finds the last cheese airborne in some episodes and only just contacting the earlier butter in others. Native 5/5 remains frozen and is not a certified settled-placement rate. This new candidate keeps every physical pose, action plan, native goal, seed and original1200-control cap unchanged and explicitly predeclares the established released-supported-settled5-control terminal contract. The existing RAIN final-release policy continues inside the same cap; no final TC gate, forced action, passive continuation or extra budget. This is a protocol followup, not a new scene or semantic task family.",
+    "classification": "repair_variant_not_new_semantic_family",
+    "parent_files_sha256": {
+      "task.bddl": "1a106f705263d8fe185ebc34ea6bea6e59f8cc00bfb69472536d9c353fcc5b8e",
+      "task.pruned_init": "187eb53427ffade26717f0a9d1fc3c90df1e1ab574a892e7942d77d4e4d4f6a1",
+      "FIXTURE_REPLAY.json": "2b06d01924b020bcc5150b460f7b559283071a37050dd9ac09d84f19eff1ecf8",
+      "action_plan.yaml": "2af179b3c8301b32a811f43289bd82cbe2474a378cfd3b36e5dba165873d12cb"
+    },
+    "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+  },
+  "original40_skill_lineage": [
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_01",
+      "instruction": "Pick the alphabet soup and place it in the basket",
+      "transfer": "Directly trained object grasp and basket placement, chained in the shared repaired scene."
+    },
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_butter_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_07",
+      "instruction": "Pick the butter and place it in the basket",
+      "transfer": "Directly trained object grasp and basket placement, chained in the shared repaired scene."
+    },
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_02",
+      "instruction": "Pick the cream cheese and place it in the basket",
+      "transfer": "Directly trained object grasp and basket placement, chained in the shared repaired scene."
+    }
+  ],
+  "manual_review_notes": "Soup -> butter -> cream cheese into the basket:5/5 fully reviewed released/supported/settled successes. The underlying scene repair CTR_163 moves cheese12.5cm in negativeX and14.5cm in positiveY toward historical COMPOSE_152 failed closing trajectories; the original COMPOSE_152 was0/5. This CTR_176 followup retains CTR_163 geometry and seeds unchanged and applies the already declared stricter physical terminal protocol. ParentCTR_163 native5/5 is preserved; it terminates earlier at the last native In event and is not a settled-placement5/5 certificate. Across all five episodes every saved policy action and state matches the parent bitwise through its cutoff, then the same release policy runs6-16 more controls inside the unchanged1200 cap. This is one existing three-food composition and a protocol followup, not an additional new scene or proof of population-level100% reliability.",
+  "episode_reviews": [
+    {
+      "episode_idx": 0,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 61,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch67_5ep_20260911/tasks/all1/CTR_176/videos/CTR_176_ep000_ok.mp4",
+      "video_sha256": "5cf7503430365828c056e06f096f85530d431a4af611ccc1dfab20fd227189b8",
+      "trace_npz_sha256": "8bb476cacc29ffe733e02153a185855efd9f8944e61f5fa0c7533fe23727b65c",
+      "milestones": [
+        168,
+        292,
+        482
+      ],
+      "initial_native_goals": [
+        false,
+        false,
+        false
+      ],
+      "final_native_goals": [
+        true,
+        true,
+        true
+      ],
+      "supported_settled_control_range": [
+        485,
+        489
+      ],
+      "final_transport_preservation": [
+        {
+          "object_id": "alphabet_soup_1",
+          "from_control": 436,
+          "max_xyz_displacement_m": 9.004130553744531e-05,
+          "max_rotation_deg": 0.09975395639120334
+        },
+        {
+          "object_id": "butter_1",
+          "from_control": 436,
+          "max_xyz_displacement_m": 0.0003192403002364262,
+          "max_rotation_deg": 0.1628225266506835
+        }
+      ],
+      "earlier_supported_pose_metrics": {
+        "episode_idx": 0,
+        "preservation_from_first_supported_settled": [
+          {
+            "object_id": "alphabet_soup_1",
+            "stage_start_control": 163,
+            "first_supported_settled_control": 179,
+            "max_xyz_displacement_m": 5.9961562692323526e-05,
+            "max_rotation_deg": 0.09126231832987701,
+            "later_robot_contact_ranges": [
+              [
+                163,
+                164
+              ]
+            ]
+          },
+          {
+            "object_id": "butter_1",
+            "stage_start_control": 308,
+            "first_supported_settled_control": 308,
+            "max_xyz_displacement_m": 0.000319235480640258,
+            "max_rotation_deg": 0.16282256747046542,
+            "later_robot_contact_ranges": []
+          }
+        ]
+      },
+      "parent_prefix_comparison": {
+        "episode_idx": 0,
+        "parent_total_steps": 482,
+        "fresh_total_steps": 489,
+        "parent_native_success": true,
+        "fresh_supported_success": true,
+        "parent_initial_state_sha256": "72d4fdc3a000fa9f4b8039ffca452be79939d068d0012490627c2498a3a8611b",
+        "fresh_initial_state_sha256": "72d4fdc3a000fa9f4b8039ffca452be79939d068d0012490627c2498a3a8611b",
+        "parent_trace_sha256": "b385309cd2c27319f3b3daf9b42d4ac9a4a95d152136bc56a76599de6bcbaea1",
+        "fresh_trace_sha256": "8bb476cacc29ffe733e02153a185855efd9f8944e61f5fa0c7533fe23727b65c",
+        "fields": {
+          "actions": {
+            "compared_rows": 492,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "sim_state": {
+            "compared_rows": 493,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "body_pos": {
+            "compared_rows": 493,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "body_quat": {
+            "compared_rows": 493,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "eef_pos": {
+            "compared_rows": 493,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "eef_rotation": {
+            "compared_rows": 493,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "gripper_qpos": {
+            "compared_rows": 493,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "native_goals": {
+            "compared_rows": 493,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "ctrl": {
+            "compared_rows": 493,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "qacc_warmstart": {
+            "compared_rows": 493,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "subtask_indices": {
+            "compared_rows": 492,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "control_steps": {
+            "compared_rows": 492,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          }
+        },
+        "through_parent_cutoff": true,
+        "all_compared_fields_exact": true,
+        "body_names_identical": true
+      },
+      "notes": "Reviewed all61 saved video frames and complete489-control trace. Each requested object is deliberately grasped, carried to the basket and released in soup -> butter -> cheese order. All final native and BDDL goals hold, all targets are robot-free and have positive support paths to the exact basket base and original table, and speed limits hold for the final five real controls485-489. Some objects rest on earlier requested objects; this is supported stacking inside the basket. Final cheese transport changes earlier soup/butter by at most1.14mm and5.32deg across all five episodes. The earlier soup and butter remain supported inside the basket with only small settling/stacking motion during the next manipulation. The saved action/state/native/EEF/gripper/controller traces are bitwise identical to the corresponding frozen parent through its native cutoff; this stricter-protocol followup continues the same policy within the original cap, without forced actions, passive simulation or finalTC gate."
+    },
+    {
+      "episode_idx": 1,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 61,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch67_5ep_20260911/tasks/all1/CTR_176/videos/CTR_176_ep001_ok.mp4",
+      "video_sha256": "2406263f76676c51a62906669e27548f8782a15dcbe134dbfebb3adfdab3a830",
+      "trace_npz_sha256": "9b6eedc8aa47f4aa768c5551302c7b4ab6ea0d12d974575d5dae10d2be929b58",
+      "milestones": [
+        158,
+        291,
+        481
+      ],
+      "initial_native_goals": [
+        false,
+        false,
+        false
+      ],
+      "final_native_goals": [
+        true,
+        true,
+        true
+      ],
+      "supported_settled_control_range": [
+        483,
+        487
+      ],
+      "final_transport_preservation": [
+        {
+          "object_id": "alphabet_soup_1",
+          "from_control": 435,
+          "max_xyz_displacement_m": 0.0001666608388787886,
+          "max_rotation_deg": 0.2836722760141398
+        },
+        {
+          "object_id": "butter_1",
+          "from_control": 435,
+          "max_xyz_displacement_m": 0.00037733906340750584,
+          "max_rotation_deg": 0.6057767145399977
+        }
+      ],
+      "earlier_supported_pose_metrics": {
+        "episode_idx": 1,
+        "preservation_from_first_supported_settled": [
+          {
+            "object_id": "alphabet_soup_1",
+            "stage_start_control": 170,
+            "first_supported_settled_control": 170,
+            "max_xyz_displacement_m": 0.00018321642722731314,
+            "max_rotation_deg": 0.3171118758367516,
+            "later_robot_contact_ranges": []
+          },
+          {
+            "object_id": "butter_1",
+            "stage_start_control": 307,
+            "first_supported_settled_control": 307,
+            "max_xyz_displacement_m": 0.0007137680776350194,
+            "max_rotation_deg": 2.903962159450465,
+            "later_robot_contact_ranges": []
+          }
+        ]
+      },
+      "parent_prefix_comparison": {
+        "episode_idx": 1,
+        "parent_total_steps": 481,
+        "fresh_total_steps": 487,
+        "parent_native_success": true,
+        "fresh_supported_success": true,
+        "parent_initial_state_sha256": "96fc9333a28d47fc1bd2581006c2edb5aeb92d0e149c2363948075f125808c33",
+        "fresh_initial_state_sha256": "96fc9333a28d47fc1bd2581006c2edb5aeb92d0e149c2363948075f125808c33",
+        "parent_trace_sha256": "49d1c90a679754b2ed9d6d1d18849d479104c630110928c8b4dae91714c38c16",
+        "fresh_trace_sha256": "9b6eedc8aa47f4aa768c5551302c7b4ab6ea0d12d974575d5dae10d2be929b58",
+        "fields": {
+          "actions": {
+            "compared_rows": 491,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "sim_state": {
+            "compared_rows": 492,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "body_pos": {
+            "compared_rows": 492,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "body_quat": {
+            "compared_rows": 492,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "eef_pos": {
+            "compared_rows": 492,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "eef_rotation": {
+            "compared_rows": 492,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "gripper_qpos": {
+            "compared_rows": 492,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "native_goals": {
+            "compared_rows": 492,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "ctrl": {
+            "compared_rows": 492,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "qacc_warmstart": {
+            "compared_rows": 492,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "subtask_indices": {
+            "compared_rows": 491,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "control_steps": {
+            "compared_rows": 491,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          }
+        },
+        "through_parent_cutoff": true,
+        "all_compared_fields_exact": true,
+        "body_names_identical": true
+      },
+      "notes": "Reviewed all61 saved video frames and complete487-control trace. Each requested object is deliberately grasped, carried to the basket and released in soup -> butter -> cheese order. All final native and BDDL goals hold, all targets are robot-free and have positive support paths to the exact basket base and original table, and speed limits hold for the final five real controls483-487. Some objects rest on earlier requested objects; this is supported stacking inside the basket. Final cheese transport changes earlier soup/butter by at most1.14mm and5.32deg across all five episodes. The earlier soup and butter remain supported inside the basket with only small settling/stacking motion during the next manipulation. The soup pickup displaces an uninstructed orange-juice distractor; the recorded scene disturbance is disclosed, while all requested prior results are preserved. The saved action/state/native/EEF/gripper/controller traces are bitwise identical to the corresponding frozen parent through its native cutoff; this stricter-protocol followup continues the same policy within the original cap, without forced actions, passive simulation or finalTC gate."
+    },
+    {
+      "episode_idx": 2,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 64,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch67_5ep_20260911/tasks/all1/CTR_176/videos/CTR_176_ep002_ok.mp4",
+      "video_sha256": "38dd5ce1a8d601534df7645d94d7ba4c9dbfd8dcf513f096a05c9dae885a16d0",
+      "trace_npz_sha256": "fffd1129bb77f86ed6f3daf8b66c86e7bcb9bb68e04a34af1a22d94b120e1932",
+      "milestones": [
+        161,
+        296,
+        505
+      ],
+      "initial_native_goals": [
+        false,
+        false,
+        false
+      ],
+      "final_native_goals": [
+        true,
+        true,
+        true
+      ],
+      "supported_settled_control_range": [
+        507,
+        511
+      ],
+      "final_transport_preservation": [
+        {
+          "object_id": "alphabet_soup_1",
+          "from_control": 459,
+          "max_xyz_displacement_m": 4.673231948421057e-05,
+          "max_rotation_deg": 0.13627435858925804
+        },
+        {
+          "object_id": "butter_1",
+          "from_control": 459,
+          "max_xyz_displacement_m": 0.0004498630483480726,
+          "max_rotation_deg": 0.6913528285374662
+        }
+      ],
+      "earlier_supported_pose_metrics": {
+        "episode_idx": 2,
+        "preservation_from_first_supported_settled": [
+          {
+            "object_id": "alphabet_soup_1",
+            "stage_start_control": 178,
+            "first_supported_settled_control": 178,
+            "max_xyz_displacement_m": 0.00022140189859671682,
+            "max_rotation_deg": 0.3130729625091227,
+            "later_robot_contact_ranges": []
+          },
+          {
+            "object_id": "butter_1",
+            "stage_start_control": 307,
+            "first_supported_settled_control": 324,
+            "max_xyz_displacement_m": 0.00798059421561697,
+            "max_rotation_deg": 53.11877630324291,
+            "later_robot_contact_ranges": []
+          }
+        ]
+      },
+      "parent_prefix_comparison": {
+        "episode_idx": 2,
+        "parent_total_steps": 505,
+        "fresh_total_steps": 511,
+        "parent_native_success": true,
+        "fresh_supported_success": true,
+        "parent_initial_state_sha256": "18b6bc8721a2f05733759d9daed4b11a985c3f898eab7319be6e75b759c09eee",
+        "fresh_initial_state_sha256": "18b6bc8721a2f05733759d9daed4b11a985c3f898eab7319be6e75b759c09eee",
+        "parent_trace_sha256": "aacbc8c3e47d354b01b568d899c4f451f94b842c4065b3feeb2e2cb97e93b612",
+        "fresh_trace_sha256": "fffd1129bb77f86ed6f3daf8b66c86e7bcb9bb68e04a34af1a22d94b120e1932",
+        "fields": {
+          "actions": {
+            "compared_rows": 515,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "sim_state": {
+            "compared_rows": 516,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "body_pos": {
+            "compared_rows": 516,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "body_quat": {
+            "compared_rows": 516,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "eef_pos": {
+            "compared_rows": 516,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "eef_rotation": {
+            "compared_rows": 516,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "gripper_qpos": {
+            "compared_rows": 516,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "native_goals": {
+            "compared_rows": 516,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "ctrl": {
+            "compared_rows": 516,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "qacc_warmstart": {
+            "compared_rows": 516,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "subtask_indices": {
+            "compared_rows": 515,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "control_steps": {
+            "compared_rows": 515,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          }
+        },
+        "through_parent_cutoff": true,
+        "all_compared_fields_exact": true,
+        "body_names_identical": true
+      },
+      "notes": "Reviewed all64 saved video frames and complete511-control trace. Each requested object is deliberately grasped, carried to the basket and released in soup -> butter -> cheese order. All final native and BDDL goals hold, all targets are robot-free and have positive support paths to the exact basket base and original table, and speed limits hold for the final five real controls507-511. Some objects rest on earlier requested objects; this is supported stacking inside the basket. Final cheese transport changes earlier soup/butter by at most1.14mm and5.32deg across all five episodes. In ep002 the released butter continues rotating and settling on the soup, without any later robot contact:7.98mm and53.12deg from control324, while the robot is away attempting the cheese grasp. It stabilizes by about450, before cheese transport459. That final transport/release changes butter by only0.45mm and0.70deg; no earlier native goal is lost. This substantial own-placement settling is disclosed separately from later manipulation. The saved action/state/native/EEF/gripper/controller traces are bitwise identical to the corresponding frozen parent through its native cutoff; this stricter-protocol followup continues the same policy within the original cap, without forced actions, passive simulation or finalTC gate."
+    },
+    {
+      "episode_idx": 3,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 66,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch67_5ep_20260911/tasks/all1/CTR_176/videos/CTR_176_ep003_ok.mp4",
+      "video_sha256": "949df6e81f11a844712d59a5eb0708fa7229bfc392a19ebad05c1968dcb4802e",
+      "trace_npz_sha256": "d99e9ac65c4cf5de6fba3ca27d3271e8edc0856c30d93f247d85ebe8fecbdd28",
+      "milestones": [
+        155,
+        313,
+        514
+      ],
+      "initial_native_goals": [
+        false,
+        false,
+        false
+      ],
+      "final_native_goals": [
+        true,
+        true,
+        true
+      ],
+      "supported_settled_control_range": [
+        526,
+        530
+      ],
+      "final_transport_preservation": [
+        {
+          "object_id": "alphabet_soup_1",
+          "from_control": 475,
+          "max_xyz_displacement_m": 9.995300011231184e-05,
+          "max_rotation_deg": 0.12665365953060517
+        },
+        {
+          "object_id": "butter_1",
+          "from_control": 475,
+          "max_xyz_displacement_m": 0.0011380275078279323,
+          "max_rotation_deg": 5.317301173978772
+        }
+      ],
+      "earlier_supported_pose_metrics": {
+        "episode_idx": 3,
+        "preservation_from_first_supported_settled": [
+          {
+            "object_id": "alphabet_soup_1",
+            "stage_start_control": 170,
+            "first_supported_settled_control": 170,
+            "max_xyz_displacement_m": 0.0001007239723125217,
+            "max_rotation_deg": 0.12530698948603625,
+            "later_robot_contact_ranges": []
+          },
+          {
+            "object_id": "butter_1",
+            "stage_start_control": 323,
+            "first_supported_settled_control": 323,
+            "max_xyz_displacement_m": 0.0010204577906631003,
+            "max_rotation_deg": 3.685154446911843,
+            "later_robot_contact_ranges": []
+          }
+        ]
+      },
+      "parent_prefix_comparison": {
+        "episode_idx": 3,
+        "parent_total_steps": 514,
+        "fresh_total_steps": 530,
+        "parent_native_success": true,
+        "fresh_supported_success": true,
+        "parent_initial_state_sha256": "7be92a3382740206bb33d9f8f2124b8ad493e30a82b081f5dac548e76a978c28",
+        "fresh_initial_state_sha256": "7be92a3382740206bb33d9f8f2124b8ad493e30a82b081f5dac548e76a978c28",
+        "parent_trace_sha256": "c665eb90cf288027ed26aefbd2b977482cd9d8c5a8ea6ee7dff82295bf2aabff",
+        "fresh_trace_sha256": "d99e9ac65c4cf5de6fba3ca27d3271e8edc0856c30d93f247d85ebe8fecbdd28",
+        "fields": {
+          "actions": {
+            "compared_rows": 524,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "sim_state": {
+            "compared_rows": 525,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "body_pos": {
+            "compared_rows": 525,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "body_quat": {
+            "compared_rows": 525,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "eef_pos": {
+            "compared_rows": 525,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "eef_rotation": {
+            "compared_rows": 525,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "gripper_qpos": {
+            "compared_rows": 525,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "native_goals": {
+            "compared_rows": 525,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "ctrl": {
+            "compared_rows": 525,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "qacc_warmstart": {
+            "compared_rows": 525,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "subtask_indices": {
+            "compared_rows": 524,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "control_steps": {
+            "compared_rows": 524,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          }
+        },
+        "through_parent_cutoff": true,
+        "all_compared_fields_exact": true,
+        "body_names_identical": true
+      },
+      "notes": "Reviewed all66 saved video frames and complete530-control trace. Each requested object is deliberately grasped, carried to the basket and released in soup -> butter -> cheese order. All final native and BDDL goals hold, all targets are robot-free and have positive support paths to the exact basket base and original table, and speed limits hold for the final five real controls526-530. Some objects rest on earlier requested objects; this is supported stacking inside the basket. Final cheese transport changes earlier soup/butter by at most1.14mm and5.32deg across all five episodes. The earlier soup and butter remain supported inside the basket with only small settling/stacking motion during the next manipulation. The saved action/state/native/EEF/gripper/controller traces are bitwise identical to the corresponding frozen parent through its native cutoff; this stricter-protocol followup continues the same policy within the original cap, without forced actions, passive simulation or finalTC gate."
+    },
+    {
+      "episode_idx": 4,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 79,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch67_5ep_20260911/tasks/all1/CTR_176/videos/CTR_176_ep004_ok.mp4",
+      "video_sha256": "f8b2bd31f076269b9d1defcdb158c7a43a686200406545fa925c29f867c55b18",
+      "trace_npz_sha256": "2460816813039321f49075f37230eb2e3330bc4c442a8b942f4b895f8964b78b",
+      "milestones": [
+        149,
+        466,
+        617
+      ],
+      "initial_native_goals": [
+        false,
+        false,
+        false
+      ],
+      "final_native_goals": [
+        true,
+        true,
+        true
+      ],
+      "supported_settled_control_range": [
+        628,
+        632
+      ],
+      "final_transport_preservation": [
+        {
+          "object_id": "alphabet_soup_1",
+          "from_control": 563,
+          "max_xyz_displacement_m": 4.855606506987478e-05,
+          "max_rotation_deg": 0.13119486589968482
+        },
+        {
+          "object_id": "butter_1",
+          "from_control": 563,
+          "max_xyz_displacement_m": 0.00019225653614628972,
+          "max_rotation_deg": 0.10142093311128302
+        }
+      ],
+      "earlier_supported_pose_metrics": {
+        "episode_idx": 4,
+        "preservation_from_first_supported_settled": [
+          {
+            "object_id": "alphabet_soup_1",
+            "stage_start_control": 162,
+            "first_supported_settled_control": 162,
+            "max_xyz_displacement_m": 0.0014945718343778495,
+            "max_rotation_deg": 1.4329424016638144,
+            "later_robot_contact_ranges": []
+          },
+          {
+            "object_id": "butter_1",
+            "stage_start_control": 475,
+            "first_supported_settled_control": 478,
+            "max_xyz_displacement_m": 0.00017382579652482874,
+            "max_rotation_deg": 0.1087574796641442,
+            "later_robot_contact_ranges": []
+          }
+        ]
+      },
+      "parent_prefix_comparison": {
+        "episode_idx": 4,
+        "parent_total_steps": 617,
+        "fresh_total_steps": 632,
+        "parent_native_success": true,
+        "fresh_supported_success": true,
+        "parent_initial_state_sha256": "94bba3f257d70960d921e723dcc146e4a794e29078ad010d1cdf9dd90ad12e2e",
+        "fresh_initial_state_sha256": "94bba3f257d70960d921e723dcc146e4a794e29078ad010d1cdf9dd90ad12e2e",
+        "parent_trace_sha256": "f3495a4577a606eb0253ca89e58f0754bea807c90966b84a5ed5a458c3a90199",
+        "fresh_trace_sha256": "2460816813039321f49075f37230eb2e3330bc4c442a8b942f4b895f8964b78b",
+        "fields": {
+          "actions": {
+            "compared_rows": 627,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "sim_state": {
+            "compared_rows": 628,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "body_pos": {
+            "compared_rows": 628,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "body_quat": {
+            "compared_rows": 628,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "eef_pos": {
+            "compared_rows": 628,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "eef_rotation": {
+            "compared_rows": 628,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "gripper_qpos": {
+            "compared_rows": 628,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "native_goals": {
+            "compared_rows": 628,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "ctrl": {
+            "compared_rows": 628,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "qacc_warmstart": {
+            "compared_rows": 628,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "subtask_indices": {
+            "compared_rows": 627,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          },
+          "control_steps": {
+            "compared_rows": 627,
+            "exactly_equal": true,
+            "max_abs_difference": 0.0,
+            "first_differing_raw_row": null
+          }
+        },
+        "through_parent_cutoff": true,
+        "all_compared_fields_exact": true,
+        "body_names_identical": true
+      },
+      "notes": "Reviewed all79 saved video frames and complete632-control trace. Each requested object is deliberately grasped, carried to the basket and released in soup -> butter -> cheese order. All final native and BDDL goals hold, all targets are robot-free and have positive support paths to the exact basket base and original table, and speed limits hold for the final five real controls628-632. Some objects rest on earlier requested objects; this is supported stacking inside the basket. Final cheese transport changes earlier soup/butter by at most1.14mm and5.32deg across all five episodes. The earlier soup and butter remain supported inside the basket with only small settling/stacking motion during the next manipulation. Butter native In first becomes true at466, briefly becomes false at468 during its own release and is reacquired469, before the next cheese grasp starts475. It remains true throughout the later cheese manipulation. This one-control initial placement-boundary crossing is disclosed; all ordered and final goals hold. The saved action/state/native/EEF/gripper/controller traces are bitwise identical to the corresponding frozen parent through its native cutoff; this stricter-protocol followup continues the same policy within the original cap, without forced actions, passive simulation or finalTC gate."
+    }
+  ],
+  "episode_outcomes": [
+    {
+      "episode_idx": 0,
+      "parent_same_index_native_success": true,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 1,
+      "parent_same_index_native_success": true,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 2,
+      "parent_same_index_native_success": true,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 3,
+      "parent_same_index_native_success": true,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 4,
+      "parent_same_index_native_success": true,
+      "nominal_success": true,
+      "manually_valid_success": true
+    }
+  ],
+  "rain_settings": {
+    "checkpoint": "RAIN/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "progress_checkpoint": "RAIN/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "replan_steps": 8,
+    "num_inference_steps": 4,
+    "feas_threshold": 0.7,
+    "consecutive_stop": 2,
+    "seed": 7,
+    "clip_model_name": "openai/clip-vit-large-patch14"
+  },
+  "source_bundle_sha256": {
+    "task.bddl": "1a106f705263d8fe185ebc34ea6bea6e59f8cc00bfb69472536d9c353fcc5b8e",
+    "task.pruned_init": "1b7e18e36592104abad43cf8980c2ce5d35641f5982e6f2e8deb8015d5912a1f",
+    "task_meta.yaml": "afbda4323bc53ce7589ef32cc20d87f333cccc57b2bca17aace90bc53daf02d5",
+    "eval_rules.yaml": "40af37ae13ed82bb0492b93f57b536a1da7480c2dd46fbe7b070569b3b10c1e1",
+    "registry_entry.yaml": "b75b1ecf4d385e6b9f2c014b2e01b20e4427a0e76bb811ded1a3df7b11c3631e",
+    "mask_bindings.yaml": "8adb5fca9bf7db4c04deca48ebc32f2733c292edb521501b9778ebcfa35bc57a",
+    "action_plan.yaml": "042c9049212ccb7b2065c501b71ae04fdb1993a0603eb7252bf7cefc170628bf",
+    "FIXTURE_REPLAY.json": "2b06d01924b020bcc5150b460f7b559283071a37050dd9ac09d84f19eff1ecf8",
+    "INIT_VALIDATION.json": "d0f5f6aefc30fc503b7fdab985952042fcc482b794283e7a95a82db49bca4f2b",
+    "REPAIR_PROVENANCE.json": "0b29d86081eb602734255476294c8f975fbaded3ecf1a52a4814db2a89de8ac6"
+  },
+  "comparison_design_note": "Immediate parentCTR_163 uses identical geometry/seeds and a shorter native-only terminal condition. Oldnative5/5 and newcertified5/5 measure different endpoints. The underlying cheese pose repair traces back to historical COMPOSE_1520/5, with exact old initial-scene reconstruction but no saved parent failure video.",
+  "additional_terminal_contract": {
+    "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+    "support_hold_control_steps": 5,
+    "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+    "settle_linear_speed_max_m_s": 0.02,
+    "settle_angular_speed_max_rad_s": 0.5
+  },
+  "parent_terminal_protocol_different": true,
+  "runtime_sources_sha256": {
+    "basket_released_support_observer.py": "599995e94641d631c3e8e8ed16a1ae5d0214e97c58e2b71d124a3d587e6d8329",
+    "basket_supported_runtime.py": "9aff4bb0e51b683c53287070e06b469e0ce26a4d93e4ecf256ddbddcaec7e73e",
+    "run_compose_traj_repair_basket_supported_entry.py": "00900b93d3c310215507831423062445f8c13088d1c3298915f2a884ba1215f3",
+    "run_compose_traj_repair_basket_supported_5ep.py": "94e6c8f3988ba247a3a577995d65246ae20d304b90dad6a7ad01c6d5d5fb98f8"
+  },
+  "supported_settled_success_audit": {
+    "0": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 489,
+      "actual_control_steps_observed": 489,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    },
+    "1": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 487,
+      "actual_control_steps_observed": 487,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    },
+    "2": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 511,
+      "actual_control_steps_observed": 511,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    },
+    "3": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 530,
+      "actual_control_steps_observed": 530,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    },
+    "4": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 632,
+      "actual_control_steps_observed": 632,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    }
+  }
+}

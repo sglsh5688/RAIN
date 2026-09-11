@@ -2,6 +2,8 @@
   "task_id": "CTR_105",
   "instruction": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the cream cheese and place it in the right compartment of the bowl drainer.",
   "status": "pending_user_review_not_selected",
+  "selected60": false,
+  "selected_page": "",
   "variant_of": "BDRCOMP_001",
   "classification": "repair_variant_not_new_semantic_family",
   "episodes": 5,

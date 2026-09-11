@@ -1,0 +1,88 @@
+{
+  "schema": "selected60_ctr_selection_overlay_v1",
+  "selected": true,
+  "publication_authorized": true,
+  "task_id": "CTR_140",
+  "category": "Compose",
+  "order": 60,
+  "replaces": "SPBSC_001",
+  "authorized_date": "2026-09-11",
+  "source_bundle_immutable": true,
+  "frozen_source_status_is_historical": true,
+  "source_file_sha256": {
+    "task.bddl": "4c30bce9b2acc5e5ab23a97bb4a26e6b5e12394a1b8d87affeb4a66967265e08",
+    "task.pruned_init": "7d3adc16f30ba07eabc212414b9182c95a1c8758a8450e7e9d8c866db95099dd",
+    "task_meta.yaml": "db7b389bc33648c0e161df88ed498f6ccfe295f9c8ca716aab90d1cca971aa0a",
+    "eval_rules.yaml": "b4f956daf3da8b08e072ac26e6cd3458a2d7829f12dda7bbb44d0a7d1728a1a8",
+    "registry_entry.yaml": "eb2108050f5e1e238e38853afa8e6cf99cd0d5116233f6ffbb9815df2433c7b8",
+    "mask_bindings.yaml": "09cc72c5889a257866137a1bc80b683718cd161619b4266f0f6da1805765a929",
+    "action_plan.yaml": "ffb140296f52e537971dc7c2f230b39b7a89bae0da6eafa9b0661df02e91bce2",
+    "FIXTURE_REPLAY.json": "70114d620f128668b4d7394adc4143b7f8bd16fd5d6280d8d76bdb36163530ff",
+    "INIT_VALIDATION.json": "ce2e1fff809a2dac5200bdac4ac242f9cb56c9afacaf7cdd5ea9f29306c680c4",
+    "REPAIR_PROVENANCE.json": "f4c6c55c3964c24c7c089df85ae195d4041a944d3c04799495bd56e8e5a06676"
+  },
+  "results_sha256": "601ce5802cd94702f5112a3cedc78137d8d36da83d18e3a8eb60e7f7eea69b72",
+  "certified_episode_indices": [
+    3
+  ],
+  "successes": 1,
+  "episodes": 5,
+  "runtime_contract": "Ordered cheese-on-stove, stove ON, then top-drawer Open; all final BDDL goals hold. Stove inference uses the exact knob mask. No final TC gate.",
+  "pi05_status": "pending",
+  "no_policy_rerun": true,
+  "instruction": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+  "lineage": [
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_02",
+      "instruction": "Pick the cream cheese and place it in the basket",
+      "transfer": "creamcheese pickup. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task."
+    },
+    {
+      "suite": "libero_goal",
+      "task": "put_the_bowl_on_the_stove",
+      "original40_task_id": "LIBERO_GOAL_02",
+      "instruction": "Put the bowl on the stove",
+      "transfer": "stove placement trained with black bowl; cheese placement is object adaptation. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task."
+    },
+    {
+      "suite": "libero_goal",
+      "task": "turn_on_the_stove",
+      "original40_task_id": "LIBERO_GOAL_08",
+      "instruction": "Turn on the stove",
+      "transfer": "stove turn-on. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task."
+    },
+    {
+      "suite": "libero_goal",
+      "task": "open_the_top_drawer_and_put_the_bowl_inside",
+      "original40_task_id": "LIBERO_GOAL_04",
+      "instruction": "Open the top layer of the drawer and put the bowl inside",
+      "transfer": "top-drawer open primitive from open-and-insert task. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task."
+    }
+  ],
+  "scene_construction": "VCN16_001; Object cheese grasp + Goal stove placement, stove ON, top-drawer opening. Entire stove shifts +10 cm world X, including burner and knob.",
+  "review_notes": "Three-step repair of historical VCN16_001 (0/5): place cheese on the stove, turn on that stove, then open the wooden top drawer. The entire stove moves10cm in positive worldX toward the observed missed-knob approach, carrying its burner and knob together. This also changes the first placement target. Cheese, cabinet, action plan and native ordered goals retain their parent definitions. All five frozen states pass physical validation; the fresh existing-RAIN run completes1/5 with a full video/trace certificate. The first placement includes a documented transfer of the trained bowl-to-stove destination to directly trained cream-cheese grasping. This is an exploratory repaired composition; the five-trial result is not a general success-rate claim. User selected on 2026-09-11; frozen RAIN results reused without rerun. Separate pi0.5 evaluation pending.",
+  "original_success_videos": [
+    {
+      "episode_idx": 3,
+      "path": "assets/original_success_videos/CTR_140/CTR_140_ep003_ok.mp4",
+      "sha256": "e3384a4c4363f7e3f4a9d8b19f04891dadcd653b44dd7cfe2a6391c453423a88"
+    }
+  ],
+  "success_reel_sha256": "eae88714fe7e56c4c7b13d6cbd6275091058be15d46d42c62d5fcb7de431df11",
+  "source_metadata_note": "Canonical source bytes remain unchanged. Public text exports sanitize workstation paths; canonical and public hashes are separate. Historical selected:false fields are superseded solely by SELECTION_OVERLAY.json.",
+  "source_hash_scope": "Immutable canonical source files. Public text exports sanitize workstation paths; their hashes are recorded separately.",
+  "public_source_file_sha256": {
+    "task.bddl": "4c30bce9b2acc5e5ab23a97bb4a26e6b5e12394a1b8d87affeb4a66967265e08",
+    "task.pruned_init": "7d3adc16f30ba07eabc212414b9182c95a1c8758a8450e7e9d8c866db95099dd",
+    "task_meta.yaml": "abcc99360b10168b0835687283433f78dd3125556b0b9526eb2d7e096e21da81",
+    "eval_rules.yaml": "b4f956daf3da8b08e072ac26e6cd3458a2d7829f12dda7bbb44d0a7d1728a1a8",
+    "registry_entry.yaml": "eb2108050f5e1e238e38853afa8e6cf99cd0d5116233f6ffbb9815df2433c7b8",
+    "mask_bindings.yaml": "09cc72c5889a257866137a1bc80b683718cd161619b4266f0f6da1805765a929",
+    "action_plan.yaml": "ffb140296f52e537971dc7c2f230b39b7a89bae0da6eafa9b0661df02e91bce2",
+    "FIXTURE_REPLAY.json": "70114d620f128668b4d7394adc4143b7f8bd16fd5d6280d8d76bdb36163530ff",
+    "INIT_VALIDATION.json": "ce2e1fff809a2dac5200bdac4ac242f9cb56c9afacaf7cdd5ea9f29306c680c4",
+    "REPAIR_PROVENANCE.json": "094aadb86da1d2f5e659de3e913a25764477bd6cd5513242225e622ead8efc74"
+  }
+}

@@ -2,6 +2,8 @@
   "task_id": "CTR_117",
   "instruction": "Put the cream cheese box in the basket, and then put the alphabet soup in the basket.",
   "status": "pending_user_review_not_selected",
+  "selected60": false,
+  "selected_page": "",
   "variant_of": "CTR_066",
   "classification": "repair_variant_not_new_semantic_family",
   "episodes": 5,

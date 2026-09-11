@@ -1,7 +1,25 @@
 {
   "task_id": "CTR_103",
   "instruction": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
-  "status": "pending_user_review_not_selected",
+  "status": "selected60",
+  "selected60": true,
+  "selected_page": "../selected29/index.html#CTR_103",
+  "selected_bundle_verification": {
+    "method": "byte_identical_frozen_reviewed_bundle",
+    "canonical_bundle": "Compose/CTR_103",
+    "artifacts_sha256": {
+      "task.bddl": "e05fb28d019f154a718609256c20cb5ea1758e07fc27eb7ae1cea1e924226344",
+      "task.pruned_init": "b3bf0f5bf3f7ac0e939a750bce9e7c8838054e5b31a96bc6f01e2b30ba1b0d77",
+      "task_meta.yaml": "2220846679a0a4900988a338c54127720c23fd7693e5c29b6dbf9f8bc326c126",
+      "eval_rules.yaml": "2bb18b75f67505a13404a6cb74a6fcdf09eda5ecdbd5cf13a83cf73b95aa98b0",
+      "registry_entry.yaml": "0e306a754a19e79f5101d045bc74b2363e5d28c9bca5eeb3d070dc2e59f156ec",
+      "mask_bindings.yaml": "f2058ff27fc1ed34a3761cc7e87cf7d230b7373fedda639c838e8e8edbd2bd54",
+      "action_plan.yaml": "0ef0354aee4176e569809793ab63bf6639f6d5e1beff0fb22b7c3aa8f799ebeb",
+      "FIXTURE_REPLAY.json": "f765db1a2d9f755a661206274172f68c08a25fd9c51ccd72061c9cbb194d4685",
+      "INIT_VALIDATION.json": "5dc30363e54da05c0e25c22d9fa2373c1aea9c0702f9ef5247088c46ff036bfb",
+      "REPAIR_PROVENANCE.json": "0026a9f3c44992c402a2328651d419e94833198abc4effb302aa05dabf413783"
+    }
+  },
   "variant_of": "BDRCOMP_013",
   "classification": "repair_variant_not_new_semantic_family",
   "episodes": 5,

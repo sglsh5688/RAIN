@@ -1,0 +1,24 @@
+{
+  "task_id": "CTR_140",
+  "parent_task_id": "VCN16_001",
+  "parent_bundle": "LiberoValidComposeNew20260905/Batch16DiverseExactDonorExtensions/tasks/vcn16_001__put_the_cream_cheese_on_the_stove_then_turn_on_the_stove_then_open_the_top_drawer_of_the_wooden_cabinet",
+  "pose_changes": {
+    "flat_stove_1": {
+      "delta_xyz": [
+        0.1,
+        0,
+        0
+      ]
+    }
+  },
+  "evidence": "Historical three-step VCN16_001 cheese onto stove -> turn on same stove -> open wooden top drawer was0/5. First cheese native placement reached in all5 episodes at152/162/169/164/160 controls; the stove turned on only inep004 at368 after action-stage transition, and no top-drawer goal completed. Actual recorded turn-on stage is short: ep000 controls161\u2013177 endsEEF[-.301,.201,.957], ep001169\u2013209 ends[-.287,.225,.973], ep004169\u2013177 ends[-.284,.196,.969]. Exact frozen stove/knob root begins[-.415,.211,.905], while burner is+.15m X away, so robot remains near burner-side corridor and misses knob. Test coherent whole-stove +10/+12cm X shift, retaining yaw, OFF control joint, cheese object, fully closed top drawer and all original40 source action descriptions. This also moves the first placement target and must be re-evaluated rather than claiming fixed policy replay. Initial collision/stability/nativefalse/fixture replay all5required. New control trace/manual review must prove actual knob interaction and preserve placed cheese and stoveON before deliberate top opening.",
+  "source_result": "private_evaluation_results/rain_ms_maskaug_gt_valid_compose_new_batch16_diverse_exact_donor18_5ep_20260905/tasks/all18/VCN16_001/results.json",
+  "classification": "repair_variant_not_new_semantic_family",
+  "parent_files_sha256": {
+    "task.bddl": "4c30bce9b2acc5e5ab23a97bb4a26e6b5e12394a1b8d87affeb4a66967265e08",
+    "task.pruned_init": "17733028692cc4e6323eb82cb9bba59a885482621c0154e7503cc63a45941e9b",
+    "FIXTURE_REPLAY.json": "ade324678796bbf036f6bfdf9be5ca4042ad63aefe48f43042e517c97cd9eb5e",
+    "action_plan.yaml": "9bf66abe90510c5d9f9ee056523403547fa7ca421e277361ae2c6eba2ff8a133"
+  },
+  "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+}

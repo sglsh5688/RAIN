@@ -1,0 +1,328 @@
+{
+  "schema": "selected60_ctr_swap_audit_v1",
+  "created_at": "2026-09-11T13:58:33.346804+00:00",
+  "replacements": {
+    "BDRCOMP_021": "CTR_103",
+    "VCN91_002": "CTR_176",
+    "SPBSC_001": "CTR_140"
+  },
+  "selected_count": 60,
+  "category_counts": {
+    "Decomposition": 20,
+    "Adapt": 20,
+    "Compose": 20
+  },
+  "unchanged_selected_rows_and_cards": 57,
+  "rain": {
+    "successes": 706,
+    "episodes": 1050,
+    "saved_success_clips": 208
+  },
+  "rain_compose": {
+    "successes": 50,
+    "episodes": 100
+  },
+  "pi05": {
+    "evaluated_tasks": 56,
+    "successes": 75,
+    "episodes": 280,
+    "pending_task_ids": [
+      "CTR_103",
+      "BDRMIN_002",
+      "CTR_176",
+      "CTR_140"
+    ]
+  },
+  "selected_tsv_sha256": "8daa41c8da5e845cfd3e9e8f4ea2d57d7baf2c026d3fdde4e3585d55a3e52d62",
+  "task_bundles_zip_sha256": "0123f63f7742496b2bfd67cd81fc00be402db57a9d11a0c9bdc3eef7618524b5",
+  "original_results_unchanged": true,
+  "policy_reruns": 0,
+  "incoming": {
+    "CTR_103": {
+      "schema": "selected60_ctr_selection_overlay_v1",
+      "selected": true,
+      "publication_authorized": true,
+      "task_id": "CTR_103",
+      "category": "Compose",
+      "order": 52,
+      "replaces": "BDRCOMP_021",
+      "authorized_date": "2026-09-11",
+      "source_bundle_immutable": true,
+      "frozen_source_status_is_historical": true,
+      "source_file_sha256": {
+        "task.bddl": "e05fb28d019f154a718609256c20cb5ea1758e07fc27eb7ae1cea1e924226344",
+        "task.pruned_init": "b3bf0f5bf3f7ac0e939a750bce9e7c8838054e5b31a96bc6f01e2b30ba1b0d77",
+        "task_meta.yaml": "2220846679a0a4900988a338c54127720c23fd7693e5c29b6dbf9f8bc326c126",
+        "eval_rules.yaml": "2bb18b75f67505a13404a6cb74a6fcdf09eda5ecdbd5cf13a83cf73b95aa98b0",
+        "registry_entry.yaml": "0e306a754a19e79f5101d045bc74b2363e5d28c9bca5eeb3d070dc2e59f156ec",
+        "mask_bindings.yaml": "f2058ff27fc1ed34a3761cc7e87cf7d230b7373fedda639c838e8e8edbd2bd54",
+        "action_plan.yaml": "0ef0354aee4176e569809793ab63bf6639f6d5e1beff0fb22b7c3aa8f799ebeb",
+        "FIXTURE_REPLAY.json": "f765db1a2d9f755a661206274172f68c08a25fd9c51ccd72061c9cbb194d4685",
+        "INIT_VALIDATION.json": "5dc30363e54da05c0e25c22d9fa2373c1aea9c0702f9ef5247088c46ff036bfb",
+        "REPAIR_PROVENANCE.json": "0026a9f3c44992c402a2328651d419e94833198abc4effb302aa05dabf413783"
+      },
+      "results_sha256": "c15b3d09c9da04ef8f501b79ecfd4aa32f2d4fbdc2b996efa8d03ef481cc6e40",
+      "certified_episode_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "successes": 4,
+      "episodes": 5,
+      "runtime_contract": "Ordered native left then right compartments; each object released with positive exact drainer-bottom support for five consecutive controls, with both placements retained. No velocity-settling claim. No final TC gate.",
+      "pi05_status": "pending",
+      "no_policy_rerun": true,
+      "instruction": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+      "lineage": [
+        {
+          "suite": "libero_object",
+          "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+          "original40_task_id": "LIBERO_OBJECT_06",
+          "instruction": "Pick the tomato sauce and place it in the basket",
+          "transfer": "Directly trained object grasp and basket release are rebound to the native right compartment of the bowl drainer. The destination substitution and two-step chain are adaptations of the original40 skills; original40 does not directly demonstrate this drainer placement."
+        },
+        {
+          "suite": "libero_object",
+          "task": "pick_up_the_butter_and_place_it_in_the_basket",
+          "original40_task_id": "LIBERO_OBJECT_07",
+          "instruction": "Pick the butter and place it in the basket",
+          "transfer": "Directly trained object grasp and basket release are rebound to the native left compartment of the bowl drainer. The destination substitution and two-step chain are adaptations of the original40 skills; original40 does not directly demonstrate this drainer placement."
+        }
+      ],
+      "scene_construction": "BDRCOMP_013; butter/tomato original Object skills transferred to the drainer. Tomato XY shifts -4.5 cm, +7 cm. Parent and repaired policy seeds differ.",
+      "review_notes": "Fresh trajectory-guided repair of BDRCOMP_013, whose historical result was 0/5. Both food identities are directly trained in the original LIBERO-40; their basket-placement skills transfer to the two drainer compartments. The original completion rule is retained: each object must be released and supported by the drainer floor for five consecutive control steps, in the requested order. All four successes passed full video review. This run uses the existing RAIN action and progress checkpoints. Policy seeds 7–11 differ from the parent, so the comparison does not isolate the effect of the pose change. User selected on 2026-09-11; frozen RAIN results reused without rerun. Separate pi0.5 evaluation pending.",
+      "original_success_videos": [
+        {
+          "episode_idx": 0,
+          "path": "assets/original_success_videos/CTR_103/CTR_103_ep000_ok.mp4",
+          "sha256": "d3f6a6b29d2f1712f9acccd227989441d4de746f83569979db5c091d97b29d63"
+        },
+        {
+          "episode_idx": 2,
+          "path": "assets/original_success_videos/CTR_103/CTR_103_ep002_ok.mp4",
+          "sha256": "6c5c8ecc7cde797fe2876ea0ba6136b5ea4a69b4f8dccf4c2666bcaa8e5b53da"
+        },
+        {
+          "episode_idx": 3,
+          "path": "assets/original_success_videos/CTR_103/CTR_103_ep003_ok.mp4",
+          "sha256": "4ab3604ac50c664fada232e7bf1f8dd944240e2138df734cdcf1829045c009d8"
+        },
+        {
+          "episode_idx": 4,
+          "path": "assets/original_success_videos/CTR_103/CTR_103_ep004_ok.mp4",
+          "sha256": "5762ac95359213cdfc9f016903b2cbf666fba73e667ff3f95cb39d1afad73521"
+        }
+      ],
+      "success_reel_sha256": "2a9d6915f90e8f287f84b74299bb71a2ed36bdf72e4eb004d1fe084f5cd39750",
+      "source_metadata_note": "Canonical source bytes remain unchanged. Public text exports sanitize workstation paths; canonical and public hashes are separate. Historical selected:false fields are superseded solely by SELECTION_OVERLAY.json.",
+      "source_hash_scope": "Immutable canonical source files. Public text exports sanitize workstation paths; their hashes are recorded separately.",
+      "public_source_file_sha256": {
+        "task.bddl": "e05fb28d019f154a718609256c20cb5ea1758e07fc27eb7ae1cea1e924226344",
+        "task.pruned_init": "b3bf0f5bf3f7ac0e939a750bce9e7c8838054e5b31a96bc6f01e2b30ba1b0d77",
+        "task_meta.yaml": "6b2824d23615ddcadb3cc1101e0b7ccb6f8a8849c547ac38102e4794a666227f",
+        "eval_rules.yaml": "2bb18b75f67505a13404a6cb74a6fcdf09eda5ecdbd5cf13a83cf73b95aa98b0",
+        "registry_entry.yaml": "0e306a754a19e79f5101d045bc74b2363e5d28c9bca5eeb3d070dc2e59f156ec",
+        "mask_bindings.yaml": "f2058ff27fc1ed34a3761cc7e87cf7d230b7373fedda639c838e8e8edbd2bd54",
+        "action_plan.yaml": "0ef0354aee4176e569809793ab63bf6639f6d5e1beff0fb22b7c3aa8f799ebeb",
+        "FIXTURE_REPLAY.json": "f765db1a2d9f755a661206274172f68c08a25fd9c51ccd72061c9cbb194d4685",
+        "INIT_VALIDATION.json": "5dc30363e54da05c0e25c22d9fa2373c1aea9c0702f9ef5247088c46ff036bfb",
+        "REPAIR_PROVENANCE.json": "0026a9f3c44992c402a2328651d419e94833198abc4effb302aa05dabf413783"
+      }
+    },
+    "CTR_176": {
+      "schema": "selected60_ctr_selection_overlay_v1",
+      "selected": true,
+      "publication_authorized": true,
+      "task_id": "CTR_176",
+      "category": "Compose",
+      "order": 59,
+      "replaces": "VCN91_002",
+      "authorized_date": "2026-09-11",
+      "source_bundle_immutable": true,
+      "frozen_source_status_is_historical": true,
+      "source_file_sha256": {
+        "task.bddl": "1a106f705263d8fe185ebc34ea6bea6e59f8cc00bfb69472536d9c353fcc5b8e",
+        "task.pruned_init": "1b7e18e36592104abad43cf8980c2ce5d35641f5982e6f2e8deb8015d5912a1f",
+        "task_meta.yaml": "afbda4323bc53ce7589ef32cc20d87f333cccc57b2bca17aace90bc53daf02d5",
+        "eval_rules.yaml": "40af37ae13ed82bb0492b93f57b536a1da7480c2dd46fbe7b070569b3b10c1e1",
+        "registry_entry.yaml": "b75b1ecf4d385e6b9f2c014b2e01b20e4427a0e76bb811ded1a3df7b11c3631e",
+        "mask_bindings.yaml": "8adb5fca9bf7db4c04deca48ebc32f2733c292edb521501b9778ebcfa35bc57a",
+        "action_plan.yaml": "042c9049212ccb7b2065c501b71ae04fdb1993a0603eb7252bf7cefc170628bf",
+        "FIXTURE_REPLAY.json": "2b06d01924b020bcc5150b460f7b559283071a37050dd9ac09d84f19eff1ecf8",
+        "INIT_VALIDATION.json": "d0f5f6aefc30fc503b7fdab985952042fcc482b794283e7a95a82db49bca4f2b",
+        "REPAIR_PROVENANCE.json": "0b29d86081eb602734255476294c8f975fbaded3ecf1a52a4814db2a89de8ac6"
+      },
+      "results_sha256": "b39fc54dba61bb9ddac5a0c11fd2a1b18fe23471ed054d2573060bae30407625",
+      "certified_episode_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "successes": 5,
+      "episodes": 5,
+      "runtime_contract": "Ordered basket goals plus released/supported/settled completion for five consecutive controls; positive support paths to the exact basket base, no robot contact, linear speed <= 0.02 m/s and angular speed <= 0.5 rad/s. Same 1200-control cap and no final TC gate.",
+      "pi05_status": "pending",
+      "no_policy_rerun": true,
+      "instruction": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+      "lineage": [
+        {
+          "suite": "libero_object",
+          "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+          "original40_task_id": "LIBERO_OBJECT_01",
+          "instruction": "Pick the alphabet soup and place it in the basket",
+          "transfer": "Directly trained object grasp and basket placement, chained in the shared repaired scene."
+        },
+        {
+          "suite": "libero_object",
+          "task": "pick_up_the_butter_and_place_it_in_the_basket",
+          "original40_task_id": "LIBERO_OBJECT_07",
+          "instruction": "Pick the butter and place it in the basket",
+          "transfer": "Directly trained object grasp and basket placement, chained in the shared repaired scene."
+        },
+        {
+          "suite": "libero_object",
+          "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+          "original40_task_id": "LIBERO_OBJECT_02",
+          "instruction": "Pick the cream cheese and place it in the basket",
+          "transfer": "Directly trained object grasp and basket placement, chained in the shared repaired scene."
+        }
+      ],
+      "scene_construction": "COMPOSE_152 via CTR_163; LIBERO10-derived scene and three original Object basket skills. Cheese XY shifts -12.5 cm, +14.5 cm from COMPOSE_152. CTR_176 retains CTR_163 geometry and seeds.",
+      "review_notes": "Soup -> butter -> cream cheese into the basket:5/5 fully reviewed released/supported/settled successes. The underlying scene repair CTR_163 moves cheese12.5cm in negativeX and14.5cm in positiveY toward historical COMPOSE_152 failed closing trajectories; the original COMPOSE_152 was0/5. This CTR_176 followup retains CTR_163 geometry and seeds unchanged and applies the already declared stricter physical terminal protocol. ParentCTR_163 native5/5 is preserved; it terminates earlier at the last native In event and is not a settled-placement5/5 certificate. Across all five episodes every saved policy action and state matches the parent bitwise through its cutoff, then the same release policy runs6-16 more controls inside the unchanged1200 cap. This is one existing three-food composition and a protocol followup, not an additional new scene or proof of population-level100% reliability. User selected on 2026-09-11; frozen RAIN results reused without rerun. Separate pi0.5 evaluation pending.",
+      "original_success_videos": [
+        {
+          "episode_idx": 0,
+          "path": "assets/original_success_videos/CTR_176/CTR_176_ep000_ok.mp4",
+          "sha256": "5cf7503430365828c056e06f096f85530d431a4af611ccc1dfab20fd227189b8"
+        },
+        {
+          "episode_idx": 1,
+          "path": "assets/original_success_videos/CTR_176/CTR_176_ep001_ok.mp4",
+          "sha256": "2406263f76676c51a62906669e27548f8782a15dcbe134dbfebb3adfdab3a830"
+        },
+        {
+          "episode_idx": 2,
+          "path": "assets/original_success_videos/CTR_176/CTR_176_ep002_ok.mp4",
+          "sha256": "38dd5ce1a8d601534df7645d94d7ba4c9dbfd8dcf513f096a05c9dae885a16d0"
+        },
+        {
+          "episode_idx": 3,
+          "path": "assets/original_success_videos/CTR_176/CTR_176_ep003_ok.mp4",
+          "sha256": "949df6e81f11a844712d59a5eb0708fa7229bfc392a19ebad05c1968dcb4802e"
+        },
+        {
+          "episode_idx": 4,
+          "path": "assets/original_success_videos/CTR_176/CTR_176_ep004_ok.mp4",
+          "sha256": "f8b2bd31f076269b9d1defcdb158c7a43a686200406545fa925c29f867c55b18"
+        }
+      ],
+      "success_reel_sha256": "df45535af78f856cb3858713da49b8a7252a75149a37899331841493e82e2c09",
+      "source_metadata_note": "Canonical source bytes remain unchanged. Public text exports sanitize workstation paths; canonical and public hashes are separate. Historical selected:false fields are superseded solely by SELECTION_OVERLAY.json.",
+      "source_hash_scope": "Immutable canonical source files. Public text exports sanitize workstation paths; their hashes are recorded separately.",
+      "public_source_file_sha256": {
+        "task.bddl": "1a106f705263d8fe185ebc34ea6bea6e59f8cc00bfb69472536d9c353fcc5b8e",
+        "task.pruned_init": "1b7e18e36592104abad43cf8980c2ce5d35641f5982e6f2e8deb8015d5912a1f",
+        "task_meta.yaml": "1a35a1d42491167fc7d68c90b8c75db0312f297c36c0ae4f6b945040a50e6e5d",
+        "eval_rules.yaml": "40af37ae13ed82bb0492b93f57b536a1da7480c2dd46fbe7b070569b3b10c1e1",
+        "registry_entry.yaml": "b75b1ecf4d385e6b9f2c014b2e01b20e4427a0e76bb811ded1a3df7b11c3631e",
+        "mask_bindings.yaml": "8adb5fca9bf7db4c04deca48ebc32f2733c292edb521501b9778ebcfa35bc57a",
+        "action_plan.yaml": "042c9049212ccb7b2065c501b71ae04fdb1993a0603eb7252bf7cefc170628bf",
+        "FIXTURE_REPLAY.json": "2b06d01924b020bcc5150b460f7b559283071a37050dd9ac09d84f19eff1ecf8",
+        "INIT_VALIDATION.json": "d0f5f6aefc30fc503b7fdab985952042fcc482b794283e7a95a82db49bca4f2b",
+        "REPAIR_PROVENANCE.json": "0b29d86081eb602734255476294c8f975fbaded3ecf1a52a4814db2a89de8ac6"
+      }
+    },
+    "CTR_140": {
+      "schema": "selected60_ctr_selection_overlay_v1",
+      "selected": true,
+      "publication_authorized": true,
+      "task_id": "CTR_140",
+      "category": "Compose",
+      "order": 60,
+      "replaces": "SPBSC_001",
+      "authorized_date": "2026-09-11",
+      "source_bundle_immutable": true,
+      "frozen_source_status_is_historical": true,
+      "source_file_sha256": {
+        "task.bddl": "4c30bce9b2acc5e5ab23a97bb4a26e6b5e12394a1b8d87affeb4a66967265e08",
+        "task.pruned_init": "7d3adc16f30ba07eabc212414b9182c95a1c8758a8450e7e9d8c866db95099dd",
+        "task_meta.yaml": "db7b389bc33648c0e161df88ed498f6ccfe295f9c8ca716aab90d1cca971aa0a",
+        "eval_rules.yaml": "b4f956daf3da8b08e072ac26e6cd3458a2d7829f12dda7bbb44d0a7d1728a1a8",
+        "registry_entry.yaml": "eb2108050f5e1e238e38853afa8e6cf99cd0d5116233f6ffbb9815df2433c7b8",
+        "mask_bindings.yaml": "09cc72c5889a257866137a1bc80b683718cd161619b4266f0f6da1805765a929",
+        "action_plan.yaml": "ffb140296f52e537971dc7c2f230b39b7a89bae0da6eafa9b0661df02e91bce2",
+        "FIXTURE_REPLAY.json": "70114d620f128668b4d7394adc4143b7f8bd16fd5d6280d8d76bdb36163530ff",
+        "INIT_VALIDATION.json": "ce2e1fff809a2dac5200bdac4ac242f9cb56c9afacaf7cdd5ea9f29306c680c4",
+        "REPAIR_PROVENANCE.json": "f4c6c55c3964c24c7c089df85ae195d4041a944d3c04799495bd56e8e5a06676"
+      },
+      "results_sha256": "601ce5802cd94702f5112a3cedc78137d8d36da83d18e3a8eb60e7f7eea69b72",
+      "certified_episode_indices": [
+        3
+      ],
+      "successes": 1,
+      "episodes": 5,
+      "runtime_contract": "Ordered cheese-on-stove, stove ON, then top-drawer Open; all final BDDL goals hold. Stove inference uses the exact knob mask. No final TC gate.",
+      "pi05_status": "pending",
+      "no_policy_rerun": true,
+      "instruction": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+      "lineage": [
+        {
+          "suite": "libero_object",
+          "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+          "original40_task_id": "LIBERO_OBJECT_02",
+          "instruction": "Pick the cream cheese and place it in the basket",
+          "transfer": "creamcheese pickup. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task."
+        },
+        {
+          "suite": "libero_goal",
+          "task": "put_the_bowl_on_the_stove",
+          "original40_task_id": "LIBERO_GOAL_02",
+          "instruction": "Put the bowl on the stove",
+          "transfer": "stove placement trained with black bowl; cheese placement is object adaptation. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task."
+        },
+        {
+          "suite": "libero_goal",
+          "task": "turn_on_the_stove",
+          "original40_task_id": "LIBERO_GOAL_08",
+          "instruction": "Turn on the stove",
+          "transfer": "stove turn-on. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task."
+        },
+        {
+          "suite": "libero_goal",
+          "task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "original40_task_id": "LIBERO_GOAL_04",
+          "instruction": "Open the top layer of the drawer and put the bowl inside",
+          "transfer": "top-drawer open primitive from open-and-insert task. The existing VCN9_010 prefix transfers stove placement from bowl to cheese; this is an object/destination adaptation, not a claim that original40 contains a native cheese-on-stove task."
+        }
+      ],
+      "scene_construction": "VCN16_001; Object cheese grasp + Goal stove placement, stove ON, top-drawer opening. Entire stove shifts +10 cm world X, including burner and knob.",
+      "review_notes": "Three-step repair of historical VCN16_001 (0/5): place cheese on the stove, turn on that stove, then open the wooden top drawer. The entire stove moves10cm in positive worldX toward the observed missed-knob approach, carrying its burner and knob together. This also changes the first placement target. Cheese, cabinet, action plan and native ordered goals retain their parent definitions. All five frozen states pass physical validation; the fresh existing-RAIN run completes1/5 with a full video/trace certificate. The first placement includes a documented transfer of the trained bowl-to-stove destination to directly trained cream-cheese grasping. This is an exploratory repaired composition; the five-trial result is not a general success-rate claim. User selected on 2026-09-11; frozen RAIN results reused without rerun. Separate pi0.5 evaluation pending.",
+      "original_success_videos": [
+        {
+          "episode_idx": 3,
+          "path": "assets/original_success_videos/CTR_140/CTR_140_ep003_ok.mp4",
+          "sha256": "e3384a4c4363f7e3f4a9d8b19f04891dadcd653b44dd7cfe2a6391c453423a88"
+        }
+      ],
+      "success_reel_sha256": "eae88714fe7e56c4c7b13d6cbd6275091058be15d46d42c62d5fcb7de431df11",
+      "source_metadata_note": "Canonical source bytes remain unchanged. Public text exports sanitize workstation paths; canonical and public hashes are separate. Historical selected:false fields are superseded solely by SELECTION_OVERLAY.json.",
+      "source_hash_scope": "Immutable canonical source files. Public text exports sanitize workstation paths; their hashes are recorded separately.",
+      "public_source_file_sha256": {
+        "task.bddl": "4c30bce9b2acc5e5ab23a97bb4a26e6b5e12394a1b8d87affeb4a66967265e08",
+        "task.pruned_init": "7d3adc16f30ba07eabc212414b9182c95a1c8758a8450e7e9d8c866db95099dd",
+        "task_meta.yaml": "abcc99360b10168b0835687283433f78dd3125556b0b9526eb2d7e096e21da81",
+        "eval_rules.yaml": "b4f956daf3da8b08e072ac26e6cd3458a2d7829f12dda7bbb44d0a7d1728a1a8",
+        "registry_entry.yaml": "eb2108050f5e1e238e38853afa8e6cf99cd0d5116233f6ffbb9815df2433c7b8",
+        "mask_bindings.yaml": "09cc72c5889a257866137a1bc80b683718cd161619b4266f0f6da1805765a929",
+        "action_plan.yaml": "ffb140296f52e537971dc7c2f230b39b7a89bae0da6eafa9b0661df02e91bce2",
+        "FIXTURE_REPLAY.json": "70114d620f128668b4d7394adc4143b7f8bd16fd5d6280d8d76bdb36163530ff",
+        "INIT_VALIDATION.json": "ce2e1fff809a2dac5200bdac4ac242f9cb56c9afacaf7cdd5ea9f29306c680c4",
+        "REPAIR_PROVENANCE.json": "094aadb86da1d2f5e659de3e913a25764477bd6cd5513242225e622ead8efc74"
+      }
+    }
+  },
+  "local_pre_swap_archive": "before"
+}

@@ -46,6 +46,7 @@
   "parent_instruction": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
   "parent_state_verification": {
     "method": "original_run_manifest_and_byte_identical_five_state_source",
+    "original_historical_state_file_digest_available": true,
     "run_config_sha256": "108092f1236210498a6a085d61e179823e170c39e767c7399c43eb2060b34814",
     "task_pruned_init_sha256": "c6ae405e25c06bfd8bd4eb3aaed6ccbe5c0900b017932c0955a9c6b33ed3c1fa"
   },

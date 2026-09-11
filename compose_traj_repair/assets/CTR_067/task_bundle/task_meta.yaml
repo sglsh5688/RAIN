@@ -1,0 +1,112 @@
+task_id: CTR_067
+task_name: Turn on the stove, and then open the middle drawer of the cabinet.
+language: Turn on the stove, and then open the middle drawer of the cabinet.
+primary_category: Composition
+composition_family: C2_ALL_goal_compatible_pairs
+anchor_suite: libero_goal
+source_prior_task_ids:
+- '7'
+- '10'
+source_priors:
+- suite: libero_goal
+  task_stem: turn_on_the_stove
+  instruction: Turn on the stove
+  bddl: upstream_LIBERO/bddl_files/libero_goal/turn_on_the_stove.bddl
+  init: upstream_LIBERO/init_files/libero_goal/turn_on_the_stove.pruned_init
+  evidence: ''
+- suite: libero_goal
+  task_stem: open_the_middle_drawer_of_the_cabinet
+  instruction: Open the middle layer of the drawer
+  bddl: upstream_LIBERO/bddl_files/libero_goal/open_the_middle_drawer_of_the_cabinet.bddl
+  init: upstream_LIBERO/init_files/libero_goal/open_the_middle_drawer_of_the_cabinet.pruned_init
+  evidence: ''
+component_task_instructions:
+- Turn on the stove
+- Open the middle drawer of the cabinet
+component_evidence: []
+semantic_subtask_count: 2
+action_plan_step_count: 2
+canonical_goal_atoms:
+- turnon(flat_stove_1)
+- open(wooden_cabinet_1_middle_region)
+canonical_task_signature: composition|49c679ea7cdf5951f77ddd70c5344ae7806add9ba26ccbee8aef902d24f08b0a|('turnon(flat_stove_1)',
+  'open(wooden_cabinet_1_middle_region)')
+objects_of_interest:
+- flat_stove_1
+- wooden_cabinet_1_middle_region
+pure_composition: true
+requires_transition: true
+sequence_stages: []
+physical_group: ctr_067
+base_bddl_template: LIBERO_EX_ICRA27/LiberoComposition/tasks/comp_068__turn_on_the_stove_then_open_the_middle_drawer_of_the_cabinet_and_finally_put_the_black_bowl_on_top_of_the_cabinet/task.bddl
+base_pruned_init: LIBERO_EX_ICRA27/LiberoComposition/tasks/comp_068__turn_on_the_stove_then_open_the_middle_drawer_of_the_cabinet_and_finally_put_the_black_bowl_on_top_of_the_cabinet/task.pruned_init
+max_steps: 800
+definition_status: defined_not_evaluated
+notes:
+- Trajectory-guided repair authorized on 2026-09-11; see REPAIR_PROVENANCE.json.
+identity_status: existing_libero_ex_identity
+source_parent_task: COMP_068
+source_parent_component_indices:
+- 1
+- 2
+prior_partial_evidence:
+- parent_task_id: COMP_068
+  episode_idx: 1
+  kind: ordered instruction prefix
+  simulator_step: 359
+  combination: 110 (or stronger)
+- parent_task_id: COMP_042
+  episode_idx: 4
+  kind: ordered instruction prefix
+  simulator_step: 561
+  combination: 110 (or stronger)
+- parent_task_id: COMP_067
+  episode_idx: 3
+  kind: ordered instruction prefix
+  simulator_step: 583
+  combination: 110 (or stronger)
+selected: false
+policy_evaluation_authorized: true
+evaluation_authorized: true
+publication_authorized: false
+legacy_parent_snapshot: true
+legacy_parent_source_bundle: LIBERO_EX_ICRA27/LiberoComposition2Step/tasks/comp2_003__turn_on_the_stove_and_then_open_the_middle_drawer_of_the_cabinet
+historical_results_json: private_evaluation_results/rain_ms_maskaug_gt_libero_composition2step361_5ep_gpu23_20260903/tasks/all361/CTR_067/results.json
+same_five_state_bytes_as_legacy_source: true
+validation_version: trajectory_repair_five_state_screen_v2_fixture_snapshot
+final_tc_gate: false
+globally_novel_additive_candidate: false
+new_semantic_family: false
+compose_final_tc_gate: false
+trajectory_guided_repair: true
+parent_task_id: COMP2_003
+parent_bundle: LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/legacy_parent_snapshots/COMP2_003
+repair_definition:
+  task_id: CTR_067
+  parent_task_id: COMP2_003
+  parent_bundle: LiberoComposeTrajRepair20260911/legacy_parent_snapshots/COMP2_003
+  pose_changes:
+    wooden_cabinet_1:
+      delta_xyz:
+      - -0.04
+      - 0.01
+      - 0
+    wine_rack_1:
+      delta_xyz:
+      - -0.04
+      - 0.01
+      - 0
+  evidence: Same observed middle-handle miss as rejected CTR061. Translate cabinet
+    and adjacent empty wine rack coherently4cm left/1cm positive-Y, preserving their
+    original separation and clearing the exact cabinet/rack contact found by the previous
+    physical screen. Stove remains unchanged; neither translated fixture initially
+    supports a movable object.
+arbitrary_coordinate_offsets: true
+same_index_parent_states: true
+same_index_robot_frame_transfer: false
+downstream_preservation_required: true
+environment_ignore_done: true
+manual_success_video_preservation_review_required: true
+parent_canonical_task_signature: composition|3f474b285ddc2e6e7e375309ab9cbd20d9a618ab3520cafd769b89fad2c6a2d1|frozenset({open(wooden_cabinet_1_middle_region),turnon(flat_stove_1)})
+custom_eval_needed: true
+order_sensitive: true

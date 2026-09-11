@@ -1,0 +1,30 @@
+{
+  "task_id": "CTR_067",
+  "parent_task_id": "COMP2_003",
+  "parent_bundle": "LiberoComposeTrajRepair20260911/legacy_parent_snapshots/COMP2_003",
+  "pose_changes": {
+    "wooden_cabinet_1": {
+      "delta_xyz": [
+        -0.04,
+        0.01,
+        0
+      ]
+    },
+    "wine_rack_1": {
+      "delta_xyz": [
+        -0.04,
+        0.01,
+        0
+      ]
+    }
+  },
+  "evidence": "Same observed middle-handle miss as rejected CTR061. Translate cabinet and adjacent empty wine rack coherently4cm left/1cm positive-Y, preserving their original separation and clearing the exact cabinet/rack contact found by the previous physical screen. Stove remains unchanged; neither translated fixture initially supports a movable object.",
+  "classification": "repair_variant_not_new_semantic_family",
+  "parent_files_sha256": {
+    "task.bddl": "b5469253df3c18a367e9e5344b4c1e8843498a1815b43e7be2cf5c3e9e1e5dee",
+    "task.pruned_init": "9ca72150058bc6994d913250e4c4dfaffe6b82979ce3cb58f2e1cbd92017d40f",
+    "FIXTURE_REPLAY.json": "399f6c8fd983931ede1e4ddfc04a6f4a95f51223cb8664cc46c6bf2b71ab047a",
+    "action_plan.yaml": "948a0830bd284d2710f22e471d9be99d954230952d886973d64515319c3aa2e3"
+  },
+  "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+}

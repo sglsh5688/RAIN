@@ -113,7 +113,7 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px 5px;
 </style></head><body><header><a href="../index.html">LIBERO-EX review</a> · <a href="../selected29/index.html">Selected 60</a>
 <h1>Compose trajectory repair</h1><p>Compose tests whether skills learned from the original LIBERO-40 can be executed in sequence.
 These experiments repair failed compositions using observed trajectories, object poses, or object substitutions.</p>
-<p><b>4 reviewer candidates.</b> Each rate uses all five fresh evaluation episodes. Native success requires ordered events
+<p><b>5 reviewer candidates.</b> Each rate uses all five fresh evaluation episodes. Native success requires ordered events
 and all final task predicates, with no final TC threshold. Every displayed success also passed full video review for deliberate actions
 and preservation of earlier results. These variants are separate from the selected 60 tasks.</p><p><a href="tasks.tsv">Candidate manifest</a> · <a href="summary.json">Evaluation summary</a></p></header>
 <main><article class="task card" id="CTR_028">
@@ -208,6 +208,32 @@ and preservation of earlier results. These variants are separate from the select
 <div class="actions"><button type="button" data-video="assets/CTR_105/success_reel.mp4">Play 1 success episode(s)</button><button type="button" data-video="assets/CTR_105/parent_failure.mp4">Play parent failure</button>
 <a href="assets/CTR_105/evidence.json">Evidence and provenance</a><a href="assets/CTR_105/task_bundle/task.bddl">Task definition</a></div>
 <video controls playsinline preload="none" aria-label="CTR_105 episode reel" hidden></video>
+</article><article class="task card" id="CTR_067">
+<div class="task-head"><span class="tag">Reviewer candidate · variant of COMP2_003</span><h2>CTR_067</h2></div>
+<p class="instruction">Turn on the stove, and then open the middle drawer of the cabinet.</p><p class="score">Manually valid <b>2/5</b> (40%) · Native evaluator 2/5</p>
+<img class="preview" src="assets/CTR_067/preview.jpg" loading="lazy" decoding="async" alt="CTR_067 scene preview">
+<p><b>Parent experiment:</b> COMP2_003, native evaluator 0/5. Turn on the stove, and then open the middle drawer of the cabinet.</p>
+<p>Two directly trained LIBERO-40 Goal skills are chained: turn the stove on, then open the middle drawer. Both native goals begin false. Full video and control-trace review confirms deliberate knob operation, contact with the actual middle-drawer handle and a14.5–14.6cm drawer pull, with the stove-on result preserved throughout. This is a fresh pose repair of historical COMP2_0030/5. The parent did not save failure videos or a historical state-file digest; exact seeded reconstruction and initial robot/gripper/mask observations were checked for all five states. Fresh policy seeds7–11 differ from parent207–211, so this is not a matched-seed causal improvement. The selected60 tasks remain unchanged.</p><details><summary>Failure evidence and repair</summary><pre>{
+  &quot;fixture_ids&quot;: [
+    &quot;wooden_cabinet_1&quot;,
+    &quot;wine_rack_1&quot;
+  ],
+  &quot;offset_world_m&quot;: [
+    -0.04,
+    0.01,
+    0
+  ],
+  &quot;notes&quot;: &quot;Translate the cabinet and adjacent empty wine rack together by4cm in negative world X and1cm in positive world Y, toward historical missed middle-handle grasps. Their separation is preserved. The same change is applied to all five source states; stove pose and articulation starting values are unchanged.&quot;
+}</pre></details>
+<details><summary>Parent and repaired starting states</summary>
+<p>Each repair derives from the matching parent state below. The legacy log did not record a state-file digest; source correspondence was checked by seeded scene replay and exact initial robot/gripper and two-camera mask observations in all five episodes. Policy seeds differ from the historical run, so this is not a matched-seed causal comparison.</p>
+<table><thead><tr><th>State</th><th>Historical parent</th><th>Fresh repair</th></tr></thead><tbody><tr><td>000</td><td>Failed</td><td>Failed</td></tr><tr><td>001</td><td>Failed</td><td>Verified success</td></tr><tr><td>002</td><td>Failed</td><td>Failed</td></tr><tr><td>003</td><td>Failed</td><td>Failed</td></tr><tr><td>004</td><td>Failed</td><td>Verified success</td></tr></tbody></table></details>
+<details><summary>Original LIBERO-40 skill lineage</summary><ul><li><b>libero_goal</b>: turn_on_the_stove<br>The trained object identity, action and native goal are retained and chained with the other trained skill. The cabinet layout is translated toward the missed grasp trajectory.</li><li><b>libero_goal</b>: open_the_middle_drawer_of_the_cabinet<br>The trained object identity, action and native goal are retained and chained with the other trained skill. The cabinet layout is translated toward the missed grasp trajectory.</li></ul></details>
+<p>Certified episodes: 001, 004.</p>
+
+<div class="actions"><button type="button" data-video="assets/CTR_067/success_reel.mp4">Play 2 success episode(s)</button>
+<a href="assets/CTR_067/evidence.json">Evidence and provenance</a><a href="assets/CTR_067/task_bundle/task.bddl">Task definition</a></div>
+<video controls playsinline preload="none" aria-label="CTR_067 episode reel" hidden></video>
 </article></main><script>
 let active = null;
 document.querySelectorAll('button[data-video]').forEach(button => button.addEventListener('click', () => {

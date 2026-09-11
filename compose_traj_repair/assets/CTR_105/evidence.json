@@ -28,6 +28,7 @@
   "parent_instruction": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the cream cheese and place it in the right compartment of the bowl drainer.",
   "parent_state_verification": {
     "method": "original_run_manifest_and_byte_identical_five_state_source",
+    "original_historical_state_file_digest_available": true,
     "run_config_sha256": "108092f1236210498a6a085d61e179823e170c39e767c7399c43eb2060b34814",
     "task_pruned_init_sha256": "36f8bc2f83576677bebf41e532bf818e8e5286051d21627bb0b7f28ca71712b5"
   },

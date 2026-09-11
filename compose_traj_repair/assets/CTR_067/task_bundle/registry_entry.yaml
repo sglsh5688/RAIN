@@ -1,0 +1,14 @@
+name: CTR_067
+language: Turn on the stove, and then open the middle drawer of the cabinet.
+problem: Libero
+problem_folder: tasks/ctr_067
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_goal
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|49c679ea7cdf5951f77ddd70c5344ae7806add9ba26ccbee8aef902d24f08b0a|('turnon(flat_stove_1)',
+  'open(wooden_cabinet_1_middle_region)')

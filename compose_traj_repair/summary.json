@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-09-11T08:53:44.743824+00:00",
+  "created_at_utc": "2026-09-11T09:10:21.857762+00:00",
   "review_status": "pending_user_review_not_selected",
   "tasks": [
     {
@@ -41,11 +41,21 @@
       "nominal_successes": 1,
       "manually_valid_successes": 1,
       "certified_episode_indices": "3"
+    },
+    {
+      "task_id": "CTR_067",
+      "instruction": "Turn on the stove, and then open the middle drawer of the cabinet.",
+      "variant_of": "COMP2_003",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 2,
+      "manually_valid_successes": 2,
+      "certified_episode_indices": "1,4"
     }
   ],
-  "source_manual_review_sha256": "9d0402e1c033c1580100d1fc995f0dc53f17baa6a2183ea1e301600a8ada4432",
-  "nominal_successes": 9,
-  "manually_valid_successes": 9,
-  "episodes": 20,
+  "source_manual_review_sha256": "0840409d41b78400ed839e205968f55fcf9d953bff36513dec48dd6cd3d5de97",
+  "nominal_successes": 11,
+  "manually_valid_successes": 11,
+  "episodes": 25,
   "selected60_modified": false
 }

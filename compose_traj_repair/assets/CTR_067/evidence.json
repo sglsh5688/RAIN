@@ -1,0 +1,232 @@
+{
+  "task_id": "CTR_067",
+  "instruction": "Turn on the stove, and then open the middle drawer of the cabinet.",
+  "status": "pending_user_review_not_selected",
+  "variant_of": "COMP2_003",
+  "classification": "repair_variant_not_new_semantic_family",
+  "episodes": 5,
+  "nominal_successes": 2,
+  "manually_valid_successes": 2,
+  "nominal_success_episode_indices": [
+    1,
+    4
+  ],
+  "certified_episode_indices": [
+    1,
+    4
+  ],
+  "ordered_native_milestones": {
+    "1": [
+      82,
+      542
+    ],
+    "4": [
+      77,
+      401
+    ]
+  },
+  "final_success_requires_all_bddl_goals": true,
+  "compose_final_tc_gate": false,
+  "results_sha256": "c0beae588e0d1b08d311c4d4f12da0930be241b1f1d75736ad7b2a193821ce06",
+  "parent_results_sha256": "80dad9658c4e47c0e6857c0addca0247098343f75e50ea2da70e2c170dc18723",
+  "parent_nominal_successes": 0,
+  "parent_episodes": 5,
+  "parent_instruction": "Turn on the stove, and then open the middle drawer of the cabinet.",
+  "parent_state_verification": {
+    "method": "seeded_reconstruction_and_exact_five_episode_initial_observations",
+    "original_historical_state_file_digest_available": false,
+    "run_config_sha256": "92620b4ba39ea6bfb441a3060941bcf5626c4c40d447e12a9f06f43f37a99897",
+    "task_pruned_init_sha256": "9ca72150058bc6994d913250e4c4dfaffe6b82979ce3cb58f2e1cbd92017d40f"
+  },
+  "repair": {
+    "fixture_ids": [
+      "wooden_cabinet_1",
+      "wine_rack_1"
+    ],
+    "offset_world_m": [
+      -0.04,
+      0.01,
+      0
+    ],
+    "notes": "Translate the cabinet and adjacent empty wine rack together by4cm in negative world X and1cm in positive world Y, toward historical missed middle-handle grasps. Their separation is preserved. The same change is applied to all five source states; stove pose and articulation starting values are unchanged."
+  },
+  "frozen_repair_provenance": {
+    "task_id": "CTR_067",
+    "parent_task_id": "COMP2_003",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/legacy_parent_snapshots/COMP2_003",
+    "pose_changes": {
+      "wooden_cabinet_1": {
+        "delta_xyz": [
+          -0.04,
+          0.01,
+          0
+        ]
+      },
+      "wine_rack_1": {
+        "delta_xyz": [
+          -0.04,
+          0.01,
+          0
+        ]
+      }
+    },
+    "evidence": "Same observed middle-handle miss as rejected CTR061. Translate cabinet and adjacent empty wine rack coherently4cm left/1cm positive-Y, preserving their original separation and clearing the exact cabinet/rack contact found by the previous physical screen. Stove remains unchanged; neither translated fixture initially supports a movable object.",
+    "classification": "repair_variant_not_new_semantic_family",
+    "parent_files_sha256": {
+      "task.bddl": "b5469253df3c18a367e9e5344b4c1e8843498a1815b43e7be2cf5c3e9e1e5dee",
+      "task.pruned_init": "9ca72150058bc6994d913250e4c4dfaffe6b82979ce3cb58f2e1cbd92017d40f",
+      "FIXTURE_REPLAY.json": "399f6c8fd983931ede1e4ddfc04a6f4a95f51223cb8664cc46c6bf2b71ab047a",
+      "action_plan.yaml": "948a0830bd284d2710f22e471d9be99d954230952d886973d64515319c3aa2e3"
+    },
+    "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+  },
+  "original40_skill_lineage": [
+    {
+      "suite": "libero_goal",
+      "task": "turn_on_the_stove",
+      "instruction": "Turn on the stove",
+      "transfer": "The trained object identity, action and native goal are retained and chained with the other trained skill. The cabinet layout is translated toward the missed grasp trajectory."
+    },
+    {
+      "suite": "libero_goal",
+      "task": "open_the_middle_drawer_of_the_cabinet",
+      "instruction": "Open the middle layer of the drawer",
+      "transfer": "The trained object identity, action and native goal are retained and chained with the other trained skill. The cabinet layout is translated toward the missed grasp trajectory."
+    }
+  ],
+  "manual_review_notes": "Two directly trained LIBERO-40 Goal skills are chained: turn the stove on, then open the middle drawer. Both native goals begin false. Full video and control-trace review confirms deliberate knob operation, contact with the actual middle-drawer handle and a14.5–14.6cm drawer pull, with the stove-on result preserved throughout. This is a fresh pose repair of historical COMP2_0030/5. The parent did not save failure videos or a historical state-file digest; exact seeded reconstruction and initial robot/gripper/mask observations were checked for all five states. Fresh policy seeds7–11 differ from parent207–211, so this is not a matched-seed causal improvement. The selected60 tasks remain unchanged.",
+  "episode_reviews": [
+    {
+      "episode_idx": 1,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 70,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch18_5ep_20260911/tasks/all1/CTR_067/videos/CTR_067_ep001_ok.mp4",
+      "video_sha256": "5e140d8d73bdeba049097d22f3bdeee851f43c29497e3433ac7aa6629646bc9c",
+      "reviewed_complete_trace": true,
+      "trace_npz_sha256": "8bc034cd30c905d9a82f6d5ec4f0f416f0451e02aa00f5b2f9e4eed53aff95a3",
+      "milestones": [
+        82,
+        542
+      ],
+      "initial_native_goals": [
+        false,
+        false
+      ],
+      "final_native_goals": [
+        true,
+        true
+      ],
+      "stove_native_false_steps_after_first_milestone": [],
+      "middle_drawer_world_translation_m": [
+        1.734723475976807e-17,
+        0.14542834555621154,
+        0.0
+      ],
+      "middle_drawer_translation_norm_m": 0.14542834555621154,
+      "fixed_cabinet_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "middle_handle_contact_first_control": 471,
+      "middle_handle_contact_last_control": 542,
+      "notes": "Reviewed all 70 saved video frames and the complete trace. The robot deliberately turns the stove knob on, then approaches and closes on the actual middle-drawer handle, pulling that drawer outward. It spends an extended interval near the stove before moving to the cabinet, but the requested drawer action is eventually performed. Stove-on remains true at every saved control after its first native milestone. Both requested native goals begin false; no pre-opened middle drawer or accidental cabinet-body motion establishes success. The middle drawer remains robot-held during the terminal pull, which is consistent with the requested open action; no object placement is claimed."
+    },
+    {
+      "episode_idx": 4,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 53,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch18_5ep_20260911/tasks/all1/CTR_067/videos/CTR_067_ep004_ok.mp4",
+      "video_sha256": "a10cc98b0e0ce53dc011612eeca7a96a791cebdb99b00a221f1c417a6e39597f",
+      "reviewed_complete_trace": true,
+      "trace_npz_sha256": "33652f3591e328bb9b79a79bf22d73b7bf5b476ca4fccc5c89cb9bb50177eb80",
+      "milestones": [
+        77,
+        401
+      ],
+      "initial_native_goals": [
+        false,
+        false
+      ],
+      "final_native_goals": [
+        true,
+        true
+      ],
+      "stove_native_false_steps_after_first_milestone": [],
+      "middle_drawer_world_translation_m": [
+        1.8214596497756474e-17,
+        0.1463726108274997,
+        0.0
+      ],
+      "middle_drawer_translation_norm_m": 0.1463726108274997,
+      "fixed_cabinet_translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "middle_handle_contact_first_control": 377,
+      "middle_handle_contact_last_control": 401,
+      "notes": "Reviewed all 53 saved video frames and the complete trace. The robot deliberately turns the stove knob on, then approaches and closes on the actual middle-drawer handle, pulling that drawer outward. It spends an extended interval near the stove before moving to the cabinet, but the requested drawer action is eventually performed. Stove-on remains true at every saved control after its first native milestone. Both requested native goals begin false; no pre-opened middle drawer or accidental cabinet-body motion establishes success. The middle drawer remains robot-held during the terminal pull, which is consistent with the requested open action; no object placement is claimed."
+    }
+  ],
+  "episode_outcomes": [
+    {
+      "episode_idx": 0,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 1,
+      "parent_same_index_native_success": false,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 2,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 3,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 4,
+      "parent_same_index_native_success": false,
+      "nominal_success": true,
+      "manually_valid_success": true
+    }
+  ],
+  "rain_settings": {
+    "checkpoint": "RAIN/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "progress_checkpoint": "RAIN/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "replan_steps": 8,
+    "num_inference_steps": 4,
+    "feas_threshold": 0.7,
+    "consecutive_stop": 2,
+    "seed": 7,
+    "clip_model_name": "openai/clip-vit-large-patch14"
+  },
+  "source_bundle_sha256": {
+    "task.bddl": "b5469253df3c18a367e9e5344b4c1e8843498a1815b43e7be2cf5c3e9e1e5dee",
+    "task.pruned_init": "5019b22da35a3462364cec35fe5903cbdcbd8e31c416222e3f372b541dbd6a15",
+    "task_meta.yaml": "2dc9621c31c580f71bf412f12aa038aece36d3ff8043905ce28f89a1251ce8b8",
+    "eval_rules.yaml": "fc339ed276775ce3d5953da4eb1385017d46850322951ff8915e6446df93d3af",
+    "registry_entry.yaml": "64f6da62bd96a94d010895ab48588540dcdaa93dca6f72ab6989a730b87f4497",
+    "mask_bindings.yaml": "3d448da835d3fbb069be4aaeff375a068f8af01428f40b36b70259f8705198a5",
+    "action_plan.yaml": "90786e626a5b41d8e297eec12c7a802d7b9f1d66b492aa943ce45b2436d7fe62",
+    "FIXTURE_REPLAY.json": "75841d978a98a02c931114a324e852cc9024887d953a49516d13f7e6183d3a03",
+    "INIT_VALIDATION.json": "971a59b6fd0c9cf8f1572652288cf7dfd431f0fcffbb6da831c2512d00f5f1a4",
+    "REPAIR_PROVENANCE.json": "ed8d148686f5cccd4576c97442eda76555e5fa20e45d3141e05d273f64d6e064"
+  }
+}

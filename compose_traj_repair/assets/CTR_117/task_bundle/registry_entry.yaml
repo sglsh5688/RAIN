@@ -1,0 +1,15 @@
+name: CTR_117
+language: Put the cream cheese box in the basket, and then put the alphabet soup in
+  the basket.
+problem: Libero
+problem_folder: tasks/ctr_117
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|036263ab0c1c020024f413acdac613fdb74836a5b6715dfc1f798898725ab8a0|('in(cream_cheese_1,
+  basket_1_contain_region)', 'in(alphabet_soup_1, basket_1_contain_region)')

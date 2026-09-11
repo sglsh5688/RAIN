@@ -1,0 +1,328 @@
+{
+  "task_id": "CTR_117",
+  "instruction": "Put the cream cheese box in the basket, and then put the alphabet soup in the basket.",
+  "status": "pending_user_review_not_selected",
+  "variant_of": "CTR_066",
+  "classification": "repair_variant_not_new_semantic_family",
+  "episodes": 5,
+  "nominal_successes": 2,
+  "manually_valid_successes": 2,
+  "nominal_success_episode_indices": [
+    0,
+    1
+  ],
+  "certified_episode_indices": [
+    0,
+    1
+  ],
+  "ordered_native_milestones": {
+    "0": [
+      142,
+      597
+    ],
+    "1": [
+      143,
+      526
+    ]
+  },
+  "final_success_requires_all_bddl_goals": true,
+  "compose_final_tc_gate": false,
+  "results_sha256": "02645f0c6874722369b737056cfc01fcdf0e9deed7397dea3be55ccc979338dd",
+  "parent_results_sha256": "5314207271ad0a20f94da0bc17fcfa57377d316c6f595cbff04b2b781d85e322",
+  "parent_nominal_successes": 2,
+  "parent_episodes": 5,
+  "parent_instruction": "Put the cream cheese box in the basket, and then put the alphabet soup in the basket.",
+  "parent_state_verification": {
+    "method": "historical_per_episode_state_hash"
+  },
+  "repair": {
+    "kind": "same_geometry_future_terminal_protocol_followup",
+    "pose_changes": {},
+    "terminal_contract": {
+      "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+      "support_hold_control_steps": 5,
+      "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+      "settle_linear_speed_max_m_s": 0.02,
+      "settle_angular_speed_max_rad_s": 0.5
+    },
+    "notes": "Preserves the parent repaired physical definition. Continues the unchanged final-release policy inside the existing cap until the ordered native goals and declared physical placement condition hold."
+  },
+  "frozen_repair_provenance": {
+    "task_id": "CTR_117",
+    "parent_task_id": "CTR_066",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch18/tasks/ctr_066",
+    "pose_changes": {},
+    "terminal_contract": {
+      "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+      "support_hold_control_steps": 5,
+      "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+      "settle_linear_speed_max_m_s": 0.02,
+      "settle_angular_speed_max_rad_s": 0.5
+    },
+    "evidence": "Future-only supported-placement followup ofCTR_066. Reuse the frozen trajectory-repaired physical definition unchanged and add an explicitly stricter terminal contract. Earlier basket candidates terminated when the last released object was still airborne; native successes remain untouched and are not certified as settled from those rollouts. This fresh five-episode trial lets the unchanged RAIN final-release action continue within the same existing cap until all ordered native goals AND supported released targets stay below predeclared speed thresholds for five actual controls. No passive continuation, forced-open action, extra cap or finalTC gate is added. This is a protocol followup of an existing physical repair, not an additional distinct scene or semantic family.",
+    "classification": "repair_variant_not_new_semantic_family",
+    "parent_files_sha256": {
+      "task.bddl": "fe0b34c8b24fd9acb6b7c78bce3d5c53cb2683192f50f36afd1c21599ffc873c",
+      "task.pruned_init": "ad4889f1fc55352a84a393fbdfc9ecaaf1764a641815f3bf98ef38f7da98bec7",
+      "FIXTURE_REPLAY.json": "5b0d26453a734cdc8fca40629b4d34ebb4efa3153d45474ceae97adc4a1bf52e",
+      "action_plan.yaml": "e9e987cb3d0faa931a7e7a7b6e8d6c8990aa044ae3366a05fbbeee72fcab0c84"
+    },
+    "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+  },
+  "original40_skill_lineage": [
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_02",
+      "instruction": "Pick the cream cheese and place it in the basket",
+      "transfer": "The original40 directly trains this object grasp and basket placement. The two known skills are chained in the requested cheese-then-soup order in a repaired shared scene."
+    },
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_01",
+      "instruction": "Pick the alphabet soup and place it in the basket",
+      "transfer": "The original40 directly trains this object grasp and basket placement. The two known skills are chained in the requested cheese-then-soup order in a repaired shared scene."
+    }
+  ],
+  "manual_review_notes": "Same-geometry terminal-protocol followup of CTR_066; the frozen states, fixture poses, BDDL goals, RAIN checkpoints, policy seeds 7-11 and 800-control budget are unchanged. The parent reported 2/5 native successes but stopped while released soup was still falling; those historical scores are preserved and were withheld from the success gallery. This fresh 5-episode run additionally requires every target released, supported through the exact basket base, and below declared speed limits for five actual controls. Both successes passed full-video and full-trace review. All five action/state prefixes are bitwise identical through the parent cutoffs. This is an existing physical repair evaluated with a stricter terminal rule, not a new scene, new semantic family, or pose-driven success-rate improvement.",
+  "episode_reviews": [
+    {
+      "episode_idx": 0,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 76,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch55b_5ep_20260911/tasks/all1/CTR_117/videos/CTR_117_ep000_ok.mp4",
+      "video_sha256": "da428c0deaece8687251038f32c82af457846f8413f22aca66e26ea33ac760ab",
+      "trace_npz_sha256": "3cd19f1b5207e268a60b20bae8908ca8e369656de8e7c3e2b340ab3fc6b65b29",
+      "milestones": [
+        142,
+        597
+      ],
+      "supported_settled_control_range": [
+        604,
+        608
+      ],
+      "final_entity_facts": {
+        "alphabet_soup_1": {
+          "world_position_m": [
+            -0.007844280445886984,
+            0.30725792695740034,
+            0.05236911886820932
+          ],
+          "linear_speed_m_s": 0.008189057521223616,
+          "angular_speed_rad_s": 0.27790483421376533,
+          "any_robot_contact": false,
+          "native_in": true
+        },
+        "basket_1": {
+          "world_position_m": [
+            -0.008619177181677288,
+            0.26737996615637405,
+            -0.004585756256675138
+          ],
+          "linear_speed_m_s": 4.811065961585186e-05,
+          "angular_speed_rad_s": 0.00045993374817475933,
+          "any_robot_contact": false,
+          "upright": true,
+          "original_support_contact": true
+        },
+        "cream_cheese_1": {
+          "world_position_m": [
+            0.000888244363481883,
+            0.25581000627624834,
+            0.025912034893819755
+          ],
+          "linear_speed_m_s": 0.007687102842157056,
+          "angular_speed_rad_s": 0.13917801597478227,
+          "any_robot_contact": false,
+          "native_in": true
+        }
+      },
+      "terminal_support_chain": [
+        "alphabet_soup_1 -> cream_cheese_1 -> exact basket_1 native base -> original floor anchor"
+      ],
+      "parent_action_state_prefix_exact": true,
+      "parent_old_cutoff": 597,
+      "fresh_completion_control": 608,
+      "notes": "Reviewed all 76 saved frames and all 608 policy controls. The robot deliberately grasps the cream-cheese box, carries it to the basket and releases it. It retries the requested blue soup can pickup, then lifts, carries and releases that can into the same basket. Cheese stays nativeIn throughout the second action and supported in the final scene. Soup settles partly on the cheese with a positive upward support chain to the exact basket base; the basket stays upright on its original floor. Both targets and basket are free from robot contact and below the declared speed limits during all five controls 604-608. Every saved action/state/EEF/native/ctrl/solver-cache array matches parent066 exactly through its old cutoff 597. The final release policy continues for 11 further controls inside the same 800-control cap; no passive continuation or finalTC gate is added. No accidental substitute-object goal or disruption of the earlier placement observed."
+    },
+    {
+      "episode_idx": 1,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 69,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch55b_5ep_20260911/tasks/all1/CTR_117/videos/CTR_117_ep001_ok.mp4",
+      "video_sha256": "fe4b8a93406b0b800952145b8c1677e67b8f986b5398ecae0b70c75b1a2e72ad",
+      "trace_npz_sha256": "d120587ab1d9ef208aa9fe9d71b17dbad135b4f6540b762ccd85046bd23a3b29",
+      "milestones": [
+        143,
+        526
+      ],
+      "supported_settled_control_range": [
+        548,
+        552
+      ],
+      "final_entity_facts": {
+        "alphabet_soup_1": {
+          "world_position_m": [
+            0.010484032600309407,
+            0.3004714154460105,
+            0.05257233123606739
+          ],
+          "linear_speed_m_s": 0.01374350540979597,
+          "angular_speed_rad_s": 0.332595909843806,
+          "any_robot_contact": false,
+          "native_in": true
+        },
+        "basket_1": {
+          "world_position_m": [
+            0.007959172542936785,
+            0.2618769388226992,
+            -0.004585768321847939
+          ],
+          "linear_speed_m_s": 2.796178415224888e-05,
+          "angular_speed_rad_s": 0.00016844551518145628,
+          "any_robot_contact": false,
+          "upright": true,
+          "original_support_contact": true
+        },
+        "cream_cheese_1": {
+          "world_position_m": [
+            -0.005346489230207498,
+            0.25320266243370243,
+            0.025921589064604414
+          ],
+          "linear_speed_m_s": 0.014967781091466044,
+          "angular_speed_rad_s": 0.006171727460040291,
+          "any_robot_contact": false,
+          "native_in": true
+        }
+      },
+      "terminal_support_chain": [
+        "alphabet_soup_1 -> cream_cheese_1 -> exact basket_1 native base -> original floor anchor"
+      ],
+      "parent_action_state_prefix_exact": true,
+      "parent_old_cutoff": 526,
+      "fresh_completion_control": 552,
+      "notes": "Reviewed all 69 saved frames and all 552 policy controls. The robot deliberately grasps the cream-cheese box, carries it to the basket and releases it. It retries the requested blue soup can pickup, then lifts, carries and releases that can into the same basket. Cheese stays nativeIn throughout the second action and supported in the final scene. Soup settles partly on the cheese with a positive upward support chain to the exact basket base; the basket stays upright on its original floor. Both targets and basket are free from robot contact and below the declared speed limits during all five controls 548-552. Every saved action/state/EEF/native/ctrl/solver-cache array matches parent066 exactly through its old cutoff 526. The final release policy continues for 26 further controls inside the same 800-control cap; no passive continuation or finalTC gate is added. No accidental substitute-object goal or disruption of the earlier placement observed."
+    }
+  ],
+  "episode_outcomes": [
+    {
+      "episode_idx": 0,
+      "parent_same_index_native_success": true,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 1,
+      "parent_same_index_native_success": true,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 2,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 3,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 4,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    }
+  ],
+  "rain_settings": {
+    "checkpoint": "RAIN/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "progress_checkpoint": "RAIN/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "replan_steps": 8,
+    "num_inference_steps": 4,
+    "feas_threshold": 0.7,
+    "consecutive_stop": 2,
+    "seed": 7,
+    "clip_model_name": "openai/clip-vit-large-patch14"
+  },
+  "source_bundle_sha256": {
+    "task.bddl": "fe0b34c8b24fd9acb6b7c78bce3d5c53cb2683192f50f36afd1c21599ffc873c",
+    "task.pruned_init": "d30d1b4ff60c09b0e57c95b32db64cb029f1c7131668e929b6211b9adfd1d3e8",
+    "task_meta.yaml": "cbdade438656eeda42eefe606a6f49a6675a5ec7ccaca4239c82394f84b37b65",
+    "eval_rules.yaml": "b7ab57d48bf888355a772f720ca632f9de1fb1535dad1bb8b53e8dfe4915661c",
+    "registry_entry.yaml": "551c4f3f1e7933307567003d1d7f720db541b36bacc46ed8cf2ccf17d123eed9",
+    "mask_bindings.yaml": "8563bf9a81f003e25089d6bf3bbed688b9886ef97915fad95efbe6a7e3aef9c7",
+    "action_plan.yaml": "40fff0ce855981d3eb6479d1320c9b5a3659278f2f95fd664018624c202c678d",
+    "FIXTURE_REPLAY.json": "5b0d26453a734cdc8fca40629b4d34ebb4efa3153d45474ceae97adc4a1bf52e",
+    "INIT_VALIDATION.json": "7853783e37d6d7723c4cb40655830084482092c77bc829ebc32b3b6a5cc411be",
+    "REPAIR_PROVENANCE.json": "a87f6700b99894902d2d3a0c54f08ff85c6642340e15336aaec5d030e2e48b2c"
+  },
+  "comparison_design_note": "Initial geometry and policy seeds are matched, and all five saved action/state prefixes are exactly equal through the old termination points. The terminal criteria differ; the native parent score and stricter followup score are not a pose-repair success-rate comparison.",
+  "additional_terminal_contract": {
+    "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+    "support_hold_control_steps": 5,
+    "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+    "settle_linear_speed_max_m_s": 0.02,
+    "settle_angular_speed_max_rad_s": 0.5
+  },
+  "parent_terminal_protocol_different": true,
+  "runtime_sources_sha256": {
+    "basket_released_support_observer.py": "599995e94641d631c3e8e8ed16a1ae5d0214e97c58e2b71d124a3d587e6d8329",
+    "basket_supported_runtime.py": "9aff4bb0e51b683c53287070e06b469e0ce26a4d93e4ecf256ddbddcaec7e73e",
+    "run_compose_traj_repair_basket_supported_entry.py": "00900b93d3c310215507831423062445f8c13088d1c3298915f2a884ba1215f3",
+    "run_compose_traj_repair_basket_supported_5ep.py": "94e6c8f3988ba247a3a577995d65246ae20d304b90dad6a7ad01c6d5d5fb98f8"
+  },
+  "supported_settled_success_audit": {
+    "0": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 608,
+      "actual_control_steps_observed": 608,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    },
+    "1": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 552,
+      "actual_control_steps_observed": 552,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    }
+  }
+}

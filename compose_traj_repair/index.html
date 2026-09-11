@@ -113,7 +113,7 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px 5px;
 </style></head><body><header><a href="../index.html">LIBERO-EX review</a> · <a href="../selected29/index.html">Selected 60</a>
 <h1>Compose trajectory repair</h1><p>Compose tests whether skills learned from the original LIBERO-40 can be executed in sequence.
 These experiments repair failed compositions using observed trajectories, object poses, or object substitutions.</p>
-<p><b>5 reviewer candidates.</b> Each rate uses all five fresh evaluation episodes. Native success requires ordered events
+<p><b>7 reviewer candidates.</b> Each rate uses all five fresh evaluation episodes. Native success requires ordered events
 and all final task predicates, with no final TC threshold. Every displayed success also passed full video review for deliberate actions
 and preservation of earlier results. These variants are separate from the selected 60 tasks.</p><p><a href="tasks.tsv">Candidate manifest</a> · <a href="summary.json">Evaluation summary</a></p></header>
 <main><article class="task card" id="CTR_028">
@@ -234,6 +234,58 @@ and preservation of earlier results. These variants are separate from the select
 <div class="actions"><button type="button" data-video="assets/CTR_067/success_reel.mp4">Play 2 success episode(s)</button>
 <a href="assets/CTR_067/evidence.json">Evidence and provenance</a><a href="assets/CTR_067/task_bundle/task.bddl">Task definition</a></div>
 <video controls playsinline preload="none" aria-label="CTR_067 episode reel" hidden></video>
+</article><article class="task card" id="CTR_117">
+<div class="task-head"><span class="tag">Reviewer candidate · variant of CTR_066</span><h2>CTR_117</h2></div>
+<p class="instruction">Put the cream cheese box in the basket, and then put the alphabet soup in the basket.</p><p class="score">Manually valid <b>2/5</b> (40%) · Native + support/settlement evaluator 2/5</p>
+<img class="preview" src="assets/CTR_117/preview.jpg" loading="lazy" decoding="async" alt="CTR_117 scene preview">
+<p><b>Parent experiment:</b> CTR_066, native evaluator 2/5. Put the cream cheese box in the basket, and then put the alphabet soup in the basket.</p>
+<p>Same-geometry terminal-protocol followup of CTR_066; the frozen states, fixture poses, BDDL goals, RAIN checkpoints, policy seeds 7-11 and 800-control budget are unchanged. The parent reported 2/5 native successes but stopped while released soup was still falling; those historical scores are preserved and were withheld from the success gallery. This fresh 5-episode run additionally requires every target released, supported through the exact basket base, and below declared speed limits for five actual controls. Both successes passed full-video and full-trace review. All five action/state prefixes are bitwise identical through the parent cutoffs. This is an existing physical repair evaluated with a stricter terminal rule, not a new scene, new semantic family, or pose-driven success-rate improvement.</p><details><summary>Failure evidence and repair</summary><pre>{
+  &quot;kind&quot;: &quot;same_geometry_future_terminal_protocol_followup&quot;,
+  &quot;pose_changes&quot;: {},
+  &quot;terminal_contract&quot;: {
+    &quot;basket_completion_mode&quot;: &quot;ordered_native_and_released_supported_settled_v1&quot;,
+    &quot;support_hold_control_steps&quot;: 5,
+    &quot;basket_support_graph_mode&quot;: &quot;required_targets_to_exact_basket_base&quot;,
+    &quot;settle_linear_speed_max_m_s&quot;: 0.02,
+    &quot;settle_angular_speed_max_rad_s&quot;: 0.5
+  },
+  &quot;notes&quot;: &quot;Preserves the parent repaired physical definition. Continues the unchanged final-release policy inside the existing cap until the ordered native goals and declared physical placement condition hold.&quot;
+}</pre></details>
+<details><summary>Parent and repaired starting states</summary>
+<p>Each repair derives from the matching parent state below. Initial geometry and policy seeds are matched, and all five saved action/state prefixes are exactly equal through the old termination points. The terminal criteria differ; the native parent score and stricter followup score are not a pose-repair success-rate comparison.</p>
+<table><thead><tr><th>State</th><th>Historical parent</th><th>Fresh repair</th></tr></thead><tbody><tr><td>000</td><td>Native success</td><td>Verified success</td></tr><tr><td>001</td><td>Native success</td><td>Verified success</td></tr><tr><td>002</td><td>Failed</td><td>Failed</td></tr><tr><td>003</td><td>Failed</td><td>Failed</td></tr><tr><td>004</td><td>Failed</td><td>Failed</td></tr></tbody></table></details>
+<details><summary>Original LIBERO-40 skill lineage</summary><ul><li><b>libero_object</b>: pick_up_the_cream_cheese_and_place_it_in_the_basket<br>The original40 directly trains this object grasp and basket placement. The two known skills are chained in the requested cheese-then-soup order in a repaired shared scene.</li><li><b>libero_object</b>: pick_up_the_alphabet_soup_and_place_it_in_the_basket<br>The original40 directly trains this object grasp and basket placement. The two known skills are chained in the requested cheese-then-soup order in a repaired shared scene.</li></ul></details>
+<p>Certified episodes: 000, 001.</p>
+
+<div class="actions"><button type="button" data-video="assets/CTR_117/success_reel.mp4">Play 2 success episode(s)</button>
+<a href="assets/CTR_117/evidence.json">Evidence and provenance</a><a href="assets/CTR_117/task_bundle/task.bddl">Task definition</a></div>
+<video controls playsinline preload="none" aria-label="CTR_117 episode reel" hidden></video>
+</article><article class="task card" id="CTR_118">
+<div class="task-head"><span class="tag">Reviewer candidate · variant of CTR_121</span><h2>CTR_118</h2></div>
+<p class="instruction">Put the cream cheese box in the basket, and then put the alphabet soup in the basket.</p><p class="score">Manually valid <b>2/5</b> (40%) · Native + support/settlement evaluator 2/5</p>
+<img class="preview" src="assets/CTR_118/preview.jpg" loading="lazy" decoding="async" alt="CTR_118 scene preview">
+<p><b>Parent experiment:</b> CTR_121, native evaluator 2/5. Put the cream cheese box in the basket, and then put the alphabet soup in the basket.</p>
+<p>Same-geometry terminal-protocol followup of CTR_121; the frozen states, fixture poses, BDDL goals, RAIN checkpoints, policy seeds 7-11 and 800-control budget are unchanged. The parent reported 2/5 native successes but stopped while released soup was still falling; those historical scores are preserved and were withheld from the success gallery. This fresh 5-episode run additionally requires every target released, supported through the exact basket base, and below declared speed limits for five actual controls. Both successes passed full-video and full-trace review. All five action/state prefixes are bitwise identical through the parent cutoffs. This is an existing physical repair evaluated with a stricter terminal rule, not a new scene, new semantic family, or pose-driven success-rate improvement.</p><details><summary>Failure evidence and repair</summary><pre>{
+  &quot;kind&quot;: &quot;same_geometry_future_terminal_protocol_followup&quot;,
+  &quot;pose_changes&quot;: {},
+  &quot;terminal_contract&quot;: {
+    &quot;basket_completion_mode&quot;: &quot;ordered_native_and_released_supported_settled_v1&quot;,
+    &quot;support_hold_control_steps&quot;: 5,
+    &quot;basket_support_graph_mode&quot;: &quot;required_targets_to_exact_basket_base&quot;,
+    &quot;settle_linear_speed_max_m_s&quot;: 0.02,
+    &quot;settle_angular_speed_max_rad_s&quot;: 0.5
+  },
+  &quot;notes&quot;: &quot;Preserves the parent repaired physical definition. Continues the unchanged final-release policy inside the existing cap until the ordered native goals and declared physical placement condition hold.&quot;
+}</pre></details>
+<details><summary>Parent and repaired starting states</summary>
+<p>Each repair derives from the matching parent state below. Initial geometry and policy seeds are matched, and all five saved action/state prefixes are exactly equal through the old termination points. The terminal criteria differ; the native parent score and stricter followup score are not a pose-repair success-rate comparison.</p>
+<table><thead><tr><th>State</th><th>Historical parent</th><th>Fresh repair</th></tr></thead><tbody><tr><td>000</td><td>Failed</td><td>Failed</td></tr><tr><td>001</td><td>Native success</td><td>Verified success</td></tr><tr><td>002</td><td>Native success</td><td>Verified success</td></tr><tr><td>003</td><td>Failed</td><td>Failed</td></tr><tr><td>004</td><td>Failed</td><td>Failed</td></tr></tbody></table></details>
+<details><summary>Original LIBERO-40 skill lineage</summary><ul><li><b>libero_object</b>: pick_up_the_cream_cheese_and_place_it_in_the_basket<br>The original40 directly trains this object grasp and basket placement. The two known skills are chained in the requested cheese-then-soup order in a repaired shared scene.</li><li><b>libero_object</b>: pick_up_the_alphabet_soup_and_place_it_in_the_basket<br>The original40 directly trains this object grasp and basket placement. The two known skills are chained in the requested cheese-then-soup order in a repaired shared scene.</li></ul></details>
+<p>Certified episodes: 001, 002.</p>
+
+<div class="actions"><button type="button" data-video="assets/CTR_118/success_reel.mp4">Play 2 success episode(s)</button>
+<a href="assets/CTR_118/evidence.json">Evidence and provenance</a><a href="assets/CTR_118/task_bundle/task.bddl">Task definition</a></div>
+<video controls playsinline preload="none" aria-label="CTR_118 episode reel" hidden></video>
 </article></main><script>
 let active = null;
 document.querySelectorAll('button[data-video]').forEach(button => button.addEventListener('click', () => {

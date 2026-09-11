@@ -1,0 +1,126 @@
+task_id: CTR_117
+task_name: Put the cream cheese box in the basket, and then put the alphabet soup
+  in the basket.
+language: Put the cream cheese box in the basket, and then put the alphabet soup in
+  the basket.
+primary_category: Composition
+composition_family: C2_ALL_object_layout_basket_pairs
+anchor_suite: libero_object
+source_prior_task_ids:
+- '302'
+- '301'
+source_priors:
+- suite: libero_object
+  task_stem: pick_up_the_cream_cheese_and_place_it_in_the_basket
+  instruction: Pick the cream cheese and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_alphabet_soup_and_place_it_in_the_basket
+  instruction: Pick the alphabet soup and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the cream cheese box in the basket
+- Put the alphabet soup in the basket
+component_evidence:
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its
+  pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its
+  pose in the composite scene may differ.
+semantic_subtask_count: 2
+action_plan_step_count: 4
+canonical_goal_atoms:
+- in(cream_cheese_1, basket_1_contain_region)
+- in(alphabet_soup_1, basket_1_contain_region)
+canonical_task_signature: composition|036263ab0c1c020024f413acdac613fdb74836a5b6715dfc1f798898725ab8a0|('in(cream_cheese_1,
+  basket_1_contain_region)', 'in(alphabet_soup_1, basket_1_contain_region)')
+objects_of_interest:
+- cream_cheese_1
+- basket_1
+- alphabet_soup_1
+pure_composition: true
+requires_transition: true
+sequence_stages: []
+physical_group: ctr_117
+base_bddl_template: LIBERO_EX_ICRA27/LiberoComposition/tasks/comp_323__put_the_cream_cheese_box_the_alphabet_soup_and_the_orange_juice_in_the_basket_one_after_another/task.bddl
+base_pruned_init: LIBERO_EX_ICRA27/LiberoComposition/tasks/comp_323__put_the_cream_cheese_box_the_alphabet_soup_and_the_orange_juice_in_the_basket_one_after_another/task.pruned_init
+max_steps: 800
+definition_status: defined_not_evaluated
+notes:
+- Trajectory-guided repair authorized on 2026-09-11; see REPAIR_PROVENANCE.json.
+identity_status: novel_identity
+source_parent_task: COMP_323
+source_parent_component_indices:
+- 1
+- 2
+prior_partial_evidence:
+- parent_task_id: COMP_323
+  episode_idx: 1
+  kind: ordered instruction prefix
+  simulator_step: 640
+  combination: 110 (or stronger)
+- parent_task_id: COMP_321
+  episode_idx: 1
+  kind: ordered instruction prefix
+  simulator_step: 726
+  combination: 110 (or stronger)
+selected: false
+policy_evaluation_authorized: true
+evaluation_authorized: true
+publication_authorized: false
+legacy_parent_snapshot: true
+legacy_parent_source_bundle: LIBERO_EX_ICRA27/LiberoComposition2Step/tasks/comp2_013__put_the_cream_cheese_box_in_the_basket_and_then_put_the_alphabet_soup_in_the_basket
+historical_results_json: private_evaluation_results/rain_ms_maskaug_gt_libero_composition2step361_5ep_gpu23_20260903/tasks/all361/CTR_117/results.json
+same_five_state_bytes_as_legacy_source: true
+validation_version: trajectory_repair_five_state_screen_v2_fixture_snapshot
+final_tc_gate: false
+globally_novel_additive_candidate: false
+new_semantic_family: false
+compose_final_tc_gate: false
+trajectory_guided_repair: true
+parent_task_id: CTR_066
+parent_bundle: LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/benchmark_batch18/tasks/ctr_066
+repair_definition:
+  task_id: CTR_117
+  parent_task_id: CTR_066
+  parent_bundle: LiberoComposeTrajRepair20260911/benchmark_batch18/tasks/ctr_066
+  pose_changes: {}
+  terminal_contract:
+    basket_completion_mode: ordered_native_and_released_supported_settled_v1
+    support_hold_control_steps: 5
+    basket_support_graph_mode: required_targets_to_exact_basket_base
+    settle_linear_speed_max_m_s: 0.02
+    settle_angular_speed_max_rad_s: 0.5
+  evidence: Future-only supported-placement followup ofCTR_066. Reuse the frozen trajectory-repaired
+    physical definition unchanged and add an explicitly stricter terminal contract.
+    Earlier basket candidates terminated when the last released object was still airborne;
+    native successes remain untouched and are not certified as settled from those
+    rollouts. This fresh five-episode trial lets the unchanged RAIN final-release
+    action continue within the same existing cap until all ordered native goals AND
+    supported released targets stay below predeclared speed thresholds for five actual
+    controls. No passive continuation, forced-open action, extra cap or finalTC gate
+    is added. This is a protocol followup of an existing physical repair, not an additional
+    distinct scene or semantic family.
+arbitrary_coordinate_offsets: false
+same_index_parent_states: true
+same_index_robot_frame_transfer: false
+downstream_preservation_required: true
+environment_ignore_done: true
+manual_success_video_preservation_review_required: true
+parent_canonical_task_signature: composition|24cdd873f0f5d7db7eccdbb1f41a2857941a34dce1e581b7a1b2fa80219187b4|('in(cream_cheese_1,
+  basket_1_contain_region)', 'in(alphabet_soup_1, basket_1_contain_region)')
+custom_eval_needed: true
+order_sensitive: true
+basket_completion_mode: ordered_native_and_released_supported_settled_v1
+support_hold_control_steps: 5
+basket_support_graph_mode: required_targets_to_exact_basket_base
+settle_linear_speed_max_m_s: 0.02
+settle_angular_speed_max_rad_s: 0.5
+future_only_terminal_contract: true
+parent_terminal_protocol_different: true
+parent_native_successes_not_reclassified: true
+policy_action_generation_modified: false
+policy_tc_switching_modified: false

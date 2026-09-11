@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-09-11T09:35:44.376271+00:00",
+  "created_at_utc": "2026-09-11T10:49:15.014375+00:00",
   "review_status": "pending_user_review_not_selected",
   "tasks": [
     {
@@ -51,11 +51,31 @@
       "nominal_successes": 2,
       "manually_valid_successes": 2,
       "certified_episode_indices": "1,4"
+    },
+    {
+      "task_id": "CTR_117",
+      "instruction": "Put the cream cheese box in the basket, and then put the alphabet soup in the basket.",
+      "variant_of": "CTR_066",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 2,
+      "manually_valid_successes": 2,
+      "certified_episode_indices": "0,1"
+    },
+    {
+      "task_id": "CTR_118",
+      "instruction": "Put the cream cheese box in the basket, and then put the alphabet soup in the basket.",
+      "variant_of": "CTR_121",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 2,
+      "manually_valid_successes": 2,
+      "certified_episode_indices": "1,2"
     }
   ],
-  "source_manual_review_sha256": "406ab4a444cda5278a119da10ae56dab8b56f7dda3dc9fb3bb93b47dcc2c333a",
-  "nominal_successes": 11,
-  "manually_valid_successes": 11,
-  "episodes": 25,
+  "source_manual_review_sha256": "9b1445547326848e494244432818b7537bb53dbf46fe2fffa83c84e24cdac4d6",
+  "nominal_successes": 15,
+  "manually_valid_successes": 15,
+  "episodes": 35,
   "selected60_modified": false
 }

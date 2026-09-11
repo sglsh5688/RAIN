@@ -1,0 +1,22 @@
+{
+  "task_id": "CTR_117",
+  "parent_task_id": "CTR_066",
+  "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch18/tasks/ctr_066",
+  "pose_changes": {},
+  "terminal_contract": {
+    "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+    "support_hold_control_steps": 5,
+    "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+    "settle_linear_speed_max_m_s": 0.02,
+    "settle_angular_speed_max_rad_s": 0.5
+  },
+  "evidence": "Future-only supported-placement followup ofCTR_066. Reuse the frozen trajectory-repaired physical definition unchanged and add an explicitly stricter terminal contract. Earlier basket candidates terminated when the last released object was still airborne; native successes remain untouched and are not certified as settled from those rollouts. This fresh five-episode trial lets the unchanged RAIN final-release action continue within the same existing cap until all ordered native goals AND supported released targets stay below predeclared speed thresholds for five actual controls. No passive continuation, forced-open action, extra cap or finalTC gate is added. This is a protocol followup of an existing physical repair, not an additional distinct scene or semantic family.",
+  "classification": "repair_variant_not_new_semantic_family",
+  "parent_files_sha256": {
+    "task.bddl": "fe0b34c8b24fd9acb6b7c78bce3d5c53cb2683192f50f36afd1c21599ffc873c",
+    "task.pruned_init": "ad4889f1fc55352a84a393fbdfc9ecaaf1764a641815f3bf98ef38f7da98bec7",
+    "FIXTURE_REPLAY.json": "5b0d26453a734cdc8fca40629b4d34ebb4efa3153d45474ceae97adc4a1bf52e",
+    "action_plan.yaml": "e9e987cb3d0faa931a7e7a7b6e8d6c8990aa044ae3366a05fbbeee72fcab0c84"
+  },
+  "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+}

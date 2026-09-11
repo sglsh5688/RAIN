@@ -4,3 +4,5 @@ CTR_103	Pick the butter and place it in the left compartment of the bowl drainer
 CTR_104	Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.	BDRCOMP_013	pending_user_review_not_selected	5	2	2	0,3
 CTR_105	Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the cream cheese and place it in the right compartment of the bowl drainer.	BDRCOMP_001	pending_user_review_not_selected	5	1	1	3
 CTR_067	Turn on the stove, and then open the middle drawer of the cabinet.	COMP2_003	pending_user_review_not_selected	5	2	2	1,4
+CTR_117	Put the cream cheese box in the basket, and then put the alphabet soup in the basket.	CTR_066	pending_user_review_not_selected	5	2	2	0,1
+CTR_118	Put the cream cheese box in the basket, and then put the alphabet soup in the basket.	CTR_121	pending_user_review_not_selected	5	2	2	1,2

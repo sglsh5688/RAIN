@@ -1,0 +1,712 @@
+{
+  "validation_version": "trajectory_repair_five_state_screen_v2_fixture_snapshot",
+  "valid_count": 5,
+  "rows": [
+    {
+      "state_index": 0,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 2.6047299156108387e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "basket_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.748217297628344e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "milk_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "butter_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "orange_juice_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "chocolate_pudding_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.894046954974005e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.2630343598306214e-16,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:tomato_sauce_1": 847,
+        "goal_target:basket_1": 4736,
+        "manipulated_object_3:butter_1": 138,
+        "manipulated_object_4:chocolate_pudding_1": 362
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "chocolate_pudding_1",
+          "before_xyz": [
+            0.09499988744352106,
+            0.055,
+            0.013065477418608112
+          ],
+          "after_xyz": [
+            -0.07000011255647895,
+            0.04,
+            0.013065477418608112
+          ],
+          "before_quat_wxyz": [
+            2.707458769652432e-18,
+            4.503986768246666e-18,
+            1.6140282391334938e-17,
+            1.0
+          ],
+          "after_quat_wxyz": [
+            2.707458769652432e-18,
+            4.503986768246666e-18,
+            1.6140282391334938e-17,
+            1.0
+          ],
+          "applied_delta_xyz": [
+            -0.165,
+            -0.015,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.165,
+              -0.015,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {},
+      "reachability": [
+        {
+          "entity": "chocolate_pudding_1",
+          "robot_base_distance_m": 0.5316677415363105,
+          "passes": true
+        },
+        {
+          "entity": "basket_1",
+          "robot_base_distance_m": 0.6580338482945446,
+          "passes": true
+        },
+        {
+          "entity": "butter_1",
+          "robot_base_distance_m": 0.5358658095173067,
+          "passes": true
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "robot_base_distance_m": 0.6589937214934383,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "0b040e712216eae860695aa0321212e105bd776ad5e941c27cae0d875df5a92f"
+    },
+    {
+      "state_index": 1,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 2.6003118829171263e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "basket_1",
+          "passes": true,
+          "xy_drift_m": 1.1275702593849246e-17,
+          "angular_drift_rad": 1.7347184972614728e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "milk_1",
+          "passes": true,
+          "xy_drift_m": 1.1518563880486e-15,
+          "angular_drift_rad": 3.6612115158492644e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "butter_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 4.7660173865928715e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "orange_juice_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "chocolate_pudding_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.894046954974005e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.983078990282302e-17,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:tomato_sauce_1": 847,
+        "goal_target:basket_1": 4620,
+        "manipulated_object_3:butter_1": 148,
+        "manipulated_object_4:chocolate_pudding_1": 362
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "chocolate_pudding_1",
+          "before_xyz": [
+            0.09499988744352106,
+            0.055,
+            0.013065477418608112
+          ],
+          "after_xyz": [
+            -0.07000011255647895,
+            0.04,
+            0.013065477418608112
+          ],
+          "before_quat_wxyz": [
+            2.707458769652432e-18,
+            4.503986768246666e-18,
+            1.6140282391334938e-17,
+            1.0
+          ],
+          "after_quat_wxyz": [
+            2.707458769652432e-18,
+            4.503986768246666e-18,
+            1.6140282391334938e-17,
+            1.0
+          ],
+          "applied_delta_xyz": [
+            -0.165,
+            -0.015,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.165,
+              -0.015,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {},
+      "reachability": [
+        {
+          "entity": "chocolate_pudding_1",
+          "robot_base_distance_m": 0.5316677415363105,
+          "passes": true
+        },
+        {
+          "entity": "basket_1",
+          "robot_base_distance_m": 0.6417698159529951,
+          "passes": true
+        },
+        {
+          "entity": "butter_1",
+          "robot_base_distance_m": 0.5365168328199629,
+          "passes": true
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "robot_base_distance_m": 0.6589937214934383,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "2109d2964974aecf19ba24d398c7544239baa789c4f5845e8557725758fa7b82"
+    },
+    {
+      "state_index": 2,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 2.6003118829171263e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "basket_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.47619673493011e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "milk_1",
+          "passes": true,
+          "xy_drift_m": 1.7277845820728999e-15,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 1.7277845820728999e-15
+        },
+        {
+          "entity": "butter_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "orange_juice_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "chocolate_pudding_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.894046954974005e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 5.4889137343433646e-17,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:tomato_sauce_1": 847,
+        "goal_target:basket_1": 4673,
+        "manipulated_object_3:butter_1": 135,
+        "manipulated_object_4:chocolate_pudding_1": 362
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "chocolate_pudding_1",
+          "before_xyz": [
+            0.09499988744352106,
+            0.055,
+            0.013065477418608112
+          ],
+          "after_xyz": [
+            -0.07000011255647895,
+            0.04,
+            0.013065477418608112
+          ],
+          "before_quat_wxyz": [
+            2.707458769652432e-18,
+            4.503986768246666e-18,
+            1.6140282391334938e-17,
+            1.0
+          ],
+          "after_quat_wxyz": [
+            2.707458769652432e-18,
+            4.503986768246666e-18,
+            1.6140282391334938e-17,
+            1.0
+          ],
+          "applied_delta_xyz": [
+            -0.165,
+            -0.015,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.165,
+              -0.015,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {},
+      "reachability": [
+        {
+          "entity": "chocolate_pudding_1",
+          "robot_base_distance_m": 0.5316677415363105,
+          "passes": true
+        },
+        {
+          "entity": "basket_1",
+          "robot_base_distance_m": 0.6477078470604225,
+          "passes": true
+        },
+        {
+          "entity": "butter_1",
+          "robot_base_distance_m": 0.5377623760905631,
+          "passes": true
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "robot_base_distance_m": 0.6589937214934383,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "9590e1f1039f7cacc46bfc038c0812a72acb3582e6e49a9809ebcdd88f22689e"
+    },
+    {
+      "state_index": 3,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 2.6003118829171263e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "basket_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 4.293201324756107e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "milk_1",
+          "passes": true,
+          "xy_drift_m": 1.7277845820728999e-15,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 1.734723475976807e-15
+        },
+        {
+          "entity": "butter_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "orange_juice_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "chocolate_pudding_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.894046954974005e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 2.0404238688691776e-18,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:tomato_sauce_1": 847,
+        "goal_target:basket_1": 4622,
+        "manipulated_object_3:butter_1": 149,
+        "manipulated_object_4:chocolate_pudding_1": 362
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "chocolate_pudding_1",
+          "before_xyz": [
+            0.09499988744352106,
+            0.055,
+            0.013065477418608112
+          ],
+          "after_xyz": [
+            -0.07000011255647895,
+            0.04,
+            0.013065477418608112
+          ],
+          "before_quat_wxyz": [
+            2.707458769652432e-18,
+            4.503986768246666e-18,
+            1.6140282391334938e-17,
+            1.0
+          ],
+          "after_quat_wxyz": [
+            2.707458769652432e-18,
+            4.503986768246666e-18,
+            1.6140282391334938e-17,
+            1.0
+          ],
+          "applied_delta_xyz": [
+            -0.165,
+            -0.015,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.165,
+              -0.015,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {},
+      "reachability": [
+        {
+          "entity": "chocolate_pudding_1",
+          "robot_base_distance_m": 0.5316677415363105,
+          "passes": true
+        },
+        {
+          "entity": "basket_1",
+          "robot_base_distance_m": 0.6435927212235761,
+          "passes": true
+        },
+        {
+          "entity": "butter_1",
+          "robot_base_distance_m": 0.5315821960965118,
+          "passes": true
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "robot_base_distance_m": 0.6589937214934383,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "7b568355f253f740da639758cf5dfb2403a1b19ea73785ef849e57c885a54640"
+    },
+    {
+      "state_index": 4,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 2.6047299156108387e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "basket_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.57620413763535e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "milk_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "butter_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 4.7660173865928715e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "orange_juice_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 0.0,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "chocolate_pudding_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.894046954974005e-18,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "bbq_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.7157212261409686e-17,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "manipulated_object_1:tomato_sauce_1": 847,
+        "goal_target:basket_1": 4834,
+        "manipulated_object_3:butter_1": 148,
+        "manipulated_object_4:chocolate_pudding_1": 359
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "chocolate_pudding_1",
+          "before_xyz": [
+            0.09499988744352106,
+            0.055,
+            0.013065477418608112
+          ],
+          "after_xyz": [
+            -0.07000011255647895,
+            0.04,
+            0.013065477418608112
+          ],
+          "before_quat_wxyz": [
+            2.707458769652432e-18,
+            4.503986768246666e-18,
+            1.6140282391334938e-17,
+            1.0
+          ],
+          "after_quat_wxyz": [
+            2.707458769652432e-18,
+            4.503986768246666e-18,
+            1.6140282391334938e-17,
+            1.0
+          ],
+          "applied_delta_xyz": [
+            -0.165,
+            -0.015,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.165,
+              -0.015,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {},
+      "reachability": [
+        {
+          "entity": "chocolate_pudding_1",
+          "robot_base_distance_m": 0.5316677415363105,
+          "passes": true
+        },
+        {
+          "entity": "basket_1",
+          "robot_base_distance_m": 0.6691897848017966,
+          "passes": true
+        },
+        {
+          "entity": "butter_1",
+          "robot_base_distance_m": 0.5327683448318112,
+          "passes": true
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "robot_base_distance_m": 0.6589937214934383,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "8d2d59e906919d68ea038c919dd31d682119ac8b1fbe05996be65a6be26442b8"
+    }
+  ],
+  "evaluator_wait_steps": 10,
+  "evaluator_wait_action": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "policy_evaluation_run": false
+}

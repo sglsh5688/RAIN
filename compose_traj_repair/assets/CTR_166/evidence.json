@@ -1,0 +1,269 @@
+{
+  "task_id": "CTR_166",
+  "instruction": "Put the tomato sauce in the basket, then put the butter in the basket, and finally put the chocolate pudding in the basket.",
+  "status": "pending_user_review_not_selected",
+  "variant_of": "CTR_088",
+  "classification": "repair_variant_not_new_semantic_family",
+  "episodes": 5,
+  "nominal_successes": 1,
+  "manually_valid_successes": 1,
+  "nominal_success_episode_indices": [
+    2
+  ],
+  "certified_episode_indices": [
+    2
+  ],
+  "ordered_native_milestones": {
+    "2": [
+      145,
+      602,
+      772
+    ]
+  },
+  "final_success_requires_all_bddl_goals": true,
+  "compose_final_tc_gate": false,
+  "results_sha256": "2c6b5eccf8620cf3b206a423c3d3bb03f56b698215b95268c8bfc0be70c3ee61",
+  "parent_results_sha256": "00e754817143fec99c1098ed9292da73c91607d53953fef1db9b637141ee3f74",
+  "parent_nominal_successes": 0,
+  "parent_episodes": 5,
+  "parent_instruction": "Put the tomato sauce in the basket, then put the butter in the basket, and finally put the chocolate pudding in the basket.",
+  "parent_state_verification": {
+    "method": "historical_per_episode_state_hash"
+  },
+  "repair": {
+    "task_id": "CTR_166",
+    "parent_task_id": "CTR_088",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch23/tasks/ctr_088",
+    "pose_changes": {
+      "chocolate_pudding_1": {
+        "delta_xyz": [
+          -0.165,
+          -0.015,
+          0
+        ]
+      }
+    },
+    "terminal_contract": {
+      "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+      "support_hold_control_steps": 5,
+      "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+      "settle_linear_speed_max_m_s": 0.02,
+      "settle_angular_speed_max_rad_s": 0.5
+    },
+    "evidence": "Parent088 achieves ordered tomato+butter in4/5 episodes (native milestones[141,641],[146,655],[142,632],[141,488]); pudding stays at its initial position and never lifts in those four. Episode000 first low measured25mm half-aperture crossing during pudding grasp is control732, EEF[-.0719,+.0408,+.0162]m versus pudding[+.095,+.055,+.0131]m, delta[-.1669,-.0142,+.0031]m. Move only pudding into this first observed low empty closing corridor. Later actions approach or grasp unrelated milk/BBQ distractors; those contacts are not treated as intended pudding pickup or used as goal evidence. Earlier tomato, butter and basket remain at parent poses. Full five-episode numerical trajectories of both087/088 were compared; complete saved ep000 videos were reviewed (087151 frames,088150). Original40 direct object-to-basket lineage is tomato306 -> butter307 -> chocolate pudding309. All three native goals, same five parent states except declared object XY translation, dimensions, yaw, joints, earlier requested-object poses and1200-control cap are retained. New explicit released/supported/settled5-control terminal contract is future-only; existing parent0/5 results remain unchanged. No finalTC gate or extra post-budget controls."
+  },
+  "frozen_repair_provenance": {
+    "task_id": "CTR_166",
+    "parent_task_id": "CTR_088",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch23/tasks/ctr_088",
+    "pose_changes": {
+      "chocolate_pudding_1": {
+        "delta_xyz": [
+          -0.165,
+          -0.015,
+          0
+        ]
+      }
+    },
+    "terminal_contract": {
+      "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+      "support_hold_control_steps": 5,
+      "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+      "settle_linear_speed_max_m_s": 0.02,
+      "settle_angular_speed_max_rad_s": 0.5
+    },
+    "evidence": "Parent088 achieves ordered tomato+butter in4/5 episodes (native milestones[141,641],[146,655],[142,632],[141,488]); pudding stays at its initial position and never lifts in those four. Episode000 first low measured25mm half-aperture crossing during pudding grasp is control732, EEF[-.0719,+.0408,+.0162]m versus pudding[+.095,+.055,+.0131]m, delta[-.1669,-.0142,+.0031]m. Move only pudding into this first observed low empty closing corridor. Later actions approach or grasp unrelated milk/BBQ distractors; those contacts are not treated as intended pudding pickup or used as goal evidence. Earlier tomato, butter and basket remain at parent poses. Full five-episode numerical trajectories of both087/088 were compared; complete saved ep000 videos were reviewed (087151 frames,088150). Original40 direct object-to-basket lineage is tomato306 -> butter307 -> chocolate pudding309. All three native goals, same five parent states except declared object XY translation, dimensions, yaw, joints, earlier requested-object poses and1200-control cap are retained. New explicit released/supported/settled5-control terminal contract is future-only; existing parent0/5 results remain unchanged. No finalTC gate or extra post-budget controls.",
+    "classification": "repair_variant_not_new_semantic_family",
+    "parent_files_sha256": {
+      "task.bddl": "ac80d34e12136382bb74b05661801ebd6389327c8055d9a0535e55bdf7de20f4",
+      "task.pruned_init": "79cf1cd9538a6a70ed3a120ad5e3266caf023f6dc0bed92fdb509797689a7394",
+      "FIXTURE_REPLAY.json": "084e16287f2640abb240105b1700270bc9d994d0e1f83b12d3cdf81267ddb9d6",
+      "action_plan.yaml": "4849f8b95e6762339bb562935ba04ee69419eabcbbddd95a7bb3b3831635ecbf"
+    },
+    "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+  },
+  "original40_skill_lineage": [
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_06",
+      "instruction": "Pick the tomato sauce and place it in the basket",
+      "transfer": "Directly trained original40 object grasp and basket placement, chained in this three-object basket composition."
+    },
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_butter_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_07",
+      "instruction": "Pick the butter and place it in the basket",
+      "transfer": "Directly trained original40 object grasp and basket placement, chained in this three-object basket composition."
+    },
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_09",
+      "instruction": "Pick the chocolate pudding and place it in the basket",
+      "transfer": "Directly trained original40 object grasp and basket placement, chained in this three-object basket composition."
+    }
+  ],
+  "manual_review_notes": "Tomato sauce -> butter -> chocolate pudding into the basket:1/5 fully reviewed success. ParentCTR_088 remains0/5. Only pudding is shifted16.5cm toward negative worldX and1.5cm toward negativeY, matching an observed low empty-closing corridor in the failed parent. Earlier tomato, butter and basket poses are retained. This is a substantial source-pose repair, not a millimetre adjustment. The new experiment also predeclares the established stricter released/supported/settled terminal contract, so the comparison changes both source pose and terminal protocol and is not an isolated causal success-rate estimate. All five episodes use the existing RAIN checkpoints and unchanged1200-control cap; the one success completes at778. This is a reviewer variant with direct original40 skill lineage.",
+  "episode_reviews": [
+    {
+      "episode_idx": 2,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 97,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch62_5ep_20260911/tasks/all1/CTR_166/videos/CTR_166_ep002_ok.mp4",
+      "video_sha256": "6161bc5be10453006259cb3416c7110b075920cacc9ad18895847cd8de22317e",
+      "trace_npz_sha256": "85baa1cb35d3aa9eab016a14d579c68dfde8ae4f5dcf24c5795ae3c43576b3ee",
+      "milestones": [
+        145,
+        602,
+        772
+      ],
+      "initial_native_goals": [
+        false,
+        false,
+        false
+      ],
+      "final_native_goals": [
+        true,
+        true,
+        true
+      ],
+      "supported_settled_control_range": [
+        774,
+        778
+      ],
+      "earlier_object_preservation": [
+        {
+          "object_id": "tomato_sauce_1",
+          "start_control": 160,
+          "max_xyz_displacement_m": 0.0004356307915509378,
+          "max_rotation_deg": 0.5714256393418451
+        },
+        {
+          "object_id": "butter_1",
+          "start_control": 604,
+          "max_xyz_displacement_m": 0.002647062441623094,
+          "max_rotation_deg": 5.868629719116742
+        }
+      ],
+      "physical_completion_summary": {
+        "contract": {
+          "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+          "support_hold_control_steps": 5,
+          "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+          "settle_linear_speed_max_m_s": 0.02,
+          "settle_angular_speed_max_rad_s": 0.5
+        },
+        "final_hold_complete": true,
+        "final_consecutive_controls": 5,
+        "maximum_consecutive_controls": 5,
+        "first_complete_step": 778,
+        "actual_control_steps_observed": 778,
+        "native_order_replaced": false,
+        "velocity_gate_applied": true,
+        "action_generation_modified": false,
+        "tc_switching_modified": false,
+        "additional_wait_controls": 0,
+        "policy_control_budget_extended": false
+      },
+      "notes": "Reviewed all97 saved frames and the complete778-control trace. Tomato sauce is deliberately grasped, carried and released into the basket. Butter requires repeated empty closing attempts before the successful pickup, then is transported and released onto the tomato sauce inside the basket. The shifted chocolate pudding is deliberately grasped at its repaired source, transported and released, finally supported by tomato sauce and butter. The recorded physical observer confirms all three objects are free of every robot contact, retain their ordered native In goals, and have positive support paths through the exact basket base to the original floor for controls774-778, with linear speed <=0.02m/s and angular speed <=0.5rad/s. The butter also contacts a basket sidewall, but has a qualifying upward support path through tomato sauce to the base; sidewall contact alone does not qualify. Earlier tomato placement remains within0.44mm and0.58deg after control160; butter remains within2.65mm and5.87deg during the pudding stage starting604. This is ordinary settling and small final stacking contact, without knockover or loss of earlier results. No final TC condition, forced post-rollout opening, passive simulation or extra budget was used."
+    }
+  ],
+  "episode_outcomes": [
+    {
+      "episode_idx": 0,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 1,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 2,
+      "parent_same_index_native_success": false,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 3,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 4,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    }
+  ],
+  "rain_settings": {
+    "checkpoint": "RAIN/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "progress_checkpoint": "RAIN/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "replan_steps": 8,
+    "num_inference_steps": 4,
+    "feas_threshold": 0.7,
+    "consecutive_stop": 2,
+    "seed": 7,
+    "clip_model_name": "openai/clip-vit-large-patch14"
+  },
+  "source_bundle_sha256": {
+    "task.bddl": "ac80d34e12136382bb74b05661801ebd6389327c8055d9a0535e55bdf7de20f4",
+    "task.pruned_init": "4b4ba74c9e442aa300cf2afd41136e11af80282c93bdaa745251a863f9ce926d",
+    "task_meta.yaml": "a697fc0aaec4c77ced8aa839edc36a6038ce2ec0dc928780314e3e78f077852f",
+    "eval_rules.yaml": "315d146425f7a68bf44d79e8483d0f279d12de774412bbef0e178a3394b36504",
+    "registry_entry.yaml": "8a12a57981ee637802feb851aa5d7a57038f1fc3534b5f9994e3fbca145f84be",
+    "mask_bindings.yaml": "e0d7125c8d49db8a88fec9f7be31de407774321249c9964a75f0e087528c7062",
+    "action_plan.yaml": "1415f4923cbd47ecfd475c1ac13ef2ccbb455f444a6aade625d9bd872b568730",
+    "FIXTURE_REPLAY.json": "e20c519833983771a70a89184991376177be8e4c84ecc833eb3ad37bb7a7d301",
+    "INIT_VALIDATION.json": "21f98ec29fad670b7c4cf3bfe5d1fc659b50d72903c3899422303dadcdd02b37",
+    "REPAIR_PROVENANCE.json": "bc2661b83976cfe2edbd5ba56ca5cdbd35b8cf62767b31c9a55e977d75b348b4"
+  },
+  "comparison_design_note": "Pose repair plus a predeclared stricter terminal protocol; parent native outcomes remain frozen. Earlier failed source search and current1/5 are exploratory evidence, not a controlled generalization estimate.",
+  "additional_terminal_contract": {
+    "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+    "support_hold_control_steps": 5,
+    "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+    "settle_linear_speed_max_m_s": 0.02,
+    "settle_angular_speed_max_rad_s": 0.5
+  },
+  "parent_terminal_protocol_different": true,
+  "runtime_sources_sha256": {
+    "basket_released_support_observer.py": "599995e94641d631c3e8e8ed16a1ae5d0214e97c58e2b71d124a3d587e6d8329",
+    "basket_supported_runtime.py": "9aff4bb0e51b683c53287070e06b469e0ce26a4d93e4ecf256ddbddcaec7e73e",
+    "run_compose_traj_repair_basket_supported_entry.py": "00900b93d3c310215507831423062445f8c13088d1c3298915f2a884ba1215f3",
+    "run_compose_traj_repair_basket_supported_5ep.py": "94e6c8f3988ba247a3a577995d65246ae20d304b90dad6a7ad01c6d5d5fb98f8"
+  },
+  "supported_settled_success_audit": {
+    "2": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 778,
+      "actual_control_steps_observed": 778,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    }
+  },
+  "parent_failure_video_sha256": "982443305a5afbeb2f6abb5ca98d211a0ef5860cec055211a3a4163f08f685f3"
+}

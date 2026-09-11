@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-09-11T11:08:05.670565+00:00",
+  "created_at_utc": "2026-09-11T11:18:00.773392+00:00",
   "review_status": "pending_user_review_not_selected",
   "tasks": [
     {
@@ -111,11 +111,21 @@
       "nominal_successes": 1,
       "manually_valid_successes": 1,
       "certified_episode_indices": "3"
+    },
+    {
+      "task_id": "CTR_166",
+      "instruction": "Put the tomato sauce in the basket, then put the butter in the basket, and finally put the chocolate pudding in the basket.",
+      "variant_of": "CTR_088",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 1,
+      "manually_valid_successes": 1,
+      "certified_episode_indices": "2"
     }
   ],
-  "source_manual_review_sha256": "9f5fcb668c309a24d2f4e02c81517cba58207a77cd11c69353bce93b11acf8db",
-  "nominal_successes": 23,
-  "manually_valid_successes": 22,
-  "episodes": 55,
+  "source_manual_review_sha256": "3f19cdfa5fbee613535adcb50b0cf63b5185735595a23993bfa05dccabfac858",
+  "nominal_successes": 24,
+  "manually_valid_successes": 23,
+  "episodes": 60,
   "selected60_modified": false
 }

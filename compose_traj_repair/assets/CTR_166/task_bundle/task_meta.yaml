@@ -1,0 +1,139 @@
+task_id: CTR_166
+task_name: Put the tomato sauce in the basket, then put the butter in the basket,
+  and finally put the chocolate pudding in the basket.
+language: Put the tomato sauce in the basket, then put the butter in the basket, and
+  finally put the chocolate pudding in the basket.
+primary_category: Composition
+composition_family: O2_object_milk_upper_swap_3_to_basket
+anchor_suite: libero_object
+source_prior_task_ids:
+- '306'
+- '307'
+- '309'
+source_priors:
+- suite: libero_object
+  task_stem: pick_up_the_tomato_sauce_and_place_it_in_the_basket
+  instruction: Pick the tomato sauce and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_butter_and_place_it_in_the_basket
+  instruction: Pick the butter and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_butter_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+- suite: libero_object
+  task_stem: pick_up_the_chocolate_pudding_and_place_it_in_the_basket
+  instruction: Pick the chocolate pudding and place it in the basket
+  bddl: upstream_LIBERO/bddl_files/libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.bddl
+  init: upstream_LIBERO/init_files/libero_object/pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init
+  evidence: ''
+component_task_instructions:
+- Put the tomato sauce in the basket
+- Put the butter in the basket
+- Put the chocolate pudding in the basket
+component_evidence:
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its
+  pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its
+  pose in the composite scene may differ.
+- Object identity has its own original LIBERO-Object pick-to-basket trajectory; its
+  pose in the composite scene may differ.
+semantic_subtask_count: 3
+action_plan_step_count: 6
+canonical_goal_atoms:
+- in(tomato_sauce_1, basket_1_contain_region)
+- in(butter_1, basket_1_contain_region)
+- in(chocolate_pudding_1, basket_1_contain_region)
+canonical_task_signature: composition|012abe7e654d24f5e8356ec343d6fcd940ca3da03b0137d46305b57c91deb74c|('in(tomato_sauce_1,
+  basket_1_contain_region)', 'in(butter_1, basket_1_contain_region)', 'in(chocolate_pudding_1,
+  basket_1_contain_region)')
+objects_of_interest:
+- tomato_sauce_1
+- basket_1
+- butter_1
+- chocolate_pudding_1
+pure_composition: true
+requires_transition: true
+sequence_stages: []
+physical_group: ctr_166
+base_bddl_template: upstream_LIBERO/bddl_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.bddl
+base_pruned_init: upstream_LIBERO/init_files/libero_object/pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init
+max_steps: 1200
+definition_status: defined_not_evaluated
+notes:
+- Trajectory-guided repair authorized on 2026-09-11; see REPAIR_PROVENANCE.json.
+compose_screen: milk_and_object_layout_followup_268
+feedback_intervention: milk_upper_slot_swap
+feedback_parent_tasks:
+- COMP_209
+- COMPOSE_155
+selected: false
+policy_evaluation_authorized: true
+evaluation_authorized: true
+publication_authorized: false
+legacy_parent_snapshot: true
+legacy_parent_source_bundle: LIBERO_EX_ICRA27/LiberoComposeObjectFollowup/tasks/composeobj_255__put_the_tomato_sauce_in_the_basket_then_put_the_butter_in_the_basket_and_finally_put_the_chocolate_pudding_in_the_basket
+historical_results_json: private_evaluation_results/rain_ms_maskaug_gt_libero_compose_object_followup268_5ep_gpu67_20260905/tasks/all268/CTR_166/results.json
+same_five_state_bytes_as_legacy_source: true
+validation_version: trajectory_repair_five_state_screen_v2_fixture_snapshot
+final_tc_gate: false
+globally_novel_additive_candidate: false
+new_semantic_family: false
+compose_final_tc_gate: false
+trajectory_guided_repair: true
+parent_task_id: CTR_088
+parent_bundle: LIBERO_EX_ICRA27/LiberoComposeTrajRepair20260911/benchmark_batch23/tasks/ctr_088
+repair_definition:
+  task_id: CTR_166
+  parent_task_id: CTR_088
+  parent_bundle: LiberoComposeTrajRepair20260911/benchmark_batch23/tasks/ctr_088
+  pose_changes:
+    chocolate_pudding_1:
+      delta_xyz:
+      - -0.165
+      - -0.015
+      - 0
+  terminal_contract:
+    basket_completion_mode: ordered_native_and_released_supported_settled_v1
+    support_hold_control_steps: 5
+    basket_support_graph_mode: required_targets_to_exact_basket_base
+    settle_linear_speed_max_m_s: 0.02
+    settle_angular_speed_max_rad_s: 0.5
+  evidence: Parent088 achieves ordered tomato+butter in4/5 episodes (native milestones[141,641],[146,655],[142,632],[141,488]);
+    pudding stays at its initial position and never lifts in those four. Episode000
+    first low measured25mm half-aperture crossing during pudding grasp is control732,
+    EEF[-.0719,+.0408,+.0162]m versus pudding[+.095,+.055,+.0131]m, delta[-.1669,-.0142,+.0031]m.
+    Move only pudding into this first observed low empty closing corridor. Later actions
+    approach or grasp unrelated milk/BBQ distractors; those contacts are not treated
+    as intended pudding pickup or used as goal evidence. Earlier tomato, butter and
+    basket remain at parent poses. Full five-episode numerical trajectories of both087/088
+    were compared; complete saved ep000 videos were reviewed (087151 frames,088150).
+    Original40 direct object-to-basket lineage is tomato306 -> butter307 -> chocolate
+    pudding309. All three native goals, same five parent states except declared object
+    XY translation, dimensions, yaw, joints, earlier requested-object poses and1200-control
+    cap are retained. New explicit released/supported/settled5-control terminal contract
+    is future-only; existing parent0/5 results remain unchanged. No finalTC gate or
+    extra post-budget controls.
+arbitrary_coordinate_offsets: true
+same_index_parent_states: true
+same_index_robot_frame_transfer: false
+downstream_preservation_required: true
+environment_ignore_done: true
+manual_success_video_preservation_review_required: true
+parent_canonical_task_signature: composition|39bfbaef429e879f4d80be90ec98f99e425149076ff5c2a258676b82183cc164|('in(tomato_sauce_1,
+  basket_1_contain_region)', 'in(butter_1, basket_1_contain_region)', 'in(chocolate_pudding_1,
+  basket_1_contain_region)')
+custom_eval_needed: true
+order_sensitive: true
+basket_completion_mode: ordered_native_and_released_supported_settled_v1
+support_hold_control_steps: 5
+basket_support_graph_mode: required_targets_to_exact_basket_base
+settle_linear_speed_max_m_s: 0.02
+settle_angular_speed_max_rad_s: 0.5
+future_only_terminal_contract: true
+parent_terminal_protocol_different: true
+parent_native_successes_not_reclassified: true
+policy_action_generation_modified: false
+policy_tc_switching_modified: false

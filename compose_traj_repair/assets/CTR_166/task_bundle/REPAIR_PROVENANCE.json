@@ -1,0 +1,30 @@
+{
+  "task_id": "CTR_166",
+  "parent_task_id": "CTR_088",
+  "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch23/tasks/ctr_088",
+  "pose_changes": {
+    "chocolate_pudding_1": {
+      "delta_xyz": [
+        -0.165,
+        -0.015,
+        0
+      ]
+    }
+  },
+  "terminal_contract": {
+    "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+    "support_hold_control_steps": 5,
+    "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+    "settle_linear_speed_max_m_s": 0.02,
+    "settle_angular_speed_max_rad_s": 0.5
+  },
+  "evidence": "Parent088 achieves ordered tomato+butter in4/5 episodes (native milestones[141,641],[146,655],[142,632],[141,488]); pudding stays at its initial position and never lifts in those four. Episode000 first low measured25mm half-aperture crossing during pudding grasp is control732, EEF[-.0719,+.0408,+.0162]m versus pudding[+.095,+.055,+.0131]m, delta[-.1669,-.0142,+.0031]m. Move only pudding into this first observed low empty closing corridor. Later actions approach or grasp unrelated milk/BBQ distractors; those contacts are not treated as intended pudding pickup or used as goal evidence. Earlier tomato, butter and basket remain at parent poses. Full five-episode numerical trajectories of both087/088 were compared; complete saved ep000 videos were reviewed (087151 frames,088150). Original40 direct object-to-basket lineage is tomato306 -> butter307 -> chocolate pudding309. All three native goals, same five parent states except declared object XY translation, dimensions, yaw, joints, earlier requested-object poses and1200-control cap are retained. New explicit released/supported/settled5-control terminal contract is future-only; existing parent0/5 results remain unchanged. No finalTC gate or extra post-budget controls.",
+  "classification": "repair_variant_not_new_semantic_family",
+  "parent_files_sha256": {
+    "task.bddl": "ac80d34e12136382bb74b05661801ebd6389327c8055d9a0535e55bdf7de20f4",
+    "task.pruned_init": "79cf1cd9538a6a70ed3a120ad5e3266caf023f6dc0bed92fdb509797689a7394",
+    "FIXTURE_REPLAY.json": "084e16287f2640abb240105b1700270bc9d994d0e1f83b12d3cdf81267ddb9d6",
+    "action_plan.yaml": "4849f8b95e6762339bb562935ba04ee69419eabcbbddd95a7bb3b3831635ecbf"
+  },
+  "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+}

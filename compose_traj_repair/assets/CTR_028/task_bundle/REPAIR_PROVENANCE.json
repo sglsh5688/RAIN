@@ -1,0 +1,23 @@
+{
+  "task_id": "CTR_028",
+  "parent_task_id": "VCN35_005",
+  "parent_bundle": "LiberoValidComposeNew20260905/Batch35ShapeBasketPlate/benchmark/tasks/vcn35_005__put_the_ramekin_in_the_basket_then_put_the_tomato_sauce_on_the_right_plate",
+  "pose_changes": {
+    "tomato_sauce_1": {
+      "delta_xyz": [
+        -0.02,
+        0.02,
+        0
+      ]
+    }
+  },
+  "evidence": "Parent nonselected pending-review VCN35_005 is2/5 overall with ramekin->basket5/5. Failed ep000/003 actually approach tomato and close about[-.03,+.02]m from initialtomatoXY then carry empty hand toward correctplate. Successful parentep001/002 provide nearbypickup references. Shift tomato fixed acrossall5states toward missed-grasp positions; this is an improvement probe of an existing successful semantic family, not a novel composition.",
+  "classification": "repair_variant_not_new_semantic_family",
+  "parent_files_sha256": {
+    "task.bddl": "6871d1b3399eac3b1f1a425e9c49d1d1432444a6fb28a71c83bd841b89fc5d44",
+    "task.pruned_init": "38bdf48a68abb5854cc8ac4a9bcfaa416b97cc52c285579c04b5f8ecded63c3a",
+    "FIXTURE_REPLAY.json": "a288ddfd472115e8229f7540e9f9bfc7c10765af86cea8641e5500a6edf0f1e9",
+    "action_plan.yaml": "f3fcc57ad18c12de59c63227904fb0f058bfb4985c6847db0bc3e5084741942b"
+  },
+  "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+}

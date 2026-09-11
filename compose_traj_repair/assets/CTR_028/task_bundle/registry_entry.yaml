@@ -1,0 +1,14 @@
+name: CTR_028
+language: Put the ramekin in the basket, then put the tomato sauce on the right plate.
+problem: Libero
+problem_folder: tasks/ctr_028
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_10_living_room_tabletop_cross_shape
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|cb7d61c8a816d0a6d03ad186751abe4f8375afa751418b21d5082f2654840a55|('in(glazed_rim_porcelain_ramekin_1,basket_1_contain_region)',
+  'on(tomato_sauce_1,plate_2)')

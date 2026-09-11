@@ -1,0 +1,146 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><title>Compose trajectory repair · LIBERO-EX</title><style>/* Shared, request-free dark theme. Simulation pixels and sprite geometry stay unchanged. */
+:root {
+  color-scheme: dark !important;
+  --review-bg: #0d131b;
+  --review-panel: #17212d;
+  --review-raised: #202e3d;
+  --review-line: #3b4e60;
+  --review-text: #e7edf5;
+  --review-muted: #b4c3d3;
+  color: var(--review-text) !important;
+  background-color: var(--review-bg) !important;
+}
+html, body { background-color: var(--review-bg) !important; color: var(--review-text) !important; }
+body :is(h1,h2,h3,h4,h5,h6,p,li,dt,dd,label,summary,th,td) { color: var(--review-text); }
+body :is(.card,.task,.docs,.panel,.summary-box,.census,.table,.table-wrap,.table-container,.intro,.logic,.goals,.metric,dialog) {
+  background-color: var(--review-panel) !important;
+  color: var(--review-text) !important;
+  border-color: var(--review-line) !important;
+  box-shadow: 0 3px 16px #0003;
+}
+body :is(.hero,.top,.toolbar,.player,.player-bar,.player-panel) {
+  background-color: #132333 !important;
+  color: var(--review-text) !important;
+  border-color: var(--review-line) !important;
+}
+body :is(.hero,.top) p, body .card p { color: var(--review-muted) !important; }
+body :is(small,figcaption,footer,.muted,.record,.rerun,.count,.meta,.subtitle,.source,.request-policy,.suite,.sr span,.task header span,.family,.step-heading span) {
+  color: var(--review-muted) !important;
+}
+body a { color: #91d3ff !important; }
+body a:visited { color: #c3b6ff !important; }
+body a.card { color: var(--review-text) !important; }
+body a.card:hover { background-color: #202e3d !important; border-color: #638ba8 !important; }
+body nav a { background-color: #213549 !important; border-color: #526d85 !important; }
+body .step-heading { color: var(--review-text) !important; }
+body :is(.card strong,.sr strong,.task header strong) { color: #87e1bf !important; }
+body .card span { color: #91d3ff !important; }
+body :is(input,select,textarea,option) {
+  color: var(--review-text) !important;
+  background-color: #101c28 !important;
+  border-color: #62798f !important;
+  caret-color: #a6dfff;
+}
+body ::placeholder { color: #a5b6c9 !important; opacity: 1; }
+body button, body :is(.button,.btn) {
+  color: var(--review-text) !important;
+  background-color: #2b4054 !important;
+  border-color: #688399 !important;
+}
+body button:hover, body :is(.button,.btn):hover { background-color: #3c5871 !important; }
+body button:disabled { color: #a5b6c9 !important; background-color: #25313e !important; }
+body :is(button[aria-pressed="true"],button.active,.tabs .active) {
+  background-color: #294e69 !important;
+  color: #f3faff !important;
+  border-color: #a2dfff !important;
+  box-shadow: inset 0 0 0 1px #a2dfff;
+}
+body :is(.play,.play-task,.success,.ok,.good,#playAll,.export) {
+  background-color: #195440 !important;
+  color: #d2ffed !important;
+  border-color: #4aa584 !important;
+}
+body :is(.failure,.fail,.bad) {
+  background-color: #64323b !important;
+  color: #ffe3e7 !important;
+  border-color: #ce8190 !important;
+}
+body :is(.note,.rewrite,.caution,.caseCaution,.warning,.warn,.audit,.rerun) {
+  background-color: #352c1b !important;
+  color: #ffe2a6 !important;
+  border-color: #c89842 !important;
+}
+body :is(.note,.rewrite,.caution,.caseCaution,.warning,.warn,.audit,.rerun) :is(p,strong,small,li) { color: inherit !important; }
+body .instruction { background-color: transparent !important; color: var(--review-text) !important; }
+body :is(.none,.empty,.empty-step,.pill,.badge,.tag) {
+  background-color: #26374a !important;
+  color: #d3e1ef !important;
+  border-color: #526d85 !important;
+}
+body :is(.selected,.category.adapt) { background-color: #25463f !important; color: #b2f0db !important; }
+body .category.decomposition { background-color: #303958 !important; color: #d0d7ff !important; }
+body .category.compose { background-color: #263f57 !important; color: #b7e2ff !important; }
+body :is(details,summary,hr,.comparison) { border-color: var(--review-line) !important; }
+body :is(summary,label) { color: var(--review-text) !important; }
+body :is(code,pre) { background-color: #111c28 !important; color: #c8e5ff !important; }
+body table { background-color: var(--review-panel) !important; color: var(--review-text) !important; }
+body :is(th,td) { border-color: #425469 !important; color: var(--review-text) !important; }
+body th { background-color: #25364a !important; }
+body td { background-color: var(--review-panel) !important; }
+body tr:nth-child(even) td { background-color: #1c2938 !important; }
+body tr:hover td { background-color: #293d51 !important; }
+body dialog::backdrop { background-color: #000b; }
+body :is(a,button,input,select,textarea,summary):focus-visible { outline: 3px solid #9ad9ff !important; outline-offset: 3px; }
+::selection { background-color: #355d7c; color: #fff; }
+/* Only the empty media surround changes; no filter, opacity, image or video recoloring. */
+body :is(.preview,.sprite,.comparison-preview,img,video) { background-color: #0a111a !important; }
+
+/* Selected-page π0.5 panels use dedicated classes outside the shared panel set. */
+.pi05-result{background:#142833!important;border-color:#49626f!important}
+.pi05-result small,.pi05-result span{color:#c2d8e1!important}
+.pi05-result strong{color:#8fdaff!important}
+.pi05-unavailable{color:#c2d8e1!important;border-color:#67818e!important}
+.pi05-play.success{background:#175d4e!important;color:#ffffff!important}
+.pi05-play.failure{background:#853c47!important;color:#ffffff!important}
+
+body{max-width:1160px;margin:auto;padding:28px;font-family:system-ui,sans-serif}header{margin-bottom:26px}
+.task{padding:22px;margin:22px 0;border:1px solid #343b49;border-radius:14px}.instruction{font-size:1.2rem}
+.score{font-size:1.1rem}.tag{color:#a8bad5}.preview{display:block;max-width:100%;max-height:420px;border-radius:8px}
+.actions{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:16px}button{cursor:pointer;padding:10px 14px}
+details{margin:12px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere}video{width:100%;margin-top:16px;max-height:650px}
+</style></head><body><header><a href="../index.html">LIBERO-EX review</a> · <a href="../selected29/index.html">Selected 60</a>
+<h1>Compose trajectory repair</h1><p>Compose tests whether skills learned from the original LIBERO-40 can be executed in sequence.
+These experiments repair failed compositions using observed trajectories, object poses, or object substitutions.</p>
+<p><b>1 reviewer candidates.</b> Each rate uses all five fresh evaluation episodes. Native success requires ordered events
+and all final task predicates, with no final TC threshold. Every displayed success also passed full video review for deliberate actions
+and preservation of earlier results. These variants are separate from the selected 60 tasks.</p><p><a href="tasks.tsv">Candidate manifest</a> · <a href="summary.json">Evaluation summary</a></p></header>
+<main><article class="task card" id="CTR_028">
+<div class="task-head"><span class="tag">Reviewer candidate · variant of VCN35_005</span><h2>CTR_028</h2></div>
+<p class="instruction">Put the ramekin in the basket, then put the tomato sauce on the right plate.</p><p class="score">Manually valid <b>2/5</b> (40%) · Native evaluator 2/5</p>
+<img class="preview" src="assets/CTR_028/preview.jpg" loading="lazy" decoding="async" alt="CTR_028 scene preview">
+<p><b>Parent experiment:</b> VCN35_005, native evaluator 2/5. Put the ramekin in the basket, then put the tomato sauce on the right plate.</p>
+<p>Exploratory pose-repair variant of the existing VCN35_005 family. Parent historical native result was 2/5; this fresh run uses the established RAIN checkpoints and seeds 7–11, and is not a matched-seed comparison or evidence of improved success rate. Ramekin grasp/basket placement and tomato/right-plate placement include the object-binding transfers documented below. The selected 60 tasks are unchanged.</p><details><summary>Failure evidence and repair</summary><pre>{
+  &quot;object_id&quot;: &quot;tomato_sauce_1&quot;,
+  &quot;offset_world_m&quot;: [
+    -0.02,
+    0.02,
+    0
+  ],
+  &quot;notes&quot;: &quot;Same fixed XY translation in all five frozen states, toward the gripper-closing positions seen in historical failed tomato pickups; target plate and other objects unchanged.&quot;
+}</pre></details>
+<details><summary>Original LIBERO-40 skill lineage</summary><ul><li><b>libero_spatial</b>: pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate<br>Table-center bowl grasp is transferred to the ramekin via ANLGX_088 and WTRAYR_005. The ramekin is only a distractor/support in original40, with no directly trained ramekin grasp; this is object-identity adaptation.</li><li><b>libero_10</b>: LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket<br>Tabletop basket placement transfers from the tomato-sauce primitive through LBCM_003; the receiving object is the ramekin, so the ramekin-to-basket binding is transferred.</li><li><b>libero_10</b>: LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate<br>Exact right-plate binding from yellow-and-white mug placement transfers to tomato_sauce_1 through ADAPT_098; the original40 source does not directly demonstrate tomato-on-right-plate.</li><li><b>libero_10</b>: LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate<br>Front plate pose/reachable target context transfers to the two front plate slots through ADAPT_098.</li><li><b>libero_object</b>: pick_up_the_tomato_sauce_and_place_it_in_the_basket<br>Tomato sauce is directly grasped in original40; its learned object interaction is rebound to the right-plate destination, then composed after ramekin basket placement.</li></ul></details>
+<p>Certified episodes: 000, 004.</p>
+
+<div class="actions"><button type="button" data-video="assets/CTR_028/success_reel.mp4">Play 2 success episode(s)</button><button type="button" data-video="assets/CTR_028/parent_failure.mp4">Play parent failure</button>
+<a href="assets/CTR_028/evidence.json">Evidence and provenance</a><a href="assets/CTR_028/task_bundle/task.bddl">Task definition</a></div>
+<video controls playsinline preload="none" aria-label="CTR_028 episode reel" hidden></video>
+</article></main><script>
+let active = null;
+document.querySelectorAll('button[data-video]').forEach(button => button.addEventListener('click', () => {
+  const video = button.closest('article').querySelector('video');
+  if (active) {active.pause(); active.removeAttribute('src'); active.load(); active.hidden = true;}
+  video.src = button.dataset.video; video.hidden = false; video.load(); active = video;
+  video.play().catch(() => {});
+}));
+</script></body></html>

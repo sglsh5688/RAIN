@@ -1,0 +1,2 @@
+task_id	instruction	variant_of	status	episodes	nominal_successes	manually_valid_successes	certified_episode_indices
+CTR_028	Put the ramekin in the basket, then put the tomato sauce on the right plate.	VCN35_005	pending_user_review_not_selected	5	2	2	0,4

@@ -1,0 +1,572 @@
+{
+  "validation_version": "trajectory_repair_five_state_screen_v1",
+  "valid_count": 5,
+  "rows": [
+    {
+      "state_index": 0,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 1.5265566588595902e-16,
+          "angular_drift_rad": 4.256550046333454e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 8.460696491723254e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_2",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 4.094423487378774e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "passes": true,
+          "xy_drift_m": 3.903127820947816e-18,
+          "angular_drift_rad": 1.0836621175292357e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "basket_1",
+          "passes": true,
+          "xy_drift_m": 3.469852981316656e-05,
+          "angular_drift_rad": 0.004794173367519403,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "step_1_round_object:glazed_rim_porcelain_ramekin_1": 943,
+        "step_1_basket_target:basket_1": 6913,
+        "step_2_cylinder_object:tomato_sauce_1": 1272,
+        "step_2_plate_target:plate_2": 4031
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "tomato_sauce_1",
+          "before_xyz": [
+            -0.0880941994780293,
+            -0.15712654898985626,
+            0.4751692784892429
+          ],
+          "after_xyz": [
+            -0.1080941994780293,
+            -0.13712654898985627,
+            0.4751692784892429
+          ],
+          "applied_delta_xyz": [
+            -0.020000000000000004,
+            0.01999999999999999,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.02,
+              0.02,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {},
+      "reachability": [
+        {
+          "entity": "basket_1",
+          "robot_base_distance_m": 0.5748463692647026,
+          "passes": true
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "robot_base_distance_m": 0.37847061943913674,
+          "passes": true
+        },
+        {
+          "entity": "plate_2",
+          "robot_base_distance_m": 0.6650856904496927,
+          "passes": true
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "robot_base_distance_m": 0.4282237875458314,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "4926790ada80de7c4392b8aa481c0563069dcdb0adcb047a0367d35ee135fcb5"
+    },
+    {
+      "state_index": 1,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.9068799498041076e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 5.1393315270452077e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_2",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 8.120463059618076e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.861852639885705e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "basket_1",
+          "passes": true,
+          "xy_drift_m": 3.4698529820790924e-05,
+          "angular_drift_rad": 0.004794173367519331,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "step_1_round_object:glazed_rim_porcelain_ramekin_1": 949,
+        "step_1_basket_target:basket_1": 7425,
+        "step_2_cylinder_object:tomato_sauce_1": 1219,
+        "step_2_plate_target:plate_2": 4459
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "tomato_sauce_1",
+          "before_xyz": [
+            -0.10769430542115152,
+            -0.1332917383600223,
+            0.4751692784892429
+          ],
+          "after_xyz": [
+            -0.1276943054211515,
+            -0.1132917383600223,
+            0.4751692784892429
+          ],
+          "applied_delta_xyz": [
+            -0.01999999999999999,
+            0.020000000000000004,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.02,
+              0.02,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {},
+      "reachability": [
+        {
+          "entity": "basket_1",
+          "robot_base_distance_m": 0.5799282270993132,
+          "passes": true
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "robot_base_distance_m": 0.38151828767369234,
+          "passes": true
+        },
+        {
+          "entity": "plate_2",
+          "robot_base_distance_m": 0.6906022526202255,
+          "passes": true
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "robot_base_distance_m": 0.40253734159339205,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "282c6d1fe2693fd9f0fd0f1bb715e84481faa92956593f89a22ac2a6b59b14df"
+    },
+    {
+      "state_index": 2,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.0735773291799786e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.2463171529337907e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_2",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 5.757580929289566e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "passes": true,
+          "xy_drift_m": 5.204170427930421e-18,
+          "angular_drift_rad": 1.0906175090569166e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "basket_1",
+          "passes": true,
+          "xy_drift_m": 3.469852982099357e-05,
+          "angular_drift_rad": 0.004794173367519347,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "step_1_round_object:glazed_rim_porcelain_ramekin_1": 950,
+        "step_1_basket_target:basket_1": 7796,
+        "step_2_cylinder_object:tomato_sauce_1": 1234,
+        "step_2_plate_target:plate_2": 4033
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "tomato_sauce_1",
+          "before_xyz": [
+            -0.10376613216424832,
+            -0.1400176454155015,
+            0.47516927848924284
+          ],
+          "after_xyz": [
+            -0.12376613216424832,
+            -0.12001764541550149,
+            0.47516927848924284
+          ],
+          "applied_delta_xyz": [
+            -0.020000000000000004,
+            0.020000000000000004,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.02,
+              0.02,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {},
+      "reachability": [
+        {
+          "entity": "basket_1",
+          "robot_base_distance_m": 0.5599183059823657,
+          "passes": true
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "robot_base_distance_m": 0.3817932065186688,
+          "passes": true
+        },
+        {
+          "entity": "plate_2",
+          "robot_base_distance_m": 0.6666234749480846,
+          "passes": true
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "robot_base_distance_m": 0.4081966256149965,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "7f6e02ef9632fd7e1e2fe451482adc28305016b811e37d0857d2931f608adbaf"
+    },
+    {
+      "state_index": 3,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.0293036165572877e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 3.6730939605370636e-17,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_2",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.2078299665436832e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "passes": true,
+          "xy_drift_m": 6.505213034913027e-19,
+          "angular_drift_rad": 1.6778674090882826e-16,
+          "second_window_drift_m": 1.951563910473908e-18
+        },
+        {
+          "entity": "basket_1",
+          "passes": true,
+          "xy_drift_m": 3.469852979801167e-05,
+          "angular_drift_rad": 0.004794173367519359,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "step_1_round_object:glazed_rim_porcelain_ramekin_1": 947,
+        "step_1_basket_target:basket_1": 7057,
+        "step_2_cylinder_object:tomato_sauce_1": 1257,
+        "step_2_plate_target:plate_2": 3705
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "tomato_sauce_1",
+          "before_xyz": [
+            -0.09590824351216776,
+            -0.1669215751492136,
+            0.47516927848924284
+          ],
+          "after_xyz": [
+            -0.11590824351216776,
+            -0.1469215751492136,
+            0.47516927848924284
+          ],
+          "applied_delta_xyz": [
+            -0.020000000000000004,
+            0.01999999999999999,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.02,
+              0.02,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {},
+      "reachability": [
+        {
+          "entity": "basket_1",
+          "robot_base_distance_m": 0.5692892720652364,
+          "passes": true
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "robot_base_distance_m": 0.37978606653242913,
+          "passes": true
+        },
+        {
+          "entity": "plate_2",
+          "robot_base_distance_m": 0.646146223253277,
+          "passes": true
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "robot_base_distance_m": 0.42419088988922726,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "0563e056acfc5fd982e4f674e38c81daa398fa6ccd5dbb2e1bff5f42b278a99f"
+    },
+    {
+      "state_index": 4,
+      "valid": true,
+      "errors": [],
+      "initial_event_values_pre_warmup": [
+        false,
+        false
+      ],
+      "initial_event_values": [
+        false,
+        false
+      ],
+      "initial_cross_entity_penetrations": [],
+      "settled_cross_entity_penetrations": [],
+      "required_entity_stability": [
+        {
+          "entity": "tomato_sauce_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 2.9729201455810495e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_1",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 1.0257584448093978e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "plate_2",
+          "passes": true,
+          "xy_drift_m": 0.0,
+          "angular_drift_rad": 2.546646201734959e-16,
+          "second_window_drift_m": 0.0
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "passes": true,
+          "xy_drift_m": 4.336808689942018e-19,
+          "angular_drift_rad": 4.289168423840886e-17,
+          "second_window_drift_m": 1.5178830414797062e-18
+        },
+        {
+          "entity": "basket_1",
+          "passes": true,
+          "xy_drift_m": 3.469852979801214e-05,
+          "angular_drift_rad": 0.004794173367519375,
+          "second_window_drift_m": 0.0
+        }
+      ],
+      "mask_areas": {
+        "step_1_round_object:glazed_rim_porcelain_ramekin_1": 945,
+        "step_1_basket_target:basket_1": 6994,
+        "step_2_cylinder_object:tomato_sauce_1": 1226,
+        "step_2_plate_target:plate_2": 4153
+      },
+      "fixture_replay_error_m": 0.0,
+      "pose_changes": [
+        {
+          "entity": "tomato_sauce_1",
+          "before_xyz": [
+            -0.10535137055405622,
+            -0.1446172577064642,
+            0.47516927848924284
+          ],
+          "after_xyz": [
+            -0.1253513705540562,
+            -0.12461725770646419,
+            0.47516927848924284
+          ],
+          "applied_delta_xyz": [
+            -0.01999999999999999,
+            0.020000000000000004,
+            0.0
+          ],
+          "change": {
+            "delta_xyz": [
+              -0.02,
+              0.02,
+              0
+            ]
+          }
+        }
+      ],
+      "articulation_states": {},
+      "reachability": [
+        {
+          "entity": "basket_1",
+          "robot_base_distance_m": 0.5711320985700123,
+          "passes": true
+        },
+        {
+          "entity": "glazed_rim_porcelain_ramekin_1",
+          "robot_base_distance_m": 0.3797081638223793,
+          "passes": true
+        },
+        {
+          "entity": "plate_2",
+          "robot_base_distance_m": 0.6746779122796291,
+          "passes": true
+        },
+        {
+          "entity": "tomato_sauce_1",
+          "robot_base_distance_m": 0.40807802972219165,
+          "passes": true
+        }
+      ],
+      "unchanged_parent_pose_checks": [],
+      "source_state_sha256": "14254091a0811f1daabf89029895a2908c3c807449d107008a72a8dd39acc5ea"
+    }
+  ],
+  "evaluator_wait_steps": 10,
+  "evaluator_wait_action": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "policy_evaluation_run": false
+}

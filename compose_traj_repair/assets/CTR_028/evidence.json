@@ -1,0 +1,185 @@
+{
+  "task_id": "CTR_028",
+  "instruction": "Put the ramekin in the basket, then put the tomato sauce on the right plate.",
+  "status": "pending_user_review_not_selected",
+  "variant_of": "VCN35_005",
+  "classification": "repair_variant_not_new_semantic_family",
+  "episodes": 5,
+  "nominal_successes": 2,
+  "manually_valid_successes": 2,
+  "nominal_success_episode_indices": [
+    0,
+    4
+  ],
+  "certified_episode_indices": [
+    0,
+    4
+  ],
+  "ordered_native_milestones": {
+    "0": [
+      101,
+      368
+    ],
+    "4": [
+      99,
+      425
+    ]
+  },
+  "final_success_requires_all_bddl_goals": true,
+  "compose_final_tc_gate": false,
+  "results_sha256": "d87deabbdc609b0bb4816229f31c9c2ffd939193d1a5ee45db64146cb23349d7",
+  "parent_results_sha256": "37ebc72f30c7f5aec3f0df35d3ec677fcddcbd87000e717bcc573d5af2af6347",
+  "parent_nominal_successes": 2,
+  "parent_episodes": 5,
+  "parent_instruction": "Put the ramekin in the basket, then put the tomato sauce on the right plate.",
+  "repair": {
+    "object_id": "tomato_sauce_1",
+    "offset_world_m": [
+      -0.02,
+      0.02,
+      0
+    ],
+    "notes": "Same fixed XY translation in all five frozen states, toward the gripper-closing positions seen in historical failed tomato pickups; target plate and other objects unchanged."
+  },
+  "frozen_repair_provenance": {
+    "task_id": "CTR_028",
+    "parent_task_id": "VCN35_005",
+    "parent_bundle": "LiberoValidComposeNew20260905/Batch35ShapeBasketPlate/benchmark/tasks/vcn35_005__put_the_ramekin_in_the_basket_then_put_the_tomato_sauce_on_the_right_plate",
+    "pose_changes": {
+      "tomato_sauce_1": {
+        "delta_xyz": [
+          -0.02,
+          0.02,
+          0
+        ]
+      }
+    },
+    "evidence": "Parent nonselected pending-review VCN35_005 is2/5 overall with ramekin->basket5/5. Failed ep000/003 actually approach tomato and close about[-.03,+.02]m from initialtomatoXY then carry empty hand toward correctplate. Successful parentep001/002 provide nearbypickup references. Shift tomato fixed acrossall5states toward missed-grasp positions; this is an improvement probe of an existing successful semantic family, not a novel composition.",
+    "classification": "repair_variant_not_new_semantic_family",
+    "parent_files_sha256": {
+      "task.bddl": "6871d1b3399eac3b1f1a425e9c49d1d1432444a6fb28a71c83bd841b89fc5d44",
+      "task.pruned_init": "38bdf48a68abb5854cc8ac4a9bcfaa416b97cc52c285579c04b5f8ecded63c3a",
+      "FIXTURE_REPLAY.json": "a288ddfd472115e8229f7540e9f9bfc7c10765af86cea8641e5500a6edf0f1e9",
+      "action_plan.yaml": "f3fcc57ad18c12de59c63227904fb0f058bfb4985c6847db0bc3e5084741942b"
+    },
+    "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+  },
+  "original40_skill_lineage": [
+    {
+      "suite": "libero_spatial",
+      "task": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate",
+      "transfer": "Table-center bowl grasp is transferred to the ramekin via ANLGX_088 and WTRAYR_005. The ramekin is only a distractor/support in original40, with no directly trained ramekin grasp; this is object-identity adaptation.",
+      "original40_task_id": "LIBERO_SPATIAL_03",
+      "instruction": "Pick the akita black bowl from table center and place it on the plate"
+    },
+    {
+      "suite": "libero_10",
+      "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket",
+      "transfer": "Tabletop basket placement transfers from the tomato-sauce primitive through LBCM_003; the receiving object is the ramekin, so the ramekin-to-basket binding is transferred.",
+      "original40_task_id": "LIBERO_10_01",
+      "instruction": "put both the alphabet soup and the tomato sauce in the basket"
+    },
+    {
+      "suite": "libero_10",
+      "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate",
+      "transfer": "Exact right-plate binding from yellow-and-white mug placement transfers to tomato_sauce_1 through ADAPT_098; the original40 source does not directly demonstrate tomato-on-right-plate.",
+      "original40_task_id": "LIBERO_10_05",
+      "instruction": "put the white mug on the left plate and put the yellow and white mug on the right plate"
+    },
+    {
+      "suite": "libero_10",
+      "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate",
+      "transfer": "Front plate pose/reachable target context transfers to the two front plate slots through ADAPT_098.",
+      "original40_task_id": "LIBERO_10_07",
+      "instruction": "put the white mug on the plate and put the chocolate pudding to the right of the plate"
+    },
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "transfer": "Tomato sauce is directly grasped in original40; its learned object interaction is rebound to the right-plate destination, then composed after ramekin basket placement.",
+      "original40_task_id": "LIBERO_OBJECT_06",
+      "instruction": "Pick the tomato sauce and place it in the basket"
+    }
+  ],
+  "manual_review_notes": "Exploratory pose-repair variant of the existing VCN35_005 family. Parent historical native result was 2/5; this fresh run uses the established RAIN checkpoints and seeds 7–11, and is not a matched-seed comparison or evidence of improved success rate. Ramekin grasp/basket placement and tomato/right-plate placement include the object-binding transfers documented below. The selected 60 tasks are unchanged.",
+  "episode_reviews": [
+    {
+      "episode_idx": 0,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "video_sha256": "88822ecfa7a60c0ddb9eb5fa93e14878206de092cb0f96a91659f5c980e07d93",
+      "notes": "Reviewed all 48 decoded video frames and independently reconstructed ordered native milestones [101, 368]. Deliberate ramekin grasp and basket placement, then tomato grasp, transport, and release onto plate_2. Ramekin remains stationary throughout the second action (maximum displacement 3.8e-14 m after control 112), with no loss of its basket predicate. Final gripper aperture is about 7.03 cm and there are no gripper contacts during the last two controls. No earlier placement damage or accidental goal observed.",
+      "milestones": [
+        101,
+        368
+      ],
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch08_5ep_20260911/tasks/all1/CTR_028/videos/CTR_028_ep000_ok.mp4"
+    },
+    {
+      "episode_idx": 4,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "video_sha256": "c39abd75613d2be66120018ceaccc21077deaa438ae25518055119c79a54c9ca",
+      "notes": "Reviewed all 55 decoded video frames and independently reconstructed ordered native milestones [99, 425]. Deliberate ramekin grasp and basket placement, then tomato grasp, transport, and release onto plate_2. The ramekin settles tilted against the basket interior during its initial release (not an upright-placement task); it never leaves the basket and is stationary from control 130 onward (maximum subsequent displacement 1.7e-11 m), throughout the tomato pickup/placement. A brief release/withdrawal finger contact ends at control 114, with no later gripper contact or displacement. Tomato is released upright, final gripper opening about 6.47 cm; last tomato contact control 423 and no contacts in final two controls. No downstream damage or accidental goal observed.",
+      "milestones": [
+        99,
+        425
+      ],
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch08_5ep_20260911/tasks/all1/CTR_028/videos/CTR_028_ep004_ok.mp4"
+    }
+  ],
+  "episode_outcomes": [
+    {
+      "episode_idx": 0,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 1,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 2,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 3,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 4,
+      "nominal_success": true,
+      "manually_valid_success": true
+    }
+  ],
+  "rain_settings": {
+    "checkpoint": "RAIN/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "progress_checkpoint": "RAIN/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "replan_steps": 8,
+    "num_inference_steps": 4,
+    "feas_threshold": 0.7,
+    "consecutive_stop": 2,
+    "seed": 7,
+    "clip_model_name": "openai/clip-vit-large-patch14"
+  },
+  "source_bundle_sha256": {
+    "task.bddl": "6871d1b3399eac3b1f1a425e9c49d1d1432444a6fb28a71c83bd841b89fc5d44",
+    "task.pruned_init": "456f09838f0a86ca942b24e70e52ba34c6d204dd790906cd45556214c90681db",
+    "task_meta.yaml": "e4774e4cc327fb8b6dbb74599a545a20f420efa559f221091781dfb267553ce5",
+    "eval_rules.yaml": "c057169b3bd6182c30e14f0773a0387faf534616c828e91870ef9bc9d39d8124",
+    "registry_entry.yaml": "7c36ccf9bd41214795a9d5a0a712ed318efeb6c609a4668b22fa3ccb9931c7fd",
+    "mask_bindings.yaml": "4950d8e914cde40ed16ce399095f4e325141248c7b99ff51655a5044992e59d7",
+    "action_plan.yaml": "8394cc33e4fa5098c2770881a9df7c9d4e47d08268ed60021baba8754d510cb0",
+    "FIXTURE_REPLAY.json": "a0c2c90498eb546b9f1786a14572e10fcee3f1a7a0541c02316425746f559907",
+    "INIT_VALIDATION.json": "cf58029bafee6f07061f86670a7c3231c33eecb42ffca13e31e3d9dcab57b127",
+    "REPAIR_PROVENANCE.json": "a4f0b5904931c334e92bcdf96532814a8490ca676abeced642ae20bc56e86c2b"
+  },
+  "parent_failure_video_sha256": "c577c60b4091b7b2634d964a0f09f05f399a622b5cb84f3e276caf308853117a"
+}

@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-09-11T08:37:56.440902+00:00",
+  "created_at_utc": "2026-09-11T08:53:44.743824+00:00",
   "review_status": "pending_user_review_not_selected",
   "tasks": [
     {
@@ -31,11 +31,21 @@
       "nominal_successes": 2,
       "manually_valid_successes": 2,
       "certified_episode_indices": "0,3"
+    },
+    {
+      "task_id": "CTR_105",
+      "instruction": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the cream cheese and place it in the right compartment of the bowl drainer.",
+      "variant_of": "BDRCOMP_001",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 1,
+      "manually_valid_successes": 1,
+      "certified_episode_indices": "3"
     }
   ],
-  "source_manual_review_sha256": "0cb2c89567a38297811fb4639cb31e19570c496f65b82141e587b3590e513cd7",
-  "nominal_successes": 8,
-  "manually_valid_successes": 8,
-  "episodes": 15,
+  "source_manual_review_sha256": "9d0402e1c033c1580100d1fc995f0dc53f17baa6a2183ea1e301600a8ada4432",
+  "nominal_successes": 9,
+  "manually_valid_successes": 9,
+  "episodes": 20,
   "selected60_modified": false
 }

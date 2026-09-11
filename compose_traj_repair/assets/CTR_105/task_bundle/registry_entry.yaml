@@ -1,0 +1,16 @@
+name: CTR_105
+language: Pick the alphabet soup and place it in the left compartment of the bowl
+  drainer, then pick the cream cheese and place it in the right compartment of the
+  bowl drainer.
+problem: Libero
+problem_folder: tasks/ctr_105
+bddl_file: task.bddl
+init_states_file: task.pruned_init
+category: Composition
+anchor_suite: libero_object
+metadata_file: task_meta.yaml
+eval_rules_file: eval_rules.yaml
+mask_bindings_file: mask_bindings.yaml
+action_plan_file: action_plan.yaml
+canonical_task_signature: composition|f1280abcdef40b19540f187b20e8e51799e6fc1a4def3234a31259206a6ca94a|('in(alphabet_soup_1,
+  bowl_drainer_1_left_region)', 'in(cream_cheese_1, bowl_drainer_1_right_region)')

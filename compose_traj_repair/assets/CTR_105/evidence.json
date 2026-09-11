@@ -1,0 +1,166 @@
+{
+  "task_id": "CTR_105",
+  "instruction": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the cream cheese and place it in the right compartment of the bowl drainer.",
+  "status": "pending_user_review_not_selected",
+  "variant_of": "BDRCOMP_001",
+  "classification": "repair_variant_not_new_semantic_family",
+  "episodes": 5,
+  "nominal_successes": 1,
+  "manually_valid_successes": 1,
+  "nominal_success_episode_indices": [
+    3
+  ],
+  "certified_episode_indices": [
+    3
+  ],
+  "ordered_native_milestones": {
+    "3": [
+      169,
+      463
+    ]
+  },
+  "final_success_requires_all_bddl_goals": true,
+  "compose_final_tc_gate": false,
+  "results_sha256": "97b9a492912856b3190f3c4a7edb4033a487f75ba032e42ae2400f0467b821ce",
+  "parent_results_sha256": "6e86eaa84d085dd64e0e29573d2dff91c2d56e215ee53162293cfc70fbad0edf",
+  "parent_nominal_successes": 0,
+  "parent_episodes": 5,
+  "parent_instruction": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the cream cheese and place it in the right compartment of the bowl drainer.",
+  "parent_state_verification": {
+    "method": "original_run_manifest_and_byte_identical_five_state_source",
+    "run_config_sha256": "108092f1236210498a6a085d61e179823e170c39e767c7399c43eb2060b34814",
+    "task_pruned_init_sha256": "36f8bc2f83576677bebf41e532bf818e8e5286051d21627bb0b7f28ca71712b5"
+  },
+  "repair": {
+    "object_id": "cream_cheese_1",
+    "offset_world_m": [
+      0.1,
+      -0.045,
+      0
+    ],
+    "notes": "The same translation is applied to all five frozen states: 10 cm in positive world X and 4.5 cm in negative world Y, toward the empty gripper closures in the historical second pickup. Soup and drainer positions stay unchanged. The original ordered release and support rule is preserved."
+  },
+  "frozen_repair_provenance": {
+    "task_id": "CTR_105",
+    "parent_task_id": "BDRCOMP_001",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/drainer_parent_snapshots/BDRCOMP_001",
+    "pose_changes": {
+      "cream_cheese_1": {
+        "delta_xyz": [
+          0.1,
+          -0.045,
+          0
+        ]
+      }
+    },
+    "evidence": "Alphabet-soup first placement5/5. Cream-cheese pickup ep003 closes near[-.050,+.015,.056] vs[-.146,+.056,.009], ep001 near[+.029,-.091,.100] vs[-.146,+.063,.009]. Two documented observed pickup modes; fixed shifts across5states. Native and released-supported ordered completion remain strict.",
+    "classification": "repair_variant_not_new_semantic_family",
+    "parent_files_sha256": {
+      "task.bddl": "a87a9630ae27d601138feaf87c6dbc2934f856184cc442cb1debbda7dfabe3e9",
+      "task.pruned_init": "36f8bc2f83576677bebf41e532bf818e8e5286051d21627bb0b7f28ca71712b5",
+      "FIXTURE_REPLAY.json": "516be15f2c0f36a111b536b033378fc8b07f9438fe1cb8212fd3f303a5698e4a",
+      "action_plan.yaml": "2b2552cf72284919dddecb224bbd50c6019b709c81b3b64dba1cfba5d52cbe60"
+    },
+    "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+  },
+  "original40_skill_lineage": [
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_01",
+      "instruction": "Pick the alphabet soup and place it in the basket",
+      "transfer": "Directly trained food grasp and basket release transfer to the native left drainer compartment. This destination substitution and sequential composition are adaptations; the original40 source does not directly demonstrate drainer placement."
+    },
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_02",
+      "instruction": "Pick the cream cheese and place it in the basket",
+      "transfer": "Directly trained food grasp and basket release transfer to the native right drainer compartment. This destination substitution and sequential composition are adaptations; the original40 source does not directly demonstrate drainer placement."
+    }
+  ],
+  "manual_review_notes": "Fresh trajectory-guided repair of BDRCOMP_001, whose historical result was 0/5 despite successful first placements in all five episodes. The soup and cream-cheese grasp identities are directly trained in LIBERO-40; basket destinations transfer to the two drainer compartments. The original release and exact-base support gate is retained for five consecutive control steps. The successful episode passed full video and trajectory review. Existing RAIN checkpoints are used; policy seeds 7–11 differ from the parent, so this comparison does not isolate the effect of the pose change. The selected 60 tasks remain unchanged.",
+  "episode_reviews": [
+    {
+      "episode_idx": 3,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 59,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch26_5ep_20260911/tasks/all1/CTR_105/videos/CTR_105_ep003_ok.mp4",
+      "video_sha256": "26fe4d80c857a6b4fa17953dce66a9d9028290dae1e673ce537106ac01715e81",
+      "reviewed_complete_trace": true,
+      "trace_npz_sha256": "30a0479bae33bc3e8ed1516d359263cbbee57d97aea1b7c49b4092d3d6d870ac",
+      "milestones": [
+        169,
+        463
+      ],
+      "released_supported_milestones": [
+        175,
+        470
+      ],
+      "first_object_displacement_during_second_skill_m": 2.8609792490763984e-17,
+      "last_gripper_contact_control_steps": {
+        "alphabet_soup_1": 163,
+        "cream_cheese_1": 453
+      },
+      "notes": "Reviewed every one of the 59 saved video frames and the complete 470-control trajectory. The soup can is deliberately grasped and released into the left compartment; it settles tilted inside the compartment, which does not require upright orientation. The cream-cheese box is then grasped after retries, carried into the right compartment and released. The soup predicate never drops after control169 and its pose is preserved throughout the second skill. Both final objects have exact drainer-base support and no gripper contact for at least five controls; opposite-compartment predicates are false. Native milestones169/463, released-supported milestones175/470. No held-target or downstream-damage success was observed."
+    }
+  ],
+  "episode_outcomes": [
+    {
+      "episode_idx": 0,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 1,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 2,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 3,
+      "parent_same_index_native_success": false,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 4,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    }
+  ],
+  "rain_settings": {
+    "checkpoint": "RAIN/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "progress_checkpoint": "RAIN/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "replan_steps": 8,
+    "num_inference_steps": 4,
+    "feas_threshold": 0.7,
+    "consecutive_stop": 2,
+    "seed": 7,
+    "clip_model_name": "openai/clip-vit-large-patch14"
+  },
+  "source_bundle_sha256": {
+    "task.bddl": "a87a9630ae27d601138feaf87c6dbc2934f856184cc442cb1debbda7dfabe3e9",
+    "task.pruned_init": "9d415fc44b8e9433603af71cd420d769eecebe7223fede8fc8bc694558af52f1",
+    "task_meta.yaml": "3712be23ebaf72406215798c1bdd2b594e9b5d13a44b625d08dc70229f014db0",
+    "eval_rules.yaml": "3b0c294dbc9d205325b1fd28335f0cf7f5fcd18186c218eaaf09a7848492642e",
+    "registry_entry.yaml": "15bd52a79b5eebb6787e19c9d7a4922f2974fb90797efa0ea0891df0ff2c8c6e",
+    "mask_bindings.yaml": "f086b66311169049017c1084a3d889d8fc4976150c6d0a75525b5b2a282630bf",
+    "action_plan.yaml": "2108ab7f964c3b2732300297b74ad8ffc4c57f51d9dfb3326eeb6def816b7136",
+    "FIXTURE_REPLAY.json": "1cf4993469b932bdc4394d4c866fcbb2486cadf71097b11625a60f8e91757013",
+    "INIT_VALIDATION.json": "763c3da9e3f8373427a265e03550f24a3cf33392383012bfdb777659f1157108",
+    "REPAIR_PROVENANCE.json": "f9d1e0e3c341814ec17c21e199e7bf22d435f9762a6c1cd7bc7969e188982e43"
+  },
+  "parent_failure_video_sha256": "0fd7fffff50d2f20448ee2d1f4c76c3c872c75f18902aaf09d0bea3b0fe0bf16"
+}

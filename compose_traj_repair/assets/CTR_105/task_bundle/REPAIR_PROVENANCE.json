@@ -1,0 +1,23 @@
+{
+  "task_id": "CTR_105",
+  "parent_task_id": "BDRCOMP_001",
+  "parent_bundle": "LiberoComposeTrajRepair20260911/drainer_parent_snapshots/BDRCOMP_001",
+  "pose_changes": {
+    "cream_cheese_1": {
+      "delta_xyz": [
+        0.1,
+        -0.045,
+        0
+      ]
+    }
+  },
+  "evidence": "Alphabet-soup first placement5/5. Cream-cheese pickup ep003 closes near[-.050,+.015,.056] vs[-.146,+.056,.009], ep001 near[+.029,-.091,.100] vs[-.146,+.063,.009]. Two documented observed pickup modes; fixed shifts across5states. Native and released-supported ordered completion remain strict.",
+  "classification": "repair_variant_not_new_semantic_family",
+  "parent_files_sha256": {
+    "task.bddl": "a87a9630ae27d601138feaf87c6dbc2934f856184cc442cb1debbda7dfabe3e9",
+    "task.pruned_init": "36f8bc2f83576677bebf41e532bf818e8e5286051d21627bb0b7f28ca71712b5",
+    "FIXTURE_REPLAY.json": "516be15f2c0f36a111b536b033378fc8b07f9438fe1cb8212fd3f303a5698e4a",
+    "action_plan.yaml": "2b2552cf72284919dddecb224bbd50c6019b709c81b3b64dba1cfba5d52cbe60"
+  },
+  "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+}

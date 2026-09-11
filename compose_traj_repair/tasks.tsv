@@ -2,3 +2,4 @@ task_id	instruction	variant_of	status	episodes	nominal_successes	manually_valid_
 CTR_028	Put the ramekin in the basket, then put the tomato sauce on the right plate.	VCN35_005	pending_user_review_not_selected	5	2	2	0,4
 CTR_103	Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.	BDRCOMP_013	pending_user_review_not_selected	5	4	4	0,2,3,4
 CTR_104	Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.	BDRCOMP_013	pending_user_review_not_selected	5	2	2	0,3
+CTR_105	Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the cream cheese and place it in the right compartment of the bowl drainer.	BDRCOMP_001	pending_user_review_not_selected	5	1	1	3

@@ -1,0 +1,1100 @@
+{
+  "task_id": "CTR_116",
+  "instruction": "Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.",
+  "status": "pending_user_review_not_selected",
+  "variant_of": "CTR_085",
+  "classification": "repair_variant_not_new_semantic_family",
+  "episodes": 5,
+  "nominal_successes": 4,
+  "manually_valid_successes": 3,
+  "nominal_success_episode_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "certified_episode_indices": [
+    0,
+    1,
+    3
+  ],
+  "ordered_native_milestones": {
+    "0": [
+      109,
+      300,
+      460
+    ],
+    "1": [
+      114,
+      307,
+      467
+    ],
+    "2": [
+      114,
+      314,
+      447
+    ],
+    "3": [
+      114,
+      340,
+      521
+    ]
+  },
+  "final_success_requires_all_bddl_goals": true,
+  "compose_final_tc_gate": false,
+  "results_sha256": "b5a1288c11beb22fffd91f0ae521a2a403cfa6df797797c72729078f57eb01fd",
+  "parent_results_sha256": "97e826ee9bcb4ee9c3b64a4f0d5e31beb1df10e62e4a19ce4a2542b15eba812e",
+  "parent_nominal_successes": 4,
+  "parent_episodes": 5,
+  "parent_instruction": "Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.",
+  "parent_state_verification": {
+    "method": "historical_per_episode_state_hash"
+  },
+  "repair": {
+    "kind": "same_geometry_future_terminal_protocol_followup",
+    "pose_changes": {},
+    "terminal_contract": {
+      "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+      "support_hold_control_steps": 5,
+      "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+      "settle_linear_speed_max_m_s": 0.02,
+      "settle_angular_speed_max_rad_s": 0.5
+    },
+    "notes": "Preserves the earlier repaired scene and continues the unchanged RAIN final-release action inside the existing control budget until the stricter physical gate holds."
+  },
+  "frozen_repair_provenance": {
+    "task_id": "CTR_116",
+    "parent_task_id": "CTR_085",
+    "parent_bundle": "LiberoComposeTrajRepair20260911/benchmark_batch22/tasks/ctr_085",
+    "pose_changes": {},
+    "terminal_contract": {
+      "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+      "support_hold_control_steps": 5,
+      "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+      "settle_linear_speed_max_m_s": 0.02,
+      "settle_angular_speed_max_rad_s": 0.5
+    },
+    "evidence": "Future-only supported-placement followup ofCTR_085. Reuse the frozen trajectory-repaired physical definition unchanged and add an explicitly stricter terminal contract. Earlier basket candidates terminated when the last released object was still airborne; native successes remain untouched and are not certified as settled from those rollouts. This fresh five-episode trial lets the unchanged RAIN final-release action continue within the same existing cap until all ordered native goals AND supported released targets stay below predeclared speed thresholds for five actual controls. No passive continuation, forced-open action, extra cap or finalTC gate is added. This is a protocol followup of an existing physical repair, not an additional distinct scene or semantic family.",
+    "classification": "repair_variant_not_new_semantic_family",
+    "parent_files_sha256": {
+      "task.bddl": "af2a158366940c795a4b254d66e6bb6bab63018cf050bbf5230c6672da816672",
+      "task.pruned_init": "28cce5862d4a5fc6b019928564e48a22a310ddf2f75105dcb53147870c7b8854",
+      "FIXTURE_REPLAY.json": "c009a0610b93ae58dae567e93afcfee15d724cbea79989dfcc0a23f58dfd76e7",
+      "action_plan.yaml": "e80cd4fd7c3529ccb4091a6132440238932c41b53c0e28a8293e5db5718028d5"
+    },
+    "current_authorization": "User requested failure-trajectory pose/object repairs, existing RAIN checkpoints, 5 episodes per candidate, GPUs 4 and 5, publish manually valid successes as review candidates."
+  },
+  "original40_skill_lineage": [
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_butter_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_07",
+      "instruction": "Pick the butter and place it in the basket",
+      "transfer": "Directly trained original40 object grasp and basket placement, chained with the two other known food-placement skills in the repaired shared scene."
+    },
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_02",
+      "instruction": "Pick the cream cheese and place it in the basket",
+      "transfer": "Directly trained original40 object grasp and basket placement, chained with the two other known food-placement skills in the repaired shared scene."
+    },
+    {
+      "suite": "libero_object",
+      "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "original40_task_id": "LIBERO_OBJECT_06",
+      "instruction": "Pick the tomato sauce and place it in the basket",
+      "transfer": "Directly trained original40 object grasp and basket placement, chained with the two other known food-placement skills in the repaired shared scene."
+    }
+  ],
+  "manual_review_notes": "Same-geometry terminal-protocol followup of CTR_085. Initial state values, fixture poses, BDDL goals, action plans, RAIN checkpoints, seeds7-11 and1200-control budget are unchanged. The parent native result was 4/5, with its nominal successes withheld because tomato was still falling at termination; historical scores remain untouched. The fresh trial requires released support through the exact basket base and five controls below predeclared speed limits. Full-video/full-trace review certifies 3/5. All five saved action/state prefixes exactly match the old cutoffs. This is a stricter evaluation of an existing physical repair, not an additional distinct scene or semantic family, nor a pose-driven success-rate improvement. Episode002 passes the native and support gates but is excluded because tomato placement shifts and rotates the earlier cheese placement.",
+  "episode_reviews": [
+    {
+      "episode_idx": 0,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 59,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch55a_5ep_20260911/tasks/all1/CTR_116/videos/CTR_116_ep000_ok.mp4",
+      "video_sha256": "c9f221392fb3b93a4873d3ee738a053151f4ca059a9adaf58779c1102b0d34c6",
+      "trace_npz_sha256": "cc4dfd943e6b5f7d32d3fa0aac6ef4b327416a216f7611121369fcb0b2e6f438",
+      "milestones": [
+        109,
+        300,
+        460
+      ],
+      "supported_settled_control_range": [
+        469,
+        473
+      ],
+      "final_entity_facts": {
+        "basket_1": {
+          "world_position_m": [
+            -0.008279269669501205,
+            0.2528609835506755,
+            0.4321920830743812
+          ],
+          "linear_speed_m_s": 5.445017186476226e-14,
+          "angular_speed_rad_s": 9.545846020449607e-13,
+          "any_robot_contact": false,
+          "upright": true,
+          "original_support_contact": true
+        },
+        "butter_1": {
+          "world_position_m": [
+            -0.009167626423108375,
+            0.2413903081702897,
+            0.46246930722615603
+          ],
+          "linear_speed_m_s": 4.117234487456304e-13,
+          "angular_speed_rad_s": 1.0023982703275422e-10,
+          "any_robot_contact": false,
+          "native_in": true
+        },
+        "cream_cheese_1": {
+          "world_position_m": [
+            -0.0021413517448357123,
+            0.23597492256407834,
+            0.4801146924437467
+          ],
+          "linear_speed_m_s": 8.384429982927143e-12,
+          "angular_speed_rad_s": 1.640413474803157e-10,
+          "any_robot_contact": false,
+          "native_in": true
+        },
+        "tomato_sauce_1": {
+          "world_position_m": [
+            -0.003188372400897898,
+            0.2444375170760927,
+            0.5202578339215195
+          ],
+          "linear_speed_m_s": 6.444323979654462e-11,
+          "angular_speed_rad_s": 2.124300220991991e-09,
+          "any_robot_contact": false,
+          "native_in": true
+        }
+      },
+      "final_support_edges": [
+        {
+          "child": "tomato_sauce_1",
+          "support": "cream_cheese_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.050282608217937966,
+          "normal_toward_child_world": [
+            -8.211138574076854e-07,
+            3.947106716362117e-06,
+            0.9999999999918731
+          ],
+          "child_geom": 113,
+          "support_geom": 104
+        },
+        {
+          "child": "tomato_sauce_1",
+          "support": "cream_cheese_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.04616203685679953,
+          "normal_toward_child_world": [
+            -8.211138574076854e-07,
+            3.947106716362117e-06,
+            0.9999999999918731
+          ],
+          "child_geom": 113,
+          "support_geom": 104
+        },
+        {
+          "child": "tomato_sauce_1",
+          "support": "cream_cheese_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.06259402838073404,
+          "normal_toward_child_world": [
+            -8.211138574076854e-07,
+            3.947106716362117e-06,
+            0.9999999999918731
+          ],
+          "child_geom": 113,
+          "support_geom": 104
+        },
+        {
+          "child": "tomato_sauce_1",
+          "support": "cream_cheese_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.05857631669328749,
+          "normal_toward_child_world": [
+            -8.211138574076854e-07,
+            3.947106716362117e-06,
+            0.9999999999918731
+          ],
+          "child_geom": 113,
+          "support_geom": 104
+        },
+        {
+          "child": "tomato_sauce_1",
+          "support": "cream_cheese_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.04365260697091765,
+          "normal_toward_child_world": [
+            -8.211138574076854e-07,
+            3.947106716362117e-06,
+            0.9999999999918731
+          ],
+          "child_geom": 113,
+          "support_geom": 104
+        },
+        {
+          "child": "cream_cheese_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.05643224011391956,
+          "normal_toward_child_world": [
+            1.9088439778824906e-06,
+            -6.11290984861828e-07,
+            0.9999999999979914
+          ],
+          "child_geom": 104,
+          "support_geom": 154
+        },
+        {
+          "child": "cream_cheese_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.060985881851291335,
+          "normal_toward_child_world": [
+            1.9088439778824906e-06,
+            -6.11290984861828e-07,
+            0.9999999999979914
+          ],
+          "child_geom": 104,
+          "support_geom": 154
+        },
+        {
+          "child": "cream_cheese_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.040378755598796626,
+          "normal_toward_child_world": [
+            1.9088439778824906e-06,
+            -6.11290984861828e-07,
+            0.9999999999979914
+          ],
+          "child_geom": 104,
+          "support_geom": 154
+        },
+        {
+          "child": "cream_cheese_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.04092902548216854,
+          "normal_toward_child_world": [
+            1.9088439778824906e-06,
+            -6.11290984861828e-07,
+            0.9999999999979914
+          ],
+          "child_geom": 104,
+          "support_geom": 154
+        },
+        {
+          "child": "cream_cheese_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.05585645389004975,
+          "normal_toward_child_world": [
+            1.9088439778824906e-06,
+            -6.11290984861828e-07,
+            0.9999999999979914
+          ],
+          "child_geom": 104,
+          "support_geom": 154
+        },
+        {
+          "child": "cream_cheese_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.06744649827677893,
+          "normal_toward_child_world": [
+            1.9088439778824906e-06,
+            -6.11290984861828e-07,
+            0.9999999999979914
+          ],
+          "child_geom": 104,
+          "support_geom": 154
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.10648565128298892,
+          "normal_toward_child_world": [
+            1.3483654748291932e-08,
+            -6.735206503627463e-08,
+            0.9999999999999978
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.1030297259438085,
+          "normal_toward_child_world": [
+            1.3483654748291932e-08,
+            -6.735206503627463e-08,
+            0.9999999999999978
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.08372210898009752,
+          "normal_toward_child_world": [
+            1.3483654748291932e-08,
+            -6.735206503627463e-08,
+            0.9999999999999978
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.0802661836409171,
+          "normal_toward_child_world": [
+            1.3483654748291932e-08,
+            -6.735206503627463e-08,
+            0.9999999999999978
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        }
+      ],
+      "earlier_object_motion": [
+        {
+          "object_id": "butter_1",
+          "next_grasp_start": 122,
+          "max_xy_displacement_mm": 6.747712052323348,
+          "max_z_displacement_mm": 1.5472970675355913,
+          "max_rotation_deg": 4.172944564035415
+        },
+        {
+          "object_id": "cream_cheese_1",
+          "next_grasp_start": 315,
+          "max_xy_displacement_mm": 8.614906944186444,
+          "max_z_displacement_mm": 1.6248969425436965,
+          "max_rotation_deg": 3.980353406878192
+        }
+      ],
+      "parent_action_state_prefix_exact": true,
+      "parent_old_cutoff": 460,
+      "fresh_completion_control": 473,
+      "notes": "Reviewed every one of 59 saved video frames and all 473 policy controls. Deliberate butter grasp, transport and basket release are followed by cream-cheese grasp/carry/release and then tomato-sauce grasp/carry/release. Native events are [109, 300, 460]; both earlier nativeIn predicates remain true throughout. All three targets are released with positive support paths to the exact basket base and remain below declared speed limits for controls 469-473. The basket stays upright on its original table support. The complete saved action/state prefix exactly matches parent085 through 460; the existing final-release policy continues for 13 controls inside the same 1200 cap. Earlier placements show only small within-basket settling shifts and remain in their intended locations; no knock-over or material displacement of an earlier placement observed."
+    },
+    {
+      "episode_idx": 1,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 59,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch55a_5ep_20260911/tasks/all1/CTR_116/videos/CTR_116_ep001_ok.mp4",
+      "video_sha256": "1727d00d3997dfd69b02ae91b36fb10ab953a894f7470fbce6681203184a30d3",
+      "trace_npz_sha256": "201b95119dd5ac36a9813d8ebd3cf99c7cfb23f85e94cf7e1e99a2ed3a12557e",
+      "milestones": [
+        114,
+        307,
+        467
+      ],
+      "supported_settled_control_range": [
+        473,
+        477
+      ],
+      "final_entity_facts": {
+        "basket_1": {
+          "world_position_m": [
+            -0.005214701637840101,
+            0.2668897630879498,
+            0.4321920814126621
+          ],
+          "linear_speed_m_s": 2.211894277788768e-06,
+          "angular_speed_rad_s": 2.1662019445666106e-05,
+          "any_robot_contact": false,
+          "upright": true,
+          "original_support_contact": true
+        },
+        "butter_1": {
+          "world_position_m": [
+            -0.010119267483038373,
+            0.27139009111004986,
+            0.4624673636448475
+          ],
+          "linear_speed_m_s": 0.005986800747337647,
+          "angular_speed_rad_s": 0.00800054313714035,
+          "any_robot_contact": false,
+          "native_in": true
+        },
+        "cream_cheese_1": {
+          "world_position_m": [
+            -0.012602520656869115,
+            0.24145888864468437,
+            0.4743392811463643
+          ],
+          "linear_speed_m_s": 0.005306805575221525,
+          "angular_speed_rad_s": 0.1031322397853725,
+          "any_robot_contact": false,
+          "native_in": true
+        },
+        "tomato_sauce_1": {
+          "world_position_m": [
+            0.0012748781496481278,
+            0.305535007172597,
+            0.49773995727512044
+          ],
+          "linear_speed_m_s": 0.005376771036488601,
+          "angular_speed_rad_s": 0.11379935143340976,
+          "any_robot_contact": false,
+          "native_in": true
+        }
+      },
+      "final_support_edges": [
+        {
+          "child": "cream_cheese_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.009960296382441338,
+          "normal_toward_child_world": [
+            0.008398438128880421,
+            -0.6441159096840546,
+            0.764881795527177
+          ],
+          "child_geom": 104,
+          "support_geom": 154
+        },
+        {
+          "child": "tomato_sauce_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.041487287524171475,
+          "normal_toward_child_world": [
+            -0.005944756620872714,
+            0.47811264183890057,
+            0.8782784077856781
+          ],
+          "child_geom": 123,
+          "support_geom": 154
+        },
+        {
+          "child": "tomato_sauce_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.2537030178027926,
+          "normal_toward_child_world": [
+            -0.005944756620872714,
+            0.47811264183890057,
+            0.8782784077856781
+          ],
+          "child_geom": 123,
+          "support_geom": 154
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.11401594037834714,
+          "normal_toward_child_world": [
+            1.4729012343117628e-08,
+            6.575878552794733e-08,
+            0.9999999999999978
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.18093406920147578,
+          "normal_toward_child_world": [
+            1.4729012343117628e-08,
+            6.575878552794733e-08,
+            0.9999999999999978
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        }
+      ],
+      "earlier_object_motion": [
+        {
+          "object_id": "butter_1",
+          "next_grasp_start": 131,
+          "max_xy_displacement_mm": 1.9601181857123005,
+          "max_z_displacement_mm": 3.737913573070628,
+          "max_rotation_deg": 2.9294271714288143
+        },
+        {
+          "object_id": "cream_cheese_1",
+          "next_grasp_start": 311,
+          "max_xy_displacement_mm": 9.49777330614508,
+          "max_z_displacement_mm": 5.786053262575919,
+          "max_rotation_deg": 39.53998057027622
+        }
+      ],
+      "parent_action_state_prefix_exact": true,
+      "parent_old_cutoff": 467,
+      "fresh_completion_control": 477,
+      "notes": "Reviewed every one of 59 saved video frames and all 477 policy controls. Deliberate butter grasp, transport and basket release are followed by cream-cheese grasp/carry/release and then tomato-sauce grasp/carry/release. Native events are [114, 307, 467]; both earlier nativeIn predicates remain true throughout. All three targets are released with positive support paths to the exact basket base and remain below declared speed limits for controls 473-477. The basket stays upright on its original table support. The complete saved action/state prefix exactly matches parent085 through 467; the existing final-release policy continues for 10 controls inside the same 1200 cap. Cheese naturally tilts on the already placed butter while the robot is away acquiring tomato; most of the39.5degree change precedes tomato transport. From tomato transport onward the extra rotation is7.2degrees with only millimetres of slide, staying supported inside the basket; no earlier placement is knocked over."
+    },
+    {
+      "episode_idx": 2,
+      "valid": false,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 60,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": false,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch55a_5ep_20260911/tasks/all1/CTR_116/videos/CTR_116_ep002_ok.mp4",
+      "video_sha256": "d6c1a62d57f65858d2aa1d4f2528bd129efdf7a247cd832cc3f7be8d1762f6a5",
+      "trace_npz_sha256": "d53cb3a193eda589318c2b20b5051e38f845431b215029ae83544684dd6b14ae",
+      "milestones": [
+        114,
+        314,
+        447
+      ],
+      "supported_settled_control_range": [
+        474,
+        478
+      ],
+      "final_entity_facts": {
+        "basket_1": {
+          "world_position_m": [
+            0.0003753554834894269,
+            0.2570621953782443,
+            0.4321920832115647
+          ],
+          "linear_speed_m_s": 4.457396193592531e-09,
+          "angular_speed_rad_s": 7.539064204279894e-08,
+          "any_robot_contact": false,
+          "upright": true,
+          "original_support_contact": true
+        },
+        "butter_1": {
+          "world_position_m": [
+            0.004387738496680832,
+            0.2629612701215325,
+            0.46246930825174093
+          ],
+          "linear_speed_m_s": 3.1741065348578543e-07,
+          "angular_speed_rad_s": 3.1366538381229854e-05,
+          "any_robot_contact": false,
+          "native_in": true
+        },
+        "cream_cheese_1": {
+          "world_position_m": [
+            -0.024375712040980248,
+            0.25806468039851765,
+            0.5118353329349484
+          ],
+          "linear_speed_m_s": 0.00010457633819945483,
+          "angular_speed_rad_s": 0.0031618014859919074,
+          "any_robot_contact": false,
+          "native_in": true
+        },
+        "tomato_sauce_1": {
+          "world_position_m": [
+            0.023053242755533984,
+            0.26043688239496326,
+            0.5023864876300667
+          ],
+          "linear_speed_m_s": 6.099017218249607e-05,
+          "angular_speed_rad_s": 0.0021814351678144297,
+          "any_robot_contact": false,
+          "native_in": true
+        }
+      },
+      "final_support_edges": [
+        {
+          "child": "cream_cheese_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.09220691671644658,
+          "normal_toward_child_world": [
+            -0.0004047254935989755,
+            1.918647815133352e-05,
+            0.9999999179145737
+          ],
+          "child_geom": 104,
+          "support_geom": 154
+        },
+        {
+          "child": "cream_cheese_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.029754717058407952,
+          "normal_toward_child_world": [
+            -0.0004047254935989755,
+            1.918647815133352e-05,
+            0.9999999179145737
+          ],
+          "child_geom": 104,
+          "support_geom": 154
+        },
+        {
+          "child": "tomato_sauce_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.014787298443762026,
+          "normal_toward_child_world": [
+            1.1819078107324805e-05,
+            -6.302736595419021e-06,
+            0.9999999999102924
+          ],
+          "child_geom": 113,
+          "support_geom": 154
+        },
+        {
+          "child": "tomato_sauce_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.18511427868489558,
+          "normal_toward_child_world": [
+            1.1819078107324805e-05,
+            -6.302736595419021e-06,
+            0.9999999999102924
+          ],
+          "child_geom": 113,
+          "support_geom": 154
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.13117040032852256,
+          "normal_toward_child_world": [
+            4.811644693791799e-08,
+            -1.682665418112348e-08,
+            0.9999999999999987
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.09514610723358698,
+          "normal_toward_child_world": [
+            4.811644693791799e-08,
+            -1.682665418112348e-08,
+            0.9999999999999987
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.09154081714781503,
+          "normal_toward_child_world": [
+            4.811644693791799e-08,
+            -1.682665418112348e-08,
+            0.9999999999999987
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.05551652405287947,
+          "normal_toward_child_world": [
+            4.811644693791799e-08,
+            -1.682665418112348e-08,
+            0.9999999999999987
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        }
+      ],
+      "earlier_object_motion": [
+        {
+          "object_id": "butter_1",
+          "next_grasp_start": 131,
+          "max_xy_displacement_mm": 1.6902968147677924,
+          "max_z_displacement_mm": 3.2611744389974273,
+          "max_rotation_deg": 5.50073588197044
+        },
+        {
+          "object_id": "cream_cheese_1",
+          "next_grasp_start": 324,
+          "max_xy_displacement_mm": 10.231971043500604,
+          "max_z_displacement_mm": 2.404719893017493,
+          "max_rotation_deg": 30.515159283538907
+        }
+      ],
+      "parent_action_state_prefix_exact": true,
+      "parent_old_cutoff": 447,
+      "fresh_completion_control": 478,
+      "notes": "Reviewed every one of 60 saved video frames and all 478 policy controls. Deliberate butter grasp, transport and basket release are followed by cream-cheese grasp/carry/release and then tomato-sauce grasp/carry/release. Native events are [114, 314, 447]; both earlier nativeIn predicates remain true throughout. All three targets are released with positive support paths to the exact basket base and remain below declared speed limits for controls 474-478. The basket stays upright on its original table support. The complete saved action/state prefix exactly matches parent085 through 447; the existing final-release policy continues for 31 controls inside the same 1200 cap. WITHHELD from certified success despite the strict terminal gate: after tomato release the previously settled, nearly upright cheese moves about10.2mm and rotates30.5degrees. The final nativeIn remains true, but this visible downstream disturbance does not satisfy the campaign requirement to preserve earlier placements. The cheese carry also displaces unrelated distractors; no substitute object is credited. The native score is preserved."
+    },
+    {
+      "episode_idx": 3,
+      "valid": true,
+      "reviewed_complete_video": true,
+      "decoded_video_frame_count": 69,
+      "deliberate_requested_actions": true,
+      "earlier_results_preserved": true,
+      "reviewed_complete_trace": true,
+      "video_path": "private_evaluation_results/rain_ms_maskaug_gt_compose_traj_repair_batch55a_5ep_20260911/tasks/all1/CTR_116/videos/CTR_116_ep003_ok.mp4",
+      "video_sha256": "c4c5fe64174cd831937262113930478b886c9d269659d93f28be20896c40e391",
+      "trace_npz_sha256": "e58fc0fa458911361a793c22b2236d080db3bb97ed0720c854ac2027ecb7cb86",
+      "milestones": [
+        114,
+        340,
+        521
+      ],
+      "supported_settled_control_range": [
+        554,
+        558
+      ],
+      "final_entity_facts": {
+        "basket_1": {
+          "world_position_m": [
+            -0.0014624771940958954,
+            0.251643939025992,
+            0.4321920805508593
+          ],
+          "linear_speed_m_s": 1.93306468458801e-06,
+          "angular_speed_rad_s": 1.408578827706394e-05,
+          "any_robot_contact": false,
+          "upright": true,
+          "original_support_contact": true
+        },
+        "butter_1": {
+          "world_position_m": [
+            0.0010692988956350102,
+            0.24565723123348843,
+            0.46246814909398604
+          ],
+          "linear_speed_m_s": 0.0007840559341072559,
+          "angular_speed_rad_s": 0.026828309718168027,
+          "any_robot_contact": false,
+          "native_in": true
+        },
+        "cream_cheese_1": {
+          "world_position_m": [
+            0.01133235041450291,
+            0.23077120422744501,
+            0.4801054060143356
+          ],
+          "linear_speed_m_s": 0.008563318708051427,
+          "angular_speed_rad_s": 0.048460281731176884,
+          "any_robot_contact": false,
+          "native_in": true
+        },
+        "tomato_sauce_1": {
+          "world_position_m": [
+            -0.018214258267264194,
+            0.27344282796665353,
+            0.5065779507412262
+          ],
+          "linear_speed_m_s": 0.005747110423808037,
+          "angular_speed_rad_s": 0.15752644367506008,
+          "any_robot_contact": false,
+          "native_in": true
+        }
+      },
+      "final_support_edges": [
+        {
+          "child": "tomato_sauce_1",
+          "support": "cream_cheese_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.09125869791108657,
+          "normal_toward_child_world": [
+            -0.22360442747213874,
+            0.5242334394034331,
+            0.8216935931514279
+          ],
+          "child_geom": 113,
+          "support_geom": 104
+        },
+        {
+          "child": "cream_cheese_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.05180455086640947,
+          "normal_toward_child_world": [
+            0.0004952124318615288,
+            0.00013053870687593745,
+            0.9999998688621382
+          ],
+          "child_geom": 104,
+          "support_geom": 154
+        },
+        {
+          "child": "cream_cheese_1",
+          "support": "butter_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": false,
+          "normal_force_n": 0.03870143001867475,
+          "normal_toward_child_world": [
+            0.0004952124318615288,
+            0.00013053870687593745,
+            0.9999998688621382
+          ],
+          "child_geom": 104,
+          "support_geom": 154
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.05859340551497357,
+          "normal_toward_child_world": [
+            -5.027808880342374e-08,
+            2.240990010227149e-08,
+            0.9999999999999984
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.07633215361843093,
+          "normal_toward_child_world": [
+            -5.027808880342374e-08,
+            2.240990010227149e-08,
+            0.9999999999999984
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        },
+        {
+          "child": "butter_1",
+          "support": "basket_1",
+          "positive_upward_contact": true,
+          "exact_basket_base_upper_face": true,
+          "normal_force_n": 0.005567791438028827,
+          "normal_toward_child_world": [
+            -5.027808880342374e-08,
+            2.240990010227149e-08,
+            0.9999999999999984
+          ],
+          "child_geom": 154,
+          "support_geom": 156
+        }
+      ],
+      "earlier_object_motion": [
+        {
+          "object_id": "butter_1",
+          "next_grasp_start": 130,
+          "max_xy_displacement_mm": 4.45872719776672,
+          "max_z_displacement_mm": 2.1092835987759906,
+          "max_rotation_deg": 2.6072768124348293
+        },
+        {
+          "object_id": "cream_cheese_1",
+          "next_grasp_start": 360,
+          "max_xy_displacement_mm": 7.2620637815798394,
+          "max_z_displacement_mm": 2.3546795893742423,
+          "max_rotation_deg": 3.237862818860446
+        }
+      ],
+      "parent_action_state_prefix_exact": true,
+      "parent_old_cutoff": 521,
+      "fresh_completion_control": 558,
+      "notes": "Reviewed every one of 69 saved video frames and all 558 policy controls. Deliberate butter grasp, transport and basket release are followed by cream-cheese grasp/carry/release and then tomato-sauce grasp/carry/release. Native events are [114, 340, 521]; both earlier nativeIn predicates remain true throughout. All three targets are released with positive support paths to the exact basket base and remain below declared speed limits for controls 554-558. The basket stays upright on its original table support. The complete saved action/state prefix exactly matches parent085 through 521; the existing final-release policy continues for 37 controls inside the same 1200 cap. Earlier placements show only small within-basket settling shifts and remain in their intended locations; no knock-over or material displacement of an earlier placement observed."
+    }
+  ],
+  "episode_outcomes": [
+    {
+      "episode_idx": 0,
+      "parent_same_index_native_success": true,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 1,
+      "parent_same_index_native_success": true,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 2,
+      "parent_same_index_native_success": true,
+      "nominal_success": true,
+      "manually_valid_success": false
+    },
+    {
+      "episode_idx": 3,
+      "parent_same_index_native_success": true,
+      "nominal_success": true,
+      "manually_valid_success": true
+    },
+    {
+      "episode_idx": 4,
+      "parent_same_index_native_success": false,
+      "nominal_success": false,
+      "manually_valid_success": false
+    }
+  ],
+  "rain_settings": {
+    "checkpoint": "RAIN/outputs/rainv2_action_dinov2_large_224_ms_maskaug_v1_b256x4_100k_stateful_v1_20260823/checkpoints/checkpoint_final.pt",
+    "progress_checkpoint": "RAIN/outputs/rainv2_progress_dinov2_large_224_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/rain_progress_ms_maskaug_v1_tcv3_b256x4_stateful_v1_fix3_20260823/checkpoints/checkpoint_best.pt",
+    "replan_steps": 8,
+    "num_inference_steps": 4,
+    "feas_threshold": 0.7,
+    "consecutive_stop": 2,
+    "seed": 7,
+    "clip_model_name": "openai/clip-vit-large-patch14"
+  },
+  "source_bundle_sha256": {
+    "task.bddl": "af2a158366940c795a4b254d66e6bb6bab63018cf050bbf5230c6672da816672",
+    "task.pruned_init": "4eb2ab88267d13af4745f9f4dd615ed47bf12dc48bf8f7ab4cb04e9cef74e013",
+    "task_meta.yaml": "ad9d38f51c9b00a7dde06ed4156ea0ee3c4d81ad42e3ce0fe1517689664c11c7",
+    "eval_rules.yaml": "248142535dc60f4998ac982f3d2d012173b50a8720129e29edc82d82a96177e0",
+    "registry_entry.yaml": "e13ad7a5b72406944143d0d392b29b839c36c3d7d540f498e07b9a2053ec208a",
+    "mask_bindings.yaml": "af7ef390f3216cdc9138ffeb100330d2fa8459d27ef274af98065b7af26894fe",
+    "action_plan.yaml": "3668798b610fe2a6a7426eb07d1cd7e3b4f0bfcd4bb5b13fea00ee721c2d04e1",
+    "FIXTURE_REPLAY.json": "c009a0610b93ae58dae567e93afcfee15d724cbea79989dfcc0a23f58dfd76e7",
+    "INIT_VALIDATION.json": "4e72be6f43a8d3cc95f49260cab97039c6d3755f0767cbd6e2e07b08d6bc2a5f",
+    "REPAIR_PROVENANCE.json": "07331e6ab2c7fcd423ba192aa43da316cb1b6c1744812fb362a6e3aefdd92f21"
+  },
+  "comparison_design_note": "The physical scene and all five policy seeds match the parent exactly, with bitwise equal saved action/state prefixes through old cutoffs. The terminal criteria differ, so these rates are not evidence of a pose-repair effect.",
+  "additional_terminal_contract": {
+    "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+    "support_hold_control_steps": 5,
+    "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+    "settle_linear_speed_max_m_s": 0.02,
+    "settle_angular_speed_max_rad_s": 0.5
+  },
+  "parent_terminal_protocol_different": true,
+  "runtime_sources_sha256": {
+    "basket_released_support_observer.py": "599995e94641d631c3e8e8ed16a1ae5d0214e97c58e2b71d124a3d587e6d8329",
+    "basket_supported_runtime.py": "9aff4bb0e51b683c53287070e06b469e0ce26a4d93e4ecf256ddbddcaec7e73e",
+    "run_compose_traj_repair_basket_supported_entry.py": "00900b93d3c310215507831423062445f8c13088d1c3298915f2a884ba1215f3",
+    "run_compose_traj_repair_basket_supported_5ep.py": "94e6c8f3988ba247a3a577995d65246ae20d304b90dad6a7ad01c6d5d5fb98f8"
+  },
+  "supported_settled_success_audit": {
+    "0": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 473,
+      "actual_control_steps_observed": 473,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    },
+    "1": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 477,
+      "actual_control_steps_observed": 477,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    },
+    "2": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 478,
+      "actual_control_steps_observed": 478,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    },
+    "3": {
+      "contract": {
+        "basket_completion_mode": "ordered_native_and_released_supported_settled_v1",
+        "support_hold_control_steps": 5,
+        "basket_support_graph_mode": "required_targets_to_exact_basket_base",
+        "settle_linear_speed_max_m_s": 0.02,
+        "settle_angular_speed_max_rad_s": 0.5
+      },
+      "final_hold_complete": true,
+      "final_consecutive_controls": 5,
+      "maximum_consecutive_controls": 5,
+      "first_complete_step": 558,
+      "actual_control_steps_observed": 558,
+      "native_order_replaced": false,
+      "velocity_gate_applied": true,
+      "action_generation_modified": false,
+      "tc_switching_modified": false,
+      "additional_wait_controls": 0,
+      "policy_control_budget_extended": false
+    }
+  }
+}

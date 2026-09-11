@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-09-11T10:49:15.014375+00:00",
+  "created_at_utc": "2026-09-11T10:54:34.315643+00:00",
   "review_status": "pending_user_review_not_selected",
   "tasks": [
     {
@@ -71,11 +71,31 @@
       "nominal_successes": 2,
       "manually_valid_successes": 2,
       "certified_episode_indices": "1,2"
+    },
+    {
+      "task_id": "CTR_115",
+      "instruction": "Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.",
+      "variant_of": "CTR_084",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 2,
+      "manually_valid_successes": 2,
+      "certified_episode_indices": "1,4"
+    },
+    {
+      "task_id": "CTR_116",
+      "instruction": "Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.",
+      "variant_of": "CTR_085",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 4,
+      "manually_valid_successes": 3,
+      "certified_episode_indices": "0,1,3"
     }
   ],
-  "source_manual_review_sha256": "9b1445547326848e494244432818b7537bb53dbf46fe2fffa83c84e24cdac4d6",
-  "nominal_successes": 15,
-  "manually_valid_successes": 15,
-  "episodes": 35,
+  "source_manual_review_sha256": "fe658fe4e79998e2cf293b43fab5e2fcf7d6cd973900be448fc504a350f27583",
+  "nominal_successes": 21,
+  "manually_valid_successes": 20,
+  "episodes": 45,
   "selected60_modified": false
 }

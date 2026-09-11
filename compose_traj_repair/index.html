@@ -113,7 +113,7 @@ table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px 5px;
 </style></head><body><header><a href="../index.html">LIBERO-EX review</a> · <a href="../selected29/index.html">Selected 60</a>
 <h1>Compose trajectory repair</h1><p>Compose tests whether skills learned from the original LIBERO-40 can be executed in sequence.
 These experiments repair failed compositions using observed trajectories, object poses, or object substitutions.</p>
-<p><b>7 reviewer candidates.</b> Each rate uses all five fresh evaluation episodes. Native success requires ordered events
+<p><b>9 reviewer candidates.</b> Each rate uses all five fresh evaluation episodes. Native success requires ordered events
 and all final task predicates, with no final TC threshold. Every displayed success also passed full video review for deliberate actions
 and preservation of earlier results. These variants are separate from the selected 60 tasks.</p><p><a href="tasks.tsv">Candidate manifest</a> · <a href="summary.json">Evaluation summary</a></p></header>
 <main><article class="task card" id="CTR_028">
@@ -286,6 +286,58 @@ and preservation of earlier results. These variants are separate from the select
 <div class="actions"><button type="button" data-video="assets/CTR_118/success_reel.mp4">Play 2 success episode(s)</button>
 <a href="assets/CTR_118/evidence.json">Evidence and provenance</a><a href="assets/CTR_118/task_bundle/task.bddl">Task definition</a></div>
 <video controls playsinline preload="none" aria-label="CTR_118 episode reel" hidden></video>
+</article><article class="task card" id="CTR_115">
+<div class="task-head"><span class="tag">Reviewer candidate · variant of CTR_084</span><h2>CTR_115</h2></div>
+<p class="instruction">Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.</p><p class="score">Manually valid <b>2/5</b> (40%) · Native + support/settlement evaluator 2/5</p>
+<img class="preview" src="assets/CTR_115/preview.jpg" loading="lazy" decoding="async" alt="CTR_115 scene preview">
+<p><b>Parent experiment:</b> CTR_084, native evaluator 2/5. Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.</p>
+<p>Same-geometry terminal-protocol followup of CTR_084. Initial state values, fixture poses, BDDL goals, action plans, RAIN checkpoints, seeds7-11 and1200-control budget are unchanged. The parent native result was 2/5, with its nominal successes withheld because tomato was still falling at termination; historical scores remain untouched. The fresh trial requires released support through the exact basket base and five controls below predeclared speed limits. Full-video/full-trace review certifies 2/5. All five saved action/state prefixes exactly match the old cutoffs. This is a stricter evaluation of an existing physical repair, not an additional distinct scene or semantic family, nor a pose-driven success-rate improvement.</p><details><summary>Failure evidence and repair</summary><pre>{
+  &quot;kind&quot;: &quot;same_geometry_future_terminal_protocol_followup&quot;,
+  &quot;pose_changes&quot;: {},
+  &quot;terminal_contract&quot;: {
+    &quot;basket_completion_mode&quot;: &quot;ordered_native_and_released_supported_settled_v1&quot;,
+    &quot;support_hold_control_steps&quot;: 5,
+    &quot;basket_support_graph_mode&quot;: &quot;required_targets_to_exact_basket_base&quot;,
+    &quot;settle_linear_speed_max_m_s&quot;: 0.02,
+    &quot;settle_angular_speed_max_rad_s&quot;: 0.5
+  },
+  &quot;notes&quot;: &quot;Preserves the earlier repaired scene and continues the unchanged RAIN final-release action inside the existing control budget until the stricter physical gate holds.&quot;
+}</pre></details>
+<details><summary>Parent and repaired starting states</summary>
+<p>Each repair derives from the matching parent state below. The physical scene and all five policy seeds match the parent exactly, with bitwise equal saved action/state prefixes through old cutoffs. The terminal criteria differ, so these rates are not evidence of a pose-repair effect.</p>
+<table><thead><tr><th>State</th><th>Historical parent</th><th>Fresh repair</th></tr></thead><tbody><tr><td>000</td><td>Failed</td><td>Failed</td></tr><tr><td>001</td><td>Native success</td><td>Verified success</td></tr><tr><td>002</td><td>Failed</td><td>Failed</td></tr><tr><td>003</td><td>Failed</td><td>Failed</td></tr><tr><td>004</td><td>Native success</td><td>Verified success</td></tr></tbody></table></details>
+<details><summary>Original LIBERO-40 skill lineage</summary><ul><li><b>libero_object</b>: pick_up_the_butter_and_place_it_in_the_basket<br>Directly trained original40 object grasp and basket placement, chained with the two other known food-placement skills in the repaired shared scene.</li><li><b>libero_object</b>: pick_up_the_cream_cheese_and_place_it_in_the_basket<br>Directly trained original40 object grasp and basket placement, chained with the two other known food-placement skills in the repaired shared scene.</li><li><b>libero_object</b>: pick_up_the_tomato_sauce_and_place_it_in_the_basket<br>Directly trained original40 object grasp and basket placement, chained with the two other known food-placement skills in the repaired shared scene.</li></ul></details>
+<p>Certified episodes: 001, 004.</p>
+
+<div class="actions"><button type="button" data-video="assets/CTR_115/success_reel.mp4">Play 2 success episode(s)</button>
+<a href="assets/CTR_115/evidence.json">Evidence and provenance</a><a href="assets/CTR_115/task_bundle/task.bddl">Task definition</a></div>
+<video controls playsinline preload="none" aria-label="CTR_115 episode reel" hidden></video>
+</article><article class="task card" id="CTR_116">
+<div class="task-head"><span class="tag">Reviewer candidate · variant of CTR_085</span><h2>CTR_116</h2></div>
+<p class="instruction">Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.</p><p class="score">Manually valid <b>3/5</b> (60%) · Native + support/settlement evaluator 4/5</p>
+<img class="preview" src="assets/CTR_116/preview.jpg" loading="lazy" decoding="async" alt="CTR_116 scene preview">
+<p><b>Parent experiment:</b> CTR_085, native evaluator 4/5. Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.</p>
+<p>Same-geometry terminal-protocol followup of CTR_085. Initial state values, fixture poses, BDDL goals, action plans, RAIN checkpoints, seeds7-11 and1200-control budget are unchanged. The parent native result was 4/5, with its nominal successes withheld because tomato was still falling at termination; historical scores remain untouched. The fresh trial requires released support through the exact basket base and five controls below predeclared speed limits. Full-video/full-trace review certifies 3/5. All five saved action/state prefixes exactly match the old cutoffs. This is a stricter evaluation of an existing physical repair, not an additional distinct scene or semantic family, nor a pose-driven success-rate improvement. Episode002 passes the native and support gates but is excluded because tomato placement shifts and rotates the earlier cheese placement.</p><details><summary>Failure evidence and repair</summary><pre>{
+  &quot;kind&quot;: &quot;same_geometry_future_terminal_protocol_followup&quot;,
+  &quot;pose_changes&quot;: {},
+  &quot;terminal_contract&quot;: {
+    &quot;basket_completion_mode&quot;: &quot;ordered_native_and_released_supported_settled_v1&quot;,
+    &quot;support_hold_control_steps&quot;: 5,
+    &quot;basket_support_graph_mode&quot;: &quot;required_targets_to_exact_basket_base&quot;,
+    &quot;settle_linear_speed_max_m_s&quot;: 0.02,
+    &quot;settle_angular_speed_max_rad_s&quot;: 0.5
+  },
+  &quot;notes&quot;: &quot;Preserves the earlier repaired scene and continues the unchanged RAIN final-release action inside the existing control budget until the stricter physical gate holds.&quot;
+}</pre></details>
+<details><summary>Parent and repaired starting states</summary>
+<p>Each repair derives from the matching parent state below. The physical scene and all five policy seeds match the parent exactly, with bitwise equal saved action/state prefixes through old cutoffs. The terminal criteria differ, so these rates are not evidence of a pose-repair effect.</p>
+<table><thead><tr><th>State</th><th>Historical parent</th><th>Fresh repair</th></tr></thead><tbody><tr><td>000</td><td>Native success</td><td>Verified success</td></tr><tr><td>001</td><td>Native success</td><td>Verified success</td></tr><tr><td>002</td><td>Native success</td><td>Native only; excluded</td></tr><tr><td>003</td><td>Native success</td><td>Verified success</td></tr><tr><td>004</td><td>Failed</td><td>Failed</td></tr></tbody></table></details>
+<details><summary>Original LIBERO-40 skill lineage</summary><ul><li><b>libero_object</b>: pick_up_the_butter_and_place_it_in_the_basket<br>Directly trained original40 object grasp and basket placement, chained with the two other known food-placement skills in the repaired shared scene.</li><li><b>libero_object</b>: pick_up_the_cream_cheese_and_place_it_in_the_basket<br>Directly trained original40 object grasp and basket placement, chained with the two other known food-placement skills in the repaired shared scene.</li><li><b>libero_object</b>: pick_up_the_tomato_sauce_and_place_it_in_the_basket<br>Directly trained original40 object grasp and basket placement, chained with the two other known food-placement skills in the repaired shared scene.</li></ul></details>
+<p>Certified episodes: 000, 001, 003.</p>
+<details><summary>Nominal successes excluded by manual review</summary><ul><li>Episode 002: Reviewed every one of 60 saved video frames and all 478 policy controls. Deliberate butter grasp, transport and basket release are followed by cream-cheese grasp/carry/release and then tomato-sauce grasp/carry/release. Native events are [114, 314, 447]; both earlier nativeIn predicates remain true throughout. All three targets are released with positive support paths to the exact basket base and remain below declared speed limits for controls 474-478. The basket stays upright on its original table support. The complete saved action/state prefix exactly matches parent085 through 447; the existing final-release policy continues for 31 controls inside the same 1200 cap. WITHHELD from certified success despite the strict terminal gate: after tomato release the previously settled, nearly upright cheese moves about10.2mm and rotates30.5degrees. The final nativeIn remains true, but this visible downstream disturbance does not satisfy the campaign requirement to preserve earlier placements. The cheese carry also displaces unrelated distractors; no substitute object is credited. The native score is preserved.</li></ul></details>
+<div class="actions"><button type="button" data-video="assets/CTR_116/success_reel.mp4">Play 3 success episode(s)</button>
+<a href="assets/CTR_116/evidence.json">Evidence and provenance</a><a href="assets/CTR_116/task_bundle/task.bddl">Task definition</a></div>
+<video controls playsinline preload="none" aria-label="CTR_116 episode reel" hidden></video>
 </article></main><script>
 let active = null;
 document.querySelectorAll('button[data-video]').forEach(button => button.addEventListener('click', () => {

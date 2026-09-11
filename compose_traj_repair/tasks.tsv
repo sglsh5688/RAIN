@@ -6,3 +6,5 @@ CTR_105	Pick the alphabet soup and place it in the left compartment of the bowl 
 CTR_067	Turn on the stove, and then open the middle drawer of the cabinet.	COMP2_003	pending_user_review_not_selected	5	2	2	1,4
 CTR_117	Put the cream cheese box in the basket, and then put the alphabet soup in the basket.	CTR_066	pending_user_review_not_selected	5	2	2	0,1
 CTR_118	Put the cream cheese box in the basket, and then put the alphabet soup in the basket.	CTR_121	pending_user_review_not_selected	5	2	2	1,2
+CTR_115	Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.	CTR_084	pending_user_review_not_selected	5	2	2	1,4
+CTR_116	Put the butter in the basket, then put the cream cheese box in the basket, and finally put the tomato sauce in the basket.	CTR_085	pending_user_review_not_selected	5	4	3	0,1,3

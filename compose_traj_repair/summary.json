@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-09-11T07:49:16.175545+00:00",
+  "created_at_utc": "2026-09-11T08:34:00.871188+00:00",
   "review_status": "pending_user_review_not_selected",
   "tasks": [
     {
@@ -11,11 +11,21 @@
       "nominal_successes": 2,
       "manually_valid_successes": 2,
       "certified_episode_indices": "0,4"
+    },
+    {
+      "task_id": "CTR_103",
+      "instruction": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+      "variant_of": "BDRCOMP_013",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 4,
+      "manually_valid_successes": 4,
+      "certified_episode_indices": "0,2,3,4"
     }
   ],
-  "source_manual_review_sha256": "508114f4e81eea7a4149d9cb176cce5779ef763e9ef92a4b38520f582022635a",
-  "nominal_successes": 2,
-  "manually_valid_successes": 2,
-  "episodes": 5,
+  "source_manual_review_sha256": "59e6d89314b8dbc359306b64dd562484eccfca32940240666b7baf0c0126c583",
+  "nominal_successes": 6,
+  "manually_valid_successes": 6,
+  "episodes": 10,
   "selected60_modified": false
 }

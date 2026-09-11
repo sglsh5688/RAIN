@@ -32,6 +32,9 @@
   "parent_nominal_successes": 2,
   "parent_episodes": 5,
   "parent_instruction": "Put the ramekin in the basket, then put the tomato sauce on the right plate.",
+  "parent_state_verification": {
+    "method": "historical_per_episode_state_hash"
+  },
   "repair": {
     "object_id": "tomato_sauce_1",
     "offset_world_m": [

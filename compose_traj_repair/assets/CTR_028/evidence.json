@@ -135,26 +135,31 @@
   "episode_outcomes": [
     {
       "episode_idx": 0,
+      "parent_same_index_native_success": false,
       "nominal_success": true,
       "manually_valid_success": true
     },
     {
       "episode_idx": 1,
+      "parent_same_index_native_success": true,
       "nominal_success": false,
       "manually_valid_success": false
     },
     {
       "episode_idx": 2,
+      "parent_same_index_native_success": true,
       "nominal_success": false,
       "manually_valid_success": false
     },
     {
       "episode_idx": 3,
+      "parent_same_index_native_success": false,
       "nominal_success": false,
       "manually_valid_success": false
     },
     {
       "episode_idx": 4,
+      "parent_same_index_native_success": false,
       "nominal_success": true,
       "manually_valid_success": true
     }

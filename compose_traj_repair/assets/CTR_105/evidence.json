@@ -80,7 +80,7 @@
       "transfer": "Directly trained food grasp and basket release transfer to the native right drainer compartment. This destination substitution and sequential composition are adaptations; the original40 source does not directly demonstrate drainer placement."
     }
   ],
-  "manual_review_notes": "Fresh trajectory-guided repair of BDRCOMP_001, whose historical result was 0/5 despite successful first placements in all five episodes. The soup and cream-cheese grasp identities are directly trained in LIBERO-40; basket destinations transfer to the two drainer compartments. The original release and exact-base support gate is retained for five consecutive control steps. The successful episode passed full video and trajectory review. Existing RAIN checkpoints are used; policy seeds 7–11 differ from the parent, so this comparison does not isolate the effect of the pose change. The selected 60 tasks remain unchanged.",
+  "manual_review_notes": "Fresh trajectory-guided repair of BDRCOMP_001, whose historical result was 0/5 despite successful first placements in all five episodes. The soup and cream-cheese grasp identities are directly trained in LIBERO-40; basket destinations transfer to the two drainer compartments. The original release and exact-base support gate is retained for five consecutive control steps. The successful episode passed full video and trajectory review. Existing RAIN checkpoints and policy seeds7–11 are used. This is an exploratory comparison against the separately recorded parent run; the result alone does not establish a causal effect of the pose change. The selected 60 tasks remain unchanged.",
   "episode_reviews": [
     {
       "episode_idx": 3,
@@ -163,5 +163,6 @@
     "INIT_VALIDATION.json": "763c3da9e3f8373427a265e03550f24a3cf33392383012bfdb777659f1157108",
     "REPAIR_PROVENANCE.json": "f9d1e0e3c341814ec17c21e199e7bf22d435f9762a6c1cd7bc7969e188982e43"
   },
+  "comparison_design_note": "The new single-task run uses seeds7–11. The parent was recorded separately; this exploratory five-episode comparison does not establish a causal pose-change effect.",
   "parent_failure_video_sha256": "0fd7fffff50d2f20448ee2d1f4c76c3c872c75f18902aaf09d0bea3b0fe0bf16"
 }

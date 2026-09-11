@@ -228,5 +228,6 @@
     "FIXTURE_REPLAY.json": "75841d978a98a02c931114a324e852cc9024887d953a49516d13f7e6183d3a03",
     "INIT_VALIDATION.json": "971a59b6fd0c9cf8f1572652288cf7dfd431f0fcffbb6da831c2512d00f5f1a4",
     "REPAIR_PROVENANCE.json": "ed8d148686f5cccd4576c97442eda76555e5fa20e45d3141e05d273f64d6e064"
-  }
+  },
+  "comparison_design_note": "The historical run is a reference; this comparison alone does not isolate the effect of the repair."
 }

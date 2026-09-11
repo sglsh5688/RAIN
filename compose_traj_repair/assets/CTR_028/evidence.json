@@ -189,5 +189,6 @@
     "INIT_VALIDATION.json": "cf58029bafee6f07061f86670a7c3231c33eecb42ffca13e31e3d9dcab57b127",
     "REPAIR_PROVENANCE.json": "a4f0b5904931c334e92bcdf96532814a8490ca676abeced642ae20bc56e86c2b"
   },
+  "comparison_design_note": "The historical run is a reference; this comparison alone does not isolate the effect of the repair.",
   "parent_failure_video_sha256": "c577c60b4091b7b2634d964a0f09f05f399a622b5cb84f3e276caf308853117a"
 }

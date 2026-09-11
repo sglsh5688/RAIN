@@ -546,5 +546,6 @@
     "INIT_VALIDATION.json": "6f8d5c05f6795ebd6f64122a5065f0814fbf5c15127b1c4de97d3505cd172f8e",
     "REPAIR_PROVENANCE.json": "e40810ab3c81c3ec8e6dbb92c409cc17e951ad70e7871a9662234bfb31469fd7"
   },
+  "comparison_design_note": "The historical run is a reference; this comparison alone does not isolate the effect of the repair.",
   "parent_failure_video_sha256": "bce566b8264c48b669adf6a6bfa0943249f764736c0d9ea80ad6ee94b5ad158f"
 }

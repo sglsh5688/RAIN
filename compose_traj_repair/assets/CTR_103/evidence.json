@@ -56,7 +56,7 @@
       0.07,
       0
     ],
-    "notes": "Same fixed4.5cm negativeX and7cm positiveY translation in allfive frozen states, toward the empty gripper closure recorded in parentep000. The drainer and butter retain original poses. Both requested placements retain the historical nativeIn AND exact-bottom support AND no-gripper-contact gate for five consecutive control steps."
+    "notes": "The same translation is applied to all five frozen states: 4.5 cm in negative world X and 7 cm in positive world Y, toward the empty gripper closure recorded in parent episode 000. The drainer and butter retain their original poses. The original ordered release and support rule is preserved."
   },
   "frozen_repair_provenance": {
     "task_id": "CTR_103",
@@ -97,7 +97,7 @@
       "transfer": "Directly trained object grasp and basket release are rebound to the native left compartment of the bowl drainer. The destination substitution and two-step chain are adaptations of the original40 skills; original40 does not directly demonstrate this drainer placement."
     }
   ],
-  "manual_review_notes": "Fresh trajectory-guided repair of historical0/5 BDRCOMP_013. Both skills use directly trained original40 food identities; basket destinations transfer to the two native drainer compartments. The historical released-and-supported completion gate is retained in addition to ordered native final goals and full video review. Existing RAIN action/progress checkpoints and5episodes; policyseeds7–11 differ from the parent, so this is not a matched-seed causal estimate. CanonicalSelected60 remains unchanged.",
+  "manual_review_notes": "Fresh trajectory-guided repair of BDRCOMP_013, whose historical result was 0/5. Both food identities are directly trained in the original LIBERO-40; their basket-placement skills transfer to the two drainer compartments. The original completion rule is retained: each object must be released and supported by the drainer floor for five consecutive control steps, in the requested order. All four successes passed full video review. This run uses the existing RAIN action and progress checkpoints. Policy seeds 7–11 differ from the parent, so the comparison does not isolate the effect of the pose change. The selected 60 tasks remain unchanged.",
   "episode_reviews": [
     {
       "episode_idx": 0,

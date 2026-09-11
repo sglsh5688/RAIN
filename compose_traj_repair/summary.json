@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-09-11T11:27:16.884401+00:00",
+  "created_at_utc": "2026-09-11T11:30:52.103230+00:00",
   "review_status": "pending_user_review_not_selected",
   "tasks": [
     {
@@ -131,11 +131,21 @@
       "nominal_successes": 5,
       "manually_valid_successes": 5,
       "certified_episode_indices": "0,1,2,3,4"
+    },
+    {
+      "task_id": "CTR_176",
+      "instruction": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+      "variant_of": "CTR_163",
+      "status": "pending_user_review_not_selected",
+      "episodes": 5,
+      "nominal_successes": 5,
+      "manually_valid_successes": 5,
+      "certified_episode_indices": "0,1,2,3,4"
     }
   ],
-  "source_manual_review_sha256": "41c852ae96f385d5979e76fc196f17468be7dfbf376be15e242e0a6ce29818b1",
-  "nominal_successes": 29,
-  "manually_valid_successes": 28,
-  "episodes": 65,
+  "source_manual_review_sha256": "1eca873b0d636bb1fbd604a9e549c154087ec0a53fdf2ebff2b7b0d912d47ee6",
+  "nominal_successes": 34,
+  "manually_valid_successes": 33,
+  "episodes": 70,
   "selected60_modified": false
 }

@@ -1,7 +1,7 @@
 task_id: Adapt_012
 candidate_index: 11
-task_name: Pick the tomato sauce and place it in the basket
-language: Pick the tomato sauce and place it in the basket
+task_name: Pick the tomato sauce and place it in the basket.
+language: Pick the tomato sauce and place it in the basket.
 primary_category: OG-TOU-DTSL
 anchor_suite: libero_object
 condition: different_target_same_original_layout

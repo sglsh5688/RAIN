@@ -4,7 +4,7 @@ Legacy ID: `CTR_176`
 
 ## Task Description
 
-Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.
+Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.
 
 ## 목표
 

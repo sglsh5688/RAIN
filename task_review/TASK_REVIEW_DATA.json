@@ -1,9 +1,9 @@
 {
   "schema": "libero_analogy_task_review_v1",
-  "created_at": "2026-09-12T07:38:01.754927+00:00",
+  "created_at": "2026-09-12T08:33:09.476094+00:00",
   "task_count": 60,
   "rendered_count": 60,
-  "task_index_sha256": "e0490a5e87e004d666400cc96d347b8a68913b7624853115f6bdea35d5fbda46",
+  "task_index_sha256": "a26df3b93558ee59dca824b7364e5e42c4204c6ebe6088f40562bc51441f8974",
   "tasks": [
     {
       "task_id": "Decomposition_001",
@@ -437,9 +437,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_001/TDL10_001_ep000_ok.mp4",
           "representative_failure_video": "videos/Decomposition_001/TDL10_001_ep008_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the white mug on the left plate."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_001.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_001.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_002",
@@ -906,9 +910,13 @@
         "success_rate_percent": 100,
         "videos": {
           "representative_success_video": "videos/Decomposition_002/TDL10_002_ep000_ok.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the yellow and white mug on the right plate."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_002.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_002.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_003",
@@ -1341,9 +1349,13 @@
         "success_rate_percent": 100,
         "videos": {
           "representative_success_video": "videos/Decomposition_003/TDL10_003_ep000_ok.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the white mug on the plate."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_003.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_003.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_004",
@@ -1705,9 +1717,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_004/TDL10_004_ep000_ok.mp4",
           "representative_failure_video": "videos/Decomposition_004/TDL10_004_ep009_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the chocolate pudding to the right of the plate."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_004.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_004.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_005",
@@ -2170,9 +2186,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_005/TDL10_005_ep000_ok.mp4",
           "representative_failure_video": "videos/Decomposition_005/TDL10_005_ep009_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the yellow and white mug in the microwave."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_005.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_005.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_006",
@@ -2443,9 +2463,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_006/TDL10_006_ep000_ok.mp4",
           "representative_failure_video": "videos/Decomposition_006/TDL10_006_ep001_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Close the microwave."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_006.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_006.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_007",
@@ -2850,9 +2874,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_007/TDL10_008_ep002_ok.mp4",
           "representative_failure_video": "videos/Decomposition_007/TDL10_008_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the moka pot on the stove."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_008.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_008.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_008",
@@ -3274,9 +3302,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_008/TDL10_009_ep000_ok.mp4",
           "representative_failure_video": "videos/Decomposition_008/TDL10_009_ep040_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the alphabet soup in the basket."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_009.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_009.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_009",
@@ -3658,9 +3690,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_009/TDL10_010_ep001_ok.mp4",
           "representative_failure_video": "videos/Decomposition_009/TDL10_010_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the cream cheese box in the basket."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_010.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_010.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_010",
@@ -4082,9 +4118,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_010/TDL10_011_ep000_ok.mp4",
           "representative_failure_video": "videos/Decomposition_010/TDL10_011_ep018_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the alphabet soup in the basket."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_011.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_011.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_011",
@@ -4511,9 +4551,13 @@
         "success_rate_percent": 100,
         "videos": {
           "representative_success_video": "videos/Decomposition_011/TDL10_012_ep000_ok.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the tomato sauce in the basket."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_012.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_012.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_012",
@@ -4895,9 +4939,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_012/TDL10_013_ep000_ok.mp4",
           "representative_failure_video": "videos/Decomposition_012/TDL10_013_ep026_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the cream cheese box in the basket."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_013.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_013.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_013",
@@ -5279,9 +5327,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_013/TDL10_014_ep000_ok.mp4",
           "representative_failure_video": "videos/Decomposition_013/TDL10_014_ep022_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the butter in the basket."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_014.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_014.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_014",
@@ -5556,9 +5608,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_014/TDL10_016_ep000_ok.mp4",
           "representative_failure_video": "videos/Decomposition_014/TDL10_016_ep001_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Close the bottom drawer of the cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDL10_016.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDL10_016.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_015",
@@ -5823,9 +5879,13 @@
         "success_rate_percent": 100,
         "videos": {
           "representative_success_video": "videos/Decomposition_015/TDC40_001_ep000_ok.mp4"
-        }
+        },
+        "evaluation_instruction": "Turn on the stove."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDC40_001.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDC40_001.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_016",
@@ -6312,9 +6372,13 @@
         "success_rate_percent": 100,
         "videos": {
           "representative_success_video": "videos/Decomposition_016/TDC40_002_ep000_ok.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the black bowl in the bottom drawer of the cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDC40_002.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDC40_002.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_017",
@@ -6739,9 +6803,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_017/TDC40_003_ep000_ok.mp4",
           "representative_failure_video": "videos/Decomposition_017/TDC40_003_ep005_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the left moka pot on the stove."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDC40_003.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDC40_003.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_018",
@@ -7166,9 +7234,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_018/TDC40_004_ep019_ok.mp4",
           "representative_failure_video": "videos/Decomposition_018/TDC40_004_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the right moka pot on the stove."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDC40_004.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDC40_004.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_019",
@@ -7454,9 +7526,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_019/TDC40_005_ep000_ok.mp4",
           "representative_failure_video": "videos/Decomposition_019/TDC40_005_ep008_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Open the top drawer of the cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDC40_005.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDC40_005.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Decomposition_020",
@@ -7944,9 +8020,13 @@
         "videos": {
           "representative_success_video": "videos/Decomposition_020/TDC40_006_ep000_ok.mp4",
           "representative_failure_video": "videos/Decomposition_020/TDC40_006_ep025_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the black bowl inside the top drawer of the cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/TDC40_006.png"
+      "historical_comparison": "../selected29/assets/comparison_png/TDC40_006.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_001",
@@ -8389,9 +8469,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_001/ANLGX_002_ep001_ok.mp4",
           "representative_failure_video": "videos/Adapt_001/ANLGX_002_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the white mug on the middle plate."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_002.png"
+      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_002.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_002",
@@ -8834,9 +8918,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_002/ANLGX_003_ep000_ok.mp4",
           "representative_failure_video": "videos/Adapt_002/ANLGX_003_ep003_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the white mug on the right plate."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_003.png"
+      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_003.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_003",
@@ -9314,9 +9402,13 @@
         "success_rate_percent": 100,
         "videos": {
           "representative_success_video": "videos/Adapt_003/ANLGX_017_ep000_ok.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the black bowl in the middle drawer of the white cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_017.png"
+      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_017.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_004",
@@ -9593,9 +9685,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_004/ANLGX_022_ep000_ok.mp4",
           "representative_failure_video": "videos/Adapt_004/ANLGX_022_ep008_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Close the top drawer of the white cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_022.png"
+      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_022.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_005",
@@ -9912,9 +10008,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_005/ANLGX_023_ep000_ok.mp4",
           "representative_failure_video": "videos/Adapt_005/ANLGX_023_ep003_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Close the middle drawer of the white cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_023.png"
+      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_023.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_006",
@@ -10359,9 +10459,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_006/ANLGX_089_ep000_ok.mp4",
           "representative_failure_video": "videos/Adapt_006/ANLGX_089_ep001_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Pick up the wine bottle at the table center and place it on the plate."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_089.png"
+      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_089.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_007",
@@ -10844,9 +10948,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_007/ANLGX_134_ep016_ok.mp4",
           "representative_failure_video": "videos/Adapt_007/ANLGX_134_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the plate on the top of the wooden cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_134.png"
+      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_134.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_008",
@@ -11247,9 +11355,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_008/ANLGX_147_ep000_ok.mp4",
           "representative_failure_video": "videos/Adapt_008/ANLGX_147_ep002_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the cream cheese in the top drawer of the wooden cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_147.png"
+      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_147.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_009",
@@ -11740,9 +11852,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_009/ANLGX_178_ep003_ok.mp4",
           "representative_failure_video": "videos/Adapt_009/ANLGX_178_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the yellow and white mug in the left compartment of the caddy."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_178.png"
+      "historical_comparison": "../selected29/assets/comparison_png/ANLGX_178.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_010",
@@ -11750,7 +11866,7 @@
       "category": "Adapt",
       "category_order": 10,
       "order": 30,
-      "instruction": "Pick the alphabet soup and place it in the basket",
+      "instruction": "Pick the alphabet soup and place it in the basket.",
       "goal": "in(alphabet_soup_1, basket_1_contain_region)",
       "required": [
         "in(alphabet_soup_1, basket_1_contain_region)"
@@ -11798,7 +11914,7 @@
         "legacy_task_id": "OGTS_001",
         "category": "Adapt",
         "order": 30,
-        "task_description": "Pick the alphabet soup and place it in the basket",
+        "task_description": "Pick the alphabet soup and place it in the basket.",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -12147,7 +12263,17 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 10.836097231134772
+        "elapsed_seconds": 10.836097231134772,
+        "capture_task_description": "Pick the alphabet soup and place it in the basket",
+        "description_revision": {
+          "before": "Pick the alphabet soup and place it in the basket",
+          "after": "Pick the alphabet soup and place it in the basket.",
+          "kind": "terminal_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "ca6795e0bd402d59a6f3ddaa91a236d290505c887a4918da80abb92b55d33905",
+          "current_task_meta_sha256": "d161a0293d33ec67ac6a3e7ae1c433751f639204fde31c2a19ea6de6c55e4484"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_010/",
       "result": {
@@ -12157,9 +12283,18 @@
         "videos": {
           "representative_success_video": "videos/Adapt_010/OGTS_001_ep000_ok.mp4",
           "representative_failure_video": "videos/Adapt_010/OGTS_001_ep011_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Pick the alphabet soup and place it in the basket"
       },
-      "historical_comparison": "../selected29/assets/comparison_png/OGTS_001.png"
+      "historical_comparison": "../selected29/assets/comparison_png/OGTS_001.png",
+      "description_revision": {
+        "before": "Pick the alphabet soup and place it in the basket",
+        "after": "Pick the alphabet soup and place it in the basket.",
+        "kind": "terminal_period",
+        "legacy_task_id": "OGTS_001"
+      },
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_011",
@@ -12167,7 +12302,7 @@
       "category": "Adapt",
       "category_order": 11,
       "order": 31,
-      "instruction": "Pick the orange juice and place it in the basket",
+      "instruction": "Pick the orange juice and place it in the basket.",
       "goal": "in(orange_juice_1, basket_1_contain_region)",
       "required": [
         "in(orange_juice_1, basket_1_contain_region)"
@@ -12215,7 +12350,7 @@
         "legacy_task_id": "OGTS_010",
         "category": "Adapt",
         "order": 31,
-        "task_description": "Pick the orange juice and place it in the basket",
+        "task_description": "Pick the orange juice and place it in the basket.",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -12530,7 +12665,17 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.690425861626863
+        "elapsed_seconds": 11.690425861626863,
+        "capture_task_description": "Pick the orange juice and place it in the basket",
+        "description_revision": {
+          "before": "Pick the orange juice and place it in the basket",
+          "after": "Pick the orange juice and place it in the basket.",
+          "kind": "terminal_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "00fddb7a65c2b74b51ea0ed6359aef15aa29c6094bb746c61d32a81f83a8ca5e",
+          "current_task_meta_sha256": "509bc65a1a513258374ba6f825972a071d6f6b83fee7e9e4b5d3a59a2c8626da"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_011/",
       "result": {
@@ -12540,9 +12685,18 @@
         "videos": {
           "representative_success_video": "videos/Adapt_011/OGTS_010_ep004_ok.mp4",
           "representative_failure_video": "videos/Adapt_011/OGTS_010_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Pick the orange juice and place it in the basket"
       },
-      "historical_comparison": "../selected29/assets/comparison_png/OGTS_010.png"
+      "historical_comparison": "../selected29/assets/comparison_png/OGTS_010.png",
+      "description_revision": {
+        "before": "Pick the orange juice and place it in the basket",
+        "after": "Pick the orange juice and place it in the basket.",
+        "kind": "terminal_period",
+        "legacy_task_id": "OGTS_010"
+      },
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_012",
@@ -12550,7 +12704,7 @@
       "category": "Adapt",
       "category_order": 12,
       "order": 32,
-      "instruction": "Pick the tomato sauce and place it in the basket",
+      "instruction": "Pick the tomato sauce and place it in the basket.",
       "goal": "in(tomato_sauce_1, basket_1_contain_region)",
       "required": [
         "in(tomato_sauce_1, basket_1_contain_region)"
@@ -12598,7 +12752,7 @@
         "legacy_task_id": "OGDTSL_011",
         "category": "Adapt",
         "order": 32,
-        "task_description": "Pick the tomato sauce and place it in the basket",
+        "task_description": "Pick the tomato sauce and place it in the basket.",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -12953,7 +13107,17 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 10.575418625026941
+        "elapsed_seconds": 10.575418625026941,
+        "capture_task_description": "Pick the tomato sauce and place it in the basket",
+        "description_revision": {
+          "before": "Pick the tomato sauce and place it in the basket",
+          "after": "Pick the tomato sauce and place it in the basket.",
+          "kind": "terminal_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "eac88c9b2616c19080c13349868f40a170d0ffb07594db4570345f9bf20318b7",
+          "current_task_meta_sha256": "2f807b041b8847af5d0e2e6aaa16b00e2b89a73d30ac95929eec652cd6eccd41"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_012/",
       "result": {
@@ -12963,9 +13127,18 @@
         "videos": {
           "representative_success_video": "videos/Adapt_012/OGDTSL_011_ep000_ok.mp4",
           "representative_failure_video": "videos/Adapt_012/OGDTSL_011_ep005_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Pick the tomato sauce and place it in the basket"
       },
-      "historical_comparison": "../selected29/assets/comparison_png/OGDTSL_011.png"
+      "historical_comparison": "../selected29/assets/comparison_png/OGDTSL_011.png",
+      "description_revision": {
+        "before": "Pick the tomato sauce and place it in the basket",
+        "after": "Pick the tomato sauce and place it in the basket.",
+        "kind": "terminal_period",
+        "legacy_task_id": "OGDTSL_011"
+      },
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_013",
@@ -12973,7 +13146,7 @@
       "category": "Adapt",
       "category_order": 13,
       "order": 33,
-      "instruction": "Pick the milk and place it in the basket",
+      "instruction": "Pick the milk and place it in the basket.",
       "goal": "in(milk_1, basket_1_contain_region)",
       "required": [
         "in(milk_1, basket_1_contain_region)"
@@ -13021,7 +13194,7 @@
         "legacy_task_id": "OGDTSL_046",
         "category": "Adapt",
         "order": 33,
-        "task_description": "Pick the milk and place it in the basket",
+        "task_description": "Pick the milk and place it in the basket.",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -13336,7 +13509,17 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.48124720621854
+        "elapsed_seconds": 11.48124720621854,
+        "capture_task_description": "Pick the milk and place it in the basket",
+        "description_revision": {
+          "before": "Pick the milk and place it in the basket",
+          "after": "Pick the milk and place it in the basket.",
+          "kind": "terminal_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "d747f3d669ea5778fd9cafa5e2fcf8f4ad6ff286c9b78b4da44366a74012532e",
+          "current_task_meta_sha256": "2a4fe77ff9bb759d79a654c19745579f9c7e6f8e147fcd6c6f840a90d0bfb532"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_013/",
       "result": {
@@ -13346,9 +13529,18 @@
         "videos": {
           "representative_success_video": "videos/Adapt_013/OGDTSL_046_ep002_ok.mp4",
           "representative_failure_video": "videos/Adapt_013/OGDTSL_046_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Pick the milk and place it in the basket"
       },
-      "historical_comparison": "../selected29/assets/comparison_png/OGDTSL_046.png"
+      "historical_comparison": "../selected29/assets/comparison_png/OGDTSL_046.png",
+      "description_revision": {
+        "before": "Pick the milk and place it in the basket",
+        "after": "Pick the milk and place it in the basket.",
+        "kind": "terminal_period",
+        "legacy_task_id": "OGDTSL_046"
+      },
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_014",
@@ -13721,9 +13913,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_014/NAFR3_001_ep000_ok.mp4",
           "representative_failure_video": "videos/Adapt_014/NAFR3_001_ep004_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the popcorn on top of the short fridge."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/NAFR3_001.png"
+      "historical_comparison": "../selected29/assets/comparison_png/NAFR3_001.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_015",
@@ -14096,9 +14292,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_015/NAFR3_002_ep000_ok.mp4",
           "representative_failure_video": "videos/Adapt_015/NAFR3_002_ep003_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the yellow book on top of the two-layer wooden shelf."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/NAFR3_002.png"
+      "historical_comparison": "../selected29/assets/comparison_png/NAFR3_002.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_016",
@@ -14550,9 +14750,13 @@
         "success_rate_percent": 100,
         "videos": {
           "representative_success_video": "videos/Adapt_016/DSET_001_ep000_ok.mp4"
-        }
+        },
+        "evaluation_instruction": "Pick up the black bowl at the table center and place it on the dining-set mat."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/DSET_001.png"
+      "historical_comparison": "../selected29/assets/comparison_png/DSET_001.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_017",
@@ -14967,9 +15171,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_017/BDRSWAP_001_ep000_ok.mp4",
           "representative_failure_video": "videos/Adapt_017/BDRSWAP_001_ep019_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/BDRSWAP_001.png"
+      "historical_comparison": "../selected29/assets/comparison_png/BDRSWAP_001.png",
+      "description_revision": null,
+      "direction_note": "방향은 LIBERO 원본 구획 기준입니다. 로봇 기준 왼쪽은 left_region(+Y), 오른쪽은 right_region(−Y)입니다. 현재 scene과 단계별 mask는 같은 화면 방향을 사용합니다.",
+      "historical_comparison_label": "과거 비교 이미지 (현재 화면과 좌우 반전)"
     },
     {
       "task_id": "Adapt_018",
@@ -15276,9 +15484,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_018/ADVCN19_001_ep000_ok.mp4",
           "representative_failure_video": "videos/Adapt_018/ADVCN19_001_ep013_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Open the top drawer of the wooden cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/ADVCN19_001.png"
+      "historical_comparison": "../selected29/assets/comparison_png/ADVCN19_001.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_019",
@@ -15733,9 +15945,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_019/WTRAYR_004_ep002_ok.mp4",
           "representative_failure_video": "videos/Adapt_019/WTRAYR_004_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Pick up the black bowl and place it in the wooden tray."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/WTRAYR_004.png"
+      "historical_comparison": "../selected29/assets/comparison_png/WTRAYR_004.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Adapt_020",
@@ -16209,9 +16425,13 @@
         "videos": {
           "representative_success_video": "videos/Adapt_020/GRACK_002_ep000_ok.mp4",
           "representative_failure_video": "videos/Adapt_020/GRACK_002_ep037_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the ketchup on the rack."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/GRACK_002.png"
+      "historical_comparison": "../selected29/assets/comparison_png/GRACK_002.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_001",
@@ -16840,9 +17060,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_001/VCN8_008_ep000_ok.mp4",
           "representative_failure_video": "videos/Compose_001/VCN8_008_ep001_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/VCN8_008.png"
+      "historical_comparison": "../selected29/assets/comparison_png/VCN8_008.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_002",
@@ -17375,9 +17599,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_002/VCN9_010_ep000_ok.mp4",
           "representative_failure_video": "videos/Compose_002/VCN9_010_ep001_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the cream cheese on the stove, then turn on the stove."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/VCN9_010.png"
+      "historical_comparison": "../selected29/assets/comparison_png/VCN9_010.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_003",
@@ -18070,9 +18298,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_003/VCN10_001_ep000_ok.mp4",
           "representative_failure_video": "videos/Compose_003/VCN10_001_ep001_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the cream cheese on the stove, then push the plate to the front of the stove."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/VCN10_001.png"
+      "historical_comparison": "../selected29/assets/comparison_png/VCN10_001.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_004",
@@ -18695,9 +18927,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_004/VCN19_020_ep015_ok.mp4",
           "representative_failure_video": "videos/Compose_004/VCN19_020_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/VCN19_020.png"
+      "historical_comparison": "../selected29/assets/comparison_png/VCN19_020.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_005",
@@ -19293,9 +19529,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_005/VCN21_001_ep000_ok.mp4",
           "representative_failure_video": "videos/Compose_005/VCN21_001_ep002_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the moka pot on the stove, then close the microwave door."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/VCN21_001.png"
+      "historical_comparison": "../selected29/assets/comparison_png/VCN21_001.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_006",
@@ -19955,9 +20195,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_006/COMP2_012_ep000_ok.mp4",
           "representative_failure_video": "videos/Compose_006/COMP2_012_ep003_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the butter in the basket, and then put the tomato sauce in the basket."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/COMP2_012.png"
+      "historical_comparison": "../selected29/assets/comparison_png/COMP2_012.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_007",
@@ -20481,9 +20725,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_007/COMP2_032_ep033_ok.mp4",
           "representative_failure_video": "videos/Compose_007/COMP2_032_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/COMP2_032.png"
+      "historical_comparison": "../selected29/assets/comparison_png/COMP2_032.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_008",
@@ -21183,9 +21431,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_008/COMP2_222_ep014_ok.mp4",
           "representative_failure_video": "videos/Compose_008/COMP2_222_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/COMP2_222.png"
+      "historical_comparison": "../selected29/assets/comparison_png/COMP2_222.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_009",
@@ -21805,9 +22057,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_009/COMP2_303_ep003_ok.mp4",
           "representative_failure_video": "videos/Compose_009/COMP2_303_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the milk in the basket, and then put the cream cheese box in the basket."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/COMP2_303.png"
+      "historical_comparison": "../selected29/assets/comparison_png/COMP2_303.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_010",
@@ -22724,9 +22980,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_010/COMPOSE_155_ep003_ok.mp4",
           "representative_failure_video": "videos/Compose_010/COMPOSE_155_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/COMPOSE_155.png"
+      "historical_comparison": "../selected29/assets/comparison_png/COMPOSE_155.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_011",
@@ -23435,9 +23695,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_011/COMP2_027_ep001_ok.mp4",
           "representative_failure_video": "videos/Compose_011/COMP2_027_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/COMP2_027.png"
+      "historical_comparison": "../selected29/assets/comparison_png/COMP2_027.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_012",
@@ -24204,9 +24468,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_012/LBCM_003_ep000_ok.mp4",
           "representative_failure_video": "videos/Compose_012/LBCM_003_ep002_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the tomato sauce in the basket, then put the white mug on the plate."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/LBCM_003.png"
+      "historical_comparison": "../selected29/assets/comparison_png/LBCM_003.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_013",
@@ -25208,9 +25476,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_013/LBCM_028_ep003_ok.mp4",
           "representative_failure_video": "videos/Compose_013/LBCM_028_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/LBCM_028.png"
+      "historical_comparison": "../selected29/assets/comparison_png/LBCM_028.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_014",
@@ -25793,9 +26065,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_014/MKDC_001_ep000_ok.mp4",
           "representative_failure_video": "videos/Compose_014/MKDC_001_ep002_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the moka pot on the stove, then close the bottom drawer of the cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/MKDC_001.png"
+      "historical_comparison": "../selected29/assets/comparison_png/MKDC_001.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_015",
@@ -26448,9 +26724,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_015/CTR_103_ep000_ok.mp4",
           "representative_failure_video": "videos/Compose_015/CTR_103_ep001_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/CTR_103.png"
+      "historical_comparison": "../selected29/assets/comparison_png/CTR_103.png",
+      "description_revision": null,
+      "direction_note": "방향은 LIBERO 원본 구획 기준입니다. 로봇 기준 왼쪽은 left_region(+Y), 오른쪽은 right_region(−Y)입니다. 현재 scene과 단계별 mask는 같은 화면 방향을 사용합니다.",
+      "historical_comparison_label": "과거 비교 이미지 (두 구획 mask 합성)"
     },
     {
       "task_id": "Compose_016",
@@ -27222,9 +27502,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_016/VCN35_004_ep000_ok.mp4",
           "representative_failure_video": "videos/Compose_016/VCN35_004_ep001_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the ramekin in the basket, then put the alphabet soup on the right plate."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/VCN35_004.png"
+      "historical_comparison": "../selected29/assets/comparison_png/VCN35_004.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_017",
@@ -28032,9 +28316,13 @@
         "videos": {
           "representative_success_video": "videos/Compose_017/UCOMP_040_ep001_ok.mp4",
           "representative_failure_video": "videos/Compose_017/UCOMP_040_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/UCOMP_040.png"
+      "historical_comparison": "../selected29/assets/comparison_png/UCOMP_040.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_018",
@@ -28695,9 +28983,13 @@
         "success_rate_percent": 0,
         "videos": {
           "representative_failure_video": "videos/Compose_018/BDRMIN_002_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/BDRMIN_002.png"
+      "historical_comparison": "../selected29/assets/comparison_png/BDRMIN_002.png",
+      "description_revision": null,
+      "direction_note": "방향은 LIBERO 원본 구획 기준입니다. 로봇 기준 왼쪽은 left_region(+Y), 오른쪽은 right_region(−Y)입니다. 현재 scene과 단계별 mask는 같은 화면 방향을 사용합니다.",
+      "historical_comparison_label": "과거 비교 이미지 (현재 화면과 좌우 반전)"
     },
     {
       "task_id": "Compose_019",
@@ -28705,7 +28997,7 @@
       "category": "Compose",
       "category_order": 19,
       "order": 59,
-      "instruction": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+      "instruction": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
       "goal": "in(alphabet_soup_1, basket_1_contain_region);in(butter_1, basket_1_contain_region);in(cream_cheese_1, basket_1_contain_region)",
       "required": [
         "in(alphabet_soup_1, basket_1_contain_region)",
@@ -28843,7 +29135,7 @@
         "legacy_task_id": "CTR_176",
         "category": "Compose",
         "order": 59,
-        "task_description": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+        "task_description": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -29604,7 +29896,17 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.084171336144209
+        "elapsed_seconds": 12.084171336144209,
+        "capture_task_description": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+        "description_revision": {
+          "before": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+          "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
+          "kind": "native_libero_clauses_with_explicit_order",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "c1ce8dabfe2373990fadac40989fa5e21e03f59698640224d0692ccc14428d18",
+          "current_task_meta_sha256": "fab30d5b78cfe133fac62bd0709001eb57296cebea688d42ccc5f09a27c4beed"
+        }
       },
       "scene_base": "scenes/Compose/Compose_019/",
       "result": {
@@ -29614,9 +29916,18 @@
         "videos": {
           "representative_success_video": "videos/Compose_019/CTR_176_ep000_ok.mp4",
           "representative_failure_video": "videos/Compose_019/CTR_176_ep006_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/CTR_176.png"
+      "historical_comparison": "../selected29/assets/comparison_png/CTR_176.png",
+      "description_revision": {
+        "before": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+        "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
+        "kind": "native_libero_clauses_with_explicit_order",
+        "legacy_task_id": "CTR_176"
+      },
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     },
     {
       "task_id": "Compose_020",
@@ -30281,10 +30592,14 @@
         "videos": {
           "representative_success_video": "videos/Compose_020/CTR_140_ep003_ok.mp4",
           "representative_failure_video": "videos/Compose_020/CTR_140_ep000_fail.mp4"
-        }
+        },
+        "evaluation_instruction": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet."
       },
-      "historical_comparison": "../selected29/assets/comparison_png/CTR_140.png"
+      "historical_comparison": "../selected29/assets/comparison_png/CTR_140.png",
+      "description_revision": null,
+      "direction_note": "",
+      "historical_comparison_label": "과거 비교 이미지"
     }
   ],
-  "publication_created_at": "2026-09-12T07:51:43.746813+00:00"
+  "publication_created_at": "2026-09-12T08:41:38.093227+00:00"
 }

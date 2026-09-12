@@ -1,0 +1,39 @@
+{
+  "schema": "libero_analogy_instruction_revision_v1",
+  "tasks": {
+    "Adapt_010": {
+      "before": "Pick the alphabet soup and place it in the basket",
+      "after": "Pick the alphabet soup and place it in the basket.",
+      "kind": "terminal_period",
+      "legacy_task_id": "OGTS_001"
+    },
+    "Adapt_011": {
+      "before": "Pick the orange juice and place it in the basket",
+      "after": "Pick the orange juice and place it in the basket.",
+      "kind": "terminal_period",
+      "legacy_task_id": "OGTS_010"
+    },
+    "Adapt_012": {
+      "before": "Pick the tomato sauce and place it in the basket",
+      "after": "Pick the tomato sauce and place it in the basket.",
+      "kind": "terminal_period",
+      "legacy_task_id": "OGDTSL_011"
+    },
+    "Adapt_013": {
+      "before": "Pick the milk and place it in the basket",
+      "after": "Pick the milk and place it in the basket.",
+      "kind": "terminal_period",
+      "legacy_task_id": "OGDTSL_046"
+    },
+    "Compose_019": {
+      "before": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+      "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
+      "kind": "native_libero_clauses_with_explicit_order",
+      "legacy_task_id": "CTR_176"
+    }
+  },
+  "physical_definition_changed": false,
+  "ordered_goals_changed": false,
+  "source_action_descriptions_preserved": true,
+  "reason": "User requested Adapt punctuation and LIBERO-consistent Compose_019 wording, with bowl-drainer directions verified."
+}

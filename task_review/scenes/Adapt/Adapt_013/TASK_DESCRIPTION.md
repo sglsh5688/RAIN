@@ -4,7 +4,7 @@ Legacy ID: `OGDTSL_046`
 
 ## Task Description
 
-Pick the milk and place it in the basket
+Pick the milk and place it in the basket.
 
 ## 목표
 

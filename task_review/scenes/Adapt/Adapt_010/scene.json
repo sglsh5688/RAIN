@@ -4,7 +4,7 @@
   "legacy_task_id": "OGTS_001",
   "category": "Adapt",
   "order": 30,
-  "task_description": "Pick the alphabet soup and place it in the basket",
+  "task_description": "Pick the alphabet soup and place it in the basket.",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -353,5 +353,15 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 10.836097231134772
+  "elapsed_seconds": 10.836097231134772,
+  "capture_task_description": "Pick the alphabet soup and place it in the basket",
+  "description_revision": {
+    "before": "Pick the alphabet soup and place it in the basket",
+    "after": "Pick the alphabet soup and place it in the basket.",
+    "kind": "terminal_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "ca6795e0bd402d59a6f3ddaa91a236d290505c887a4918da80abb92b55d33905",
+    "current_task_meta_sha256": "d161a0293d33ec67ac6a3e7ae1c433751f639204fde31c2a19ea6de6c55e4484"
+  }
 }

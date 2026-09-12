@@ -4,7 +4,7 @@ Legacy ID: `OGTS_010`
 
 ## Task Description
 
-Pick the orange juice and place it in the basket
+Pick the orange juice and place it in the basket.
 
 ## 목표
 

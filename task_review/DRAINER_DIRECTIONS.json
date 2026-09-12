@@ -1,0 +1,45 @@
+{
+  "direction_note": "Bowl-drainer left/right follows the original LIBERO region names, viewed from the robot’s perspective: left_region is local +Y and right_region is local −Y. The current scene and masks use the same RAIN image orientation. Historical comparison images may use a different orientation or combine masks; use the current per-stage masks to check each destination.",
+  "mapping": [
+    {
+      "task_id": "Adapt_017",
+      "placements": [
+        {
+          "object": "alphabet_soup_1",
+          "side": "right",
+          "native_region": "bowl_drainer_1_right_region"
+        }
+      ]
+    },
+    {
+      "task_id": "Compose_015",
+      "placements": [
+        {
+          "object": "butter_1",
+          "side": "left",
+          "native_region": "bowl_drainer_1_left_region"
+        },
+        {
+          "object": "tomato_sauce_1",
+          "side": "right",
+          "native_region": "bowl_drainer_1_right_region"
+        }
+      ]
+    },
+    {
+      "task_id": "Compose_018",
+      "placements": [
+        {
+          "object": "alphabet_soup_1",
+          "side": "right",
+          "native_region": "bowl_drainer_1_right_region"
+        },
+        {
+          "object": "tomato_sauce_1",
+          "side": "left",
+          "native_region": "bowl_drainer_1_left_region"
+        }
+      ]
+    }
+  ]
+}

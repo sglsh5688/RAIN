@@ -12,9 +12,19 @@ The historical source metadata and review evidence retain their original pre-sel
 
 This release contains definitions and evaluation evidence, plus local runtime source exports for the three incoming tasks; external model/framework dependencies are not bundled. The declared ordered/contact rules require their evaluator runtimes; BDDL alone is insufficient.
 
+Description display updated 2026-09-12: Adapt_010–013 now end with periods; Compose_019 states its three ordered placements explicitly. The current descriptions and definitions are in [task review](../task_review/index.html). Historical source instructions, episode counts and evaluation outcomes are retained.
+
+Bowl-drainer directions follow original LIBERO native regions from the robot’s perspective (left_region: local +Y; right_region: local −Y). See the [same-orientation direction comparison](../task_review/DRAINER_DIRECTIONS.png). Current per-stage views replace old previews for these cards:
+
+| Current task | Legacy ID | Current scene and masks | Historical comparison |
+|---|---|---|---|
+| Adapt_017 | BDRSWAP_001 | [Current view](../task_review/scenes/Adapt/Adapt_017/TASK_REVIEW.png) | [Historical image](assets/comparison_png/BDRSWAP_001.png) — This historical image uses the opposite horizontal orientation; native right appears on the image-left side of the drainer. |
+| Compose_015 | CTR_103 | [Current view](../task_review/scenes/Compose/Compose_015/TASK_REVIEW.png) | [Historical image](assets/comparison_png/CTR_103.png) — This historical image combines both compartment masks, so the two placement stages are not shown separately. |
+| Compose_018 | BDRMIN_002 | [Current view](../task_review/scenes/Compose/Compose_018/TASK_REVIEW.png) | [Historical image](assets/comparison_png/BDRMIN_002.png) — This historical image uses the opposite horizontal orientation; native right appears on the image-left side of the drainer. |
+
 ## Decomposition
 
-| Task ID | Recorded instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) |
+| Task ID | Current instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) |
 |---|---|---|---|
 | TDL10_001 | Put the white mug on the left plate. | 33/50 (66.0%) | 0/5 (0%) |
 | TDL10_002 | Put the yellow and white mug on the right plate. | 50/50 (100.0%) | 0/5 (0%) |
@@ -39,7 +49,7 @@ This release contains definitions and evaluation evidence, plus local runtime so
 
 ## Adapt
 
-| Task ID | Recorded instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) |
+| Task ID | Current instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) |
 |---|---|---|---|
 | ANLGX_002 | Put the white mug on the middle plate. | 4/5 (80.0%) | 4/5 (80%) |
 | ANLGX_003 | Put the white mug on the right plate. | 3/5 (60.0%) | 0/5 (0%) |
@@ -50,10 +60,10 @@ This release contains definitions and evaluation evidence, plus local runtime so
 | ANLGX_134 | Put the plate on the top of the wooden cabinet. | 1/5 (20.0%) | 0/5 (0%) |
 | ANLGX_147 | Put the cream cheese in the top drawer of the wooden cabinet. | 3/5 (60.0%) | 3/5 (60%) |
 | ANLGX_178 | Put the yellow and white mug in the left compartment of the caddy. | 3/5 (60.0%) | 0/5 (0%) |
-| OGTS_001 | Pick the alphabet soup and place it in the basket | 48/50 (96.0%) | 4/5 (80%) |
-| OGTS_010 | Pick the orange juice and place it in the basket | 26/50 (52.0%) | 0/5 (0%) |
-| OGDTSL_011 | Pick the tomato sauce and place it in the basket | 4/5 (80.0%) | 5/5 (100%) |
-| OGDTSL_046 | Pick the milk and place it in the basket | 2/5 (40.0%) | 5/5 (100%) |
+| OGTS_001 | Pick the alphabet soup and place it in the basket. | 48/50 (96.0%) | 4/5 (80%) |
+| OGTS_010 | Pick the orange juice and place it in the basket. | 26/50 (52.0%) | 0/5 (0%) |
+| OGDTSL_011 | Pick the tomato sauce and place it in the basket. | 4/5 (80.0%) | 5/5 (100%) |
+| OGDTSL_046 | Pick the milk and place it in the basket. | 2/5 (40.0%) | 5/5 (100%) |
 | NAFR3_001 | Put the popcorn on top of the short fridge. | 4/5 (80%) | 2/5 (40%) |
 | NAFR3_002 | Put the yellow book on top of the two-layer wooden shelf. | 4/5 (80%) | 5/5 (100%) |
 | DSET_001 | Pick up the black bowl at the table center and place it on the dining-set mat. | 5/5 (100.0%) | 5/5 (100%) |
@@ -64,7 +74,7 @@ This release contains definitions and evaluation evidence, plus local runtime so
 
 ## Compose
 
-| Task ID | Recorded instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) |
+| Task ID | Current instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) |
 |---|---|---|---|
 | VCN8_008 | Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet. | 4/5 (80%) | 0/5 (0%) |
 | VCN9_010 | Put the cream cheese on the stove, then turn on the stove. | 4/5 (80%) | 0/5 (0%) |
@@ -84,7 +94,7 @@ This release contains definitions and evaluation evidence, plus local runtime so
 | VCN35_004 | Put the ramekin in the basket, then put the alphabet soup on the right plate. | 3/5 (60%) | 0/5 (0%) |
 | UCOMP_040 | Put the tomato sauce in the basket, and then put the yellow and white mug on the plate. | 3/5 (60%) | 0/5 (0%) |
 | BDRMIN_002 | Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer. | 1/5 (20%) | Pending |
-| CTR_176 | Put the alphabet soup, the butter, and the cream cheese box in the basket one after another. | 5/5 (100%) | Pending |
+| CTR_176 | Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket. | 5/5 (100%) | Pending |
 | CTR_140 | Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet. | 1/5 (20%) | Pending |
 
 ## TDL10_001 — provenance and evaluation

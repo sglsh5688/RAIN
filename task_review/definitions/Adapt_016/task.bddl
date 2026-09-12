@@ -1,6 +1,6 @@
 (define (problem LIBERO_Tabletop_Manipulation)
   (:domain robosuite)
-  (:language Pick up the black bowl at the table center and place it on the dining-set mat.)
+  (:language Pick up the black bowl at the table center and place it on the dining-set mat)
   (:regions
       (plate_region
           (:target main_table)

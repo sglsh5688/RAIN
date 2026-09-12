@@ -4,7 +4,7 @@ Legacy ID: `ANLGX_022`
 
 ## Task Description
 
-Close the top drawer of the white cabinet.
+Close the top drawer of the white cabinet
 
 ## 목표
 

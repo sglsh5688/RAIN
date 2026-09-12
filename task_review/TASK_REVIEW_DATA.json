@@ -1,9 +1,9 @@
 {
   "schema": "libero_analogy_task_review_v1",
-  "created_at": "2026-09-12T08:33:09.476094+00:00",
+  "created_at": "2026-09-12T15:14:19.285224+00:00",
   "task_count": 60,
   "rendered_count": 60,
-  "task_index_sha256": "a26df3b93558ee59dca824b7364e5e42c4204c6ebe6088f40562bc51441f8974",
+  "task_index_sha256": "0a80bdc0b1df4f9c2309d235e57257cee6a979cc27b80c6acabde66b4e9fb99d",
   "tasks": [
     {
       "task_id": "Decomposition_001",
@@ -11,7 +11,7 @@
       "category": "Decomposition",
       "category_order": 1,
       "order": 1,
-      "instruction": "Put the white mug on the left plate.",
+      "instruction": "Put the white mug on the left plate",
       "goal": "on(porcelain_mug_1, plate_1)",
       "required": [
         "on(porcelain_mug_1, plate_1)"
@@ -60,7 +60,7 @@
         "legacy_task_id": "TDL10_001",
         "category": "Decomposition",
         "order": 1,
-        "task_description": "Put the white mug on the left plate.",
+        "task_description": "Put the white mug on the left plate",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -427,7 +427,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.657445306889713
+        "elapsed_seconds": 12.657445306889713,
+        "capture_task_description": "Put the white mug on the left plate.",
+        "description_revision": {
+          "before": "Put the white mug on the left plate.",
+          "after": "Put the white mug on the left plate",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "989300431ea434efe0566078afe4666271b66c741b065f03190ee558cb285b59",
+          "current_task_meta_sha256": "25741410b16184f8c6b63f315701e83d8f4fe7a8ba773169d6d88b9687596f67"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_001/",
       "result": {
@@ -441,8 +452,15 @@
         "evaluation_instruction": "Put the white mug on the left plate."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_001.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the white mug on the left plate.",
+        "after": "Put the white mug on the left plate",
+        "legacy_task_id": "TDL10_001",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -451,7 +469,7 @@
       "category": "Decomposition",
       "category_order": 2,
       "order": 2,
-      "instruction": "Put the yellow and white mug on the right plate.",
+      "instruction": "Put the yellow and white mug on the right plate",
       "goal": "on(white_yellow_mug_1, plate_2)",
       "required": [
         "on(white_yellow_mug_1, plate_2)"
@@ -500,7 +518,7 @@
         "legacy_task_id": "TDL10_002",
         "category": "Decomposition",
         "order": 2,
-        "task_description": "Put the yellow and white mug on the right plate.",
+        "task_description": "Put the yellow and white mug on the right plate",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -901,7 +919,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.407485541887581
+        "elapsed_seconds": 12.407485541887581,
+        "capture_task_description": "Put the yellow and white mug on the right plate.",
+        "description_revision": {
+          "before": "Put the yellow and white mug on the right plate.",
+          "after": "Put the yellow and white mug on the right plate",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "8621bd7962f7780b579e580cecb44e914eaec6e87172fdadd59e1b6b863305db",
+          "current_task_meta_sha256": "dc25b7e7dbda4892950fa244d78455655680974d81afbe68c60b22d9f4bf8148"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_002/",
       "result": {
@@ -914,8 +943,15 @@
         "evaluation_instruction": "Put the yellow and white mug on the right plate."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_002.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the yellow and white mug on the right plate.",
+        "after": "Put the yellow and white mug on the right plate",
+        "legacy_task_id": "TDL10_002",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -924,7 +960,7 @@
       "category": "Decomposition",
       "category_order": 3,
       "order": 3,
-      "instruction": "Put the white mug on the plate.",
+      "instruction": "Put the white mug on the plate",
       "goal": "on(porcelain_mug_1, plate_1)",
       "required": [
         "on(porcelain_mug_1, plate_1)"
@@ -973,7 +1009,7 @@
         "legacy_task_id": "TDL10_003",
         "category": "Decomposition",
         "order": 3,
-        "task_description": "Put the white mug on the plate.",
+        "task_description": "Put the white mug on the plate",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -1340,7 +1376,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 13.06589184422046
+        "elapsed_seconds": 13.06589184422046,
+        "capture_task_description": "Put the white mug on the plate.",
+        "description_revision": {
+          "before": "Put the white mug on the plate.",
+          "after": "Put the white mug on the plate",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "42b8af6dc2c698a5d9ed2183e2b978d5125ab41d0bfc96eb03983248fb08aa25",
+          "current_task_meta_sha256": "25334393b0a74cbd256017a8c428f9cbe99d3a9e0aabe7e501b059460e4d666b"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_003/",
       "result": {
@@ -1353,8 +1400,15 @@
         "evaluation_instruction": "Put the white mug on the plate."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_003.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the white mug on the plate.",
+        "after": "Put the white mug on the plate",
+        "legacy_task_id": "TDL10_003",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -1363,7 +1417,7 @@
       "category": "Decomposition",
       "category_order": 4,
       "order": 4,
-      "instruction": "Put the chocolate pudding to the right of the plate.",
+      "instruction": "Put the chocolate pudding to the right of the plate",
       "goal": "on(chocolate_pudding_1, living_room_table_plate_right_region)",
       "required": [
         "on(chocolate_pudding_1, living_room_table_plate_right_region)"
@@ -1412,7 +1466,7 @@
         "legacy_task_id": "TDL10_004",
         "category": "Decomposition",
         "order": 4,
-        "task_description": "Put the chocolate pudding to the right of the plate.",
+        "task_description": "Put the chocolate pudding to the right of the plate",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -1707,7 +1761,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.647600800730288
+        "elapsed_seconds": 12.647600800730288,
+        "capture_task_description": "Put the chocolate pudding to the right of the plate.",
+        "description_revision": {
+          "before": "Put the chocolate pudding to the right of the plate.",
+          "after": "Put the chocolate pudding to the right of the plate",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "56a8fa10820ad209a97535182dd2f5ee6b8017dd10a12b5e4fb031528cf823ef",
+          "current_task_meta_sha256": "a54b3a7921aeff230bb967b030d7e4d8a687db333002b7915b3dda753b0206a7"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_004/",
       "result": {
@@ -1721,8 +1786,15 @@
         "evaluation_instruction": "Put the chocolate pudding to the right of the plate."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_004.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the chocolate pudding to the right of the plate.",
+        "after": "Put the chocolate pudding to the right of the plate",
+        "legacy_task_id": "TDL10_004",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -1731,7 +1803,7 @@
       "category": "Decomposition",
       "category_order": 5,
       "order": 5,
-      "instruction": "Put the yellow and white mug in the microwave.",
+      "instruction": "Put the yellow and white mug in the microwave",
       "goal": "in(white_yellow_mug_1, microwave_1_heating_region)",
       "required": [
         "in(white_yellow_mug_1, microwave_1_heating_region)"
@@ -1780,7 +1852,7 @@
         "legacy_task_id": "TDL10_005",
         "category": "Decomposition",
         "order": 5,
-        "task_description": "Put the yellow and white mug in the microwave.",
+        "task_description": "Put the yellow and white mug in the microwave",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -2176,7 +2248,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 13.014600772410631
+        "elapsed_seconds": 13.014600772410631,
+        "capture_task_description": "Put the yellow and white mug in the microwave.",
+        "description_revision": {
+          "before": "Put the yellow and white mug in the microwave.",
+          "after": "Put the yellow and white mug in the microwave",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "ba38cd26e9f3b6a001505cc2e2fce4527f12763b262344a83e12504798c66f37",
+          "current_task_meta_sha256": "81ede5532ed2080613e1095b6995d20425b9e19dd3fa8d2d708ccdee5c1b3972"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_005/",
       "result": {
@@ -2190,8 +2273,15 @@
         "evaluation_instruction": "Put the yellow and white mug in the microwave."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_005.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the yellow and white mug in the microwave.",
+        "after": "Put the yellow and white mug in the microwave",
+        "legacy_task_id": "TDL10_005",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -2200,7 +2290,7 @@
       "category": "Decomposition",
       "category_order": 6,
       "order": 6,
-      "instruction": "Close the microwave.",
+      "instruction": "Close the microwave",
       "goal": "close(microwave_1)",
       "required": [
         "close(microwave_1)"
@@ -2248,7 +2338,7 @@
         "legacy_task_id": "TDL10_006",
         "category": "Decomposition",
         "order": 6,
-        "task_description": "Close the microwave.",
+        "task_description": "Close the microwave",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -2453,7 +2543,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 13.558715870603919
+        "elapsed_seconds": 13.558715870603919,
+        "capture_task_description": "Close the microwave.",
+        "description_revision": {
+          "before": "Close the microwave.",
+          "after": "Close the microwave",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "cb4261af691c1ae4483ea8d56b2a7bd7f1206ec59ca2d3b4914cd7b6f9e8aff9",
+          "current_task_meta_sha256": "8961828a4d7e306fff4b131afd57a965cf8e6362780106206f8c2536b9b781f7"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_006/",
       "result": {
@@ -2467,8 +2568,15 @@
         "evaluation_instruction": "Close the microwave."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_006.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Close the microwave.",
+        "after": "Close the microwave",
+        "legacy_task_id": "TDL10_006",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -2477,7 +2585,7 @@
       "category": "Decomposition",
       "category_order": 7,
       "order": 7,
-      "instruction": "Put the moka pot on the stove.",
+      "instruction": "Put the moka pot on the stove",
       "goal": "on(moka_pot_1, flat_stove_1_cook_region)",
       "required": [
         "on(moka_pot_1, flat_stove_1_cook_region)"
@@ -2526,7 +2634,7 @@
         "legacy_task_id": "TDL10_008",
         "category": "Decomposition",
         "order": 7,
-        "task_description": "Put the moka pot on the stove.",
+        "task_description": "Put the moka pot on the stove",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -2864,7 +2972,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.067953386344016
+        "elapsed_seconds": 11.067953386344016,
+        "capture_task_description": "Put the moka pot on the stove.",
+        "description_revision": {
+          "before": "Put the moka pot on the stove.",
+          "after": "Put the moka pot on the stove",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "08ae6d6c7af09d0940158a364440d967328a7cf69808ef88a64f8497837e54df",
+          "current_task_meta_sha256": "ad2e6e5675c33d53dc5ae6f01b29e854ef018edcfba9853a11ced7e3c781cdd6"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_007/",
       "result": {
@@ -2878,8 +2997,15 @@
         "evaluation_instruction": "Put the moka pot on the stove."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_008.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the moka pot on the stove.",
+        "after": "Put the moka pot on the stove",
+        "legacy_task_id": "TDL10_008",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -2888,7 +3014,7 @@
       "category": "Decomposition",
       "category_order": 8,
       "order": 8,
-      "instruction": "Put the alphabet soup in the basket.",
+      "instruction": "Put the alphabet soup in the basket",
       "goal": "in(alphabet_soup_1, basket_1_contain_region)",
       "required": [
         "in(alphabet_soup_1, basket_1_contain_region)"
@@ -2937,7 +3063,7 @@
         "legacy_task_id": "TDL10_009",
         "category": "Decomposition",
         "order": 8,
-        "task_description": "Put the alphabet soup in the basket.",
+        "task_description": "Put the alphabet soup in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -3292,7 +3418,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.379985989071429
+        "elapsed_seconds": 11.379985989071429,
+        "capture_task_description": "Put the alphabet soup in the basket.",
+        "description_revision": {
+          "before": "Put the alphabet soup in the basket.",
+          "after": "Put the alphabet soup in the basket",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "f1d0971c9da56a69d1600ff0dab74da9f4483412cdc25cb16742d0ea0f782e45",
+          "current_task_meta_sha256": "3fc3e5966cb7884dda5f82c14f55f0532d862fcdee2fc9d67a1e239c064a1d86"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_008/",
       "result": {
@@ -3306,8 +3443,15 @@
         "evaluation_instruction": "Put the alphabet soup in the basket."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_009.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the alphabet soup in the basket.",
+        "after": "Put the alphabet soup in the basket",
+        "legacy_task_id": "TDL10_009",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -3316,7 +3460,7 @@
       "category": "Decomposition",
       "category_order": 9,
       "order": 9,
-      "instruction": "Put the cream cheese box in the basket.",
+      "instruction": "Put the cream cheese box in the basket",
       "goal": "in(cream_cheese_1, basket_1_contain_region)",
       "required": [
         "in(cream_cheese_1, basket_1_contain_region)"
@@ -3365,7 +3509,7 @@
         "legacy_task_id": "TDL10_010",
         "category": "Decomposition",
         "order": 9,
-        "task_description": "Put the cream cheese box in the basket.",
+        "task_description": "Put the cream cheese box in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -3680,7 +3824,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.889885406009853
+        "elapsed_seconds": 11.889885406009853,
+        "capture_task_description": "Put the cream cheese box in the basket.",
+        "description_revision": {
+          "before": "Put the cream cheese box in the basket.",
+          "after": "Put the cream cheese box in the basket",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "0a3ffc0ee2734fc40ab90b02b0b2ba9a842bfc5225199248bb873fc0d862f282",
+          "current_task_meta_sha256": "013cf9e1b47f9fcc9acf416e6bc950d1758222dc44c4f3722bb31c4450065d43"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_009/",
       "result": {
@@ -3694,8 +3849,15 @@
         "evaluation_instruction": "Put the cream cheese box in the basket."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_010.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the cream cheese box in the basket.",
+        "after": "Put the cream cheese box in the basket",
+        "legacy_task_id": "TDL10_010",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -3704,7 +3866,7 @@
       "category": "Decomposition",
       "category_order": 10,
       "order": 10,
-      "instruction": "Put the alphabet soup in the basket.",
+      "instruction": "Put the alphabet soup in the basket",
       "goal": "in(alphabet_soup_1, basket_1_contain_region)",
       "required": [
         "in(alphabet_soup_1, basket_1_contain_region)"
@@ -3753,7 +3915,7 @@
         "legacy_task_id": "TDL10_011",
         "category": "Decomposition",
         "order": 10,
-        "task_description": "Put the alphabet soup in the basket.",
+        "task_description": "Put the alphabet soup in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -4108,7 +4270,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.600122299045324
+        "elapsed_seconds": 11.600122299045324,
+        "capture_task_description": "Put the alphabet soup in the basket.",
+        "description_revision": {
+          "before": "Put the alphabet soup in the basket.",
+          "after": "Put the alphabet soup in the basket",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "51e922102a2fc726ae73fef03c8df1f84a7fd5e10fcbff6390e7860633cc0ad4",
+          "current_task_meta_sha256": "effd67f2612d452114b3510a1c5cae17c797ab9c848f77e3bd530f02601e61ac"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_010/",
       "result": {
@@ -4122,8 +4295,15 @@
         "evaluation_instruction": "Put the alphabet soup in the basket."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_011.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the alphabet soup in the basket.",
+        "after": "Put the alphabet soup in the basket",
+        "legacy_task_id": "TDL10_011",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -4132,7 +4312,7 @@
       "category": "Decomposition",
       "category_order": 11,
       "order": 11,
-      "instruction": "Put the tomato sauce in the basket.",
+      "instruction": "Put the tomato sauce in the basket",
       "goal": "in(tomato_sauce_1, basket_1_contain_region)",
       "required": [
         "in(tomato_sauce_1, basket_1_contain_region)"
@@ -4181,7 +4361,7 @@
         "legacy_task_id": "TDL10_012",
         "category": "Decomposition",
         "order": 11,
-        "task_description": "Put the tomato sauce in the basket.",
+        "task_description": "Put the tomato sauce in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -4542,7 +4722,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.236714052967727
+        "elapsed_seconds": 12.236714052967727,
+        "capture_task_description": "Put the tomato sauce in the basket.",
+        "description_revision": {
+          "before": "Put the tomato sauce in the basket.",
+          "after": "Put the tomato sauce in the basket",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "f54fac285dfd86b492fc830b6785dcd83163a9820c2124ad02b428f92471d4e0",
+          "current_task_meta_sha256": "d5741fe7c5fed187eba3cd1b74647823cd421b7dffa243ed78df3e11ccd69345"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_011/",
       "result": {
@@ -4555,8 +4746,15 @@
         "evaluation_instruction": "Put the tomato sauce in the basket."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_012.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the tomato sauce in the basket.",
+        "after": "Put the tomato sauce in the basket",
+        "legacy_task_id": "TDL10_012",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -4565,7 +4763,7 @@
       "category": "Decomposition",
       "category_order": 12,
       "order": 12,
-      "instruction": "Put the cream cheese box in the basket.",
+      "instruction": "Put the cream cheese box in the basket",
       "goal": "in(cream_cheese_1, basket_1_contain_region)",
       "required": [
         "in(cream_cheese_1, basket_1_contain_region)"
@@ -4614,7 +4812,7 @@
         "legacy_task_id": "TDL10_013",
         "category": "Decomposition",
         "order": 12,
-        "task_description": "Put the cream cheese box in the basket.",
+        "task_description": "Put the cream cheese box in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -4929,7 +5127,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.650189084000885
+        "elapsed_seconds": 12.650189084000885,
+        "capture_task_description": "Put the cream cheese box in the basket.",
+        "description_revision": {
+          "before": "Put the cream cheese box in the basket.",
+          "after": "Put the cream cheese box in the basket",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "996a64b35d1b21be065ff46d5cd4da5ae13fb12dfc6747bc0f83cab645d2588c",
+          "current_task_meta_sha256": "b7c933c8f6c61d538e7596b0fd4c0c724b2293a5c28da14437db98aa1af86188"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_012/",
       "result": {
@@ -4943,8 +5152,15 @@
         "evaluation_instruction": "Put the cream cheese box in the basket."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_013.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the cream cheese box in the basket.",
+        "after": "Put the cream cheese box in the basket",
+        "legacy_task_id": "TDL10_013",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -4953,7 +5169,7 @@
       "category": "Decomposition",
       "category_order": 13,
       "order": 13,
-      "instruction": "Put the butter in the basket.",
+      "instruction": "Put the butter in the basket",
       "goal": "in(butter_1, basket_1_contain_region)",
       "required": [
         "in(butter_1, basket_1_contain_region)"
@@ -5002,7 +5218,7 @@
         "legacy_task_id": "TDL10_014",
         "category": "Decomposition",
         "order": 13,
-        "task_description": "Put the butter in the basket.",
+        "task_description": "Put the butter in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -5317,7 +5533,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.143129085190594
+        "elapsed_seconds": 11.143129085190594,
+        "capture_task_description": "Put the butter in the basket.",
+        "description_revision": {
+          "before": "Put the butter in the basket.",
+          "after": "Put the butter in the basket",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "85eb38783b55a18e6804e46eb73ea9aebb40a682944a62bbfaad309b179a7f36",
+          "current_task_meta_sha256": "2a967a00c511274a39d68a4f70c5a4dae12bdc773cff001a1ada2262b36ac35d"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_013/",
       "result": {
@@ -5331,8 +5558,15 @@
         "evaluation_instruction": "Put the butter in the basket."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_014.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the butter in the basket.",
+        "after": "Put the butter in the basket",
+        "legacy_task_id": "TDL10_014",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -5341,7 +5575,7 @@
       "category": "Decomposition",
       "category_order": 14,
       "order": 14,
-      "instruction": "Close the bottom drawer of the cabinet.",
+      "instruction": "Close the bottom drawer of the cabinet",
       "goal": "close(white_cabinet_1_bottom_region)",
       "required": [
         "close(white_cabinet_1_bottom_region)"
@@ -5389,7 +5623,7 @@
         "legacy_task_id": "TDL10_016",
         "category": "Decomposition",
         "order": 14,
-        "task_description": "Close the bottom drawer of the cabinet.",
+        "task_description": "Close the bottom drawer of the cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -5598,7 +5832,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.957878011278808
+        "elapsed_seconds": 12.957878011278808,
+        "capture_task_description": "Close the bottom drawer of the cabinet.",
+        "description_revision": {
+          "before": "Close the bottom drawer of the cabinet.",
+          "after": "Close the bottom drawer of the cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "e3dbeead55a5753328ced2215e5c9d146f9f7f8cba48a7c383214938b1cfc6b2",
+          "current_task_meta_sha256": "7e905ce5253fa329fe32900f137f40a3dff7859b7ff3b6f0cb1d52c436d4e82f"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_014/",
       "result": {
@@ -5612,8 +5857,15 @@
         "evaluation_instruction": "Close the bottom drawer of the cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDL10_016.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Close the bottom drawer of the cabinet.",
+        "after": "Close the bottom drawer of the cabinet",
+        "legacy_task_id": "TDL10_016",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -5622,7 +5874,7 @@
       "category": "Decomposition",
       "category_order": 15,
       "order": 15,
-      "instruction": "Turn on the stove.",
+      "instruction": "Turn on the stove",
       "goal": "turnon(flat_stove_1)",
       "required": [
         "turnon(flat_stove_1)"
@@ -5681,7 +5933,7 @@
         "legacy_task_id": "TDC40_001",
         "category": "Decomposition",
         "order": 15,
-        "task_description": "Turn on the stove.",
+        "task_description": "Turn on the stove",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -5870,7 +6122,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 9.517002958804369
+        "elapsed_seconds": 9.517002958804369,
+        "capture_task_description": "Turn on the stove.",
+        "description_revision": {
+          "before": "Turn on the stove.",
+          "after": "Turn on the stove",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "981b6fc0d32aca5fefdef1739a674812baad4b64a92597ff736aac00ea18c1de",
+          "current_task_meta_sha256": "2e62ade08981a488c5597e25e0940e718188ef68e22d5aead5d935de2ae3529d"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_015/",
       "result": {
@@ -5883,8 +6146,15 @@
         "evaluation_instruction": "Turn on the stove."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDC40_001.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Turn on the stove.",
+        "after": "Turn on the stove",
+        "legacy_task_id": "TDC40_001",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -5893,7 +6163,7 @@
       "category": "Decomposition",
       "category_order": 16,
       "order": 16,
-      "instruction": "Put the black bowl in the bottom drawer of the cabinet.",
+      "instruction": "Put the black bowl in the bottom drawer of the cabinet",
       "goal": "in(akita_black_bowl_1, white_cabinet_1_bottom_region)",
       "required": [
         "in(akita_black_bowl_1, white_cabinet_1_bottom_region)"
@@ -5961,7 +6231,7 @@
         "legacy_task_id": "TDC40_002",
         "category": "Decomposition",
         "order": 16,
-        "task_description": "Put the black bowl in the bottom drawer of the cabinet.",
+        "task_description": "Put the black bowl in the bottom drawer of the cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -6363,7 +6633,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.101230439729989
+        "elapsed_seconds": 11.101230439729989,
+        "capture_task_description": "Put the black bowl in the bottom drawer of the cabinet.",
+        "description_revision": {
+          "before": "Put the black bowl in the bottom drawer of the cabinet.",
+          "after": "Put the black bowl in the bottom drawer of the cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "b773e6da32a2b840d7a4186681ee3606f09f154934f7dee0b8f95c8ee04ea828",
+          "current_task_meta_sha256": "e795ddd4fd4ac1b0402cd58dac84e07cb964138fa0da1c080b7e5c2da1ba7b05"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_016/",
       "result": {
@@ -6376,8 +6657,15 @@
         "evaluation_instruction": "Put the black bowl in the bottom drawer of the cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDC40_002.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the black bowl in the bottom drawer of the cabinet.",
+        "after": "Put the black bowl in the bottom drawer of the cabinet",
+        "legacy_task_id": "TDC40_002",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -6386,7 +6674,7 @@
       "category": "Decomposition",
       "category_order": 17,
       "order": 17,
-      "instruction": "Put the left moka pot on the stove.",
+      "instruction": "Put the left moka pot on the stove",
       "goal": "on(moka_pot_2, flat_stove_1_cook_region)",
       "required": [
         "on(moka_pot_2, flat_stove_1_cook_region)"
@@ -6454,7 +6742,7 @@
         "legacy_task_id": "TDC40_003",
         "category": "Decomposition",
         "order": 17,
-        "task_description": "Put the left moka pot on the stove.",
+        "task_description": "Put the left moka pot on the stove",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -6793,7 +7081,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 9.0286910450086
+        "elapsed_seconds": 9.0286910450086,
+        "capture_task_description": "Put the left moka pot on the stove.",
+        "description_revision": {
+          "before": "Put the left moka pot on the stove.",
+          "after": "Put the left moka pot on the stove",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "caf455d98a73990ba4ee0d7dd91fc5bb6fc214abade4f977b76732ef891dc7ae",
+          "current_task_meta_sha256": "f8f66948852d62ad962b97941f92bce61c870b82bf1c021c9a921df2c70ce42a"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_017/",
       "result": {
@@ -6807,8 +7106,15 @@
         "evaluation_instruction": "Put the left moka pot on the stove."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDC40_003.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the left moka pot on the stove.",
+        "after": "Put the left moka pot on the stove",
+        "legacy_task_id": "TDC40_003",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -6817,7 +7123,7 @@
       "category": "Decomposition",
       "category_order": 18,
       "order": 18,
-      "instruction": "Put the right moka pot on the stove.",
+      "instruction": "Put the right moka pot on the stove",
       "goal": "on(moka_pot_1, flat_stove_1_cook_region)",
       "required": [
         "on(moka_pot_1, flat_stove_1_cook_region)"
@@ -6885,7 +7191,7 @@
         "legacy_task_id": "TDC40_004",
         "category": "Decomposition",
         "order": 18,
-        "task_description": "Put the right moka pot on the stove.",
+        "task_description": "Put the right moka pot on the stove",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -7224,7 +7530,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 9.415638701058924
+        "elapsed_seconds": 9.415638701058924,
+        "capture_task_description": "Put the right moka pot on the stove.",
+        "description_revision": {
+          "before": "Put the right moka pot on the stove.",
+          "after": "Put the right moka pot on the stove",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "8c1d219c2c94fce6ec0026d4733116453c37adb4c9e8cf24ea39500e76b4b4b5",
+          "current_task_meta_sha256": "89c381aede7d424e9d4d9800ccf3968c5ce114cb7ad8193e458279d0b3314e02"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_018/",
       "result": {
@@ -7238,8 +7555,15 @@
         "evaluation_instruction": "Put the right moka pot on the stove."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDC40_004.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the right moka pot on the stove.",
+        "after": "Put the right moka pot on the stove",
+        "legacy_task_id": "TDC40_004",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -7248,7 +7572,7 @@
       "category": "Decomposition",
       "category_order": 19,
       "order": 19,
-      "instruction": "Open the top drawer of the cabinet.",
+      "instruction": "Open the top drawer of the cabinet",
       "goal": "open(wooden_cabinet_1_top_region)",
       "required": [
         "open(wooden_cabinet_1_top_region)"
@@ -7307,7 +7631,7 @@
         "legacy_task_id": "TDC40_005",
         "category": "Decomposition",
         "order": 19,
-        "task_description": "Open the top drawer of the cabinet.",
+        "task_description": "Open the top drawer of the cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -7516,7 +7840,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 10.764023375697434
+        "elapsed_seconds": 10.764023375697434,
+        "capture_task_description": "Open the top drawer of the cabinet.",
+        "description_revision": {
+          "before": "Open the top drawer of the cabinet.",
+          "after": "Open the top drawer of the cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "8dc8e61def6220fbcf4348c8ff4541344708cb36438397a8f2be12eb28bf3c50",
+          "current_task_meta_sha256": "b983a59b4cd83e5f4c24dffbfe043f455028abd9f93c45f8c36d470afef74add"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_019/",
       "result": {
@@ -7530,8 +7865,15 @@
         "evaluation_instruction": "Open the top drawer of the cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDC40_005.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Open the top drawer of the cabinet.",
+        "after": "Open the top drawer of the cabinet",
+        "legacy_task_id": "TDC40_005",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -7540,7 +7882,7 @@
       "category": "Decomposition",
       "category_order": 20,
       "order": 20,
-      "instruction": "Put the black bowl inside the top drawer of the cabinet.",
+      "instruction": "Put the black bowl inside the top drawer of the cabinet",
       "goal": "in(akita_black_bowl_1, wooden_cabinet_1_top_region)",
       "required": [
         "in(akita_black_bowl_1, wooden_cabinet_1_top_region)"
@@ -7608,7 +7950,7 @@
         "legacy_task_id": "TDC40_006",
         "category": "Decomposition",
         "order": 20,
-        "task_description": "Put the black bowl inside the top drawer of the cabinet.",
+        "task_description": "Put the black bowl inside the top drawer of the cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -8010,7 +8352,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 14.15600364934653
+        "elapsed_seconds": 14.15600364934653,
+        "capture_task_description": "Put the black bowl inside the top drawer of the cabinet.",
+        "description_revision": {
+          "before": "Put the black bowl inside the top drawer of the cabinet.",
+          "after": "Put the black bowl inside the top drawer of the cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "af898ce6e665add34bd9edff43ae8b047cfd7b9c852d19aada818c0a7393774f",
+          "current_task_meta_sha256": "0714896286fea68f81ce4a426ed8bd0f79cd13e7db073c22ec7948dd380dd9b2"
+        }
       },
       "scene_base": "scenes/Decomposition/Decomposition_020/",
       "result": {
@@ -8024,8 +8377,15 @@
         "evaluation_instruction": "Put the black bowl inside the top drawer of the cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/TDC40_006.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the black bowl inside the top drawer of the cabinet.",
+        "after": "Put the black bowl inside the top drawer of the cabinet",
+        "legacy_task_id": "TDC40_006",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -8034,7 +8394,7 @@
       "category": "Adapt",
       "category_order": 1,
       "order": 21,
-      "instruction": "Put the white mug on the middle plate.",
+      "instruction": "Put the white mug on the middle plate",
       "goal": "on(porcelain_mug_1, plate_3)",
       "required": [
         "on(porcelain_mug_1, plate_3)"
@@ -8098,7 +8458,7 @@
         "legacy_task_id": "ANLGX_002",
         "category": "Adapt",
         "order": 21,
-        "task_description": "Put the white mug on the middle plate.",
+        "task_description": "Put the white mug on the middle plate",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -8459,7 +8819,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 13.278520761989057
+        "elapsed_seconds": 13.278520761989057,
+        "capture_task_description": "Put the white mug on the middle plate.",
+        "description_revision": {
+          "before": "Put the white mug on the middle plate.",
+          "after": "Put the white mug on the middle plate",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "59807c6cdb70edb7d0741c953f1e141127435efe284d2c08a9d701388313a592",
+          "current_task_meta_sha256": "92d634433009b83b2bc49ed2b70bc91ec2298a08fa080152bbfaf6f149e0cdcb"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_001/",
       "result": {
@@ -8473,8 +8844,15 @@
         "evaluation_instruction": "Put the white mug on the middle plate."
       },
       "historical_comparison": "../selected29/assets/comparison_png/ANLGX_002.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the white mug on the middle plate.",
+        "after": "Put the white mug on the middle plate",
+        "legacy_task_id": "ANLGX_002",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -8483,7 +8861,7 @@
       "category": "Adapt",
       "category_order": 2,
       "order": 22,
-      "instruction": "Put the white mug on the right plate.",
+      "instruction": "Put the white mug on the right plate",
       "goal": "on(porcelain_mug_1, plate_2)",
       "required": [
         "on(porcelain_mug_1, plate_2)"
@@ -8547,7 +8925,7 @@
         "legacy_task_id": "ANLGX_003",
         "category": "Adapt",
         "order": 22,
-        "task_description": "Put the white mug on the right plate.",
+        "task_description": "Put the white mug on the right plate",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -8908,7 +9286,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.948935950174928
+        "elapsed_seconds": 12.948935950174928,
+        "capture_task_description": "Put the white mug on the right plate.",
+        "description_revision": {
+          "before": "Put the white mug on the right plate.",
+          "after": "Put the white mug on the right plate",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "1cd16305f05792725054a0879051ac21459c88152e12f2203991722add4d930a",
+          "current_task_meta_sha256": "81dc2bf5ba7c1ec12f83e629790599082dc73307e6e30a4e36d2426475ff0868"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_002/",
       "result": {
@@ -8922,8 +9311,15 @@
         "evaluation_instruction": "Put the white mug on the right plate."
       },
       "historical_comparison": "../selected29/assets/comparison_png/ANLGX_003.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the white mug on the right plate.",
+        "after": "Put the white mug on the right plate",
+        "legacy_task_id": "ANLGX_003",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -8932,7 +9328,7 @@
       "category": "Adapt",
       "category_order": 3,
       "order": 23,
-      "instruction": "Put the black bowl in the middle drawer of the white cabinet.",
+      "instruction": "Put the black bowl in the middle drawer of the white cabinet",
       "goal": "in(akita_black_bowl_1, white_cabinet_1_middle_region)",
       "required": [
         "in(akita_black_bowl_1, white_cabinet_1_middle_region)"
@@ -8996,7 +9392,7 @@
         "legacy_task_id": "ANLGX_017",
         "category": "Adapt",
         "order": 23,
-        "task_description": "Put the black bowl in the middle drawer of the white cabinet.",
+        "task_description": "Put the black bowl in the middle drawer of the white cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -9393,7 +9789,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.565761933103204
+        "elapsed_seconds": 11.565761933103204,
+        "capture_task_description": "Put the black bowl in the middle drawer of the white cabinet.",
+        "description_revision": {
+          "before": "Put the black bowl in the middle drawer of the white cabinet.",
+          "after": "Put the black bowl in the middle drawer of the white cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "a5070d07212648c60b2f8deebc06161ce0198994f42996a51995c56e1cf9bfb8",
+          "current_task_meta_sha256": "e8f6a7b7edb618c61f9328c50e6a53c6be1036ac50f1e761dfd234718d27fe94"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_003/",
       "result": {
@@ -9406,8 +9813,15 @@
         "evaluation_instruction": "Put the black bowl in the middle drawer of the white cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/ANLGX_017.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the black bowl in the middle drawer of the white cabinet.",
+        "after": "Put the black bowl in the middle drawer of the white cabinet",
+        "legacy_task_id": "ANLGX_017",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -9416,7 +9830,7 @@
       "category": "Adapt",
       "category_order": 4,
       "order": 24,
-      "instruction": "Close the top drawer of the white cabinet.",
+      "instruction": "Close the top drawer of the white cabinet",
       "goal": "close(white_cabinet_1_top_region)",
       "required": [
         "close(white_cabinet_1_top_region)"
@@ -9472,7 +9886,7 @@
         "legacy_task_id": "ANLGX_022",
         "category": "Adapt",
         "order": 24,
-        "task_description": "Close the top drawer of the white cabinet.",
+        "task_description": "Close the top drawer of the white cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -9675,7 +10089,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.539291210472584
+        "elapsed_seconds": 11.539291210472584,
+        "capture_task_description": "Close the top drawer of the white cabinet.",
+        "description_revision": {
+          "before": "Close the top drawer of the white cabinet.",
+          "after": "Close the top drawer of the white cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "8ec34e3c0e98befe41d441e420148dc3ced93e36acdf4de2c5b0974ce8ea9213",
+          "current_task_meta_sha256": "804b84f40f7d629d9a0800fc6029d5bfcbd0d2fe6e6dbafb68b8e22680442ef9"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_004/",
       "result": {
@@ -9689,8 +10114,15 @@
         "evaluation_instruction": "Close the top drawer of the white cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/ANLGX_022.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Close the top drawer of the white cabinet.",
+        "after": "Close the top drawer of the white cabinet",
+        "legacy_task_id": "ANLGX_022",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -9699,7 +10131,7 @@
       "category": "Adapt",
       "category_order": 5,
       "order": 25,
-      "instruction": "Close the middle drawer of the white cabinet.",
+      "instruction": "Close the middle drawer of the white cabinet",
       "goal": "close(white_cabinet_1_middle_region)",
       "required": [
         "close(white_cabinet_1_middle_region)",
@@ -9766,7 +10198,7 @@
         "legacy_task_id": "ANLGX_023",
         "category": "Adapt",
         "order": 25,
-        "task_description": "Close the middle drawer of the white cabinet.",
+        "task_description": "Close the middle drawer of the white cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -9998,7 +10430,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.963294402696192
+        "elapsed_seconds": 12.963294402696192,
+        "capture_task_description": "Close the middle drawer of the white cabinet.",
+        "description_revision": {
+          "before": "Close the middle drawer of the white cabinet.",
+          "after": "Close the middle drawer of the white cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "e5331c324700f73ab628a84294d7430e305400df09fcb98311b4c99d40f617c9",
+          "current_task_meta_sha256": "983f6db4d35de84d6e961ea2d2b929ae5e6b7aa1e1fc32c3deb9ba95cb95d150"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_005/",
       "result": {
@@ -10012,8 +10455,15 @@
         "evaluation_instruction": "Close the middle drawer of the white cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/ANLGX_023.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Close the middle drawer of the white cabinet.",
+        "after": "Close the middle drawer of the white cabinet",
+        "legacy_task_id": "ANLGX_023",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -10022,7 +10472,7 @@
       "category": "Adapt",
       "category_order": 6,
       "order": 26,
-      "instruction": "Pick up the wine bottle at the table center and place it on the plate.",
+      "instruction": "Pick up the wine bottle at the table center and place it on the plate",
       "goal": "on(wine_bottle_1, plate_1)",
       "required": [
         "on(wine_bottle_1, plate_1)"
@@ -10086,7 +10536,7 @@
         "legacy_task_id": "ANLGX_089",
         "category": "Adapt",
         "order": 26,
-        "task_description": "Pick up the wine bottle at the table center and place it on the plate.",
+        "task_description": "Pick up the wine bottle at the table center and place it on the plate",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -10449,7 +10899,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.319513981230557
+        "elapsed_seconds": 12.319513981230557,
+        "capture_task_description": "Pick up the wine bottle at the table center and place it on the plate.",
+        "description_revision": {
+          "before": "Pick up the wine bottle at the table center and place it on the plate.",
+          "after": "Pick up the wine bottle at the table center and place it on the plate",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "75a417bde50aac84e0bbff58269e272978e68b8d27f47285caa2c1664f0ae338",
+          "current_task_meta_sha256": "0c3c18403dbb44e6b52776f88b07bd7035a6af211cebbcd236bccd85c55728d2"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_006/",
       "result": {
@@ -10463,8 +10924,15 @@
         "evaluation_instruction": "Pick up the wine bottle at the table center and place it on the plate."
       },
       "historical_comparison": "../selected29/assets/comparison_png/ANLGX_089.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Pick up the wine bottle at the table center and place it on the plate.",
+        "after": "Pick up the wine bottle at the table center and place it on the plate",
+        "legacy_task_id": "ANLGX_089",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -10473,7 +10941,7 @@
       "category": "Adapt",
       "category_order": 7,
       "order": 27,
-      "instruction": "Put the plate on the top of the wooden cabinet.",
+      "instruction": "Put the plate on the top of the wooden cabinet",
       "goal": "on(plate_1, wooden_cabinet_1_top_side)",
       "required": [
         "on(plate_1, wooden_cabinet_1_top_side)"
@@ -10537,7 +11005,7 @@
         "legacy_task_id": "ANLGX_134",
         "category": "Adapt",
         "order": 27,
-        "task_description": "Put the plate on the top of the wooden cabinet.",
+        "task_description": "Put the plate on the top of the wooden cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -10938,7 +11406,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.473823108710349
+        "elapsed_seconds": 11.473823108710349,
+        "capture_task_description": "Put the plate on the top of the wooden cabinet.",
+        "description_revision": {
+          "before": "Put the plate on the top of the wooden cabinet.",
+          "after": "Put the plate on the top of the wooden cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "695acf0fc388a0d0a1a16f8a6ed0a9383d652b4dd1181840b22d5fb9ffc87ddf",
+          "current_task_meta_sha256": "01daeb891684f191419bf84ecf5a1dcc0f34d99436eaab9c0a8108fd623e4be3"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_007/",
       "result": {
@@ -10952,8 +11431,15 @@
         "evaluation_instruction": "Put the plate on the top of the wooden cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/ANLGX_134.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the plate on the top of the wooden cabinet.",
+        "after": "Put the plate on the top of the wooden cabinet",
+        "legacy_task_id": "ANLGX_134",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -10962,7 +11448,7 @@
       "category": "Adapt",
       "category_order": 8,
       "order": 28,
-      "instruction": "Put the cream cheese in the top drawer of the wooden cabinet.",
+      "instruction": "Put the cream cheese in the top drawer of the wooden cabinet",
       "goal": "in(cream_cheese_1, wooden_cabinet_1_top_region)",
       "required": [
         "in(cream_cheese_1, wooden_cabinet_1_top_region)"
@@ -11026,7 +11512,7 @@
         "legacy_task_id": "ANLGX_147",
         "category": "Adapt",
         "order": 28,
-        "task_description": "Put the cream cheese in the top drawer of the wooden cabinet.",
+        "task_description": "Put the cream cheese in the top drawer of the wooden cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -11345,7 +11831,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.372659226879478
+        "elapsed_seconds": 11.372659226879478,
+        "capture_task_description": "Put the cream cheese in the top drawer of the wooden cabinet.",
+        "description_revision": {
+          "before": "Put the cream cheese in the top drawer of the wooden cabinet.",
+          "after": "Put the cream cheese in the top drawer of the wooden cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "e49d68408d8084e0aa3bd7ba971e640673a39b8b3b59dbaf1a02281ae9059328",
+          "current_task_meta_sha256": "d50563d95b63cb70031ef0a3ff14532206d89a3f7b56c6f45f797e5f36f2604a"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_008/",
       "result": {
@@ -11359,8 +11856,15 @@
         "evaluation_instruction": "Put the cream cheese in the top drawer of the wooden cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/ANLGX_147.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the cream cheese in the top drawer of the wooden cabinet.",
+        "after": "Put the cream cheese in the top drawer of the wooden cabinet",
+        "legacy_task_id": "ANLGX_147",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -11369,7 +11873,7 @@
       "category": "Adapt",
       "category_order": 9,
       "order": 29,
-      "instruction": "Put the yellow and white mug in the left compartment of the caddy.",
+      "instruction": "Put the yellow and white mug in the right compartment of the caddy",
       "goal": "in(white_yellow_mug_1, desk_caddy_1_left_contain_region)",
       "required": [
         "in(white_yellow_mug_1, desk_caddy_1_left_contain_region)"
@@ -11433,7 +11937,7 @@
         "legacy_task_id": "ANLGX_178",
         "category": "Adapt",
         "order": 29,
-        "task_description": "Put the yellow and white mug in the left compartment of the caddy.",
+        "task_description": "Put the yellow and white mug in the right compartment of the caddy",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -11842,7 +12346,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.946540922857821
+        "elapsed_seconds": 11.946540922857821,
+        "capture_task_description": "Put the yellow and white mug in the left compartment of the caddy.",
+        "description_revision": {
+          "before": "Put the yellow and white mug in the left compartment of the caddy.",
+          "after": "Put the yellow and white mug in the right compartment of the caddy",
+          "matches_original_capture_instruction": false,
+          "kind": "robot_base_direction_and_remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "63f7b58651309ec64f718c3e7da93764bfe1ca74d542b896dfb010fe0bc43e02",
+          "current_task_meta_sha256": "e5f0f3314a3ff520420b8a814679aaed40c678731e5c8df38ff0b191a4a49693"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_009/",
       "result": {
@@ -11856,9 +12371,16 @@
         "evaluation_instruction": "Put the yellow and white mug in the left compartment of the caddy."
       },
       "historical_comparison": "../selected29/assets/comparison_png/ANLGX_178.png",
-      "description_revision": null,
-      "direction_note": "",
-      "historical_comparison_label": "과거 비교 이미지"
+      "description_revision": {
+        "before": "Put the yellow and white mug in the left compartment of the caddy.",
+        "after": "Put the yellow and white mug in the right compartment of the caddy",
+        "legacy_task_id": "ANLGX_178",
+        "kind": "robot_base_direction_and_remove_period"
+      },
+      "direction_note": "현재 지시문의 right compartment는 로봇 베이스 기준 오른쪽 칸입니다. Caddy가 180° 회전되어 있어 원본 구획 ID는 left_contain_region입니다. 기존 평가 mask는 caddy 전체를 표시하며, 오른쪽 칸만 분리한 mask는 아닙니다.",
+      "direction_comparison": "COMPARTMENT_FRAMES.png",
+      "direction_comparison_label": "로봇 기준과 원본 구획 방향 비교",
+      "historical_comparison_label": "과거 비교 이미지 (변경 전 지시문 · 원본 구획명)"
     },
     {
       "task_id": "Adapt_010",
@@ -11866,7 +12388,7 @@
       "category": "Adapt",
       "category_order": 10,
       "order": 30,
-      "instruction": "Pick the alphabet soup and place it in the basket.",
+      "instruction": "Pick the alphabet soup and place it in the basket",
       "goal": "in(alphabet_soup_1, basket_1_contain_region)",
       "required": [
         "in(alphabet_soup_1, basket_1_contain_region)"
@@ -11914,7 +12436,7 @@
         "legacy_task_id": "OGTS_001",
         "category": "Adapt",
         "order": 30,
-        "task_description": "Pick the alphabet soup and place it in the basket.",
+        "task_description": "Pick the alphabet soup and place it in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -12267,13 +12789,25 @@
         "capture_task_description": "Pick the alphabet soup and place it in the basket",
         "description_revision": {
           "before": "Pick the alphabet soup and place it in the basket",
-          "after": "Pick the alphabet soup and place it in the basket.",
-          "kind": "terminal_period",
+          "after": "Pick the alphabet soup and place it in the basket",
+          "matches_original_capture_instruction": true,
+          "kind": "remove_period",
           "image_and_mask_pixels_unchanged": true,
           "physical_definition_unchanged": true,
-          "current_bddl_sha256": "ca6795e0bd402d59a6f3ddaa91a236d290505c887a4918da80abb92b55d33905",
-          "current_task_meta_sha256": "d161a0293d33ec67ac6a3e7ae1c433751f639204fde31c2a19ea6de6c55e4484"
-        }
+          "current_bddl_sha256": "6e807fa91f2b99b535785c4fbeea7fff9c466664af56aa6393ec47da60d76047",
+          "current_task_meta_sha256": "1c2938d5bc5539ff45abba1927fe88f9af660fe94e614c9bc64e480a66a348f5"
+        },
+        "description_revision_history": [
+          {
+            "before": "Pick the alphabet soup and place it in the basket",
+            "after": "Pick the alphabet soup and place it in the basket.",
+            "kind": "terminal_period",
+            "image_and_mask_pixels_unchanged": true,
+            "physical_definition_unchanged": true,
+            "current_bddl_sha256": "ca6795e0bd402d59a6f3ddaa91a236d290505c887a4918da80abb92b55d33905",
+            "current_task_meta_sha256": "d161a0293d33ec67ac6a3e7ae1c433751f639204fde31c2a19ea6de6c55e4484"
+          }
+        ]
       },
       "scene_base": "scenes/Adapt/Adapt_010/",
       "result": {
@@ -12287,13 +12821,10 @@
         "evaluation_instruction": "Pick the alphabet soup and place it in the basket"
       },
       "historical_comparison": "../selected29/assets/comparison_png/OGTS_001.png",
-      "description_revision": {
-        "before": "Pick the alphabet soup and place it in the basket",
-        "after": "Pick the alphabet soup and place it in the basket.",
-        "kind": "terminal_period",
-        "legacy_task_id": "OGTS_001"
-      },
+      "description_revision": null,
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -12302,7 +12833,7 @@
       "category": "Adapt",
       "category_order": 11,
       "order": 31,
-      "instruction": "Pick the orange juice and place it in the basket.",
+      "instruction": "Pick the orange juice and place it in the basket",
       "goal": "in(orange_juice_1, basket_1_contain_region)",
       "required": [
         "in(orange_juice_1, basket_1_contain_region)"
@@ -12350,7 +12881,7 @@
         "legacy_task_id": "OGTS_010",
         "category": "Adapt",
         "order": 31,
-        "task_description": "Pick the orange juice and place it in the basket.",
+        "task_description": "Pick the orange juice and place it in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -12669,13 +13200,25 @@
         "capture_task_description": "Pick the orange juice and place it in the basket",
         "description_revision": {
           "before": "Pick the orange juice and place it in the basket",
-          "after": "Pick the orange juice and place it in the basket.",
-          "kind": "terminal_period",
+          "after": "Pick the orange juice and place it in the basket",
+          "matches_original_capture_instruction": true,
+          "kind": "remove_period",
           "image_and_mask_pixels_unchanged": true,
           "physical_definition_unchanged": true,
-          "current_bddl_sha256": "00fddb7a65c2b74b51ea0ed6359aef15aa29c6094bb746c61d32a81f83a8ca5e",
-          "current_task_meta_sha256": "509bc65a1a513258374ba6f825972a071d6f6b83fee7e9e4b5d3a59a2c8626da"
-        }
+          "current_bddl_sha256": "67711dc82158f5decdbe05f05e8c8739e73498353286a55fda790a8a8be48cd2",
+          "current_task_meta_sha256": "3a75030e9615688f03806aa240799ee2275d2592580c7553ffadf286770675e5"
+        },
+        "description_revision_history": [
+          {
+            "before": "Pick the orange juice and place it in the basket",
+            "after": "Pick the orange juice and place it in the basket.",
+            "kind": "terminal_period",
+            "image_and_mask_pixels_unchanged": true,
+            "physical_definition_unchanged": true,
+            "current_bddl_sha256": "00fddb7a65c2b74b51ea0ed6359aef15aa29c6094bb746c61d32a81f83a8ca5e",
+            "current_task_meta_sha256": "509bc65a1a513258374ba6f825972a071d6f6b83fee7e9e4b5d3a59a2c8626da"
+          }
+        ]
       },
       "scene_base": "scenes/Adapt/Adapt_011/",
       "result": {
@@ -12689,13 +13232,10 @@
         "evaluation_instruction": "Pick the orange juice and place it in the basket"
       },
       "historical_comparison": "../selected29/assets/comparison_png/OGTS_010.png",
-      "description_revision": {
-        "before": "Pick the orange juice and place it in the basket",
-        "after": "Pick the orange juice and place it in the basket.",
-        "kind": "terminal_period",
-        "legacy_task_id": "OGTS_010"
-      },
+      "description_revision": null,
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -12704,7 +13244,7 @@
       "category": "Adapt",
       "category_order": 12,
       "order": 32,
-      "instruction": "Pick the tomato sauce and place it in the basket.",
+      "instruction": "Pick the tomato sauce and place it in the basket",
       "goal": "in(tomato_sauce_1, basket_1_contain_region)",
       "required": [
         "in(tomato_sauce_1, basket_1_contain_region)"
@@ -12752,7 +13292,7 @@
         "legacy_task_id": "OGDTSL_011",
         "category": "Adapt",
         "order": 32,
-        "task_description": "Pick the tomato sauce and place it in the basket.",
+        "task_description": "Pick the tomato sauce and place it in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -13111,13 +13651,25 @@
         "capture_task_description": "Pick the tomato sauce and place it in the basket",
         "description_revision": {
           "before": "Pick the tomato sauce and place it in the basket",
-          "after": "Pick the tomato sauce and place it in the basket.",
-          "kind": "terminal_period",
+          "after": "Pick the tomato sauce and place it in the basket",
+          "matches_original_capture_instruction": true,
+          "kind": "remove_period",
           "image_and_mask_pixels_unchanged": true,
           "physical_definition_unchanged": true,
-          "current_bddl_sha256": "eac88c9b2616c19080c13349868f40a170d0ffb07594db4570345f9bf20318b7",
-          "current_task_meta_sha256": "2f807b041b8847af5d0e2e6aaa16b00e2b89a73d30ac95929eec652cd6eccd41"
-        }
+          "current_bddl_sha256": "ef43ecc00cf5c3e3e9a830478c8e4809ee85e184cec19642c7db0b7438c937f9",
+          "current_task_meta_sha256": "c66a066c2891c61eb58b4e654530b5334f164de1881c83934f3f76087a8389d1"
+        },
+        "description_revision_history": [
+          {
+            "before": "Pick the tomato sauce and place it in the basket",
+            "after": "Pick the tomato sauce and place it in the basket.",
+            "kind": "terminal_period",
+            "image_and_mask_pixels_unchanged": true,
+            "physical_definition_unchanged": true,
+            "current_bddl_sha256": "eac88c9b2616c19080c13349868f40a170d0ffb07594db4570345f9bf20318b7",
+            "current_task_meta_sha256": "2f807b041b8847af5d0e2e6aaa16b00e2b89a73d30ac95929eec652cd6eccd41"
+          }
+        ]
       },
       "scene_base": "scenes/Adapt/Adapt_012/",
       "result": {
@@ -13131,13 +13683,10 @@
         "evaluation_instruction": "Pick the tomato sauce and place it in the basket"
       },
       "historical_comparison": "../selected29/assets/comparison_png/OGDTSL_011.png",
-      "description_revision": {
-        "before": "Pick the tomato sauce and place it in the basket",
-        "after": "Pick the tomato sauce and place it in the basket.",
-        "kind": "terminal_period",
-        "legacy_task_id": "OGDTSL_011"
-      },
+      "description_revision": null,
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -13146,7 +13695,7 @@
       "category": "Adapt",
       "category_order": 13,
       "order": 33,
-      "instruction": "Pick the milk and place it in the basket.",
+      "instruction": "Pick the milk and place it in the basket",
       "goal": "in(milk_1, basket_1_contain_region)",
       "required": [
         "in(milk_1, basket_1_contain_region)"
@@ -13194,7 +13743,7 @@
         "legacy_task_id": "OGDTSL_046",
         "category": "Adapt",
         "order": 33,
-        "task_description": "Pick the milk and place it in the basket.",
+        "task_description": "Pick the milk and place it in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -13513,13 +14062,25 @@
         "capture_task_description": "Pick the milk and place it in the basket",
         "description_revision": {
           "before": "Pick the milk and place it in the basket",
-          "after": "Pick the milk and place it in the basket.",
-          "kind": "terminal_period",
+          "after": "Pick the milk and place it in the basket",
+          "matches_original_capture_instruction": true,
+          "kind": "remove_period",
           "image_and_mask_pixels_unchanged": true,
           "physical_definition_unchanged": true,
-          "current_bddl_sha256": "d747f3d669ea5778fd9cafa5e2fcf8f4ad6ff286c9b78b4da44366a74012532e",
-          "current_task_meta_sha256": "2a4fe77ff9bb759d79a654c19745579f9c7e6f8e147fcd6c6f840a90d0bfb532"
-        }
+          "current_bddl_sha256": "0350fb9d9c5be992a3959b9535a0fee4bb93feb9859321e1d3cd9227fe51df12",
+          "current_task_meta_sha256": "33f45fa57b13fe513a53bc7ffd87c0e18f48f89e28bfbf268aeb067923d5af5d"
+        },
+        "description_revision_history": [
+          {
+            "before": "Pick the milk and place it in the basket",
+            "after": "Pick the milk and place it in the basket.",
+            "kind": "terminal_period",
+            "image_and_mask_pixels_unchanged": true,
+            "physical_definition_unchanged": true,
+            "current_bddl_sha256": "d747f3d669ea5778fd9cafa5e2fcf8f4ad6ff286c9b78b4da44366a74012532e",
+            "current_task_meta_sha256": "2a4fe77ff9bb759d79a654c19745579f9c7e6f8e147fcd6c6f840a90d0bfb532"
+          }
+        ]
       },
       "scene_base": "scenes/Adapt/Adapt_013/",
       "result": {
@@ -13533,13 +14094,10 @@
         "evaluation_instruction": "Pick the milk and place it in the basket"
       },
       "historical_comparison": "../selected29/assets/comparison_png/OGDTSL_046.png",
-      "description_revision": {
-        "before": "Pick the milk and place it in the basket",
-        "after": "Pick the milk and place it in the basket.",
-        "kind": "terminal_period",
-        "legacy_task_id": "OGDTSL_046"
-      },
+      "description_revision": null,
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -13548,7 +14106,7 @@
       "category": "Adapt",
       "category_order": 14,
       "order": 47,
-      "instruction": "Put the popcorn on top of the short fridge.",
+      "instruction": "Put the popcorn on top of the short fridge",
       "goal": "on(popcorn_1, short_fridge_1_feedback_top_region)",
       "required": [
         "on(popcorn_1, short_fridge_1_feedback_top_region)"
@@ -13612,7 +14170,7 @@
         "legacy_task_id": "NAFR3_001",
         "category": "Adapt",
         "order": 47,
-        "task_description": "Put the popcorn on top of the short fridge.",
+        "task_description": "Put the popcorn on top of the short fridge",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -13903,7 +14461,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 9.906009622849524
+        "elapsed_seconds": 9.906009622849524,
+        "capture_task_description": "Put the popcorn on top of the short fridge.",
+        "description_revision": {
+          "before": "Put the popcorn on top of the short fridge.",
+          "after": "Put the popcorn on top of the short fridge",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "d0f405b3d5a20a29eade620e4e3826815a96f7e3227d90a0e367bc9d98bfd8a0",
+          "current_task_meta_sha256": "828b67b8159c60d96a466d029c99d2702f0ce0ade3e970b3c4550cd12f11bb1f"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_014/",
       "result": {
@@ -13917,8 +14486,15 @@
         "evaluation_instruction": "Put the popcorn on top of the short fridge."
       },
       "historical_comparison": "../selected29/assets/comparison_png/NAFR3_001.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the popcorn on top of the short fridge.",
+        "after": "Put the popcorn on top of the short fridge",
+        "legacy_task_id": "NAFR3_001",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -13927,7 +14503,7 @@
       "category": "Adapt",
       "category_order": 15,
       "order": 48,
-      "instruction": "Put the yellow book on top of the two-layer wooden shelf.",
+      "instruction": "Put the yellow book on top of the two-layer wooden shelf",
       "goal": "on(yellow_book_1, wooden_two_layer_shelf_1_feedback_roof_region)",
       "required": [
         "on(yellow_book_1, wooden_two_layer_shelf_1_feedback_roof_region)"
@@ -13991,7 +14567,7 @@
         "legacy_task_id": "NAFR3_002",
         "category": "Adapt",
         "order": 48,
-        "task_description": "Put the yellow book on top of the two-layer wooden shelf.",
+        "task_description": "Put the yellow book on top of the two-layer wooden shelf",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -14282,7 +14858,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.177440143190324
+        "elapsed_seconds": 12.177440143190324,
+        "capture_task_description": "Put the yellow book on top of the two-layer wooden shelf.",
+        "description_revision": {
+          "before": "Put the yellow book on top of the two-layer wooden shelf.",
+          "after": "Put the yellow book on top of the two-layer wooden shelf",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "92e53018f606759e8ba44cac0f8190666a084b331b1d58e44793c7439b101182",
+          "current_task_meta_sha256": "03a68afb112a3c8b7d94c7fcfe34c179e69fe57d7d5b38870b62c4590b7859fb"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_015/",
       "result": {
@@ -14296,8 +14883,15 @@
         "evaluation_instruction": "Put the yellow book on top of the two-layer wooden shelf."
       },
       "historical_comparison": "../selected29/assets/comparison_png/NAFR3_002.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the yellow book on top of the two-layer wooden shelf.",
+        "after": "Put the yellow book on top of the two-layer wooden shelf",
+        "legacy_task_id": "NAFR3_002",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -14306,7 +14900,7 @@
       "category": "Adapt",
       "category_order": 16,
       "order": 50,
-      "instruction": "Pick up the black bowl at the table center and place it on the dining-set mat.",
+      "instruction": "Pick up the black bowl at the table center and place it on the dining-set mat",
       "goal": "on(akita_black_bowl_1, dining_set_group_1_plate_support_region)",
       "required": [
         "on(akita_black_bowl_1, dining_set_group_1_plate_support_region)"
@@ -14372,7 +14966,7 @@
         "legacy_task_id": "DSET_001",
         "category": "Adapt",
         "order": 50,
-        "task_description": "Pick up the black bowl at the table center and place it on the dining-set mat.",
+        "task_description": "Pick up the black bowl at the table center and place it on the dining-set mat",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -14741,7 +15335,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 10.87659225333482
+        "elapsed_seconds": 10.87659225333482,
+        "capture_task_description": "Pick up the black bowl at the table center and place it on the dining-set mat.",
+        "description_revision": {
+          "before": "Pick up the black bowl at the table center and place it on the dining-set mat.",
+          "after": "Pick up the black bowl at the table center and place it on the dining-set mat",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "6acf2fe0eba99028bf1d9b49b1e31f94f14b6e930d9653a0875b199787fada01",
+          "current_task_meta_sha256": "a8a1417545721f869b59c515f9bfbdedc6897095eafbc503377d41adc8848aaf"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_016/",
       "result": {
@@ -14754,8 +15359,15 @@
         "evaluation_instruction": "Pick up the black bowl at the table center and place it on the dining-set mat."
       },
       "historical_comparison": "../selected29/assets/comparison_png/DSET_001.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Pick up the black bowl at the table center and place it on the dining-set mat.",
+        "after": "Pick up the black bowl at the table center and place it on the dining-set mat",
+        "legacy_task_id": "DSET_001",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -14764,7 +15376,7 @@
       "category": "Adapt",
       "category_order": 17,
       "order": 51,
-      "instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+      "instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer",
       "goal": "in(alphabet_soup_1, bowl_drainer_1_right_region)",
       "required": [
         "in(alphabet_soup_1, bowl_drainer_1_right_region)"
@@ -14830,7 +15442,7 @@
         "legacy_task_id": "BDRSWAP_001",
         "category": "Adapt",
         "order": 51,
-        "task_description": "Pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+        "task_description": "Pick the alphabet soup and place it in the right compartment of the bowl drainer",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -15161,7 +15773,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.470961743034422
+        "elapsed_seconds": 11.470961743034422,
+        "capture_task_description": "Pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+        "description_revision": {
+          "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+          "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "0d7dc580cdb697f74b4d8525847846ea1930e0a354f71f7a31c3644912b4fbe6",
+          "current_task_meta_sha256": "02faf10c4d6f86398b7acbdcddfb90f21042525c2b49251b0a55a81056d76011"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_017/",
       "result": {
@@ -15175,8 +15798,15 @@
         "evaluation_instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer."
       },
       "historical_comparison": "../selected29/assets/comparison_png/BDRSWAP_001.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+        "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer",
+        "legacy_task_id": "BDRSWAP_001",
+        "kind": "remove_period"
+      },
       "direction_note": "방향은 LIBERO 원본 구획 기준입니다. 로봇 기준 왼쪽은 left_region(+Y), 오른쪽은 right_region(−Y)입니다. 현재 scene과 단계별 mask는 같은 화면 방향을 사용합니다.",
+      "direction_comparison": "DRAINER_DIRECTIONS.png",
+      "direction_comparison_label": "세 drainer task 방향 비교",
       "historical_comparison_label": "과거 비교 이미지 (현재 화면과 좌우 반전)"
     },
     {
@@ -15185,7 +15815,7 @@
       "category": "Adapt",
       "category_order": 18,
       "order": 53,
-      "instruction": "Open the top drawer of the wooden cabinet.",
+      "instruction": "Open the top drawer of the wooden cabinet",
       "goal": "open(wooden_cabinet_1_top_region)",
       "required": [
         "open(wooden_cabinet_1_top_region)"
@@ -15248,7 +15878,7 @@
         "legacy_task_id": "ADVCN19_001",
         "category": "Adapt",
         "order": 53,
-        "task_description": "Open the top drawer of the wooden cabinet.",
+        "task_description": "Open the top drawer of the wooden cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -15474,7 +16104,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 10.244204437360168
+        "elapsed_seconds": 10.244204437360168,
+        "capture_task_description": "Open the top drawer of the wooden cabinet.",
+        "description_revision": {
+          "before": "Open the top drawer of the wooden cabinet.",
+          "after": "Open the top drawer of the wooden cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "174eacea1f94f717f7f974917409da83beb828ce593f442d99be49c48ceb7ac3",
+          "current_task_meta_sha256": "cb9240f099ad3864359f3c67237493793b095aaa07beb382c9ef059f5627ce34"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_018/",
       "result": {
@@ -15488,8 +16129,15 @@
         "evaluation_instruction": "Open the top drawer of the wooden cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/ADVCN19_001.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Open the top drawer of the wooden cabinet.",
+        "after": "Open the top drawer of the wooden cabinet",
+        "legacy_task_id": "ADVCN19_001",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -15498,7 +16146,7 @@
       "category": "Adapt",
       "category_order": 19,
       "order": 54,
-      "instruction": "Pick up the black bowl and place it in the wooden tray.",
+      "instruction": "Pick up the black bowl and place it in the wooden tray",
       "goal": "in(akita_black_bowl_1, wooden_tray_1_contain_region)",
       "required": [
         "in(akita_black_bowl_1, wooden_tray_1_contain_region)"
@@ -15568,7 +16216,7 @@
         "legacy_task_id": "WTRAYR_004",
         "category": "Adapt",
         "order": 54,
-        "task_description": "Pick up the black bowl and place it in the wooden tray.",
+        "task_description": "Pick up the black bowl and place it in the wooden tray",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -15935,7 +16583,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.381819311529398
+        "elapsed_seconds": 11.381819311529398,
+        "capture_task_description": "Pick up the black bowl and place it in the wooden tray.",
+        "description_revision": {
+          "before": "Pick up the black bowl and place it in the wooden tray.",
+          "after": "Pick up the black bowl and place it in the wooden tray",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "3d0460e2bce211165e9b0c38bc57b10de51008c27b408c9d44e38636b82881f1",
+          "current_task_meta_sha256": "5b162c67b61dc0232efa1f86ac569ff85a6a7f553304cbbce6d311677e75c36c"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_019/",
       "result": {
@@ -15949,8 +16608,15 @@
         "evaluation_instruction": "Pick up the black bowl and place it in the wooden tray."
       },
       "historical_comparison": "../selected29/assets/comparison_png/WTRAYR_004.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Pick up the black bowl and place it in the wooden tray.",
+        "after": "Pick up the black bowl and place it in the wooden tray",
+        "legacy_task_id": "WTRAYR_004",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -15959,7 +16625,7 @@
       "category": "Adapt",
       "category_order": 20,
       "order": 55,
-      "instruction": "Put the ketchup on the rack.",
+      "instruction": "Put the ketchup on the rack",
       "goal": "on(ketchup_1, wine_rack_1_adapt_top_region)",
       "required": [
         "on(ketchup_1, wine_rack_1_adapt_top_region)"
@@ -16047,7 +16713,7 @@
         "legacy_task_id": "GRACK_002",
         "category": "Adapt",
         "order": 55,
-        "task_description": "Put the ketchup on the rack.",
+        "task_description": "Put the ketchup on the rack",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -16415,7 +17081,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 10.803614779375494
+        "elapsed_seconds": 10.803614779375494,
+        "capture_task_description": "Put the ketchup on the rack.",
+        "description_revision": {
+          "before": "Put the ketchup on the rack.",
+          "after": "Put the ketchup on the rack",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "c2d7e687c1432644c6b8ac75d47137be0ea651bc04b0ad36f8be895e965c3902",
+          "current_task_meta_sha256": "1e8dde96d8769685fab4b0a5a2200021e839ba0f381fc2cf57006629d594ce0b"
+        }
       },
       "scene_base": "scenes/Adapt/Adapt_020/",
       "result": {
@@ -16429,8 +17106,15 @@
         "evaluation_instruction": "Put the ketchup on the rack."
       },
       "historical_comparison": "../selected29/assets/comparison_png/GRACK_002.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the ketchup on the rack.",
+        "after": "Put the ketchup on the rack",
+        "legacy_task_id": "GRACK_002",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -16439,7 +17123,7 @@
       "category": "Compose",
       "category_order": 1,
       "order": 34,
-      "instruction": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.",
+      "instruction": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet",
       "goal": "on(chocolate_pudding_1, akita_black_bowl_1);open(wooden_cabinet_1_middle_region)",
       "required": [
         "on(chocolate_pudding_1, akita_black_bowl_1)",
@@ -16536,7 +17220,7 @@
         "legacy_task_id": "VCN8_008",
         "category": "Compose",
         "order": 34,
-        "task_description": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.",
+        "task_description": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -17050,7 +17734,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 10.593286628834903
+        "elapsed_seconds": 10.593286628834903,
+        "capture_task_description": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.",
+        "description_revision": {
+          "before": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.",
+          "after": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "2f85d4f52cf27404045ce2c3d9dc5f4b26c89a76a6e52398410259d7ff49fe65",
+          "current_task_meta_sha256": "adc3aa7cbfe8f72105ec991f7d2ced4affa4086b192c0b2ddaa798fc24f81e84"
+        }
       },
       "scene_base": "scenes/Compose/Compose_001/",
       "result": {
@@ -17064,8 +17759,15 @@
         "evaluation_instruction": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/VCN8_008.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.",
+        "after": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet",
+        "legacy_task_id": "VCN8_008",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -17074,7 +17776,7 @@
       "category": "Compose",
       "category_order": 2,
       "order": 35,
-      "instruction": "Put the cream cheese on the stove, then turn on the stove.",
+      "instruction": "Put the cream cheese on the stove, then turn on the stove",
       "goal": "on(cream_cheese_1, flat_stove_1_cook_region);turnon(flat_stove_1)",
       "required": [
         "on(cream_cheese_1, flat_stove_1_cook_region)",
@@ -17171,7 +17873,7 @@
         "legacy_task_id": "VCN9_010",
         "category": "Compose",
         "order": 35,
-        "task_description": "Put the cream cheese on the stove, then turn on the stove.",
+        "task_description": "Put the cream cheese on the stove, then turn on the stove",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -17589,7 +18291,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.433823854662478
+        "elapsed_seconds": 11.433823854662478,
+        "capture_task_description": "Put the cream cheese on the stove, then turn on the stove.",
+        "description_revision": {
+          "before": "Put the cream cheese on the stove, then turn on the stove.",
+          "after": "Put the cream cheese on the stove, then turn on the stove",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "79a10204d08eb98d61facc7ac277a7b2b289a3c73c440b8f3194eca5e28fb8e7",
+          "current_task_meta_sha256": "bd65d42dd19e7b557cc9f43ff93c296763cd59fea70200d238676aa6ffef2815"
+        }
       },
       "scene_base": "scenes/Compose/Compose_002/",
       "result": {
@@ -17603,8 +18316,15 @@
         "evaluation_instruction": "Put the cream cheese on the stove, then turn on the stove."
       },
       "historical_comparison": "../selected29/assets/comparison_png/VCN9_010.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the cream cheese on the stove, then turn on the stove.",
+        "after": "Put the cream cheese on the stove, then turn on the stove",
+        "legacy_task_id": "VCN9_010",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -17613,7 +18333,7 @@
       "category": "Compose",
       "category_order": 3,
       "order": 36,
-      "instruction": "Put the cream cheese on the stove, then push the plate to the front of the stove.",
+      "instruction": "Put the cream cheese on the stove, then push the plate to the front of the stove",
       "goal": "on(cream_cheese_1, flat_stove_1_cook_region);on(plate_1, main_table_stove_front_region)",
       "required": [
         "on(cream_cheese_1, flat_stove_1_cook_region)",
@@ -17719,7 +18439,7 @@
         "legacy_task_id": "VCN10_001",
         "category": "Compose",
         "order": 36,
-        "task_description": "Put the cream cheese on the stove, then push the plate to the front of the stove.",
+        "task_description": "Put the cream cheese on the stove, then push the plate to the front of the stove",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -18288,7 +19008,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 9.219312173314393
+        "elapsed_seconds": 9.219312173314393,
+        "capture_task_description": "Put the cream cheese on the stove, then push the plate to the front of the stove.",
+        "description_revision": {
+          "before": "Put the cream cheese on the stove, then push the plate to the front of the stove.",
+          "after": "Put the cream cheese on the stove, then push the plate to the front of the stove",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "656b4c7d505684b219eb9f085ad2918977d66e2beaffcf72e0dc29b6997e27ff",
+          "current_task_meta_sha256": "f8f5939246b2a0366ed2e5ffab392d00ab1e2f4188726302b89a54c345540b9f"
+        }
       },
       "scene_base": "scenes/Compose/Compose_003/",
       "result": {
@@ -18302,8 +19033,15 @@
         "evaluation_instruction": "Put the cream cheese on the stove, then push the plate to the front of the stove."
       },
       "historical_comparison": "../selected29/assets/comparison_png/VCN10_001.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the cream cheese on the stove, then push the plate to the front of the stove.",
+        "after": "Put the cream cheese on the stove, then push the plate to the front of the stove",
+        "legacy_task_id": "VCN10_001",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -18312,7 +19050,7 @@
       "category": "Compose",
       "category_order": 4,
       "order": 37,
-      "instruction": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+      "instruction": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate",
       "goal": "open(wooden_cabinet_1_top_region);on(glazed_rim_porcelain_ramekin_1, plate_1)",
       "required": [
         "open(wooden_cabinet_1_top_region)",
@@ -18418,7 +19156,7 @@
         "legacy_task_id": "VCN19_020",
         "category": "Compose",
         "order": 37,
-        "task_description": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+        "task_description": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -18917,7 +19655,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 10.545236799865961
+        "elapsed_seconds": 10.545236799865961,
+        "capture_task_description": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+        "description_revision": {
+          "before": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+          "after": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "58ed08af1c772205380ca63f224a6e4e74f3df7b36a01ae7745143664f42be11",
+          "current_task_meta_sha256": "9851c4535f5c4e1e85e7369280c1001550bb65d1f5854b6a1ed072b490e999fb"
+        }
       },
       "scene_base": "scenes/Compose/Compose_004/",
       "result": {
@@ -18931,8 +19680,15 @@
         "evaluation_instruction": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate."
       },
       "historical_comparison": "../selected29/assets/comparison_png/VCN19_020.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+        "after": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate",
+        "legacy_task_id": "VCN19_020",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -18941,7 +19697,7 @@
       "category": "Compose",
       "category_order": 5,
       "order": 38,
-      "instruction": "Put the moka pot on the stove, then close the microwave door.",
+      "instruction": "Put the moka pot on the stove, then close the microwave door",
       "goal": "on(moka_pot_2,flat_stove_1_cook_region);close(microwave_1)",
       "required": [
         "on(moka_pot_2,flat_stove_1_cook_region)",
@@ -19052,7 +19808,7 @@
         "legacy_task_id": "VCN21_001",
         "category": "Compose",
         "order": 38,
-        "task_description": "Put the moka pot on the stove, then close the microwave door.",
+        "task_description": "Put the moka pot on the stove, then close the microwave door",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -19519,7 +20275,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 9.577891973778605
+        "elapsed_seconds": 9.577891973778605,
+        "capture_task_description": "Put the moka pot on the stove, then close the microwave door.",
+        "description_revision": {
+          "before": "Put the moka pot on the stove, then close the microwave door.",
+          "after": "Put the moka pot on the stove, then close the microwave door",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "df87d609188c7c9b898ce665d17aca5b3657395a822b98e5ecb16f0a951fea89",
+          "current_task_meta_sha256": "ea4aec2ab2eb0ce5fc6afe8d35cba6793915ef34d66079790429f0bf6ea2c79d"
+        }
       },
       "scene_base": "scenes/Compose/Compose_005/",
       "result": {
@@ -19533,8 +20300,15 @@
         "evaluation_instruction": "Put the moka pot on the stove, then close the microwave door."
       },
       "historical_comparison": "../selected29/assets/comparison_png/VCN21_001.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the moka pot on the stove, then close the microwave door.",
+        "after": "Put the moka pot on the stove, then close the microwave door",
+        "legacy_task_id": "VCN21_001",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -19543,7 +20317,7 @@
       "category": "Compose",
       "category_order": 6,
       "order": 39,
-      "instruction": "Put the butter in the basket, and then put the tomato sauce in the basket.",
+      "instruction": "Put the butter in the basket, and then put the tomato sauce in the basket",
       "goal": "in(butter_1, basket_1_contain_region); in(tomato_sauce_1, basket_1_contain_region)",
       "required": [
         "in(butter_1, basket_1_contain_region)",
@@ -19633,7 +20407,7 @@
         "legacy_task_id": "COMP2_012",
         "category": "Compose",
         "order": 39,
-        "task_description": "Put the butter in the basket, and then put the tomato sauce in the basket.",
+        "task_description": "Put the butter in the basket, and then put the tomato sauce in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -20185,7 +20959,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.26080265827477
+        "elapsed_seconds": 12.26080265827477,
+        "capture_task_description": "Put the butter in the basket, and then put the tomato sauce in the basket.",
+        "description_revision": {
+          "before": "Put the butter in the basket, and then put the tomato sauce in the basket.",
+          "after": "Put the butter in the basket, and then put the tomato sauce in the basket",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "1010c50c96537971a62ce28091c75dda563e5470d25ad12156ab996e517fc155",
+          "current_task_meta_sha256": "03544cfdb69c18c90ac635879c978587d52e0c9bc4eeca9c7ac664a3cd9a5f14"
+        }
       },
       "scene_base": "scenes/Compose/Compose_006/",
       "result": {
@@ -20199,8 +20984,15 @@
         "evaluation_instruction": "Put the butter in the basket, and then put the tomato sauce in the basket."
       },
       "historical_comparison": "../selected29/assets/comparison_png/COMP2_012.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the butter in the basket, and then put the tomato sauce in the basket.",
+        "after": "Put the butter in the basket, and then put the tomato sauce in the basket",
+        "legacy_task_id": "COMP2_012",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -20209,7 +21001,7 @@
       "category": "Compose",
       "category_order": 7,
       "order": 40,
-      "instruction": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet.",
+      "instruction": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet",
       "goal": "on(plate_1, main_table_stove_front_region); open(wooden_cabinet_1_middle_region)",
       "required": [
         "on(plate_1, main_table_stove_front_region)",
@@ -20291,7 +21083,7 @@
         "legacy_task_id": "COMP2_032",
         "category": "Compose",
         "order": 40,
-        "task_description": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet.",
+        "task_description": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -20715,7 +21507,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.114478309638798
+        "elapsed_seconds": 12.114478309638798,
+        "capture_task_description": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet.",
+        "description_revision": {
+          "before": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet.",
+          "after": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "9f35a9b54013aca6a81ff01ad3a07ed95b821d714a8fb6d5a9cb187ec4e2ba3e",
+          "current_task_meta_sha256": "99e4164edb9ae1f89fb1728a29c4d81a6342c46a69185c999bf675555e381c5a"
+        }
       },
       "scene_base": "scenes/Compose/Compose_007/",
       "result": {
@@ -20729,8 +21532,15 @@
         "evaluation_instruction": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/COMP2_032.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet.",
+        "after": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet",
+        "legacy_task_id": "COMP2_032",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -20739,7 +21549,7 @@
       "category": "Compose",
       "category_order": 8,
       "order": 41,
-      "instruction": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket.",
+      "instruction": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket",
       "goal": "in(alphabet_soup_1, basket_1_contain_region); in(tomato_sauce_1, basket_1_contain_region)",
       "required": [
         "in(alphabet_soup_1, basket_1_contain_region)",
@@ -20829,7 +21639,7 @@
         "legacy_task_id": "COMP2_222",
         "category": "Compose",
         "order": 41,
-        "task_description": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket.",
+        "task_description": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -21421,7 +22231,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.321271045133471
+        "elapsed_seconds": 12.321271045133471,
+        "capture_task_description": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket.",
+        "description_revision": {
+          "before": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket.",
+          "after": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "3f100c3201c8795a41ae60d65d73e3f041e65a89a13a2f3e535b34c5197d2c24",
+          "current_task_meta_sha256": "feb15ea1384727ef41d5d610063e0257433ed7003ef0c3d6b9eefb55605d3b84"
+        }
       },
       "scene_base": "scenes/Compose/Compose_008/",
       "result": {
@@ -21435,8 +22256,15 @@
         "evaluation_instruction": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket."
       },
       "historical_comparison": "../selected29/assets/comparison_png/COMP2_222.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket.",
+        "after": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket",
+        "legacy_task_id": "COMP2_222",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -21445,7 +22273,7 @@
       "category": "Compose",
       "category_order": 9,
       "order": 42,
-      "instruction": "Put the milk in the basket, and then put the cream cheese box in the basket.",
+      "instruction": "Put the milk in the basket, and then put the cream cheese box in the basket",
       "goal": "in(milk_1, basket_1_contain_region); in(cream_cheese_1, basket_1_contain_region)",
       "required": [
         "in(milk_1, basket_1_contain_region)",
@@ -21535,7 +22363,7 @@
         "legacy_task_id": "COMP2_303",
         "category": "Compose",
         "order": 42,
-        "task_description": "Put the milk in the basket, and then put the cream cheese box in the basket.",
+        "task_description": "Put the milk in the basket, and then put the cream cheese box in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -22047,7 +22875,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.271882195025682
+        "elapsed_seconds": 12.271882195025682,
+        "capture_task_description": "Put the milk in the basket, and then put the cream cheese box in the basket.",
+        "description_revision": {
+          "before": "Put the milk in the basket, and then put the cream cheese box in the basket.",
+          "after": "Put the milk in the basket, and then put the cream cheese box in the basket",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "dfdd101d5faa28fe32bdf8090ec47583588cc8aaae13f1af00d4280fe4318971",
+          "current_task_meta_sha256": "d8b599cf8c88af17dfccd34e043e283b4fc80c71eb0949c1de01f09c1765cf41"
+        }
       },
       "scene_base": "scenes/Compose/Compose_009/",
       "result": {
@@ -22061,8 +22900,15 @@
         "evaluation_instruction": "Put the milk in the basket, and then put the cream cheese box in the basket."
       },
       "historical_comparison": "../selected29/assets/comparison_png/COMP2_303.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the milk in the basket, and then put the cream cheese box in the basket.",
+        "after": "Put the milk in the basket, and then put the cream cheese box in the basket",
+        "legacy_task_id": "COMP2_303",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -22071,7 +22917,7 @@
       "category": "Compose",
       "category_order": 10,
       "order": 43,
-      "instruction": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another.",
+      "instruction": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another",
       "goal": "in(alphabet_soup_1, basket_1_contain_region); in(butter_1, basket_1_contain_region); in(tomato_sauce_1, basket_1_contain_region)",
       "required": [
         "in(alphabet_soup_1, basket_1_contain_region)",
@@ -22181,7 +23027,7 @@
         "legacy_task_id": "COMPOSE_155",
         "category": "Compose",
         "order": 43,
-        "task_description": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another.",
+        "task_description": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -22970,7 +23816,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 13.814964153803885
+        "elapsed_seconds": 13.814964153803885,
+        "capture_task_description": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another.",
+        "description_revision": {
+          "before": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another.",
+          "after": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "75348f01ba1b220af2009575c1632864381cbad6f089eda21ee96984d9ab1dd9",
+          "current_task_meta_sha256": "89a9ca52772860e6fb294d8e559edba9c1621dbad0068dbaa8a8b3e818c31ac4"
+        }
       },
       "scene_base": "scenes/Compose/Compose_010/",
       "result": {
@@ -22984,8 +23841,15 @@
         "evaluation_instruction": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another."
       },
       "historical_comparison": "../selected29/assets/comparison_png/COMPOSE_155.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another.",
+        "after": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another",
+        "legacy_task_id": "COMPOSE_155",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -22994,7 +23858,7 @@
       "category": "Compose",
       "category_order": 11,
       "order": 44,
-      "instruction": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove.",
+      "instruction": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove",
       "goal": "on(cream_cheese_1, akita_black_bowl_1); on(plate_1, main_table_stove_front_region)",
       "required": [
         "on(cream_cheese_1, akita_black_bowl_1)",
@@ -23085,7 +23949,7 @@
         "legacy_task_id": "COMP2_027",
         "category": "Compose",
         "order": 44,
-        "task_description": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove.",
+        "task_description": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -23685,7 +24549,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.855724218301475
+        "elapsed_seconds": 11.855724218301475,
+        "capture_task_description": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove.",
+        "description_revision": {
+          "before": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove.",
+          "after": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "e23cca04f4ce8f4af19eabc02a6772c3f24a9c3ebf4c9013d04d9256f60bd7d5",
+          "current_task_meta_sha256": "06a80636e8a2a2a3531730c854f278f68aede87fc94c9fdf8746bcabf11da93c"
+        }
       },
       "scene_base": "scenes/Compose/Compose_011/",
       "result": {
@@ -23699,8 +24574,15 @@
         "evaluation_instruction": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove."
       },
       "historical_comparison": "../selected29/assets/comparison_png/COMP2_027.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove.",
+        "after": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove",
+        "legacy_task_id": "COMP2_027",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -23709,7 +24591,7 @@
       "category": "Compose",
       "category_order": 12,
       "order": 45,
-      "instruction": "Put the tomato sauce in the basket, then put the white mug on the plate.",
+      "instruction": "Put the tomato sauce in the basket, then put the white mug on the plate",
       "goal": "in(tomato_sauce_1, basket_1_contain_region);on(porcelain_mug_1, plate_3)",
       "required": [
         "in(tomato_sauce_1, basket_1_contain_region)",
@@ -23817,7 +24699,7 @@
         "legacy_task_id": "LBCM_003",
         "category": "Compose",
         "order": 45,
-        "task_description": "Put the tomato sauce in the basket, then put the white mug on the plate.",
+        "task_description": "Put the tomato sauce in the basket, then put the white mug on the plate",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -24458,7 +25340,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.978415333665907
+        "elapsed_seconds": 12.978415333665907,
+        "capture_task_description": "Put the tomato sauce in the basket, then put the white mug on the plate.",
+        "description_revision": {
+          "before": "Put the tomato sauce in the basket, then put the white mug on the plate.",
+          "after": "Put the tomato sauce in the basket, then put the white mug on the plate",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "1a27d644440e6a7f2700057a93fcc86d8d35d5e8fcb5f8c9c5081328cd443260",
+          "current_task_meta_sha256": "8e4cff7b4ae1c802e803ba58b9ce152952ca1963f62457db631c1ff6a7d2faa7"
+        }
       },
       "scene_base": "scenes/Compose/Compose_012/",
       "result": {
@@ -24472,8 +25365,15 @@
         "evaluation_instruction": "Put the tomato sauce in the basket, then put the white mug on the plate."
       },
       "historical_comparison": "../selected29/assets/comparison_png/LBCM_003.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the tomato sauce in the basket, then put the white mug on the plate.",
+        "after": "Put the tomato sauce in the basket, then put the white mug on the plate",
+        "legacy_task_id": "LBCM_003",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -24482,7 +25382,7 @@
       "category": "Compose",
       "category_order": 13,
       "order": 46,
-      "instruction": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket.",
+      "instruction": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket",
       "goal": "in(alphabet_soup_1, basket_1_contain_region);on(porcelain_mug_1, plate_1);in(cream_cheese_1, basket_1_contain_region)",
       "required": [
         "in(alphabet_soup_1, basket_1_contain_region)",
@@ -24617,7 +25517,7 @@
         "legacy_task_id": "LBCM_028",
         "category": "Compose",
         "order": 46,
-        "task_description": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket.",
+        "task_description": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -25466,7 +26366,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 14.130325661040843
+        "elapsed_seconds": 14.130325661040843,
+        "capture_task_description": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket.",
+        "description_revision": {
+          "before": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket.",
+          "after": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "fc01c8146fd515d2d69f456408510bb7500d5358651ab6d0127f9a3c2607fa8c",
+          "current_task_meta_sha256": "58d32435dd7a472354a5434786798a415bdda18a93dddbcdab66f4c8a5f4834f"
+        }
       },
       "scene_base": "scenes/Compose/Compose_013/",
       "result": {
@@ -25480,8 +26391,15 @@
         "evaluation_instruction": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket."
       },
       "historical_comparison": "../selected29/assets/comparison_png/LBCM_028.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket.",
+        "after": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket",
+        "legacy_task_id": "LBCM_028",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -25490,7 +26408,7 @@
       "category": "Compose",
       "category_order": 14,
       "order": 49,
-      "instruction": "Put the moka pot on the stove, then close the bottom drawer of the cabinet.",
+      "instruction": "Put the moka pot on the stove, then close the bottom drawer of the cabinet",
       "goal": "on(moka_pot_2, flat_stove_1_cook_region);close(white_cabinet_1_bottom_region)",
       "required": [
         "on(moka_pot_2, flat_stove_1_cook_region)",
@@ -25589,7 +26507,7 @@
         "legacy_task_id": "MKDC_001",
         "category": "Compose",
         "order": 49,
-        "task_description": "Put the moka pot on the stove, then close the bottom drawer of the cabinet.",
+        "task_description": "Put the moka pot on the stove, then close the bottom drawer of the cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -26055,7 +26973,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.890142990276217
+        "elapsed_seconds": 12.890142990276217,
+        "capture_task_description": "Put the moka pot on the stove, then close the bottom drawer of the cabinet.",
+        "description_revision": {
+          "before": "Put the moka pot on the stove, then close the bottom drawer of the cabinet.",
+          "after": "Put the moka pot on the stove, then close the bottom drawer of the cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "ad2fb9c514df68b1ccb5f22d2a661139f46a24bcb54e6ad17aabe84935747b0b",
+          "current_task_meta_sha256": "47c41050b4597d8fc407fc98c703beefcf17a6cac0e7da4aa203235e8aece841"
+        }
       },
       "scene_base": "scenes/Compose/Compose_014/",
       "result": {
@@ -26069,8 +26998,15 @@
         "evaluation_instruction": "Put the moka pot on the stove, then close the bottom drawer of the cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/MKDC_001.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the moka pot on the stove, then close the bottom drawer of the cabinet.",
+        "after": "Put the moka pot on the stove, then close the bottom drawer of the cabinet",
+        "legacy_task_id": "MKDC_001",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -26079,7 +27015,7 @@
       "category": "Compose",
       "category_order": 15,
       "order": 52,
-      "instruction": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+      "instruction": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
       "goal": "in(butter_1, bowl_drainer_1_left_region);in(tomato_sauce_1, bowl_drainer_1_right_region)",
       "required": [
         "in(butter_1, bowl_drainer_1_left_region)",
@@ -26180,7 +27116,7 @@
         "legacy_task_id": "CTR_103",
         "category": "Compose",
         "order": 52,
-        "task_description": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+        "task_description": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -26714,7 +27650,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.267882284708321
+        "elapsed_seconds": 12.267882284708321,
+        "capture_task_description": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+        "description_revision": {
+          "before": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+          "after": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "6882d991f49236db35bed2b095d2db9fa82581c94b6fe82f1d294253c324f4a8",
+          "current_task_meta_sha256": "dcd3e9b4770e8c81c65a0455c03369719d9085562908f69c914f61a6377b70d9"
+        }
       },
       "scene_base": "scenes/Compose/Compose_015/",
       "result": {
@@ -26728,8 +27675,15 @@
         "evaluation_instruction": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer."
       },
       "historical_comparison": "../selected29/assets/comparison_png/CTR_103.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+        "after": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
+        "legacy_task_id": "CTR_103",
+        "kind": "remove_period"
+      },
       "direction_note": "방향은 LIBERO 원본 구획 기준입니다. 로봇 기준 왼쪽은 left_region(+Y), 오른쪽은 right_region(−Y)입니다. 현재 scene과 단계별 mask는 같은 화면 방향을 사용합니다.",
+      "direction_comparison": "DRAINER_DIRECTIONS.png",
+      "direction_comparison_label": "세 drainer task 방향 비교",
       "historical_comparison_label": "과거 비교 이미지 (두 구획 mask 합성)"
     },
     {
@@ -26738,7 +27692,7 @@
       "category": "Compose",
       "category_order": 16,
       "order": 56,
-      "instruction": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+      "instruction": "Put the ramekin in the basket, then put the alphabet soup on the right plate",
       "goal": "in(glazed_rim_porcelain_ramekin_1,basket_1_contain_region);on(alphabet_soup_1,plate_2)",
       "required": [
         "in(glazed_rim_porcelain_ramekin_1,basket_1_contain_region)",
@@ -26851,7 +27805,7 @@
         "legacy_task_id": "VCN35_004",
         "category": "Compose",
         "order": 56,
-        "task_description": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+        "task_description": "Put the ramekin in the basket, then put the alphabet soup on the right plate",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -27492,7 +28446,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.512377734296024
+        "elapsed_seconds": 11.512377734296024,
+        "capture_task_description": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+        "description_revision": {
+          "before": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+          "after": "Put the ramekin in the basket, then put the alphabet soup on the right plate",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "6f8ee6ff246f0928f49e23f154a55cb7e0fef62329ae5198049aaedbe6249ff0",
+          "current_task_meta_sha256": "facbf6d10ac430072dc21cd559f9523bb6b6d1a72b7ed61358932f2137e12394"
+        }
       },
       "scene_base": "scenes/Compose/Compose_016/",
       "result": {
@@ -27506,8 +28471,15 @@
         "evaluation_instruction": "Put the ramekin in the basket, then put the alphabet soup on the right plate."
       },
       "historical_comparison": "../selected29/assets/comparison_png/VCN35_004.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+        "after": "Put the ramekin in the basket, then put the alphabet soup on the right plate",
+        "legacy_task_id": "VCN35_004",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -27516,7 +28488,7 @@
       "category": "Compose",
       "category_order": 17,
       "order": 57,
-      "instruction": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.",
+      "instruction": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate",
       "goal": "in(tomato_sauce_1,basket_1_contain_region);on(white_yellow_mug_1,plate_1)",
       "required": [
         "in(tomato_sauce_1, basket_1_contain_region)",
@@ -27631,7 +28603,7 @@
         "legacy_task_id": "UCOMP_040",
         "category": "Compose",
         "order": 57,
-        "task_description": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.",
+        "task_description": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -28306,7 +29278,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 12.728389566764235
+        "elapsed_seconds": 12.728389566764235,
+        "capture_task_description": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.",
+        "description_revision": {
+          "before": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.",
+          "after": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "694b9c21a0c63cbbb40e636a9ca32d1069b230b3533b0f44f82c1d36d19b35a0",
+          "current_task_meta_sha256": "11e565c53c2a95dd7089c97b06d43eb0c626bbb1c6f4903f7c15bfea22ac9442"
+        }
       },
       "scene_base": "scenes/Compose/Compose_017/",
       "result": {
@@ -28320,8 +29303,15 @@
         "evaluation_instruction": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate."
       },
       "historical_comparison": "../selected29/assets/comparison_png/UCOMP_040.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.",
+        "after": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate",
+        "legacy_task_id": "UCOMP_040",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -28330,7 +29320,7 @@
       "category": "Compose",
       "category_order": 18,
       "order": 58,
-      "instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
+      "instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
       "goal": "in(alphabet_soup_1,bowl_drainer_1_right_region);in(tomato_sauce_1,bowl_drainer_1_left_region)",
       "required": [
         "in(alphabet_soup_1, bowl_drainer_1_right_region)",
@@ -28422,7 +29412,7 @@
         "legacy_task_id": "BDRMIN_002",
         "category": "Compose",
         "order": 58,
-        "task_description": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
+        "task_description": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -28974,7 +29964,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 11.310907881706953
+        "elapsed_seconds": 11.310907881706953,
+        "capture_task_description": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
+        "description_revision": {
+          "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
+          "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "7989fe91100240cc04eb698dcbe02f39ad935ea9d3489f60d89cf8876be5dade",
+          "current_task_meta_sha256": "ed5a011610da9b5db22fe32db13fb6af385a2fd2bf9f205e434b6e2286653410"
+        }
       },
       "scene_base": "scenes/Compose/Compose_018/",
       "result": {
@@ -28987,8 +29988,15 @@
         "evaluation_instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer."
       },
       "historical_comparison": "../selected29/assets/comparison_png/BDRMIN_002.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
+        "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+        "legacy_task_id": "BDRMIN_002",
+        "kind": "remove_period"
+      },
       "direction_note": "방향은 LIBERO 원본 구획 기준입니다. 로봇 기준 왼쪽은 left_region(+Y), 오른쪽은 right_region(−Y)입니다. 현재 scene과 단계별 mask는 같은 화면 방향을 사용합니다.",
+      "direction_comparison": "DRAINER_DIRECTIONS.png",
+      "direction_comparison_label": "세 drainer task 방향 비교",
       "historical_comparison_label": "과거 비교 이미지 (현재 화면과 좌우 반전)"
     },
     {
@@ -28997,7 +30005,7 @@
       "category": "Compose",
       "category_order": 19,
       "order": 59,
-      "instruction": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
+      "instruction": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket",
       "goal": "in(alphabet_soup_1, basket_1_contain_region);in(butter_1, basket_1_contain_region);in(cream_cheese_1, basket_1_contain_region)",
       "required": [
         "in(alphabet_soup_1, basket_1_contain_region)",
@@ -29135,7 +30143,7 @@
         "legacy_task_id": "CTR_176",
         "category": "Compose",
         "order": 59,
-        "task_description": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
+        "task_description": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -29900,13 +30908,25 @@
         "capture_task_description": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
         "description_revision": {
           "before": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
-          "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
-          "kind": "native_libero_clauses_with_explicit_order",
+          "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
           "image_and_mask_pixels_unchanged": true,
           "physical_definition_unchanged": true,
-          "current_bddl_sha256": "c1ce8dabfe2373990fadac40989fa5e21e03f59698640224d0692ccc14428d18",
-          "current_task_meta_sha256": "fab30d5b78cfe133fac62bd0709001eb57296cebea688d42ccc5f09a27c4beed"
-        }
+          "current_bddl_sha256": "6437b6ed1d05c08291041293b767e6a123302e8e508c4f5dc755718c5a7e1072",
+          "current_task_meta_sha256": "94a39e4fb32d6194a85148b305ef4f79dd5fbb921cac1ff9e23d3afc5af1ce64"
+        },
+        "description_revision_history": [
+          {
+            "before": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+            "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
+            "kind": "native_libero_clauses_with_explicit_order",
+            "image_and_mask_pixels_unchanged": true,
+            "physical_definition_unchanged": true,
+            "current_bddl_sha256": "c1ce8dabfe2373990fadac40989fa5e21e03f59698640224d0692ccc14428d18",
+            "current_task_meta_sha256": "fab30d5b78cfe133fac62bd0709001eb57296cebea688d42ccc5f09a27c4beed"
+          }
+        ]
       },
       "scene_base": "scenes/Compose/Compose_019/",
       "result": {
@@ -29922,11 +30942,13 @@
       "historical_comparison": "../selected29/assets/comparison_png/CTR_176.png",
       "description_revision": {
         "before": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
-        "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
-        "kind": "native_libero_clauses_with_explicit_order",
-        "legacy_task_id": "CTR_176"
+        "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket",
+        "legacy_task_id": "CTR_176",
+        "kind": "explicit_order_and_remove_period"
       },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     },
     {
@@ -29935,7 +30957,7 @@
       "category": "Compose",
       "category_order": 20,
       "order": 60,
-      "instruction": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+      "instruction": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet",
       "goal": "on(cream_cheese_1, flat_stove_1_cook_region);turnon(flat_stove_1);open(wooden_cabinet_1_top_region)",
       "required": [
         "on(cream_cheese_1, flat_stove_1_cook_region)",
@@ -30057,7 +31079,7 @@
         "legacy_task_id": "CTR_140",
         "category": "Compose",
         "order": 60,
-        "task_description": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+        "task_description": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -30582,7 +31604,18 @@
         },
         "rendering_preserved_physics_and_rng": true,
         "passed": true,
-        "elapsed_seconds": 9.865726951509714
+        "elapsed_seconds": 9.865726951509714,
+        "capture_task_description": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+        "description_revision": {
+          "before": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+          "after": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet",
+          "matches_original_capture_instruction": false,
+          "kind": "remove_period",
+          "image_and_mask_pixels_unchanged": true,
+          "physical_definition_unchanged": true,
+          "current_bddl_sha256": "17df62a05f502e7760d2bee4bf8bdf5f54f3cfa86a52721ebf39c255ed99ae7b",
+          "current_task_meta_sha256": "6cc4c9b38d67953eb80c5ea8e822146967c95c69844ec244ecfeede348719cd2"
+        }
       },
       "scene_base": "scenes/Compose/Compose_020/",
       "result": {
@@ -30596,10 +31629,17 @@
         "evaluation_instruction": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet."
       },
       "historical_comparison": "../selected29/assets/comparison_png/CTR_140.png",
-      "description_revision": null,
+      "description_revision": {
+        "before": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+        "after": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet",
+        "legacy_task_id": "CTR_140",
+        "kind": "remove_period"
+      },
       "direction_note": "",
+      "direction_comparison": "",
+      "direction_comparison_label": "",
       "historical_comparison_label": "과거 비교 이미지"
     }
   ],
-  "publication_created_at": "2026-09-12T08:41:38.093227+00:00"
+  "publication_created_at": "2026-09-12T15:16:10.261945+00:00"
 }

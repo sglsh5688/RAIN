@@ -4,7 +4,7 @@
   "legacy_task_id": "COMP2_032",
   "category": "Compose",
   "order": 40,
-  "task_description": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet.",
+  "task_description": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -428,5 +428,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 12.114478309638798
+  "elapsed_seconds": 12.114478309638798,
+  "capture_task_description": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet.",
+  "description_revision": {
+    "before": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet.",
+    "after": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "9f35a9b54013aca6a81ff01ad3a07ed95b821d714a8fb6d5a9cb187ec4e2ba3e",
+    "current_task_meta_sha256": "99e4164edb9ae1f89fb1728a29c4d81a6342c46a69185c999bf675555e381c5a"
+  }
 }

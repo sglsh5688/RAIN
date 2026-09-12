@@ -4,7 +4,7 @@ Legacy ID: `COMP2_027`
 
 ## Task Description
 
-Put the cream cheese on the black bowl, and then push the plate to the front of the stove.
+Put the cream cheese on the black bowl, and then push the plate to the front of the stove
 
 ## 목표
 

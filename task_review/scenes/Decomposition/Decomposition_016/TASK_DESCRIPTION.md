@@ -4,7 +4,7 @@ Legacy ID: `TDC40_002`
 
 ## Task Description
 
-Put the black bowl in the bottom drawer of the cabinet.
+Put the black bowl in the bottom drawer of the cabinet
 
 ## 목표
 

@@ -4,7 +4,7 @@
   "legacy_task_id": "COMP2_222",
   "category": "Compose",
   "order": 41,
-  "task_description": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket.",
+  "task_description": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -596,5 +596,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 12.321271045133471
+  "elapsed_seconds": 12.321271045133471,
+  "capture_task_description": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket.",
+  "description_revision": {
+    "before": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket.",
+    "after": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "3f100c3201c8795a41ae60d65d73e3f041e65a89a13a2f3e535b34c5197d2c24",
+    "current_task_meta_sha256": "feb15ea1384727ef41d5d610063e0257433ed7003ef0c3d6b9eefb55605d3b84"
+  }
 }

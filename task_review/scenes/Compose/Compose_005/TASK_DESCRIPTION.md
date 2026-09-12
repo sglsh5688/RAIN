@@ -4,7 +4,7 @@ Legacy ID: `VCN21_001`
 
 ## Task Description
 
-Put the moka pot on the stove, then close the microwave door.
+Put the moka pot on the stove, then close the microwave door
 
 ## 목표
 

@@ -4,7 +4,7 @@ Legacy ID: `ADVCN19_001`
 
 ## Task Description
 
-Open the top drawer of the wooden cabinet.
+Open the top drawer of the wooden cabinet
 
 ## 목표
 

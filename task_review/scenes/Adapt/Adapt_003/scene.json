@@ -4,7 +4,7 @@
   "legacy_task_id": "ANLGX_017",
   "category": "Adapt",
   "order": 23,
-  "task_description": "Put the black bowl in the middle drawer of the white cabinet.",
+  "task_description": "Put the black bowl in the middle drawer of the white cabinet",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -401,5 +401,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 11.565761933103204
+  "elapsed_seconds": 11.565761933103204,
+  "capture_task_description": "Put the black bowl in the middle drawer of the white cabinet.",
+  "description_revision": {
+    "before": "Put the black bowl in the middle drawer of the white cabinet.",
+    "after": "Put the black bowl in the middle drawer of the white cabinet",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "a5070d07212648c60b2f8deebc06161ce0198994f42996a51995c56e1cf9bfb8",
+    "current_task_meta_sha256": "e8f6a7b7edb618c61f9328c50e6a53c6be1036ac50f1e761dfd234718d27fe94"
+  }
 }

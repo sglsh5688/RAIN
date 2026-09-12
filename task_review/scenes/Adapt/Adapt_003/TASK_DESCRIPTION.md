@@ -4,7 +4,7 @@ Legacy ID: `ANLGX_017`
 
 ## Task Description
 
-Put the black bowl in the middle drawer of the white cabinet.
+Put the black bowl in the middle drawer of the white cabinet
 
 ## 목표
 

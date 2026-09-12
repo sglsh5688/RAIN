@@ -4,7 +4,7 @@ Legacy ID: `ANLGX_134`
 
 ## Task Description
 
-Put the plate on the top of the wooden cabinet.
+Put the plate on the top of the wooden cabinet
 
 ## 목표
 

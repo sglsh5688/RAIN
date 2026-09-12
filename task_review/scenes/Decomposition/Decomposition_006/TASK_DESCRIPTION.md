@@ -4,7 +4,7 @@ Legacy ID: `TDL10_006`
 
 ## Task Description
 
-Close the microwave.
+Close the microwave
 
 ## 목표
 

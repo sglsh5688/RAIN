@@ -1,6 +1,6 @@
 (define (problem LIBERO_Kitchen_Tabletop_Manipulation)
   (:domain robosuite)
-  (:language Put the moka pot on the stove, then close the bottom drawer of the cabinet.)
+  (:language Put the moka pot on the stove, then close the bottom drawer of the cabinet)
   (:regions
       (flat_stove_init_region
           (:target kitchen_table)

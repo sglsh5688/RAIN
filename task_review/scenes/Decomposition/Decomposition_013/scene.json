@@ -4,7 +4,7 @@
   "legacy_task_id": "TDL10_014",
   "category": "Decomposition",
   "order": 13,
-  "task_description": "Put the butter in the basket.",
+  "task_description": "Put the butter in the basket",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -319,5 +319,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 11.143129085190594
+  "elapsed_seconds": 11.143129085190594,
+  "capture_task_description": "Put the butter in the basket.",
+  "description_revision": {
+    "before": "Put the butter in the basket.",
+    "after": "Put the butter in the basket",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "85eb38783b55a18e6804e46eb73ea9aebb40a682944a62bbfaad309b179a7f36",
+    "current_task_meta_sha256": "2a967a00c511274a39d68a4f70c5a4dae12bdc773cff001a1ada2262b36ac35d"
+  }
 }

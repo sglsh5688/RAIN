@@ -4,7 +4,7 @@ Legacy ID: `NAFR3_001`
 
 ## Task Description
 
-Put the popcorn on top of the short fridge.
+Put the popcorn on top of the short fridge
 
 ## 목표
 

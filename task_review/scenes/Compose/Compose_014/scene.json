@@ -4,7 +4,7 @@
   "legacy_task_id": "MKDC_001",
   "category": "Compose",
   "order": 49,
-  "task_description": "Put the moka pot on the stove, then close the bottom drawer of the cabinet.",
+  "task_description": "Put the moka pot on the stove, then close the bottom drawer of the cabinet",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -470,5 +470,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 12.890142990276217
+  "elapsed_seconds": 12.890142990276217,
+  "capture_task_description": "Put the moka pot on the stove, then close the bottom drawer of the cabinet.",
+  "description_revision": {
+    "before": "Put the moka pot on the stove, then close the bottom drawer of the cabinet.",
+    "after": "Put the moka pot on the stove, then close the bottom drawer of the cabinet",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "ad2fb9c514df68b1ccb5f22d2a661139f46a24bcb54e6ad17aabe84935747b0b",
+    "current_task_meta_sha256": "47c41050b4597d8fc407fc98c703beefcf17a6cac0e7da4aa203235e8aece841"
+  }
 }

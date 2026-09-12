@@ -4,7 +4,7 @@ Legacy ID: `UCOMP_040`
 
 ## Task Description
 
-Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.
+Put the tomato sauce in the basket, and then put the yellow and white mug on the plate
 
 ## 목표
 

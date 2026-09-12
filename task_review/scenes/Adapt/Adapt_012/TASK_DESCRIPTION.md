@@ -4,7 +4,7 @@ Legacy ID: `OGDTSL_011`
 
 ## Task Description
 
-Pick the tomato sauce and place it in the basket.
+Pick the tomato sauce and place it in the basket
 
 ## 목표
 

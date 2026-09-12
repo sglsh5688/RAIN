@@ -1,6 +1,6 @@
 (define (problem LIBERO_Tabletop_Manipulation)
   (:domain robosuite)
-  (:language Put the cream cheese on the stove, then push the plate to the front of the stove.)
+  (:language Put the cream cheese on the stove, then push the plate to the front of the stove)
     (:regions
       (plate_region
           (:target main_table)

@@ -4,7 +4,7 @@
   "legacy_task_id": "TDL10_004",
   "category": "Decomposition",
   "order": 4,
-  "task_description": "Put the chocolate pudding to the right of the plate.",
+  "task_description": "Put the chocolate pudding to the right of the plate",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -299,5 +299,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 12.647600800730288
+  "elapsed_seconds": 12.647600800730288,
+  "capture_task_description": "Put the chocolate pudding to the right of the plate.",
+  "description_revision": {
+    "before": "Put the chocolate pudding to the right of the plate.",
+    "after": "Put the chocolate pudding to the right of the plate",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "56a8fa10820ad209a97535182dd2f5ee6b8017dd10a12b5e4fb031528cf823ef",
+    "current_task_meta_sha256": "a54b3a7921aeff230bb967b030d7e4d8a687db333002b7915b3dda753b0206a7"
+  }
 }

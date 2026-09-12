@@ -4,7 +4,7 @@
   "legacy_task_id": "NAFR3_002",
   "category": "Adapt",
   "order": 48,
-  "task_description": "Put the yellow book on top of the two-layer wooden shelf.",
+  "task_description": "Put the yellow book on top of the two-layer wooden shelf",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -295,5 +295,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 12.177440143190324
+  "elapsed_seconds": 12.177440143190324,
+  "capture_task_description": "Put the yellow book on top of the two-layer wooden shelf.",
+  "description_revision": {
+    "before": "Put the yellow book on top of the two-layer wooden shelf.",
+    "after": "Put the yellow book on top of the two-layer wooden shelf",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "92e53018f606759e8ba44cac0f8190666a084b331b1d58e44793c7439b101182",
+    "current_task_meta_sha256": "03a68afb112a3c8b7d94c7fcfe34c179e69fe57d7d5b38870b62c4590b7859fb"
+  }
 }

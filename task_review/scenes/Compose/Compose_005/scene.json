@@ -4,7 +4,7 @@
   "legacy_task_id": "VCN21_001",
   "category": "Compose",
   "order": 38,
-  "task_description": "Put the moka pot on the stove, then close the microwave door.",
+  "task_description": "Put the moka pot on the stove, then close the microwave door",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -471,5 +471,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 9.577891973778605
+  "elapsed_seconds": 9.577891973778605,
+  "capture_task_description": "Put the moka pot on the stove, then close the microwave door.",
+  "description_revision": {
+    "before": "Put the moka pot on the stove, then close the microwave door.",
+    "after": "Put the moka pot on the stove, then close the microwave door",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "df87d609188c7c9b898ce665d17aca5b3657395a822b98e5ecb16f0a951fea89",
+    "current_task_meta_sha256": "ea4aec2ab2eb0ce5fc6afe8d35cba6793915ef34d66079790429f0bf6ea2c79d"
+  }
 }

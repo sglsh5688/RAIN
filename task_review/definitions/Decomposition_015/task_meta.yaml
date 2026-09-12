@@ -1,13 +1,13 @@
 task_id: Decomposition_015
 candidate_index: 1
-task_name: Turn on the stove.
-language: Turn on the stove.
+task_name: Turn on the stove
+language: Turn on the stove
 primary_category: TD
 anchor_suite: libero_10
 source_prior_description: Turn on the stove and put the moka pot on it
 source_prior_task_ids:
 - 102
-new_test_task_description: Turn on the stove.
+new_test_task_description: Turn on the stove
 scene_family: libero_10_kitchen_scene3
 objects_of_interest:
 - flat_stove_1

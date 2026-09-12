@@ -4,7 +4,7 @@ Legacy ID: `TDL10_008`
 
 ## Task Description
 
-Put the moka pot on the stove.
+Put the moka pot on the stove
 
 ## 목표
 

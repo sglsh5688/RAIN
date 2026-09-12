@@ -1,7 +1,7 @@
 task_id: Compose_004
 task_name: Open the top drawer of the wooden cabinet, then put the ramekin on the
-  plate.
-language: Open the top drawer of the wooden cabinet, then put the ramekin on the plate.
+  plate
+language: Open the top drawer of the wooden cabinet, then put the ramekin on the plate
 primary_category: Composition
 composition_family: drawer_open_then_ramekin_plate
 anchor_suite: libero_spatial

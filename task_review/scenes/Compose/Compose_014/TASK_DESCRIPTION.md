@@ -4,7 +4,7 @@ Legacy ID: `MKDC_001`
 
 ## Task Description
 
-Put the moka pot on the stove, then close the bottom drawer of the cabinet.
+Put the moka pot on the stove, then close the bottom drawer of the cabinet
 
 ## 목표
 

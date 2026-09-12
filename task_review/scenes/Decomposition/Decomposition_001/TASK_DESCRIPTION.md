@@ -4,7 +4,7 @@ Legacy ID: `TDL10_001`
 
 ## Task Description
 
-Put the white mug on the left plate.
+Put the white mug on the left plate
 
 ## 목표
 

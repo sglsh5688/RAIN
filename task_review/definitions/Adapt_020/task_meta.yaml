@@ -1,6 +1,6 @@
 task_id: Adapt_020
-task_name: Put the ketchup on the rack.
-language: Put the ketchup on the rack.
+task_name: Put the ketchup on the rack
+language: Put the ketchup on the rack
 category: Adapt
 primary_category: Adapt
 anchor_suite: libero_goal

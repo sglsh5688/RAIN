@@ -1,6 +1,6 @@
 (define (problem LIBERO_Tabletop_Manipulation)
   (:domain robosuite)
-  (:language Put the ketchup on the rack.)
+  (:language Put the ketchup on the rack)
     (:regions
       (plate_region
           (:target main_table)

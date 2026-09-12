@@ -4,7 +4,7 @@ Legacy ID: `TDC40_001`
 
 ## Task Description
 
-Turn on the stove.
+Turn on the stove
 
 ## 목표
 

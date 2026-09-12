@@ -4,7 +4,7 @@ Legacy ID: `TDC40_005`
 
 ## Task Description
 
-Open the top drawer of the cabinet.
+Open the top drawer of the cabinet
 
 ## 목표
 

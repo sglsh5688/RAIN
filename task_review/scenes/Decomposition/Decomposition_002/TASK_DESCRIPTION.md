@@ -4,7 +4,7 @@ Legacy ID: `TDL10_002`
 
 ## Task Description
 
-Put the yellow and white mug on the right plate.
+Put the yellow and white mug on the right plate
 
 ## 목표
 

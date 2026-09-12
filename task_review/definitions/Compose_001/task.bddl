@@ -1,6 +1,6 @@
 (define (problem LIBERO_Tabletop_Manipulation)
   (:domain robosuite)
-  (:language Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.)
+  (:language Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet)
     (:regions
       (plate_region
           (:target main_table)

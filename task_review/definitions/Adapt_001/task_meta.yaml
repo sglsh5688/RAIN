@@ -1,6 +1,6 @@
 task_id: Adapt_001
-task_name: Put the white mug on the middle plate.
-language: Put the white mug on the middle plate.
+task_name: Put the white mug on the middle plate
+language: Put the white mug on the middle plate
 primary_category: Analogy
 analogy_family: E1_clean_exact_instance_three_targets
 anchor_suite: libero_10

@@ -1,7 +1,7 @@
 ; New furniture composition: feedback_fridge_goal_cabinet. Only workspace/robot frame retained.
 (define (problem libero_tabletop_manipulation)
   (:domain robosuite)
-  (:language Put the popcorn on top of the short fridge.)
+  (:language Put the popcorn on top of the short fridge)
   (:regions
       (short_fridge_1_init_region
           (:target main_table)

@@ -1,6 +1,6 @@
 task_id: Adapt_018
-task_name: Open the top drawer of the wooden cabinet.
-language: Open the top drawer of the wooden cabinet.
+task_name: Open the top drawer of the wooden cabinet
+language: Open the top drawer of the wooden cabinet
 primary_category: Adapt
 family: exact_vcn19_scene_single_top_drawer_open
 anchor_suite: libero_spatial

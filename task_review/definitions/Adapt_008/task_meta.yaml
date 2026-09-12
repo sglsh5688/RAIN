@@ -1,6 +1,6 @@
 task_id: Adapt_008
-task_name: Put the cream cheese in the top drawer of the wooden cabinet.
-language: Put the cream cheese in the top drawer of the wooden cabinet.
+task_name: Put the cream cheese in the top drawer of the wooden cabinet
+language: Put the cream cheese in the top drawer of the wooden cabinet
 primary_category: Analogy
 analogy_family: G6_goal_object_to_sibling_drawer
 anchor_suite: libero_goal

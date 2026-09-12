@@ -1,7 +1,7 @@
 ; Reachable wooden-tray revision: F2_heterogeneous_dishware_choice.
 (define (problem libero_living_room_tabletop_manipulation)
   (:domain robosuite)
-  (:language Pick up the black bowl and place it in the wooden tray.)
+  (:language Pick up the black bowl and place it in the wooden tray)
   (:regions
       (wooden_tray_1_init_region
           (:target living_room_table)

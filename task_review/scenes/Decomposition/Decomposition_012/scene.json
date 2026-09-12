@@ -4,7 +4,7 @@
   "legacy_task_id": "TDL10_013",
   "category": "Decomposition",
   "order": 12,
-  "task_description": "Put the cream cheese box in the basket.",
+  "task_description": "Put the cream cheese box in the basket",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -319,5 +319,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 12.650189084000885
+  "elapsed_seconds": 12.650189084000885,
+  "capture_task_description": "Put the cream cheese box in the basket.",
+  "description_revision": {
+    "before": "Put the cream cheese box in the basket.",
+    "after": "Put the cream cheese box in the basket",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "996a64b35d1b21be065ff46d5cd4da5ae13fb12dfc6747bc0f83cab645d2588c",
+    "current_task_meta_sha256": "b7c933c8f6c61d538e7596b0fd4c0c724b2293a5c28da14437db98aa1af86188"
+  }
 }

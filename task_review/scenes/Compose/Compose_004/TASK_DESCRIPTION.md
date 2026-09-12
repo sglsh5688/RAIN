@@ -4,7 +4,7 @@ Legacy ID: `VCN19_020`
 
 ## Task Description
 
-Open the top drawer of the wooden cabinet, then put the ramekin on the plate.
+Open the top drawer of the wooden cabinet, then put the ramekin on the plate
 
 ## 목표
 

@@ -4,7 +4,7 @@
   "legacy_task_id": "OGTS_010",
   "category": "Adapt",
   "order": 31,
-  "task_description": "Pick the orange juice and place it in the basket.",
+  "task_description": "Pick the orange juice and place it in the basket",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -323,11 +323,23 @@
   "capture_task_description": "Pick the orange juice and place it in the basket",
   "description_revision": {
     "before": "Pick the orange juice and place it in the basket",
-    "after": "Pick the orange juice and place it in the basket.",
-    "kind": "terminal_period",
+    "after": "Pick the orange juice and place it in the basket",
+    "matches_original_capture_instruction": true,
+    "kind": "remove_period",
     "image_and_mask_pixels_unchanged": true,
     "physical_definition_unchanged": true,
-    "current_bddl_sha256": "00fddb7a65c2b74b51ea0ed6359aef15aa29c6094bb746c61d32a81f83a8ca5e",
-    "current_task_meta_sha256": "509bc65a1a513258374ba6f825972a071d6f6b83fee7e9e4b5d3a59a2c8626da"
-  }
+    "current_bddl_sha256": "67711dc82158f5decdbe05f05e8c8739e73498353286a55fda790a8a8be48cd2",
+    "current_task_meta_sha256": "3a75030e9615688f03806aa240799ee2275d2592580c7553ffadf286770675e5"
+  },
+  "description_revision_history": [
+    {
+      "before": "Pick the orange juice and place it in the basket",
+      "after": "Pick the orange juice and place it in the basket.",
+      "kind": "terminal_period",
+      "image_and_mask_pixels_unchanged": true,
+      "physical_definition_unchanged": true,
+      "current_bddl_sha256": "00fddb7a65c2b74b51ea0ed6359aef15aa29c6094bb746c61d32a81f83a8ca5e",
+      "current_task_meta_sha256": "509bc65a1a513258374ba6f825972a071d6f6b83fee7e9e4b5d3a59a2c8626da"
+    }
+  ]
 }

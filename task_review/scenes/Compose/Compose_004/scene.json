@@ -4,7 +4,7 @@
   "legacy_task_id": "VCN19_020",
   "category": "Compose",
   "order": 37,
-  "task_description": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+  "task_description": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -503,5 +503,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 10.545236799865961
+  "elapsed_seconds": 10.545236799865961,
+  "capture_task_description": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+  "description_revision": {
+    "before": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+    "after": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "58ed08af1c772205380ca63f224a6e4e74f3df7b36a01ae7745143664f42be11",
+    "current_task_meta_sha256": "9851c4535f5c4e1e85e7369280c1001550bb65d1f5854b6a1ed072b490e999fb"
+  }
 }

@@ -4,7 +4,7 @@
   "legacy_task_id": "ANLGX_178",
   "category": "Adapt",
   "order": 29,
-  "task_description": "Put the yellow and white mug in the left compartment of the caddy.",
+  "task_description": "Put the yellow and white mug in the right compartment of the caddy",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -413,5 +413,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 11.946540922857821
+  "elapsed_seconds": 11.946540922857821,
+  "capture_task_description": "Put the yellow and white mug in the left compartment of the caddy.",
+  "description_revision": {
+    "before": "Put the yellow and white mug in the left compartment of the caddy.",
+    "after": "Put the yellow and white mug in the right compartment of the caddy",
+    "matches_original_capture_instruction": false,
+    "kind": "robot_base_direction_and_remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "63f7b58651309ec64f718c3e7da93764bfe1ca74d542b896dfb010fe0bc43e02",
+    "current_task_meta_sha256": "e5f0f3314a3ff520420b8a814679aaed40c678731e5c8df38ff0b191a4a49693"
+  }
 }

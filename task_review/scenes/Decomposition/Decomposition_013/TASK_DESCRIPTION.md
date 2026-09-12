@@ -4,7 +4,7 @@ Legacy ID: `TDL10_014`
 
 ## Task Description
 
-Put the butter in the basket.
+Put the butter in the basket
 
 ## 목표
 

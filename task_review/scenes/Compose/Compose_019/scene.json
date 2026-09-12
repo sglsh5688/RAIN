@@ -4,7 +4,7 @@
   "legacy_task_id": "CTR_176",
   "category": "Compose",
   "order": 59,
-  "task_description": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
+  "task_description": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -769,11 +769,23 @@
   "capture_task_description": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
   "description_revision": {
     "before": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
-    "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
-    "kind": "native_libero_clauses_with_explicit_order",
+    "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
     "image_and_mask_pixels_unchanged": true,
     "physical_definition_unchanged": true,
-    "current_bddl_sha256": "c1ce8dabfe2373990fadac40989fa5e21e03f59698640224d0692ccc14428d18",
-    "current_task_meta_sha256": "fab30d5b78cfe133fac62bd0709001eb57296cebea688d42ccc5f09a27c4beed"
-  }
+    "current_bddl_sha256": "6437b6ed1d05c08291041293b767e6a123302e8e508c4f5dc755718c5a7e1072",
+    "current_task_meta_sha256": "94a39e4fb32d6194a85148b305ef4f79dd5fbb921cac1ff9e23d3afc5af1ce64"
+  },
+  "description_revision_history": [
+    {
+      "before": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+      "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
+      "kind": "native_libero_clauses_with_explicit_order",
+      "image_and_mask_pixels_unchanged": true,
+      "physical_definition_unchanged": true,
+      "current_bddl_sha256": "c1ce8dabfe2373990fadac40989fa5e21e03f59698640224d0692ccc14428d18",
+      "current_task_meta_sha256": "fab30d5b78cfe133fac62bd0709001eb57296cebea688d42ccc5f09a27c4beed"
+    }
+  ]
 }

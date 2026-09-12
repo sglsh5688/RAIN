@@ -4,7 +4,7 @@ Legacy ID: `COMP2_032`
 
 ## Task Description
 
-Push the plate to the front of the stove, and then open the middle drawer of the cabinet.
+Push the plate to the front of the stove, and then open the middle drawer of the cabinet
 
 ## 목표
 

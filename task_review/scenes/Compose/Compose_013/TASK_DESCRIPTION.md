@@ -4,7 +4,7 @@ Legacy ID: `LBCM_028`
 
 ## Task Description
 
-Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket.
+Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket
 
 ## 목표
 

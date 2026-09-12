@@ -1,8 +1,8 @@
 task_id: Compose_015
 task_name: Pick the butter and place it in the left compartment of the bowl drainer,
-  then pick the tomato sauce and place it in the right compartment of the bowl drainer.
+  then pick the tomato sauce and place it in the right compartment of the bowl drainer
 language: Pick the butter and place it in the left compartment of the bowl drainer,
-  then pick the tomato sauce and place it in the right compartment of the bowl drainer.
+  then pick the tomato sauce and place it in the right compartment of the bowl drainer
 primary_category: Composition
 anchor_suite: libero_object
 source_prior_task_ids:

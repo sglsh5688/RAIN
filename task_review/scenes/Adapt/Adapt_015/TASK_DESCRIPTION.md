@@ -4,7 +4,7 @@ Legacy ID: `NAFR3_002`
 
 ## Task Description
 
-Put the yellow book on top of the two-layer wooden shelf.
+Put the yellow book on top of the two-layer wooden shelf
 
 ## 목표
 

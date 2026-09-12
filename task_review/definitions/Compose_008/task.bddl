@@ -1,6 +1,6 @@
 (define (problem LIBERO_Floor_Manipulation)
   (:domain robosuite)
-  (:language Put the alphabet soup in the basket, and then put the tomato sauce in the basket.)
+  (:language Put the alphabet soup in the basket, and then put the tomato sauce in the basket)
     (:regions
       (bin_region
           (:target floor)

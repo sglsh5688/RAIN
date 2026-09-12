@@ -4,7 +4,7 @@ Legacy ID: `COMP2_303`
 
 ## Task Description
 
-Put the milk in the basket, and then put the cream cheese box in the basket.
+Put the milk in the basket, and then put the cream cheese box in the basket
 
 ## 목표
 

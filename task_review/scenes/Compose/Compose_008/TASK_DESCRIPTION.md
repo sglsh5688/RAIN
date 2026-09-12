@@ -4,7 +4,7 @@ Legacy ID: `COMP2_222`
 
 ## Task Description
 
-Put the alphabet soup in the basket, and then put the tomato sauce in the basket.
+Put the alphabet soup in the basket, and then put the tomato sauce in the basket
 
 ## 목표
 

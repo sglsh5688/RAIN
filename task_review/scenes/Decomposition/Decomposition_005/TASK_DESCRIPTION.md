@@ -4,7 +4,7 @@ Legacy ID: `TDL10_005`
 
 ## Task Description
 
-Put the yellow and white mug in the microwave.
+Put the yellow and white mug in the microwave
 
 ## 목표
 

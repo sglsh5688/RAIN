@@ -4,7 +4,7 @@
   "legacy_task_id": "DSET_001",
   "category": "Adapt",
   "order": 50,
-  "task_description": "Pick up the black bowl at the table center and place it on the dining-set mat.",
+  "task_description": "Pick up the black bowl at the table center and place it on the dining-set mat",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -373,5 +373,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 10.87659225333482
+  "elapsed_seconds": 10.87659225333482,
+  "capture_task_description": "Pick up the black bowl at the table center and place it on the dining-set mat.",
+  "description_revision": {
+    "before": "Pick up the black bowl at the table center and place it on the dining-set mat.",
+    "after": "Pick up the black bowl at the table center and place it on the dining-set mat",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "6acf2fe0eba99028bf1d9b49b1e31f94f14b6e930d9653a0875b199787fada01",
+    "current_task_meta_sha256": "a8a1417545721f869b59c515f9bfbdedc6897095eafbc503377d41adc8848aaf"
+  }
 }

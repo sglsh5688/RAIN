@@ -4,7 +4,7 @@ Legacy ID: `TDL10_012`
 
 ## Task Description
 
-Put the tomato sauce in the basket.
+Put the tomato sauce in the basket
 
 ## 목표
 

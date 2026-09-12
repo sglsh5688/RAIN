@@ -4,7 +4,7 @@
   "legacy_task_id": "OGDTSL_011",
   "category": "Adapt",
   "order": 32,
-  "task_description": "Pick the tomato sauce and place it in the basket.",
+  "task_description": "Pick the tomato sauce and place it in the basket",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -363,11 +363,23 @@
   "capture_task_description": "Pick the tomato sauce and place it in the basket",
   "description_revision": {
     "before": "Pick the tomato sauce and place it in the basket",
-    "after": "Pick the tomato sauce and place it in the basket.",
-    "kind": "terminal_period",
+    "after": "Pick the tomato sauce and place it in the basket",
+    "matches_original_capture_instruction": true,
+    "kind": "remove_period",
     "image_and_mask_pixels_unchanged": true,
     "physical_definition_unchanged": true,
-    "current_bddl_sha256": "eac88c9b2616c19080c13349868f40a170d0ffb07594db4570345f9bf20318b7",
-    "current_task_meta_sha256": "2f807b041b8847af5d0e2e6aaa16b00e2b89a73d30ac95929eec652cd6eccd41"
-  }
+    "current_bddl_sha256": "ef43ecc00cf5c3e3e9a830478c8e4809ee85e184cec19642c7db0b7438c937f9",
+    "current_task_meta_sha256": "c66a066c2891c61eb58b4e654530b5334f164de1881c83934f3f76087a8389d1"
+  },
+  "description_revision_history": [
+    {
+      "before": "Pick the tomato sauce and place it in the basket",
+      "after": "Pick the tomato sauce and place it in the basket.",
+      "kind": "terminal_period",
+      "image_and_mask_pixels_unchanged": true,
+      "physical_definition_unchanged": true,
+      "current_bddl_sha256": "eac88c9b2616c19080c13349868f40a170d0ffb07594db4570345f9bf20318b7",
+      "current_task_meta_sha256": "2f807b041b8847af5d0e2e6aaa16b00e2b89a73d30ac95929eec652cd6eccd41"
+    }
+  ]
 }

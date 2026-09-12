@@ -4,7 +4,7 @@
   "legacy_task_id": "WTRAYR_004",
   "category": "Adapt",
   "order": 54,
-  "task_description": "Pick up the black bowl and place it in the wooden tray.",
+  "task_description": "Pick up the black bowl and place it in the wooden tray",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -371,5 +371,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 11.381819311529398
+  "elapsed_seconds": 11.381819311529398,
+  "capture_task_description": "Pick up the black bowl and place it in the wooden tray.",
+  "description_revision": {
+    "before": "Pick up the black bowl and place it in the wooden tray.",
+    "after": "Pick up the black bowl and place it in the wooden tray",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "3d0460e2bce211165e9b0c38bc57b10de51008c27b408c9d44e38636b82881f1",
+    "current_task_meta_sha256": "5b162c67b61dc0232efa1f86ac569ff85a6a7f553304cbbce6d311677e75c36c"
+  }
 }

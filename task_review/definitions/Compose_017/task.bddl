@@ -1,6 +1,6 @@
 (define (problem LIBERO_Floor_Manipulation)
   (:domain robosuite)
-  (:language Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.)
+  (:language Put the tomato sauce in the basket, and then put the yellow and white mug on the plate)
   (:regions
       (bin_region
           (:target floor)

@@ -4,7 +4,7 @@ Legacy ID: `CTR_140`
 
 ## Task Description
 
-Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.
+Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet
 
 ## 목표
 

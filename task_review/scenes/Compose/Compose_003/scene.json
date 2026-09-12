@@ -4,7 +4,7 @@
   "legacy_task_id": "VCN10_001",
   "category": "Compose",
   "order": 36,
-  "task_description": "Put the cream cheese on the stove, then push the plate to the front of the stove.",
+  "task_description": "Put the cream cheese on the stove, then push the plate to the front of the stove",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -573,5 +573,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 9.219312173314393
+  "elapsed_seconds": 9.219312173314393,
+  "capture_task_description": "Put the cream cheese on the stove, then push the plate to the front of the stove.",
+  "description_revision": {
+    "before": "Put the cream cheese on the stove, then push the plate to the front of the stove.",
+    "after": "Put the cream cheese on the stove, then push the plate to the front of the stove",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "656b4c7d505684b219eb9f085ad2918977d66e2beaffcf72e0dc29b6997e27ff",
+    "current_task_meta_sha256": "f8f5939246b2a0366ed2e5ffab392d00ab1e2f4188726302b89a54c345540b9f"
+  }
 }

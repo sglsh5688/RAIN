@@ -1,13 +1,13 @@
 task_id: Decomposition_018
 candidate_index: 4
-task_name: Put the right moka pot on the stove.
-language: Put the right moka pot on the stove.
+task_name: Put the right moka pot on the stove
+language: Put the right moka pot on the stove
 primary_category: TD
 anchor_suite: libero_10
 source_prior_description: Put both moka pots on the stove
 source_prior_task_ids:
 - 105
-new_test_task_description: Put the right moka pot on the stove.
+new_test_task_description: Put the right moka pot on the stove
 scene_family: libero_10_kitchen_scene8
 objects_of_interest:
 - moka_pot_1

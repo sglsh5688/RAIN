@@ -4,7 +4,7 @@ Legacy ID: `COMP2_012`
 
 ## Task Description
 
-Put the butter in the basket, and then put the tomato sauce in the basket.
+Put the butter in the basket, and then put the tomato sauce in the basket
 
 ## 목표
 

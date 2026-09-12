@@ -4,7 +4,7 @@ Legacy ID: `VCN8_008`
 
 ## Task Description
 
-Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.
+Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet
 
 ## 목표
 

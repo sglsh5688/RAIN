@@ -1,6 +1,6 @@
 task_id: Adapt_019
-task_name: Pick up the black bowl and place it in the wooden tray.
-language: Pick up the black bowl and place it in the wooden tray.
+task_name: Pick up the black bowl and place it in the wooden tray
+language: Pick up the black bowl and place it in the wooden tray
 primary_category: Adapt
 anchor_suite: libero_spatial
 source_prior_task_ids:

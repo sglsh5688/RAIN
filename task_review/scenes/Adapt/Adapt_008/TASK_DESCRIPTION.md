@@ -4,7 +4,7 @@ Legacy ID: `ANLGX_147`
 
 ## Task Description
 
-Put the cream cheese in the top drawer of the wooden cabinet.
+Put the cream cheese in the top drawer of the wooden cabinet
 
 ## 목표
 

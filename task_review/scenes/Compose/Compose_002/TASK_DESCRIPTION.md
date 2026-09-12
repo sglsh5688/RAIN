@@ -4,7 +4,7 @@ Legacy ID: `VCN9_010`
 
 ## Task Description
 
-Put the cream cheese on the stove, then turn on the stove.
+Put the cream cheese on the stove, then turn on the stove
 
 ## 목표
 

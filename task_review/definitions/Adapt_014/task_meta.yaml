@@ -1,6 +1,6 @@
 task_id: Adapt_014
-task_name: Put the popcorn on top of the short fridge.
-language: Put the popcorn on top of the short fridge.
+task_name: Put the popcorn on top of the short fridge
+language: Put the popcorn on top of the short fridge
 primary_category: Adapt
 anchor_suite: novel_feedback_revision
 source_prior_task_ids: []

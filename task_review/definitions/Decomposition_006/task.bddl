@@ -1,6 +1,6 @@
 (define (problem LIBERO_Kitchen_Tabletop_Manipulation)
   (:domain robosuite)
-  (:language Close the microwave.)
+  (:language Close the microwave)
     (:regions
       (microwave_init_region
           (:target kitchen_table)

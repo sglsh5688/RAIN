@@ -1,6 +1,6 @@
 task_id: Compose_006
-task_name: Put the butter in the basket, and then put the tomato sauce in the basket.
-language: Put the butter in the basket, and then put the tomato sauce in the basket.
+task_name: Put the butter in the basket, and then put the tomato sauce in the basket
+language: Put the butter in the basket, and then put the tomato sauce in the basket
 primary_category: Composition
 composition_family: C2_ALL_object_layout_basket_pairs
 anchor_suite: libero_object

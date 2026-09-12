@@ -1,6 +1,6 @@
 (define (problem LIBERO_Kitchen_Tabletop_Manipulation)
   (:domain robosuite)
-  (:language Put the yellow and white mug in the microwave.)
+  (:language Put the yellow and white mug in the microwave)
     (:regions
       (microwave_init_region
           (:target kitchen_table)

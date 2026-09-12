@@ -1,6 +1,6 @@
 (define (problem LIBERO_Living_Room_Tabletop_Manipulation)
   (:domain robosuite)
-  (:language Put the white mug on the plate.)
+  (:language Put the white mug on the plate)
     (:regions
       (plate_left_region
           (:target living_room_table)

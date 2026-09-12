@@ -1,8 +1,8 @@
 task_id: Compose_003
 task_name: Put the cream cheese on the stove, then push the plate to the front of
-  the stove.
+  the stove
 language: Put the cream cheese on the stove, then push the plate to the front of the
-  stove.
+  stove
 primary_category: Composition
 composition_family: stove_placement_then_plate_push
 anchor_suite: libero_goal

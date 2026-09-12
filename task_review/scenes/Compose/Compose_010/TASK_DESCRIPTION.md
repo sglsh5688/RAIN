@@ -4,7 +4,7 @@ Legacy ID: `COMPOSE_155`
 
 ## Task Description
 
-Put the alphabet soup, the butter, and the tomato sauce in the basket one after another.
+Put the alphabet soup, the butter, and the tomato sauce in the basket one after another
 
 ## 목표
 

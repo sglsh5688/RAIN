@@ -4,7 +4,7 @@ Legacy ID: `ANLGX_089`
 
 ## Task Description
 
-Pick up the wine bottle at the table center and place it on the plate.
+Pick up the wine bottle at the table center and place it on the plate
 
 ## 목표
 

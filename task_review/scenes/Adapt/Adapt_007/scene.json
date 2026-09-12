@@ -4,7 +4,7 @@
   "legacy_task_id": "ANLGX_134",
   "category": "Adapt",
   "order": 27,
-  "task_description": "Put the plate on the top of the wooden cabinet.",
+  "task_description": "Put the plate on the top of the wooden cabinet",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -405,5 +405,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 11.473823108710349
+  "elapsed_seconds": 11.473823108710349,
+  "capture_task_description": "Put the plate on the top of the wooden cabinet.",
+  "description_revision": {
+    "before": "Put the plate on the top of the wooden cabinet.",
+    "after": "Put the plate on the top of the wooden cabinet",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "695acf0fc388a0d0a1a16f8a6ed0a9383d652b4dd1181840b22d5fb9ffc87ddf",
+    "current_task_meta_sha256": "01daeb891684f191419bf84ecf5a1dcc0f34d99436eaab9c0a8108fd623e4be3"
+  }
 }

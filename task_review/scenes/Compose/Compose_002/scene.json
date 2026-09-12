@@ -4,7 +4,7 @@
   "legacy_task_id": "VCN9_010",
   "category": "Compose",
   "order": 35,
-  "task_description": "Put the cream cheese on the stove, then turn on the stove.",
+  "task_description": "Put the cream cheese on the stove, then turn on the stove",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -422,5 +422,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 11.433823854662478
+  "elapsed_seconds": 11.433823854662478,
+  "capture_task_description": "Put the cream cheese on the stove, then turn on the stove.",
+  "description_revision": {
+    "before": "Put the cream cheese on the stove, then turn on the stove.",
+    "after": "Put the cream cheese on the stove, then turn on the stove",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "79a10204d08eb98d61facc7ac277a7b2b289a3c73c440b8f3194eca5e28fb8e7",
+    "current_task_meta_sha256": "bd65d42dd19e7b557cc9f43ff93c296763cd59fea70200d238676aa6ffef2815"
+  }
 }

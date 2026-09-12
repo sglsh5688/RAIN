@@ -1,7 +1,7 @@
 ; New furniture composition: feedback_two_layer_roof_study. Only workspace/robot frame retained.
 (define (problem libero_study_tabletop_manipulation)
   (:domain robosuite)
-  (:language Put the yellow book on top of the two-layer wooden shelf.)
+  (:language Put the yellow book on top of the two-layer wooden shelf)
   (:regions
       (wooden_two_layer_shelf_1_init_region
           (:target study_table)

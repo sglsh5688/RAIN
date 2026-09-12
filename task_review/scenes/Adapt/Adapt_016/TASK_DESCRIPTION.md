@@ -4,7 +4,7 @@ Legacy ID: `DSET_001`
 
 ## Task Description
 
-Pick up the black bowl at the table center and place it on the dining-set mat.
+Pick up the black bowl at the table center and place it on the dining-set mat
 
 ## 목표
 

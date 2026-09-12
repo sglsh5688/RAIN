@@ -4,7 +4,7 @@
   "legacy_task_id": "TDL10_008",
   "category": "Decomposition",
   "order": 7,
-  "task_description": "Put the moka pot on the stove.",
+  "task_description": "Put the moka pot on the stove",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -342,5 +342,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 11.067953386344016
+  "elapsed_seconds": 11.067953386344016,
+  "capture_task_description": "Put the moka pot on the stove.",
+  "description_revision": {
+    "before": "Put the moka pot on the stove.",
+    "after": "Put the moka pot on the stove",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "08ae6d6c7af09d0940158a364440d967328a7cf69808ef88a64f8497837e54df",
+    "current_task_meta_sha256": "ad2e6e5675c33d53dc5ae6f01b29e854ef018edcfba9853a11ced7e3c781cdd6"
+  }
 }

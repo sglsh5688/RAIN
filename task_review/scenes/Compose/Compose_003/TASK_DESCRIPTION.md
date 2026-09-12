@@ -4,7 +4,7 @@ Legacy ID: `VCN10_001`
 
 ## Task Description
 
-Put the cream cheese on the stove, then push the plate to the front of the stove.
+Put the cream cheese on the stove, then push the plate to the front of the stove
 
 ## 목표
 

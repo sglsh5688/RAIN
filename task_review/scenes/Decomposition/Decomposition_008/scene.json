@@ -4,7 +4,7 @@
   "legacy_task_id": "TDL10_009",
   "category": "Decomposition",
   "order": 8,
-  "task_description": "Put the alphabet soup in the basket.",
+  "task_description": "Put the alphabet soup in the basket",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -359,5 +359,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 11.379985989071429
+  "elapsed_seconds": 11.379985989071429,
+  "capture_task_description": "Put the alphabet soup in the basket.",
+  "description_revision": {
+    "before": "Put the alphabet soup in the basket.",
+    "after": "Put the alphabet soup in the basket",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "f1d0971c9da56a69d1600ff0dab74da9f4483412cdc25cb16742d0ea0f782e45",
+    "current_task_meta_sha256": "3fc3e5966cb7884dda5f82c14f55f0532d862fcdee2fc9d67a1e239c064a1d86"
+  }
 }

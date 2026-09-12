@@ -1,6 +1,6 @@
 task_id: Adapt_007
-task_name: Put the plate on the top of the wooden cabinet.
-language: Put the plate on the top of the wooden cabinet.
+task_name: Put the plate on the top of the wooden cabinet
+language: Put the plate on the top of the wooden cabinet
 primary_category: Analogy
 analogy_family: G3_goal_object_to_cabinet_top
 anchor_suite: libero_goal

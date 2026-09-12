@@ -1,8 +1,8 @@
 task_id: Compose_017
 task_name: Put the tomato sauce in the basket, and then put the yellow and white mug
-  on the plate.
+  on the plate
 language: Put the tomato sauce in the basket, and then put the yellow and white mug
-  on the plate.
+  on the plate
 primary_category: Composition
 composition_family: object05_target_slot_yellow_proven_basket_first
 anchor_suite: cross_suite_compose

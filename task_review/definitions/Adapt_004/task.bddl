@@ -1,6 +1,6 @@
 (define (problem LIBERO_Kitchen_Tabletop_Manipulation)
   (:domain robosuite)
-  (:language Close the top drawer of the white cabinet.)
+  (:language Close the top drawer of the white cabinet)
   (:regions
       (white_cabinet_init_region
           (:target kitchen_table)

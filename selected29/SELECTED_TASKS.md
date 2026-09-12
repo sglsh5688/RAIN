@@ -12,7 +12,7 @@ The historical source metadata and review evidence retain their original pre-sel
 
 This release contains definitions and evaluation evidence, plus local runtime source exports for the three incoming tasks; external model/framework dependencies are not bundled. The declared ordered/contact rules require their evaluator runtimes; BDDL alone is insufficient.
 
-Description display updated 2026-09-12: Adapt_010–013 now end with periods; Compose_019 states its three ordered placements explicitly. The current descriptions and definitions are in [task review](../task_review/index.html). Historical source instructions, episode counts and evaluation outcomes are retained.
+Current descriptions updated 2026-09-12: all 60 omit terminal periods. Adapt_009 names the robot-right caddy compartment while retaining the rotated caddy’s native left_contain_region physical goal. Compose_019 retains its explicit three-placement order. The [current task review](../task_review/index.html) and current definition links below use these descriptions. Historical source instructions, videos, episode counts and evaluation outcomes are unchanged; the new wording does not describe what earlier evaluations received.
 
 Bowl-drainer directions follow original LIBERO native regions from the robot’s perspective (left_region: local +Y; right_region: local −Y). See the [same-orientation direction comparison](../task_review/DRAINER_DIRECTIONS.png). Current per-stage views replace old previews for these cards:
 
@@ -22,80 +22,84 @@ Bowl-drainer directions follow original LIBERO native regions from the robot’s
 | Compose_015 | CTR_103 | [Current view](../task_review/scenes/Compose/Compose_015/TASK_REVIEW.png) | [Historical image](assets/comparison_png/CTR_103.png) — This historical image combines both compartment masks, so the two placement stages are not shown separately. |
 | Compose_018 | BDRMIN_002 | [Current view](../task_review/scenes/Compose/Compose_018/TASK_REVIEW.png) | [Historical image](assets/comparison_png/BDRMIN_002.png) — This historical image uses the opposite horizontal orientation; native right appears on the image-left side of the drainer. |
 
+Caddy frame guide: The caddy is rotated 180°: its native left_contain_region is on the robot’s right. The physical goal and scene are unchanged. The conditioning mask covers the whole caddy; use the named goal region and scene to distinguish the compartment. See [compartment coordinate frames](../task_review/COMPARTMENT_FRAMES.png). [Adapt_009 current scene and masks](../task_review/scenes/Adapt/Adapt_009/TASK_REVIEW.png) · [Historical comparison](assets/comparison_png/ANLGX_178.png).
+
+Every task below links its current BDDL and metadata. The [historical task-definition archive](task_bundles.zip) retains the original evaluation wording.
+
 ## Decomposition
 
-| Task ID | Current instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) |
-|---|---|---|---|
-| TDL10_001 | Put the white mug on the left plate. | 33/50 (66.0%) | 0/5 (0%) |
-| TDL10_002 | Put the yellow and white mug on the right plate. | 50/50 (100.0%) | 0/5 (0%) |
-| TDL10_003 | Put the white mug on the plate. | 14/50 (28.0%) | 0/5 (0%) |
-| TDL10_004 | Put the chocolate pudding to the right of the plate. | 49/50 (98.0%) | 0/5 (0%) |
-| TDL10_005 | Put the yellow and white mug in the microwave. | 20/50 (40.0%) | 0/5 (0%) |
-| TDL10_006 | Close the microwave. | 47/50 (94.0%) | 1/5 (20%) |
-| TDL10_008 | Put the moka pot on the stove. | 10/50 (20.0%) | 0/5 (0%) |
-| TDL10_009 | Put the alphabet soup in the basket. | 50/50 (100.0%) | 0/5 (0%) |
-| TDL10_010 | Put the cream cheese box in the basket. | 41/50 (82.0%) | 0/5 (0%) |
-| TDL10_011 | Put the alphabet soup in the basket. | 45/50 (90.0%) | 0/5 (0%) |
-| TDL10_012 | Put the tomato sauce in the basket. | 48/50 (96.0%) | 0/5 (0%) |
-| TDL10_013 | Put the cream cheese box in the basket. | 22/50 (44.0%) | 0/5 (0%) |
-| TDL10_014 | Put the butter in the basket. | 50/50 (100.0%) | 0/5 (0%) |
-| TDL10_016 | Close the bottom drawer of the cabinet. | 16/50 (32.0%) | 0/5 (0%) |
-| TDC40_001 | Turn on the stove. | 2/10 (20.0%) | 0/5 (0%) |
-| TDC40_002 | Put the black bowl in the bottom drawer of the cabinet. | 0/10 (0.0%) | 0/5 (0%) |
-| TDC40_003 | Put the left moka pot on the stove. | 9/10 (90.0%) | 2/5 (40%) |
-| TDC40_004 | Put the right moka pot on the stove. | 0/10 (0.0%) | 0/5 (0%) |
-| TDC40_005 | Open the top drawer of the cabinet. | 1/10 (10.0%) | 0/5 (0%) |
-| TDC40_006 | Put the black bowl inside the top drawer of the cabinet. | 10/10 (100.0%) | 4/5 (80%) |
+| Task ID | Current instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) | Current definitions |
+|---|---|---|---|---|
+| TDL10_001 | Put the white mug on the left plate | 33/50 (66.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_001/task.bddl) · [Metadata](../task_review/definitions/Decomposition_001/task_meta.yaml) |
+| TDL10_002 | Put the yellow and white mug on the right plate | 50/50 (100.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_002/task.bddl) · [Metadata](../task_review/definitions/Decomposition_002/task_meta.yaml) |
+| TDL10_003 | Put the white mug on the plate | 14/50 (28.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_003/task.bddl) · [Metadata](../task_review/definitions/Decomposition_003/task_meta.yaml) |
+| TDL10_004 | Put the chocolate pudding to the right of the plate | 49/50 (98.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_004/task.bddl) · [Metadata](../task_review/definitions/Decomposition_004/task_meta.yaml) |
+| TDL10_005 | Put the yellow and white mug in the microwave | 20/50 (40.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_005/task.bddl) · [Metadata](../task_review/definitions/Decomposition_005/task_meta.yaml) |
+| TDL10_006 | Close the microwave | 47/50 (94.0%) | 1/5 (20%) | [BDDL](../task_review/definitions/Decomposition_006/task.bddl) · [Metadata](../task_review/definitions/Decomposition_006/task_meta.yaml) |
+| TDL10_008 | Put the moka pot on the stove | 10/50 (20.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_007/task.bddl) · [Metadata](../task_review/definitions/Decomposition_007/task_meta.yaml) |
+| TDL10_009 | Put the alphabet soup in the basket | 50/50 (100.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_008/task.bddl) · [Metadata](../task_review/definitions/Decomposition_008/task_meta.yaml) |
+| TDL10_010 | Put the cream cheese box in the basket | 41/50 (82.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_009/task.bddl) · [Metadata](../task_review/definitions/Decomposition_009/task_meta.yaml) |
+| TDL10_011 | Put the alphabet soup in the basket | 45/50 (90.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_010/task.bddl) · [Metadata](../task_review/definitions/Decomposition_010/task_meta.yaml) |
+| TDL10_012 | Put the tomato sauce in the basket | 48/50 (96.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_011/task.bddl) · [Metadata](../task_review/definitions/Decomposition_011/task_meta.yaml) |
+| TDL10_013 | Put the cream cheese box in the basket | 22/50 (44.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_012/task.bddl) · [Metadata](../task_review/definitions/Decomposition_012/task_meta.yaml) |
+| TDL10_014 | Put the butter in the basket | 50/50 (100.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_013/task.bddl) · [Metadata](../task_review/definitions/Decomposition_013/task_meta.yaml) |
+| TDL10_016 | Close the bottom drawer of the cabinet | 16/50 (32.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_014/task.bddl) · [Metadata](../task_review/definitions/Decomposition_014/task_meta.yaml) |
+| TDC40_001 | Turn on the stove | 2/10 (20.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_015/task.bddl) · [Metadata](../task_review/definitions/Decomposition_015/task_meta.yaml) |
+| TDC40_002 | Put the black bowl in the bottom drawer of the cabinet | 0/10 (0.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_016/task.bddl) · [Metadata](../task_review/definitions/Decomposition_016/task_meta.yaml) |
+| TDC40_003 | Put the left moka pot on the stove | 9/10 (90.0%) | 2/5 (40%) | [BDDL](../task_review/definitions/Decomposition_017/task.bddl) · [Metadata](../task_review/definitions/Decomposition_017/task_meta.yaml) |
+| TDC40_004 | Put the right moka pot on the stove | 0/10 (0.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_018/task.bddl) · [Metadata](../task_review/definitions/Decomposition_018/task_meta.yaml) |
+| TDC40_005 | Open the top drawer of the cabinet | 1/10 (10.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Decomposition_019/task.bddl) · [Metadata](../task_review/definitions/Decomposition_019/task_meta.yaml) |
+| TDC40_006 | Put the black bowl inside the top drawer of the cabinet | 10/10 (100.0%) | 4/5 (80%) | [BDDL](../task_review/definitions/Decomposition_020/task.bddl) · [Metadata](../task_review/definitions/Decomposition_020/task_meta.yaml) |
 
 ## Adapt
 
-| Task ID | Current instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) |
-|---|---|---|---|
-| ANLGX_002 | Put the white mug on the middle plate. | 4/5 (80.0%) | 4/5 (80%) |
-| ANLGX_003 | Put the white mug on the right plate. | 3/5 (60.0%) | 0/5 (0%) |
-| ANLGX_017 | Put the black bowl in the middle drawer of the white cabinet. | 5/5 (100.0%) | 5/5 (100%) |
-| ANLGX_022 | Close the top drawer of the white cabinet. | 4/5 (80.0%) | 0/5 (0%) |
-| ANLGX_023 | Close the middle drawer of the white cabinet. | 4/5 (80.0%) | 0/5 (0%) |
-| ANLGX_089 | Pick up the wine bottle at the table center and place it on the plate. | 3/5 (60.0%) | 2/5 (40%) |
-| ANLGX_134 | Put the plate on the top of the wooden cabinet. | 1/5 (20.0%) | 0/5 (0%) |
-| ANLGX_147 | Put the cream cheese in the top drawer of the wooden cabinet. | 3/5 (60.0%) | 3/5 (60%) |
-| ANLGX_178 | Put the yellow and white mug in the left compartment of the caddy. | 3/5 (60.0%) | 0/5 (0%) |
-| OGTS_001 | Pick the alphabet soup and place it in the basket. | 48/50 (96.0%) | 4/5 (80%) |
-| OGTS_010 | Pick the orange juice and place it in the basket. | 26/50 (52.0%) | 0/5 (0%) |
-| OGDTSL_011 | Pick the tomato sauce and place it in the basket. | 4/5 (80.0%) | 5/5 (100%) |
-| OGDTSL_046 | Pick the milk and place it in the basket. | 2/5 (40.0%) | 5/5 (100%) |
-| NAFR3_001 | Put the popcorn on top of the short fridge. | 4/5 (80%) | 2/5 (40%) |
-| NAFR3_002 | Put the yellow book on top of the two-layer wooden shelf. | 4/5 (80%) | 5/5 (100%) |
-| DSET_001 | Pick up the black bowl at the table center and place it on the dining-set mat. | 5/5 (100.0%) | 5/5 (100%) |
-| BDRSWAP_001 | Pick the alphabet soup and place it in the right compartment of the bowl drainer. | 5/5 (100%) | 5/5 (100%) |
-| ADVCN19_001 | Open the top drawer of the wooden cabinet. | 4/5 (80%) | 4/5 (80%) |
-| WTRAYR_004 | Pick up the black bowl and place it in the wooden tray. | 2/5 (40.0%) | 5/5 (100%) |
-| GRACK_002 | Put the ketchup on the rack. | 5/5 (100.0%) | 4/5 (80%) |
+| Task ID | Current instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) | Current definitions |
+|---|---|---|---|---|
+| ANLGX_002 | Put the white mug on the middle plate | 4/5 (80.0%) | 4/5 (80%) | [BDDL](../task_review/definitions/Adapt_001/task.bddl) · [Metadata](../task_review/definitions/Adapt_001/task_meta.yaml) |
+| ANLGX_003 | Put the white mug on the right plate | 3/5 (60.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Adapt_002/task.bddl) · [Metadata](../task_review/definitions/Adapt_002/task_meta.yaml) |
+| ANLGX_017 | Put the black bowl in the middle drawer of the white cabinet | 5/5 (100.0%) | 5/5 (100%) | [BDDL](../task_review/definitions/Adapt_003/task.bddl) · [Metadata](../task_review/definitions/Adapt_003/task_meta.yaml) |
+| ANLGX_022 | Close the top drawer of the white cabinet | 4/5 (80.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Adapt_004/task.bddl) · [Metadata](../task_review/definitions/Adapt_004/task_meta.yaml) |
+| ANLGX_023 | Close the middle drawer of the white cabinet | 4/5 (80.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Adapt_005/task.bddl) · [Metadata](../task_review/definitions/Adapt_005/task_meta.yaml) |
+| ANLGX_089 | Pick up the wine bottle at the table center and place it on the plate | 3/5 (60.0%) | 2/5 (40%) | [BDDL](../task_review/definitions/Adapt_006/task.bddl) · [Metadata](../task_review/definitions/Adapt_006/task_meta.yaml) |
+| ANLGX_134 | Put the plate on the top of the wooden cabinet | 1/5 (20.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Adapt_007/task.bddl) · [Metadata](../task_review/definitions/Adapt_007/task_meta.yaml) |
+| ANLGX_147 | Put the cream cheese in the top drawer of the wooden cabinet | 3/5 (60.0%) | 3/5 (60%) | [BDDL](../task_review/definitions/Adapt_008/task.bddl) · [Metadata](../task_review/definitions/Adapt_008/task_meta.yaml) |
+| ANLGX_178 | Put the yellow and white mug in the right compartment of the caddy | 3/5 (60.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Adapt_009/task.bddl) · [Metadata](../task_review/definitions/Adapt_009/task_meta.yaml) |
+| OGTS_001 | Pick the alphabet soup and place it in the basket | 48/50 (96.0%) | 4/5 (80%) | [BDDL](../task_review/definitions/Adapt_010/task.bddl) · [Metadata](../task_review/definitions/Adapt_010/task_meta.yaml) |
+| OGTS_010 | Pick the orange juice and place it in the basket | 26/50 (52.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Adapt_011/task.bddl) · [Metadata](../task_review/definitions/Adapt_011/task_meta.yaml) |
+| OGDTSL_011 | Pick the tomato sauce and place it in the basket | 4/5 (80.0%) | 5/5 (100%) | [BDDL](../task_review/definitions/Adapt_012/task.bddl) · [Metadata](../task_review/definitions/Adapt_012/task_meta.yaml) |
+| OGDTSL_046 | Pick the milk and place it in the basket | 2/5 (40.0%) | 5/5 (100%) | [BDDL](../task_review/definitions/Adapt_013/task.bddl) · [Metadata](../task_review/definitions/Adapt_013/task_meta.yaml) |
+| NAFR3_001 | Put the popcorn on top of the short fridge | 4/5 (80%) | 2/5 (40%) | [BDDL](../task_review/definitions/Adapt_014/task.bddl) · [Metadata](../task_review/definitions/Adapt_014/task_meta.yaml) |
+| NAFR3_002 | Put the yellow book on top of the two-layer wooden shelf | 4/5 (80%) | 5/5 (100%) | [BDDL](../task_review/definitions/Adapt_015/task.bddl) · [Metadata](../task_review/definitions/Adapt_015/task_meta.yaml) |
+| DSET_001 | Pick up the black bowl at the table center and place it on the dining-set mat | 5/5 (100.0%) | 5/5 (100%) | [BDDL](../task_review/definitions/Adapt_016/task.bddl) · [Metadata](../task_review/definitions/Adapt_016/task_meta.yaml) |
+| BDRSWAP_001 | Pick the alphabet soup and place it in the right compartment of the bowl drainer | 5/5 (100%) | 5/5 (100%) | [BDDL](../task_review/definitions/Adapt_017/task.bddl) · [Metadata](../task_review/definitions/Adapt_017/task_meta.yaml) |
+| ADVCN19_001 | Open the top drawer of the wooden cabinet | 4/5 (80%) | 4/5 (80%) | [BDDL](../task_review/definitions/Adapt_018/task.bddl) · [Metadata](../task_review/definitions/Adapt_018/task_meta.yaml) |
+| WTRAYR_004 | Pick up the black bowl and place it in the wooden tray | 2/5 (40.0%) | 5/5 (100%) | [BDDL](../task_review/definitions/Adapt_019/task.bddl) · [Metadata](../task_review/definitions/Adapt_019/task_meta.yaml) |
+| GRACK_002 | Put the ketchup on the rack | 5/5 (100.0%) | 4/5 (80%) | [BDDL](../task_review/definitions/Adapt_020/task.bddl) · [Metadata](../task_review/definitions/Adapt_020/task_meta.yaml) |
 
 ## Compose
 
-| Task ID | Current instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) |
-|---|---|---|---|
-| VCN8_008 | Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet. | 4/5 (80%) | 0/5 (0%) |
-| VCN9_010 | Put the cream cheese on the stove, then turn on the stove. | 4/5 (80%) | 0/5 (0%) |
-| VCN10_001 | Put the cream cheese on the stove, then push the plate to the front of the stove. | 2/5 (40%) | 0/5 (0%) |
-| VCN19_020 | Open the top drawer of the wooden cabinet, then put the ramekin on the plate. | 1/5 (20%) | 3/5 (60%) |
-| VCN21_001 | Put the moka pot on the stove, then close the microwave door. | 4/5 (80%) | 4/5 (80%) |
-| COMP2_012 | Put the butter in the basket, and then put the tomato sauce in the basket. | 5/5 (100.0%) | 0/5 (0%) |
-| COMP2_032 | Push the plate to the front of the stove, and then open the middle drawer of the cabinet. | 1/5 (20.0%) | 0/5 (0%) |
-| COMP2_222 | Put the alphabet soup in the basket, and then put the tomato sauce in the basket. | 1/5 (20.0%) | 0/5 (0%) |
-| COMP2_303 | Put the milk in the basket, and then put the cream cheese box in the basket. | 1/5 (20.0%) | 0/5 (0%) |
-| COMPOSE_155 | Put the alphabet soup, the butter, and the tomato sauce in the basket one after another. | 2/5 (40.0%) | 0/5 (0%) |
-| COMP2_027 | Put the cream cheese on the black bowl, and then push the plate to the front of the stove. | 1/5 (20.0%) | 0/5 (0%) |
-| LBCM_003 | Put the tomato sauce in the basket, then put the white mug on the plate. | 2/5 (40%) | 0/5 (0%) |
-| LBCM_028 | Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket. | 1/5 (20%) | 0/5 (0%) |
-| MKDC_001 | Put the moka pot on the stove, then close the bottom drawer of the cabinet. | 4/5 (80%) | 3/5 (60%) |
-| CTR_103 | Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer. | 4/5 (80%) | Pending |
-| VCN35_004 | Put the ramekin in the basket, then put the alphabet soup on the right plate. | 3/5 (60%) | 0/5 (0%) |
-| UCOMP_040 | Put the tomato sauce in the basket, and then put the yellow and white mug on the plate. | 3/5 (60%) | 0/5 (0%) |
-| BDRMIN_002 | Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer. | 1/5 (20%) | Pending |
-| CTR_176 | Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket. | 5/5 (100%) | Pending |
-| CTR_140 | Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet. | 1/5 (20%) | Pending |
+| Task ID | Current instruction | Historical RAIN SR | π0.5 LIBERO-40 SR (5ep) | Current definitions |
+|---|---|---|---|---|
+| VCN8_008 | Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet | 4/5 (80%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_001/task.bddl) · [Metadata](../task_review/definitions/Compose_001/task_meta.yaml) |
+| VCN9_010 | Put the cream cheese on the stove, then turn on the stove | 4/5 (80%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_002/task.bddl) · [Metadata](../task_review/definitions/Compose_002/task_meta.yaml) |
+| VCN10_001 | Put the cream cheese on the stove, then push the plate to the front of the stove | 2/5 (40%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_003/task.bddl) · [Metadata](../task_review/definitions/Compose_003/task_meta.yaml) |
+| VCN19_020 | Open the top drawer of the wooden cabinet, then put the ramekin on the plate | 1/5 (20%) | 3/5 (60%) | [BDDL](../task_review/definitions/Compose_004/task.bddl) · [Metadata](../task_review/definitions/Compose_004/task_meta.yaml) |
+| VCN21_001 | Put the moka pot on the stove, then close the microwave door | 4/5 (80%) | 4/5 (80%) | [BDDL](../task_review/definitions/Compose_005/task.bddl) · [Metadata](../task_review/definitions/Compose_005/task_meta.yaml) |
+| COMP2_012 | Put the butter in the basket, and then put the tomato sauce in the basket | 5/5 (100.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_006/task.bddl) · [Metadata](../task_review/definitions/Compose_006/task_meta.yaml) |
+| COMP2_032 | Push the plate to the front of the stove, and then open the middle drawer of the cabinet | 1/5 (20.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_007/task.bddl) · [Metadata](../task_review/definitions/Compose_007/task_meta.yaml) |
+| COMP2_222 | Put the alphabet soup in the basket, and then put the tomato sauce in the basket | 1/5 (20.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_008/task.bddl) · [Metadata](../task_review/definitions/Compose_008/task_meta.yaml) |
+| COMP2_303 | Put the milk in the basket, and then put the cream cheese box in the basket | 1/5 (20.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_009/task.bddl) · [Metadata](../task_review/definitions/Compose_009/task_meta.yaml) |
+| COMPOSE_155 | Put the alphabet soup, the butter, and the tomato sauce in the basket one after another | 2/5 (40.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_010/task.bddl) · [Metadata](../task_review/definitions/Compose_010/task_meta.yaml) |
+| COMP2_027 | Put the cream cheese on the black bowl, and then push the plate to the front of the stove | 1/5 (20.0%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_011/task.bddl) · [Metadata](../task_review/definitions/Compose_011/task_meta.yaml) |
+| LBCM_003 | Put the tomato sauce in the basket, then put the white mug on the plate | 2/5 (40%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_012/task.bddl) · [Metadata](../task_review/definitions/Compose_012/task_meta.yaml) |
+| LBCM_028 | Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket | 1/5 (20%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_013/task.bddl) · [Metadata](../task_review/definitions/Compose_013/task_meta.yaml) |
+| MKDC_001 | Put the moka pot on the stove, then close the bottom drawer of the cabinet | 4/5 (80%) | 3/5 (60%) | [BDDL](../task_review/definitions/Compose_014/task.bddl) · [Metadata](../task_review/definitions/Compose_014/task_meta.yaml) |
+| CTR_103 | Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer | 4/5 (80%) | Pending | [BDDL](../task_review/definitions/Compose_015/task.bddl) · [Metadata](../task_review/definitions/Compose_015/task_meta.yaml) |
+| VCN35_004 | Put the ramekin in the basket, then put the alphabet soup on the right plate | 3/5 (60%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_016/task.bddl) · [Metadata](../task_review/definitions/Compose_016/task_meta.yaml) |
+| UCOMP_040 | Put the tomato sauce in the basket, and then put the yellow and white mug on the plate | 3/5 (60%) | 0/5 (0%) | [BDDL](../task_review/definitions/Compose_017/task.bddl) · [Metadata](../task_review/definitions/Compose_017/task_meta.yaml) |
+| BDRMIN_002 | Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer | 1/5 (20%) | Pending | [BDDL](../task_review/definitions/Compose_018/task.bddl) · [Metadata](../task_review/definitions/Compose_018/task_meta.yaml) |
+| CTR_176 | Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket | 5/5 (100%) | Pending | [BDDL](../task_review/definitions/Compose_019/task.bddl) · [Metadata](../task_review/definitions/Compose_019/task_meta.yaml) |
+| CTR_140 | Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet | 1/5 (20%) | Pending | [BDDL](../task_review/definitions/Compose_020/task.bddl) · [Metadata](../task_review/definitions/Compose_020/task_meta.yaml) |
 
 ## TDL10_001 — provenance and evaluation
 

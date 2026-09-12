@@ -1,6 +1,6 @@
 task_id: Adapt_002
-task_name: Put the white mug on the right plate.
-language: Put the white mug on the right plate.
+task_name: Put the white mug on the right plate
+language: Put the white mug on the right plate
 primary_category: Analogy
 analogy_family: E1_clean_exact_instance_three_targets
 anchor_suite: libero_10

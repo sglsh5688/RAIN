@@ -1,6 +1,6 @@
 task_id: Adapt_006
-task_name: Pick up the wine bottle at the table center and place it on the plate.
-language: Pick up the wine bottle at the table center and place it on the plate.
+task_name: Pick up the wine bottle at the table center and place it on the plate
+language: Pick up the wine bottle at the table center and place it on the plate
 primary_category: Analogy
 analogy_family: S4_spatial_source_object_binding
 anchor_suite: libero_spatial

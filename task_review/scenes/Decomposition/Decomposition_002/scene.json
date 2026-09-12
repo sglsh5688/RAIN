@@ -4,7 +4,7 @@
   "legacy_task_id": "TDL10_002",
   "category": "Decomposition",
   "order": 2,
-  "task_description": "Put the yellow and white mug on the right plate.",
+  "task_description": "Put the yellow and white mug on the right plate",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -405,5 +405,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 12.407485541887581
+  "elapsed_seconds": 12.407485541887581,
+  "capture_task_description": "Put the yellow and white mug on the right plate.",
+  "description_revision": {
+    "before": "Put the yellow and white mug on the right plate.",
+    "after": "Put the yellow and white mug on the right plate",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "8621bd7962f7780b579e580cecb44e914eaec6e87172fdadd59e1b6b863305db",
+    "current_task_meta_sha256": "dc25b7e7dbda4892950fa244d78455655680974d81afbe68c60b22d9f4bf8148"
+  }
 }

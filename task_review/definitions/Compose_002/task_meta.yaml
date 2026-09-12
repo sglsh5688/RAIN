@@ -1,6 +1,6 @@
 task_id: Compose_002
-task_name: Put the cream cheese on the stove, then turn on the stove.
-language: Put the cream cheese on the stove, then turn on the stove.
+task_name: Put the cream cheese on the stove, then turn on the stove
+language: Put the cream cheese on the stove, then turn on the stove
 primary_category: Composition
 composition_family: stove_placement_then_knob_control
 anchor_suite: libero_goal

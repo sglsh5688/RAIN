@@ -4,7 +4,7 @@ Legacy ID: `TDL10_004`
 
 ## Task Description
 
-Put the chocolate pudding to the right of the plate.
+Put the chocolate pudding to the right of the plate
 
 ## 목표
 

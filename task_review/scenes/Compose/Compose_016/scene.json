@@ -4,7 +4,7 @@
   "legacy_task_id": "VCN35_004",
   "category": "Compose",
   "order": 56,
-  "task_description": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+  "task_description": "Put the ramekin in the basket, then put the alphabet soup on the right plate",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -645,5 +645,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 11.512377734296024
+  "elapsed_seconds": 11.512377734296024,
+  "capture_task_description": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+  "description_revision": {
+    "before": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+    "after": "Put the ramekin in the basket, then put the alphabet soup on the right plate",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "6f8ee6ff246f0928f49e23f154a55cb7e0fef62329ae5198049aaedbe6249ff0",
+    "current_task_meta_sha256": "facbf6d10ac430072dc21cd559f9523bb6b6d1a72b7ed61358932f2137e12394"
+  }
 }

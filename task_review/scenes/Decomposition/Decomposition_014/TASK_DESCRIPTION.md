@@ -4,7 +4,7 @@ Legacy ID: `TDL10_016`
 
 ## Task Description
 
-Close the bottom drawer of the cabinet.
+Close the bottom drawer of the cabinet
 
 ## 목표
 

@@ -1,6 +1,6 @@
 task_id: Compose_014
-task_name: Put the moka pot on the stove, then close the bottom drawer of the cabinet.
-language: Put the moka pot on the stove, then close the bottom drawer of the cabinet.
+task_name: Put the moka pot on the stove, then close the bottom drawer of the cabinet
+language: Put the moka pot on the stove, then close the bottom drawer of the cabinet
 primary_category: Composition
 composition_family: moka_then_bottom_drawer_close
 anchor_suite: libero_10

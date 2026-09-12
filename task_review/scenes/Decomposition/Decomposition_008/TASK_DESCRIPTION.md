@@ -4,7 +4,7 @@ Legacy ID: `TDL10_009`
 
 ## Task Description
 
-Put the alphabet soup in the basket.
+Put the alphabet soup in the basket
 
 ## 목표
 

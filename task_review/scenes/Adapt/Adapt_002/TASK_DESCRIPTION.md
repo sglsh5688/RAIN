@@ -4,7 +4,7 @@ Legacy ID: `ANLGX_003`
 
 ## Task Description
 
-Put the white mug on the right plate.
+Put the white mug on the right plate
 
 ## 목표
 

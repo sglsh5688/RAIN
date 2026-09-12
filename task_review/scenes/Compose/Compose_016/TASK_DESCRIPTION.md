@@ -4,7 +4,7 @@ Legacy ID: `VCN35_004`
 
 ## Task Description
 
-Put the ramekin in the basket, then put the alphabet soup on the right plate.
+Put the ramekin in the basket, then put the alphabet soup on the right plate
 
 ## 목표
 

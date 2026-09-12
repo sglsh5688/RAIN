@@ -4,7 +4,7 @@ Legacy ID: `WTRAYR_004`
 
 ## Task Description
 
-Pick up the black bowl and place it in the wooden tray.
+Pick up the black bowl and place it in the wooden tray
 
 ## 목표
 

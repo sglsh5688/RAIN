@@ -4,7 +4,7 @@
   "legacy_task_id": "OGDTSL_046",
   "category": "Adapt",
   "order": 33,
-  "task_description": "Pick the milk and place it in the basket.",
+  "task_description": "Pick the milk and place it in the basket",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -323,11 +323,23 @@
   "capture_task_description": "Pick the milk and place it in the basket",
   "description_revision": {
     "before": "Pick the milk and place it in the basket",
-    "after": "Pick the milk and place it in the basket.",
-    "kind": "terminal_period",
+    "after": "Pick the milk and place it in the basket",
+    "matches_original_capture_instruction": true,
+    "kind": "remove_period",
     "image_and_mask_pixels_unchanged": true,
     "physical_definition_unchanged": true,
-    "current_bddl_sha256": "d747f3d669ea5778fd9cafa5e2fcf8f4ad6ff286c9b78b4da44366a74012532e",
-    "current_task_meta_sha256": "2a4fe77ff9bb759d79a654c19745579f9c7e6f8e147fcd6c6f840a90d0bfb532"
-  }
+    "current_bddl_sha256": "0350fb9d9c5be992a3959b9535a0fee4bb93feb9859321e1d3cd9227fe51df12",
+    "current_task_meta_sha256": "33f45fa57b13fe513a53bc7ffd87c0e18f48f89e28bfbf268aeb067923d5af5d"
+  },
+  "description_revision_history": [
+    {
+      "before": "Pick the milk and place it in the basket",
+      "after": "Pick the milk and place it in the basket.",
+      "kind": "terminal_period",
+      "image_and_mask_pixels_unchanged": true,
+      "physical_definition_unchanged": true,
+      "current_bddl_sha256": "d747f3d669ea5778fd9cafa5e2fcf8f4ad6ff286c9b78b4da44366a74012532e",
+      "current_task_meta_sha256": "2a4fe77ff9bb759d79a654c19745579f9c7e6f8e147fcd6c6f840a90d0bfb532"
+    }
+  ]
 }

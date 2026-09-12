@@ -4,7 +4,7 @@ Legacy ID: `GRACK_002`
 
 ## Task Description
 
-Put the ketchup on the rack.
+Put the ketchup on the rack
 
 ## 목표
 

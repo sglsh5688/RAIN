@@ -4,7 +4,7 @@
   "legacy_task_id": "TDC40_004",
   "category": "Decomposition",
   "order": 18,
-  "task_description": "Put the right moka pot on the stove.",
+  "task_description": "Put the right moka pot on the stove",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -343,5 +343,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 9.415638701058924
+  "elapsed_seconds": 9.415638701058924,
+  "capture_task_description": "Put the right moka pot on the stove.",
+  "description_revision": {
+    "before": "Put the right moka pot on the stove.",
+    "after": "Put the right moka pot on the stove",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "8c1d219c2c94fce6ec0026d4733116453c37adb4c9e8cf24ea39500e76b4b4b5",
+    "current_task_meta_sha256": "89c381aede7d424e9d4d9800ccf3968c5ce114cb7ad8193e458279d0b3314e02"
+  }
 }

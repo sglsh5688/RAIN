@@ -1,6 +1,6 @@
 task_id: Compose_005
-task_name: Put the moka pot on the stove, then close the microwave door.
-language: Put the moka pot on the stove, then close the microwave door.
+task_name: Put the moka pot on the stove, then close the microwave door
+language: Put the moka pot on the stove, then close the microwave door
 primary_category: Composition
 composition_family: moka_place_then_microwave_close
 anchor_suite: libero_10

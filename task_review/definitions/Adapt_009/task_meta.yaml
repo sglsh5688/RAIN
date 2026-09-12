@@ -1,6 +1,6 @@
 task_id: Adapt_009
-task_name: Put the yellow and white mug in the left compartment of the caddy.
-language: Put the yellow and white mug in the left compartment of the caddy.
+task_name: Put the yellow and white mug in the right compartment of the caddy
+language: Put the yellow and white mug in the right compartment of the caddy
 primary_category: Analogy
 analogy_family: L3_libero10_caddy_object_compartment
 anchor_suite: libero_10

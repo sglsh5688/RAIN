@@ -4,7 +4,7 @@
   "legacy_task_id": "CTR_103",
   "category": "Compose",
   "order": 52,
-  "task_description": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+  "task_description": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -538,5 +538,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 12.267882284708321
+  "elapsed_seconds": 12.267882284708321,
+  "capture_task_description": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+  "description_revision": {
+    "before": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+    "after": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "6882d991f49236db35bed2b095d2db9fa82581c94b6fe82f1d294253c324f4a8",
+    "current_task_meta_sha256": "dcd3e9b4770e8c81c65a0455c03369719d9085562908f69c914f61a6377b70d9"
+  }
 }

@@ -1,13 +1,13 @@
 task_id: Decomposition_019
 candidate_index: 5
-task_name: Open the top drawer of the cabinet.
-language: Open the top drawer of the cabinet.
+task_name: Open the top drawer of the cabinet
+language: Open the top drawer of the cabinet
 primary_category: TD
 anchor_suite: libero_goal
 source_prior_description: Open the top layer of the drawer and put the bowl inside
 source_prior_task_ids:
 - 3
-new_test_task_description: Open the top drawer of the cabinet.
+new_test_task_description: Open the top drawer of the cabinet
 scene_family: libero_goal_shared_tabletop
 objects_of_interest:
 - wooden_cabinet_1_top_region

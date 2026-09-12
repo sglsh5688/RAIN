@@ -1,39 +1,747 @@
 {
-  "schema": "libero_analogy_instruction_revision_v1",
+  "schema": "libero_analogy_instruction_revision_v2",
   "tasks": {
-    "Adapt_010": {
-      "before": "Pick the alphabet soup and place it in the basket",
-      "after": "Pick the alphabet soup and place it in the basket.",
-      "kind": "terminal_period",
-      "legacy_task_id": "OGTS_001"
+    "Decomposition_001": {
+      "before": "Put the white mug on the left plate.",
+      "after": "Put the white mug on the left plate",
+      "legacy_task_id": "TDL10_001",
+      "kind": "remove_period"
     },
-    "Adapt_011": {
-      "before": "Pick the orange juice and place it in the basket",
-      "after": "Pick the orange juice and place it in the basket.",
-      "kind": "terminal_period",
-      "legacy_task_id": "OGTS_010"
+    "Decomposition_002": {
+      "before": "Put the yellow and white mug on the right plate.",
+      "after": "Put the yellow and white mug on the right plate",
+      "legacy_task_id": "TDL10_002",
+      "kind": "remove_period"
     },
-    "Adapt_012": {
-      "before": "Pick the tomato sauce and place it in the basket",
-      "after": "Pick the tomato sauce and place it in the basket.",
-      "kind": "terminal_period",
-      "legacy_task_id": "OGDTSL_011"
+    "Decomposition_003": {
+      "before": "Put the white mug on the plate.",
+      "after": "Put the white mug on the plate",
+      "legacy_task_id": "TDL10_003",
+      "kind": "remove_period"
     },
-    "Adapt_013": {
-      "before": "Pick the milk and place it in the basket",
-      "after": "Pick the milk and place it in the basket.",
-      "kind": "terminal_period",
-      "legacy_task_id": "OGDTSL_046"
+    "Decomposition_004": {
+      "before": "Put the chocolate pudding to the right of the plate.",
+      "after": "Put the chocolate pudding to the right of the plate",
+      "legacy_task_id": "TDL10_004",
+      "kind": "remove_period"
+    },
+    "Decomposition_005": {
+      "before": "Put the yellow and white mug in the microwave.",
+      "after": "Put the yellow and white mug in the microwave",
+      "legacy_task_id": "TDL10_005",
+      "kind": "remove_period"
+    },
+    "Decomposition_006": {
+      "before": "Close the microwave.",
+      "after": "Close the microwave",
+      "legacy_task_id": "TDL10_006",
+      "kind": "remove_period"
+    },
+    "Decomposition_007": {
+      "before": "Put the moka pot on the stove.",
+      "after": "Put the moka pot on the stove",
+      "legacy_task_id": "TDL10_008",
+      "kind": "remove_period"
+    },
+    "Decomposition_008": {
+      "before": "Put the alphabet soup in the basket.",
+      "after": "Put the alphabet soup in the basket",
+      "legacy_task_id": "TDL10_009",
+      "kind": "remove_period"
+    },
+    "Decomposition_009": {
+      "before": "Put the cream cheese box in the basket.",
+      "after": "Put the cream cheese box in the basket",
+      "legacy_task_id": "TDL10_010",
+      "kind": "remove_period"
+    },
+    "Decomposition_010": {
+      "before": "Put the alphabet soup in the basket.",
+      "after": "Put the alphabet soup in the basket",
+      "legacy_task_id": "TDL10_011",
+      "kind": "remove_period"
+    },
+    "Decomposition_011": {
+      "before": "Put the tomato sauce in the basket.",
+      "after": "Put the tomato sauce in the basket",
+      "legacy_task_id": "TDL10_012",
+      "kind": "remove_period"
+    },
+    "Decomposition_012": {
+      "before": "Put the cream cheese box in the basket.",
+      "after": "Put the cream cheese box in the basket",
+      "legacy_task_id": "TDL10_013",
+      "kind": "remove_period"
+    },
+    "Decomposition_013": {
+      "before": "Put the butter in the basket.",
+      "after": "Put the butter in the basket",
+      "legacy_task_id": "TDL10_014",
+      "kind": "remove_period"
+    },
+    "Decomposition_014": {
+      "before": "Close the bottom drawer of the cabinet.",
+      "after": "Close the bottom drawer of the cabinet",
+      "legacy_task_id": "TDL10_016",
+      "kind": "remove_period"
+    },
+    "Decomposition_015": {
+      "before": "Turn on the stove.",
+      "after": "Turn on the stove",
+      "legacy_task_id": "TDC40_001",
+      "kind": "remove_period"
+    },
+    "Decomposition_016": {
+      "before": "Put the black bowl in the bottom drawer of the cabinet.",
+      "after": "Put the black bowl in the bottom drawer of the cabinet",
+      "legacy_task_id": "TDC40_002",
+      "kind": "remove_period"
+    },
+    "Decomposition_017": {
+      "before": "Put the left moka pot on the stove.",
+      "after": "Put the left moka pot on the stove",
+      "legacy_task_id": "TDC40_003",
+      "kind": "remove_period"
+    },
+    "Decomposition_018": {
+      "before": "Put the right moka pot on the stove.",
+      "after": "Put the right moka pot on the stove",
+      "legacy_task_id": "TDC40_004",
+      "kind": "remove_period"
+    },
+    "Decomposition_019": {
+      "before": "Open the top drawer of the cabinet.",
+      "after": "Open the top drawer of the cabinet",
+      "legacy_task_id": "TDC40_005",
+      "kind": "remove_period"
+    },
+    "Decomposition_020": {
+      "before": "Put the black bowl inside the top drawer of the cabinet.",
+      "after": "Put the black bowl inside the top drawer of the cabinet",
+      "legacy_task_id": "TDC40_006",
+      "kind": "remove_period"
+    },
+    "Adapt_001": {
+      "before": "Put the white mug on the middle plate.",
+      "after": "Put the white mug on the middle plate",
+      "legacy_task_id": "ANLGX_002",
+      "kind": "remove_period"
+    },
+    "Adapt_002": {
+      "before": "Put the white mug on the right plate.",
+      "after": "Put the white mug on the right plate",
+      "legacy_task_id": "ANLGX_003",
+      "kind": "remove_period"
+    },
+    "Adapt_003": {
+      "before": "Put the black bowl in the middle drawer of the white cabinet.",
+      "after": "Put the black bowl in the middle drawer of the white cabinet",
+      "legacy_task_id": "ANLGX_017",
+      "kind": "remove_period"
+    },
+    "Adapt_004": {
+      "before": "Close the top drawer of the white cabinet.",
+      "after": "Close the top drawer of the white cabinet",
+      "legacy_task_id": "ANLGX_022",
+      "kind": "remove_period"
+    },
+    "Adapt_005": {
+      "before": "Close the middle drawer of the white cabinet.",
+      "after": "Close the middle drawer of the white cabinet",
+      "legacy_task_id": "ANLGX_023",
+      "kind": "remove_period"
+    },
+    "Adapt_006": {
+      "before": "Pick up the wine bottle at the table center and place it on the plate.",
+      "after": "Pick up the wine bottle at the table center and place it on the plate",
+      "legacy_task_id": "ANLGX_089",
+      "kind": "remove_period"
+    },
+    "Adapt_007": {
+      "before": "Put the plate on the top of the wooden cabinet.",
+      "after": "Put the plate on the top of the wooden cabinet",
+      "legacy_task_id": "ANLGX_134",
+      "kind": "remove_period"
+    },
+    "Adapt_008": {
+      "before": "Put the cream cheese in the top drawer of the wooden cabinet.",
+      "after": "Put the cream cheese in the top drawer of the wooden cabinet",
+      "legacy_task_id": "ANLGX_147",
+      "kind": "remove_period"
+    },
+    "Adapt_009": {
+      "before": "Put the yellow and white mug in the left compartment of the caddy.",
+      "after": "Put the yellow and white mug in the right compartment of the caddy",
+      "legacy_task_id": "ANLGX_178",
+      "kind": "robot_base_direction_and_remove_period"
+    },
+    "Compose_001": {
+      "before": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.",
+      "after": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet",
+      "legacy_task_id": "VCN8_008",
+      "kind": "remove_period"
+    },
+    "Compose_002": {
+      "before": "Put the cream cheese on the stove, then turn on the stove.",
+      "after": "Put the cream cheese on the stove, then turn on the stove",
+      "legacy_task_id": "VCN9_010",
+      "kind": "remove_period"
+    },
+    "Compose_003": {
+      "before": "Put the cream cheese on the stove, then push the plate to the front of the stove.",
+      "after": "Put the cream cheese on the stove, then push the plate to the front of the stove",
+      "legacy_task_id": "VCN10_001",
+      "kind": "remove_period"
+    },
+    "Compose_004": {
+      "before": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+      "after": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate",
+      "legacy_task_id": "VCN19_020",
+      "kind": "remove_period"
+    },
+    "Compose_005": {
+      "before": "Put the moka pot on the stove, then close the microwave door.",
+      "after": "Put the moka pot on the stove, then close the microwave door",
+      "legacy_task_id": "VCN21_001",
+      "kind": "remove_period"
+    },
+    "Compose_006": {
+      "before": "Put the butter in the basket, and then put the tomato sauce in the basket.",
+      "after": "Put the butter in the basket, and then put the tomato sauce in the basket",
+      "legacy_task_id": "COMP2_012",
+      "kind": "remove_period"
+    },
+    "Compose_007": {
+      "before": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet.",
+      "after": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet",
+      "legacy_task_id": "COMP2_032",
+      "kind": "remove_period"
+    },
+    "Compose_008": {
+      "before": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket.",
+      "after": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket",
+      "legacy_task_id": "COMP2_222",
+      "kind": "remove_period"
+    },
+    "Compose_009": {
+      "before": "Put the milk in the basket, and then put the cream cheese box in the basket.",
+      "after": "Put the milk in the basket, and then put the cream cheese box in the basket",
+      "legacy_task_id": "COMP2_303",
+      "kind": "remove_period"
+    },
+    "Compose_010": {
+      "before": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another.",
+      "after": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another",
+      "legacy_task_id": "COMPOSE_155",
+      "kind": "remove_period"
+    },
+    "Compose_011": {
+      "before": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove.",
+      "after": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove",
+      "legacy_task_id": "COMP2_027",
+      "kind": "remove_period"
+    },
+    "Compose_012": {
+      "before": "Put the tomato sauce in the basket, then put the white mug on the plate.",
+      "after": "Put the tomato sauce in the basket, then put the white mug on the plate",
+      "legacy_task_id": "LBCM_003",
+      "kind": "remove_period"
+    },
+    "Compose_013": {
+      "before": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket.",
+      "after": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket",
+      "legacy_task_id": "LBCM_028",
+      "kind": "remove_period"
+    },
+    "Adapt_014": {
+      "before": "Put the popcorn on top of the short fridge.",
+      "after": "Put the popcorn on top of the short fridge",
+      "legacy_task_id": "NAFR3_001",
+      "kind": "remove_period"
+    },
+    "Adapt_015": {
+      "before": "Put the yellow book on top of the two-layer wooden shelf.",
+      "after": "Put the yellow book on top of the two-layer wooden shelf",
+      "legacy_task_id": "NAFR3_002",
+      "kind": "remove_period"
+    },
+    "Compose_014": {
+      "before": "Put the moka pot on the stove, then close the bottom drawer of the cabinet.",
+      "after": "Put the moka pot on the stove, then close the bottom drawer of the cabinet",
+      "legacy_task_id": "MKDC_001",
+      "kind": "remove_period"
+    },
+    "Adapt_016": {
+      "before": "Pick up the black bowl at the table center and place it on the dining-set mat.",
+      "after": "Pick up the black bowl at the table center and place it on the dining-set mat",
+      "legacy_task_id": "DSET_001",
+      "kind": "remove_period"
+    },
+    "Adapt_017": {
+      "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+      "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer",
+      "legacy_task_id": "BDRSWAP_001",
+      "kind": "remove_period"
+    },
+    "Compose_015": {
+      "before": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+      "after": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
+      "legacy_task_id": "CTR_103",
+      "kind": "remove_period"
+    },
+    "Adapt_018": {
+      "before": "Open the top drawer of the wooden cabinet.",
+      "after": "Open the top drawer of the wooden cabinet",
+      "legacy_task_id": "ADVCN19_001",
+      "kind": "remove_period"
+    },
+    "Adapt_019": {
+      "before": "Pick up the black bowl and place it in the wooden tray.",
+      "after": "Pick up the black bowl and place it in the wooden tray",
+      "legacy_task_id": "WTRAYR_004",
+      "kind": "remove_period"
+    },
+    "Adapt_020": {
+      "before": "Put the ketchup on the rack.",
+      "after": "Put the ketchup on the rack",
+      "legacy_task_id": "GRACK_002",
+      "kind": "remove_period"
+    },
+    "Compose_016": {
+      "before": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+      "after": "Put the ramekin in the basket, then put the alphabet soup on the right plate",
+      "legacy_task_id": "VCN35_004",
+      "kind": "remove_period"
+    },
+    "Compose_017": {
+      "before": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.",
+      "after": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate",
+      "legacy_task_id": "UCOMP_040",
+      "kind": "remove_period"
+    },
+    "Compose_018": {
+      "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
+      "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+      "legacy_task_id": "BDRMIN_002",
+      "kind": "remove_period"
     },
     "Compose_019": {
       "before": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
-      "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
-      "kind": "native_libero_clauses_with_explicit_order",
-      "legacy_task_id": "CTR_176"
+      "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket",
+      "legacy_task_id": "CTR_176",
+      "kind": "explicit_order_and_remove_period"
+    },
+    "Compose_020": {
+      "before": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+      "after": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet",
+      "legacy_task_id": "CTR_140",
+      "kind": "remove_period"
     }
   },
   "physical_definition_changed": false,
   "ordered_goals_changed": false,
   "source_action_descriptions_preserved": true,
-  "reason": "User requested Adapt punctuation and LIBERO-consistent Compose_019 wording, with bowl-drainer directions verified."
+  "reason": "User requested removing periods from all current instructions and expressing Adapt_009 destination as right compartment in the fixed robot-base frame. Native site IDs and completed evaluation wording are preserved.",
+  "history": [
+    {
+      "revision_id": "20260912_punctuation_and_compose19",
+      "tasks": {
+        "Adapt_010": {
+          "before": "Pick the alphabet soup and place it in the basket",
+          "after": "Pick the alphabet soup and place it in the basket.",
+          "kind": "terminal_period",
+          "legacy_task_id": "OGTS_001"
+        },
+        "Adapt_011": {
+          "before": "Pick the orange juice and place it in the basket",
+          "after": "Pick the orange juice and place it in the basket.",
+          "kind": "terminal_period",
+          "legacy_task_id": "OGTS_010"
+        },
+        "Adapt_012": {
+          "before": "Pick the tomato sauce and place it in the basket",
+          "after": "Pick the tomato sauce and place it in the basket.",
+          "kind": "terminal_period",
+          "legacy_task_id": "OGDTSL_011"
+        },
+        "Adapt_013": {
+          "before": "Pick the milk and place it in the basket",
+          "after": "Pick the milk and place it in the basket.",
+          "kind": "terminal_period",
+          "legacy_task_id": "OGDTSL_046"
+        },
+        "Compose_019": {
+          "before": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
+          "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
+          "kind": "native_libero_clauses_with_explicit_order",
+          "legacy_task_id": "CTR_176"
+        }
+      }
+    },
+    {
+      "revision_id": "20260912_robot_frame_and_no_periods",
+      "tasks": {
+        "Decomposition_001": {
+          "before": "Put the white mug on the left plate.",
+          "after": "Put the white mug on the left plate",
+          "legacy_task_id": "TDL10_001",
+          "kind": "remove_period"
+        },
+        "Decomposition_002": {
+          "before": "Put the yellow and white mug on the right plate.",
+          "after": "Put the yellow and white mug on the right plate",
+          "legacy_task_id": "TDL10_002",
+          "kind": "remove_period"
+        },
+        "Decomposition_003": {
+          "before": "Put the white mug on the plate.",
+          "after": "Put the white mug on the plate",
+          "legacy_task_id": "TDL10_003",
+          "kind": "remove_period"
+        },
+        "Decomposition_004": {
+          "before": "Put the chocolate pudding to the right of the plate.",
+          "after": "Put the chocolate pudding to the right of the plate",
+          "legacy_task_id": "TDL10_004",
+          "kind": "remove_period"
+        },
+        "Decomposition_005": {
+          "before": "Put the yellow and white mug in the microwave.",
+          "after": "Put the yellow and white mug in the microwave",
+          "legacy_task_id": "TDL10_005",
+          "kind": "remove_period"
+        },
+        "Decomposition_006": {
+          "before": "Close the microwave.",
+          "after": "Close the microwave",
+          "legacy_task_id": "TDL10_006",
+          "kind": "remove_period"
+        },
+        "Decomposition_007": {
+          "before": "Put the moka pot on the stove.",
+          "after": "Put the moka pot on the stove",
+          "legacy_task_id": "TDL10_008",
+          "kind": "remove_period"
+        },
+        "Decomposition_008": {
+          "before": "Put the alphabet soup in the basket.",
+          "after": "Put the alphabet soup in the basket",
+          "legacy_task_id": "TDL10_009",
+          "kind": "remove_period"
+        },
+        "Decomposition_009": {
+          "before": "Put the cream cheese box in the basket.",
+          "after": "Put the cream cheese box in the basket",
+          "legacy_task_id": "TDL10_010",
+          "kind": "remove_period"
+        },
+        "Decomposition_010": {
+          "before": "Put the alphabet soup in the basket.",
+          "after": "Put the alphabet soup in the basket",
+          "legacy_task_id": "TDL10_011",
+          "kind": "remove_period"
+        },
+        "Decomposition_011": {
+          "before": "Put the tomato sauce in the basket.",
+          "after": "Put the tomato sauce in the basket",
+          "legacy_task_id": "TDL10_012",
+          "kind": "remove_period"
+        },
+        "Decomposition_012": {
+          "before": "Put the cream cheese box in the basket.",
+          "after": "Put the cream cheese box in the basket",
+          "legacy_task_id": "TDL10_013",
+          "kind": "remove_period"
+        },
+        "Decomposition_013": {
+          "before": "Put the butter in the basket.",
+          "after": "Put the butter in the basket",
+          "legacy_task_id": "TDL10_014",
+          "kind": "remove_period"
+        },
+        "Decomposition_014": {
+          "before": "Close the bottom drawer of the cabinet.",
+          "after": "Close the bottom drawer of the cabinet",
+          "legacy_task_id": "TDL10_016",
+          "kind": "remove_period"
+        },
+        "Decomposition_015": {
+          "before": "Turn on the stove.",
+          "after": "Turn on the stove",
+          "legacy_task_id": "TDC40_001",
+          "kind": "remove_period"
+        },
+        "Decomposition_016": {
+          "before": "Put the black bowl in the bottom drawer of the cabinet.",
+          "after": "Put the black bowl in the bottom drawer of the cabinet",
+          "legacy_task_id": "TDC40_002",
+          "kind": "remove_period"
+        },
+        "Decomposition_017": {
+          "before": "Put the left moka pot on the stove.",
+          "after": "Put the left moka pot on the stove",
+          "legacy_task_id": "TDC40_003",
+          "kind": "remove_period"
+        },
+        "Decomposition_018": {
+          "before": "Put the right moka pot on the stove.",
+          "after": "Put the right moka pot on the stove",
+          "legacy_task_id": "TDC40_004",
+          "kind": "remove_period"
+        },
+        "Decomposition_019": {
+          "before": "Open the top drawer of the cabinet.",
+          "after": "Open the top drawer of the cabinet",
+          "legacy_task_id": "TDC40_005",
+          "kind": "remove_period"
+        },
+        "Decomposition_020": {
+          "before": "Put the black bowl inside the top drawer of the cabinet.",
+          "after": "Put the black bowl inside the top drawer of the cabinet",
+          "legacy_task_id": "TDC40_006",
+          "kind": "remove_period"
+        },
+        "Adapt_001": {
+          "before": "Put the white mug on the middle plate.",
+          "after": "Put the white mug on the middle plate",
+          "legacy_task_id": "ANLGX_002",
+          "kind": "remove_period"
+        },
+        "Adapt_002": {
+          "before": "Put the white mug on the right plate.",
+          "after": "Put the white mug on the right plate",
+          "legacy_task_id": "ANLGX_003",
+          "kind": "remove_period"
+        },
+        "Adapt_003": {
+          "before": "Put the black bowl in the middle drawer of the white cabinet.",
+          "after": "Put the black bowl in the middle drawer of the white cabinet",
+          "legacy_task_id": "ANLGX_017",
+          "kind": "remove_period"
+        },
+        "Adapt_004": {
+          "before": "Close the top drawer of the white cabinet.",
+          "after": "Close the top drawer of the white cabinet",
+          "legacy_task_id": "ANLGX_022",
+          "kind": "remove_period"
+        },
+        "Adapt_005": {
+          "before": "Close the middle drawer of the white cabinet.",
+          "after": "Close the middle drawer of the white cabinet",
+          "legacy_task_id": "ANLGX_023",
+          "kind": "remove_period"
+        },
+        "Adapt_006": {
+          "before": "Pick up the wine bottle at the table center and place it on the plate.",
+          "after": "Pick up the wine bottle at the table center and place it on the plate",
+          "legacy_task_id": "ANLGX_089",
+          "kind": "remove_period"
+        },
+        "Adapt_007": {
+          "before": "Put the plate on the top of the wooden cabinet.",
+          "after": "Put the plate on the top of the wooden cabinet",
+          "legacy_task_id": "ANLGX_134",
+          "kind": "remove_period"
+        },
+        "Adapt_008": {
+          "before": "Put the cream cheese in the top drawer of the wooden cabinet.",
+          "after": "Put the cream cheese in the top drawer of the wooden cabinet",
+          "legacy_task_id": "ANLGX_147",
+          "kind": "remove_period"
+        },
+        "Adapt_009": {
+          "before": "Put the yellow and white mug in the left compartment of the caddy.",
+          "after": "Put the yellow and white mug in the right compartment of the caddy",
+          "legacy_task_id": "ANLGX_178",
+          "kind": "robot_base_direction_and_remove_period"
+        },
+        "Adapt_010": {
+          "before": "Pick the alphabet soup and place it in the basket.",
+          "after": "Pick the alphabet soup and place it in the basket",
+          "legacy_task_id": "OGTS_001",
+          "kind": "remove_period"
+        },
+        "Adapt_011": {
+          "before": "Pick the orange juice and place it in the basket.",
+          "after": "Pick the orange juice and place it in the basket",
+          "legacy_task_id": "OGTS_010",
+          "kind": "remove_period"
+        },
+        "Adapt_012": {
+          "before": "Pick the tomato sauce and place it in the basket.",
+          "after": "Pick the tomato sauce and place it in the basket",
+          "legacy_task_id": "OGDTSL_011",
+          "kind": "remove_period"
+        },
+        "Adapt_013": {
+          "before": "Pick the milk and place it in the basket.",
+          "after": "Pick the milk and place it in the basket",
+          "legacy_task_id": "OGDTSL_046",
+          "kind": "remove_period"
+        },
+        "Compose_001": {
+          "before": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet.",
+          "after": "Put the chocolate pudding on the black bowl, then open the middle drawer of the cabinet",
+          "legacy_task_id": "VCN8_008",
+          "kind": "remove_period"
+        },
+        "Compose_002": {
+          "before": "Put the cream cheese on the stove, then turn on the stove.",
+          "after": "Put the cream cheese on the stove, then turn on the stove",
+          "legacy_task_id": "VCN9_010",
+          "kind": "remove_period"
+        },
+        "Compose_003": {
+          "before": "Put the cream cheese on the stove, then push the plate to the front of the stove.",
+          "after": "Put the cream cheese on the stove, then push the plate to the front of the stove",
+          "legacy_task_id": "VCN10_001",
+          "kind": "remove_period"
+        },
+        "Compose_004": {
+          "before": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+          "after": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate",
+          "legacy_task_id": "VCN19_020",
+          "kind": "remove_period"
+        },
+        "Compose_005": {
+          "before": "Put the moka pot on the stove, then close the microwave door.",
+          "after": "Put the moka pot on the stove, then close the microwave door",
+          "legacy_task_id": "VCN21_001",
+          "kind": "remove_period"
+        },
+        "Compose_006": {
+          "before": "Put the butter in the basket, and then put the tomato sauce in the basket.",
+          "after": "Put the butter in the basket, and then put the tomato sauce in the basket",
+          "legacy_task_id": "COMP2_012",
+          "kind": "remove_period"
+        },
+        "Compose_007": {
+          "before": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet.",
+          "after": "Push the plate to the front of the stove, and then open the middle drawer of the cabinet",
+          "legacy_task_id": "COMP2_032",
+          "kind": "remove_period"
+        },
+        "Compose_008": {
+          "before": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket.",
+          "after": "Put the alphabet soup in the basket, and then put the tomato sauce in the basket",
+          "legacy_task_id": "COMP2_222",
+          "kind": "remove_period"
+        },
+        "Compose_009": {
+          "before": "Put the milk in the basket, and then put the cream cheese box in the basket.",
+          "after": "Put the milk in the basket, and then put the cream cheese box in the basket",
+          "legacy_task_id": "COMP2_303",
+          "kind": "remove_period"
+        },
+        "Compose_010": {
+          "before": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another.",
+          "after": "Put the alphabet soup, the butter, and the tomato sauce in the basket one after another",
+          "legacy_task_id": "COMPOSE_155",
+          "kind": "remove_period"
+        },
+        "Compose_011": {
+          "before": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove.",
+          "after": "Put the cream cheese on the black bowl, and then push the plate to the front of the stove",
+          "legacy_task_id": "COMP2_027",
+          "kind": "remove_period"
+        },
+        "Compose_012": {
+          "before": "Put the tomato sauce in the basket, then put the white mug on the plate.",
+          "after": "Put the tomato sauce in the basket, then put the white mug on the plate",
+          "legacy_task_id": "LBCM_003",
+          "kind": "remove_period"
+        },
+        "Compose_013": {
+          "before": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket.",
+          "after": "Put the alphabet soup in the basket, then put the white mug on the left plate, then put the cream cheese box in the basket",
+          "legacy_task_id": "LBCM_028",
+          "kind": "remove_period"
+        },
+        "Adapt_014": {
+          "before": "Put the popcorn on top of the short fridge.",
+          "after": "Put the popcorn on top of the short fridge",
+          "legacy_task_id": "NAFR3_001",
+          "kind": "remove_period"
+        },
+        "Adapt_015": {
+          "before": "Put the yellow book on top of the two-layer wooden shelf.",
+          "after": "Put the yellow book on top of the two-layer wooden shelf",
+          "legacy_task_id": "NAFR3_002",
+          "kind": "remove_period"
+        },
+        "Compose_014": {
+          "before": "Put the moka pot on the stove, then close the bottom drawer of the cabinet.",
+          "after": "Put the moka pot on the stove, then close the bottom drawer of the cabinet",
+          "legacy_task_id": "MKDC_001",
+          "kind": "remove_period"
+        },
+        "Adapt_016": {
+          "before": "Pick up the black bowl at the table center and place it on the dining-set mat.",
+          "after": "Pick up the black bowl at the table center and place it on the dining-set mat",
+          "legacy_task_id": "DSET_001",
+          "kind": "remove_period"
+        },
+        "Adapt_017": {
+          "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+          "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer",
+          "legacy_task_id": "BDRSWAP_001",
+          "kind": "remove_period"
+        },
+        "Compose_015": {
+          "before": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
+          "after": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
+          "legacy_task_id": "CTR_103",
+          "kind": "remove_period"
+        },
+        "Adapt_018": {
+          "before": "Open the top drawer of the wooden cabinet.",
+          "after": "Open the top drawer of the wooden cabinet",
+          "legacy_task_id": "ADVCN19_001",
+          "kind": "remove_period"
+        },
+        "Adapt_019": {
+          "before": "Pick up the black bowl and place it in the wooden tray.",
+          "after": "Pick up the black bowl and place it in the wooden tray",
+          "legacy_task_id": "WTRAYR_004",
+          "kind": "remove_period"
+        },
+        "Adapt_020": {
+          "before": "Put the ketchup on the rack.",
+          "after": "Put the ketchup on the rack",
+          "legacy_task_id": "GRACK_002",
+          "kind": "remove_period"
+        },
+        "Compose_016": {
+          "before": "Put the ramekin in the basket, then put the alphabet soup on the right plate.",
+          "after": "Put the ramekin in the basket, then put the alphabet soup on the right plate",
+          "legacy_task_id": "VCN35_004",
+          "kind": "remove_period"
+        },
+        "Compose_017": {
+          "before": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.",
+          "after": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate",
+          "legacy_task_id": "UCOMP_040",
+          "kind": "remove_period"
+        },
+        "Compose_018": {
+          "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
+          "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+          "legacy_task_id": "BDRMIN_002",
+          "kind": "remove_period"
+        },
+        "Compose_019": {
+          "before": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket.",
+          "after": "Put the alphabet soup in the basket, then put the butter in the basket, then put the cream cheese box in the basket",
+          "legacy_task_id": "CTR_176",
+          "kind": "remove_period"
+        },
+        "Compose_020": {
+          "before": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet.",
+          "after": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet",
+          "legacy_task_id": "CTR_140",
+          "kind": "remove_period"
+        }
+      }
+    }
+  ]
 }

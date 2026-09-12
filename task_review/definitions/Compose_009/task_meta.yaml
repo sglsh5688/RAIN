@@ -1,6 +1,6 @@
 task_id: Compose_009
-task_name: Put the milk in the basket, and then put the cream cheese box in the basket.
-language: Put the milk in the basket, and then put the cream cheese box in the basket.
+task_name: Put the milk in the basket, and then put the cream cheese box in the basket
+language: Put the milk in the basket, and then put the cream cheese box in the basket
 primary_category: Composition
 composition_family: C2_ALL_object_layout_basket_pairs
 anchor_suite: libero_object

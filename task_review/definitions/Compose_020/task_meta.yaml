@@ -1,8 +1,8 @@
 task_id: Compose_020
 task_name: Put the cream cheese on the stove, then turn on the stove, then open the
-  top drawer of the wooden cabinet.
+  top drawer of the wooden cabinet
 language: Put the cream cheese on the stove, then turn on the stove, then open the
-  top drawer of the wooden cabinet.
+  top drawer of the wooden cabinet
 primary_category: Composition
 composition_family: stove_place_control_then_top_open
 anchor_suite: libero_goal

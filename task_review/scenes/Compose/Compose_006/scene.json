@@ -4,7 +4,7 @@
   "legacy_task_id": "COMP2_012",
   "category": "Compose",
   "order": 39,
-  "task_description": "Put the butter in the basket, and then put the tomato sauce in the basket.",
+  "task_description": "Put the butter in the basket, and then put the tomato sauce in the basket",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -556,5 +556,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 12.26080265827477
+  "elapsed_seconds": 12.26080265827477,
+  "capture_task_description": "Put the butter in the basket, and then put the tomato sauce in the basket.",
+  "description_revision": {
+    "before": "Put the butter in the basket, and then put the tomato sauce in the basket.",
+    "after": "Put the butter in the basket, and then put the tomato sauce in the basket",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "1010c50c96537971a62ce28091c75dda563e5470d25ad12156ab996e517fc155",
+    "current_task_meta_sha256": "03544cfdb69c18c90ac635879c978587d52e0c9bc4eeca9c7ac664a3cd9a5f14"
+  }
 }

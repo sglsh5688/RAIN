@@ -1,6 +1,6 @@
 (define (problem LIBERO_Kitchen_Tabletop_Manipulation)
   (:domain robosuite)
-  (:language Turn on the stove.)
+  (:language Turn on the stove)
     (:regions
       (flat_stove_init_region
           (:target kitchen_table)

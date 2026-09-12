@@ -4,7 +4,7 @@ Legacy ID: `TDC40_004`
 
 ## Task Description
 
-Put the right moka pot on the stove.
+Put the right moka pot on the stove
 
 ## 목표
 

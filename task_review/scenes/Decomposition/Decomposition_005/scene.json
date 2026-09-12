@@ -4,7 +4,7 @@
   "legacy_task_id": "TDL10_005",
   "category": "Decomposition",
   "order": 5,
-  "task_description": "Put the yellow and white mug in the microwave.",
+  "task_description": "Put the yellow and white mug in the microwave",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -400,5 +400,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 13.014600772410631
+  "elapsed_seconds": 13.014600772410631,
+  "capture_task_description": "Put the yellow and white mug in the microwave.",
+  "description_revision": {
+    "before": "Put the yellow and white mug in the microwave.",
+    "after": "Put the yellow and white mug in the microwave",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "ba38cd26e9f3b6a001505cc2e2fce4527f12763b262344a83e12504798c66f37",
+    "current_task_meta_sha256": "81ede5532ed2080613e1095b6995d20425b9e19dd3fa8d2d708ccdee5c1b3972"
+  }
 }

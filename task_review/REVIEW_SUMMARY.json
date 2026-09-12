@@ -11,13 +11,16 @@
   "review_sheets": 60,
   "representative_success_videos": 59,
   "representative_failure_videos": 53,
-  "source_task_index_sha256": "a26df3b93558ee59dca824b7364e5e42c4204c6ebe6088f40562bc51441f8974",
+  "source_task_index_sha256": "0a80bdc0b1df4f9c2309d235e57257cee6a979cc27b80c6acabde66b4e9fb99d",
   "new_policy_inference_calls": 0,
   "initial_state_index": 0,
   "seed": 7,
   "source_validation_passed": true,
-  "instruction_revision_count": 5,
+  "instruction_revision_count": 56,
+  "instructions_changed_this_update": 60,
+  "current_instruction_period_count": 0,
   "direction_verified_tasks": [
+    "Adapt_009",
     "Adapt_017",
     "Compose_015",
     "Compose_018"

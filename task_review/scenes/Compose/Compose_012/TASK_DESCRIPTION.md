@@ -4,7 +4,7 @@ Legacy ID: `LBCM_003`
 
 ## Task Description
 
-Put the tomato sauce in the basket, then put the white mug on the plate.
+Put the tomato sauce in the basket, then put the white mug on the plate
 
 ## 목표
 

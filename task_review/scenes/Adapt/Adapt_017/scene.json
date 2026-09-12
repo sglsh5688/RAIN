@@ -4,7 +4,7 @@
   "legacy_task_id": "BDRSWAP_001",
   "category": "Adapt",
   "order": 51,
-  "task_description": "Pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+  "task_description": "Pick the alphabet soup and place it in the right compartment of the bowl drainer",
   "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
   "policy_inference_calls": 0,
   "seed": 7,
@@ -335,5 +335,16 @@
   },
   "rendering_preserved_physics_and_rng": true,
   "passed": true,
-  "elapsed_seconds": 11.470961743034422
+  "elapsed_seconds": 11.470961743034422,
+  "capture_task_description": "Pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+  "description_revision": {
+    "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer.",
+    "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer",
+    "matches_original_capture_instruction": false,
+    "kind": "remove_period",
+    "image_and_mask_pixels_unchanged": true,
+    "physical_definition_unchanged": true,
+    "current_bddl_sha256": "0d7dc580cdb697f74b4d8525847846ea1930e0a354f71f7a31c3644912b4fbe6",
+    "current_task_meta_sha256": "02faf10c4d6f86398b7acbdcddfb90f21042525c2b49251b0a55a81056d76011"
+  }
 }

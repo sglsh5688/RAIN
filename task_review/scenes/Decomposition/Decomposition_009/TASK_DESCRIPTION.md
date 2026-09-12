@@ -4,7 +4,7 @@ Legacy ID: `TDL10_010`
 
 ## Task Description
 
-Put the cream cheese box in the basket.
+Put the cream cheese box in the basket
 
 ## 목표
 

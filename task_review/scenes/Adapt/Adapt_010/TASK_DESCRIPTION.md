@@ -4,7 +4,7 @@ Legacy ID: `OGTS_001`
 
 ## Task Description
 
-Pick the alphabet soup and place it in the basket.
+Pick the alphabet soup and place it in the basket
 
 ## 목표
 

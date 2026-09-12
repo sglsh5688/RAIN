@@ -1,6 +1,6 @@
 task_id: Compose_012
-task_name: Put the tomato sauce in the basket, then put the white mug on the plate.
-language: Put the tomato sauce in the basket, then put the white mug on the plate.
+task_name: Put the tomato sauce in the basket, then put the white mug on the plate
+language: Put the tomato sauce in the basket, then put the white mug on the plate
 primary_category: Composition
 composition_family: long_basket_cup_pudding_mix
 anchor_suite: libero_10

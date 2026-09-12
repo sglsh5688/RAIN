@@ -1,6 +1,6 @@
 task_id: Adapt_015
-task_name: Put the yellow book on top of the two-layer wooden shelf.
-language: Put the yellow book on top of the two-layer wooden shelf.
+task_name: Put the yellow book on top of the two-layer wooden shelf
+language: Put the yellow book on top of the two-layer wooden shelf
 primary_category: Adapt
 anchor_suite: novel_feedback_revision
 source_prior_task_ids: []

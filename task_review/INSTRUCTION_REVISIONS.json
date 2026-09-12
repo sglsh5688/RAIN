@@ -285,9 +285,9 @@
     },
     "Compose_015": {
       "before": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer.",
-      "after": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
+      "after": "Pick the butter and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
       "legacy_task_id": "CTR_103",
-      "kind": "remove_period"
+      "kind": "user_requested_robot_arm_direction_and_remove_period"
     },
     "Adapt_018": {
       "before": "Open the top drawer of the wooden cabinet.",
@@ -341,7 +341,7 @@
   "physical_definition_changed": false,
   "ordered_goals_changed": false,
   "source_action_descriptions_preserved": true,
-  "reason": "User requested removing periods from all current instructions and expressing Adapt_009 destination as right compartment in the fixed robot-base frame. Native site IDs and completed evaluation wording are preserved.",
+  "reason": "Current instructions have no periods. User requested Compose_015 butter RIGHT then tomato sauce LEFT as robot-arm wording; Compose_018 remains alphabet soup RIGHT then tomato sauce LEFT as explicitly stated. Adapt_009 retains robot-base RIGHT and Compose_019 retains explicit ordered placement clauses. Native site IDs, physical goals and completed evaluation/source-conditioning wording are preserved.",
   "history": [
     {
       "revision_id": "20260912_punctuation_and_compose19",
@@ -740,6 +740,17 @@
           "after": "Put the cream cheese on the stove, then turn on the stove, then open the top drawer of the wooden cabinet",
           "legacy_task_id": "CTR_140",
           "kind": "remove_period"
+        }
+      }
+    },
+    {
+      "revision_id": "20260912_user_arm_direction",
+      "tasks": {
+        "Compose_015": {
+          "before": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
+          "after": "Pick the butter and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+          "legacy_task_id": "CTR_103",
+          "kind": "user_requested_robot_arm_direction"
         }
       }
     }

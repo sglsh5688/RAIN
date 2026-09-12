@@ -27,4 +27,4 @@ Pick the alphabet soup and place it in the right compartment of the bowl drainer
 
 방향은 LIBERO 원본 구획 기준입니다. 로봇 기준 왼쪽은 left_region(+Y), 오른쪽은 right_region(−Y)입니다. 현재 scene과 단계별 mask는 같은 화면 방향을 사용합니다.
 
-[세 drainer task 방향 비교](../../../DRAINER_DIRECTIONS.png)
+[현재 지시문 · 원본 구획 비교](../../../DRAINER_DIRECTIONS.png)

@@ -1,6 +1,6 @@
 (define (problem LIBERO_Floor_Manipulation)
   (:domain robosuite)
-  (:language Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer)
+  (:language Pick the butter and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer)
   (:regions
       (bin_region
           (:target floor)

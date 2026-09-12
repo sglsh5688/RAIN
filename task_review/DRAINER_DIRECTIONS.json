@@ -1,43 +1,56 @@
 {
-  "direction_note": "Bowl-drainer left/right follows the original LIBERO region names, viewed from the robot’s perspective: left_region is local +Y and right_region is local −Y. The current scene and masks use the same RAIN image orientation. Historical comparison images may use a different orientation or combine masks; use the current per-stage masks to check each destination.",
+  "direction_note": "Current instruction directions and native object-attached goal IDs are separate fields. Compose_015 uses the user-requested robot-arm wording RIGHT then LEFT, while native goals remain left_region then right_region. Compose_018 retains its explicitly requested RIGHT then LEFT wording. Scene and mask pixels, physical goals and historical source-conditioning descriptions are unchanged. Screen-left/right depends on camera and display orientation.",
   "mapping": [
     {
       "task_id": "Adapt_017",
+      "instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer",
       "placements": [
         {
           "object": "alphabet_soup_1",
           "side": "right",
-          "native_region": "bowl_drainer_1_right_region"
+          "instruction_side": "right",
+          "native_region": "bowl_drainer_1_right_region",
+          "mask_changed": false
         }
       ]
     },
     {
       "task_id": "Compose_015",
+      "instruction": "Pick the butter and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
       "placements": [
         {
           "object": "butter_1",
-          "side": "left",
-          "native_region": "bowl_drainer_1_left_region"
+          "side": "right",
+          "instruction_side": "right",
+          "native_region": "bowl_drainer_1_left_region",
+          "mask_changed": false
         },
         {
           "object": "tomato_sauce_1",
-          "side": "right",
-          "native_region": "bowl_drainer_1_right_region"
+          "side": "left",
+          "instruction_side": "left",
+          "native_region": "bowl_drainer_1_right_region",
+          "mask_changed": false
         }
       ]
     },
     {
       "task_id": "Compose_018",
+      "instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
       "placements": [
         {
           "object": "alphabet_soup_1",
           "side": "right",
-          "native_region": "bowl_drainer_1_right_region"
+          "instruction_side": "right",
+          "native_region": "bowl_drainer_1_right_region",
+          "mask_changed": false
         },
         {
           "object": "tomato_sauce_1",
           "side": "left",
-          "native_region": "bowl_drainer_1_left_region"
+          "instruction_side": "left",
+          "native_region": "bowl_drainer_1_left_region",
+          "mask_changed": false
         }
       ]
     }

@@ -1,0 +1,217 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Decomposition_014",
+  "legacy_task_id": "TDL10_016",
+  "category": "Decomposition",
+  "order": 14,
+  "task_description": "Close the bottom drawer of the cabinet.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 3,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "97fe1d3a96fb19ac034c8f208c1189bb26da7958e3700b4e2e0ad83ee6a58297",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "c9c9956a13d194e44871883a835e90bd36827921bb7f8ffb1b394aecec3f9633",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "close",
+      "object_id": "white_cabinet_1_bottom_region",
+      "object_name": "white_cabinet_1_cabinet_bottom",
+      "primary_object_id": "white_cabinet_1_bottom_region",
+      "target_object_id": "white_cabinet_1_bottom_region",
+      "source_task_description": "Close the bottom drawer of the cabinet.",
+      "binding": {
+        "name": "white_cabinet_1_cabinet_bottom",
+        "body_name": "white_cabinet_1_cabinet_bottom",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        29
+      ],
+      "geom_ids": [
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193
+      ],
+      "geom_names": [
+        "white_cabinet_1_g32",
+        "white_cabinet_1_g33",
+        "white_cabinet_1_g34",
+        "white_cabinet_1_g35",
+        "white_cabinet_1_g36",
+        "white_cabinet_1_g37",
+        "white_cabinet_1_g38",
+        "white_cabinet_1_g39",
+        "white_cabinet_1_g40",
+        "white_cabinet_1_g41",
+        "white_cabinet_1_g42"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 3649,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3649,
+          "mask_fingerprint": {
+            "sha256": "72b17e2f7b212e83e17613c8580213785e47419a2095b0847cb54db15fe5d72a",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 8084,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 8084,
+          "mask_fingerprint": {
+            "sha256": "845a8f201044f30b2bec19e4591aab1c8d0e6a4a393fd5ca694e2b908c2921ba",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "fd4b0519182c564e0b49de6a66663f9f8247d6b885e23d859a4f0bf22aa485b6",
+    "legacy_job_sha256": "f3bbed472116c7be2bdcb0aa433ae559e4d5c9e4a3ac27bfcb28c8fabaa14778",
+    "legacy_runtime_entrypoint": "final_libero_ex_eval.impl.evaluator",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "17ead9147a35ad0f378b49460160aa188179d70af01c0d91a8eb0916f82191e1",
+        "frozen_sha256": "17ead9147a35ad0f378b49460160aa188179d70af01c0d91a8eb0916f82191e1",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "e98ded151f64a036c74c872336dd09b968c379f3c9db7bc333aba37e7c235b86",
+        "frozen_sha256": "e98ded151f64a036c74c872336dd09b968c379f3c9db7bc333aba37e7c235b86",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "ea2ad0a67ceabe915bc4744e8231bf7fe71bddb74ff8c67eae6c821ff82078a4",
+      "shape": [
+        51
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "final_libero_ex_eval.impl.evaluator.run_single_episode_libero_ex"
+  ],
+  "initial_tracker": {
+    "custom": true,
+    "category": "TD",
+    "required_atoms": [
+      [
+        "close",
+        "white_cabinet_1_bottom_region"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null
+    ],
+    "required_atom_final": [
+      false
+    ],
+    "required_prefix_first_steps": [
+      null
+    ],
+    "required_combination_first_steps": {
+      "0": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [
+      [
+        "in",
+        "akita_black_bowl_1",
+        "white_cabinet_1_bottom_region"
+      ]
+    ],
+    "overshoot_policy": "fail_on_forbidden_ever",
+    "continue_after_success": true,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "40458aa6dd8197fbe1b1d0a2876b5e7fe4dd7b43c7e9f6124274f4860e6a045c",
+    "shape": [
+      51
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 12.957878011278808
+}

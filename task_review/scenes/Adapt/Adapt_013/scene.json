@@ -1,0 +1,323 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Adapt_013",
+  "legacy_task_id": "OGDTSL_046",
+  "category": "Adapt",
+  "order": 33,
+  "task_description": "Pick the milk and place it in the basket",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 3,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "d8dd644350adf4bb4daa1d7de620ac2188ae798a6698d730caf8de70df5e763b",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "6f9b9f3356acc52e77c641304bd3cffbf46973f2e9525cedbaf24b4d9c7a7cac",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "grasp",
+      "object_id": "milk_1",
+      "object_name": "milk_1_main",
+      "primary_object_id": "milk_1",
+      "target_object_id": "milk_1",
+      "source_task_description": "Pick the milk and place it in the basket",
+      "binding": {
+        "name": "milk_1_main",
+        "body_name": "milk_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        21
+      ],
+      "geom_ids": [
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "geom_names": [
+        "milk_1_g0",
+        "milk_1_g1",
+        "milk_1_g2",
+        "milk_1_g3",
+        "milk_1_g4"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 514,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 514,
+          "mask_fingerprint": {
+            "sha256": "e67541722e8648618156d347afb6b0172381379117072b813517fb33a83900e7",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 748,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 748,
+          "mask_fingerprint": {
+            "sha256": "aaef1e63e328243c15e70dc5c630245b82917e58702fbabe26443b03f621e662",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "basket_1_contain_region",
+        "binding": {
+          "name": "basket_1_main",
+          "body_name": "basket_1_main",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_01_agentview_target_mask.png",
+            "overlay": "condition_01_agentview_target_overlay.png",
+            "pixel_count": 2974,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "7fb3d15c77f11d3fe472b8b0c85cfee695d793b0ab254c2b8a9490c2b9562004",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_01_wrist_target_mask.png",
+            "overlay": "condition_01_wrist_target_overlay.png",
+            "pixel_count": 3142,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "73df36df7c6a9a72c723cbe87fd6e71893b47185ba88ef7a18011f306863dc14",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "release",
+      "object_id": "basket_1_contain_region",
+      "object_name": "basket_1_main",
+      "primary_object_id": "milk_1",
+      "target_object_id": "basket_1_contain_region",
+      "source_task_description": "Pick the milk and place it in the basket",
+      "binding": {
+        "name": "basket_1_main",
+        "body_name": "basket_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        20
+      ],
+      "geom_ids": [
+        97,
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "geom_names": [
+        "basket_1_g0",
+        "basket_1_g1",
+        "basket_1_g2",
+        "basket_1_g3",
+        "basket_1_g4",
+        "basket_1_g5"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 2974,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 2974,
+          "mask_fingerprint": {
+            "sha256": "7fb3d15c77f11d3fe472b8b0c85cfee695d793b0ab254c2b8a9490c2b9562004",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 3142,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3142,
+          "mask_fingerprint": {
+            "sha256": "73df36df7c6a9a72c723cbe87fd6e71893b47185ba88ef7a18011f306863dc14",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "33f45fa57b13fe513a53bc7ffd87c0e18f48f89e28bfbf268aeb067923d5af5d",
+    "legacy_job_sha256": "bca47461340b485c3d0f68f1043088e92818e59427a7bad9874d0844cb660058",
+    "legacy_runtime_entrypoint": "final_libero_ex_eval.impl.evaluator",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "0350fb9d9c5be992a3959b9535a0fee4bb93feb9859321e1d3cd9227fe51df12",
+        "frozen_sha256": "0350fb9d9c5be992a3959b9535a0fee4bb93feb9859321e1d3cd9227fe51df12",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "2326da7ccacd3ebc75d80847f92d2e310b537b8dbbd8a76840a29b13f00f9a65",
+        "frozen_sha256": "2326da7ccacd3ebc75d80847f92d2e310b537b8dbbd8a76840a29b13f00f9a65",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "000a33b33f0beeee61ad6bc3f11f362fd5d9c6d8ecf7a7627575d9ebc775e121",
+      "shape": [
+        110
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "final_libero_ex_eval.impl.evaluator.run_single_episode_libero_ex"
+  ],
+  "initial_tracker": {
+    "custom": false,
+    "category": "OG-TOU-DTSL",
+    "required_atoms": [
+      [
+        "in",
+        "milk_1",
+        "basket_1_contain_region"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null
+    ],
+    "required_atom_final": [
+      false
+    ],
+    "required_prefix_first_steps": [
+      null
+    ],
+    "required_combination_first_steps": {
+      "0": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "afa2c28c89524f2bd32a9af2694b081173f5a89a57e1adaa1b943e0e13a9b236",
+    "shape": [
+      110
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 11.48124720621854
+}

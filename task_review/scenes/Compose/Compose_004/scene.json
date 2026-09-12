@@ -1,0 +1,507 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Compose_004",
+  "legacy_task_id": "VCN19_020",
+  "category": "Compose",
+  "order": 37,
+  "task_description": "Open the top drawer of the wooden cabinet, then put the ramekin on the plate.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 2,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "7658db09e30d6f87b240e973e713308374d9c448c414c94221f362b5a99bcbff",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "6efc53359f28a0966f6529949e39e4a309a7cbbab23b097645588ff398ef0727",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "open",
+      "object_id": "wooden_cabinet_1_top_region",
+      "object_name": "wooden_cabinet_1_cabinet_top",
+      "primary_object_id": "wooden_cabinet_1_top_region",
+      "target_object_id": "wooden_cabinet_1_top_region",
+      "source_task_description": "Open the top drawer of the wooden cabinet",
+      "binding": {
+        "name": "wooden_cabinet_1_cabinet_top",
+        "body_name": "wooden_cabinet_1_cabinet_top",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        29
+      ],
+      "geom_ids": [
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183
+      ],
+      "geom_names": [
+        "wooden_cabinet_1_g10",
+        "wooden_cabinet_1_g11",
+        "wooden_cabinet_1_g12",
+        "wooden_cabinet_1_g13",
+        "wooden_cabinet_1_g14",
+        "wooden_cabinet_1_g15",
+        "wooden_cabinet_1_g16",
+        "wooden_cabinet_1_g17",
+        "wooden_cabinet_1_g18",
+        "wooden_cabinet_1_g19",
+        "wooden_cabinet_1_g20"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 1302,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1302,
+          "mask_fingerprint": {
+            "sha256": "1c644d07715ff665f43bb46e392754058d9f5c3bb8b8d3e612afa5dc8c6c72c8",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 13,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 13,
+          "mask_fingerprint": {
+            "sha256": "56db8537b14231965b1a950c04c8f255918d6970d095ed033b81463a9bb8c650",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "grasp",
+      "object_id": "glazed_rim_porcelain_ramekin_1",
+      "object_name": "glazed_rim_porcelain_ramekin_1_main",
+      "primary_object_id": "glazed_rim_porcelain_ramekin_1",
+      "target_object_id": "glazed_rim_porcelain_ramekin_1",
+      "source_task_description": "Put the ramekin on the plate",
+      "binding": {
+        "name": "glazed_rim_porcelain_ramekin_1_main",
+        "body_name": "glazed_rim_porcelain_ramekin_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        23
+      ],
+      "geom_ids": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108
+      ],
+      "geom_names": [
+        "glazed_rim_porcelain_ramekin_1_g0",
+        "glazed_rim_porcelain_ramekin_1_g1",
+        "glazed_rim_porcelain_ramekin_1_g2",
+        "glazed_rim_porcelain_ramekin_1_g3",
+        "glazed_rim_porcelain_ramekin_1_g4",
+        "glazed_rim_porcelain_ramekin_1_g5",
+        "glazed_rim_porcelain_ramekin_1_g6",
+        "glazed_rim_porcelain_ramekin_1_g7",
+        "glazed_rim_porcelain_ramekin_1_g8",
+        "glazed_rim_porcelain_ramekin_1_g9",
+        "glazed_rim_porcelain_ramekin_1_g10",
+        "glazed_rim_porcelain_ramekin_1_g11",
+        "glazed_rim_porcelain_ramekin_1_g12",
+        "glazed_rim_porcelain_ramekin_1_g13",
+        "glazed_rim_porcelain_ramekin_1_g14",
+        "glazed_rim_porcelain_ramekin_1_g15",
+        "glazed_rim_porcelain_ramekin_1_g16",
+        "glazed_rim_porcelain_ramekin_1_g17",
+        "glazed_rim_porcelain_ramekin_1_g18",
+        "glazed_rim_porcelain_ramekin_1_g19",
+        "glazed_rim_porcelain_ramekin_1_g20",
+        "glazed_rim_porcelain_ramekin_1_g21",
+        "glazed_rim_porcelain_ramekin_1_g22",
+        "glazed_rim_porcelain_ramekin_1_g23",
+        "glazed_rim_porcelain_ramekin_1_g24",
+        "glazed_rim_porcelain_ramekin_1_g25"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 772,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 772,
+          "mask_fingerprint": {
+            "sha256": "8b1e117211555260a5eabbfc0afd57ea07292aa62777ef1dea502a02c40c58d6",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 1159,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1159,
+          "mask_fingerprint": {
+            "sha256": "cc12443b1de56432de4e30cd83809d8500c7f0bb54bf71a6a115d59496e32f93",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "plate_1",
+        "binding": {
+          "name": "plate_1_main",
+          "body_name": "plate_1_main",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_02_agentview_target_mask.png",
+            "overlay": "condition_02_agentview_target_overlay.png",
+            "pixel_count": 1302,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "0e85e26e655d8cabbac0e27edd1fa2dd48ed778668988f11104d96a2274d98ed",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_02_wrist_target_mask.png",
+            "overlay": "condition_02_wrist_target_overlay.png",
+            "pixel_count": 3054,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "af094fade307da7611bba6f29b268632640e20384fbfef6a3e58bfacb8bf9f14",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 2,
+      "stage": 3,
+      "action_type": "release",
+      "object_id": "plate_1",
+      "object_name": "plate_1_main",
+      "primary_object_id": "glazed_rim_porcelain_ramekin_1",
+      "target_object_id": "plate_1",
+      "source_task_description": "Put the ramekin on the plate",
+      "binding": {
+        "name": "plate_1_main",
+        "body_name": "plate_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        26
+      ],
+      "geom_ids": [
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162
+      ],
+      "geom_names": [
+        "plate_1_g0",
+        "plate_1_g1",
+        "plate_1_g2",
+        "plate_1_g3",
+        "plate_1_g4",
+        "plate_1_g5",
+        "plate_1_g6",
+        "plate_1_g7",
+        "plate_1_g8",
+        "plate_1_g9",
+        "plate_1_g10"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_03_agentview_mask.png",
+          "overlay": "condition_03_agentview_overlay.png",
+          "pixel_count": 1302,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1302,
+          "mask_fingerprint": {
+            "sha256": "0e85e26e655d8cabbac0e27edd1fa2dd48ed778668988f11104d96a2274d98ed",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_03_wrist_mask.png",
+          "overlay": "condition_03_wrist_overlay.png",
+          "pixel_count": 3054,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3054,
+          "mask_fingerprint": {
+            "sha256": "af094fade307da7611bba6f29b268632640e20384fbfef6a3e58bfacb8bf9f14",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "42b5ba24253e7a291f7b245bbccc5ffab0a7da4d23c72d7c7b1c1b9a4123596f",
+    "legacy_job_sha256": "12faec96b683ccadfdee1dcccda523ccf5f01c83073a7512929c5593cd11fb2c",
+    "legacy_runtime_entrypoint": "run_valid_compose_new_batch19_evaluator_entry",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "12c011e2d1a49acd645e9d3fe8af1b4530a1a9d936e9c20431c334e0699214a2",
+        "frozen_sha256": "12c011e2d1a49acd645e9d3fe8af1b4530a1a9d936e9c20431c334e0699214a2",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "41b1d7bedc7bae383ce331a2b4ff3528939cd19fdbe38d44e88debc70e7e72a0",
+        "frozen_sha256": "41b1d7bedc7bae383ce331a2b4ff3528939cd19fdbe38d44e88debc70e7e72a0",
+        "equal": true
+      },
+      "FIXTURE_REPLAY.json": {
+        "canonical_sha256": "2ffd017a63345cd258089ff606fb89f2c7d0a6a07249e26410096f60e948a0dc",
+        "frozen_sha256": "d372d3278ff7ebde65dc3cadfcbf765bd9931d30221f233d95b7b9a69c7620b2",
+        "semantically_equal_after_id_mapping": true
+      }
+    },
+    "initial_state": {
+      "sha256": "9071af773ce49de30e8bf230b8adc5b359f185cc14770b01f5b5dd9b58b84c14",
+      "shape": [
+        79
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "run_diverse_adapt_evaluator_entry._original_episode"
+  ],
+  "initial_tracker": {
+    "custom": true,
+    "category": "COMPOSITION",
+    "required_atoms": [
+      [
+        "open",
+        "wooden_cabinet_1_top_region"
+      ],
+      [
+        "on",
+        "glazed_rim_porcelain_ramekin_1",
+        "plate_1"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null,
+      null
+    ],
+    "required_atom_final": [
+      false,
+      false
+    ],
+    "required_prefix_first_steps": [
+      null,
+      null
+    ],
+    "required_combination_first_steps": {
+      "00": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false,
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [
+      [
+        [
+          "open",
+          "wooden_cabinet_1_top_region"
+        ]
+      ],
+      [
+        [
+          "open",
+          "wooden_cabinet_1_top_region"
+        ],
+        [
+          "on",
+          "glazed_rim_porcelain_ramekin_1",
+          "plate_1"
+        ]
+      ]
+    ],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 2,
+    "calls": [
+      {
+        "pose_keys": [
+          "flat_stove_1_main",
+          "wooden_cabinet_1_main"
+        ],
+        "pose_sha256": "bacbab03b56b03d13a69a0b962cda5da7e76624c765aebb04bac6364b4259157"
+      },
+      {
+        "pose_keys": [
+          "flat_stove_1_main",
+          "wooden_cabinet_1_main"
+        ],
+        "pose_sha256": "bacbab03b56b03d13a69a0b962cda5da7e76624c765aebb04bac6364b4259157"
+      }
+    ],
+    "matched_state_sha256": "9071af773ce49de30e8bf230b8adc5b359f185cc14770b01f5b5dd9b58b84c14",
+    "root_pose_max_abs_error": 0.0,
+    "settled_body_max_abs_error": 0.0
+  },
+  "post_warmup_state": {
+    "sha256": "ebbc05d7fe932cbfe5a64730af59eacbb579628d84c8fcdb852f35e4e1022e26",
+    "shape": [
+      79
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 10.545236799865961
+}

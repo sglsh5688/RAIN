@@ -1,0 +1,211 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Adapt_004",
+  "legacy_task_id": "ANLGX_022",
+  "category": "Adapt",
+  "order": 24,
+  "task_description": "Close the top drawer of the white cabinet.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 2,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "0eb184a4b97ebc6c3ee6502f5f7fa841421d06bbbade340e2b6d72054d5023c2",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "a905e72658ae146074831d71425a37243f6d458774ba628ca1fba6e843eecd1c",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "close",
+      "object_id": "white_cabinet_1_top_region",
+      "object_name": "white_cabinet_1_cabinet_top",
+      "primary_object_id": "white_cabinet_1_top_region",
+      "target_object_id": "white_cabinet_1_top_region",
+      "source_task_description": "Close the top drawer of the white cabinet.",
+      "binding": {
+        "name": "white_cabinet_1_cabinet_top",
+        "body_name": "white_cabinet_1_cabinet_top",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        27
+      ],
+      "geom_ids": [
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171
+      ],
+      "geom_names": [
+        "white_cabinet_1_g10",
+        "white_cabinet_1_g11",
+        "white_cabinet_1_g12",
+        "white_cabinet_1_g13",
+        "white_cabinet_1_g14",
+        "white_cabinet_1_g15",
+        "white_cabinet_1_g16",
+        "white_cabinet_1_g17",
+        "white_cabinet_1_g18",
+        "white_cabinet_1_g19",
+        "white_cabinet_1_g20"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 4268,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 4268,
+          "mask_fingerprint": {
+            "sha256": "02cb7a1d5a74f16751bfcc0d34a6d4025d5a207565d6decc98ad3abd6c9d19c4",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 5126,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 5126,
+          "mask_fingerprint": {
+            "sha256": "b5555378eb971ca2f5673f661a5938fa6a059d655117472e06ba70d87babcee7",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "f38c45003510f0bb07d77a673aa5856de4afc3ae29af040076a0851b084e4e79",
+    "legacy_job_sha256": "a1a1cc2badcd83450ce35fe88275f051d86410b9feb9a3e3016c26242d772d29",
+    "legacy_runtime_entrypoint": "run_analogy_evaluator_entry",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "aef2ba45260bc32989dde8fa50b77b8ab2a3d099dbff28074fc626c49c597fc0",
+        "frozen_sha256": "aef2ba45260bc32989dde8fa50b77b8ab2a3d099dbff28074fc626c49c597fc0",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "35a5e877bd96ebab26f7aab359ac12ef755ae6f0ab3efa62138096aded806e4a",
+        "frozen_sha256": "35a5e877bd96ebab26f7aab359ac12ef755ae6f0ab3efa62138096aded806e4a",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "c69e046000207bb4fa116fdc5ca11de90c3f1957fb5eb7822ae110e53225e829",
+      "shape": [
+        51
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "final_libero_ex_eval.impl.evaluator.run_single_episode_libero_ex"
+  ],
+  "initial_tracker": {
+    "custom": false,
+    "category": "ANALOGY",
+    "required_atoms": [
+      [
+        "close",
+        "white_cabinet_1_top_region"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null
+    ],
+    "required_atom_final": [
+      false
+    ],
+    "required_prefix_first_steps": [
+      null
+    ],
+    "required_combination_first_steps": {
+      "0": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "86f51099793cdc9d479f938d8550c5a8b9ecd4654e79ad7a5ff4d7e2e5838ff5",
+    "shape": [
+      51
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 11.539291210472584
+}

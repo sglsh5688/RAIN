@@ -1,0 +1,417 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Adapt_009",
+  "legacy_task_id": "ANLGX_178",
+  "category": "Adapt",
+  "order": 29,
+  "task_description": "Put the yellow and white mug in the left compartment of the caddy.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 3,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "eb592841b419198506ca1038426ce5987be3817d69bd20692d70a32709097247",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "d2d301c29166b9156213a3e97560837a26e474e9f4ad55c4c8c6a14d254991d7",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "grasp",
+      "object_id": "white_yellow_mug_1",
+      "object_name": "white_yellow_mug_1_main",
+      "primary_object_id": "white_yellow_mug_1",
+      "target_object_id": "white_yellow_mug_1",
+      "source_task_description": "Put the yellow and white mug in the left compartment of the caddy.",
+      "binding": {
+        "name": "white_yellow_mug_1_main",
+        "body_name": "white_yellow_mug_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        23
+      ],
+      "geom_ids": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ],
+      "geom_names": [
+        "white_yellow_mug_1_g0",
+        "white_yellow_mug_1_g1",
+        "white_yellow_mug_1_g2",
+        "white_yellow_mug_1_g3",
+        "white_yellow_mug_1_g4",
+        "white_yellow_mug_1_g5",
+        "white_yellow_mug_1_g6",
+        "white_yellow_mug_1_g7",
+        "white_yellow_mug_1_g8",
+        "white_yellow_mug_1_g9",
+        "white_yellow_mug_1_g10",
+        "white_yellow_mug_1_g11",
+        "white_yellow_mug_1_g12",
+        "white_yellow_mug_1_g13",
+        "white_yellow_mug_1_g14",
+        "white_yellow_mug_1_g15",
+        "white_yellow_mug_1_g16",
+        "white_yellow_mug_1_g17",
+        "white_yellow_mug_1_g18",
+        "white_yellow_mug_1_g19",
+        "white_yellow_mug_1_g20",
+        "white_yellow_mug_1_g21",
+        "white_yellow_mug_1_g22",
+        "white_yellow_mug_1_g23",
+        "white_yellow_mug_1_g24",
+        "white_yellow_mug_1_g25",
+        "white_yellow_mug_1_g26",
+        "white_yellow_mug_1_g27",
+        "white_yellow_mug_1_g28",
+        "white_yellow_mug_1_g29",
+        "white_yellow_mug_1_g30",
+        "white_yellow_mug_1_g31",
+        "white_yellow_mug_1_g32",
+        "white_yellow_mug_1_g33",
+        "white_yellow_mug_1_g34",
+        "white_yellow_mug_1_g35",
+        "white_yellow_mug_1_g36",
+        "white_yellow_mug_1_g37",
+        "white_yellow_mug_1_g38",
+        "white_yellow_mug_1_g39"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 1246,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1246,
+          "mask_fingerprint": {
+            "sha256": "74304c847213c1b8f790a8ef518c6a67cb21c16d14f8c67f774be4799e8b1aaa",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 3156,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3156,
+          "mask_fingerprint": {
+            "sha256": "039070f5ea78d58197682e41a3b63ade2a7f6314b72d1ea9ce11ec232dfc9ba1",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "desk_caddy_1_left_contain_region",
+        "binding": {
+          "name": "desk_caddy_1_main",
+          "body_name": "desk_caddy_1_main",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_01_agentview_target_mask.png",
+            "overlay": "condition_01_agentview_target_overlay.png",
+            "pixel_count": 7905,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "3d4c258f3226914728d1fff028890f4d843aec55cb9cb64701ea027cfc036d36",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_01_wrist_target_mask.png",
+            "overlay": "condition_01_wrist_target_overlay.png",
+            "pixel_count": 9567,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "5b8660b3584149fd51fb6fe5632846557f1c7f67245f040ea5da88d1a0dbb02f",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "release",
+      "object_id": "desk_caddy_1_left_contain_region",
+      "object_name": "desk_caddy_1_main",
+      "primary_object_id": "white_yellow_mug_1",
+      "target_object_id": "desk_caddy_1_left_contain_region",
+      "source_task_description": "Put the yellow and white mug in the left compartment of the caddy.",
+      "binding": {
+        "name": "desk_caddy_1_main",
+        "body_name": "desk_caddy_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        24
+      ],
+      "geom_ids": [
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148
+      ],
+      "geom_names": [
+        "desk_caddy_1_g0",
+        "desk_caddy_1_g1",
+        "desk_caddy_1_g2",
+        "desk_caddy_1_g3",
+        "desk_caddy_1_g4",
+        "desk_caddy_1_g5",
+        "desk_caddy_1_g6",
+        "desk_caddy_1_g7",
+        "desk_caddy_1_g8",
+        "desk_caddy_1_g9",
+        "desk_caddy_1_g10",
+        "desk_caddy_1_g11",
+        "desk_caddy_1_g12",
+        "desk_caddy_1_g13",
+        "desk_caddy_1_g14",
+        "desk_caddy_1_g15",
+        "desk_caddy_1_g16",
+        "desk_caddy_1_g17"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 7905,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 7905,
+          "mask_fingerprint": {
+            "sha256": "3d4c258f3226914728d1fff028890f4d843aec55cb9cb64701ea027cfc036d36",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 9567,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 9567,
+          "mask_fingerprint": {
+            "sha256": "5b8660b3584149fd51fb6fe5632846557f1c7f67245f040ea5da88d1a0dbb02f",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "ddabc242d00895ed0838324e88c0f2a9c1a38325bbe79265fee51f0f44b3dc5e",
+    "legacy_job_sha256": "12fd8cd89f04e575d833d3669b2bb5522fa6034b499fce829a12ab49ceac0af2",
+    "legacy_runtime_entrypoint": "run_analogy_evaluator_entry",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "46cf5d2d323a3746f8d110371702e7b95e296bf1615582bfb38631ae451ba3e7",
+        "frozen_sha256": "46cf5d2d323a3746f8d110371702e7b95e296bf1615582bfb38631ae451ba3e7",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "82bb1139070e6b58d77d500d2d5252860cf97ee51503fbd67c736c4135844f92",
+        "frozen_sha256": "82bb1139070e6b58d77d500d2d5252860cf97ee51503fbd67c736c4135844f92",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "6d748906e3688a71f33d2a332b6a1a838fd5fbe618d64819636c66314df21853",
+      "shape": [
+        32
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "final_libero_ex_eval.impl.evaluator.run_single_episode_libero_ex"
+  ],
+  "initial_tracker": {
+    "custom": false,
+    "category": "ANALOGY",
+    "required_atoms": [
+      [
+        "in",
+        "white_yellow_mug_1",
+        "desk_caddy_1_left_contain_region"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null
+    ],
+    "required_atom_final": [
+      false
+    ],
+    "required_prefix_first_steps": [
+      null
+    ],
+    "required_combination_first_steps": {
+      "0": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "27b8ba58c7628be97a2b347b4667f46274674ad837a40147b7f500d05ab2da52",
+    "shape": [
+      32
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 11.946540922857821
+}

@@ -1,0 +1,520 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Compose_009",
+  "legacy_task_id": "COMP2_303",
+  "category": "Compose",
+  "order": 42,
+  "task_description": "Put the milk in the basket, and then put the cream cheese box in the basket.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 3,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "c30c3cb155e17ed7315b7a8b669232df264ef14422f933018958a08a5f0d419f",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "419bb567abff33b6d713ff2dc2c310dfc866c89dc3fb1ff0835122a78d0159af",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "grasp",
+      "object_id": "milk_1",
+      "object_name": "milk_1_main",
+      "primary_object_id": "milk_1",
+      "target_object_id": "milk_1",
+      "source_task_description": "Pick the milk and place it in the basket",
+      "binding": {
+        "name": "milk_1_main",
+        "body_name": "milk_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        19
+      ],
+      "geom_ids": [
+        72,
+        73,
+        74,
+        75,
+        76
+      ],
+      "geom_names": [
+        "milk_1_g0",
+        "milk_1_g1",
+        "milk_1_g2",
+        "milk_1_g3",
+        "milk_1_g4"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 569,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 569,
+          "mask_fingerprint": {
+            "sha256": "8a12f0fa052624f748806dc196d3d011e6a739dd62119ecc731fdaa5da081046",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 784,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 784,
+          "mask_fingerprint": {
+            "sha256": "46d92a08fe9852dbfb9bb493e1af5196a94728273a5420a57420933c15f1ba82",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "basket_1_contain_region",
+        "binding": {
+          "name": "basket_1_main",
+          "body_name": "basket_1_main",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_01_agentview_target_mask.png",
+            "overlay": "condition_01_agentview_target_overlay.png",
+            "pixel_count": 3085,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "b54b6a5f7195ce17ef1f662586292f71edf6fdd62c5688a1f5d1bcb61f459be7",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_01_wrist_target_mask.png",
+            "overlay": "condition_01_wrist_target_overlay.png",
+            "pixel_count": 2440,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "36c63a7819cdbef13e83bb821fc194c1925e4161a62e3025b392a65e60ca8102",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "release",
+      "object_id": "basket_1_contain_region",
+      "object_name": "basket_1_main",
+      "primary_object_id": "milk_1",
+      "target_object_id": "basket_1_contain_region",
+      "source_task_description": "Pick the milk and place it in the basket",
+      "binding": {
+        "name": "basket_1_main",
+        "body_name": "basket_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        20
+      ],
+      "geom_ids": [
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "geom_names": [
+        "basket_1_g0",
+        "basket_1_g1",
+        "basket_1_g2",
+        "basket_1_g3",
+        "basket_1_g4",
+        "basket_1_g5"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 3085,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3085,
+          "mask_fingerprint": {
+            "sha256": "b54b6a5f7195ce17ef1f662586292f71edf6fdd62c5688a1f5d1bcb61f459be7",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 2440,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 2440,
+          "mask_fingerprint": {
+            "sha256": "36c63a7819cdbef13e83bb821fc194c1925e4161a62e3025b392a65e60ca8102",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    },
+    {
+      "index": 2,
+      "stage": 3,
+      "action_type": "grasp",
+      "object_id": "cream_cheese_1",
+      "object_name": "cream_cheese_1_main",
+      "primary_object_id": "cream_cheese_1",
+      "target_object_id": "cream_cheese_1",
+      "source_task_description": "Pick the cream cheese and place it in the basket",
+      "binding": {
+        "name": "cream_cheese_1_main",
+        "body_name": "cream_cheese_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        21
+      ],
+      "geom_ids": [
+        83,
+        84
+      ],
+      "geom_names": [
+        "cream_cheese_1_g0",
+        "cream_cheese_1_g1"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_03_agentview_mask.png",
+          "overlay": "condition_03_agentview_overlay.png",
+          "pixel_count": 223,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 223,
+          "mask_fingerprint": {
+            "sha256": "0e8245e23541bf496f4ffb03e23a985bd88ef4da2454a0144ab3bd6b0fcb0d2f",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_03_wrist_mask.png",
+          "overlay": "condition_03_wrist_overlay.png",
+          "pixel_count": 1034,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1034,
+          "mask_fingerprint": {
+            "sha256": "a67e2ac3fa2c04944768eb7b29b758490c53b47c33658eca55436f6d4238c8e7",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "basket_1_contain_region",
+        "binding": {
+          "name": "basket_1_main",
+          "body_name": "basket_1_main",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_03_agentview_target_mask.png",
+            "overlay": "condition_03_agentview_target_overlay.png",
+            "pixel_count": 3085,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "b54b6a5f7195ce17ef1f662586292f71edf6fdd62c5688a1f5d1bcb61f459be7",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_03_wrist_target_mask.png",
+            "overlay": "condition_03_wrist_target_overlay.png",
+            "pixel_count": 2440,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "36c63a7819cdbef13e83bb821fc194c1925e4161a62e3025b392a65e60ca8102",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 3,
+      "stage": 4,
+      "action_type": "release",
+      "object_id": "basket_1_contain_region",
+      "object_name": "basket_1_main",
+      "primary_object_id": "cream_cheese_1",
+      "target_object_id": "basket_1_contain_region",
+      "source_task_description": "Pick the cream cheese and place it in the basket",
+      "binding": {
+        "name": "basket_1_main",
+        "body_name": "basket_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        20
+      ],
+      "geom_ids": [
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "geom_names": [
+        "basket_1_g0",
+        "basket_1_g1",
+        "basket_1_g2",
+        "basket_1_g3",
+        "basket_1_g4",
+        "basket_1_g5"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_04_agentview_mask.png",
+          "overlay": "condition_04_agentview_overlay.png",
+          "pixel_count": 3085,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3085,
+          "mask_fingerprint": {
+            "sha256": "b54b6a5f7195ce17ef1f662586292f71edf6fdd62c5688a1f5d1bcb61f459be7",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_04_wrist_mask.png",
+          "overlay": "condition_04_wrist_overlay.png",
+          "pixel_count": 2440,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 2440,
+          "mask_fingerprint": {
+            "sha256": "36c63a7819cdbef13e83bb821fc194c1925e4161a62e3025b392a65e60ca8102",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "b4ab86030815fdf1202b3ce6ad41c9fda850dea53ebd296d58c8bcd5d9bce41b",
+    "legacy_job_sha256": "e55c27079f034acc8d9b498f11e4a7d6f90fc9c336100539a7c1519ff0c56572",
+    "legacy_runtime_entrypoint": "run_composition_evaluator_entry",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "26ebc8bddfd67edb5b142c38ea21c1b62a81d0e78ddeae5d3f3616c9a1378225",
+        "frozen_sha256": "26ebc8bddfd67edb5b142c38ea21c1b62a81d0e78ddeae5d3f3616c9a1378225",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "564e5bb4c7c3d93bd39091fd952b57f235c35e4a0b26adaf006b73c9c8ee3b74",
+        "frozen_sha256": "564e5bb4c7c3d93bd39091fd952b57f235c35e4a0b26adaf006b73c9c8ee3b74",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "f0161129a0b12199cbd541c0b406015976bbf13af728ecb767c63c5ca8c8b34b",
+      "shape": [
+        110
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "final_libero_ex_eval.impl.evaluator.run_single_episode_libero_ex"
+  ],
+  "initial_tracker": {
+    "custom": false,
+    "category": "COMPOSITION",
+    "required_atoms": [
+      [
+        "in",
+        "milk_1",
+        "basket_1_contain_region"
+      ],
+      [
+        "in",
+        "cream_cheese_1",
+        "basket_1_contain_region"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null,
+      null
+    ],
+    "required_atom_final": [
+      false,
+      false
+    ],
+    "required_prefix_first_steps": [
+      null,
+      null
+    ],
+    "required_combination_first_steps": {
+      "00": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false,
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "3d0091991cc9f8a09581dfbfb6a5d42ffef1e25615e025fb29e9e4ee015b8ac6",
+    "shape": [
+      110
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 12.271882195025682
+}

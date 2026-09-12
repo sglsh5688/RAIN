@@ -1,0 +1,7 @@
+{
+  "source_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/Korean/NotoSansCJKkr-Regular.otf",
+  "source_sha256": "6bcb2a0703aa137e874fc2dffa85f6c21ba9a67fa329e81b8c801663af7e992a",
+  "license": "NotoSans-LICENSE.txt",
+  "subset": "Hangul syllables and Jamo, Latin, review page characters",
+  "woff_sha256": "1da6949aa5deecce1ca56d23a5eeaed8d0eb6f23f4110dc3a04e9b6b1051e8c8"
+}

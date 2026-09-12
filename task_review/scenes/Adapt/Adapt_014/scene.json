@@ -1,0 +1,299 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Adapt_014",
+  "legacy_task_id": "NAFR3_001",
+  "category": "Adapt",
+  "order": 47,
+  "task_description": "Put the popcorn on top of the short fridge.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 2,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "ee0cdfd23a2c69b09164d144d3c77e99250cccc04096bf83495c31b471708a9c",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "d40e2bae0ac23df1f10fe70285fa5c7c3ca4daeee8884d86682fc37d4b2b15e9",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "grasp",
+      "object_id": "popcorn_1",
+      "object_name": "popcorn_1_main",
+      "primary_object_id": "popcorn_1",
+      "target_object_id": "popcorn_1",
+      "source_task_description": "Put the popcorn on top of the short fridge.",
+      "binding": {
+        "name": "popcorn_1_main",
+        "body_name": "popcorn_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        23
+      ],
+      "geom_ids": [
+        83,
+        84
+      ],
+      "geom_names": [
+        "popcorn_1_g0",
+        "popcorn_1_g1"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 212,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 212,
+          "mask_fingerprint": {
+            "sha256": "1baf17ef1b80155b2bb6be2fc3aab5a163e61dfc0e551a433ac9fdc355462f9a",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 712,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 712,
+          "mask_fingerprint": {
+            "sha256": "97cf6661265aafad5dbba4aa4830a23817f0c5c676303ce464c242aef43c1916",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "short_fridge_1_feedback_top_region",
+        "binding": {
+          "name": "short_fridge_1_feedback_top_region",
+          "body_name": "short_fridge_1_feedback_top_region",
+          "body_ids": [],
+          "geom_ids": [],
+          "segmentable": false
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_projected_target_geometry",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_01_agentview_target_mask.png",
+            "overlay": "condition_01_agentview_target_overlay.png",
+            "pixel_count": 3045,
+            "status": "projected_target",
+            "source": "sim_region_poly",
+            "mask_fingerprint": {
+              "sha256": "88d687d272a78402a381a81e47f5ace11a70c6c1f4a1f59fc8cedc5ddd7d530d",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_01_wrist_target_mask.png",
+            "overlay": "condition_01_wrist_target_overlay.png",
+            "pixel_count": 0,
+            "status": "not_visible_or_projectable_in_initial_camera",
+            "source": "none",
+            "mask_fingerprint": {
+              "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "release",
+      "object_id": "short_fridge_1_feedback_top_region",
+      "object_name": "short_fridge_1_feedback_top_region",
+      "primary_object_id": "popcorn_1",
+      "target_object_id": "short_fridge_1_feedback_top_region",
+      "source_task_description": "Put the popcorn on top of the short fridge.",
+      "binding": {
+        "name": "short_fridge_1_feedback_top_region",
+        "body_name": "short_fridge_1_feedback_top_region",
+        "body_ids": [],
+        "geom_ids": [],
+        "segmentable": false
+      },
+      "corrected_body_ids": [],
+      "geom_ids": [],
+      "geom_names": [],
+      "mask_kind": "current_projected_target_geometry",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 3045,
+          "status": "projected_target",
+          "source": "runtime.sim_region_mask_for_object_id",
+          "raw_exact_geometry_pixels": null,
+          "mask_fingerprint": {
+            "sha256": "88d687d272a78402a381a81e47f5ace11a70c6c1f4a1f59fc8cedc5ddd7d530d",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 0,
+          "status": "not_projectable_or_unavailable_in_initial_camera",
+          "source": "runtime.sim_region_mask_for_object_id",
+          "raw_exact_geometry_pixels": null,
+          "mask_fingerprint": {
+            "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "233dc0b5985d98a5a842e8bb4c9a26dbe48b39c7abf994561f09e98816787ae5",
+    "legacy_job_sha256": "02f274d300125b08c65552e419e47000fdd44b3f22748e71d67afbe33f1795eb",
+    "legacy_runtime_entrypoint": "run_novel_feedback_evaluator_entry",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "553cb9f0500d8c2a427cdecbdfcb78f33af5985cbd846a0b0d3a2c3a7d2c39fa",
+        "frozen_sha256": "553cb9f0500d8c2a427cdecbdfcb78f33af5985cbd846a0b0d3a2c3a7d2c39fa",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "346d9d3de14f3dab97071676cd491f785b86afb2846b7c067800c7e50cf8b79d",
+        "frozen_sha256": "346d9d3de14f3dab97071676cd491f785b86afb2846b7c067800c7e50cf8b79d",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "b88d15df81441436f1eda422a249937fd59c7318de2afe46646dab657b4d650e",
+      "shape": [
+        73
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "run_diverse_adapt_evaluator_entry._original_episode"
+  ],
+  "initial_tracker": {
+    "custom": false,
+    "category": "ADAPT",
+    "required_atoms": [
+      [
+        "on",
+        "popcorn_1",
+        "short_fridge_1_feedback_top_region"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null
+    ],
+    "required_atom_final": [
+      false
+    ],
+    "required_prefix_first_steps": [
+      null
+    ],
+    "required_combination_first_steps": {
+      "0": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": [],
+    "feedback_ordered_goal_atoms": [],
+    "feedback_require_all_atoms_initially_false": true
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "7826a1b89f42089421db42d6b9d83298663205b83c575f1500a0dac4b4fe5c23",
+    "shape": [
+      73
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 9.906009622849524
+}

@@ -1,0 +1,213 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Decomposition_006",
+  "legacy_task_id": "TDL10_006",
+  "category": "Decomposition",
+  "order": 6,
+  "task_description": "Close the microwave.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 3,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "ea4d6065d6f9f4c14413e4107c67a5685f35ea5423a7c1e32b432acdc2f041b9",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "256188f5354deeb39ced5a71b9468bd2d837410782cbfcfa1ca32cf8b5250757",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "close",
+      "object_id": "microwave_1",
+      "object_name": "microwave_1_microdoorroot",
+      "primary_object_id": "microwave_1",
+      "target_object_id": "microwave_1",
+      "source_task_description": "Close the microwave.",
+      "binding": {
+        "name": "microwave_1_microdoorroot",
+        "body_name": "microwave_1_microdoorroot",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        26
+      ],
+      "geom_ids": [
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166
+      ],
+      "geom_names": [
+        "microwave_1_g9",
+        "microwave_1_g10",
+        "microwave_1_g11",
+        "microwave_1_g12",
+        "microwave_1_g13",
+        "microwave_1_g14",
+        "microwave_1_g15",
+        "microwave_1_g16",
+        "microwave_1_g17"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 3812,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3812,
+          "mask_fingerprint": {
+            "sha256": "8ad4e61d729547db3dd4fca3a6c31688e258f8dfb47708c11c2a77d47f7bbdd3",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 4419,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 4419,
+          "mask_fingerprint": {
+            "sha256": "327f53a01bb6ba24bfe9004f68bc895bc5b552afed1cffc35bc194171c1a479c",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "99c4f688f3f3449f2360b795e31df931e7b45f5ca9a5fd202aa01b7ca7e9ffca",
+    "legacy_job_sha256": "c02d91a3f7f00ab32ce6ab8781ba658f9f5a11c3292eee1f44539a6458c1813a",
+    "legacy_runtime_entrypoint": "final_libero_ex_eval.impl.evaluator",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "eba5da95ba07d9f44ff7e1455e41bd3eff23598773af7fd8fe0abe11b51a6de1",
+        "frozen_sha256": "eba5da95ba07d9f44ff7e1455e41bd3eff23598773af7fd8fe0abe11b51a6de1",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "6b75c8d4d1e1c40b5d99c78ceea380d99ccffb0a484a4cb2d3153488a0afbbe2",
+        "frozen_sha256": "6b75c8d4d1e1c40b5d99c78ceea380d99ccffb0a484a4cb2d3153488a0afbbe2",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "ea7db2b727794199cfa1e42f8d924c5841e4af18716a392adf30d5517114c87f",
+      "shape": [
+        47
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "final_libero_ex_eval.impl.evaluator.run_single_episode_libero_ex"
+  ],
+  "initial_tracker": {
+    "custom": true,
+    "category": "TD",
+    "required_atoms": [
+      [
+        "close",
+        "microwave_1"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null
+    ],
+    "required_atom_final": [
+      false
+    ],
+    "required_prefix_first_steps": [
+      null
+    ],
+    "required_combination_first_steps": {
+      "0": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [
+      [
+        "in",
+        "white_yellow_mug_1",
+        "microwave_1_heating_region"
+      ]
+    ],
+    "overshoot_policy": "fail_on_forbidden_ever",
+    "continue_after_success": true,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "5a7ae58e3eb08f923b09f12960d89959dd03f01250dc02974b462c82dbeace2a",
+    "shape": [
+      47
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 13.558715870603919
+}

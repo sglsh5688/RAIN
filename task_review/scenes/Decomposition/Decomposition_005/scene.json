@@ -1,0 +1,404 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Decomposition_005",
+  "legacy_task_id": "TDL10_005",
+  "category": "Decomposition",
+  "order": 5,
+  "task_description": "Put the yellow and white mug in the microwave.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 2,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "ea4d6065d6f9f4c14413e4107c67a5685f35ea5423a7c1e32b432acdc2f041b9",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "256188f5354deeb39ced5a71b9468bd2d837410782cbfcfa1ca32cf8b5250757",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "grasp",
+      "object_id": "white_yellow_mug_1",
+      "object_name": "white_yellow_mug_1_main",
+      "primary_object_id": "white_yellow_mug_1",
+      "target_object_id": "white_yellow_mug_1",
+      "source_task_description": "Put the yellow and white mug in the microwave and close it",
+      "binding": {
+        "name": "white_yellow_mug_1_main",
+        "body_name": "white_yellow_mug_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        24
+      ],
+      "geom_ids": [
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148
+      ],
+      "geom_names": [
+        "white_yellow_mug_1_g0",
+        "white_yellow_mug_1_g1",
+        "white_yellow_mug_1_g2",
+        "white_yellow_mug_1_g3",
+        "white_yellow_mug_1_g4",
+        "white_yellow_mug_1_g5",
+        "white_yellow_mug_1_g6",
+        "white_yellow_mug_1_g7",
+        "white_yellow_mug_1_g8",
+        "white_yellow_mug_1_g9",
+        "white_yellow_mug_1_g10",
+        "white_yellow_mug_1_g11",
+        "white_yellow_mug_1_g12",
+        "white_yellow_mug_1_g13",
+        "white_yellow_mug_1_g14",
+        "white_yellow_mug_1_g15",
+        "white_yellow_mug_1_g16",
+        "white_yellow_mug_1_g17",
+        "white_yellow_mug_1_g18",
+        "white_yellow_mug_1_g19",
+        "white_yellow_mug_1_g20",
+        "white_yellow_mug_1_g21",
+        "white_yellow_mug_1_g22",
+        "white_yellow_mug_1_g23",
+        "white_yellow_mug_1_g24",
+        "white_yellow_mug_1_g25",
+        "white_yellow_mug_1_g26",
+        "white_yellow_mug_1_g27",
+        "white_yellow_mug_1_g28",
+        "white_yellow_mug_1_g29",
+        "white_yellow_mug_1_g30",
+        "white_yellow_mug_1_g31",
+        "white_yellow_mug_1_g32",
+        "white_yellow_mug_1_g33",
+        "white_yellow_mug_1_g34",
+        "white_yellow_mug_1_g35",
+        "white_yellow_mug_1_g36",
+        "white_yellow_mug_1_g37",
+        "white_yellow_mug_1_g38",
+        "white_yellow_mug_1_g39"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 1252,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1252,
+          "mask_fingerprint": {
+            "sha256": "f686b6edc48c7e9e0dc37bf41cb87f377e7aa48b4730c184a7a07b0dc0cd5567",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 4243,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 4243,
+          "mask_fingerprint": {
+            "sha256": "7b52f42c7c78b90ba4ce61c307b779e02f968f03eb9cebd51eae6bf6d53d2811",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "microwave_1_heating_region",
+        "binding": {
+          "name": "microwave_1_main",
+          "body_name": "microwave_1_main",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_01_agentview_target_mask.png",
+            "overlay": "condition_01_agentview_target_overlay.png",
+            "pixel_count": 6172,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "9c7824f981aeb034e3ae8e87e01b4c211017382a4c054eb42d73786736372ed0",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_01_wrist_target_mask.png",
+            "overlay": "condition_01_wrist_target_overlay.png",
+            "pixel_count": 0,
+            "status": "not_visible_or_projectable_in_initial_camera",
+            "source": "none",
+            "mask_fingerprint": {
+              "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "release",
+      "object_id": "microwave_1_heating_region",
+      "object_name": "microwave_1_main",
+      "primary_object_id": "white_yellow_mug_1",
+      "target_object_id": "microwave_1_heating_region",
+      "source_task_description": "Put the yellow and white mug in the microwave and close it",
+      "binding": {
+        "name": "microwave_1_main",
+        "body_name": "microwave_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        25
+      ],
+      "geom_ids": [
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157
+      ],
+      "geom_names": [
+        "microwave_1_g0",
+        "microwave_1_g1",
+        "microwave_1_g2",
+        "microwave_1_g3",
+        "microwave_1_g4",
+        "microwave_1_g5",
+        "microwave_1_g6",
+        "microwave_1_g7",
+        "microwave_1_g8"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 6172,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 6172,
+          "mask_fingerprint": {
+            "sha256": "9c7824f981aeb034e3ae8e87e01b4c211017382a4c054eb42d73786736372ed0",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 0,
+          "status": "not_visible_in_initial_camera",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 0,
+          "mask_fingerprint": {
+            "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "d17177c2e05ba546bdd5975b65fd058be381dc5a3afa7c4d71991368f6b5cef2",
+    "legacy_job_sha256": "0f396e2396834ad89f8b8cf2dd909df1ab1ea079497cc4d8e10b0a25f8c05249",
+    "legacy_runtime_entrypoint": "final_libero_ex_eval.impl.evaluator",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "63697a0eccdba449261308d004dfa51239e600d385af27b1fa194e9a3f27fbbf",
+        "frozen_sha256": "63697a0eccdba449261308d004dfa51239e600d385af27b1fa194e9a3f27fbbf",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "6b75c8d4d1e1c40b5d99c78ceea380d99ccffb0a484a4cb2d3153488a0afbbe2",
+        "frozen_sha256": "6b75c8d4d1e1c40b5d99c78ceea380d99ccffb0a484a4cb2d3153488a0afbbe2",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "ea7db2b727794199cfa1e42f8d924c5841e4af18716a392adf30d5517114c87f",
+      "shape": [
+        47
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "final_libero_ex_eval.impl.evaluator.run_single_episode_libero_ex"
+  ],
+  "initial_tracker": {
+    "custom": true,
+    "category": "TD",
+    "required_atoms": [
+      [
+        "in",
+        "white_yellow_mug_1",
+        "microwave_1_heating_region"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null
+    ],
+    "required_atom_final": [
+      false
+    ],
+    "required_prefix_first_steps": [
+      null
+    ],
+    "required_combination_first_steps": {
+      "0": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [
+      [
+        "close",
+        "microwave_1"
+      ]
+    ],
+    "overshoot_policy": "fail_on_forbidden_ever",
+    "continue_after_success": true,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "5a7ae58e3eb08f923b09f12960d89959dd03f01250dc02974b462c82dbeace2a",
+    "shape": [
+      47
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 13.014600772410631
+}

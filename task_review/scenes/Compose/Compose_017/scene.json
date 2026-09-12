@@ -1,0 +1,683 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Compose_017",
+  "legacy_task_id": "UCOMP_040",
+  "category": "Compose",
+  "order": 57,
+  "task_description": "Put the tomato sauce in the basket, and then put the yellow and white mug on the plate.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 2,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "2830ac455dcf2d9136e2afbc80d20b2dd01a32a38190381830e9d3b66ed8a32f",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "c4789f376ae3de221e565e5eb37bae1f79213593f46d6adf3cd9a012e4d1bc3e",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "grasp",
+      "object_id": "tomato_sauce_1",
+      "object_name": "tomato_sauce_1_main",
+      "primary_object_id": "tomato_sauce_1",
+      "target_object_id": "tomato_sauce_1",
+      "source_task_description": "Pick the tomato sauce and place it in the basket",
+      "binding": {
+        "name": "tomato_sauce_1_main",
+        "body_name": "tomato_sauce_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        20
+      ],
+      "geom_ids": [
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "geom_names": [
+        "tomato_sauce_1_g0",
+        "tomato_sauce_1_g1",
+        "tomato_sauce_1_g2",
+        "tomato_sauce_1_g3",
+        "tomato_sauce_1_g4",
+        "tomato_sauce_1_g5",
+        "tomato_sauce_1_g6",
+        "tomato_sauce_1_g7",
+        "tomato_sauce_1_g8",
+        "tomato_sauce_1_g9",
+        "tomato_sauce_1_g10",
+        "tomato_sauce_1_g11",
+        "tomato_sauce_1_g12",
+        "tomato_sauce_1_g13",
+        "tomato_sauce_1_g14",
+        "tomato_sauce_1_g15",
+        "tomato_sauce_1_g16",
+        "tomato_sauce_1_g17",
+        "tomato_sauce_1_g18",
+        "tomato_sauce_1_g19",
+        "tomato_sauce_1_g20",
+        "tomato_sauce_1_g21",
+        "tomato_sauce_1_g22",
+        "tomato_sauce_1_g23",
+        "tomato_sauce_1_g24"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 420,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 420,
+          "mask_fingerprint": {
+            "sha256": "3bfbfb0646623a18b0c29380fe36921545e83a27c31348a3044748a34a1103ff",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 821,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 821,
+          "mask_fingerprint": {
+            "sha256": "b9ef1c17aaf7bde9c7091dec9ae1af948a24669ca4902eb4bd8988768afa1da1",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "basket_1_contain_region",
+        "binding": {
+          "name": "basket_1_main",
+          "body_name": "basket_1_main",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_01_agentview_target_mask.png",
+            "overlay": "condition_01_agentview_target_overlay.png",
+            "pixel_count": 3022,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "1483d6b342e31770265a9b65684291193f56a2037375994e17849c226ad66774",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_01_wrist_target_mask.png",
+            "overlay": "condition_01_wrist_target_overlay.png",
+            "pixel_count": 3704,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "21687979e48eefe42a27490186713027389b2a02316454729dd2e4124c0b2e2b",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "release",
+      "object_id": "basket_1_contain_region",
+      "object_name": "basket_1_main",
+      "primary_object_id": "tomato_sauce_1",
+      "target_object_id": "basket_1_contain_region",
+      "source_task_description": "Pick the tomato sauce and place it in the basket",
+      "binding": {
+        "name": "basket_1_main",
+        "body_name": "basket_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        19
+      ],
+      "geom_ids": [
+        72,
+        73,
+        74,
+        75,
+        76,
+        77
+      ],
+      "geom_names": [
+        "basket_1_g0",
+        "basket_1_g1",
+        "basket_1_g2",
+        "basket_1_g3",
+        "basket_1_g4",
+        "basket_1_g5"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 3022,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3022,
+          "mask_fingerprint": {
+            "sha256": "1483d6b342e31770265a9b65684291193f56a2037375994e17849c226ad66774",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 3704,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3704,
+          "mask_fingerprint": {
+            "sha256": "21687979e48eefe42a27490186713027389b2a02316454729dd2e4124c0b2e2b",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    },
+    {
+      "index": 2,
+      "stage": 3,
+      "action_type": "grasp",
+      "object_id": "white_yellow_mug_1",
+      "object_name": "white_yellow_mug_1_main",
+      "primary_object_id": "white_yellow_mug_1",
+      "target_object_id": "white_yellow_mug_1",
+      "source_task_description": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "binding": {
+        "name": "white_yellow_mug_1_main",
+        "body_name": "white_yellow_mug_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        23
+      ],
+      "geom_ids": [
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
+      ],
+      "geom_names": [
+        "white_yellow_mug_1_g0",
+        "white_yellow_mug_1_g1",
+        "white_yellow_mug_1_g2",
+        "white_yellow_mug_1_g3",
+        "white_yellow_mug_1_g4",
+        "white_yellow_mug_1_g5",
+        "white_yellow_mug_1_g6",
+        "white_yellow_mug_1_g7",
+        "white_yellow_mug_1_g8",
+        "white_yellow_mug_1_g9",
+        "white_yellow_mug_1_g10",
+        "white_yellow_mug_1_g11",
+        "white_yellow_mug_1_g12",
+        "white_yellow_mug_1_g13",
+        "white_yellow_mug_1_g14",
+        "white_yellow_mug_1_g15",
+        "white_yellow_mug_1_g16",
+        "white_yellow_mug_1_g17",
+        "white_yellow_mug_1_g18",
+        "white_yellow_mug_1_g19",
+        "white_yellow_mug_1_g20",
+        "white_yellow_mug_1_g21",
+        "white_yellow_mug_1_g22",
+        "white_yellow_mug_1_g23",
+        "white_yellow_mug_1_g24",
+        "white_yellow_mug_1_g25",
+        "white_yellow_mug_1_g26",
+        "white_yellow_mug_1_g27",
+        "white_yellow_mug_1_g28",
+        "white_yellow_mug_1_g29",
+        "white_yellow_mug_1_g30",
+        "white_yellow_mug_1_g31",
+        "white_yellow_mug_1_g32",
+        "white_yellow_mug_1_g33",
+        "white_yellow_mug_1_g34",
+        "white_yellow_mug_1_g35",
+        "white_yellow_mug_1_g36",
+        "white_yellow_mug_1_g37",
+        "white_yellow_mug_1_g38",
+        "white_yellow_mug_1_g39"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_03_agentview_mask.png",
+          "overlay": "condition_03_agentview_overlay.png",
+          "pixel_count": 1045,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1045,
+          "mask_fingerprint": {
+            "sha256": "5b1585b77153695a4f732a3bdbd31bd6bc93f075559002eef2d2c50671a24526",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_03_wrist_mask.png",
+          "overlay": "condition_03_wrist_overlay.png",
+          "pixel_count": 4171,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 4171,
+          "mask_fingerprint": {
+            "sha256": "a04e269e94d37c91524ca084534f90fe724413f4f7ebc8b2e0618e03a5ce9efc",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "plate_1",
+        "binding": {
+          "name": "plate_1_main",
+          "body_name": "plate_1_main",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_03_agentview_target_mask.png",
+            "overlay": "condition_03_agentview_target_overlay.png",
+            "pixel_count": 999,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "0c225e77bbec730e690d41c84c2a0d4e0ddf186b7091a7e69a280de1d2d10765",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_03_wrist_target_mask.png",
+            "overlay": "condition_03_wrist_target_overlay.png",
+            "pixel_count": 1550,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "8cee66971b3f79f9b5a25275f59e2ed0f7094ab458110004e7b5003dfb6a944a",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 3,
+      "stage": 4,
+      "action_type": "release",
+      "object_id": "plate_1",
+      "object_name": "plate_1_main",
+      "primary_object_id": "white_yellow_mug_1",
+      "target_object_id": "plate_1",
+      "source_task_description": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "binding": {
+        "name": "plate_1_main",
+        "body_name": "plate_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        24
+      ],
+      "geom_ids": [
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174
+      ],
+      "geom_names": [
+        "plate_1_g0",
+        "plate_1_g1",
+        "plate_1_g2",
+        "plate_1_g3",
+        "plate_1_g4",
+        "plate_1_g5",
+        "plate_1_g6",
+        "plate_1_g7",
+        "plate_1_g8",
+        "plate_1_g9",
+        "plate_1_g10"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_04_agentview_mask.png",
+          "overlay": "condition_04_agentview_overlay.png",
+          "pixel_count": 999,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 999,
+          "mask_fingerprint": {
+            "sha256": "0c225e77bbec730e690d41c84c2a0d4e0ddf186b7091a7e69a280de1d2d10765",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_04_wrist_mask.png",
+          "overlay": "condition_04_wrist_overlay.png",
+          "pixel_count": 1550,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1550,
+          "mask_fingerprint": {
+            "sha256": "8cee66971b3f79f9b5a25275f59e2ed0f7094ab458110004e7b5003dfb6a944a",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "fe1d5ecfc18f35c78a9c4d780edebe35685a73cc39bb981219ccbdaeb1f57529",
+    "legacy_job_sha256": "3dacc037d2a73e434bf7d43dc0a29d6a0779aaf36f61679c104f87284aa4635d",
+    "legacy_runtime_entrypoint": "run_user_inspired_compose_batch62_evaluator_entry",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "2cee8287a19a81509db816b6138dfd3a46dee934f15ed5f17f03299e61b52cd5",
+        "frozen_sha256": "2cee8287a19a81509db816b6138dfd3a46dee934f15ed5f17f03299e61b52cd5",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "c21153de5bf5619c622e0766aee31f5a1a7ac7a01af7acc1c0eef55a35201699",
+        "frozen_sha256": "c21153de5bf5619c622e0766aee31f5a1a7ac7a01af7acc1c0eef55a35201699",
+        "equal": true
+      },
+      "FIXTURE_REPLAY.json": {
+        "canonical_sha256": "74f5f57d844fbb3192c44fecff2b3dbbb82d0e1839db41ce6a0c0688635326d3",
+        "frozen_sha256": "af99caee30da096b497a81c7d483ae0bc5c2da6cdd9440c0e4427b2860434826",
+        "semantically_equal_after_id_mapping": true
+      }
+    },
+    "initial_state": {
+      "sha256": "060a92439cc406dd0717799a09ebfc5b01aa10b705b5751c83658a124ce044f9",
+      "shape": [
+        97
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "run_diverse_adapt_evaluator_entry._original_episode"
+  ],
+  "initial_tracker": {
+    "custom": true,
+    "category": "COMPOSITION",
+    "required_atoms": [
+      [
+        "in",
+        "tomato_sauce_1",
+        "basket_1_contain_region"
+      ],
+      [
+        "on",
+        "white_yellow_mug_1",
+        "plate_1"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null,
+      null
+    ],
+    "required_atom_final": [
+      false,
+      false
+    ],
+    "required_prefix_first_steps": [
+      null,
+      null
+    ],
+    "required_combination_first_steps": {
+      "00": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false,
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [
+      [
+        [
+          "in",
+          "tomato_sauce_1",
+          "basket_1_contain_region"
+        ]
+      ],
+      [
+        [
+          "in",
+          "tomato_sauce_1",
+          "basket_1_contain_region"
+        ],
+        [
+          "on",
+          "white_yellow_mug_1",
+          "plate_1"
+        ]
+      ]
+    ],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 2,
+    "calls": [
+      {
+        "pose_keys": [],
+        "pose_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      {
+        "pose_keys": [],
+        "pose_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      }
+    ],
+    "matched_state_sha256": "060a92439cc406dd0717799a09ebfc5b01aa10b705b5751c83658a124ce044f9",
+    "root_pose_max_abs_error": 0.0,
+    "settled_body_max_abs_error": 0.0
+  },
+  "post_warmup_state": {
+    "sha256": "4a316df6ddfdf01d58d6ee5f04ee75899264227dabe6b2508c4c2554d5ce1fa0",
+    "shape": [
+      97
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 12.728389566764235
+}

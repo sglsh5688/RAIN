@@ -1,0 +1,19 @@
+{
+  "tasks": 60,
+  "categories": {
+    "Decomposition": 20,
+    "Adapt": 20,
+    "Compose": 20
+  },
+  "active_conditions": 153,
+  "binary_masks": 444,
+  "rgb_images": 120,
+  "review_sheets": 60,
+  "representative_success_videos": 59,
+  "representative_failure_videos": 53,
+  "source_task_index_sha256": "e0490a5e87e004d666400cc96d347b8a68913b7624853115f6bdea35d5fbda46",
+  "new_policy_inference_calls": 0,
+  "initial_state_index": 0,
+  "seed": 7,
+  "source_validation_passed": true
+}

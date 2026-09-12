@@ -1,0 +1,409 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Adapt_007",
+  "legacy_task_id": "ANLGX_134",
+  "category": "Adapt",
+  "order": 27,
+  "task_description": "Put the plate on the top of the wooden cabinet.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 3,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "568bb37f51c164545667c998c019193fcffcd7cece57a1a5350aca557a832770",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "41fad2ed0a60e34c2bc1760c6046fc4abc9faeb7e9d925276dcd1c19ef1757f0",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "grasp",
+      "object_id": "plate_1",
+      "object_name": "plate_1_main",
+      "primary_object_id": "plate_1",
+      "target_object_id": "plate_1",
+      "source_task_description": "Put the plate on the top of the wooden cabinet.",
+      "binding": {
+        "name": "plate_1_main",
+        "body_name": "plate_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        25
+      ],
+      "geom_ids": [
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136
+      ],
+      "geom_names": [
+        "plate_1_g0",
+        "plate_1_g1",
+        "plate_1_g2",
+        "plate_1_g3",
+        "plate_1_g4",
+        "plate_1_g5",
+        "plate_1_g6",
+        "plate_1_g7",
+        "plate_1_g8",
+        "plate_1_g9",
+        "plate_1_g10"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 587,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 587,
+          "mask_fingerprint": {
+            "sha256": "366a10d3eac272bc8b4bf65350a4995c6253f8538d956287a53a09f851274020",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 3153,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3153,
+          "mask_fingerprint": {
+            "sha256": "ec60c271bf55a48b469689a24dd0863ac7a05df7b762586e99c3dfa52b6289b9",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "wooden_cabinet_1_top_side",
+        "binding": {
+          "name": "wooden_cabinet_1_main",
+          "body_name": "wooden_cabinet_1_main",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_01_agentview_target_mask.png",
+            "overlay": "condition_01_agentview_target_overlay.png",
+            "pixel_count": 9051,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "20c9aa165410cc7b9bb79057292ece3c83db334e15c6bfb550ea53310d17f5cc",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_01_wrist_target_mask.png",
+            "overlay": "condition_01_wrist_target_overlay.png",
+            "pixel_count": 5322,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "00631645569e56e8a67ac87dde0c665857ca363cbdf397849115f45a8f0bdeb0",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "release",
+      "object_id": "wooden_cabinet_1_top_side",
+      "object_name": "wooden_cabinet_1_main",
+      "primary_object_id": "plate_1",
+      "target_object_id": "wooden_cabinet_1_top_side",
+      "source_task_description": "Put the plate on the top of the wooden cabinet.",
+      "binding": {
+        "name": "wooden_cabinet_1_main",
+        "body_name": "wooden_cabinet_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        26
+      ],
+      "geom_ids": [
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179
+      ],
+      "geom_names": [
+        "wooden_cabinet_1_g0",
+        "wooden_cabinet_1_g1",
+        "wooden_cabinet_1_g2",
+        "wooden_cabinet_1_g3",
+        "wooden_cabinet_1_g4",
+        "wooden_cabinet_1_g5",
+        "wooden_cabinet_1_g6",
+        "wooden_cabinet_1_g7",
+        "wooden_cabinet_1_g8",
+        "wooden_cabinet_1_g9",
+        "wooden_cabinet_1_g10",
+        "wooden_cabinet_1_g11",
+        "wooden_cabinet_1_g12",
+        "wooden_cabinet_1_g13",
+        "wooden_cabinet_1_g14",
+        "wooden_cabinet_1_g15",
+        "wooden_cabinet_1_g16",
+        "wooden_cabinet_1_g17",
+        "wooden_cabinet_1_g18",
+        "wooden_cabinet_1_g19",
+        "wooden_cabinet_1_g20",
+        "wooden_cabinet_1_g21",
+        "wooden_cabinet_1_g22",
+        "wooden_cabinet_1_g23",
+        "wooden_cabinet_1_g24",
+        "wooden_cabinet_1_g25",
+        "wooden_cabinet_1_g26",
+        "wooden_cabinet_1_g27",
+        "wooden_cabinet_1_g28",
+        "wooden_cabinet_1_g29",
+        "wooden_cabinet_1_g30",
+        "wooden_cabinet_1_g31",
+        "wooden_cabinet_1_g32",
+        "wooden_cabinet_1_g33",
+        "wooden_cabinet_1_g34",
+        "wooden_cabinet_1_g35",
+        "wooden_cabinet_1_g36",
+        "wooden_cabinet_1_g37",
+        "wooden_cabinet_1_g38",
+        "wooden_cabinet_1_g39",
+        "wooden_cabinet_1_g40",
+        "wooden_cabinet_1_g41",
+        "wooden_cabinet_1_g42"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 9051,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 9051,
+          "mask_fingerprint": {
+            "sha256": "20c9aa165410cc7b9bb79057292ece3c83db334e15c6bfb550ea53310d17f5cc",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 5322,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 5322,
+          "mask_fingerprint": {
+            "sha256": "00631645569e56e8a67ac87dde0c665857ca363cbdf397849115f45a8f0bdeb0",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "07f6a8047fea1acef01cc5573c73d03bc0aeece61c65a02b6b7a8e309f932c70",
+    "legacy_job_sha256": "314903bb9a3f184f66ecd4c85143406c1e8f700a19358384d6897bd4818bd717",
+    "legacy_runtime_entrypoint": "run_analogy_evaluator_entry",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "af6419ac3b386e65e4ab3732af1f2373047da7795235334b8ed6646639f067b6",
+        "frozen_sha256": "af6419ac3b386e65e4ab3732af1f2373047da7795235334b8ed6646639f067b6",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "cb8598017b69c49cd6b8e8b1e38dfcf8eebc878595c77a821834fe555a2e2d38",
+        "frozen_sha256": "cb8598017b69c49cd6b8e8b1e38dfcf8eebc878595c77a821834fe555a2e2d38",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "c3d1a585301977e0a9e17dec8b5d95039ccd029df6a909733dd66692f561a25c",
+      "shape": [
+        66
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "final_libero_ex_eval.impl.evaluator.run_single_episode_libero_ex"
+  ],
+  "initial_tracker": {
+    "custom": false,
+    "category": "ANALOGY",
+    "required_atoms": [
+      [
+        "on",
+        "plate_1",
+        "wooden_cabinet_1_top_side"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null
+    ],
+    "required_atom_final": [
+      false
+    ],
+    "required_prefix_first_steps": [
+      null
+    ],
+    "required_combination_first_steps": {
+      "0": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "b031e9ead610775499505c6f36564312baf10bd278af6a2433acb75b6b566eb1",
+    "shape": [
+      66
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 11.473823108710349
+}

@@ -1,0 +1,560 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Compose_006",
+  "legacy_task_id": "COMP2_012",
+  "category": "Compose",
+  "order": 39,
+  "task_description": "Put the butter in the basket, and then put the tomato sauce in the basket.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 2,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "18ffaff04426b9e5f9f8ee9199ebf981802e1cea6cfd2cfc316da4f4b1a2bcb7",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "567f5f559f19e912d61fb97770244e36b82795c54de6bebc6869bd1e20db6ce8",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "grasp",
+      "object_id": "butter_1",
+      "object_name": "butter_1_main",
+      "primary_object_id": "butter_1",
+      "target_object_id": "butter_1",
+      "source_task_description": "Pick the butter and place it in the basket",
+      "binding": {
+        "name": "butter_1_main",
+        "body_name": "butter_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        19
+      ],
+      "geom_ids": [
+        72,
+        73
+      ],
+      "geom_names": [
+        "butter_1_g0",
+        "butter_1_g1"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 152,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 152,
+          "mask_fingerprint": {
+            "sha256": "796c1beda40c999340cbc21c3a460b6c2953ea3d490254ccbb5740794300c814",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 779,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 779,
+          "mask_fingerprint": {
+            "sha256": "1a525879d8b02f71dd34cb3c076fda0d4ac5db256ce1083dcc3fb6b2ba7dd125",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "basket_1_contain_region",
+        "binding": {
+          "name": "basket_1_main",
+          "body_name": "basket_1_main",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_01_agentview_target_mask.png",
+            "overlay": "condition_01_agentview_target_overlay.png",
+            "pixel_count": 3082,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "80ad633bd72d5443322f7568d84eefe92e4fcedf7614ba01a3ca2d1cf134b2a0",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_01_wrist_target_mask.png",
+            "overlay": "condition_01_wrist_target_overlay.png",
+            "pixel_count": 3118,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "67568c42b56eb99340e3349a5fe35f877f0aa8398e528f28a16b37fc7da13baf",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "release",
+      "object_id": "basket_1_contain_region",
+      "object_name": "basket_1_main",
+      "primary_object_id": "butter_1",
+      "target_object_id": "basket_1_contain_region",
+      "source_task_description": "Pick the butter and place it in the basket",
+      "binding": {
+        "name": "basket_1_main",
+        "body_name": "basket_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        20
+      ],
+      "geom_ids": [
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "geom_names": [
+        "basket_1_g0",
+        "basket_1_g1",
+        "basket_1_g2",
+        "basket_1_g3",
+        "basket_1_g4",
+        "basket_1_g5"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 3082,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3082,
+          "mask_fingerprint": {
+            "sha256": "80ad633bd72d5443322f7568d84eefe92e4fcedf7614ba01a3ca2d1cf134b2a0",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 3118,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3118,
+          "mask_fingerprint": {
+            "sha256": "67568c42b56eb99340e3349a5fe35f877f0aa8398e528f28a16b37fc7da13baf",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    },
+    {
+      "index": 2,
+      "stage": 3,
+      "action_type": "grasp",
+      "object_id": "tomato_sauce_1",
+      "object_name": "tomato_sauce_1_main",
+      "primary_object_id": "tomato_sauce_1",
+      "target_object_id": "tomato_sauce_1",
+      "source_task_description": "Pick the tomato sauce and place it in the basket",
+      "binding": {
+        "name": "tomato_sauce_1_main",
+        "body_name": "tomato_sauce_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        21
+      ],
+      "geom_ids": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "geom_names": [
+        "tomato_sauce_1_g0",
+        "tomato_sauce_1_g1",
+        "tomato_sauce_1_g2",
+        "tomato_sauce_1_g3",
+        "tomato_sauce_1_g4",
+        "tomato_sauce_1_g5",
+        "tomato_sauce_1_g6",
+        "tomato_sauce_1_g7",
+        "tomato_sauce_1_g8",
+        "tomato_sauce_1_g9",
+        "tomato_sauce_1_g10",
+        "tomato_sauce_1_g11",
+        "tomato_sauce_1_g12",
+        "tomato_sauce_1_g13",
+        "tomato_sauce_1_g14",
+        "tomato_sauce_1_g15",
+        "tomato_sauce_1_g16",
+        "tomato_sauce_1_g17",
+        "tomato_sauce_1_g18",
+        "tomato_sauce_1_g19",
+        "tomato_sauce_1_g20",
+        "tomato_sauce_1_g21",
+        "tomato_sauce_1_g22",
+        "tomato_sauce_1_g23",
+        "tomato_sauce_1_g24"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_03_agentview_mask.png",
+          "overlay": "condition_03_agentview_overlay.png",
+          "pixel_count": 538,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 538,
+          "mask_fingerprint": {
+            "sha256": "c654e6fbac7bf1700e2368fdbfb2c634829bd6378056bd1e50c6b77bccca960b",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_03_wrist_mask.png",
+          "overlay": "condition_03_wrist_overlay.png",
+          "pixel_count": 2120,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 2120,
+          "mask_fingerprint": {
+            "sha256": "c10a608c86d6e7431bce29654e5de277821590c6a998785275d18bfceb124b35",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "basket_1_contain_region",
+        "binding": {
+          "name": "basket_1_main",
+          "body_name": "basket_1_main",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_03_agentview_target_mask.png",
+            "overlay": "condition_03_agentview_target_overlay.png",
+            "pixel_count": 3082,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "80ad633bd72d5443322f7568d84eefe92e4fcedf7614ba01a3ca2d1cf134b2a0",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_03_wrist_target_mask.png",
+            "overlay": "condition_03_wrist_target_overlay.png",
+            "pixel_count": 3118,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "67568c42b56eb99340e3349a5fe35f877f0aa8398e528f28a16b37fc7da13baf",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 3,
+      "stage": 4,
+      "action_type": "release",
+      "object_id": "basket_1_contain_region",
+      "object_name": "basket_1_main",
+      "primary_object_id": "tomato_sauce_1",
+      "target_object_id": "basket_1_contain_region",
+      "source_task_description": "Pick the tomato sauce and place it in the basket",
+      "binding": {
+        "name": "basket_1_main",
+        "body_name": "basket_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        20
+      ],
+      "geom_ids": [
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "geom_names": [
+        "basket_1_g0",
+        "basket_1_g1",
+        "basket_1_g2",
+        "basket_1_g3",
+        "basket_1_g4",
+        "basket_1_g5"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_04_agentview_mask.png",
+          "overlay": "condition_04_agentview_overlay.png",
+          "pixel_count": 3082,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3082,
+          "mask_fingerprint": {
+            "sha256": "80ad633bd72d5443322f7568d84eefe92e4fcedf7614ba01a3ca2d1cf134b2a0",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_04_wrist_mask.png",
+          "overlay": "condition_04_wrist_overlay.png",
+          "pixel_count": 3118,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3118,
+          "mask_fingerprint": {
+            "sha256": "67568c42b56eb99340e3349a5fe35f877f0aa8398e528f28a16b37fc7da13baf",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "c7501bd665db6f44cf54b70834f4c71c2b25cb050301059cfbee56689a539a4d",
+    "legacy_job_sha256": "e24e1a99c66368784b187535d4233b7966fa6907d585d143ba91af46cbb41beb",
+    "legacy_runtime_entrypoint": "run_composition_evaluator_entry",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "96465f438caa5d4cc90fb46b275ea3df1e6ea4ef46449c27d04bda506cf22493",
+        "frozen_sha256": "96465f438caa5d4cc90fb46b275ea3df1e6ea4ef46449c27d04bda506cf22493",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "85e5d202135ee4fc420deff2c18b4f76811af14222e0921338f8757194e73083",
+        "frozen_sha256": "85e5d202135ee4fc420deff2c18b4f76811af14222e0921338f8757194e73083",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "bad9bba0fbdf574e67aa4f37c8ec45b157b0f587a4f1c255fef5f0c2c146998d",
+      "shape": [
+        110
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "final_libero_ex_eval.impl.evaluator.run_single_episode_libero_ex"
+  ],
+  "initial_tracker": {
+    "custom": false,
+    "category": "COMPOSITION",
+    "required_atoms": [
+      [
+        "in",
+        "butter_1",
+        "basket_1_contain_region"
+      ],
+      [
+        "in",
+        "tomato_sauce_1",
+        "basket_1_contain_region"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null,
+      null
+    ],
+    "required_atom_final": [
+      false,
+      false
+    ],
+    "required_prefix_first_steps": [
+      null,
+      null
+    ],
+    "required_combination_first_steps": {
+      "00": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false,
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "b0a7a7bf5c91b6cd07e3bd3e06cda503cebef517522fa02374314812b8cb9416",
+    "shape": [
+      110
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 12.26080265827477
+}

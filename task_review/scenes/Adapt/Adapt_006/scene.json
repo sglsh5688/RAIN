@@ -1,0 +1,371 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Adapt_006",
+  "legacy_task_id": "ANLGX_089",
+  "category": "Adapt",
+  "order": 26,
+  "task_description": "Pick up the wine bottle at the table center and place it on the plate.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 2,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "439abbfc5c18aa0678dd99f4cdea1d8a4405054c7a74436d3f5c75bfcd8a6b78",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "26da56f6866bfe4cbe19a29ea21a8ed7327b5a531af93fc3913f0d5acefc34be",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "grasp",
+      "object_id": "wine_bottle_1",
+      "object_name": "wine_bottle_1_main",
+      "primary_object_id": "wine_bottle_1",
+      "target_object_id": "wine_bottle_1",
+      "source_task_description": "Pick up the wine bottle at the table center and place it on the plate.",
+      "binding": {
+        "name": "wine_bottle_1_main",
+        "body_name": "wine_bottle_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        23
+      ],
+      "geom_ids": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "geom_names": [
+        "wine_bottle_1_g0",
+        "wine_bottle_1_g1",
+        "wine_bottle_1_g2",
+        "wine_bottle_1_g3",
+        "wine_bottle_1_g4",
+        "wine_bottle_1_g5",
+        "wine_bottle_1_g6",
+        "wine_bottle_1_g7",
+        "wine_bottle_1_g8",
+        "wine_bottle_1_g9",
+        "wine_bottle_1_g10",
+        "wine_bottle_1_g11",
+        "wine_bottle_1_g12",
+        "wine_bottle_1_g13",
+        "wine_bottle_1_g14",
+        "wine_bottle_1_g15",
+        "wine_bottle_1_g16",
+        "wine_bottle_1_g17",
+        "wine_bottle_1_g18",
+        "wine_bottle_1_g19",
+        "wine_bottle_1_g20",
+        "wine_bottle_1_g21",
+        "wine_bottle_1_g22",
+        "wine_bottle_1_g23"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 408,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 408,
+          "mask_fingerprint": {
+            "sha256": "733eb9fc220ee5b6598e55e18692d4d79e8a4ef5c373a2434b6ed790d3db487a",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 696,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 696,
+          "mask_fingerprint": {
+            "sha256": "bda376f1ec251c6592d4eb0d998197111674d9ff8b2ec42fd0f44eb41cdf5a1a",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "plate_1",
+        "binding": {
+          "name": "plate_1_main",
+          "body_name": "plate_1_main",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_01_agentview_target_mask.png",
+            "overlay": "condition_01_agentview_target_overlay.png",
+            "pixel_count": 1320,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "6b551293363772fd6bf7a0ed8e2c7e2479eb803c20e806d0f370b39407534ba6",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_01_wrist_target_mask.png",
+            "overlay": "condition_01_wrist_target_overlay.png",
+            "pixel_count": 2866,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "7aab3d2fbf7191eb6cab9aa38b2540ec7ff77629d673e57a4bc1d3523ceb5d5f",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "release",
+      "object_id": "plate_1",
+      "object_name": "plate_1_main",
+      "primary_object_id": "wine_bottle_1",
+      "target_object_id": "plate_1",
+      "source_task_description": "Pick up the wine bottle at the table center and place it on the plate.",
+      "binding": {
+        "name": "plate_1_main",
+        "body_name": "plate_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        27
+      ],
+      "geom_ids": [
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186
+      ],
+      "geom_names": [
+        "plate_1_g0",
+        "plate_1_g1",
+        "plate_1_g2",
+        "plate_1_g3",
+        "plate_1_g4",
+        "plate_1_g5",
+        "plate_1_g6",
+        "plate_1_g7",
+        "plate_1_g8",
+        "plate_1_g9",
+        "plate_1_g10"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 1320,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1320,
+          "mask_fingerprint": {
+            "sha256": "6b551293363772fd6bf7a0ed8e2c7e2479eb803c20e806d0f370b39407534ba6",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 2866,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 2866,
+          "mask_fingerprint": {
+            "sha256": "7aab3d2fbf7191eb6cab9aa38b2540ec7ff77629d673e57a4bc1d3523ceb5d5f",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "d5856996105d70711d55c450f1ce46cd0c5c4ab8a753e26f26554b17883e5a7f",
+    "legacy_job_sha256": "98729db02c4dc6d95139ba6421728d9b52a7d56de9d382d5c1f42bbbd87de2c6",
+    "legacy_runtime_entrypoint": "run_analogy_evaluator_entry",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "fa8f46baf7205558ba0cf581436d7b4de524bad006183a0834affd2c8f274f1a",
+        "frozen_sha256": "fa8f46baf7205558ba0cf581436d7b4de524bad006183a0834affd2c8f274f1a",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "a18ae77a00b230e107a3abc6b1ab7e489091fbe919622d9f33115186ffc0a885",
+        "frozen_sha256": "a18ae77a00b230e107a3abc6b1ab7e489091fbe919622d9f33115186ffc0a885",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "46b394d5fd92a7d7d8bbbea0ae57f503013720c0cdc1c46ebe7e8e4f0df4a30c",
+      "shape": [
+        92
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "final_libero_ex_eval.impl.evaluator.run_single_episode_libero_ex"
+  ],
+  "initial_tracker": {
+    "custom": false,
+    "category": "ANALOGY",
+    "required_atoms": [
+      [
+        "on",
+        "wine_bottle_1",
+        "plate_1"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null
+    ],
+    "required_atom_final": [
+      false
+    ],
+    "required_prefix_first_steps": [
+      null
+    ],
+    "required_combination_first_steps": {
+      "0": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "b63c1adfdc0afcbd49de312bb5ae934b6f6bbdfcd726087e11d24b76893bb816",
+    "shape": [
+      92
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 12.319513981230557
+}

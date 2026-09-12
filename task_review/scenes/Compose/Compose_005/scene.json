@@ -1,0 +1,475 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Compose_005",
+  "legacy_task_id": "VCN21_001",
+  "category": "Compose",
+  "order": 38,
+  "task_description": "Put the moka pot on the stove, then close the microwave door.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 3,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "c6d418d5c8a7ae207d922a8dfca412d6355c167d9449d175d49b0849424af83b",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "547c93d7dff4864a20e46d57b0ea136b26ad48d23af87c0118f6b2dfdb3112c1",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "grasp",
+      "object_id": "moka_pot_2",
+      "object_name": "moka_pot_2_main",
+      "primary_object_id": "moka_pot_2",
+      "target_object_id": "moka_pot_2",
+      "source_task_description": "Put the moka pot on the stove",
+      "binding": {
+        "name": "moka_pot_2_main",
+        "body_name": "moka_pot_2_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        23
+      ],
+      "geom_ids": [
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "geom_names": [
+        "moka_pot_2_g0",
+        "moka_pot_2_g1",
+        "moka_pot_2_g2",
+        "moka_pot_2_g3",
+        "moka_pot_2_g4",
+        "moka_pot_2_g5",
+        "moka_pot_2_g6",
+        "moka_pot_2_g7",
+        "moka_pot_2_g8",
+        "moka_pot_2_g9",
+        "moka_pot_2_g10",
+        "moka_pot_2_g11",
+        "moka_pot_2_g12",
+        "moka_pot_2_g13",
+        "moka_pot_2_g14",
+        "moka_pot_2_g15",
+        "moka_pot_2_g16"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 1414,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1414,
+          "mask_fingerprint": {
+            "sha256": "10ea36472847b2071247a0f60616212174ae71c3f33932ced68cb4f540978986",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 1924,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1924,
+          "mask_fingerprint": {
+            "sha256": "10601035ad1856134a17772abba8724ff6164a713faa1b722dd48d8ff13c92de",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "flat_stove_1_cook_region",
+        "binding": {
+          "name": "flat_stove_1_burner",
+          "body_name": "flat_stove_1_burner",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_01_agentview_target_mask.png",
+            "overlay": "condition_01_agentview_target_overlay.png",
+            "pixel_count": 1961,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "e0707e55125ee45271c6ae9e61405839fae6e39cb80361e875d30adcaf23e888",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_01_wrist_target_mask.png",
+            "overlay": "condition_01_wrist_target_overlay.png",
+            "pixel_count": 3860,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "335a4dc8e8bcd3c191d9f715a3ffcb7193d02c5cd892c30da336a7e0002478ba",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "release",
+      "object_id": "flat_stove_1_cook_region",
+      "object_name": "flat_stove_1_burner",
+      "primary_object_id": "moka_pot_2",
+      "target_object_id": "flat_stove_1_cook_region",
+      "source_task_description": "Put the moka pot on the stove",
+      "binding": {
+        "name": "flat_stove_1_burner",
+        "body_name": "flat_stove_1_burner",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        26
+      ],
+      "geom_ids": [
+        103,
+        104,
+        105
+      ],
+      "geom_names": [
+        "flat_stove_1_base_vis",
+        "flat_stove_1_base",
+        "flat_stove_1_collision_burner"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 1961,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1961,
+          "mask_fingerprint": {
+            "sha256": "e0707e55125ee45271c6ae9e61405839fae6e39cb80361e875d30adcaf23e888",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 3860,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3860,
+          "mask_fingerprint": {
+            "sha256": "335a4dc8e8bcd3c191d9f715a3ffcb7193d02c5cd892c30da336a7e0002478ba",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    },
+    {
+      "index": 2,
+      "stage": 3,
+      "action_type": "close",
+      "object_id": "microwave_1",
+      "object_name": "microwave_1_microdoorroot",
+      "primary_object_id": "microwave_1",
+      "target_object_id": "microwave_1",
+      "source_task_description": "Close the microwave door",
+      "binding": {
+        "name": "microwave_1_microdoorroot",
+        "body_name": "microwave_1_microdoorroot",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        30
+      ],
+      "geom_ids": [
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143
+      ],
+      "geom_names": [
+        "microwave_1_g9",
+        "microwave_1_g10",
+        "microwave_1_g11",
+        "microwave_1_g12",
+        "microwave_1_g13",
+        "microwave_1_g14",
+        "microwave_1_g15",
+        "microwave_1_g16",
+        "microwave_1_g17"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_03_agentview_mask.png",
+          "overlay": "condition_03_agentview_overlay.png",
+          "pixel_count": 3849,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 3849,
+          "mask_fingerprint": {
+            "sha256": "85d7f8be34f29ffc777bee133e1957357c69564035a690e37bceac019a3a505a",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_03_wrist_mask.png",
+          "overlay": "condition_03_wrist_overlay.png",
+          "pixel_count": 4612,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 4612,
+          "mask_fingerprint": {
+            "sha256": "0e4f63376611e334000c76f6de80c4154008c892ce0436f91a5f0705366b7272",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "98adbb517428126fafd7f2207a5ecda648e1a7b74b3143a7faa487fda17a7765",
+    "legacy_job_sha256": "66071070445ce1080a2972f9b318195240dfef21086ff374fd4dbb64a822568b",
+    "legacy_runtime_entrypoint": "run_moka_microwave_compose_evaluator_entry",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "fae2570b7fe907d5396df03f8c6b6b47bdbafb74be36ed5cc8b887988465c84a",
+        "frozen_sha256": "fae2570b7fe907d5396df03f8c6b6b47bdbafb74be36ed5cc8b887988465c84a",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "67a429d28b833a5d1d30d15af1320785ead4606bde31858ecd735c8721507c3d",
+        "frozen_sha256": "67a429d28b833a5d1d30d15af1320785ead4606bde31858ecd735c8721507c3d",
+        "equal": true
+      },
+      "FIXTURE_REPLAY.json": {
+        "canonical_sha256": "2f2fb1de2fbc0134d2fb9803d4159fd7e0499f97179c27ddd76435e1b4b8940e",
+        "frozen_sha256": "312cf962e947aa276b92dfd957ff70b928a61639793a606ab6c062ecd4063927",
+        "semantically_equal_after_id_mapping": true
+      },
+      "MICROWAVE_SWEEP_EVIDENCE.json": {
+        "canonical_sha256": "57529c6c4f5280d7e6f81a92700a225fd0a935bde5f02546c72fd3c107d1f039",
+        "frozen_sha256": "472d43e6d65ffd2c58898c9c799360ed2905e36647e8201ea909cf7d9abce646",
+        "semantically_equal_after_id_mapping": true
+      }
+    },
+    "initial_state": {
+      "sha256": "b6a7f602ef7633d9e0cd7052043a4f7a405e8cdd60dab2f719aa46eda207a9c6",
+      "shape": [
+        36
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "run_diverse_adapt_evaluator_entry._original_episode"
+  ],
+  "initial_tracker": {
+    "custom": true,
+    "category": "COMPOSITION",
+    "required_atoms": [
+      [
+        "on",
+        "moka_pot_2",
+        "flat_stove_1_cook_region"
+      ],
+      [
+        "close",
+        "microwave_1"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null,
+      null
+    ],
+    "required_atom_final": [
+      false,
+      false
+    ],
+    "required_prefix_first_steps": [
+      null,
+      null
+    ],
+    "required_combination_first_steps": {
+      "00": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false,
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [
+      [
+        [
+          "on",
+          "moka_pot_2",
+          "flat_stove_1_cook_region"
+        ]
+      ],
+      [
+        [
+          "on",
+          "moka_pot_2",
+          "flat_stove_1_cook_region"
+        ],
+        [
+          "close",
+          "microwave_1"
+        ]
+      ]
+    ],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 2,
+    "calls": [
+      {
+        "pose_keys": [
+          "flat_stove_1_main",
+          "microwave_1_main"
+        ],
+        "pose_sha256": "aea6e9c51f7ba5252a1778d7c4a1ba11437772998cd97ee0cb85beac8830ca74"
+      },
+      {
+        "pose_keys": [
+          "flat_stove_1_main",
+          "microwave_1_main"
+        ],
+        "pose_sha256": "aea6e9c51f7ba5252a1778d7c4a1ba11437772998cd97ee0cb85beac8830ca74"
+      }
+    ],
+    "matched_state_sha256": "b6a7f602ef7633d9e0cd7052043a4f7a405e8cdd60dab2f719aa46eda207a9c6",
+    "root_pose_max_abs_error": 0.0,
+    "settled_body_max_abs_error": 0.0
+  },
+  "post_warmup_state": {
+    "sha256": "4c2789d575de14b9d742bcfb2cdc3fca167dfbee46b22aa7eee97990f43558e5",
+    "shape": [
+      36
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 9.577891973778605
+}

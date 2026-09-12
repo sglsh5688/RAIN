@@ -1,0 +1,405 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Adapt_003",
+  "legacy_task_id": "ANLGX_017",
+  "category": "Adapt",
+  "order": 23,
+  "task_description": "Put the black bowl in the middle drawer of the white cabinet.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 3,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "ec04651923cc9358662a53b13273a4d848692f21ffc6bca5d38eb96f4a2a84bb",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "93306014f3b20c0dfb36cdd62fd3fa70b00a40ecd626553f4ab1b8f08be563e3",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "grasp",
+      "object_id": "akita_black_bowl_1",
+      "object_name": "akita_black_bowl_1_main",
+      "primary_object_id": "akita_black_bowl_1",
+      "target_object_id": "akita_black_bowl_1",
+      "source_task_description": "Put the black bowl in the middle drawer of the white cabinet.",
+      "binding": {
+        "name": "akita_black_bowl_1_main",
+        "body_name": "akita_black_bowl_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        23
+      ],
+      "geom_ids": [
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ],
+      "geom_names": [
+        "akita_black_bowl_1_g0",
+        "akita_black_bowl_1_g1",
+        "akita_black_bowl_1_g2",
+        "akita_black_bowl_1_g3",
+        "akita_black_bowl_1_g4",
+        "akita_black_bowl_1_g5",
+        "akita_black_bowl_1_g6",
+        "akita_black_bowl_1_g7",
+        "akita_black_bowl_1_g8",
+        "akita_black_bowl_1_g9",
+        "akita_black_bowl_1_g10",
+        "akita_black_bowl_1_g11",
+        "akita_black_bowl_1_g12",
+        "akita_black_bowl_1_g13",
+        "akita_black_bowl_1_g14",
+        "akita_black_bowl_1_g15",
+        "akita_black_bowl_1_g16",
+        "akita_black_bowl_1_g17",
+        "akita_black_bowl_1_g18",
+        "akita_black_bowl_1_g19",
+        "akita_black_bowl_1_g20",
+        "akita_black_bowl_1_g21",
+        "akita_black_bowl_1_g22",
+        "akita_black_bowl_1_g23",
+        "akita_black_bowl_1_g24",
+        "akita_black_bowl_1_g25",
+        "akita_black_bowl_1_g26",
+        "akita_black_bowl_1_g27",
+        "akita_black_bowl_1_g28",
+        "akita_black_bowl_1_g29",
+        "akita_black_bowl_1_g30",
+        "akita_black_bowl_1_g31",
+        "akita_black_bowl_1_g32",
+        "akita_black_bowl_1_g33",
+        "akita_black_bowl_1_g34",
+        "akita_black_bowl_1_g35",
+        "akita_black_bowl_1_g36",
+        "akita_black_bowl_1_g37",
+        "akita_black_bowl_1_g38",
+        "akita_black_bowl_1_g39",
+        "akita_black_bowl_1_g40"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 965,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 965,
+          "mask_fingerprint": {
+            "sha256": "74938f549ad771688d6badb65823c5636efd6b94a1d428bdfa9ec660e491b917",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 1975,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1975,
+          "mask_fingerprint": {
+            "sha256": "1643e40b74856da30c54b5bf033e47bce2cde838c2d6b4a6d947761c3ece4889",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "white_cabinet_1_middle_region",
+        "binding": {
+          "name": "white_cabinet_1_cabinet_middle",
+          "body_name": "white_cabinet_1_cabinet_middle",
+          "body_ids": [
+            0
+          ],
+          "geom_ids": [],
+          "segmentable": true
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_visible_object_segmentation",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_01_agentview_target_mask.png",
+            "overlay": "condition_01_agentview_target_overlay.png",
+            "pixel_count": 4033,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "34c3aedb74d291cc2da796a7cb4a64f03e24a0f251aa264347b619c94bace9ba",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_01_wrist_target_mask.png",
+            "overlay": "condition_01_wrist_target_overlay.png",
+            "pixel_count": 8019,
+            "status": "visible",
+            "source": "sim_seg",
+            "mask_fingerprint": {
+              "sha256": "2e6bce308020ce642a8d47818619ada70435c40609e66141f8b6fb9b92950c9f",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "release",
+      "object_id": "white_cabinet_1_middle_region",
+      "object_name": "white_cabinet_1_cabinet_middle",
+      "primary_object_id": "akita_black_bowl_1",
+      "target_object_id": "white_cabinet_1_middle_region",
+      "source_task_description": "Put the black bowl in the middle drawer of the white cabinet.",
+      "binding": {
+        "name": "white_cabinet_1_cabinet_middle",
+        "body_name": "white_cabinet_1_cabinet_middle",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        28
+      ],
+      "geom_ids": [
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182
+      ],
+      "geom_names": [
+        "white_cabinet_1_g21",
+        "white_cabinet_1_g22",
+        "white_cabinet_1_g23",
+        "white_cabinet_1_g24",
+        "white_cabinet_1_g25",
+        "white_cabinet_1_g26",
+        "white_cabinet_1_g27",
+        "white_cabinet_1_g28",
+        "white_cabinet_1_g29",
+        "white_cabinet_1_g30",
+        "white_cabinet_1_g31"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 4033,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 4033,
+          "mask_fingerprint": {
+            "sha256": "34c3aedb74d291cc2da796a7cb4a64f03e24a0f251aa264347b619c94bace9ba",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 8019,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 8019,
+          "mask_fingerprint": {
+            "sha256": "2e6bce308020ce642a8d47818619ada70435c40609e66141f8b6fb9b92950c9f",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "ae1f8562d43a22ee253b03c95d010080636a64e781eaa454be4e3095f82a7ab6",
+    "legacy_job_sha256": "432cc10e4111986a4728e26c4da6309ee180ce19cc42d80b571c7633597db21a",
+    "legacy_runtime_entrypoint": "run_analogy_evaluator_entry",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "8a8c97c7c2a2002f1dbe6a682dc61cbe814ab348a46065d9ebd84fcb7a0bc304",
+        "frozen_sha256": "8a8c97c7c2a2002f1dbe6a682dc61cbe814ab348a46065d9ebd84fcb7a0bc304",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "2d43bf9194a33cce04e1929ee0a5cf87603f607c027e55382bcb58fa6040a694",
+        "frozen_sha256": "2d43bf9194a33cce04e1929ee0a5cf87603f607c027e55382bcb58fa6040a694",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "dca36f6930944910e9a489c3816a64e0a7b34de121da81a4436a5e18cb6c30a8",
+      "shape": [
+        51
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "final_libero_ex_eval.impl.evaluator.run_single_episode_libero_ex"
+  ],
+  "initial_tracker": {
+    "custom": false,
+    "category": "ANALOGY",
+    "required_atoms": [
+      [
+        "in",
+        "akita_black_bowl_1",
+        "white_cabinet_1_middle_region"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null
+    ],
+    "required_atom_final": [
+      false
+    ],
+    "required_prefix_first_steps": [
+      null
+    ],
+    "required_combination_first_steps": {
+      "0": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "bbe26a1115fddf95b666cef01bc8d56b3d3ad4e65298982d79155491f5578471",
+    "shape": [
+      51
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 11.565761933103204
+}

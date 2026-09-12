@@ -1,0 +1,375 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Adapt_019",
+  "legacy_task_id": "WTRAYR_004",
+  "category": "Adapt",
+  "order": 54,
+  "task_description": "Pick up the black bowl and place it in the wooden tray.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 3,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "45f29728eaea7e404c83f3c60d932331776620e84927151427739e8aa4fc32a4",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "2430973c474500d3b7ffc8dff96bb3537405705a061a3af45d290c66f516f728",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "grasp",
+      "object_id": "akita_black_bowl_1",
+      "object_name": "akita_black_bowl_1",
+      "primary_object_id": "akita_black_bowl_1",
+      "target_object_id": "akita_black_bowl_1",
+      "source_task_description": "Pick up the black bowl and place it in the wooden tray.",
+      "binding": {
+        "name": "akita_black_bowl_1",
+        "body_name": "akita_black_bowl_1_main",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        22
+      ],
+      "geom_ids": [
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "geom_names": [
+        "akita_black_bowl_1_g0",
+        "akita_black_bowl_1_g1",
+        "akita_black_bowl_1_g2",
+        "akita_black_bowl_1_g3",
+        "akita_black_bowl_1_g4",
+        "akita_black_bowl_1_g5",
+        "akita_black_bowl_1_g6",
+        "akita_black_bowl_1_g7",
+        "akita_black_bowl_1_g8",
+        "akita_black_bowl_1_g9",
+        "akita_black_bowl_1_g10",
+        "akita_black_bowl_1_g11",
+        "akita_black_bowl_1_g12",
+        "akita_black_bowl_1_g13",
+        "akita_black_bowl_1_g14",
+        "akita_black_bowl_1_g15",
+        "akita_black_bowl_1_g16",
+        "akita_black_bowl_1_g17",
+        "akita_black_bowl_1_g18",
+        "akita_black_bowl_1_g19",
+        "akita_black_bowl_1_g20",
+        "akita_black_bowl_1_g21",
+        "akita_black_bowl_1_g22",
+        "akita_black_bowl_1_g23",
+        "akita_black_bowl_1_g24",
+        "akita_black_bowl_1_g25",
+        "akita_black_bowl_1_g26",
+        "akita_black_bowl_1_g27",
+        "akita_black_bowl_1_g28",
+        "akita_black_bowl_1_g29",
+        "akita_black_bowl_1_g30",
+        "akita_black_bowl_1_g31",
+        "akita_black_bowl_1_g32",
+        "akita_black_bowl_1_g33",
+        "akita_black_bowl_1_g34",
+        "akita_black_bowl_1_g35",
+        "akita_black_bowl_1_g36",
+        "akita_black_bowl_1_g37",
+        "akita_black_bowl_1_g38",
+        "akita_black_bowl_1_g39",
+        "akita_black_bowl_1_g40"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 816,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 816,
+          "mask_fingerprint": {
+            "sha256": "c95bacd4c8980f7be8dd1e040187e709a2de3462481f72c73a533827c0356762",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 1336,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1336,
+          "mask_fingerprint": {
+            "sha256": "6264de97930144d02dbabbdfa55566342b7a6a7217b00ed299b178bd655fbb89",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      },
+      "target": {
+        "object_id": "wooden_tray_1_contain_region",
+        "binding": {
+          "name": "wooden_tray_1_contain_region",
+          "body_name": "wooden_tray_1_contain_region",
+          "body_ids": [],
+          "geom_ids": [],
+          "segmentable": false
+        },
+        "source": "original_rollout._compute_place_masks(source_episodes=None)",
+        "source_is_active_condition_mask": false,
+        "actual_forward_conditioning_enabled": true,
+        "supplementary_visualization": false,
+        "semantics": "forward destination for the following release",
+        "mask_kind": "current_projected_target_geometry",
+        "cameras": {
+          "agentview": {
+            "mask": "condition_01_agentview_target_mask.png",
+            "overlay": "condition_01_agentview_target_overlay.png",
+            "pixel_count": 8952,
+            "status": "projected_target",
+            "source": "sim_region_poly",
+            "mask_fingerprint": {
+              "sha256": "b14073475e2e9cd109bd9be98b4ed4f2e005ef6eaad911ce366b7a894730bf9e",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          },
+          "wrist": {
+            "mask": "condition_01_wrist_target_mask.png",
+            "overlay": "condition_01_wrist_target_overlay.png",
+            "pixel_count": 15298,
+            "status": "projected_target",
+            "source": "sim_region_poly",
+            "mask_fingerprint": {
+              "sha256": "e27e7b0693029887c37e4de75a5878f394c0e6107d0ded7a55a8eecdd1d37659",
+              "shape": [
+                256,
+                256
+              ],
+              "dtype": "uint8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "stage": 2,
+      "action_type": "release",
+      "object_id": "wooden_tray_1_contain_region",
+      "object_name": "wooden_tray_1_contain_region",
+      "primary_object_id": "akita_black_bowl_1",
+      "target_object_id": "wooden_tray_1_contain_region",
+      "source_task_description": "Pick up the black bowl and place it in the wooden tray.",
+      "binding": {
+        "name": "wooden_tray_1_contain_region",
+        "body_name": "wooden_tray_1_contain_region",
+        "body_ids": [],
+        "geom_ids": [],
+        "segmentable": false
+      },
+      "corrected_body_ids": [],
+      "geom_ids": [],
+      "geom_names": [],
+      "mask_kind": "current_projected_target_geometry",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_02_agentview_mask.png",
+          "overlay": "condition_02_agentview_overlay.png",
+          "pixel_count": 8952,
+          "status": "projected_target",
+          "source": "runtime.sim_region_mask_for_object_id",
+          "raw_exact_geometry_pixels": null,
+          "mask_fingerprint": {
+            "sha256": "b14073475e2e9cd109bd9be98b4ed4f2e005ef6eaad911ce366b7a894730bf9e",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_02_wrist_mask.png",
+          "overlay": "condition_02_wrist_overlay.png",
+          "pixel_count": 15298,
+          "status": "projected_target",
+          "source": "runtime.sim_region_mask_for_object_id",
+          "raw_exact_geometry_pixels": null,
+          "mask_fingerprint": {
+            "sha256": "e27e7b0693029887c37e4de75a5878f394c0e6107d0ded7a55a8eecdd1d37659",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "a4094f008e1005b5b140287c07759d24342dad54445b1b6364e3ce07c7745aa9",
+    "legacy_job_sha256": "cefbc586241a67fead3cc64f713c049e8a0850077a8d7fc1f97f71e4041f4047",
+    "legacy_runtime_entrypoint": "run_wooden_tray_object_choices_evaluator_entry",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "3ff2373fda8d26712c1610feb1d2496787694c869e0e0f9e46bbd288d039cd84",
+        "frozen_sha256": "3ff2373fda8d26712c1610feb1d2496787694c869e0e0f9e46bbd288d039cd84",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "d314c9b39062eb5e15db225b2f27b9a75e81cfa541c006855ac47de876e78b47",
+        "frozen_sha256": "d314c9b39062eb5e15db225b2f27b9a75e81cfa541c006855ac47de876e78b47",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "b15a54960fab2ca81a8e3ad2952e73113174edc2661d5b156462d4d1d43bfa13",
+      "shape": [
+        71
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "run_diverse_adapt_evaluator_entry._original_episode"
+  ],
+  "initial_tracker": {
+    "custom": true,
+    "category": "ADAPT",
+    "required_atoms": [
+      [
+        "in",
+        "akita_black_bowl_1",
+        "wooden_tray_1_contain_region"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null
+    ],
+    "required_atom_final": [
+      false
+    ],
+    "required_prefix_first_steps": [
+      null
+    ],
+    "required_combination_first_steps": {
+      "0": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [],
+    "overshoot_policy": "none",
+    "continue_after_success": false,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "4b3a5f6242bbabfd45e36ea80b64cb8ab0d9861b6e9f8f6bf31030285c3fbf19",
+    "shape": [
+      71
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 11.381819311529398
+}

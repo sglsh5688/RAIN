@@ -1,0 +1,902 @@
+{
+  "evaluation": "Completed RAIN 60 tasks x 50 episodes, 2026-09-11",
+  "score_basis": "evaluator-native; no new manual certification",
+  "videos": [
+    {
+      "task_id": "Decomposition_001",
+      "legacy_task_id": "TDL10_001",
+      "kind": "success",
+      "path": "videos/Decomposition_001/TDL10_001_ep000_ok.mp4",
+      "bytes": 88619,
+      "sha256": "eff8a3d95b6d34793b059fc2ae60dfbf5c1c6ce8494b576fc03f8b4bc15cbad7"
+    },
+    {
+      "task_id": "Decomposition_001",
+      "legacy_task_id": "TDL10_001",
+      "kind": "failure",
+      "path": "videos/Decomposition_001/TDL10_001_ep008_fail.mp4",
+      "bytes": 92515,
+      "sha256": "f42c99c2dfdcfa76dc9164e0563f5cf1f665896d9f7985d3a0ea220a7d999068"
+    },
+    {
+      "task_id": "Decomposition_002",
+      "legacy_task_id": "TDL10_002",
+      "kind": "success",
+      "path": "videos/Decomposition_002/TDL10_002_ep000_ok.mp4",
+      "bytes": 94936,
+      "sha256": "b4a1bd3f12764b48576223e70fe5681b70bb8b48aa601574d21dc0377de1d816"
+    },
+    {
+      "task_id": "Decomposition_003",
+      "legacy_task_id": "TDL10_003",
+      "kind": "success",
+      "path": "videos/Decomposition_003/TDL10_003_ep000_ok.mp4",
+      "bytes": 118271,
+      "sha256": "2e2725a57308a2d02526cc1651076328ddd650618e7a8badbc9d2520a1a8c779"
+    },
+    {
+      "task_id": "Decomposition_004",
+      "legacy_task_id": "TDL10_004",
+      "kind": "success",
+      "path": "videos/Decomposition_004/TDL10_004_ep000_ok.mp4",
+      "bytes": 280462,
+      "sha256": "4148c6e8f2ddb531635477567920863915da52d8d48c29850c1f471230634415"
+    },
+    {
+      "task_id": "Decomposition_004",
+      "legacy_task_id": "TDL10_004",
+      "kind": "failure",
+      "path": "videos/Decomposition_004/TDL10_004_ep009_fail.mp4",
+      "bytes": 205180,
+      "sha256": "5dd987c7c7a0b11e6b75ce19a66ca45c8072d50b5c0e915d34d5eab209674a37"
+    },
+    {
+      "task_id": "Decomposition_005",
+      "legacy_task_id": "TDL10_005",
+      "kind": "success",
+      "path": "videos/Decomposition_005/TDL10_005_ep000_ok.mp4",
+      "bytes": 124664,
+      "sha256": "505bd6078fb483af490c38026b9c4b52784347c90154d595409e6be23dce9f55"
+    },
+    {
+      "task_id": "Decomposition_005",
+      "legacy_task_id": "TDL10_005",
+      "kind": "failure",
+      "path": "videos/Decomposition_005/TDL10_005_ep009_fail.mp4",
+      "bytes": 119759,
+      "sha256": "6437465ba3c952951181ac586b0c7807c161b5b9770e46d5e3fee4681cae1d75"
+    },
+    {
+      "task_id": "Decomposition_006",
+      "legacy_task_id": "TDL10_006",
+      "kind": "success",
+      "path": "videos/Decomposition_006/TDL10_006_ep000_ok.mp4",
+      "bytes": 103478,
+      "sha256": "a2893d2784cbb70f0dc5725d917b37c698d58ee06e97fee6134eadbe7004bd08"
+    },
+    {
+      "task_id": "Decomposition_006",
+      "legacy_task_id": "TDL10_006",
+      "kind": "failure",
+      "path": "videos/Decomposition_006/TDL10_006_ep001_fail.mp4",
+      "bytes": 302945,
+      "sha256": "7a40c5e279f4375880637a89f234209bcfedbf3a33701300611e3ca676ad4559"
+    },
+    {
+      "task_id": "Decomposition_007",
+      "legacy_task_id": "TDL10_008",
+      "kind": "success",
+      "path": "videos/Decomposition_007/TDL10_008_ep002_ok.mp4",
+      "bytes": 337559,
+      "sha256": "fb195cd232418a7ad213befb0a19cd92d5306d400f36ed8253c4d1f841593b79"
+    },
+    {
+      "task_id": "Decomposition_007",
+      "legacy_task_id": "TDL10_008",
+      "kind": "failure",
+      "path": "videos/Decomposition_007/TDL10_008_ep000_fail.mp4",
+      "bytes": 302568,
+      "sha256": "4221cee0ab2cdeeef0f73f0a90c8153b54c29dbc40277d4d15f6dd48538e1d81"
+    },
+    {
+      "task_id": "Decomposition_008",
+      "legacy_task_id": "TDL10_009",
+      "kind": "success",
+      "path": "videos/Decomposition_008/TDL10_009_ep000_ok.mp4",
+      "bytes": 114864,
+      "sha256": "ce287a77b91108664baa08f12d5c6f1f35937e12e98cf1f977550f615e82eeae"
+    },
+    {
+      "task_id": "Decomposition_008",
+      "legacy_task_id": "TDL10_009",
+      "kind": "failure",
+      "path": "videos/Decomposition_008/TDL10_009_ep040_fail.mp4",
+      "bytes": 113166,
+      "sha256": "e7f87e7dcc6684cfba3b54373d89c6371c48340340a1e3f5afd9b3e8007d2069"
+    },
+    {
+      "task_id": "Decomposition_009",
+      "legacy_task_id": "TDL10_010",
+      "kind": "success",
+      "path": "videos/Decomposition_009/TDL10_010_ep001_ok.mp4",
+      "bytes": 88449,
+      "sha256": "7365da0cd52b5b0fbde93f0d418b96603aa6306de481b5a7f760bab928d78f5d"
+    },
+    {
+      "task_id": "Decomposition_009",
+      "legacy_task_id": "TDL10_010",
+      "kind": "failure",
+      "path": "videos/Decomposition_009/TDL10_010_ep000_fail.mp4",
+      "bytes": 88526,
+      "sha256": "6e1068b6e9dceb6cc334fa8ffda1e6ceb46c128987e2f2589ef363be3cc43519"
+    },
+    {
+      "task_id": "Decomposition_010",
+      "legacy_task_id": "TDL10_011",
+      "kind": "success",
+      "path": "videos/Decomposition_010/TDL10_011_ep000_ok.mp4",
+      "bytes": 130757,
+      "sha256": "754db86cc1928a632b8e8740b193d471214a79fa3f467381b7c22378bba1c6f5"
+    },
+    {
+      "task_id": "Decomposition_010",
+      "legacy_task_id": "TDL10_011",
+      "kind": "failure",
+      "path": "videos/Decomposition_010/TDL10_011_ep018_fail.mp4",
+      "bytes": 266357,
+      "sha256": "4a3698a6b0ee3cb92316eaf86b5a10542aa27c2ba76d36e2845ff14d4a1792a4"
+    },
+    {
+      "task_id": "Decomposition_011",
+      "legacy_task_id": "TDL10_012",
+      "kind": "success",
+      "path": "videos/Decomposition_011/TDL10_012_ep000_ok.mp4",
+      "bytes": 110553,
+      "sha256": "005c2c18eac2d47e451252d202543e18d59402a749b87b291a0f6c71ea124b00"
+    },
+    {
+      "task_id": "Decomposition_012",
+      "legacy_task_id": "TDL10_013",
+      "kind": "success",
+      "path": "videos/Decomposition_012/TDL10_013_ep000_ok.mp4",
+      "bytes": 127840,
+      "sha256": "3ec27c902df5008c1522050d51b166ba90a04741edae11ed4d96b9019af3c260"
+    },
+    {
+      "task_id": "Decomposition_012",
+      "legacy_task_id": "TDL10_013",
+      "kind": "failure",
+      "path": "videos/Decomposition_012/TDL10_013_ep026_fail.mp4",
+      "bytes": 104698,
+      "sha256": "ac299896305374f0b09169e25d50c22fad4dbac2d51bdd13b974069da0c16f01"
+    },
+    {
+      "task_id": "Decomposition_013",
+      "legacy_task_id": "TDL10_014",
+      "kind": "success",
+      "path": "videos/Decomposition_013/TDL10_014_ep000_ok.mp4",
+      "bytes": 100002,
+      "sha256": "3b38b68469fed323628210e535836cec274d35aa20db28c1d84f45a7ed7284a8"
+    },
+    {
+      "task_id": "Decomposition_013",
+      "legacy_task_id": "TDL10_014",
+      "kind": "failure",
+      "path": "videos/Decomposition_013/TDL10_014_ep022_fail.mp4",
+      "bytes": 278631,
+      "sha256": "48a77c5203847d11bad4064917cbec1659f830dcc18fab3b3a8845cad8e55f57"
+    },
+    {
+      "task_id": "Decomposition_014",
+      "legacy_task_id": "TDL10_016",
+      "kind": "success",
+      "path": "videos/Decomposition_014/TDL10_016_ep000_ok.mp4",
+      "bytes": 235084,
+      "sha256": "79328bc6bcfd6b28f84142f58936b8ad9e5a0b6a281b4037186142f4dbeebeb1"
+    },
+    {
+      "task_id": "Decomposition_014",
+      "legacy_task_id": "TDL10_016",
+      "kind": "failure",
+      "path": "videos/Decomposition_014/TDL10_016_ep001_fail.mp4",
+      "bytes": 71897,
+      "sha256": "ce864a1db68ab9971a2fe5e2f9f399b0e67bc69ad5a28a0ebd1a98fbfa6b48db"
+    },
+    {
+      "task_id": "Decomposition_015",
+      "legacy_task_id": "TDC40_001",
+      "kind": "success",
+      "path": "videos/Decomposition_015/TDC40_001_ep000_ok.mp4",
+      "bytes": 77178,
+      "sha256": "beef00dc9c411c0f0c7879089cb2180256ae755ed36dd9351d91aa1927532c81"
+    },
+    {
+      "task_id": "Decomposition_016",
+      "legacy_task_id": "TDC40_002",
+      "kind": "success",
+      "path": "videos/Decomposition_016/TDC40_002_ep000_ok.mp4",
+      "bytes": 163208,
+      "sha256": "1bd4ef150669bb36961fed6f30c967ff110260b0cf62c5e52baf8e7038049775"
+    },
+    {
+      "task_id": "Decomposition_017",
+      "legacy_task_id": "TDC40_003",
+      "kind": "success",
+      "path": "videos/Decomposition_017/TDC40_003_ep000_ok.mp4",
+      "bytes": 139226,
+      "sha256": "b7ac3ed6c9a9e2fc5742cb46cb61bbf587a9338b825e7b49c7e9363f8c52923b"
+    },
+    {
+      "task_id": "Decomposition_017",
+      "legacy_task_id": "TDC40_003",
+      "kind": "failure",
+      "path": "videos/Decomposition_017/TDC40_003_ep005_fail.mp4",
+      "bytes": 155475,
+      "sha256": "722be78d9975fcdbd4093e77af2136b9322a1fe224f29d893d972295b14c18cb"
+    },
+    {
+      "task_id": "Decomposition_018",
+      "legacy_task_id": "TDC40_004",
+      "kind": "success",
+      "path": "videos/Decomposition_018/TDC40_004_ep019_ok.mp4",
+      "bytes": 247112,
+      "sha256": "b91c35c8e23cb138457b649585113fc573559081383b617efacc5e20abea9460"
+    },
+    {
+      "task_id": "Decomposition_018",
+      "legacy_task_id": "TDC40_004",
+      "kind": "failure",
+      "path": "videos/Decomposition_018/TDC40_004_ep000_fail.mp4",
+      "bytes": 144898,
+      "sha256": "3f9f0b7b57385fe006fc7b81c1dc8b4e076c3423432ec6ae9d3890046f7fd1ac"
+    },
+    {
+      "task_id": "Decomposition_019",
+      "legacy_task_id": "TDC40_005",
+      "kind": "success",
+      "path": "videos/Decomposition_019/TDC40_005_ep000_ok.mp4",
+      "bytes": 59201,
+      "sha256": "4ab03d4de69d10052c675fa0777899f05e770c7a2febb0cabdee14cf6e44229d"
+    },
+    {
+      "task_id": "Decomposition_019",
+      "legacy_task_id": "TDC40_005",
+      "kind": "failure",
+      "path": "videos/Decomposition_019/TDC40_005_ep008_fail.mp4",
+      "bytes": 157036,
+      "sha256": "cf9478fd85842484f6cdefea2d73b8fcf341672ecbfdb24952ef3a69e704272a"
+    },
+    {
+      "task_id": "Decomposition_020",
+      "legacy_task_id": "TDC40_006",
+      "kind": "success",
+      "path": "videos/Decomposition_020/TDC40_006_ep000_ok.mp4",
+      "bytes": 124147,
+      "sha256": "aa6051e00a606b562d202470e7310b804ab04a8f7985ba618fed57184297e1cb"
+    },
+    {
+      "task_id": "Decomposition_020",
+      "legacy_task_id": "TDC40_006",
+      "kind": "failure",
+      "path": "videos/Decomposition_020/TDC40_006_ep025_fail.mp4",
+      "bytes": 127124,
+      "sha256": "d51779e161382cf7f862c508c3d2a7b98b04be08fff3154bb45d2216fcabbba4"
+    },
+    {
+      "task_id": "Adapt_001",
+      "legacy_task_id": "ANLGX_002",
+      "kind": "success",
+      "path": "videos/Adapt_001/ANLGX_002_ep001_ok.mp4",
+      "bytes": 112234,
+      "sha256": "efb6aaee667e79e375057c804e6adf907e8e7d4c005828bf15ea0b1a754be690"
+    },
+    {
+      "task_id": "Adapt_001",
+      "legacy_task_id": "ANLGX_002",
+      "kind": "failure",
+      "path": "videos/Adapt_001/ANLGX_002_ep000_fail.mp4",
+      "bytes": 317059,
+      "sha256": "019510cd65e5cae79c607b67ceb95d55ddcb20721e9a182af2980cf47ddbfa3d"
+    },
+    {
+      "task_id": "Adapt_002",
+      "legacy_task_id": "ANLGX_003",
+      "kind": "success",
+      "path": "videos/Adapt_002/ANLGX_003_ep000_ok.mp4",
+      "bytes": 101251,
+      "sha256": "6e05eaaeb4c5e3f72d3ad4b1d654efedc16c3021d9e7e600e9bda42434546963"
+    },
+    {
+      "task_id": "Adapt_002",
+      "legacy_task_id": "ANLGX_003",
+      "kind": "failure",
+      "path": "videos/Adapt_002/ANLGX_003_ep003_fail.mp4",
+      "bytes": 182014,
+      "sha256": "efa90f284104300f87f7e594a1dd48bde309d3bdd61acd0ee88e94439a76c800"
+    },
+    {
+      "task_id": "Adapt_003",
+      "legacy_task_id": "ANLGX_017",
+      "kind": "success",
+      "path": "videos/Adapt_003/ANLGX_017_ep000_ok.mp4",
+      "bytes": 131745,
+      "sha256": "5f7e12589eba507d1ad32b147f84fef345392ffa25628bcf0088fb1acc7b7861"
+    },
+    {
+      "task_id": "Adapt_004",
+      "legacy_task_id": "ANLGX_022",
+      "kind": "success",
+      "path": "videos/Adapt_004/ANLGX_022_ep000_ok.mp4",
+      "bytes": 88561,
+      "sha256": "c19ac410a4ffe01db188d74452058f7f267b9f422a017f24698209bef38ecbb1"
+    },
+    {
+      "task_id": "Adapt_004",
+      "legacy_task_id": "ANLGX_022",
+      "kind": "failure",
+      "path": "videos/Adapt_004/ANLGX_022_ep008_fail.mp4",
+      "bytes": 369266,
+      "sha256": "75d69ec3677388b70523b106cb3232783c3bafb3aac96b2a52c1f7f5d10cf8ad"
+    },
+    {
+      "task_id": "Adapt_005",
+      "legacy_task_id": "ANLGX_023",
+      "kind": "success",
+      "path": "videos/Adapt_005/ANLGX_023_ep000_ok.mp4",
+      "bytes": 167817,
+      "sha256": "43d9bdc27aad6bde6fd569bf2756343347b25dc72d8435961a80b41987bf5cc5"
+    },
+    {
+      "task_id": "Adapt_005",
+      "legacy_task_id": "ANLGX_023",
+      "kind": "failure",
+      "path": "videos/Adapt_005/ANLGX_023_ep003_fail.mp4",
+      "bytes": 155478,
+      "sha256": "f03c7c3409fe1c99cfdc68564c62582de2361526d8ad6386f6376e9f5dd87eea"
+    },
+    {
+      "task_id": "Adapt_006",
+      "legacy_task_id": "ANLGX_089",
+      "kind": "success",
+      "path": "videos/Adapt_006/ANLGX_089_ep000_ok.mp4",
+      "bytes": 94438,
+      "sha256": "c089cf67cbb70dcb9b765374cbe181b7e1e9755ef11f6d10ee5d4f8ce635dade"
+    },
+    {
+      "task_id": "Adapt_006",
+      "legacy_task_id": "ANLGX_089",
+      "kind": "failure",
+      "path": "videos/Adapt_006/ANLGX_089_ep001_fail.mp4",
+      "bytes": 291428,
+      "sha256": "07ecaa19841cface2c66a71ef372551eff1c474ea58b5fb38babd530a60166a8"
+    },
+    {
+      "task_id": "Adapt_007",
+      "legacy_task_id": "ANLGX_134",
+      "kind": "success",
+      "path": "videos/Adapt_007/ANLGX_134_ep016_ok.mp4",
+      "bytes": 102807,
+      "sha256": "43cc100524822de83cd37d09a14f03e20993c94e2b2c79343454bddd38bae5aa"
+    },
+    {
+      "task_id": "Adapt_007",
+      "legacy_task_id": "ANLGX_134",
+      "kind": "failure",
+      "path": "videos/Adapt_007/ANLGX_134_ep000_fail.mp4",
+      "bytes": 272647,
+      "sha256": "b84c1dcf37adbca1df947b850b2604d301e6cabd364aba5c1b4dbba9bb5cc38e"
+    },
+    {
+      "task_id": "Adapt_008",
+      "legacy_task_id": "ANLGX_147",
+      "kind": "success",
+      "path": "videos/Adapt_008/ANLGX_147_ep000_ok.mp4",
+      "bytes": 122244,
+      "sha256": "9af99f92bbb8229472f4e3e3b2c32d54754c716ea2740f1353f500593c73baba"
+    },
+    {
+      "task_id": "Adapt_008",
+      "legacy_task_id": "ANLGX_147",
+      "kind": "failure",
+      "path": "videos/Adapt_008/ANLGX_147_ep002_fail.mp4",
+      "bytes": 287190,
+      "sha256": "bf331e470f51166d8e8e104c8a61a8c315da9ce809087a5f9bee643bd59d12f9"
+    },
+    {
+      "task_id": "Adapt_009",
+      "legacy_task_id": "ANLGX_178",
+      "kind": "success",
+      "path": "videos/Adapt_009/ANLGX_178_ep003_ok.mp4",
+      "bytes": 232201,
+      "sha256": "100104ba050b7a8d50d7f0c0ec5abfa7ee4df754a4258a488b394550fd72ec48"
+    },
+    {
+      "task_id": "Adapt_009",
+      "legacy_task_id": "ANLGX_178",
+      "kind": "failure",
+      "path": "videos/Adapt_009/ANLGX_178_ep000_fail.mp4",
+      "bytes": 270450,
+      "sha256": "3837d52d2d141d1440fc4755504fb646188a769cc559d8d0fba64149104075a0"
+    },
+    {
+      "task_id": "Adapt_010",
+      "legacy_task_id": "OGTS_001",
+      "kind": "success",
+      "path": "videos/Adapt_010/OGTS_001_ep000_ok.mp4",
+      "bytes": 148802,
+      "sha256": "b47622acba9fb26e3ea9197d7689a36bfa6ec88229f7e15e3565bcfc6163fa6d"
+    },
+    {
+      "task_id": "Adapt_010",
+      "legacy_task_id": "OGTS_001",
+      "kind": "failure",
+      "path": "videos/Adapt_010/OGTS_001_ep011_fail.mp4",
+      "bytes": 380097,
+      "sha256": "34a7390da9bb47d968dcb429aae41149125d1aadb66a338174280f4fcdc8d025"
+    },
+    {
+      "task_id": "Adapt_011",
+      "legacy_task_id": "OGTS_010",
+      "kind": "success",
+      "path": "videos/Adapt_011/OGTS_010_ep004_ok.mp4",
+      "bytes": 279252,
+      "sha256": "eb5b75fbddfe90a8c428f74ea5dd8cceb5e27fa0f07be4e30c0fa0230428aa7f"
+    },
+    {
+      "task_id": "Adapt_011",
+      "legacy_task_id": "OGTS_010",
+      "kind": "failure",
+      "path": "videos/Adapt_011/OGTS_010_ep000_fail.mp4",
+      "bytes": 322837,
+      "sha256": "14d5f749f92852b0ce07aa1ada64c75ebaf9a8c08dca3bd5e62a1d7940f87d23"
+    },
+    {
+      "task_id": "Adapt_012",
+      "legacy_task_id": "OGDTSL_011",
+      "kind": "success",
+      "path": "videos/Adapt_012/OGDTSL_011_ep000_ok.mp4",
+      "bytes": 152423,
+      "sha256": "7d1029f679aa91efa28c7e3fd0da045d822ec59fa1d35b6085e774122dab841f"
+    },
+    {
+      "task_id": "Adapt_012",
+      "legacy_task_id": "OGDTSL_011",
+      "kind": "failure",
+      "path": "videos/Adapt_012/OGDTSL_011_ep005_fail.mp4",
+      "bytes": 363278,
+      "sha256": "89ce2b0e24e48b5a735bab0e0d44e817534854a45a45f07c3dcf2c94d89d596c"
+    },
+    {
+      "task_id": "Adapt_013",
+      "legacy_task_id": "OGDTSL_046",
+      "kind": "success",
+      "path": "videos/Adapt_013/OGDTSL_046_ep002_ok.mp4",
+      "bytes": 293313,
+      "sha256": "f3e78b9ae37b60acc370666535a478ba338f740cdd25f7c096034dd74676f17b"
+    },
+    {
+      "task_id": "Adapt_013",
+      "legacy_task_id": "OGDTSL_046",
+      "kind": "failure",
+      "path": "videos/Adapt_013/OGDTSL_046_ep000_fail.mp4",
+      "bytes": 382321,
+      "sha256": "8b999742ddf7c4625b04baef775acebc151d08172a647f7c3788a13c8d3baa71"
+    },
+    {
+      "task_id": "Adapt_014",
+      "legacy_task_id": "NAFR3_001",
+      "kind": "success",
+      "path": "videos/Adapt_014/NAFR3_001_ep000_ok.mp4",
+      "bytes": 109900,
+      "sha256": "61196893310f7ff9168ef200a4126ae961d77ae15d94e2319f8deb213a50ddb8"
+    },
+    {
+      "task_id": "Adapt_014",
+      "legacy_task_id": "NAFR3_001",
+      "kind": "failure",
+      "path": "videos/Adapt_014/NAFR3_001_ep004_fail.mp4",
+      "bytes": 253731,
+      "sha256": "457cadfa09278e78ba07e6e99a31d2713ac8f5bbedf4596a69815be5cfe0872d"
+    },
+    {
+      "task_id": "Adapt_015",
+      "legacy_task_id": "NAFR3_002",
+      "kind": "success",
+      "path": "videos/Adapt_015/NAFR3_002_ep000_ok.mp4",
+      "bytes": 108792,
+      "sha256": "69b7ee4b61844d7c675863d950fa02584f9d13b9a65683b316ea928f9ef50f5c"
+    },
+    {
+      "task_id": "Adapt_015",
+      "legacy_task_id": "NAFR3_002",
+      "kind": "failure",
+      "path": "videos/Adapt_015/NAFR3_002_ep003_fail.mp4",
+      "bytes": 212658,
+      "sha256": "710f1815f0f542efe866ab0b36572e865aca85f20a4d1ef9ce4d1c3dbdc9312d"
+    },
+    {
+      "task_id": "Adapt_016",
+      "legacy_task_id": "DSET_001",
+      "kind": "success",
+      "path": "videos/Adapt_016/DSET_001_ep000_ok.mp4",
+      "bytes": 111155,
+      "sha256": "0a39c7ddd515fab3f23691456d4b5c5659901404cc1f5a11fc8d2f17179f00da"
+    },
+    {
+      "task_id": "Adapt_017",
+      "legacy_task_id": "BDRSWAP_001",
+      "kind": "success",
+      "path": "videos/Adapt_017/BDRSWAP_001_ep000_ok.mp4",
+      "bytes": 185434,
+      "sha256": "bb86cdb383d5d6936527b54580e50b24980e19d089bc441001db59831ce42304"
+    },
+    {
+      "task_id": "Adapt_017",
+      "legacy_task_id": "BDRSWAP_001",
+      "kind": "failure",
+      "path": "videos/Adapt_017/BDRSWAP_001_ep019_fail.mp4",
+      "bytes": 353157,
+      "sha256": "d1495140efb0f3133e93306d347cfec831658a94f8525159fc4b58a637e1b00c"
+    },
+    {
+      "task_id": "Adapt_018",
+      "legacy_task_id": "ADVCN19_001",
+      "kind": "success",
+      "path": "videos/Adapt_018/ADVCN19_001_ep000_ok.mp4",
+      "bytes": 76335,
+      "sha256": "b6587d98e74c56cd56e15a9c0e5668e88af1d78ec26feffc59f33efa762cd24c"
+    },
+    {
+      "task_id": "Adapt_018",
+      "legacy_task_id": "ADVCN19_001",
+      "kind": "failure",
+      "path": "videos/Adapt_018/ADVCN19_001_ep013_fail.mp4",
+      "bytes": 251361,
+      "sha256": "337edeb24bd9b13442edb462be50ae8135e21e576b13976e41a62b6b3d8b963c"
+    },
+    {
+      "task_id": "Adapt_019",
+      "legacy_task_id": "WTRAYR_004",
+      "kind": "success",
+      "path": "videos/Adapt_019/WTRAYR_004_ep002_ok.mp4",
+      "bytes": 252648,
+      "sha256": "c5698c6ea4dffe69ed3e329e17f3a5503beea3c13b5b63c882705ef74242141d"
+    },
+    {
+      "task_id": "Adapt_019",
+      "legacy_task_id": "WTRAYR_004",
+      "kind": "failure",
+      "path": "videos/Adapt_019/WTRAYR_004_ep000_fail.mp4",
+      "bytes": 312752,
+      "sha256": "0b47b6b90ee5091665f6369d607ad61915ceb4af0f3ed496092724e973113f9f"
+    },
+    {
+      "task_id": "Adapt_020",
+      "legacy_task_id": "GRACK_002",
+      "kind": "success",
+      "path": "videos/Adapt_020/GRACK_002_ep000_ok.mp4",
+      "bytes": 159869,
+      "sha256": "0c41e350ef2a8e6e5eebbdcb84c25c7883812c8e43fc5470bacc03f37b8a1a1e"
+    },
+    {
+      "task_id": "Adapt_020",
+      "legacy_task_id": "GRACK_002",
+      "kind": "failure",
+      "path": "videos/Adapt_020/GRACK_002_ep037_fail.mp4",
+      "bytes": 275739,
+      "sha256": "0bd160aaf6b94d80ac0f8883bf65a5f6a23ce86a7904091ead81ed39e2796b60"
+    },
+    {
+      "task_id": "Compose_001",
+      "legacy_task_id": "VCN8_008",
+      "kind": "success",
+      "path": "videos/Compose_001/VCN8_008_ep000_ok.mp4",
+      "bytes": 242033,
+      "sha256": "5b1e68ea25bc3700529b74de40a805e3ff11d8a2cb1f41244461e7133db58cc8"
+    },
+    {
+      "task_id": "Compose_001",
+      "legacy_task_id": "VCN8_008",
+      "kind": "failure",
+      "path": "videos/Compose_001/VCN8_008_ep001_fail.mp4",
+      "bytes": 689669,
+      "sha256": "e5fd1be2703deebd1b35380b7a1c3e9086bcdf121f6d722bed82c3c071c255e5"
+    },
+    {
+      "task_id": "Compose_002",
+      "legacy_task_id": "VCN9_010",
+      "kind": "success",
+      "path": "videos/Compose_002/VCN9_010_ep000_ok.mp4",
+      "bytes": 214727,
+      "sha256": "62afc5afd569339c4f4222deeff1a91cc255f12c1a7d873cdd352480c47fa3cb"
+    },
+    {
+      "task_id": "Compose_002",
+      "legacy_task_id": "VCN9_010",
+      "kind": "failure",
+      "path": "videos/Compose_002/VCN9_010_ep001_fail.mp4",
+      "bytes": 432184,
+      "sha256": "57a108af3c4536913fe4fd94bfb9a2765da793f87e313725e97f916c08f292ae"
+    },
+    {
+      "task_id": "Compose_003",
+      "legacy_task_id": "VCN10_001",
+      "kind": "success",
+      "path": "videos/Compose_003/VCN10_001_ep000_ok.mp4",
+      "bytes": 202431,
+      "sha256": "8912058d06c063558dc61140deb535981ce1da2e3b376017d40371ed03067c51"
+    },
+    {
+      "task_id": "Compose_003",
+      "legacy_task_id": "VCN10_001",
+      "kind": "failure",
+      "path": "videos/Compose_003/VCN10_001_ep001_fail.mp4",
+      "bytes": 604829,
+      "sha256": "c34fe95df3030437cf816b30c5c7945e20cb9fa232d1580e660b62d6b0093591"
+    },
+    {
+      "task_id": "Compose_004",
+      "legacy_task_id": "VCN19_020",
+      "kind": "success",
+      "path": "videos/Compose_004/VCN19_020_ep015_ok.mp4",
+      "bytes": 334910,
+      "sha256": "fe4703f0d4b0411cc4c9594347fed9bc999984c0503336679b84110ed99f2a7a"
+    },
+    {
+      "task_id": "Compose_004",
+      "legacy_task_id": "VCN19_020",
+      "kind": "failure",
+      "path": "videos/Compose_004/VCN19_020_ep000_fail.mp4",
+      "bytes": 546544,
+      "sha256": "7b18eedd9a4ce93b789141c6415f30bb0406e26abcf6303b80ecd9c64af3a7a3"
+    },
+    {
+      "task_id": "Compose_005",
+      "legacy_task_id": "VCN21_001",
+      "kind": "success",
+      "path": "videos/Compose_005/VCN21_001_ep000_ok.mp4",
+      "bytes": 258826,
+      "sha256": "666c26f95fb8e7f016a11a4d12495f092f12109c7dbcb818238bc06c2443a540"
+    },
+    {
+      "task_id": "Compose_005",
+      "legacy_task_id": "VCN21_001",
+      "kind": "failure",
+      "path": "videos/Compose_005/VCN21_001_ep002_fail.mp4",
+      "bytes": 727763,
+      "sha256": "f28dc1c1179c3726bbdfd54ba8e8dc64c867c1c778954a5dcf432b60d32b6c5c"
+    },
+    {
+      "task_id": "Compose_006",
+      "legacy_task_id": "COMP2_012",
+      "kind": "success",
+      "path": "videos/Compose_006/COMP2_012_ep000_ok.mp4",
+      "bytes": 350146,
+      "sha256": "d36dcf6c4a42b2925ca11f7dee3e291213001200d1a49a7ab224690091c9c2b8"
+    },
+    {
+      "task_id": "Compose_006",
+      "legacy_task_id": "COMP2_012",
+      "kind": "failure",
+      "path": "videos/Compose_006/COMP2_012_ep003_fail.mp4",
+      "bytes": 553423,
+      "sha256": "208c1dbba84bad224fdee8ad4d17d22e4282e4592d15fc1314357cac9b6c90d1"
+    },
+    {
+      "task_id": "Compose_007",
+      "legacy_task_id": "COMP2_032",
+      "kind": "success",
+      "path": "videos/Compose_007/COMP2_032_ep033_ok.mp4",
+      "bytes": 433366,
+      "sha256": "4b0579f22fba1600fd25c3f45e03e2718d0fa10e0661957ead1c73617336d521"
+    },
+    {
+      "task_id": "Compose_007",
+      "legacy_task_id": "COMP2_032",
+      "kind": "failure",
+      "path": "videos/Compose_007/COMP2_032_ep000_fail.mp4",
+      "bytes": 289545,
+      "sha256": "ad6fd4cff200819c9efa2063d6b112fa9d1a8e5f99b27eeac0d2d35800249c84"
+    },
+    {
+      "task_id": "Compose_008",
+      "legacy_task_id": "COMP2_222",
+      "kind": "success",
+      "path": "videos/Compose_008/COMP2_222_ep014_ok.mp4",
+      "bytes": 339000,
+      "sha256": "928b78ce5b87965f78c3f041aaef4093f338c6ba731241220797c83e87a6e147"
+    },
+    {
+      "task_id": "Compose_008",
+      "legacy_task_id": "COMP2_222",
+      "kind": "failure",
+      "path": "videos/Compose_008/COMP2_222_ep000_fail.mp4",
+      "bytes": 398964,
+      "sha256": "55a52fb331a2e7110d32291e211f3bd0f31c254bcf6b519aa8d4d2f7cd3d3a35"
+    },
+    {
+      "task_id": "Compose_009",
+      "legacy_task_id": "COMP2_303",
+      "kind": "success",
+      "path": "videos/Compose_009/COMP2_303_ep003_ok.mp4",
+      "bytes": 398831,
+      "sha256": "f1821d4e93025541137831197609cacf68a6491be0fde1dd494a9a129ff92dc3"
+    },
+    {
+      "task_id": "Compose_009",
+      "legacy_task_id": "COMP2_303",
+      "kind": "failure",
+      "path": "videos/Compose_009/COMP2_303_ep000_fail.mp4",
+      "bytes": 540508,
+      "sha256": "27ab71721548c52800ac354f609bb3a29e609664ec9925fcd021d2f082d66040"
+    },
+    {
+      "task_id": "Compose_010",
+      "legacy_task_id": "COMPOSE_155",
+      "kind": "success",
+      "path": "videos/Compose_010/COMPOSE_155_ep003_ok.mp4",
+      "bytes": 364966,
+      "sha256": "a2fa177d4a78968299bde5defdd8e4314fddf462c0ef4b0e47e17637c91b37cf"
+    },
+    {
+      "task_id": "Compose_010",
+      "legacy_task_id": "COMPOSE_155",
+      "kind": "failure",
+      "path": "videos/Compose_010/COMPOSE_155_ep000_fail.mp4",
+      "bytes": 659265,
+      "sha256": "0df9a34b210fc053a9ccf5dc338927337cc99777494a73731068cee24989750e"
+    },
+    {
+      "task_id": "Compose_011",
+      "legacy_task_id": "COMP2_027",
+      "kind": "success",
+      "path": "videos/Compose_011/COMP2_027_ep001_ok.mp4",
+      "bytes": 274205,
+      "sha256": "6d4101a8cc6dc0c1445ac481edcd0a54b4af251da5605649653aaf96d62fe731"
+    },
+    {
+      "task_id": "Compose_011",
+      "legacy_task_id": "COMP2_027",
+      "kind": "failure",
+      "path": "videos/Compose_011/COMP2_027_ep000_fail.mp4",
+      "bytes": 473427,
+      "sha256": "6a2c0e0bd5e7de8707c48cec2b9e068f4232ea96c7265db980aaabf49cff2bb2"
+    },
+    {
+      "task_id": "Compose_012",
+      "legacy_task_id": "LBCM_003",
+      "kind": "success",
+      "path": "videos/Compose_012/LBCM_003_ep000_ok.mp4",
+      "bytes": 250887,
+      "sha256": "2e561475f265f7a171121a5982b8d91fd501fc7da390b7bcd39466ba56a12d0e"
+    },
+    {
+      "task_id": "Compose_012",
+      "legacy_task_id": "LBCM_003",
+      "kind": "failure",
+      "path": "videos/Compose_012/LBCM_003_ep002_fail.mp4",
+      "bytes": 733081,
+      "sha256": "7a4993f79d9510f904442364bdf8a37962083540037eddefafecb059775a46a6"
+    },
+    {
+      "task_id": "Compose_013",
+      "legacy_task_id": "LBCM_028",
+      "kind": "success",
+      "path": "videos/Compose_013/LBCM_028_ep003_ok.mp4",
+      "bytes": 406266,
+      "sha256": "86e8c7f55020be3d5e69b308199bb1332c55df6a645c853e886635c2c919c348"
+    },
+    {
+      "task_id": "Compose_013",
+      "legacy_task_id": "LBCM_028",
+      "kind": "failure",
+      "path": "videos/Compose_013/LBCM_028_ep000_fail.mp4",
+      "bytes": 698927,
+      "sha256": "072a38ea5278bcbaa246b1afa592fb238db427eea3b137d77d8f120cf6b3834c"
+    },
+    {
+      "task_id": "Compose_014",
+      "legacy_task_id": "MKDC_001",
+      "kind": "success",
+      "path": "videos/Compose_014/MKDC_001_ep000_ok.mp4",
+      "bytes": 221907,
+      "sha256": "3f71f7443d789b4444f280a1cd079a8fded041deac0e899386d48c7b9987572d"
+    },
+    {
+      "task_id": "Compose_014",
+      "legacy_task_id": "MKDC_001",
+      "kind": "failure",
+      "path": "videos/Compose_014/MKDC_001_ep002_fail.mp4",
+      "bytes": 895643,
+      "sha256": "7e1b0a7d8c7904fa71f6845fc090d23c6e5eb93ca5c10c67383d866c8ce08514"
+    },
+    {
+      "task_id": "Compose_015",
+      "legacy_task_id": "CTR_103",
+      "kind": "success",
+      "path": "videos/Compose_015/CTR_103_ep000_ok.mp4",
+      "bytes": 332663,
+      "sha256": "d3f6a6b29d2f1712f9acccd227989441d4de746f83569979db5c091d97b29d63"
+    },
+    {
+      "task_id": "Compose_015",
+      "legacy_task_id": "CTR_103",
+      "kind": "failure",
+      "path": "videos/Compose_015/CTR_103_ep001_fail.mp4",
+      "bytes": 673201,
+      "sha256": "4a08c27b2782fea310daab6ffaa940ae7fb4cc0062effc6dcfd208e7ea6c17a2"
+    },
+    {
+      "task_id": "Compose_016",
+      "legacy_task_id": "VCN35_004",
+      "kind": "success",
+      "path": "videos/Compose_016/VCN35_004_ep000_ok.mp4",
+      "bytes": 355002,
+      "sha256": "0225bf2254bac8d28873fa67cdac1e47049648a8d9b918cf75fe6955ab9c3038"
+    },
+    {
+      "task_id": "Compose_016",
+      "legacy_task_id": "VCN35_004",
+      "kind": "failure",
+      "path": "videos/Compose_016/VCN35_004_ep001_fail.mp4",
+      "bytes": 827142,
+      "sha256": "734418872b4b933e05b05a5c85bfa0e12e165125e99ae76596029cf68b8146c4"
+    },
+    {
+      "task_id": "Compose_017",
+      "legacy_task_id": "UCOMP_040",
+      "kind": "success",
+      "path": "videos/Compose_017/UCOMP_040_ep001_ok.mp4",
+      "bytes": 355447,
+      "sha256": "3fa35ea71297d76c75682bab69385332c0f25f6fd3d782ef56fedef72cf9ba24"
+    },
+    {
+      "task_id": "Compose_017",
+      "legacy_task_id": "UCOMP_040",
+      "kind": "failure",
+      "path": "videos/Compose_017/UCOMP_040_ep000_fail.mp4",
+      "bytes": 805687,
+      "sha256": "12a878c9fd7ad150cb8305a749ae380af3d6b3bad77db522898313dc7161ebf4"
+    },
+    {
+      "task_id": "Compose_018",
+      "legacy_task_id": "BDRMIN_002",
+      "kind": "failure",
+      "path": "videos/Compose_018/BDRMIN_002_ep000_fail.mp4",
+      "bytes": 558980,
+      "sha256": "531c6437bcad344ddbf68519aa39bc3feaa83d22646bc38780a7bf36af29e3b2"
+    },
+    {
+      "task_id": "Compose_019",
+      "legacy_task_id": "CTR_176",
+      "kind": "success",
+      "path": "videos/Compose_019/CTR_176_ep000_ok.mp4",
+      "bytes": 368132,
+      "sha256": "5cf7503430365828c056e06f096f85530d431a4af611ccc1dfab20fd227189b8"
+    },
+    {
+      "task_id": "Compose_019",
+      "legacy_task_id": "CTR_176",
+      "kind": "failure",
+      "path": "videos/Compose_019/CTR_176_ep006_fail.mp4",
+      "bytes": 637748,
+      "sha256": "22dfc48820c07b705d78b1cacfcfa2191e32fba87bbd9038b779615727e11118"
+    },
+    {
+      "task_id": "Compose_020",
+      "legacy_task_id": "CTR_140",
+      "kind": "success",
+      "path": "videos/Compose_020/CTR_140_ep003_ok.mp4",
+      "bytes": 292056,
+      "sha256": "e3384a4c4363f7e3f4a9d8b19f04891dadcd653b44dd7cfe2a6391c453423a88"
+    },
+    {
+      "task_id": "Compose_020",
+      "legacy_task_id": "CTR_140",
+      "kind": "failure",
+      "path": "videos/Compose_020/CTR_140_ep000_fail.mp4",
+      "bytes": 459565,
+      "sha256": "f2d65aee71e35f3a645459fd32f4f98fe845d01ff4d35b3edb15a45fd0e3ea3d"
+    }
+  ]
+}

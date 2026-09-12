@@ -1,0 +1,197 @@
+{
+  "schema": "libero_analogy_review_scene_v2",
+  "task_id": "Decomposition_015",
+  "legacy_task_id": "TDC40_001",
+  "category": "Decomposition",
+  "order": 15,
+  "task_description": "Turn on the stove.",
+  "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
+  "policy_inference_calls": 0,
+  "seed": 7,
+  "state_index": 0,
+  "warmup_controls": 10,
+  "physical_render_gpu": 2,
+  "cameras": {
+    "agentview": {
+      "rgb": "agentview.png",
+      "rgb_fingerprint": {
+        "sha256": "22e876b2829f2a194a7e5a04e9daa07225d55b6e1c8da2c20c5ba3700d4fbf67",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    },
+    "wrist": {
+      "rgb": "wrist.png",
+      "rgb_fingerprint": {
+        "sha256": "64468b3bcc8b5ba699c58962d038acc2bb04bc2440a39e01043fe589258a1445",
+        "shape": [
+          256,
+          256,
+          3
+        ],
+        "dtype": "uint8"
+      }
+    }
+  },
+  "conditions": [
+    {
+      "index": 0,
+      "stage": 1,
+      "action_type": "turn_on",
+      "object_id": "flat_stove_1",
+      "object_name": "flat_stove_1_button",
+      "primary_object_id": "flat_stove_1",
+      "target_object_id": "flat_stove_1",
+      "source_task_description": "Turn on the stove and put the moka pot on it",
+      "binding": {
+        "name": "flat_stove_1_button",
+        "body_name": "flat_stove_1_button",
+        "body_ids": [
+          0
+        ],
+        "geom_ids": [],
+        "segmentable": true
+      },
+      "corrected_body_ids": [
+        29
+      ],
+      "geom_ids": [
+        133
+      ],
+      "geom_names": [
+        "flat_stove_1_g4"
+      ],
+      "mask_kind": "current_visible_object_segmentation",
+      "cameras": {
+        "agentview": {
+          "mask": "condition_01_agentview_mask.png",
+          "overlay": "condition_01_agentview_overlay.png",
+          "pixel_count": 451,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 483,
+          "mask_fingerprint": {
+            "sha256": "8f18ef5a439712ad634a7b72025624bc70f817a8ab989ccb27f948b8a6ca5c5f",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "wrist": {
+          "mask": "condition_01_wrist_mask.png",
+          "overlay": "condition_01_wrist_overlay.png",
+          "pixel_count": 1552,
+          "status": "visible",
+          "source": "runtime.sim_mask_for_object_id",
+          "raw_exact_geometry_pixels": 1617,
+          "mask_fingerprint": {
+            "sha256": "ef8732aa7777c8069f92685de0fc97b0773207d0e19ab342d98bad53523b76ac",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "uint8"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "mapping_sha256": "8b2ba61af50efc5e5a6699169d25c54ad53c012e870a1c581baeb7b6d57e4494",
+    "canonical_task_meta_sha256": "47408cf00507b412e9831ffbd2e4deb5ea1c1bb041a5acc3cc7ff4298d8efff6",
+    "legacy_job_sha256": "2b76585f8db58b7393517723f62f76154abd67f03af0e9ff98bcd832e2100845",
+    "legacy_runtime_entrypoint": "final_libero_ex_eval.impl.evaluator",
+    "definition_equivalence": {
+      "task.bddl": {
+        "canonical_sha256": "c755f9c99f304762fb8fdac5b4eb3c6cd477a51ddcbcf5e9f26a75a74f89facf",
+        "frozen_sha256": "c755f9c99f304762fb8fdac5b4eb3c6cd477a51ddcbcf5e9f26a75a74f89facf",
+        "equal": true
+      },
+      "task.pruned_init": {
+        "canonical_sha256": "02a8401f8d59f5447fc8c5a16f4c158dd8c426c3eaed6779927a2a53e9abf3c5",
+        "frozen_sha256": "02a8401f8d59f5447fc8c5a16f4c158dd8c426c3eaed6779927a2a53e9abf3c5",
+        "equal": true
+      }
+    },
+    "initial_state": {
+      "sha256": "9ae67aa7e7dd9987ecd1f2930e2b061fb66a414dd94e4b575417356a556cbd90",
+      "shape": [
+        47
+      ],
+      "dtype": "float64"
+    },
+    "constructor_optimization_sha256": "3de5a5a7e582cc751b47f55d3050420a8639ee152bdb4aabbab43acd1ef82366",
+    "renderer_source_sha256": "341e3f4330d6d7d46c4b17d8aebd0239b186c6564cf36d718781126cb9c444ac",
+    "source_note": "Canonical task definitions and frozen RAIN runtime were verified locally; public metadata retains identifiers and hashes. Execution paths are omitted."
+  },
+  "orientation": "Exact RAIN runtime coordinates: raw EGL rotated 180 degrees; RGB and every binary mask share this transform.",
+  "stored_mask_fallback": false,
+  "cached_rollout_aliases_replaced": [
+    "final_libero_ex_eval.impl.rollout.run_single_episode_libero_ex",
+    "final_libero_ex_eval.impl.evaluator.run_single_episode_libero_ex"
+  ],
+  "initial_tracker": {
+    "custom": true,
+    "category": "TD",
+    "required_atoms": [
+      [
+        "turnon",
+        "flat_stove_1"
+      ]
+    ],
+    "required_atom_first_steps": [
+      null
+    ],
+    "required_atom_final": [
+      false
+    ],
+    "required_prefix_first_steps": [
+      null
+    ],
+    "required_combination_first_steps": {
+      "0": 0
+    },
+    "max_required_atoms_satisfied": 0,
+    "max_required_atom_values": [
+      false
+    ],
+    "max_required_atoms_first_step": null,
+    "forbidden_atoms": [
+      [
+        "on",
+        "moka_pot_1",
+        "flat_stove_1_cook_region"
+      ]
+    ],
+    "overshoot_policy": "fail_on_forbidden_ever",
+    "continue_after_success": true,
+    "required_ever": false,
+    "forbidden_ever": false,
+    "required_first_step": null,
+    "forbidden_first_step": null,
+    "sequence_stages": [],
+    "sequence_stage_index": 0,
+    "sequence_stage_first_steps": []
+  },
+  "native_initial_success": false,
+  "fixture_replay": {
+    "actual_callback_apply_calls": 0,
+    "calls": []
+  },
+  "post_warmup_state": {
+    "sha256": "57f16e81b8d743287ffabcad363ab75d83b4fb8aae85ee8a41d351fbb4086ab8",
+    "shape": [
+      47
+    ],
+    "dtype": "float64"
+  },
+  "rendering_preserved_physics_and_rng": true,
+  "passed": true,
+  "elapsed_seconds": 9.517002958804369
+}

@@ -1,9 +1,9 @@
 {
   "schema": "libero_analogy_task_review_v1",
-  "created_at": "2026-09-12T15:46:44.294684+00:00",
+  "created_at": "2026-09-12T15:57:35.734640+00:00",
   "task_count": 60,
   "rendered_count": 60,
-  "task_index_sha256": "faf6cecc8c87afa0c7e93ad0deaea11186f0a6fbcca2f77e99070a453b7dfca0",
+  "task_index_sha256": "b8808ad5ee1d7de8007313b77c50100e62afb626c641bcb93314b0e54b76cf11",
   "tasks": [
     {
       "task_id": "Decomposition_001",
@@ -29332,7 +29332,7 @@
       "category": "Compose",
       "category_order": 18,
       "order": 58,
-      "instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+      "instruction": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
       "goal": "in(alphabet_soup_1,bowl_drainer_1_right_region);in(tomato_sauce_1,bowl_drainer_1_left_region)",
       "required": [
         "in(alphabet_soup_1, bowl_drainer_1_right_region)",
@@ -29424,7 +29424,7 @@
         "legacy_task_id": "BDRMIN_002",
         "category": "Compose",
         "order": 58,
-        "task_description": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+        "task_description": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
         "initial_state_note": "State 0, seed 7, after the evaluator's 10 settling controls. Later-stage masks show targets in this same initial scene; no policy actions or task execution are shown.",
         "policy_inference_calls": 0,
         "seed": 7,
@@ -29980,14 +29980,26 @@
         "capture_task_description": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
         "description_revision": {
           "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
-          "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+          "after": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
           "matches_original_capture_instruction": false,
-          "kind": "remove_period",
+          "kind": "user_requested_robot_arm_direction",
           "image_and_mask_pixels_unchanged": true,
           "physical_definition_unchanged": true,
-          "current_bddl_sha256": "7989fe91100240cc04eb698dcbe02f39ad935ea9d3489f60d89cf8876be5dade",
-          "current_task_meta_sha256": "ed5a011610da9b5db22fe32db13fb6af385a2fd2bf9f205e434b6e2286653410"
-        }
+          "current_bddl_sha256": "51c82d96a263c4c2843b9f74c151d6380a6416eac0f1174388ee1598fcd537a0",
+          "current_task_meta_sha256": "4abaa753a7b456ffc43d31c0df0a1f86a4c60bf9c4a4f64a1e18f6d084479352"
+        },
+        "description_revision_history": [
+          {
+            "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
+            "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+            "matches_original_capture_instruction": false,
+            "kind": "remove_period",
+            "image_and_mask_pixels_unchanged": true,
+            "physical_definition_unchanged": true,
+            "current_bddl_sha256": "7989fe91100240cc04eb698dcbe02f39ad935ea9d3489f60d89cf8876be5dade",
+            "current_task_meta_sha256": "ed5a011610da9b5db22fe32db13fb6af385a2fd2bf9f205e434b6e2286653410"
+          }
+        ]
       },
       "scene_base": "scenes/Compose/Compose_018/",
       "result": {
@@ -30002,11 +30014,11 @@
       "historical_comparison": "../selected29/assets/comparison_png/BDRMIN_002.png",
       "description_revision": {
         "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
-        "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+        "after": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
         "legacy_task_id": "BDRMIN_002",
-        "kind": "remove_period"
+        "kind": "user_requested_robot_arm_direction_and_remove_period"
       },
-      "direction_note": "방향은 LIBERO 원본 구획 기준입니다. 로봇 기준 왼쪽은 left_region(+Y), 오른쪽은 right_region(−Y)입니다. 현재 scene과 단계별 mask는 같은 화면 방향을 사용합니다.",
+      "direction_note": "현재 지시문은 로봇 팔 관점의 왼쪽→오른쪽 순서입니다. 수프의 left compartment는 내부 right_region, 토마토소스의 right compartment는 내부 left_region에 대응합니다. 실제 목적지와 mask는 그대로이며, 기존 평가·행동별 source 문구는 당시 기록입니다.",
       "direction_comparison": "DRAINER_DIRECTIONS.png",
       "direction_comparison_label": "현재 지시문 · 원본 구획 비교",
       "historical_comparison_label": "과거 비교 이미지 (현재 화면과 좌우 반전)"
@@ -31653,5 +31665,5 @@
       "historical_comparison_label": "과거 비교 이미지"
     }
   ],
-  "publication_created_at": "2026-09-12T15:48:18.789459+00:00"
+  "publication_created_at": "2026-09-12T15:59:00.959001+00:00"
 }

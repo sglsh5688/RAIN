@@ -1,5 +1,5 @@
 {
-  "direction_note": "Current instruction directions and native object-attached goal IDs are separate fields. Compose_015 uses the user-requested robot-arm wording RIGHT then LEFT, while native goals remain left_region then right_region. Compose_018 retains its explicitly requested RIGHT then LEFT wording. Scene and mask pixels, physical goals and historical source-conditioning descriptions are unchanged. Screen-left/right depends on camera and display orientation.",
+  "direction_note": "Current instruction directions and native object-attached goal IDs are separate fields. Compose_015 uses the user-requested robot-arm wording RIGHT then LEFT, while native goals remain left_region then right_region. Compose_018 now uses the corrected LEFT then RIGHT wording, while its native goals remain right_region then left_region. Scene and mask pixels, physical goals and historical source-conditioning descriptions are unchanged. Screen-left/right depends on camera and display orientation.",
   "mapping": [
     {
       "task_id": "Adapt_017",
@@ -36,19 +36,19 @@
     },
     {
       "task_id": "Compose_018",
-      "instruction": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+      "instruction": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
       "placements": [
         {
           "object": "alphabet_soup_1",
-          "side": "right",
-          "instruction_side": "right",
+          "side": "left",
+          "instruction_side": "left",
           "native_region": "bowl_drainer_1_right_region",
           "mask_changed": false
         },
         {
           "object": "tomato_sauce_1",
-          "side": "left",
-          "instruction_side": "left",
+          "side": "right",
+          "instruction_side": "right",
           "native_region": "bowl_drainer_1_left_region",
           "mask_changed": false
         }

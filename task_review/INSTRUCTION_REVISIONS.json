@@ -321,9 +321,9 @@
     },
     "Compose_018": {
       "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer.",
-      "after": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+      "after": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
       "legacy_task_id": "BDRMIN_002",
-      "kind": "remove_period"
+      "kind": "user_requested_robot_arm_direction_and_remove_period"
     },
     "Compose_019": {
       "before": "Put the alphabet soup, the butter, and the cream cheese box in the basket one after another.",
@@ -341,7 +341,7 @@
   "physical_definition_changed": false,
   "ordered_goals_changed": false,
   "source_action_descriptions_preserved": true,
-  "reason": "Current instructions have no periods. User requested Compose_015 butter RIGHT then tomato sauce LEFT as robot-arm wording; Compose_018 remains alphabet soup RIGHT then tomato sauce LEFT as explicitly stated. Adapt_009 retains robot-base RIGHT and Compose_019 retains explicit ordered placement clauses. Native site IDs, physical goals and completed evaluation/source-conditioning wording are preserved.",
+  "reason": "Current instructions have no periods. User corrected Compose_015 to butter RIGHT then tomato sauce LEFT and Compose_018 to alphabet soup LEFT then tomato sauce RIGHT as robot-arm wording. Adapt_009 retains robot-base RIGHT and Compose_019 explicit ordered placement clauses. Native site IDs, physical goals and historical evaluation/source-conditioning wording are preserved.",
   "history": [
     {
       "revision_id": "20260912_punctuation_and_compose19",
@@ -750,6 +750,17 @@
           "before": "Pick the butter and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
           "after": "Pick the butter and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
           "legacy_task_id": "CTR_103",
+          "kind": "user_requested_robot_arm_direction"
+        }
+      }
+    },
+    {
+      "revision_id": "20260912_compose018_arm_direction",
+      "tasks": {
+        "Compose_018": {
+          "before": "Pick the alphabet soup and place it in the right compartment of the bowl drainer, then pick the tomato sauce and place it in the left compartment of the bowl drainer",
+          "after": "Pick the alphabet soup and place it in the left compartment of the bowl drainer, then pick the tomato sauce and place it in the right compartment of the bowl drainer",
+          "legacy_task_id": "BDRMIN_002",
           "kind": "user_requested_robot_arm_direction"
         }
       }
